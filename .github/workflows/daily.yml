@@ -1,0 +1,38 @@
+name: Daily Content Generation
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Runs every day at 6:00 AM UTC
+  workflow_dispatch:       # Allows you to run it manually from GitHub
+
+permissions:
+  contents: write          # Allows the bot to push updated files
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run daily content generator
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate.py
+
+      - name: Commit and push updated files
+        run: |
+          git config user.name "Paging Dr. Oh Bot"
+          git config user.email "bot@pagingdroh.com"
+          git add index.html history.json whats_new_current.json archive.json manual_additions.json
+          git diff --staged --quiet || git commit -m "Daily update: $(date -u +'%B %d, %Y')"
+          git push

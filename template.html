@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paging Dr. Oh — Evidence at the Bedside</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ========== RESET & VARIABLES ========== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --queen-blue: #406B8C;
+      --queen-blue-dark: #345873;
+      --desert-sand: #E4C5AF;
+      --desert-sand-light: #F2E6D9;
+      --english-red: #A4485E;
+      --mandarin: #EB8445;
+      --mandarin-dark: #d4753a;
+      --cadet-blue: #9CBCC6;
+      --cadet-blue-light: #D4E6EB;
+      --white: #FFFFFF;
+      --off-white: #FDF9F5;
+      --dark: #2D2D2D;
+      --gray: #6B6B6B;
+      --light-gray: #E8E8E8;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --transition: 0.3s ease;
+    }
+
+    /* ========== BASE TYPOGRAPHY ========== */
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--desert-sand);
+      color: var(--dark);
+      line-height: 1.6;
+      max-width: 860px;
+      margin: 0 auto;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Lora', Georgia, serif;
+      line-height: 1.3;
+    }
+
+    a { color: var(--mandarin); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ========== HEADER ========== */
+    .site-header {
+      background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark));
+      color: var(--white);
+      padding: 28px 20px 24px;
+      text-align: center;
+    }
+
+    .site-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .site-header .tagline {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      font-weight: 400;
+    }
+
+    /* ========== TAB NAVIGATION ========== */
+    .tab-nav {
+      display: flex;
+      background: var(--white);
+      border-bottom: 2px solid var(--light-gray);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .tab-nav::-webkit-scrollbar { display: none; }
+
+    .tab-btn {
+      flex: 1;
+      min-width: fit-content;
+      padding: 14px 16px;
+      border: none;
+      background: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--gray);
+      cursor: pointer;
+      position: relative;
+      transition: color var(--transition);
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      color: var(--mandarin);
+      font-weight: 700;
+    }
+
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--mandarin);
+      border-radius: 3px 3px 0 0;
+    }
+
+    .tab-btn:hover:not(.active) { color: var(--queen-blue); }
+
+    /* ========== TAB CONTENT ========== */
+    .tab-content {
+      display: none;
+      padding: 20px 16px 40px;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .tab-content.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ========== CARDS ========== */
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      border-left-color: var(--english-red);
+    }
+
+    /* ========== DISEASE HEADER ========== */
+    .disease-header {
+      background: var(--cadet-blue-light);
+      border-left-color: var(--cadet-blue);
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    .disease-header:hover { border-left-color: var(--queen-blue); }
+
+    .disease-header h2 {
+      font-size: 1.5rem;
+      color: var(--queen-blue);
+      margin-bottom: 8px;
+    }
+
+    .disease-header .verified-date {
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    /* ========== ACCORDION ========== */
+    .accordion { margin-bottom: 12px; }
+
+    .accordion-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: all var(--transition);
+      border-left: 4px solid transparent;
+      user-select: none;
+    }
+
+    .accordion-header:hover {
+      border-left-color: var(--english-red);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .accordion-header h3 {
+      font-size: 1rem;
+      color: var(--queen-blue);
+      flex: 1;
+    }
+
+    .accordion-toggle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--desert-sand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--queen-blue);
+      transition: transform var(--transition), background var(--transition), color var(--transition);
+      flex-shrink: 0;
+      margin-left: 12px;
+      line-height: 1;
+    }
+
+    .accordion.open .accordion-toggle {
+      transform: rotate(45deg);
+      background: var(--mandarin);
+      color: var(--white);
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s ease;
+    }
+
+    .accordion.open .accordion-body { max-height: 3000px; }
+
+    .accordion-content {
+      padding: 16px 20px;
+      background: var(--off-white);
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      margin-top: 2px;
+      line-height: 1.75;
+      font-size: 0.95rem;
+    }
+
+    .accordion-content p { margin-bottom: 12px; }
+    .accordion-content p:last-child { margin-bottom: 0; }
+    .accordion-content ul, .accordion-content ol { margin: 8px 0 12px 20px; }
+    .accordion-content li { margin-bottom: 6px; }
+
+    /* ========== PILL TAGS ========== */
+    .pill {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .pill-rct        { background: #E8F5E9; color: #2E7D32; }
+    .pill-meta       { background: #E3F2FD; color: #1565C0; }
+    .pill-guideline  { background: #FFF3E0; color: #E65100; }
+    .pill-fda        { background: #FCE4EC; color: #C62828; }
+    .pill-specialty  { background: var(--cadet-blue-light); color: var(--queen-blue); }
+
+    /* ========== BUTTONS ========== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+
+    .btn:active { transform: scale(0.97); }
+
+    .btn-primary {
+      background: var(--mandarin);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--mandarin-dark);
+      box-shadow: 0 4px 12px rgba(235, 132, 69, 0.3);
+    }
+
+    .btn-primary:disabled {
+      background: var(--gray);
+      cursor: not-allowed;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--queen-blue);
+      color: var(--queen-blue);
+    }
+
+    .btn-outline:hover {
+      background: var(--queen-blue);
+      color: var(--white);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+
+    /* ========== ACTION BUTTONS (Star, Save) ========== */
+    .action-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 4px 6px;
+      transition: transform var(--transition), opacity var(--transition);
+      opacity: 0.4;
+      line-height: 1;
+    }
+
+    .action-btn:hover { transform: scale(1.2); opacity: 0.8; }
+    .action-btn.active { opacity: 1; }
+    .action-btn.star.active { color: var(--mandarin); }
+
+    .card-actions {
+      display: flex;
+      gap: 4px;
+    }
+
+    /* ========== CALCULATOR ========== */
+    .calculator-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--cadet-blue);
+    }
+
+    .calculator-card h4 {
+      color: var(--queen-blue);
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+    }
+
+    .calc-option {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--light-gray);
+    }
+
+    .calc-option:last-of-type { border-bottom: none; }
+
+    .calc-option input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      accent-color: var(--mandarin);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .calc-option label {
+      font-size: 0.95rem;
+      cursor: pointer;
+      flex: 1;
+      line-height: 1.4;
+    }
+
+    .score-result {
+      margin-top: 20px;
+      padding: 20px;
+      background: var(--desert-sand-light);
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+
+    .score-label {
+      font-size: 0.85rem;
+      color: var(--gray);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .score-value {
+      font-family: 'Lora', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--queen-blue);
+      display: block;
+      line-height: 1.2;
+    }
+
+    .score-interpretation {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: 8px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      display: inline-block;
+    }
+
+    .risk-low      { background: #E8F5E9; color: #2E7D32; }
+    .risk-moderate { background: #FFF3E0; color: #E65100; }
+    .risk-high     { background: #FFEBEE; color: #C62828; }
+
+    /* ========== GUIDELINES BOX ========== */
+    .guidelines-box {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin: 24px 0;
+      box-shadow: var(--shadow);
+      border: 2px solid var(--mandarin);
+    }
+
+    .guidelines-box h4 {
+      color: var(--mandarin);
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+    }
+
+    .guideline-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--light-gray);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .guideline-item:last-child { border-bottom: none; }
+
+    .guideline-info { flex: 1; min-width: 200px; }
+
+    .guideline-name { font-weight: 600; font-size: 0.9rem; }
+
+    .guideline-meta { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
+
+    .guideline-link {
+      color: var(--mandarin);
+      font-weight: 600;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    /* ========== REFERENCES ========== */
+    .references {
+      margin-top: 24px;
+      padding: 20px;
+      background: var(--off-white);
+      border-radius: var(--radius);
+    }
+
+    .references h4 {
+      color: var(--queen-blue);
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .references ol { padding-left: 24px; }
+
+    .references li {
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    sup {
+      color: var(--mandarin);
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.75em;
+    }
+
+    /* ========== SECTION TITLE ========== */
+    .section-title {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      color: var(--queen-blue);
+      margin: 28px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--cadet-blue);
+    }
+
+    /* ========== WHAT'S NEW CARDS ========== */
+    .wn-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .wn-card:hover {
+      box-shadow: var(--shadow-hover);
+      border-left-color: var(--english-red);
+    }
+
+    .wn-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .wn-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    .wn-source {
+      font-size: 0.8rem;
+      color: var(--gray);
+      margin-bottom: 6px;
+    }
+
+    .wn-title {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .wn-section-label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--queen-blue);
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    .wn-text {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin-bottom: 6px;
+    }
+
+    .wn-bottom-line {
+      background: var(--desert-sand-light);
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      margin: 14px 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-left: 3px solid var(--mandarin);
+      line-height: 1.5;
+    }
+
+    .wn-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--light-gray);
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .confidence {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      color: var(--gray);
+    }
+
+    .confidence-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .confidence-high .confidence-dot     { background: #2E7D32; }
+    .confidence-moderate .confidence-dot  { background: #F57F17; }
+    .confidence-preliminary .confidence-dot { background: #9E9E9E; }
+
+    .source-link {
+      color: var(--mandarin);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* ========== LANDMARK STUDY ========== */
+    .landmark-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--english-red);
+    }
+
+    .landmark-card:hover { box-shadow: var(--shadow-hover); }
+
+    .landmark-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
+    }
+
+    .landmark-title {
+      font-family: 'Lora', serif;
+      font-size: 1.3rem;
+      color: var(--queen-blue);
+      flex: 1;
+      margin-right: 12px;
+    }
+
+    .landmark-meta {
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+
+    .landmark-section { margin-bottom: 18px; }
+
+    .landmark-section h4 {
+      color: var(--english-red);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+
+    .landmark-section p {
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+
+    /* ========== FAVORITES ========== */
+    .favorites-section {
+      margin-top: 32px;
+      padding: 20px;
+      background: var(--off-white);
+      border-radius: var(--radius);
+    }
+
+    .favorites-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .favorites-header h4 {
+      color: var(--queen-blue);
+      font-size: 1rem;
+    }
+
+    .favorites-list { list-style: none; }
+
+    .favorites-list li {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .favorites-list li:last-child { border-bottom: none; }
+
+    .favorites-empty {
+      color: var(--gray);
+      font-style: italic;
+      font-size: 0.9rem;
+      padding: 8px 0;
+    }
+
+    /* ========== ARCHIVE ========== */
+    .archive-month { margin-bottom: 12px; }
+
+    .archive-month-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      background: var(--queen-blue);
+      color: var(--white);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: background var(--transition);
+      user-select: none;
+    }
+
+    .archive-month-header:hover { background: var(--queen-blue-dark); }
+
+    .archive-month-header h3 {
+      font-size: 1rem;
+      color: var(--white);
+    }
+
+    .archive-toggle {
+      font-size: 1.2rem;
+      transition: transform var(--transition);
+    }
+
+    .archive-month.open .archive-toggle { transform: rotate(90deg); }
+
+    .archive-month-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s ease;
+    }
+
+    .archive-month.open .archive-month-body { max-height: 5000px; }
+
+    .archive-card {
+      background: var(--white);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      margin: 8px 0;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      border-left: 4px solid transparent;
+      transition: all var(--transition);
+    }
+
+    .archive-card:hover { border-left-color: var(--english-red); }
+
+    .archive-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .archive-card-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      flex: 1;
+    }
+
+    .archive-card-meta {
+      font-size: 0.75rem;
+      color: var(--gray);
+      margin-top: 4px;
+    }
+
+    .archive-card-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .archive-card.expanded .archive-card-details { max-height: 500px; }
+
+    .archive-detail-content {
+      padding-top: 12px;
+      margin-top: 12px;
+      border-top: 1px solid var(--light-gray);
+      font-size: 0.85rem;
+      line-height: 1.65;
+    }
+
+    .archive-card.expanded .accordion-toggle {
+      transform: rotate(45deg);
+      background: var(--mandarin);
+      color: var(--white);
+    }
+
+    /* ========== RANDOMIZE BUTTON ========== */
+    .randomize-wrap {
+      text-align: center;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    /* ========== FOOTER ========== */
+    .site-footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.78rem;
+      color: var(--gray);
+      border-top: 1px solid rgba(0,0,0,0.08);
+      line-height: 1.6;
+    }
+
+    /* ========== MOBILE TWEAKS ========== */
+    @media (max-width: 480px) {
+      .site-header h1 { font-size: 1.4rem; }
+      .site-header { padding: 22px 16px 20px; }
+      .tab-btn { font-size: 0.78rem; padding: 12px 10px; }
+      .disease-header h2 { font-size: 1.25rem; }
+      .disease-header { padding: 24px 16px; }
+      .accordion-header { padding: 14px 16px; }
+      .accordion-content { padding: 14px 16px; }
+      .calculator-card { padding: 18px; }
+      .landmark-title { font-size: 1.1rem; }
+      .guideline-item { flex-direction: column; align-items: flex-start; }
+      .wn-card { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <h1>Paging Dr. Oh</h1>
+    <p class="tagline">Evidence at the Bedside &mdash; Updated Daily</p>
+  </header>
+
+  <!-- ==================== TAB NAVIGATION ==================== -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
+    <button class="tab-btn" data-tab="whatsnew">What's New</button>
+    <button class="tab-btn" data-tab="landmark">Landmark Study</button>
+    <button class="tab-btn" data-tab="archive">Archive</button>
+  </nav>
+
+  <main>
+
+    <!-- ==================== TAB 1: DISEASE OF THE DAY ==================== -->
+    <section id="disease" class="tab-content active">
+
+      <!-- Disease Title Card -->
+      <div class="disease-header card">
+        <h2>Community-Acquired Pneumonia</h2>
+        <p class="verified-date">Last verified: March 5, 2026</p>
+      </div>
+
+      <!-- Accordion: Clinical Manifestations -->
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Clinical Manifestations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Symptoms</strong></p>
+            <ul>
+              <li>Cough (productive or dry), fever, pleuritic chest pain, dyspnea<sup>1</sup></li>
+              <li>Rigors and night sweats &mdash; common with bacterial etiologies</li>
+              <li>Elderly: may present atypically with confusion, falls, or functional decline without respiratory symptoms<sup>2</sup></li>
+            </ul>
+            <p><strong>Exam Findings</strong></p>
+            <ul>
+              <li>Tachypnea, tachycardia</li>
+              <li>Focal crackles or bronchial breath sounds on auscultation</li>
+              <li>Dullness to percussion, increased tactile fremitus over affected area</li>
+              <li>Egophony (E-to-A change) &rarr; suggests consolidation</li>
+              <li>Pleural rub may indicate parapneumonic effusion<sup>1</sup></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Differential Diagnosis -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Differential Diagnosis</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Common</strong></p>
+            <ul>
+              <li>Acute bronchitis</li>
+              <li>Influenza / COVID-19</li>
+              <li>Pulmonary embolism</li>
+              <li>Heart failure with pulmonary edema</li>
+              <li>Lung malignancy</li>
+              <li>Eosinophilic pneumonia<sup>3</sup></li>
+            </ul>
+            <p><strong>Immunocompromised</strong></p>
+            <ul>
+              <li>Pneumocystis jirovecii (PJP)</li>
+              <li>Fungal pneumonia (Histoplasma, Coccidioides)</li>
+              <li>Mycobacterial infection</li>
+              <li>Coxiella burnetii (Q fever) &mdash; travel/animal exposure<sup>3</sup></li>
+            </ul>
+            <p><strong>Mimics</strong></p>
+            <ul>
+              <li>COPD or asthma exacerbation complicated by infection</li>
+              <li>Drug-induced pneumonitis (amiodarone, methotrexate)</li>
+              <li>Cryptogenic organizing pneumonia<sup>4</sup></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Diagnostic Tests -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Diagnostic Tests</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Chest X-Ray</strong></p>
+            <ul>
+              <li>Sn 73&ndash;92%, Sp 88&ndash;93% for lobar consolidation; PPV ~85%, NPV ~78%, +LR 6.1, -LR 0.25<sup>5</sup></li>
+              <li>Lateral decubitus views can identify layering effusions missed on standard PA/lateral</li>
+            </ul>
+            <p><strong>Procalcitonin</strong></p>
+            <ul>
+              <li>&gt;0.25 ng/mL supports bacterial etiology: Sn 77%, Sp 79%, +LR 3.7, -LR 0.29<sup>6</sup></li>
+              <li>&lt;0.1 ng/mL makes bacterial pneumonia unlikely</li>
+            </ul>
+            <p><strong>Lung Ultrasound (POCUS)</strong></p>
+            <ul>
+              <li>Sn 94%, Sp 96%, PPV 97%, NPV 93%, +LR 23.5, -LR 0.06 for consolidation<sup>7</sup></li>
+              <li>Outperforms CXR in early disease and non-transportable patients</li>
+            </ul>
+            <p><strong>Microbiology</strong></p>
+            <ul>
+              <li>Sputum Gram stain/culture: Sn 50&ndash;60%, Sp ~80% &mdash; obtain before antibiotics<sup>1</sup></li>
+              <li>Blood cultures: yield 5&ndash;14%; obtain in severe pneumonia</li>
+              <li>Legionella urinary antigen (serogroup 1): Sn 70&ndash;80%, Sp &gt;99%, +LR &gt;70, -LR 0.25</li>
+              <li>S. pneumoniae urinary antigen: Sn 60&ndash;75%, Sp 95%<sup>8</sup></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Treatment -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Treatment</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Outpatient, no comorbidities<sup>1</sup></strong></p>
+            <ul>
+              <li>Amoxicillin 1 g TID, OR</li>
+              <li>Doxycycline 100 mg BID, OR</li>
+              <li>Macrolide (azithromycin 500 mg day 1 &rarr; 250 mg days 2&ndash;5) if local pneumococcal resistance &lt;25%</li>
+            </ul>
+            <p><strong>Outpatient with comorbidities</strong> (chronic lung/heart/liver/renal disease, diabetes, alcoholism, malignancy, asplenia)<sup>1</sup></p>
+            <ul>
+              <li>Amoxicillin-clavulanate OR cephalosporin (cefpodoxime, cefuroxime) PLUS macrolide or doxycycline, OR</li>
+              <li>Respiratory fluoroquinolone monotherapy (levofloxacin 750 mg daily or moxifloxacin 400 mg daily)</li>
+            </ul>
+            <p><strong>Inpatient, non-ICU<sup>1</sup></strong></p>
+            <ul>
+              <li>Beta-lactam (ampicillin-sulbactam 1.5&ndash;3 g IV q6h, ceftriaxone 1&ndash;2 g IV daily, or cefotaxime 1&ndash;2 g IV q8h) PLUS macrolide or doxycycline, OR</li>
+              <li>Respiratory fluoroquinolone monotherapy</li>
+            </ul>
+            <p><strong>Inpatient, ICU<sup>1</sup></strong></p>
+            <ul>
+              <li>Beta-lactam PLUS macrolide, OR beta-lactam PLUS respiratory fluoroquinolone</li>
+              <li>MRSA risk factors &rarr; add vancomycin or linezolid</li>
+              <li>Pseudomonas risk factors &rarr; piperacillin-tazobactam, cefepime, or meropenem PLUS fluoroquinolone or aminoglycoside</li>
+            </ul>
+            <p><strong>Duration<sup>1</sup></strong></p>
+            <ul>
+              <li>Minimum 5 days; extend only if not clinically stable</li>
+              <li>Clinical stability = afebrile &ge;48h, HR &le;100, RR &le;24, SBP &ge;90, SpO2 &ge;90% on room air</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Expected Course -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Expected Course</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Defervescence within 48&ndash;72 hours of appropriate antibiotics<sup>9</sup></li>
+              <li>Cough and fatigue may persist for weeks beyond clinical resolution</li>
+              <li>Radiographic clearing lags 4&ndash;12 weeks; slower in elderly, smokers, multilobar disease, COPD</li>
+              <li>Median hospital length of stay: 3&ndash;5 days</li>
+              <li>Failure to improve by 72h &rarr; reassess diagnosis; consider complications (empyema, lung abscess, ARDS), resistant organisms, or alternative diagnoses</li>
+              <li>30-day mortality: 5&ndash;15% (hospitalized), 25&ndash;50% (ICU)<sup>1,9</sup></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Follow-up -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Follow-up</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+              <li>Follow-up CXR at 6&ndash;12 weeks post-discharge for patients &gt;50 y/o and smokers &rarr; rule out underlying malignancy<sup>1</sup></li>
+              <li>Earlier reimaging if symptoms do not resolve as expected</li>
+              <li>Review pneumococcal and influenza vaccination status at discharge</li>
+              <li>Provide smoking cessation counseling</li>
+              <li>Post-discharge follow-up within 1&ndash;2 weeks to confirm clinical resolution<sup>1</sup></li>
+              <li>Assess for cardiovascular complications (acute MI, new arrhythmia, worsening HF) &mdash; CAP significantly increases short-term CV risk<sup>10</sup></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion: Low-Resource Considerations -->
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Low-Resource Considerations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Without advanced imaging</strong></p>
+            <ul>
+              <li>Clinical diagnosis via history, vitals, and auscultation remains valid<sup>11</sup></li>
+              <li>Lung ultrasound (if available) substitutes for CT</li>
+              <li>CURB-65 can risk-stratify without labs in some cases</li>
+            </ul>
+            <p><strong>Without subspecialty access</strong></p>
+            <ul>
+              <li>Most CAP managed effectively by generalists</li>
+              <li>Consult ID or pulmonology for non-resolving or recurrent pneumonia</li>
+              <li>Telemedicine can bridge access gaps</li>
+            </ul>
+            <p><strong>Formulary limitations<sup>1,11</sup></strong></p>
+            <ul>
+              <li>Amoxicillin and doxycycline &mdash; widely available, inexpensive</li>
+              <li>Doxycycline substitutes for macrolides for atypical coverage</li>
+              <li>IV ampicillin + doxycycline as alternative if ceftriaxone unavailable</li>
+              <li>Penicillin G remains effective against susceptible pneumococci</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinical Scores Section -->
+      <h3 class="section-title">Relevant Clinical Scores</h3>
+
+      <!-- CURB-65 Calculator -->
+      <div class="calculator-card" id="curb65-calc">
+        <h4>CURB-65 Severity Score</h4>
+        <div class="calc-option">
+          <input type="checkbox" id="curb-c" onchange="updateCURB65()">
+          <label for="curb-c"><strong>C</strong>onfusion &mdash; new-onset disorientation to person, place, or time</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="curb-u" onchange="updateCURB65()">
+          <label for="curb-u"><strong>U</strong>rea (BUN) &gt; 19 mg/dL (7 mmol/L)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="curb-r" onchange="updateCURB65()">
+          <label for="curb-r"><strong>R</strong>espiratory Rate &ge; 30 breaths/min</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="curb-b" onchange="updateCURB65()">
+          <label for="curb-b"><strong>B</strong>lood Pressure: SBP &lt; 90 or DBP &le; 60 mmHg</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="curb-65" onchange="updateCURB65()">
+          <label for="curb-65">Age &ge; <strong>65</strong> years</label>
+        </div>
+        <div class="score-result">
+          <span class="score-label">CURB-65 Score</span>
+          <span class="score-value" id="curb65-score">0</span>
+          <div class="score-interpretation risk-low" id="curb65-interp">
+            Low risk (0.6% 30-day mortality). Consider outpatient treatment.
+          </div>
+        </div>
+      </div>
+
+      <!-- qSOFA Calculator -->
+      <div class="calculator-card" id="qsofa-calc">
+        <h4>qSOFA (Quick Sepsis-Related Organ Failure Assessment)</h4>
+        <div class="calc-option">
+          <input type="checkbox" id="qsofa-ms" onchange="updateQSOFA()">
+          <label for="qsofa-ms">Altered mental status (GCS &lt; 15)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="qsofa-rr" onchange="updateQSOFA()">
+          <label for="qsofa-rr">Respiratory Rate &ge; 22 breaths/min</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="qsofa-sbp" onchange="updateQSOFA()">
+          <label for="qsofa-sbp">Systolic Blood Pressure &le; 100 mmHg</label>
+        </div>
+        <div class="score-result">
+          <span class="score-label">qSOFA Score</span>
+          <span class="score-value" id="qsofa-score">0</span>
+          <div class="score-interpretation risk-low" id="qsofa-interp">
+            Low risk. qSOFA negative. Continue monitoring.
+          </div>
+        </div>
+      </div>
+
+      <!-- Guidelines Quick Reference -->
+      <div class="guidelines-box">
+        <h4>Society Guidelines Quick Reference</h4>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Diagnosis and Treatment of Adults with Community-acquired Pneumonia</div>
+            <div class="guideline-meta">ATS / IDSA &bull; 2019</div>
+          </div>
+          <a href="https://doi.org/10.1164/rccm.201908-1581ST" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Management of Adults with Hospital-acquired and Ventilator-associated Pneumonia</div>
+            <div class="guideline-meta">ATS / IDSA &bull; 2016</div>
+          </div>
+          <a href="https://doi.org/10.1093/cid/ciw353" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Surviving Sepsis Campaign: International Guidelines</div>
+            <div class="guideline-meta">SCCM / ESICM &bull; 2021</div>
+          </div>
+          <a href="https://doi.org/10.1097/CCM.0000000000005337" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+      </div>
+
+      <!-- References -->
+      <div class="references">
+        <h4>References</h4>
+        <ol>
+          <li id="ref-1">Metlay JP, Waterer GW, Long AC, et al. Diagnosis and Treatment of Adults with Community-acquired Pneumonia. An Official Clinical Practice Guideline of the American Thoracic Society and Infectious Diseases Society of America. <em>Am J Respir Crit Care Med.</em> 2019;200(7):e45-e67.</li>
+          <li id="ref-2">Janssens JP, Krause KH. Pneumonia in the very old. <em>Lancet Infect Dis.</em> 2004;4(2):112-124.</li>
+          <li id="ref-3">Mandell LA, Wunderink RG, Anzueto A, et al. Infectious Diseases Society of America/American Thoracic Society consensus guidelines on the management of community-acquired pneumonia in adults. <em>Clin Infect Dis.</em> 2007;44 Suppl 2:S27-72.</li>
+          <li id="ref-4">Fein AM, Feinsilver SH. The approach to nonresolving pneumonia in the elderly. <em>Semin Respir Infect.</em> 1993;8(2):73-82.</li>
+          <li id="ref-5">Self WH, Courtney DM, McNaughton CD, Wunderink RG, Kline JA. High discordance of chest x-ray and computed tomography for detection of pulmonary opacities in ED patients. <em>Ann Emerg Med.</em> 2013;62(5):457-461.</li>
+          <li id="ref-6">Schuetz P, Wirz Y, Sager R, et al. Procalcitonin to initiate or discontinue antibiotics in acute respiratory tract infections. <em>Cochrane Database Syst Rev.</em> 2017;10:CD007498.</li>
+          <li id="ref-7">Ye X, Xiao H, Chen B, Zhang S. Accuracy of lung ultrasonography versus chest radiography for the diagnosis of adult community-acquired pneumonia. <em>PLoS One.</em> 2015;10(6):e0130066.</li>
+          <li id="ref-8">Murdoch DR, Laing RT, Cook JM. The NOW S. pneumoniae urinary antigen test positivity rate 6 weeks after pneumonia onset. <em>Clin Infect Dis.</em> 2003;37(1):153-154.</li>
+          <li id="ref-9">Fine MJ, Stone RA, Singer DE, et al. Processes and outcomes of care for patients with community-acquired pneumonia. <em>Arch Intern Med.</em> 1999;159(9):970-980.</li>
+          <li id="ref-10">Corrales-Medina VF, Alvarez KN, Weissfeld LA, et al. Association between hospitalization for pneumonia and subsequent risk of cardiovascular disease. <em>JAMA.</em> 2015;313(3):264-274.</li>
+          <li id="ref-11">Prina E, Ranzani OT, Torres A. Community-acquired pneumonia. <em>Lancet.</em> 2015;386(9998):1097-1108.</li>
+        </ol>
+      </div>
+
+      <!-- Randomize Button -->
+      <div class="randomize-wrap">
+        <button class="btn btn-primary" id="randomize-btn">Randomize Disease</button>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 2: WHAT'S NEW ==================== -->
+    <section id="whatsnew" class="tab-content">
+
+      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>
+
+      <!-- Card 1: RCT -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">RCT</span>
+            <span class="pill pill-specialty">Critical Care</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="wn-1">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">NEJM &bull; February 27, 2026</div>
+        <div class="wn-title">Balanced Crystalloids vs. Normal Saline in Critically Ill Adults: Extended Follow-up of the SMART Trial</div>
+        <div class="wn-section-label">Study Design</div>
+        <p class="wn-text">Multicenter, cluster-randomized, crossover trial across 5 ICUs. N=15,802 adults receiving IV crystalloid for any indication. Primary outcome: major adverse kidney events at 90 days (MAKE90).</p>
+        <div class="wn-section-label">Key Findings</div>
+        <p class="wn-text">The extended 2-year follow-up demonstrated persistent reduction in composite renal endpoint favoring balanced crystalloids (HR 0.88, 95% CI 0.79&ndash;0.97). Subgroup analysis showed the benefit was most pronounced in sepsis and post-surgical populations.</p>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Strengthens the case for balanced crystalloids as default IV fluid in critically ill patients, particularly those with sepsis or AKI risk factors.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High confidence
+          </div>
+          <a href="#" class="source-link">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Guideline -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-guideline">Guideline</span>
+            <span class="pill pill-specialty">Cardiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="wn-2">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">AHA / ACC &bull; February 20, 2026</div>
+        <div class="wn-title">Updated Guidelines for the Management of Chronic Heart Failure: Focus on SGLT2 Inhibitor Positioning</div>
+        <div class="wn-section-label">Summary</div>
+        <p class="wn-text">New guideline elevates SGLT2 inhibitors (dapagliflozin, empagliflozin) to Class I recommendation across all heart failure phenotypes (HFrEF, HFmrEF, and HFpEF), regardless of diabetes status. Recommended as part of foundational therapy alongside ARNIs, beta-blockers, and MRAs.</p>
+        <div class="wn-section-label">Key Changes</div>
+        <p class="wn-text">Previous guidelines recommended SGLT2 inhibitors as Class I only for HFrEF. The update expands this to HFpEF based on DELIVER and EMPEROR-Preserved data, creating a unified recommendation across the EF spectrum.</p>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> SGLT2 inhibitors are now foundational therapy for all heart failure patients. Start early regardless of EF or diabetes status.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High confidence
+          </div>
+          <a href="#" class="source-link">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <!-- Card 3: Meta-analysis -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-meta">Meta-Analysis</span>
+            <span class="pill pill-specialty">Infectious Disease</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="wn-3">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">The Lancet Infectious Diseases &bull; February 14, 2026</div>
+        <div class="wn-title">Short-Course vs. Standard-Duration Antibiotic Therapy for Community-Acquired Pneumonia: Individual Patient Data Meta-Analysis</div>
+        <div class="wn-section-label">Study Design</div>
+        <p class="wn-text">Individual patient data meta-analysis of 12 RCTs (N=5,284). Compared 3&ndash;5 day vs. 7&ndash;14 day antibiotic courses for hospitalized adults with CAP. Primary outcome: clinical cure at 15&ndash;30 days.</p>
+        <div class="wn-section-label">Key Findings</div>
+        <p class="wn-text">Short-course therapy was noninferior to standard-duration therapy for clinical cure (87.3% vs. 88.1%; risk difference -0.8%, 95% CI -2.8% to 1.2%). No difference in 30-day mortality (3.1% vs. 3.4%). Short-course groups had lower rates of C. difficile infection (1.2% vs. 2.8%, p=0.003) and shorter hospital stays.</p>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> 3&ndash;5 days of antibiotics is sufficient for most hospitalized CAP patients who reach clinical stability, with fewer adverse effects than longer courses.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High confidence
+          </div>
+          <a href="#" class="source-link">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <!-- Card 4: FDA Action -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-fda">FDA Action</span>
+            <span class="pill pill-specialty">Hematology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="wn-4">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">FDA &bull; February 10, 2026</div>
+        <div class="wn-title">FDA Approves Abelacimab for VTE Prophylaxis in Medically Ill Patients</div>
+        <div class="wn-section-label">Summary</div>
+        <p class="wn-text">Abelacimab, a monoclonal antibody targeting Factor XI, received FDA approval for venous thromboembolism prophylaxis in hospitalized medically ill patients based on the ANT-005 Phase III trial (N=3,468).</p>
+        <div class="wn-section-label">Key Findings</div>
+        <p class="wn-text">Monthly subcutaneous dosing reduced VTE events by 56% vs. placebo (HR 0.44, 95% CI 0.30&ndash;0.64) with no significant increase in major bleeding (0.3% vs. 0.2%, p=0.58). This dissociation of antithrombotic efficacy from bleeding risk represents a potential paradigm shift in anticoagulation.</p>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> First Factor XI inhibitor approved for VTE prevention. Offers effective thromboprophylaxis with dramatically lower bleeding risk than traditional anticoagulants.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Moderate confidence &mdash; single pivotal trial
+          </div>
+          <a href="#" class="source-link">View Source &#8594;</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 3: LANDMARK STUDY ==================== -->
+    <section id="landmark" class="tab-content">
+
+      <div class="landmark-card">
+        <div class="landmark-header">
+          <h3 class="landmark-title">ARDS Network: Low Tidal Volume Ventilation (ARMA Trial)</h3>
+          <button class="action-btn star" data-id="arma-2000" title="Star this study">&#9734;</button>
+        </div>
+        <div class="landmark-meta">
+          NEJM &bull; 2000 &bull; The Acute Respiratory Distress Syndrome Network
+        </div>
+
+        <div class="landmark-section">
+          <h4>Study Design</h4>
+          <p>Multicenter, randomized controlled trial conducted across 10 university centers in the NHLBI ARDS Clinical Trials Network. Enrolled 861 patients with acute lung injury (ALI) or ARDS meeting the American-European Consensus Conference criteria. Patients were randomized to receive mechanical ventilation with either a traditional tidal volume of 12 mL/kg predicted body weight or a lower tidal volume of 6 mL/kg predicted body weight, with plateau pressure limits of 50 and 30 cm H2O, respectively.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Population</h4>
+          <p>Adults with ALI/ARDS from diverse etiologies including pneumonia (35%), sepsis (22%), aspiration (15%), trauma (8%), and other causes (20%). Mean age was 51 years, and mean PaO2/FiO2 ratio at enrollment was approximately 130 mmHg. Patients receiving ventilation for more than 36 hours before meeting criteria were excluded.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Primary Endpoint</h4>
+          <p>All-cause mortality before discharge home and breathing without assistance (assessed at 180 days). Secondary endpoints included ventilator-free days, organ failure-free days, and barotrauma rates.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Key Findings</h4>
+          <p>The trial was stopped early by the Data Safety Monitoring Board after an interim analysis demonstrated a statistically significant mortality benefit. Mortality was 31.0% in the lower tidal volume group versus 39.8% in the traditional tidal volume group (absolute risk reduction 8.8%, relative risk reduction 22%, p=0.007, NNT=11). The lower tidal volume group also had significantly more ventilator-free days (mean 12 vs. 10 days, p=0.007) and more organ failure-free days. There was no significant difference in barotrauma rates between groups.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>What Changed in Practice</h4>
+          <p>This trial fundamentally transformed the approach to mechanical ventilation in ARDS and is considered one of the most important critical care trials ever conducted. Low tidal volume ventilation (6 mL/kg PBW) became the standard of care worldwide, effectively ending the era of high tidal volumes in ARDS management. The concept of "lung-protective ventilation" was cemented as a pillar of critical care practice.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>What Critics Said</h4>
+          <p>Critics argued that the control group's 12 mL/kg tidal volume was already higher than what many clinicians were using, potentially inflating the treatment effect. Some pointed out that the higher plateau pressures in the control group (rather than the tidal volume itself) might have been the primary driver of harm. The permissive hypercapnia required in the low tidal volume arm also raised concerns about CO2-related effects on intracranial pressure and hemodynamics.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Where It Stands Now</h4>
+          <p>Low tidal volume ventilation remains the uncontested standard for ARDS management over two decades later. Subsequent studies have extended the concept of lung-protective ventilation to non-ARDS surgical patients. The 2023 ATS/ESICM/SCCM clinical practice guideline continues to recommend tidal volumes of 4&ndash;8 mL/kg PBW (with strong recommendation and moderate certainty). The concept of driving pressure (plateau minus PEEP) has emerged as potentially a more physiologically precise target than tidal volume alone, but low tidal volumes remain the foundation.</p>
+        </div>
+      </div>
+
+      <!-- Favorites Section -->
+      <div class="favorites-section">
+        <div class="favorites-header">
+          <h4>Starred Studies</h4>
+          <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
+        </div>
+        <ul class="favorites-list" id="favorites-list">
+          <li class="favorites-empty">No favorites yet. Star studies to add them here.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ==================== TAB 4: ARCHIVE ==================== -->
+    <section id="archive" class="tab-content">
+
+      <h3 class="section-title" style="margin-top:0;">Archive</h3>
+      <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">Studies and updates that have rolled out of the 30-day window, organized by month.</p>
+
+      <!-- February 2026 -->
+      <div class="archive-month">
+        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
+          <h3>February 2026</h3>
+          <span class="archive-toggle">&#9654;</span>
+        </div>
+        <div class="archive-month-body">
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">Dapagliflozin in CKD Without Diabetes: DAPA-CKD Long-Term Extension</div>
+                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Nephrology &bull; Feb 1, 2026</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>Open-label extension of DAPA-CKD (N=2,906) confirmed sustained 39% relative risk reduction in eGFR decline over 3.5 years in non-diabetic CKD patients (eGFR 25&ndash;75). Benefits were consistent across CKD stages 2&ndash;4 and all proteinuria levels.</p>
+                <p><strong>Bottom Line:</strong> Long-term data solidify SGLT2 inhibitors as standard of care in non-diabetic CKD.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">Updated AGA Guidelines on Biologics for Moderate-Severe UC</div>
+                <div class="archive-card-meta"><span class="pill pill-guideline" style="font-size:0.65rem;padding:2px 8px;">Guideline</span> &bull; Gastroenterology &bull; Feb 5, 2026</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>AGA now conditionally recommends IL-23 inhibitors (mirikizumab, guselkumab) as first-line advanced therapy for moderate-to-severe UC, alongside existing options. Head-to-head network meta-analysis data informed the positioning.</p>
+                <p><strong>Bottom Line:</strong> IL-23 inhibitors join anti-TNFs, vedolizumab, and JAK inhibitors as first-line advanced therapy options for UC.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">Semaglutide and Cardiovascular Outcomes in Non-Diabetic Obesity: SELECT 3-Year Data</div>
+                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Cardiology &bull; Feb 12, 2026</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>Three-year follow-up of SELECT confirmed persistent 20% relative risk reduction in MACE with semaglutide 2.4 mg weekly in obese patients without diabetes. No attenuation of benefit over time. GI side effects led to discontinuation in 7%.</p>
+                <p><strong>Bottom Line:</strong> Sustained cardiovascular benefit of semaglutide in non-diabetic obesity supports long-term use for CV risk reduction beyond weight loss alone.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- January 2026 -->
+      <div class="archive-month">
+        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
+          <h3>January 2026</h3>
+          <span class="archive-toggle">&#9654;</span>
+        </div>
+        <div class="archive-month-body">
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">Cefepime vs. Piperacillin-Tazobactam in Suspected Sepsis: ACORN Extended Follow-up</div>
+                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Critical Care &bull; Jan 8, 2026</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>Extended analysis of ACORN trial (N=2,511) confirmed no significant difference in 90-day mortality between cefepime and piperacillin-tazobactam in suspected sepsis. The cefepime group had significantly more neurotoxicity (encephalopathy, non-convulsive status) particularly in patients with renal dysfunction.</p>
+                <p><strong>Bottom Line:</strong> Both remain reasonable first-line options for empiric sepsis coverage; monitor for cefepime neurotoxicity in renal impairment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">FDA Safety Communication: Updated Black Box Warning for Fluoroquinolones in Aortic Dissection Risk</div>
+                <div class="archive-card-meta"><span class="pill pill-fda" style="font-size:0.65rem;padding:2px 8px;">FDA</span> &bull; Infectious Disease &bull; Jan 15, 2026</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>FDA expanded the black box warning on fluoroquinolones to include new data on aortic dissection and rupture risk, particularly in patients over 65, those with known aortic aneurysm, Marfan syndrome, Ehlers-Danlos syndrome, or uncontrolled hypertension. Risk appears highest in the first 30 days of exposure.</p>
+                <p><strong>Bottom Line:</strong> Avoid fluoroquinolones in patients with aortic risk factors whenever reasonable alternatives exist.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- December 2025 -->
+      <div class="archive-month">
+        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
+          <h3>December 2025</h3>
+          <span class="archive-toggle">&#9654;</span>
+        </div>
+        <div class="archive-month-body">
+
+          <div class="archive-card" onclick="toggleArchiveCard(this)">
+            <div class="archive-card-header">
+              <div>
+                <div class="archive-card-title">Tirzepatide vs. Insulin Glargine in Type 2 Diabetes with CKD: SURPASS-CKD</div>
+                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Endocrinology &bull; Dec 3, 2025</div>
+              </div>
+              <span class="accordion-toggle">+</span>
+            </div>
+            <div class="archive-card-details">
+              <div class="archive-detail-content">
+                <p>Tirzepatide demonstrated superior HbA1c reduction and weight loss compared to insulin glargine in T2DM patients with eGFR 15&ndash;45, with no increased hypoglycemia risk and favorable renal secondary outcomes.</p>
+                <p><strong>Bottom Line:</strong> Tirzepatide appears safe and effective even in advanced CKD, challenging the reliance on insulin in this population.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <p>Paging Dr. Oh &mdash; For educational purposes only. Not a substitute for clinical judgment.</p>
+    <p>Content generated via AI with evidence-based sources. Always verify with primary literature.</p>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    /* ===== TAB SWITCHING ===== */
+    document.querySelectorAll('.tab-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+        document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+        btn.classList.add('active');
+        var target = document.getElementById(btn.getAttribute('data-tab'));
+        if (target) target.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    /* ===== ACCORDION TOGGLE ===== */
+    function toggleAccordion(header) {
+      var accordion = header.parentElement;
+      accordion.classList.toggle('open');
+    }
+
+    /* ===== ARCHIVE MONTH TOGGLE ===== */
+    function toggleArchiveMonth(header) {
+      header.parentElement.classList.toggle('open');
+    }
+
+    /* ===== ARCHIVE CARD EXPAND ===== */
+    function toggleArchiveCard(card) {
+      card.classList.toggle('expanded');
+    }
+
+    /* ===== CURB-65 CALCULATOR ===== */
+    function updateCURB65() {
+      var ids = ['curb-c', 'curb-u', 'curb-r', 'curb-b', 'curb-65'];
+      var score = 0;
+      ids.forEach(function(id) {
+        if (document.getElementById(id).checked) score++;
+      });
+
+      document.getElementById('curb65-score').textContent = score;
+      var interp = document.getElementById('curb65-interp');
+
+      var messages = {
+        0: { cls: 'risk-low',      text: 'Low risk (0.6% 30-day mortality). Consider outpatient treatment.' },
+        1: { cls: 'risk-low',      text: 'Low risk (2.7% 30-day mortality). Consider outpatient treatment with close follow-up.' },
+        2: { cls: 'risk-moderate', text: 'Moderate risk (6.8% 30-day mortality). Consider short inpatient stay or closely supervised outpatient treatment.' },
+        3: { cls: 'risk-high',     text: 'Severe (14.0% 30-day mortality). Hospitalize. Consider ICU admission.' },
+        4: { cls: 'risk-high',     text: 'Severe (27.8% 30-day mortality). Hospitalize with ICU admission recommended.' },
+        5: { cls: 'risk-high',     text: 'Highest risk (57.6% 30-day mortality). Urgent ICU admission.' }
+      };
+
+      var m = messages[score];
+      interp.className = 'score-interpretation ' + m.cls;
+      interp.textContent = m.text;
+    }
+
+    /* ===== qSOFA CALCULATOR ===== */
+    function updateQSOFA() {
+      var ids = ['qsofa-ms', 'qsofa-rr', 'qsofa-sbp'];
+      var score = 0;
+      ids.forEach(function(id) {
+        if (document.getElementById(id).checked) score++;
+      });
+
+      document.getElementById('qsofa-score').textContent = score;
+      var interp = document.getElementById('qsofa-interp');
+
+      if (score < 2) {
+        interp.className = 'score-interpretation risk-low';
+        interp.textContent = 'Low risk. qSOFA negative. Continue standard monitoring.';
+      } else {
+        interp.className = 'score-interpretation risk-high';
+        interp.textContent = 'qSOFA positive (\u22652). Assess for organ dysfunction. Initiate sepsis workup and consider higher level of care.';
+      }
+    }
+
+    /* ===== STAR / FAVORITE BUTTONS ===== */
+    document.querySelectorAll('.action-btn.star').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        btn.classList.toggle('active');
+        var id = btn.getAttribute('data-id');
+        var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+
+        if (btn.classList.contains('active')) {
+          btn.innerHTML = '&#9733;';
+          if (favorites.indexOf(id) === -1) favorites.push(id);
+        } else {
+          btn.innerHTML = '&#9734;';
+          var idx = favorites.indexOf(id);
+          if (idx > -1) favorites.splice(idx, 1);
+        }
+
+        localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
+        updateFavoritesList();
+      });
+    });
+
+    /* ===== FAVORITES LIST ===== */
+    function updateFavoritesList() {
+      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      var list = document.getElementById('favorites-list');
+      if (!list) return;
+
+      if (favorites.length === 0) {
+        list.innerHTML = '<li class="favorites-empty">No favorites yet. Star studies to add them here.</li>';
+        return;
+      }
+
+      var html = '';
+      favorites.forEach(function(id) {
+        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
+        var title = id;
+        if (card) {
+          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
+          if (titleEl) title = titleEl.textContent;
+        }
+        html += '<li><span>' + title + '</span><button class="action-btn" onclick="removeFavorite(\'' + id + '\')" style="opacity:1;font-size:0.9rem;color:var(--english-red);padding:2px 6px;" title="Remove">\u2715</button></li>';
+      });
+      list.innerHTML = html;
+    }
+
+    function removeFavorite(id) {
+      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      var idx = favorites.indexOf(id);
+      if (idx > -1) favorites.splice(idx, 1);
+      localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
+
+      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+      if (btn) {
+        btn.classList.remove('active');
+        btn.innerHTML = '&#9734;';
+      }
+      updateFavoritesList();
+    }
+
+    /* ===== EXPORT FAVORITES TO CLIPBOARD ===== */
+    function exportFavorites() {
+      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      if (favorites.length === 0) {
+        alert('No favorites to export. Star some studies first!');
+        return;
+      }
+
+      var text = 'Paging Dr. Oh \u2014 Starred Landmark Studies\n';
+      text += '========================================\n\n';
+
+      favorites.forEach(function(id, i) {
+        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
+        var title = id;
+        var meta = '';
+        if (card) {
+          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
+          if (titleEl) title = titleEl.textContent;
+          var metaEl = card.querySelector('.landmark-meta') || card.querySelector('.wn-source');
+          if (metaEl) meta = metaEl.textContent.trim();
+        }
+        text += (i + 1) + '. ' + title + '\n   ' + meta + '\n\n';
+      });
+
+      navigator.clipboard.writeText(text).then(function() {
+        var exportBtn = document.getElementById('export-btn');
+        var original = exportBtn.textContent;
+        exportBtn.textContent = 'Copied!';
+        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+      }).catch(function() {
+        /* Fallback for older browsers */
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        var exportBtn = document.getElementById('export-btn');
+        var original = exportBtn.textContent;
+        exportBtn.textContent = 'Copied!';
+        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+      });
+    }
+
+    /* ===== RANDOMIZE BUTTON ===== */
+    var randomizeBtn = document.getElementById('randomize-btn');
+    if (randomizeBtn) {
+      randomizeBtn.addEventListener('click', function() {
+        randomizeBtn.textContent = 'Loading\u2026';
+        randomizeBtn.disabled = true;
+
+        setTimeout(function() {
+          randomizeBtn.textContent = 'Randomize Disease';
+          randomizeBtn.disabled = false;
+          alert('The Randomize feature will load a different disease once the site is connected to the API. Stay tuned!');
+        }, 800);
+      });
+    }
+
+    /* ===== INITIALIZE ON LOAD ===== */
+    (function init() {
+      /* Restore starred favorites from localStorage */
+      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      document.querySelectorAll('.action-btn.star').forEach(function(btn) {
+        if (favorites.indexOf(btn.getAttribute('data-id')) > -1) {
+          btn.classList.add('active');
+          btn.innerHTML = '&#9733;';
+        }
+      });
+      updateFavoritesList();
+    })();
+  </script>
+
+</body>
+</html>
