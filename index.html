@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paging Dr. Oh — Evidence at the Bedside</title>
+  <title>Paging Dr. Oh &mdash; Evidence at the Bedside</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    /* ========== RESET & VARIABLES ========== */
+/* ========== RESET & VARIABLES ========== */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
@@ -811,13 +811,13 @@
 </head>
 <body>
 
-  <!-- ==================== HEADER ==================== -->
+  <!-- HEADER -->
   <header class="site-header">
     <h1>Paging Dr. Oh</h1>
     <p class="tagline">Evidence at the Bedside &mdash; Updated Daily</p>
   </header>
 
-  <!-- ==================== TAB NAVIGATION ==================== -->
+  <!-- TAB NAVIGATION -->
   <nav class="tab-nav">
     <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
     <button class="tab-btn" data-tab="whatsnew">What's New</button>
@@ -827,16 +827,13 @@
 
   <main>
 
-    <!-- ==================== TAB 1: DISEASE OF THE DAY ==================== -->
+    <!-- TAB 1: DISEASE OF THE DAY -->
     <section id="disease" class="tab-content active">
 
-      <!-- Disease Title Card -->
       <div class="disease-header card">
-        <h2>Community-Acquired Pneumonia</h2>
-        <p class="verified-date">Last verified: March 5, 2026</p>
+        <h2>Sepsis and Septic Shock</h2>
+        <p class="verified-date">Last verified: March 6, 2026</p>
       </div>
-
-      <!-- Accordion: Clinical Manifestations -->
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Clinical Manifestations</h3>
@@ -845,24 +842,31 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
-            <ul>
-              <li>Cough (productive or dry), fever, pleuritic chest pain, dyspnea<sup>1</sup></li>
-              <li>Rigors and night sweats &mdash; common with bacterial etiologies</li>
-              <li>Elderly: may present atypically with confusion, falls, or functional decline without respiratory symptoms<sup>2</sup></li>
-            </ul>
-            <p><strong>Exam Findings</strong></p>
-            <ul>
-              <li>Tachypnea, tachycardia</li>
-              <li>Focal crackles or bronchial breath sounds on auscultation</li>
-              <li>Dullness to percussion, increased tactile fremitus over affected area</li>
-              <li>Egophony (E-to-A change) &rarr; suggests consolidation</li>
-              <li>Pleural rub may indicate parapneumonic effusion<sup>1</sup></li>
-            </ul>
+<ul>
+  <li><strong>Fever</strong> (&gt;38.3&deg;C or 101&deg;F) or <strong>hypothermia</strong> (&lt;36&deg;C or 96.8&deg;F)<sup>1</sup></li>
+  <li><strong>Altered mental status</strong> including confusion, delirium, or decreased level of consciousness<sup>1</sup></li>
+  <li><strong>Chills and rigors</strong> associated with fever<sup>2</sup></li>
+  <li><strong>Dyspnea</strong> or shortness of breath<sup>3</sup></li>
+  <li><strong>Malaise, weakness, or fatigue</strong> that may be subtle in elderly or immunocompromised patients<sup>4</sup></li>
+  <li><strong>Nausea and vomiting</strong><sup>2</sup></li>
+  <li><strong>Decreased urination</strong> or oliguria<sup>3</sup></li>
+  <li><strong>Source-specific symptoms</strong> such as cough (pneumonia), urinary frequency (UTI), or abdominal pain (intra-abdominal infection)<sup>5</sup></li>
+</ul>
+<p><strong>Exam Findings</strong></p>
+<ul>
+  <li><strong>Tachycardia</strong> &gt;90 bpm as part of systemic inflammatory response<sup>1</sup></li>
+  <li><strong>Tachypnea</strong> &ge;22 breaths/min (qSOFA criterion)<sup>6</sup></li>
+  <li><strong>Hypotension</strong>: SBP &le;100 mmHg (qSOFA criterion)<sup>6</sup></li>
+  <li><strong>Altered mentation</strong>: Glasgow Coma Scale &lt;15 (qSOFA criterion)<sup>6</sup></li>
+  <li><strong>Signs of hypoperfusion</strong>: delayed capillary refill &gt;2 seconds, mottled skin, cool extremities<sup>7</sup></li>
+  <li><strong>Skin changes</strong>: rash, petechiae, or purpura may indicate specific pathogens<sup>8</sup></li>
+  <li><strong>Evidence of organ dysfunction</strong>: jaundice, decreased urine output, focal neurologic deficits<sup>9</sup></li>
+  <li><strong>Source-specific findings</strong>: lung consolidation, abdominal tenderness, meningeal signs<sup>5</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Differential Diagnosis -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Differential Diagnosis</h3>
@@ -871,32 +875,30 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <p><strong>Common</strong></p>
-            <ul>
-              <li>Acute bronchitis</li>
-              <li>Influenza / COVID-19</li>
-              <li>Pulmonary embolism</li>
-              <li>Heart failure with pulmonary edema</li>
-              <li>Lung malignancy</li>
-              <li>Eosinophilic pneumonia<sup>3</sup></li>
-            </ul>
-            <p><strong>Immunocompromised</strong></p>
-            <ul>
-              <li>Pneumocystis jirovecii (PJP)</li>
-              <li>Fungal pneumonia (Histoplasma, Coccidioides)</li>
-              <li>Mycobacterial infection</li>
-              <li>Coxiella burnetii (Q fever) &mdash; travel/animal exposure<sup>3</sup></li>
-            </ul>
-            <p><strong>Mimics</strong></p>
-            <ul>
-              <li>COPD or asthma exacerbation complicated by infection</li>
-              <li>Drug-induced pneumonitis (amiodarone, methotrexate)</li>
-              <li>Cryptogenic organizing pneumonia<sup>4</sup></li>
-            </ul>
+<ul>
+  <li><strong>Non-infectious SIRS</strong>: burns, trauma, pancreatitis, drug reactions<sup>10</sup></li>
+  <li><strong>Cardiogenic shock</strong>: acute MI, heart failure exacerbation<sup>11</sup></li>
+  <li><strong>Hypovolemic shock</strong>: hemorrhage, dehydration, third-spacing<sup>11</sup></li>
+  <li><strong>Anaphylactic shock</strong>: drug reactions, food allergies<sup>12</sup></li>
+</ul>
+<p><strong>Less Common</strong></p>
+<ul>
+  <li><strong>Adrenal insufficiency</strong>: particularly in critically ill patients<sup>13</sup></li>
+  <li><strong>Thyrotoxicosis</strong>: thyroid storm with systemic effects<sup>14</sup></li>
+  <li><strong>Malignant hyperthermia</strong>: anesthesia-related hyperthermia<sup>15</sup></li>
+  <li><strong>Drug intoxication</strong>: sympathomimetics, anticholinergics<sup>16</sup></li>
+</ul>
+<p><strong>Mimics</strong></p>
+<ul>
+  <li><strong>Heat stroke</strong>: hyperthermia with CNS dysfunction<sup>17</sup></li>
+  <li><strong>Neuroleptic malignant syndrome</strong>: antipsychotic-induced hyperthermia<sup>18</sup></li>
+  <li><strong>Serotonin syndrome</strong>: excessive serotonergic activity<sup>19</sup></li>
+  <li><strong>Systemic vasculitis</strong>: autoimmune inflammatory conditions<sup>20</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Diagnostic Tests -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Diagnostic Tests</h3>
@@ -904,33 +906,32 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Chest X-Ray</strong></p>
-            <ul>
-              <li>Sn 73&ndash;92%, Sp 88&ndash;93% for lobar consolidation; PPV ~85%, NPV ~78%, +LR 6.1, -LR 0.25<sup>5</sup></li>
-              <li>Lateral decubitus views can identify layering effusions missed on standard PA/lateral</li>
-            </ul>
-            <p><strong>Procalcitonin</strong></p>
-            <ul>
-              <li>&gt;0.25 ng/mL supports bacterial etiology: Sn 77%, Sp 79%, +LR 3.7, -LR 0.29<sup>6</sup></li>
-              <li>&lt;0.1 ng/mL makes bacterial pneumonia unlikely</li>
-            </ul>
-            <p><strong>Lung Ultrasound (POCUS)</strong></p>
-            <ul>
-              <li>Sn 94%, Sp 96%, PPV 97%, NPV 93%, +LR 23.5, -LR 0.06 for consolidation<sup>7</sup></li>
-              <li>Outperforms CXR in early disease and non-transportable patients</li>
-            </ul>
-            <p><strong>Microbiology</strong></p>
-            <ul>
-              <li>Sputum Gram stain/culture: Sn 50&ndash;60%, Sp ~80% &mdash; obtain before antibiotics<sup>1</sup></li>
-              <li>Blood cultures: yield 5&ndash;14%; obtain in severe pneumonia</li>
-              <li>Legionella urinary antigen (serogroup 1): Sn 70&ndash;80%, Sp &gt;99%, +LR &gt;70, -LR 0.25</li>
-              <li>S. pneumoniae urinary antigen: Sn 60&ndash;75%, Sp 95%<sup>8</sup></li>
-            </ul>
+            <p><strong>Laboratory Studies</strong></p>
+<ul>
+  <li><strong>Lactate level</strong>: &gt;2 mmol/L (&gt;18 mg/dL) indicates septic shock when combined with hypotension and vasopressor requirement<sup>1</sup></li>
+  <li><strong>Blood cultures</strong>: obtain 2 sets (aerobic/anaerobic) before antibiotics; positive in 30-40% of cases<sup>2</sup></li>
+  <li><strong>Procalcitonin</strong>: &gt;0.25 ng/mL suggests bacterial infection; Sn 77%, Sp 79% for sepsis<sup>3</sup></li>
+  <li><strong>White blood cell count</strong>: may be elevated, normal, or decreased; left shift with bandemia<sup>4</sup></li>
+  <li><strong>C-reactive protein</strong>: non-specific inflammatory marker; elevated &gt;10 mg/L in most cases<sup>5</sup></li>
+  <li><strong>Comprehensive metabolic panel</strong>: assess for organ dysfunction, acidosis, electrolyte abnormalities<sup>6</sup></li>
+</ul>
+<p><strong>Scoring Systems</strong></p>
+<ul>
+  <li><strong>qSOFA score</strong>: Sn 66%, Sp 61%, +LR 1.7, -LR 0.6 for mortality prediction; poor sensitivity for sepsis detection<sup>7</sup></li>
+  <li><strong>SOFA score</strong>: &ge;2-point increase indicates organ dysfunction; AUROC 0.75-0.89 for mortality prediction<sup>8</sup></li>
+  <li><strong>CURB-65</strong>: useful for pneumonia-associated sepsis risk stratification<sup>9</sup></li>
+</ul>
+<p><strong>Source Identification</strong></p>
+<ul>
+  <li><strong>Chest X-ray</strong>: evaluate for pneumonia, ARDS, pleural effusion<sup>10</sup></li>
+  <li><strong>Urinalysis and culture</strong>: assess for urinary tract infection<sup>11</sup></li>
+  <li><strong>CT imaging</strong>: abdomen/pelvis for intra-abdominal source; head if altered mental status<sup>12</sup></li>
+  <li><strong>Echocardiography</strong>: evaluate for endocarditis if bacteremia or new murmur<sup>13</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Treatment -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Treatment</h3>
@@ -938,38 +939,34 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Outpatient, no comorbidities<sup>1</sup></strong></p>
-            <ul>
-              <li>Amoxicillin 1 g TID, OR</li>
-              <li>Doxycycline 100 mg BID, OR</li>
-              <li>Macrolide (azithromycin 500 mg day 1 &rarr; 250 mg days 2&ndash;5) if local pneumococcal resistance &lt;25%</li>
-            </ul>
-            <p><strong>Outpatient with comorbidities</strong> (chronic lung/heart/liver/renal disease, diabetes, alcoholism, malignancy, asplenia)<sup>1</sup></p>
-            <ul>
-              <li>Amoxicillin-clavulanate OR cephalosporin (cefpodoxime, cefuroxime) PLUS macrolide or doxycycline, OR</li>
-              <li>Respiratory fluoroquinolone monotherapy (levofloxacin 750 mg daily or moxifloxacin 400 mg daily)</li>
-            </ul>
-            <p><strong>Inpatient, non-ICU<sup>1</sup></strong></p>
-            <ul>
-              <li>Beta-lactam (ampicillin-sulbactam 1.5&ndash;3 g IV q6h, ceftriaxone 1&ndash;2 g IV daily, or cefotaxime 1&ndash;2 g IV q8h) PLUS macrolide or doxycycline, OR</li>
-              <li>Respiratory fluoroquinolone monotherapy</li>
-            </ul>
-            <p><strong>Inpatient, ICU<sup>1</sup></strong></p>
-            <ul>
-              <li>Beta-lactam PLUS macrolide, OR beta-lactam PLUS respiratory fluoroquinolone</li>
-              <li>MRSA risk factors &rarr; add vancomycin or linezolid</li>
-              <li>Pseudomonas risk factors &rarr; piperacillin-tazobactam, cefepime, or meropenem PLUS fluoroquinolone or aminoglycoside</li>
-            </ul>
-            <p><strong>Duration<sup>1</sup></strong></p>
-            <ul>
-              <li>Minimum 5 days; extend only if not clinically stable</li>
-              <li>Clinical stability = afebrile &ge;48h, HR &le;100, RR &le;24, SBP &ge;90, SpO2 &ge;90% on room air</li>
-            </ul>
+            <p><strong>Emergency Department/Initial Management<sup>1</sup></strong></p>
+<ul>
+  <li><strong>Crystalloid resuscitation</strong>: 30 mL/kg IV within 3 hours for hypotension or lactate &ge;4 mmol/L<sup>2</sup></li>
+  <li><strong>Balanced crystalloids preferred</strong>: Lactated Ringer's or Plasma-Lyte over normal saline<sup>3</sup></li>
+  <li><strong>Broad-spectrum antibiotics</strong>: within 1 hour of sepsis recognition after cultures obtained<sup>4</sup></li>
+  <li><strong>Vasopressors</strong>: norepinephrine first-line if hypotension persists after fluid resuscitation<sup>5</sup></li>
+  <li><strong>Source control</strong>: drainage, debridement, or device removal within 6-12 hours when indicated<sup>6</sup></li>
+</ul>
+<p><strong>Inpatient Non-ICU Management<sup>7</sup></strong></p>
+<ul>
+  <li><strong>Continued antibiotic therapy</strong>: narrow spectrum based on culture results and clinical response<sup>8</sup></li>
+  <li><strong>Fluid management</strong>: conservative approach after initial resuscitation; monitor for fluid overload<sup>9</sup></li>
+  <li><strong>DVT prophylaxis</strong>: pharmacologic prophylaxis unless contraindicated<sup>10</sup></li>
+  <li><strong>Stress ulcer prophylaxis</strong>: PPI therapy for patients with risk factors<sup>11</sup></li>
+  <li><strong>Glycemic control</strong>: target glucose &lt;180 mg/dL<sup>12</sup></li>
+</ul>
+<p><strong>ICU Management<sup>13</sup></strong></p>
+<ul>
+  <li><strong>Norepinephrine</strong>: first-line vasopressor, target MAP &ge;65 mmHg<sup>14</sup></li>
+  <li><strong>Hydrocortisone</strong>: 200 mg/day IV (50 mg q6h or continuous infusion) for refractory shock on vasopressors &ge;0.25 mcg/kg/min for &ge;4 hours<sup>15</sup></li>
+  <li><strong>Mechanical ventilation</strong>: lung-protective strategy if ARDS develops<sup>16</sup></li>
+  <li><strong>ECMO consideration</strong>: for severe ARDS in experienced centers<sup>17</sup></li>
+  <li><strong>Hemodynamic monitoring</strong>: consider arterial line, central venous access as needed<sup>18</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Expected Course -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Expected Course</h3>
@@ -978,18 +975,17 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-              <li>Defervescence within 48&ndash;72 hours of appropriate antibiotics<sup>9</sup></li>
-              <li>Cough and fatigue may persist for weeks beyond clinical resolution</li>
-              <li>Radiographic clearing lags 4&ndash;12 weeks; slower in elderly, smokers, multilobar disease, COPD</li>
-              <li>Median hospital length of stay: 3&ndash;5 days</li>
-              <li>Failure to improve by 72h &rarr; reassess diagnosis; consider complications (empyema, lung abscess, ARDS), resistant organisms, or alternative diagnoses</li>
-              <li>30-day mortality: 5&ndash;15% (hospitalized), 25&ndash;50% (ICU)<sup>1,9</sup></li>
-            </ul>
+  <li><strong>Early phase (0-6 hours)</strong>: rapid clinical deterioration possible; prompt recognition and treatment critical<sup>1</sup></li>
+  <li><strong>Acute phase (6-72 hours)</strong>: organ dysfunction may worsen initially despite appropriate treatment<sup>2</sup></li>
+  <li><strong>Recovery phase (3-7 days)</strong>: gradual improvement in organ function and hemodynamics with effective therapy<sup>3</sup></li>
+  <li><strong>Overall mortality</strong>: sepsis 15-30%, septic shock 40-50% depending on severity and comorbidities<sup>4</sup></li>
+  <li><strong>ICU length of stay</strong>: typically 5-14 days for survivors<sup>5</sup></li>
+  <li><strong>Long-term effects</strong>: post-intensive care syndrome including physical, cognitive, and psychological impairments<sup>6</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Follow-up -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Follow-up</h3>
@@ -998,18 +994,17 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-              <li>Follow-up CXR at 6&ndash;12 weeks post-discharge for patients &gt;50 y/o and smokers &rarr; rule out underlying malignancy<sup>1</sup></li>
-              <li>Earlier reimaging if symptoms do not resolve as expected</li>
-              <li>Review pneumococcal and influenza vaccination status at discharge</li>
-              <li>Provide smoking cessation counseling</li>
-              <li>Post-discharge follow-up within 1&ndash;2 weeks to confirm clinical resolution<sup>1</sup></li>
-              <li>Assess for cardiovascular complications (acute MI, new arrhythmia, worsening HF) &mdash; CAP significantly increases short-term CV risk<sup>10</sup></li>
-            </ul>
+  <li><strong>Post-discharge follow-up</strong>: within 1-2 weeks to assess recovery and address complications<sup>1</sup></li>
+  <li><strong>Antibiotic duration</strong>: typically 7-10 days for most infections; longer for endocarditis, osteomyelitis<sup>2</sup></li>
+  <li><strong>Functional assessment</strong>: evaluate for post-ICU weakness, cognitive impairment, PTSD<sup>3</sup></li>
+  <li><strong>Rehabilitation referral</strong>: consider for patients with prolonged ICU stay &gt;72 hours or mechanical ventilation &gt;48 hours<sup>4</sup></li>
+  <li><strong>Family support</strong>: peer support groups and counseling resources<sup>5</sup></li>
+  <li><strong>Monitoring for recurrence</strong>: immunocompromised patients at higher risk<sup>6</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Accordion: Low-Resource Considerations -->
       <div class="accordion">
         <div class="accordion-header" onclick="toggleAccordion(this)">
           <h3>Low-Resource Considerations</h3>
@@ -1017,311 +1012,149 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Without advanced imaging</strong></p>
-            <ul>
-              <li>Clinical diagnosis via history, vitals, and auscultation remains valid<sup>11</sup></li>
-              <li>Lung ultrasound (if available) substitutes for CT</li>
-              <li>CURB-65 can risk-stratify without labs in some cases</li>
-            </ul>
-            <p><strong>Without subspecialty access</strong></p>
-            <ul>
-              <li>Most CAP managed effectively by generalists</li>
-              <li>Consult ID or pulmonology for non-resolving or recurrent pneumonia</li>
-              <li>Telemedicine can bridge access gaps</li>
-            </ul>
-            <p><strong>Formulary limitations<sup>1,11</sup></strong></p>
-            <ul>
-              <li>Amoxicillin and doxycycline &mdash; widely available, inexpensive</li>
-              <li>Doxycycline substitutes for macrolides for atypical coverage</li>
-              <li>IV ampicillin + doxycycline as alternative if ceftriaxone unavailable</li>
-              <li>Penicillin G remains effective against susceptible pneumococci</li>
-            </ul>
+            <p><strong>Diagnostic Adaptations</strong></p>
+<ul>
+  <li><strong>Clinical assessment priority</strong>: focus on qSOFA criteria when laboratory tests limited<sup>1</sup></li>
+  <li><strong>Point-of-care lactate</strong>: if available, more cost-effective than serial laboratory draws<sup>2</sup></li>
+  <li><strong>Basic blood tests</strong>: complete blood count and basic metabolic panel if lactate unavailable<sup>3</sup></li>
+</ul>
+<p><strong>Treatment Modifications</strong></p>
+<ul>
+  <li><strong>Oral antibiotics</strong>: consider high-bioavailability oral agents if IV access limited<sup>4</sup></li>
+  <li><strong>Crystalloid choice</strong>: normal saline acceptable if balanced crystalloids unavailable<sup>5</sup></li>
+  <li><strong>Simplified protocols</strong>: focus on early recognition, antibiotics, and fluid resuscitation<sup>6</sup></li>
+  <li><strong>Community health worker training</strong>: for early recognition and referral<sup>7</sup></li>
+</ul>
+
           </div>
         </div>
       </div>
-
-      <!-- Clinical Scores Section -->
       <h3 class="section-title">Relevant Clinical Scores</h3>
-
-      <!-- CURB-65 Calculator -->
       <div class="calculator-card" id="curb65-calc">
         <h4>CURB-65 Severity Score</h4>
         <div class="calc-option">
-          <input type="checkbox" id="curb-c" onchange="updateCURB65()">
+          <input type="checkbox" id="curb-c" onchange="update_curb65()">
           <label for="curb-c"><strong>C</strong>onfusion &mdash; new-onset disorientation to person, place, or time</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="curb-u" onchange="updateCURB65()">
+          <input type="checkbox" id="curb-u" onchange="update_curb65()">
           <label for="curb-u"><strong>U</strong>rea (BUN) &gt; 19 mg/dL (7 mmol/L)</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="curb-r" onchange="updateCURB65()">
+          <input type="checkbox" id="curb-r" onchange="update_curb65()">
           <label for="curb-r"><strong>R</strong>espiratory Rate &ge; 30 breaths/min</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="curb-b" onchange="updateCURB65()">
+          <input type="checkbox" id="curb-b" onchange="update_curb65()">
           <label for="curb-b"><strong>B</strong>lood Pressure: SBP &lt; 90 or DBP &le; 60 mmHg</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="curb-65" onchange="updateCURB65()">
+          <input type="checkbox" id="curb-65" onchange="update_curb65()">
           <label for="curb-65">Age &ge; <strong>65</strong> years</label>
         </div>
         <div class="score-result">
-          <span class="score-label">CURB-65 Score</span>
+          <span class="score-label">CURB-65 Severity Score</span>
           <span class="score-value" id="curb65-score">0</span>
           <div class="score-interpretation risk-low" id="curb65-interp">
             Low risk (0.6% 30-day mortality). Consider outpatient treatment.
           </div>
         </div>
       </div>
-
-      <!-- qSOFA Calculator -->
       <div class="calculator-card" id="qsofa-calc">
         <h4>qSOFA (Quick Sepsis-Related Organ Failure Assessment)</h4>
         <div class="calc-option">
-          <input type="checkbox" id="qsofa-ms" onchange="updateQSOFA()">
+          <input type="checkbox" id="qsofa-ms" onchange="update_qsofa()">
           <label for="qsofa-ms">Altered mental status (GCS &lt; 15)</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="qsofa-rr" onchange="updateQSOFA()">
+          <input type="checkbox" id="qsofa-rr" onchange="update_qsofa()">
           <label for="qsofa-rr">Respiratory Rate &ge; 22 breaths/min</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="qsofa-sbp" onchange="updateQSOFA()">
+          <input type="checkbox" id="qsofa-sbp" onchange="update_qsofa()">
           <label for="qsofa-sbp">Systolic Blood Pressure &le; 100 mmHg</label>
         </div>
         <div class="score-result">
-          <span class="score-label">qSOFA Score</span>
+          <span class="score-label">qSOFA (Quick Sepsis-Related Organ Failure Assessment)</span>
           <span class="score-value" id="qsofa-score">0</span>
           <div class="score-interpretation risk-low" id="qsofa-interp">
-            Low risk. qSOFA negative. Continue monitoring.
+            Low risk. qSOFA negative. Continue standard monitoring.
           </div>
         </div>
       </div>
 
-      <!-- Guidelines Quick Reference -->
       <div class="guidelines-box">
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Diagnosis and Treatment of Adults with Community-acquired Pneumonia</div>
-            <div class="guideline-meta">ATS / IDSA &bull; 2019</div>
+            <div class="guideline-name">Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021</div>
+            <div class="guideline-meta">Society of Critical Care Medicine (SCCM) and European Society of Intensive Care Medicine (ESICM) &bull; 2021</div>
           </div>
-          <a href="https://doi.org/10.1164/rccm.201908-1581ST" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1007/s00134-021-06506-y" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Management of Adults with Hospital-acquired and Ventilator-associated Pneumonia</div>
-            <div class="guideline-meta">ATS / IDSA &bull; 2016</div>
+            <div class="guideline-name">Japanese Clinical Practice Guidelines for Management of Sepsis and Septic Shock 2024</div>
+            <div class="guideline-meta">Japanese Society of Intensive Care Medicine and Japanese Association for Acute Medicine &bull; 2024</div>
           </div>
-          <a href="https://doi.org/10.1093/cid/ciw353" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1186/s40560-025-00776-0" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Surviving Sepsis Campaign: International Guidelines</div>
-            <div class="guideline-meta">SCCM / ESICM &bull; 2021</div>
+            <div class="guideline-name">Korean Clinical Practice Guidelines for Early Management of Adult Sepsis and Septic Shock</div>
+            <div class="guideline-meta">Korean Society of Critical Care Medicine &bull; 2024</div>
           </div>
-          <a href="https://doi.org/10.1097/CCM.0000000000005337" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.4266/acc.2024.00920" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
-      <!-- References -->
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Metlay JP, Waterer GW, Long AC, et al. Diagnosis and Treatment of Adults with Community-acquired Pneumonia. An Official Clinical Practice Guideline of the American Thoracic Society and Infectious Diseases Society of America. <em>Am J Respir Crit Care Med.</em> 2019;200(7):e45-e67.</li>
-          <li id="ref-2">Janssens JP, Krause KH. Pneumonia in the very old. <em>Lancet Infect Dis.</em> 2004;4(2):112-124.</li>
-          <li id="ref-3">Mandell LA, Wunderink RG, Anzueto A, et al. Infectious Diseases Society of America/American Thoracic Society consensus guidelines on the management of community-acquired pneumonia in adults. <em>Clin Infect Dis.</em> 2007;44 Suppl 2:S27-72.</li>
-          <li id="ref-4">Fein AM, Feinsilver SH. The approach to nonresolving pneumonia in the elderly. <em>Semin Respir Infect.</em> 1993;8(2):73-82.</li>
-          <li id="ref-5">Self WH, Courtney DM, McNaughton CD, Wunderink RG, Kline JA. High discordance of chest x-ray and computed tomography for detection of pulmonary opacities in ED patients. <em>Ann Emerg Med.</em> 2013;62(5):457-461.</li>
-          <li id="ref-6">Schuetz P, Wirz Y, Sager R, et al. Procalcitonin to initiate or discontinue antibiotics in acute respiratory tract infections. <em>Cochrane Database Syst Rev.</em> 2017;10:CD007498.</li>
-          <li id="ref-7">Ye X, Xiao H, Chen B, Zhang S. Accuracy of lung ultrasonography versus chest radiography for the diagnosis of adult community-acquired pneumonia. <em>PLoS One.</em> 2015;10(6):e0130066.</li>
-          <li id="ref-8">Murdoch DR, Laing RT, Cook JM. The NOW S. pneumoniae urinary antigen test positivity rate 6 weeks after pneumonia onset. <em>Clin Infect Dis.</em> 2003;37(1):153-154.</li>
-          <li id="ref-9">Fine MJ, Stone RA, Singer DE, et al. Processes and outcomes of care for patients with community-acquired pneumonia. <em>Arch Intern Med.</em> 1999;159(9):970-980.</li>
-          <li id="ref-10">Corrales-Medina VF, Alvarez KN, Weissfeld LA, et al. Association between hospitalization for pneumonia and subsequent risk of cardiovascular disease. <em>JAMA.</em> 2015;313(3):264-274.</li>
-          <li id="ref-11">Prina E, Ranzani OT, Torres A. Community-acquired pneumonia. <em>Lancet.</em> 2015;386(9998):1097-1108.</li>
+          <li id="ref-1"><cite index="3-22,3-23">Singer M, Deutschman CS, Seymour CW, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016;315(8):801-810.</cite></li>
+          <li id="ref-2"><cite index="22-2,22-3">Evans L, Rhodes A, Alhazzani W, et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47(11):1181-1247.</cite></li>
+          <li id="ref-3"><cite index="7-1,7-13">Seymour CW, Liu VX, Iwashyna TJ, et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016;315(8):762-774.</cite></li>
+          <li id="ref-4"><cite index="12-16,12-17">Lambden S, Laterre PF, Levy MM, Francois B. The SOFA score-development, utility and challenges of accurate assessment in clinical trials. Crit Care. 2019;23(1):374.</cite></li>
+          <li id="ref-5"><cite index="11-13,11-14">Williams JM, Greenslade JH, McKenzie JV, et al. SIRS, qSOFA and organ dysfunction: insights from a prospective database of emergency department patients with infection. Chest. 2017;151(3):586-596.</cite></li>
+          <li id="ref-6"><cite index="19-11,19-12">Serafim R, Gomes JA, Salluh J, Póvoa P. A comparison of the Quick-SOFA and systemic inflammatory response syndrome criteria for the diagnosis of sepsis and prediction of mortality. Chest. 2018;153(3):646-655.</cite></li>
+          <li id="ref-7"><cite index="26-21,26-24">Rhodes A, Evans LE, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2017. Intensive Care Med. 2017;43(3):304-377.</cite></li>
+          <li id="ref-8"><cite index="2-8,2-9">Ferrer R, Martin-Loeches I, Phillips G, et al. Empiric antibiotic treatment reduces mortality in severe sepsis and septic shock from the first hour. Crit Care Med. 2014;42(8):1749-1755.</cite></li>
+          <li id="ref-9"><cite index="31-7,31-23">Gamper G, Havel C, Arrich J, et al. Vasopressors for hypotensive shock. Cochrane Database Syst Rev. 2016;2:CD003709.</cite></li>
+          <li id="ref-10"><cite index="7-16,7-17">Annane D, Renault A, Brun-Buisson C, et al. Hydrocortisone plus fludrocortisone for adults with septic shock. N Engl J Med. 2018;378(9):809-818.</cite></li>
+          <li id="ref-11"><cite index="40-25,40-26">Semler MW, Self WH, Wanderer JP, et al. Balanced crystalloids versus saline in critically ill adults. N Engl J Med. 2018;378(9):829-839.</cite></li>
+          <li id="ref-12"><cite index="24-1,24-17">Levy MM, Evans LE, Rhodes A. The Surviving Sepsis Campaign Bundle: 2018 update. Intensive Care Med. 2018;44(6):925-928.</cite></li>
         </ol>
       </div>
 
-      <!-- Randomize Button -->
       <div class="randomize-wrap">
         <button class="btn btn-primary" id="randomize-btn">Randomize Disease</button>
       </div>
-
     </section>
 
-    <!-- ==================== TAB 2: WHAT'S NEW ==================== -->
+    <!-- TAB 2: WHAT'S NEW -->
     <section id="whatsnew" class="tab-content">
 
       <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>
-
-      <!-- Card 1: RCT -->
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">RCT</span>
-            <span class="pill pill-specialty">Critical Care</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="wn-1">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">NEJM &bull; February 27, 2026</div>
-        <div class="wn-title">Balanced Crystalloids vs. Normal Saline in Critically Ill Adults: Extended Follow-up of the SMART Trial</div>
-        <div class="wn-section-label">Study Design</div>
-        <p class="wn-text">Multicenter, cluster-randomized, crossover trial across 5 ICUs. N=15,802 adults receiving IV crystalloid for any indication. Primary outcome: major adverse kidney events at 90 days (MAKE90).</p>
-        <div class="wn-section-label">Key Findings</div>
-        <p class="wn-text">The extended 2-year follow-up demonstrated persistent reduction in composite renal endpoint favoring balanced crystalloids (HR 0.88, 95% CI 0.79&ndash;0.97). Subgroup analysis showed the benefit was most pronounced in sepsis and post-surgical populations.</p>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Strengthens the case for balanced crystalloids as default IV fluid in critically ill patients, particularly those with sepsis or AKI risk factors.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="#" class="source-link">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <!-- Card 2: Guideline -->
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-guideline">Guideline</span>
-            <span class="pill pill-specialty">Cardiology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="wn-2">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">AHA / ACC &bull; February 20, 2026</div>
-        <div class="wn-title">Updated Guidelines for the Management of Chronic Heart Failure: Focus on SGLT2 Inhibitor Positioning</div>
-        <div class="wn-section-label">Summary</div>
-        <p class="wn-text">New guideline elevates SGLT2 inhibitors (dapagliflozin, empagliflozin) to Class I recommendation across all heart failure phenotypes (HFrEF, HFmrEF, and HFpEF), regardless of diabetes status. Recommended as part of foundational therapy alongside ARNIs, beta-blockers, and MRAs.</p>
-        <div class="wn-section-label">Key Changes</div>
-        <p class="wn-text">Previous guidelines recommended SGLT2 inhibitors as Class I only for HFrEF. The update expands this to HFpEF based on DELIVER and EMPEROR-Preserved data, creating a unified recommendation across the EF spectrum.</p>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> SGLT2 inhibitors are now foundational therapy for all heart failure patients. Start early regardless of EF or diabetes status.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="#" class="source-link">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <!-- Card 3: Meta-analysis -->
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-meta">Meta-Analysis</span>
-            <span class="pill pill-specialty">Infectious Disease</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="wn-3">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">The Lancet Infectious Diseases &bull; February 14, 2026</div>
-        <div class="wn-title">Short-Course vs. Standard-Duration Antibiotic Therapy for Community-Acquired Pneumonia: Individual Patient Data Meta-Analysis</div>
-        <div class="wn-section-label">Study Design</div>
-        <p class="wn-text">Individual patient data meta-analysis of 12 RCTs (N=5,284). Compared 3&ndash;5 day vs. 7&ndash;14 day antibiotic courses for hospitalized adults with CAP. Primary outcome: clinical cure at 15&ndash;30 days.</p>
-        <div class="wn-section-label">Key Findings</div>
-        <p class="wn-text">Short-course therapy was noninferior to standard-duration therapy for clinical cure (87.3% vs. 88.1%; risk difference -0.8%, 95% CI -2.8% to 1.2%). No difference in 30-day mortality (3.1% vs. 3.4%). Short-course groups had lower rates of C. difficile infection (1.2% vs. 2.8%, p=0.003) and shorter hospital stays.</p>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> 3&ndash;5 days of antibiotics is sufficient for most hospitalized CAP patients who reach clinical stability, with fewer adverse effects than longer courses.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="#" class="source-link">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <!-- Card 4: FDA Action -->
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-fda">FDA Action</span>
-            <span class="pill pill-specialty">Hematology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="wn-4">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">FDA &bull; February 10, 2026</div>
-        <div class="wn-title">FDA Approves Abelacimab for VTE Prophylaxis in Medically Ill Patients</div>
-        <div class="wn-section-label">Summary</div>
-        <p class="wn-text">Abelacimab, a monoclonal antibody targeting Factor XI, received FDA approval for venous thromboembolism prophylaxis in hospitalized medically ill patients based on the ANT-005 Phase III trial (N=3,468).</p>
-        <div class="wn-section-label">Key Findings</div>
-        <p class="wn-text">Monthly subcutaneous dosing reduced VTE events by 56% vs. placebo (HR 0.44, 95% CI 0.30&ndash;0.64) with no significant increase in major bleeding (0.3% vs. 0.2%, p=0.58). This dissociation of antithrombotic efficacy from bleeding risk represents a potential paradigm shift in anticoagulation.</p>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> First Factor XI inhibitor approved for VTE prevention. Offers effective thromboprophylaxis with dramatically lower bleeding risk than traditional anticoagulants.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-moderate">
-            <span class="confidence-dot"></span>
-            Moderate confidence &mdash; single pivotal trial
-          </div>
-          <a href="#" class="source-link">View Source &#8594;</a>
-        </div>
-      </div>
+      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>
 
     </section>
 
-    <!-- ==================== TAB 3: LANDMARK STUDY ==================== -->
+    <!-- TAB 3: LANDMARK STUDY -->
     <section id="landmark" class="tab-content">
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">ARDS Network: Low Tidal Volume Ventilation (ARMA Trial)</h3>
-          <button class="action-btn star" data-id="arma-2000" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">TTM2 — Hypothermia vs Normothermia After Cardiac Arrest</h3>
+          <button class="action-btn star" data-id="ttm2-—-hypothermia-vs-normothe" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">
-          NEJM &bull; 2000 &bull; The Acute Respiratory Distress Syndrome Network
-        </div>
+        <div class="landmark-meta">NEJM &bull; 2021</div>
 
         <div class="landmark-section">
           <h4>Study Design</h4>
-          <p>Multicenter, randomized controlled trial conducted across 10 university centers in the NHLBI ARDS Clinical Trials Network. Enrolled 861 patients with acute lung injury (ALI) or ARDS meeting the American-European Consensus Conference criteria. Patients were randomized to receive mechanical ventilation with either a traditional tidal volume of 12 mL/kg predicted body weight or a lower tidal volume of 6 mL/kg predicted body weight, with plateau pressure limits of 50 and 30 cm H2O, respectively.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>Population</h4>
-          <p>Adults with ALI/ARDS from diverse etiologies including pneumonia (35%), sepsis (22%), aspiration (15%), trauma (8%), and other causes (20%). Mean age was 51 years, and mean PaO2/FiO2 ratio at enrollment was approximately 130 mmHg. Patients receiving ventilation for more than 36 hours before meeting criteria were excluded.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>Primary Endpoint</h4>
-          <p>All-cause mortality before discharge home and breathing without assistance (assessed at 180 days). Secondary endpoints included ventilator-free days, organ failure-free days, and barotrauma rates.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>Key Findings</h4>
-          <p>The trial was stopped early by the Data Safety Monitoring Board after an interim analysis demonstrated a statistically significant mortality benefit. Mortality was 31.0% in the lower tidal volume group versus 39.8% in the traditional tidal volume group (absolute risk reduction 8.8%, relative risk reduction 22%, p=0.007, NNT=11). The lower tidal volume group also had significantly more ventilator-free days (mean 12 vs. 10 days, p=0.007) and more organ failure-free days. There was no significant difference in barotrauma rates between groups.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>What Changed in Practice</h4>
-          <p>This trial fundamentally transformed the approach to mechanical ventilation in ARDS and is considered one of the most important critical care trials ever conducted. Low tidal volume ventilation (6 mL/kg PBW) became the standard of care worldwide, effectively ending the era of high tidal volumes in ARDS management. The concept of "lung-protective ventilation" was cemented as a pillar of critical care practice.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>What Critics Said</h4>
-          <p>Critics argued that the control group's 12 mL/kg tidal volume was already higher than what many clinicians were using, potentially inflating the treatment effect. Some pointed out that the higher plateau pressures in the control group (rather than the tidal volume itself) might have been the primary driver of harm. The permissive hypercapnia required in the low tidal volume arm also raised concerns about CO2-related effects on intracranial pressure and hemodynamics.</p>
-        </div>
-
-        <div class="landmark-section">
-          <h4>Where It Stands Now</h4>
-          <p>Low tidal volume ventilation remains the uncontested standard for ARDS management over two decades later. Subsequent studies have extended the concept of lung-protective ventilation to non-ARDS surgical patients. The 2023 ATS/ESICM/SCCM clinical practice guideline continues to recommend tidal volumes of 4&ndash;8 mL/kg PBW (with strong recommendation and moderate certainty). The concept of driving pressure (plateau minus PEEP) has emerged as potentially a more physiologically precise target than tidal volume alone, but low tidal volumes remain the foundation.</p>
+          <p>Content generation failed. Please try again tomorrow.</p>
         </div>
       </div>
 
-      <!-- Favorites Section -->
       <div class="favorites-section">
         <div class="favorites-header">
           <h4>Starred Studies</h4>
@@ -1331,156 +1164,56 @@
           <li class="favorites-empty">No favorites yet. Star studies to add them here.</li>
         </ul>
       </div>
-
     </section>
 
-    <!-- ==================== TAB 4: ARCHIVE ==================== -->
+    <!-- TAB 4: ARCHIVE -->
     <section id="archive" class="tab-content">
 
       <h3 class="section-title" style="margin-top:0;">Archive</h3>
       <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">Studies and updates that have rolled out of the 30-day window, organized by month.</p>
-
-      <!-- February 2026 -->
-      <div class="archive-month">
-        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
-          <h3>February 2026</h3>
-          <span class="archive-toggle">&#9654;</span>
-        </div>
-        <div class="archive-month-body">
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">Dapagliflozin in CKD Without Diabetes: DAPA-CKD Long-Term Extension</div>
-                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Nephrology &bull; Feb 1, 2026</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>Open-label extension of DAPA-CKD (N=2,906) confirmed sustained 39% relative risk reduction in eGFR decline over 3.5 years in non-diabetic CKD patients (eGFR 25&ndash;75). Benefits were consistent across CKD stages 2&ndash;4 and all proteinuria levels.</p>
-                <p><strong>Bottom Line:</strong> Long-term data solidify SGLT2 inhibitors as standard of care in non-diabetic CKD.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">Updated AGA Guidelines on Biologics for Moderate-Severe UC</div>
-                <div class="archive-card-meta"><span class="pill pill-guideline" style="font-size:0.65rem;padding:2px 8px;">Guideline</span> &bull; Gastroenterology &bull; Feb 5, 2026</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>AGA now conditionally recommends IL-23 inhibitors (mirikizumab, guselkumab) as first-line advanced therapy for moderate-to-severe UC, alongside existing options. Head-to-head network meta-analysis data informed the positioning.</p>
-                <p><strong>Bottom Line:</strong> IL-23 inhibitors join anti-TNFs, vedolizumab, and JAK inhibitors as first-line advanced therapy options for UC.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">Semaglutide and Cardiovascular Outcomes in Non-Diabetic Obesity: SELECT 3-Year Data</div>
-                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Cardiology &bull; Feb 12, 2026</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>Three-year follow-up of SELECT confirmed persistent 20% relative risk reduction in MACE with semaglutide 2.4 mg weekly in obese patients without diabetes. No attenuation of benefit over time. GI side effects led to discontinuation in 7%.</p>
-                <p><strong>Bottom Line:</strong> Sustained cardiovascular benefit of semaglutide in non-diabetic obesity supports long-term use for CV risk reduction beyond weight loss alone.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- January 2026 -->
-      <div class="archive-month">
-        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
-          <h3>January 2026</h3>
-          <span class="archive-toggle">&#9654;</span>
-        </div>
-        <div class="archive-month-body">
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">Cefepime vs. Piperacillin-Tazobactam in Suspected Sepsis: ACORN Extended Follow-up</div>
-                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Critical Care &bull; Jan 8, 2026</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>Extended analysis of ACORN trial (N=2,511) confirmed no significant difference in 90-day mortality between cefepime and piperacillin-tazobactam in suspected sepsis. The cefepime group had significantly more neurotoxicity (encephalopathy, non-convulsive status) particularly in patients with renal dysfunction.</p>
-                <p><strong>Bottom Line:</strong> Both remain reasonable first-line options for empiric sepsis coverage; monitor for cefepime neurotoxicity in renal impairment.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">FDA Safety Communication: Updated Black Box Warning for Fluoroquinolones in Aortic Dissection Risk</div>
-                <div class="archive-card-meta"><span class="pill pill-fda" style="font-size:0.65rem;padding:2px 8px;">FDA</span> &bull; Infectious Disease &bull; Jan 15, 2026</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>FDA expanded the black box warning on fluoroquinolones to include new data on aortic dissection and rupture risk, particularly in patients over 65, those with known aortic aneurysm, Marfan syndrome, Ehlers-Danlos syndrome, or uncontrolled hypertension. Risk appears highest in the first 30 days of exposure.</p>
-                <p><strong>Bottom Line:</strong> Avoid fluoroquinolones in patients with aortic risk factors whenever reasonable alternatives exist.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- December 2025 -->
-      <div class="archive-month">
-        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
-          <h3>December 2025</h3>
-          <span class="archive-toggle">&#9654;</span>
-        </div>
-        <div class="archive-month-body">
-
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">Tirzepatide vs. Insulin Glargine in Type 2 Diabetes with CKD: SURPASS-CKD</div>
-                <div class="archive-card-meta"><span class="pill pill-rct" style="font-size:0.65rem;padding:2px 8px;">RCT</span> &bull; Endocrinology &bull; Dec 3, 2025</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>Tirzepatide demonstrated superior HbA1c reduction and weight loss compared to insulin glargine in T2DM patients with eGFR 15&ndash;45, with no increased hypoglycemia risk and favorable renal secondary outcomes.</p>
-                <p><strong>Bottom Line:</strong> Tirzepatide appears safe and effective even in advanced CKD, challenging the reliance on insulin in this population.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+      <p style="color:var(--gray); font-style:italic;">No archived items yet. Items will appear here after 30 days.</p>
 
     </section>
 
   </main>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <p>Paging Dr. Oh &mdash; For educational purposes only. Not a substitute for clinical judgment.</p>
     <p>Content generated via AI with evidence-based sources. Always verify with primary literature.</p>
   </footer>
 
-  <!-- ==================== JAVASCRIPT ==================== -->
   <script>
+
+    function update_curb65() {
+      var criteria = [{"id": "curb-c", "pts": 1}, {"id": "curb-u", "pts": 1}, {"id": "curb-r", "pts": 1}, {"id": "curb-b", "pts": 1}, {"id": "curb-65", "pts": 1}];
+      var score = 0;
+      criteria.forEach(function(c) {
+        if (document.getElementById(c.id).checked) score += c.pts;
+      });
+      document.getElementById('curb65-score').textContent = score;
+      var interp = document.getElementById('curb65-interp');
+      if (score <= 0) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low risk (0.6% 30-day mortality). Consider outpatient treatment.'; }
+      else if (score <= 1) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low risk (2.7% mortality). Consider outpatient with close follow-up.'; }
+      else if (score <= 2) { interp.className = 'score-interpretation risk-moderate'; interp.textContent = 'Moderate risk (6.8% mortality). Consider short inpatient stay or closely supervised outpatient.'; }
+      else if (score <= 3) { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Severe (14.0% mortality). Hospitalize. Consider ICU admission.'; }
+      else if (score <= 4) { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Severe (27.8% mortality). Hospitalize with ICU admission recommended.'; }
+      else { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Highest risk (57.6% mortality). Urgent ICU admission.'; }
+    }
+
+    function update_qsofa() {
+      var criteria = [{"id": "qsofa-ms", "pts": 1}, {"id": "qsofa-rr", "pts": 1}, {"id": "qsofa-sbp", "pts": 1}];
+      var score = 0;
+      criteria.forEach(function(c) {
+        if (document.getElementById(c.id).checked) score += c.pts;
+      });
+      document.getElementById('qsofa-score').textContent = score;
+      var interp = document.getElementById('qsofa-interp');
+      if (score <= 1) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low risk. qSOFA negative. Continue standard monitoring.'; }
+      else { interp.className = 'score-interpretation risk-high'; interp.textContent = 'qSOFA positive (&ge;2). Assess for organ dysfunction. Initiate sepsis workup and consider higher level of care.'; }
+    }
+
+
     /* ===== TAB SWITCHING ===== */
     document.querySelectorAll('.tab-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
@@ -1507,51 +1240,6 @@
     /* ===== ARCHIVE CARD EXPAND ===== */
     function toggleArchiveCard(card) {
       card.classList.toggle('expanded');
-    }
-
-    /* ===== CURB-65 CALCULATOR ===== */
-    function updateCURB65() {
-      var ids = ['curb-c', 'curb-u', 'curb-r', 'curb-b', 'curb-65'];
-      var score = 0;
-      ids.forEach(function(id) {
-        if (document.getElementById(id).checked) score++;
-      });
-
-      document.getElementById('curb65-score').textContent = score;
-      var interp = document.getElementById('curb65-interp');
-
-      var messages = {
-        0: { cls: 'risk-low',      text: 'Low risk (0.6% 30-day mortality). Consider outpatient treatment.' },
-        1: { cls: 'risk-low',      text: 'Low risk (2.7% 30-day mortality). Consider outpatient treatment with close follow-up.' },
-        2: { cls: 'risk-moderate', text: 'Moderate risk (6.8% 30-day mortality). Consider short inpatient stay or closely supervised outpatient treatment.' },
-        3: { cls: 'risk-high',     text: 'Severe (14.0% 30-day mortality). Hospitalize. Consider ICU admission.' },
-        4: { cls: 'risk-high',     text: 'Severe (27.8% 30-day mortality). Hospitalize with ICU admission recommended.' },
-        5: { cls: 'risk-high',     text: 'Highest risk (57.6% 30-day mortality). Urgent ICU admission.' }
-      };
-
-      var m = messages[score];
-      interp.className = 'score-interpretation ' + m.cls;
-      interp.textContent = m.text;
-    }
-
-    /* ===== qSOFA CALCULATOR ===== */
-    function updateQSOFA() {
-      var ids = ['qsofa-ms', 'qsofa-rr', 'qsofa-sbp'];
-      var score = 0;
-      ids.forEach(function(id) {
-        if (document.getElementById(id).checked) score++;
-      });
-
-      document.getElementById('qsofa-score').textContent = score;
-      var interp = document.getElementById('qsofa-interp');
-
-      if (score < 2) {
-        interp.className = 'score-interpretation risk-low';
-        interp.textContent = 'Low risk. qSOFA negative. Continue standard monitoring.';
-      } else {
-        interp.className = 'score-interpretation risk-high';
-        interp.textContent = 'qSOFA positive (\u22652). Assess for organ dysfunction. Initiate sepsis workup and consider higher level of care.';
-      }
     }
 
     /* ===== STAR / FAVORITE BUTTONS ===== */
@@ -1623,7 +1311,7 @@
         return;
       }
 
-      var text = 'Paging Dr. Oh \u2014 Starred Landmark Studies\n';
+      var text = 'Paging Dr. Oh \u2014 Starred Studies\n';
       text += '========================================\n\n';
 
       favorites.forEach(function(id, i) {
@@ -1646,7 +1334,6 @@
         exportBtn.textContent = 'Copied!';
         setTimeout(function() { exportBtn.textContent = original; }, 2000);
       }).catch(function() {
-        /* Fallback for older browsers */
         var ta = document.createElement('textarea');
         ta.value = text;
         document.body.appendChild(ta);
@@ -1666,18 +1353,16 @@
       randomizeBtn.addEventListener('click', function() {
         randomizeBtn.textContent = 'Loading\u2026';
         randomizeBtn.disabled = true;
-
         setTimeout(function() {
           randomizeBtn.textContent = 'Randomize Disease';
           randomizeBtn.disabled = false;
-          alert('The Randomize feature will load a different disease once the site is connected to the API. Stay tuned!');
-        }, 800);
+          alert('A brand-new disease is generated every day at 6 AM UTC.  Come back tomorrow for a fresh topic!');
+        }, 600);
       });
     }
 
     /* ===== INITIALIZE ON LOAD ===== */
     (function init() {
-      /* Restore starred favorites from localStorage */
       var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
       document.querySelectorAll('.action-btn.star').forEach(function(btn) {
         if (favorites.indexOf(btn.getAttribute('data-id')) > -1) {
@@ -1687,6 +1372,7 @@
       });
       updateFavoritesList();
     })();
+
   </script>
 
 </body>

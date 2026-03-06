@@ -1,6 +1,16 @@
 {
-  "diseases_shown": [],
-  "landmark_studies_shown": [],
+  "diseases_shown": [
+    "Hypertensive Emergency",
+    "Osteomyelitis",
+    "Rhabdomyolysis",
+    "Sepsis and Septic Shock"
+  ],
+  "landmark_studies_shown": [
+    "triton-2007",
+    "clots1-2009",
+    "fame-2009",
+    "ttm2-2021"
+  ],
   "whats_new_ids": [],
-  "last_run": null
+  "last_run": "2026-03-06"
 }
