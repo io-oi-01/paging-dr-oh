@@ -22,7 +22,9 @@ Required files (in the same directory):
 # SECTION 1 — IMPORTS & CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════════
 
-import os, sys, json, random, re, traceback
+import os, sys, json, random, re, traceback, time
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
 try:
@@ -347,16 +349,25 @@ def call_claude(prompt, use_search=False, max_tokens=16000):
     }
     if use_search:
         kwargs["tools"] = [
-            {"type": "web_search_20250305", "name": "web_search", "max_uses": 5}
+            {"type": "web_search_20250305", "name": "web_search", "max_uses": 3}
         ]
-    response = CLIENT.messages.create(**kwargs)
 
-    # Collect all text blocks from the response
-    parts = []
-    for block in response.content:
-        if hasattr(block, "text"):
-            parts.append(block.text)
-    return "\n".join(parts)
+    # Retry with exponential backoff for rate limits
+    for attempt in range(3):
+        try:
+            response = CLIENT.messages.create(**kwargs)
+            parts = []
+            for block in response.content:
+                if hasattr(block, "text"):
+                    parts.append(block.text)
+            return "\n".join(parts)
+        except Exception as e:
+            if "rate_limit" in str(e).lower() and attempt < 2:
+                wait = 60 * (attempt + 1)  # 60s, then 120s
+                print(f"  Rate limited. Waiting {wait}s before retry ({attempt+1}/2)...")
+                time.sleep(wait)
+            else:
+                raise
 
 
 def parse_json_response(text):
@@ -378,6 +389,24 @@ def parse_json_response(text):
             if depth == 0:
                 return json.loads(text[start : i + 1])
     raise ValueError("No JSON found in API response")
+
+
+def extract_json_array(text):
+    """Extract the first JSON array from text, even if nested inside an object."""
+    text = re.sub(r"```json\s*", "", text)
+    text = re.sub(r"```\s*", "", text)
+    start = text.find("[")
+    if start == -1:
+        raise ValueError("No JSON array found in response")
+    depth = 0
+    for i in range(start, len(text)):
+        if text[i] == "[":
+            depth += 1
+        elif text[i] == "]":
+            depth -= 1
+        if depth == 0:
+            return json.loads(text[start : i + 1])
+    raise ValueError("Unterminated JSON array in response")
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -476,59 +505,301 @@ Return ONLY valid JSON (no markdown fences, no extra text) with this structure:
         }
 
 
-def generate_whats_new(history):
-    """Call Claude (with web search) to find notable recent medical updates."""
-    existing_ids = history.get("whats_new_ids", [])
-    prompt = f"""You are a medical news curator for "Paging Dr. Oh," a daily reference for
-hospitalists and internal medicine physicians.
+# ═══════════════════════════════════════════════════════════════════════
+# SECTION 5b — RSS FEED SYSTEM  (What's New content via journal feeds)
+# ═══════════════════════════════════════════════════════════════════════
 
-Today is {TODAY_STR}. Search the web for notable medical updates from the past
-30 days (since {THIRTY_DAYS_AGO}). Find items in these categories:
+RSS_FEEDS = [
+    # ── General IM / Hospital Medicine ──────────────────────────────────────
+    ("Annals of Internal Medicine",      "https://www.acpjournals.org/action/showFeed?jc=aim&type=etoc&feed=rss"),
+    ("JAMA",                             "https://jamanetwork.com/rss/site_3/67.xml"),
+    ("JAMA Internal Medicine",           "https://jamanetwork.com/rss/site_15/71.xml"),
+    ("NEJM",                             "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss"),
 
-1. NOTABLE STUDIES — Important RCTs, meta-analyses, or major observational studies
-   published in top medical journals (NEJM, JAMA, Lancet, BMJ, Annals of Internal Medicine,
-   CHEST, Critical Care Medicine, Circulation, etc.)
+    # ── Cardiology ───────────────────────────────────────────────────────────
+    ("American Journal of Cardiology",   "https://www.ajconline.org/current.rss"),
+    ("JACC",                             "https://rss.sciencedirect.com/publication/science/07351097"),
+    ("JAMA Cardiology",                  "https://jamanetwork.com/rss/site_192/mostReadArticles.xml"),
+    ("Nature Reviews Cardiology",        "https://www.nature.com/nrcardio.rss"),
+    ("Circulation",                      "https://www.ahajournals.org/action/showFeed?jc=circ&type=etoc&feed=rss"),
 
-2. GUIDELINES — New or updated clinical practice guidelines from major societies
-   (ATS, IDSA, AHA, ACC, AASLD, AGA, ACR, KDIGO, etc.)
+    # ── Pulm / Critical Care ─────────────────────────────────────────────────
+    ("CHEST",                            "https://journal.chestnet.org/current.rss"),
+    ("EMCrit",                           "https://feeds.feedburner.com/emcrit"),
 
-3. FDA ACTIONS — New drug approvals, expanded indications, safety communications,
-   black box warning updates, or drug withdrawals.
+    # ── ID / Nephrology ──────────────────────────────────────────────────────
+    ("ACS Infectious Diseases",          "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aidcbc"),
+    ("Clinical Infectious Diseases",     "https://academic.oup.com/rss/site_5269/3135.xml"),
+    ("Lancet Infectious Diseases",       "https://rss.sciencedirect.com/publication/science/14733099"),
 
-Find 3-5 total items that are MOST relevant to a hospitalist physician.
+    # ── Guidelines / Safety ──────────────────────────────────────────────────
+    ("ACP",                              "https://www.acponline.org/news/rss.xml"),
+    ("ACC Anticoagulation/AF",           "https://www.acc.org/Feed?clinicalTopicID=07fcd7df-a463-421b-b927-d29a1be75766"),
+    ("CDC Newsroom",                     "https://tools.cdc.gov/api/v2/resources/media/132608.rss"),
+    ("CDC MMWR",                         "https://tools.cdc.gov/api/v2/resources/media/342778.rss"),
+    ("FDA MedWatch",                     "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml"),
+    ("FDA Press Releases",               "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"),
+    ("FDA Drug Approvals",               "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drugs/rss.xml"),
+
+    # ── Medical News ─────────────────────────────────────────────────────────
+    ("Medscape Medical News",            "https://www.medscape.com/cx/rssfeeds/2700.xml"),
+    ("AAFP News",                        "https://www.aafp.org/content/brand/aafp/news.rss.xml"),
+]
+
+# Namespaces commonly used in RSS/RDF feeds
+RSS_NAMESPACES = {
+    "rss1":  "http://purl.org/rss/1.0/",
+    "dc":    "http://purl.org/dc/elements/1.1/",
+    "prism": "http://prismstandard.org/namespaces/basic/2.0/",
+    "atom":  "http://www.w3.org/2005/Atom",
+}
+
+
+def fetch_rss_items(label, url, max_items=10):
+    """Fetch and parse an RSS feed, returning a list of {title, link, date, source}."""
+    items = []
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw_xml = resp.read()
+        root = ET.fromstring(raw_xml)
+    except Exception as e:
+        print(f"    WARNING: Could not fetch {label} RSS: {e}")
+        return []
+
+    # --- RSS 2.0 (<channel><item>...) ---
+    for item_el in root.findall(".//item")[:max_items]:
+        title = (item_el.findtext("title") or "").strip()
+        link  = (item_el.findtext("link") or "").strip()
+        date  = (item_el.findtext("pubDate") or
+                 item_el.findtext(f"{{{RSS_NAMESPACES['dc']}}}date") or "").strip()
+        if title:
+            items.append({"title": title, "link": link, "date": date, "source": label})
+
+    # --- RDF/RSS 1.0 (<rss1:item>) --- (used by NEJM, Annals, etc.)
+    if not items:
+        for item_el in root.findall(f"{{{RSS_NAMESPACES['rss1']}}}item")[:max_items]:
+            title = (item_el.findtext(f"{{{RSS_NAMESPACES['rss1']}}}title") or "").strip()
+            link  = (item_el.findtext(f"{{{RSS_NAMESPACES['rss1']}}}link") or "").strip()
+            date  = (item_el.findtext(f"{{{RSS_NAMESPACES['dc']}}}date") or "").strip()
+            if title:
+                items.append({"title": title, "link": link, "date": date, "source": label})
+
+    # --- Atom (<entry>) ---
+    if not items:
+        for entry in root.findall(f"{{{RSS_NAMESPACES['atom']}}}entry")[:max_items]:
+            title = (entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}title") or "").strip()
+            link_el = entry.find(f"{{{RSS_NAMESPACES['atom']}}}link")
+            link = link_el.get("href", "") if link_el is not None else ""
+            date = (entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}published") or
+                    entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}updated") or "").strip()
+            if title:
+                items.append({"title": title, "link": link, "date": date, "source": label})
+
+    return items
+
+
+def fetch_all_rss():
+    """Fetch all RSS feeds and return a combined list of recent articles."""
+    all_articles = []
+    for label, url in RSS_FEEDS:
+        print(f"    Fetching {label}...")
+        articles = fetch_rss_items(label, url, max_items=5)
+        all_articles.extend(articles)
+        print(f"      Got {len(articles)} article(s).")
+    return all_articles
+
+
+def curate_rss_items(rss_articles, existing_ids):
+    """Send RSS article titles to Claude (no web search) to pick the most relevant."""
+    if not rss_articles:
+        return []
+
+    # Build compact list of titles + sources for Claude
+    article_summaries = [
+        {"index": i, "title": a["title"], "source": a["source"],
+         "date": a["date"][:30], "link": a["link"]}
+        for i, a in enumerate(rss_articles)
+    ]
+
+    prompt = f"""You are a medical news curator for a hospitalist / internal medicine physician
+who also does outpatient clinic work.
+
+Below are {len(article_summaries)} recent articles from major medical journal RSS feeds
+and FDA/CDC feeds. You MUST select 3-5 items that are most relevant.
+
+Select articles that are likely to be:
+- Original research (RCTs, meta-analyses, observational studies)
+- Clinical practice guidelines or guideline updates
+- FDA drug approvals, new indications, or safety alerts
+- Public health updates (outbreaks, vaccination changes)
+
+DO NOT select: editorials, commentaries, imaging challenges, case reports, corrections,
+letters to the editor, book reviews, audio summaries, podcast episodes, obituaries,
+or "This Week in the Journal" summaries.
+
+From whatever remains after filtering, pick the 3-5 articles that would be MOST useful
+for a busy hospitalist to know about. If the title suggests it is an original research
+study or guideline, select it. When in doubt, INCLUDE it rather than exclude.
 
 Skip any items with these IDs (already covered): {json.dumps(existing_ids[-50:])}
 
-Return ONLY valid JSON array (no markdown fences):
+ARTICLES:
+{json.dumps(article_summaries, indent=2)}
+
+For each item you select, return a JSON array:
 [
   {{
-    "id": "unique-slug-2026",
-    "type": "RCT" or "Meta-Analysis" or "Guideline" or "FDA Action" or "Observational",
-    "specialty": "e.g. Critical Care",
-    "source": "Journal or Organization Name",
-    "date": "Month Day, Year",
-    "title": "Full title of the study/guideline/action",
-    "study_design": "Brief description of design, N, primary outcome (if study)",
-    "key_findings": "Key results with statistics where available",
-    "bottom_line": "One-sentence clinical takeaway for busy physicians",
-    "confidence": "high" or "moderate" or "preliminary",
-    "source_url": "https://..."
+    "article_index": 0,
+    "id": "short-slug-yyyy",
+    "type": "RCT" or "Meta-Analysis" or "Guideline" or "FDA Action" or "Observational" or "Public Health",
+    "specialty": "e.g. Cardiology",
+    "title": "Full title from the article",
+    "study_design": "Brief description of design if you can infer it, otherwise empty string",
+    "key_findings": "What you know or can infer about the findings, otherwise restate the title",
+    "bottom_line": "One-sentence clinical takeaway based on what you know about this topic",
+    "confidence": "high" or "moderate" or "preliminary"
   }}
 ]
 
-If you cannot find recent items, return an empty array: []"""
+You MUST return at least 3 items. Return ONLY valid JSON (no markdown fences)."""
+
     try:
-        raw = call_claude(prompt, use_search=True, max_tokens=8000)
-        items = parse_json_response(raw)
-        if not isinstance(items, list):
-            return []
-        # Add the date_iso for archive management
-        for item in items:
-            item["date_iso"] = TODAY_ISO
-        return items
+        raw = call_claude(prompt, use_search=False, max_tokens=4000)
+        print(f"  DEBUG: Claude raw response length: {len(raw)} chars")
+        selected = extract_json_array(raw)
+        print(f"  DEBUG: Parsed {len(selected)} items from response")
     except Exception as e:
-        print(f"WARNING: What's New generation failed: {e}")
+        print(f"  WARNING: Curation call failed: {e}")
+        print(f"  DEBUG: Raw response preview: {raw[:500] if 'raw' in dir() else 'N/A'}")
         return []
+
+    # Enrich with source info from the original RSS data
+    items = []
+    for sel in selected:
+        idx = sel.get("article_index")
+        if idx is not None and idx < len(rss_articles):
+            article = rss_articles[idx]
+            sel["source"] = article["source"]
+            sel["source_url"] = article["link"]
+            sel["date"] = article["date"][:30] if article["date"] else TODAY_STR
+            sel["date_iso"] = TODAY_ISO
+            sel["mention_count"] = 1
+            sel["sources_seen"] = [article["source"]]
+            sel["first_seen"] = TODAY_ISO
+            sel["last_seen"] = TODAY_ISO
+        items.append(sel)
+    return items
+
+
+def generate_whats_new(history):
+    """Fetch RSS feeds from major journals + FDA/CDC, then use Claude to curate."""
+    existing_ids = history.get("whats_new_ids", [])
+
+    # Step 1: Fetch all RSS feeds (no API calls, just HTTP)
+    print("  Fetching RSS feeds from medical journals and agencies...")
+    rss_articles = fetch_all_rss()
+    print(f"  Total RSS articles fetched: {len(rss_articles)}")
+
+    if not rss_articles:
+        print("  WARNING: No RSS articles fetched. Skipping curation.")
+        return []
+
+    # Step 2: One Claude call (no web search) to curate the best items
+    print("  Asking Claude to curate the most important items...")
+    items = curate_rss_items(rss_articles, existing_ids)
+    print(f"  Claude selected {len(items)} item(s).")
+
+    return items
+
+
+def dedup_and_merge(new_items, existing_items):
+    """Compare today's new items against existing 30-day items to find duplicates.
+
+    Uses Claude (no web search) to identify when the same study/guideline/FDA action
+    was reported by different sources. Merges duplicates by incrementing mention_count
+    on the existing item and removing the duplicate from new_items.
+
+    Returns (remaining_new_items, updated_existing_items).
+    """
+    if not new_items or not existing_items:
+        return new_items, existing_items
+
+    # Build compact summaries to keep token count low
+    new_summaries = [
+        {"index": i, "title": it.get("title", ""), "type": it.get("type", ""),
+         "source": it.get("source", ""), "key_findings": it.get("key_findings", "")[:200]}
+        for i, it in enumerate(new_items)
+    ]
+    existing_summaries = [
+        {"index": i, "title": it.get("title", ""), "type": it.get("type", ""),
+         "source": it.get("source", ""), "key_findings": it.get("key_findings", "")[:200]}
+        for i, it in enumerate(existing_items)
+    ]
+
+    prompt = f"""You are a medical content deduplication assistant.
+
+Below are two lists of medical news items. "new_items" were just fetched today.
+"existing_items" are already in the database from previous days.
+
+Identify any new_item that covers the SAME underlying study, guideline, or FDA action
+as an existing_item — even if reported by a different source or with different wording.
+
+NEW ITEMS:
+{json.dumps(new_summaries, indent=2)}
+
+EXISTING ITEMS:
+{json.dumps(existing_summaries, indent=2)}
+
+Return ONLY a valid JSON object (no markdown fences):
+{{
+  "merges": [
+    {{"new_index": 0, "existing_index": 5, "reason": "Both cover the same trial"}}
+  ]
+}}
+
+If there are no duplicates, return: {{"merges": []}}"""
+
+    try:
+        raw = call_claude(prompt, use_search=False, max_tokens=2000)
+        result = parse_json_response(raw)
+        merges = result.get("merges", [])
+    except Exception as e:
+        print(f"  WARNING: Dedup call failed: {e}. Skipping merge step.")
+        return new_items, existing_items
+
+    # Apply merge instructions
+    merged_new_indices = set()
+    for merge in merges:
+        new_idx = merge.get("new_index")
+        existing_idx = merge.get("existing_index")
+        if new_idx is None or existing_idx is None:
+            continue
+        if new_idx >= len(new_items) or existing_idx >= len(existing_items):
+            continue
+
+        new_item = new_items[new_idx]
+        existing_item = existing_items[existing_idx]
+
+        # Increment mention count
+        existing_item["mention_count"] = existing_item.get("mention_count", 1) + 1
+
+        # Add new source to sources_seen
+        sources = existing_item.get("sources_seen", [existing_item.get("source", "Unknown")])
+        new_source = new_item.get("source", "Unknown")
+        if new_source not in sources:
+            sources.append(new_source)
+        existing_item["sources_seen"] = sources
+
+        # Update last_seen, preserve first_seen
+        existing_item["last_seen"] = TODAY_ISO
+
+        merged_new_indices.add(new_idx)
+        print(f"    Merged: \"{new_item.get('title', '')[:60]}\" → existing (now {existing_item['mention_count']} mentions)")
+
+    # Remove merged items from new_items
+    remaining = [item for i, item in enumerate(new_items) if i not in merged_new_indices]
+    return remaining, existing_items
 
 
 def generate_landmark_content(study_info):
@@ -787,32 +1058,26 @@ def pill_class(item_type):
     return mapping.get(item_type, "pill-specialty")
 
 
-def build_whatsnew_tab(items):
-    """Build the What's New tab HTML."""
-    html = '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
+def _build_wn_card(item, is_trending=False):
+    """Build HTML for a single What's New card."""
+    wn_id = item.get("id", "wn-unknown")
+    item_type = item.get("type", "Study")
+    specialty = item.get("specialty", "")
+    source = item.get("source", "")
+    date = item.get("date", "")
+    title = item.get("title", "")
+    study_design = item.get("study_design", "")
+    key_findings = item.get("key_findings", "")
+    bottom_line = item.get("bottom_line", "")
+    confidence = item.get("confidence", "moderate")
+    source_url = item.get("source_url", "#")
 
-    if not items:
-        html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>\n'
-        return html
+    conf_class = f"confidence-{confidence}"
+    conf_label = confidence.capitalize()
+    card_class = "wn-card wn-card-trending" if is_trending else "wn-card"
 
-    for item in items:
-        wn_id = item.get("id", "wn-unknown")
-        item_type = item.get("type", "Study")
-        specialty = item.get("specialty", "")
-        source = item.get("source", "")
-        date = item.get("date", "")
-        title = item.get("title", "")
-        study_design = item.get("study_design", "")
-        key_findings = item.get("key_findings", "")
-        bottom_line = item.get("bottom_line", "")
-        confidence = item.get("confidence", "moderate")
-        source_url = item.get("source_url", "#")
-
-        conf_class = f"confidence-{confidence}"
-        conf_label = confidence.capitalize()
-
-        html += f"""
-      <div class="wn-card">
+    html = f"""
+      <div class="{card_class}">
         <div class="wn-card-header">
           <div class="wn-tags">
             <span class="pill {pill_class(item_type)}">{item_type}</span>
@@ -825,18 +1090,40 @@ def build_whatsnew_tab(items):
         <div class="wn-source">{source} &bull; {date}</div>
         <div class="wn-title">{title}</div>"""
 
-        if study_design:
-            html += f"""        <div class="wn-section-label">Study Design</div>
+    # Add trending metadata
+    if is_trending:
+        sources_seen = item.get("sources_seen", [])
+        mention_count = item.get("mention_count", 1)
+        first_seen = item.get("first_seen", "")
+        last_seen = item.get("last_seen", "")
+
+        days_span = 1
+        if first_seen and last_seen:
+            try:
+                d1 = datetime.strptime(first_seen, "%Y-%m-%d")
+                d2 = datetime.strptime(last_seen, "%Y-%m-%d")
+                days_span = max(1, (d2 - d1).days + 1)
+            except ValueError:
+                pass
+
+        sources_str = " &middot; ".join(sources_seen)
+        html += f"""        <div class="trending-meta">
+          <span class="trending-sources">Seen in: {sources_str}</span>
+          <span class="trending-count">{mention_count} sources over {days_span} day{"s" if days_span != 1 else ""}</span>
+        </div>\n"""
+
+    if study_design:
+        html += f"""        <div class="wn-section-label">Study Design</div>
         <p class="wn-text">{study_design}</p>\n"""
-        if key_findings:
-            html += f"""        <div class="wn-section-label">Key Findings</div>
+    if key_findings:
+        html += f"""        <div class="wn-section-label">Key Findings</div>
         <p class="wn-text">{key_findings}</p>\n"""
-        if bottom_line:
-            html += f"""        <div class="wn-bottom-line">
+    if bottom_line:
+        html += f"""        <div class="wn-bottom-line">
           <strong>Bottom Line:</strong> {bottom_line}
         </div>\n"""
 
-        html += f"""        <div class="wn-footer">
+    html += f"""        <div class="wn-footer">
           <div class="confidence {conf_class}">
             <span class="confidence-dot"></span>
             {conf_label} confidence
@@ -844,6 +1131,47 @@ def build_whatsnew_tab(items):
           <a href="{source_url}" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
         </div>
       </div>\n"""
+
+    return html
+
+
+def build_whatsnew_tab(items):
+    """Build the What's New tab HTML with Trending and Recent sections."""
+    # Split items into trending vs regular
+    trending = [item for item in items if item.get("mention_count", 1) >= 2]
+    regular = [item for item in items if item.get("mention_count", 1) < 2]
+
+    # Sort trending by mention_count descending, then by last_seen descending
+    trending.sort(key=lambda x: (x.get("mention_count", 1), x.get("last_seen", "")), reverse=True)
+
+    html = ""
+
+    # --- TRENDING SECTION ---
+    if trending:
+        html += """
+      <div class="trending-section">
+        <div class="trending-header">
+          <span class="trending-icon">&#128293;</span>
+          <h3>TRENDING</h3>
+          <span class="trending-subtitle">Covered by multiple sources</span>
+        </div>\n"""
+        for item in trending:
+            html += _build_wn_card(item, is_trending=True)
+        html += "      </div>\n"
+
+    # --- RECENT UPDATES SECTION ---
+    html += '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
+
+    if not regular and not trending:
+        html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>\n'
+        return html
+
+    if not regular:
+        html += '      <p style="color:var(--gray); font-style:italic; padding:10px 0;">All current items are trending above.</p>\n'
+        return html
+
+    for item in regular:
+        html += _build_wn_card(item, is_trending=False)
 
     return html
 
@@ -1243,6 +1571,16 @@ def pick_landmark_study(studies, history):
     return random.choice(candidates) if candidates else {"id": "unknown", "name": "Unknown", "year": 0, "journal": "N/A", "one_liner": ""}
 
 
+def _ensure_trending_fields(items):
+    """Backfill trending fields on items created before this update."""
+    for item in items:
+        item.setdefault("mention_count", 1)
+        item.setdefault("sources_seen", [item.get("source", "Unknown")])
+        item.setdefault("first_seen", item.get("date_iso", TODAY_ISO))
+        item.setdefault("last_seen", item.get("date_iso", TODAY_ISO))
+    return items
+
+
 def rotate_archive(current_items, archive):
     """Move items older than 30 days from current to archive."""
     kept = []
@@ -1298,32 +1636,50 @@ def main():
                  "one_liner": "Low tidal volume ventilation reduced ARDS mortality by 22%."}
     print(f"Landmark Study: {study.get('name', 'Unknown')}")
 
-    # 4. Generate content via API
-    print("\nGenerating Disease of the Day content...")
-    disease_content = generate_disease_content(disease_name)
-
-    print("Generating What's New content...")
+    # 4. Fetch RSS feeds first (no API calls, just HTTP — fast)
+    print("\nFetching What's New from RSS feeds...")
     new_items = generate_whats_new(history)
 
     # Merge manual additions
     if isinstance(manual_additions, list) and manual_additions:
         for item in manual_additions:
             item.setdefault("date_iso", TODAY_ISO)
+            item.setdefault("mention_count", 1)
+            item.setdefault("sources_seen", [item.get("source", "Manual")])
+            item.setdefault("first_seen", TODAY_ISO)
+            item.setdefault("last_seen", TODAY_ISO)
         new_items = manual_additions + new_items
         print(f"  Added {len(manual_additions)} manual addition(s).")
 
     print(f"  Found {len(new_items)} new item(s).")
 
+    # Ensure existing items have trending fields (backward compatibility)
+    wn_current = _ensure_trending_fields(wn_current)
+
+    # Dedup/merge: identify items already in rolling window from different source
+    if new_items and wn_current:
+        print("  Running dedup/merge against existing items...")
+        new_items, wn_current = dedup_and_merge(new_items, wn_current)
+        print(f"  After merge: {len(new_items)} genuinely new item(s).")
+
+    # 5. Generate Disease of the Day (API call with web search)
+    print("\nGenerating Disease of the Day content...")
+    disease_content = generate_disease_content(disease_name)
+
+    print("Pausing 90 seconds to avoid API rate limits...")
+    time.sleep(90)
+
+    # 6. Generate Landmark Study (API call, no web search — lightweight)
     print("Generating Landmark Study content...")
     landmark_content = generate_landmark_content(study)
 
-    # 5. Archive rotation
+    # 7. Archive rotation
     wn_current, archive = rotate_archive(wn_current, archive)
 
-    # 6. Add today's new items to the front of the current list
+    # 8. Add today's new items to the front of the current list
     wn_current = new_items + wn_current
 
-    # 7. Extract CSS from template
+    # 9. Extract CSS from template
     css = get_css_from_template()
 
     # 8. Determine which calculators are needed

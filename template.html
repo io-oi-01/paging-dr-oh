@@ -596,6 +596,76 @@
       font-size: 0.85rem;
     }
 
+    /* ========== TRENDING SECTION ========== */
+    .trending-section {
+      background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 24px;
+      border: 2px solid var(--mandarin);
+    }
+
+    .trending-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid rgba(235, 132, 69, 0.3);
+    }
+
+    .trending-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .trending-header h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--mandarin-dark);
+      margin: 0;
+    }
+
+    .trending-subtitle {
+      font-size: 0.8rem;
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    .wn-card-trending {
+      border-left: 4px solid var(--mandarin) !important;
+      background: var(--white);
+    }
+
+    .wn-card-trending:hover {
+      border-left-color: var(--mandarin-dark) !important;
+    }
+
+    .trending-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: rgba(235, 132, 69, 0.08);
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+    }
+
+    .trending-sources {
+      color: var(--mandarin-dark);
+      font-weight: 600;
+    }
+
+    .trending-count {
+      color: var(--gray);
+      font-weight: 500;
+    }
+
     /* ========== LANDMARK STUDY ========== */
     .landmark-card {
       background: var(--white);
@@ -806,6 +876,8 @@
       .landmark-title { font-size: 1.1rem; }
       .guideline-item { flex-direction: column; align-items: flex-start; }
       .wn-card { padding: 16px; }
+      .trending-header { flex-wrap: wrap; }
+      .trending-meta { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
