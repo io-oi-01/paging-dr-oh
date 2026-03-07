@@ -175,6 +175,26 @@
       color: var(--gray);
     }
 
+    .statpearls-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      color: var(--cadet-blue);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .statpearls-link:hover {
+      color: var(--queen-blue);
+      text-decoration: underline;
+    }
+
+    .randomize-wrap {
+      text-align: center;
+      padding: 24px 0 8px;
+    }
+
     /* ========== ACCORDION ========== */
     .accordion { margin-bottom: 12px; }
 
@@ -596,6 +616,112 @@
       font-size: 0.85rem;
     }
 
+    /* ========== TALKING ABOUT SECTION ========== */
+    .trending-section {
+      background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 24px;
+      border: 2px solid var(--mandarin);
+    }
+
+    .trending-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid rgba(235, 132, 69, 0.3);
+    }
+
+    .trending-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .trending-header h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: var(--mandarin-dark);
+      margin: 0;
+    }
+
+    .trending-subtitle {
+      font-size: 0.8rem;
+      color: var(--gray);
+      font-style: italic;
+    }
+
+    .wn-card-trending {
+      border-left: 4px solid var(--mandarin) !important;
+      background: var(--white);
+    }
+
+    .wn-card-trending:hover {
+      border-left-color: var(--mandarin-dark) !important;
+    }
+
+    .trending-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding: 8px 12px;
+      background: rgba(235, 132, 69, 0.08);
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+    }
+
+    .trending-sources {
+      color: var(--mandarin-dark);
+      font-weight: 600;
+    }
+
+    .trending-count {
+      color: var(--gray);
+      font-weight: 500;
+    }
+
+    /* ========== ENHANCED WN CARD FIELDS ========== */
+    .wn-study-meta {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      background: var(--light-bg);
+      border-radius: var(--radius-sm);
+      line-height: 1.6;
+    }
+
+    .wn-bullets {
+      margin: 4px 0 10px 0;
+      padding-left: 18px;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .wn-bullets li {
+      margin-bottom: 4px;
+    }
+
+    .wn-interp-label {
+      color: var(--cadet-blue) !important;
+    }
+
+    .wn-interp-bullets {
+      color: var(--cadet-blue-dark, #3a6e72);
+    }
+
+    .wn-limitations {
+      color: var(--gray);
+      font-style: italic;
+    }
+
     /* ========== LANDMARK STUDY ========== */
     .landmark-card {
       background: var(--white);
@@ -769,6 +895,25 @@
       line-height: 1.65;
     }
 
+    .archive-empty-msg {
+      color: var(--gray);
+      font-style: italic;
+      padding: 20px 0;
+    }
+
+    .btn-remove-fav {
+      background: none;
+      border: none;
+      color: var(--gray);
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .btn-remove-fav:hover { color: var(--english-red); }
+
     .archive-card.expanded .accordion-toggle {
       transform: rotate(45deg);
       background: var(--mandarin);
@@ -806,6 +951,8 @@
       .landmark-title { font-size: 1.1rem; }
       .guideline-item { flex-direction: column; align-items: flex-start; }
       .wn-card { padding: 16px; }
+      .trending-header { flex-wrap: wrap; }
+      .trending-meta { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -829,10 +976,12 @@
 
     <!-- TAB 1: DISEASE OF THE DAY -->
     <section id="disease" class="tab-content active">
+      <div class="disease-view" id="disease-view-0">
 
       <div class="disease-header card">
-        <h2>Sepsis and Septic Shock</h2>
-        <p class="verified-date">Last verified: March 6, 2026</p>
+        <h2>ARDS</h2>
+        <p class="verified-date">Last verified: March 7, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=ARDS%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -843,25 +992,7 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Fever</strong> (&gt;38.3&deg;C or 101&deg;F) or <strong>hypothermia</strong> (&lt;36&deg;C or 96.8&deg;F)<sup>1</sup></li>
-  <li><strong>Altered mental status</strong> including confusion, delirium, or decreased level of consciousness<sup>1</sup></li>
-  <li><strong>Chills and rigors</strong> associated with fever<sup>2</sup></li>
-  <li><strong>Dyspnea</strong> or shortness of breath<sup>3</sup></li>
-  <li><strong>Malaise, weakness, or fatigue</strong> that may be subtle in elderly or immunocompromised patients<sup>4</sup></li>
-  <li><strong>Nausea and vomiting</strong><sup>2</sup></li>
-  <li><strong>Decreased urination</strong> or oliguria<sup>3</sup></li>
-  <li><strong>Source-specific symptoms</strong> such as cough (pneumonia), urinary frequency (UTI), or abdominal pain (intra-abdominal infection)<sup>5</sup></li>
-</ul>
-<p><strong>Exam Findings</strong></p>
-<ul>
-  <li><strong>Tachycardia</strong> &gt;90 bpm as part of systemic inflammatory response<sup>1</sup></li>
-  <li><strong>Tachypnea</strong> &ge;22 breaths/min (qSOFA criterion)<sup>6</sup></li>
-  <li><strong>Hypotension</strong>: SBP &le;100 mmHg (qSOFA criterion)<sup>6</sup></li>
-  <li><strong>Altered mentation</strong>: Glasgow Coma Scale &lt;15 (qSOFA criterion)<sup>6</sup></li>
-  <li><strong>Signs of hypoperfusion</strong>: delayed capillary refill &gt;2 seconds, mottled skin, cool extremities<sup>7</sup></li>
-  <li><strong>Skin changes</strong>: rash, petechiae, or purpura may indicate specific pathogens<sup>8</sup></li>
-  <li><strong>Evidence of organ dysfunction</strong>: jaundice, decreased urine output, focal neurologic deficits<sup>9</sup></li>
-  <li><strong>Source-specific findings</strong>: lung consolidation, abdominal tenderness, meningeal signs<sup>5</sup></li>
+  <li>Content generation failed for ARDS. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -874,192 +1005,11 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Common</strong></p>
-<ul>
-  <li><strong>Non-infectious SIRS</strong>: burns, trauma, pancreatitis, drug reactions<sup>10</sup></li>
-  <li><strong>Cardiogenic shock</strong>: acute MI, heart failure exacerbation<sup>11</sup></li>
-  <li><strong>Hypovolemic shock</strong>: hemorrhage, dehydration, third-spacing<sup>11</sup></li>
-  <li><strong>Anaphylactic shock</strong>: drug reactions, food allergies<sup>12</sup></li>
-</ul>
-<p><strong>Less Common</strong></p>
-<ul>
-  <li><strong>Adrenal insufficiency</strong>: particularly in critically ill patients<sup>13</sup></li>
-  <li><strong>Thyrotoxicosis</strong>: thyroid storm with systemic effects<sup>14</sup></li>
-  <li><strong>Malignant hyperthermia</strong>: anesthesia-related hyperthermia<sup>15</sup></li>
-  <li><strong>Drug intoxication</strong>: sympathomimetics, anticholinergics<sup>16</sup></li>
-</ul>
-<p><strong>Mimics</strong></p>
-<ul>
-  <li><strong>Heat stroke</strong>: hyperthermia with CNS dysfunction<sup>17</sup></li>
-  <li><strong>Neuroleptic malignant syndrome</strong>: antipsychotic-induced hyperthermia<sup>18</sup></li>
-  <li><strong>Serotonin syndrome</strong>: excessive serotonergic activity<sup>19</sup></li>
-  <li><strong>Systemic vasculitis</strong>: autoimmune inflammatory conditions<sup>20</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Diagnostic Tests</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Laboratory Studies</strong></p>
-<ul>
-  <li><strong>Lactate level</strong>: &gt;2 mmol/L (&gt;18 mg/dL) indicates septic shock when combined with hypotension and vasopressor requirement<sup>1</sup></li>
-  <li><strong>Blood cultures</strong>: obtain 2 sets (aerobic/anaerobic) before antibiotics; positive in 30-40% of cases<sup>2</sup></li>
-  <li><strong>Procalcitonin</strong>: &gt;0.25 ng/mL suggests bacterial infection; Sn 77%, Sp 79% for sepsis<sup>3</sup></li>
-  <li><strong>White blood cell count</strong>: may be elevated, normal, or decreased; left shift with bandemia<sup>4</sup></li>
-  <li><strong>C-reactive protein</strong>: non-specific inflammatory marker; elevated &gt;10 mg/L in most cases<sup>5</sup></li>
-  <li><strong>Comprehensive metabolic panel</strong>: assess for organ dysfunction, acidosis, electrolyte abnormalities<sup>6</sup></li>
-</ul>
-<p><strong>Scoring Systems</strong></p>
-<ul>
-  <li><strong>qSOFA score</strong>: Sn 66%, Sp 61%, +LR 1.7, -LR 0.6 for mortality prediction; poor sensitivity for sepsis detection<sup>7</sup></li>
-  <li><strong>SOFA score</strong>: &ge;2-point increase indicates organ dysfunction; AUROC 0.75-0.89 for mortality prediction<sup>8</sup></li>
-  <li><strong>CURB-65</strong>: useful for pneumonia-associated sepsis risk stratification<sup>9</sup></li>
-</ul>
-<p><strong>Source Identification</strong></p>
-<ul>
-  <li><strong>Chest X-ray</strong>: evaluate for pneumonia, ARDS, pleural effusion<sup>10</sup></li>
-  <li><strong>Urinalysis and culture</strong>: assess for urinary tract infection<sup>11</sup></li>
-  <li><strong>CT imaging</strong>: abdomen/pelvis for intra-abdominal source; head if altered mental status<sup>12</sup></li>
-  <li><strong>Echocardiography</strong>: evaluate for endocarditis if bacteremia or new murmur<sup>13</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Treatment</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Emergency Department/Initial Management<sup>1</sup></strong></p>
-<ul>
-  <li><strong>Crystalloid resuscitation</strong>: 30 mL/kg IV within 3 hours for hypotension or lactate &ge;4 mmol/L<sup>2</sup></li>
-  <li><strong>Balanced crystalloids preferred</strong>: Lactated Ringer's or Plasma-Lyte over normal saline<sup>3</sup></li>
-  <li><strong>Broad-spectrum antibiotics</strong>: within 1 hour of sepsis recognition after cultures obtained<sup>4</sup></li>
-  <li><strong>Vasopressors</strong>: norepinephrine first-line if hypotension persists after fluid resuscitation<sup>5</sup></li>
-  <li><strong>Source control</strong>: drainage, debridement, or device removal within 6-12 hours when indicated<sup>6</sup></li>
-</ul>
-<p><strong>Inpatient Non-ICU Management<sup>7</sup></strong></p>
-<ul>
-  <li><strong>Continued antibiotic therapy</strong>: narrow spectrum based on culture results and clinical response<sup>8</sup></li>
-  <li><strong>Fluid management</strong>: conservative approach after initial resuscitation; monitor for fluid overload<sup>9</sup></li>
-  <li><strong>DVT prophylaxis</strong>: pharmacologic prophylaxis unless contraindicated<sup>10</sup></li>
-  <li><strong>Stress ulcer prophylaxis</strong>: PPI therapy for patients with risk factors<sup>11</sup></li>
-  <li><strong>Glycemic control</strong>: target glucose &lt;180 mg/dL<sup>12</sup></li>
-</ul>
-<p><strong>ICU Management<sup>13</sup></strong></p>
-<ul>
-  <li><strong>Norepinephrine</strong>: first-line vasopressor, target MAP &ge;65 mmHg<sup>14</sup></li>
-  <li><strong>Hydrocortisone</strong>: 200 mg/day IV (50 mg q6h or continuous infusion) for refractory shock on vasopressors &ge;0.25 mcg/kg/min for &ge;4 hours<sup>15</sup></li>
-  <li><strong>Mechanical ventilation</strong>: lung-protective strategy if ARDS develops<sup>16</sup></li>
-  <li><strong>ECMO consideration</strong>: for severe ARDS in experienced centers<sup>17</sup></li>
-  <li><strong>Hemodynamic monitoring</strong>: consider arterial line, central venous access as needed<sup>18</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Expected Course</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Early phase (0-6 hours)</strong>: rapid clinical deterioration possible; prompt recognition and treatment critical<sup>1</sup></li>
-  <li><strong>Acute phase (6-72 hours)</strong>: organ dysfunction may worsen initially despite appropriate treatment<sup>2</sup></li>
-  <li><strong>Recovery phase (3-7 days)</strong>: gradual improvement in organ function and hemodynamics with effective therapy<sup>3</sup></li>
-  <li><strong>Overall mortality</strong>: sepsis 15-30%, septic shock 40-50% depending on severity and comorbidities<sup>4</sup></li>
-  <li><strong>ICU length of stay</strong>: typically 5-14 days for survivors<sup>5</sup></li>
-  <li><strong>Long-term effects</strong>: post-intensive care syndrome including physical, cognitive, and psychological impairments<sup>6</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Follow-up</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Post-discharge follow-up</strong>: within 1-2 weeks to assess recovery and address complications<sup>1</sup></li>
-  <li><strong>Antibiotic duration</strong>: typically 7-10 days for most infections; longer for endocarditis, osteomyelitis<sup>2</sup></li>
-  <li><strong>Functional assessment</strong>: evaluate for post-ICU weakness, cognitive impairment, PTSD<sup>3</sup></li>
-  <li><strong>Rehabilitation referral</strong>: consider for patients with prolonged ICU stay &gt;72 hours or mechanical ventilation &gt;48 hours<sup>4</sup></li>
-  <li><strong>Family support</strong>: peer support groups and counseling resources<sup>5</sup></li>
-  <li><strong>Monitoring for recurrence</strong>: immunocompromised patients at higher risk<sup>6</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Low-Resource Considerations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Diagnostic Adaptations</strong></p>
-<ul>
-  <li><strong>Clinical assessment priority</strong>: focus on qSOFA criteria when laboratory tests limited<sup>1</sup></li>
-  <li><strong>Point-of-care lactate</strong>: if available, more cost-effective than serial laboratory draws<sup>2</sup></li>
-  <li><strong>Basic blood tests</strong>: complete blood count and basic metabolic panel if lactate unavailable<sup>3</sup></li>
-</ul>
-<p><strong>Treatment Modifications</strong></p>
-<ul>
-  <li><strong>Oral antibiotics</strong>: consider high-bioavailability oral agents if IV access limited<sup>4</sup></li>
-  <li><strong>Crystalloid choice</strong>: normal saline acceptable if balanced crystalloids unavailable<sup>5</sup></li>
-  <li><strong>Simplified protocols</strong>: focus on early recognition, antibiotics, and fluid resuscitation<sup>6</sup></li>
-  <li><strong>Community health worker training</strong>: for early recognition and referral<sup>7</sup></li>
-</ul>
-
+            
           </div>
         </div>
       </div>
       <h3 class="section-title">Relevant Clinical Scores</h3>
-      <div class="calculator-card" id="curb65-calc">
-        <h4>CURB-65 Severity Score</h4>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-c" onchange="update_curb65()">
-          <label for="curb-c"><strong>C</strong>onfusion &mdash; new-onset disorientation to person, place, or time</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-u" onchange="update_curb65()">
-          <label for="curb-u"><strong>U</strong>rea (BUN) &gt; 19 mg/dL (7 mmol/L)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-r" onchange="update_curb65()">
-          <label for="curb-r"><strong>R</strong>espiratory Rate &ge; 30 breaths/min</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-b" onchange="update_curb65()">
-          <label for="curb-b"><strong>B</strong>lood Pressure: SBP &lt; 90 or DBP &le; 60 mmHg</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-65" onchange="update_curb65()">
-          <label for="curb-65">Age &ge; <strong>65</strong> years</label>
-        </div>
-        <div class="score-result">
-          <span class="score-label">CURB-65 Severity Score</span>
-          <span class="score-value" id="curb65-score">0</span>
-          <div class="score-interpretation risk-low" id="curb65-interp">
-            Low risk (0.6% 30-day mortality). Consider outpatient treatment.
-          </div>
-        </div>
-      </div>
       <div class="calculator-card" id="qsofa-calc">
         <h4>qSOFA (Quick Sepsis-Related Organ Failure Assessment)</h4>
         <div class="calc-option">
@@ -1083,51 +1033,110 @@
         </div>
       </div>
 
-      <div class="guidelines-box">
-        <h4>Society Guidelines Quick Reference</h4>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021</div>
-            <div class="guideline-meta">Society of Critical Care Medicine (SCCM) and European Society of Intensive Care Medicine (ESICM) &bull; 2021</div>
-          </div>
-          <a href="https://doi.org/10.1007/s00134-021-06506-y" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+      </div>
+      <div class="disease-view" id="disease-view-1" style="display:none">
+
+      <div class="disease-header card">
+        <h2>Hyponatremia</h2>
+        <p class="verified-date">Last verified: March 7, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Hyponatremia%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+      </div>
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Clinical Manifestations</h3>
+          <span class="accordion-toggle">+</span>
         </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Japanese Clinical Practice Guidelines for Management of Sepsis and Septic Shock 2024</div>
-            <div class="guideline-meta">Japanese Society of Intensive Care Medicine and Japanese Association for Acute Medicine &bull; 2024</div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Symptoms</strong></p>
+<ul>
+  <li>Content generation failed for Hyponatremia. Please try again tomorrow.</li>
+</ul>
+
           </div>
-          <a href="https://doi.org/10.1186/s40560-025-00776-0" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Korean Clinical Practice Guidelines for Early Management of Adult Sepsis and Septic Shock</div>
-            <div class="guideline-meta">Korean Society of Critical Care Medicine &bull; 2024</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Differential Diagnosis</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            
           </div>
-          <a href="https://doi.org/10.4266/acc.2024.00920" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+      </div>
+      </div>
+      <div class="disease-view" id="disease-view-2" style="display:none">
+
+      <div class="disease-header card">
+        <h2>Acute Pancreatitis</h2>
+        <p class="verified-date">Last verified: March 7, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Acute%20Pancreatitis%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+      </div>
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Clinical Manifestations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Symptoms</strong></p>
+<ul>
+  <li>Content generation failed for Acute Pancreatitis. Please try again tomorrow.</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Differential Diagnosis</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            
+          </div>
+        </div>
+      </div>
+      <h3 class="section-title">Relevant Clinical Scores</h3>
+      <div class="calculator-card" id="bisap-calc">
+        <h4>BISAP Score for Pancreatitis Severity</h4>
+        <div class="calc-option">
+          <input type="checkbox" id="bisap-b" onchange="update_bisap()">
+          <label for="bisap-b"><strong>B</strong>UN &gt; 25 mg/dL</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="bisap-i" onchange="update_bisap()">
+          <label for="bisap-i"><strong>I</strong>mpaired mental status (disorientation, lethargy, somnolence, coma)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="bisap-s" onchange="update_bisap()">
+          <label for="bisap-s"><strong>S</strong>IRS (Systemic Inflammatory Response Syndrome) &mdash; &ge;2 of: temp &gt;38 or &lt;36, HR &gt;90, RR &gt;20 or PaCO2 &lt;32, WBC &gt;12k or &lt;4k</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="bisap-a" onchange="update_bisap()">
+          <label for="bisap-a"><strong>A</strong>ge &gt; 60 years</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="bisap-p" onchange="update_bisap()">
+          <label for="bisap-p"><strong>P</strong>leural effusion on imaging</label>
+        </div>
+        <div class="score-result">
+          <span class="score-label">BISAP Score for Pancreatitis Severity</span>
+          <span class="score-value" id="bisap-score">0</span>
+          <div class="score-interpretation risk-low" id="bisap-interp">
+            Score 0: Mortality &lt;1%. Low risk.
+          </div>
         </div>
       </div>
 
-      <div class="references">
-        <h4>References</h4>
-        <ol>
-          <li id="ref-1"><cite index="3-22,3-23">Singer M, Deutschman CS, Seymour CW, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016;315(8):801-810.</cite></li>
-          <li id="ref-2"><cite index="22-2,22-3">Evans L, Rhodes A, Alhazzani W, et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med. 2021;47(11):1181-1247.</cite></li>
-          <li id="ref-3"><cite index="7-1,7-13">Seymour CW, Liu VX, Iwashyna TJ, et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA. 2016;315(8):762-774.</cite></li>
-          <li id="ref-4"><cite index="12-16,12-17">Lambden S, Laterre PF, Levy MM, Francois B. The SOFA score-development, utility and challenges of accurate assessment in clinical trials. Crit Care. 2019;23(1):374.</cite></li>
-          <li id="ref-5"><cite index="11-13,11-14">Williams JM, Greenslade JH, McKenzie JV, et al. SIRS, qSOFA and organ dysfunction: insights from a prospective database of emergency department patients with infection. Chest. 2017;151(3):586-596.</cite></li>
-          <li id="ref-6"><cite index="19-11,19-12">Serafim R, Gomes JA, Salluh J, Póvoa P. A comparison of the Quick-SOFA and systemic inflammatory response syndrome criteria for the diagnosis of sepsis and prediction of mortality. Chest. 2018;153(3):646-655.</cite></li>
-          <li id="ref-7"><cite index="26-21,26-24">Rhodes A, Evans LE, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2017. Intensive Care Med. 2017;43(3):304-377.</cite></li>
-          <li id="ref-8"><cite index="2-8,2-9">Ferrer R, Martin-Loeches I, Phillips G, et al. Empiric antibiotic treatment reduces mortality in severe sepsis and septic shock from the first hour. Crit Care Med. 2014;42(8):1749-1755.</cite></li>
-          <li id="ref-9"><cite index="31-7,31-23">Gamper G, Havel C, Arrich J, et al. Vasopressors for hypotensive shock. Cochrane Database Syst Rev. 2016;2:CD003709.</cite></li>
-          <li id="ref-10"><cite index="7-16,7-17">Annane D, Renault A, Brun-Buisson C, et al. Hydrocortisone plus fludrocortisone for adults with septic shock. N Engl J Med. 2018;378(9):809-818.</cite></li>
-          <li id="ref-11"><cite index="40-25,40-26">Semler MW, Self WH, Wanderer JP, et al. Balanced crystalloids versus saline in critically ill adults. N Engl J Med. 2018;378(9):829-839.</cite></li>
-          <li id="ref-12"><cite index="24-1,24-17">Levy MM, Evans LE, Rhodes A. The Surviving Sepsis Campaign Bundle: 2018 update. Intensive Care Med. 2018;44(6):925-928.</cite></li>
-        </ol>
       </div>
 
       <div class="randomize-wrap">
-        <button class="btn btn-primary" id="randomize-btn">Randomize Disease</button>
+        <button class="btn btn-primary" onclick="randomizeDisease(3)">&#8635; Show Me Another Disease</button>
       </div>
     </section>
 
@@ -1144,13 +1153,14 @@
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">TTM2 — Hypothermia vs Normothermia After Cardiac Arrest</h3>
-          <button class="action-btn star" data-id="ttm2-—-hypothermia-vs-normothe" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">TRISS — Transfusion Requirements in Septic Shock</h3>
+          <button class="action-btn star" data-id="triss---transfusion-requiremen" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">NEJM &bull; 2021</div>
+        <div class="landmark-meta">NEJM &bull; 2014</div>
+        
 
         <div class="landmark-section">
-          <h4>Study Design</h4>
+          <h4>Clinical Question</h4>
           <p>Content generation failed. Please try again tomorrow.</p>
         </div>
       </div>
@@ -1169,10 +1179,19 @@
     <!-- TAB 4: ARCHIVE -->
     <section id="archive" class="tab-content">
 
-      <h3 class="section-title" style="margin-top:0;">Archive</h3>
-      <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">Studies and updates that have rolled out of the 30-day window, organized by month.</p>
-      <p style="color:var(--gray); font-style:italic;">No archived items yet. Items will appear here after 30 days.</p>
-
+      <div class="archive-intro">
+        <h3 class="section-title" style="margin-top:0;">Your Starred Items</h3>
+        <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">
+          Star any card (&#9734;) on the What&apos;s New or Landmark Trial tabs to save it here.
+          Starred items persist on this device across page reloads.
+        </p>
+      </div>
+      <div id="archive-content">
+        <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
+      </div>
+      <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
+        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()">&#x2715; Clear All Starred</button>
+      </div>
     </section>
 
   </main>
@@ -1184,22 +1203,6 @@
   </footer>
 
   <script>
-
-    function update_curb65() {
-      var criteria = [{"id": "curb-c", "pts": 1}, {"id": "curb-u", "pts": 1}, {"id": "curb-r", "pts": 1}, {"id": "curb-b", "pts": 1}, {"id": "curb-65", "pts": 1}];
-      var score = 0;
-      criteria.forEach(function(c) {
-        if (document.getElementById(c.id).checked) score += c.pts;
-      });
-      document.getElementById('curb65-score').textContent = score;
-      var interp = document.getElementById('curb65-interp');
-      if (score <= 0) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low risk (0.6% 30-day mortality). Consider outpatient treatment.'; }
-      else if (score <= 1) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low risk (2.7% mortality). Consider outpatient with close follow-up.'; }
-      else if (score <= 2) { interp.className = 'score-interpretation risk-moderate'; interp.textContent = 'Moderate risk (6.8% mortality). Consider short inpatient stay or closely supervised outpatient.'; }
-      else if (score <= 3) { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Severe (14.0% mortality). Hospitalize. Consider ICU admission.'; }
-      else if (score <= 4) { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Severe (27.8% mortality). Hospitalize with ICU admission recommended.'; }
-      else { interp.className = 'score-interpretation risk-high'; interp.textContent = 'Highest risk (57.6% mortality). Urgent ICU admission.'; }
-    }
 
     function update_qsofa() {
       var criteria = [{"id": "qsofa-ms", "pts": 1}, {"id": "qsofa-rr", "pts": 1}, {"id": "qsofa-sbp", "pts": 1}];
@@ -1232,145 +1235,186 @@
       accordion.classList.toggle('open');
     }
 
-    /* ===== ARCHIVE MONTH TOGGLE ===== */
-    function toggleArchiveMonth(header) {
-      header.parentElement.classList.toggle('open');
+    /* ===== STARRED ITEMS (localStorage Archive) ===== */
+    var PDR_STARRED_KEY = 'pdr-starred-v2';
+
+    function getStarred() {
+      try { return JSON.parse(localStorage.getItem(PDR_STARRED_KEY) || '{}'); }
+      catch(e) { return {}; }
     }
 
-    /* ===== ARCHIVE CARD EXPAND ===== */
-    function toggleArchiveCard(card) {
-      card.classList.toggle('expanded');
+    function saveStarred(starred) {
+      try { localStorage.setItem(PDR_STARRED_KEY, JSON.stringify(starred)); } catch(e) {}
     }
 
-    /* ===== STAR / FAVORITE BUTTONS ===== */
     document.querySelectorAll('.action-btn.star').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.stopPropagation();
-        btn.classList.toggle('active');
         var id = btn.getAttribute('data-id');
-        var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+        var starred = getStarred();
 
         if (btn.classList.contains('active')) {
-          btn.innerHTML = '&#9733;';
-          if (favorites.indexOf(id) === -1) favorites.push(id);
-        } else {
+          btn.classList.remove('active');
           btn.innerHTML = '&#9734;';
-          var idx = favorites.indexOf(id);
-          if (idx > -1) favorites.splice(idx, 1);
+          delete starred[id];
+        } else {
+          btn.classList.add('active');
+          btn.innerHTML = '&#9733;';
+          var card = btn.closest('.wn-card, .landmark-card');
+          var title = id;
+          var source = '';
+          var typeLabel = '';
+          var bottomLine = '';
+          var sourceUrl = '';
+          if (card) {
+            var titleEl = card.querySelector('.wn-title, .landmark-title');
+            if (titleEl) title = titleEl.textContent.trim();
+            var sourceEl = card.querySelector('.wn-source, .landmark-meta');
+            if (sourceEl) source = sourceEl.textContent.trim();
+            var pills = card.querySelectorAll('.pill');
+            if (pills.length > 0) typeLabel = pills[0].textContent.trim();
+            var blEl = card.querySelector('.wn-bottom-line');
+            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').trim();
+            var linkEl = card.querySelector('.source-link, .statpearls-link');
+            if (linkEl) sourceUrl = linkEl.href;
+          }
+          starred[id] = {
+            id: id, title: title, source: source,
+            typeLabel: typeLabel, bottomLine: bottomLine,
+            sourceUrl: sourceUrl,
+            cardType: card ? (card.classList.contains('landmark-card') ? 'landmark' : 'whats_new') : 'unknown',
+            starredAt: new Date().toISOString().split('T')[0]
+          };
         }
 
-        localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
+        saveStarred(starred);
+        renderArchive();
         updateFavoritesList();
       });
     });
 
-    /* ===== FAVORITES LIST ===== */
-    function updateFavoritesList() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      var list = document.getElementById('favorites-list');
-      if (!list) return;
-
-      if (favorites.length === 0) {
-        list.innerHTML = '<li class="favorites-empty">No favorites yet. Star studies to add them here.</li>';
+    /* ===== RENDER ARCHIVE TAB ===== */
+    function renderArchive() {
+      var container = document.getElementById('archive-content');
+      var actionsBar = document.getElementById('archive-actions');
+      if (!container) return;
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) {
+        container.innerHTML = '<p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>';
+        if (actionsBar) actionsBar.style.display = 'none';
         return;
       }
-
+      if (actionsBar) actionsBar.style.display = '';
+      ids.sort(function(a, b) { return (starred[b].starredAt||'').localeCompare(starred[a].starredAt||''); });
       var html = '';
-      favorites.forEach(function(id) {
-        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
-        var title = id;
-        if (card) {
-          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
-          if (titleEl) title = titleEl.textContent;
+      ids.forEach(function(id) {
+        var item = starred[id];
+        var typeClass = item.cardType === 'landmark' ? 'pill-rct' : 'pill-specialty';
+        html += '<div class="archive-card expanded">';
+        html += '<div class="archive-card-header"><div>';
+        html += '<div class="archive-card-title">' + (item.title || id) + '</div>';
+        html += '<div class="archive-card-meta">';
+        if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
+        html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
+        html += '<button class="btn-remove-fav" onclick="removeStarred('' + id + '')" title="Remove">&#x2715;</button></div>';
+        if (item.bottomLine) {
+          html += '<div class="archive-card-details"><div class="archive-detail-content">';
+          html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
+          if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="font-size:0.8rem;">View Source &#8594;</a>';
+          html += '</div></div>';
         }
-        html += '<li><span>' + title + '</span><button class="action-btn" onclick="removeFavorite(\'' + id + '\')" style="opacity:1;font-size:0.9rem;color:var(--english-red);padding:2px 6px;" title="Remove">\u2715</button></li>';
+        html += '</div>';
+      });
+      container.innerHTML = html;
+    }
+
+    function removeStarred(id) {
+      var starred = getStarred();
+      delete starred[id];
+      saveStarred(starred);
+      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+      if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9734;'; }
+      renderArchive();
+      updateFavoritesList();
+    }
+
+    function clearAllStarred() {
+      if (!confirm('Remove all starred items from archive?')) return;
+      saveStarred({});
+      document.querySelectorAll('.action-btn.star.active').forEach(function(b) {
+        b.classList.remove('active'); b.innerHTML = '&#9734;';
+      });
+      renderArchive();
+      updateFavoritesList();
+    }
+
+    /* ===== LANDMARK TAB FAVORITES LIST ===== */
+    function updateFavoritesList() {
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      var list = document.getElementById('favorites-list');
+      if (!list) return;
+      if (ids.length === 0) {
+        list.innerHTML = '<li class="favorites-empty">No starred items yet. Star cards to save them here.</li>';
+        return;
+      }
+      var html = '';
+      ids.forEach(function(id) {
+        var item = starred[id];
+        html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
+        if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
+        html += ' <button class="btn-remove-fav" onclick="removeStarred('' + id + '')" title="Remove">&#x2715;</button></li>';
       });
       list.innerHTML = html;
     }
 
-    function removeFavorite(id) {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      var idx = favorites.indexOf(id);
-      if (idx > -1) favorites.splice(idx, 1);
-      localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
-
-      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-      if (btn) {
-        btn.classList.remove('active');
-        btn.innerHTML = '&#9734;';
-      }
-      updateFavoritesList();
-    }
-
-    /* ===== EXPORT FAVORITES TO CLIPBOARD ===== */
+    /* ===== EXPORT TO CLIPBOARD ===== */
     function exportFavorites() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      if (favorites.length === 0) {
-        alert('No favorites to export. Star some studies first!');
-        return;
-      }
-
-      var text = 'Paging Dr. Oh \u2014 Starred Studies\n';
-      text += '========================================\n\n';
-
-      favorites.forEach(function(id, i) {
-        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
-        var title = id;
-        var meta = '';
-        if (card) {
-          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
-          if (titleEl) title = titleEl.textContent;
-          var metaEl = card.querySelector('.landmark-meta') || card.querySelector('.wn-source');
-          if (metaEl) meta = metaEl.textContent.trim();
-        }
-        text += (i + 1) + '. ' + title + '\n   ' + meta + '\n\n';
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) { alert('No starred items yet.'); return; }
+      var text = 'Paging Dr. Oh \u2014 Starred Items\n========================================\n\n';
+      ids.forEach(function(id, i) {
+        var item = starred[id];
+        text += (i + 1) + '. ' + (item.title || id) + '\n';
+        if (item.source) text += '   ' + item.source + '\n';
+        if (item.bottomLine) text += '   Bottom line: ' + item.bottomLine + '\n';
+        text += '\n';
       });
-
       navigator.clipboard.writeText(text).then(function() {
-        var exportBtn = document.getElementById('export-btn');
-        var original = exportBtn.textContent;
-        exportBtn.textContent = 'Copied!';
-        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+        var btn = document.getElementById('export-btn');
+        if (btn) { var o = btn.textContent; btn.textContent = 'Copied!'; setTimeout(function(){ btn.textContent = o; }, 2000); }
       }).catch(function() {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        var exportBtn = document.getElementById('export-btn');
-        var original = exportBtn.textContent;
-        exportBtn.textContent = 'Copied!';
-        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+        var ta = document.createElement('textarea'); ta.value = text;
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
       });
     }
 
-    /* ===== RANDOMIZE BUTTON ===== */
-    var randomizeBtn = document.getElementById('randomize-btn');
-    if (randomizeBtn) {
-      randomizeBtn.addEventListener('click', function() {
-        randomizeBtn.textContent = 'Loading\u2026';
-        randomizeBtn.disabled = true;
-        setTimeout(function() {
-          randomizeBtn.textContent = 'Randomize Disease';
-          randomizeBtn.disabled = false;
-          alert('A brand-new disease is generated every day at 6 AM UTC.  Come back tomorrow for a fresh topic!');
-        }, 600);
-      });
+    /* ===== RANDOMIZE DISEASE ===== */
+    var _currentDiseaseIdx = 0;
+    function randomizeDisease(poolSize) {
+      document.getElementById('disease-view-' + _currentDiseaseIdx).style.display = 'none';
+      var candidates = [];
+      for (var i = 0; i < poolSize; i++) {
+        if (i !== _currentDiseaseIdx) candidates.push(i);
+      }
+      _currentDiseaseIdx = candidates[Math.floor(Math.random() * candidates.length)];
+      document.getElementById('disease-view-' + _currentDiseaseIdx).style.display = '';
+      document.getElementById('disease-tab').scrollIntoView({behavior: 'smooth'});
     }
 
     /* ===== INITIALIZE ON LOAD ===== */
     (function init() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      var starred = getStarred();
       document.querySelectorAll('.action-btn.star').forEach(function(btn) {
-        if (favorites.indexOf(btn.getAttribute('data-id')) > -1) {
+        if (starred[btn.getAttribute('data-id')]) {
           btn.classList.add('active');
           btn.innerHTML = '&#9733;';
         }
       });
       updateFavoritesList();
+      renderArchive();
     })();
 
   </script>
