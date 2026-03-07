@@ -362,10 +362,22 @@ def call_claude(prompt, use_search=False, max_tokens=16000):
                     parts.append(block.text)
             return "\n".join(parts)
         except Exception as e:
-            if "rate_limit" in str(e).lower() and attempt < 2:
-                wait = 60 * (attempt + 1)  # 60s, then 120s
-                print(f"  Rate limited. Waiting {wait}s before retry ({attempt+1}/2)...")
-                time.sleep(wait)
+            err_str = str(e).lower()
+            print(f"  API call error (attempt {attempt+1}/3): {type(e).__name__}: {e}")
+            if "rate_limit" in err_str or "rate limit" in err_str or "429" in err_str:
+                if attempt < 2:
+                    wait = 60 * (attempt + 1)  # 60s, then 120s
+                    print(f"  Rate limited. Waiting {wait}s before retry...")
+                    time.sleep(wait)
+                else:
+                    raise
+            elif "overloaded" in err_str or "529" in err_str:
+                if attempt < 2:
+                    wait = 30 * (attempt + 1)
+                    print(f"  API overloaded. Waiting {wait}s before retry...")
+                    time.sleep(wait)
+                else:
+                    raise
             else:
                 raise
 
@@ -484,14 +496,16 @@ def fetch_wikijournalclub_page(study_info):
     return None, None
 
 
-def generate_disease_content(disease_name, source_url=None):
+def generate_disease_content(disease_name, source_url=None, use_web_search=True):
     """
     Call Claude to generate the Disease of the Day content.
     Uses web search targeting StatPearls / NCBI Bookshelf as the primary source.
     source_url: a pre-constructed StatPearls search URL to include in the header link.
+    use_web_search: if False, skip web search tool (fallback when search unavailable).
     """
     statpearls_url = source_url or get_statpearls_search_url(disease_name)
-    source_block = f"""Use web search to find the StatPearls / NCBI Bookshelf article for {disease_name}.
+    if use_web_search:
+        source_block = f"""Use web search to find the StatPearls / NCBI Bookshelf article for {disease_name}.
 Search: site:ncbi.nlm.nih.gov/books {disease_name} StatPearls
 
 CRITICAL ACCURACY RULES:
@@ -500,7 +514,15 @@ CRITICAL ACCURACY RULES:
 3. Never invent diagnostic test statistics (Sn, Sp, LR, NNT) — only include them when found in sources.
 4. Include the StatPearls article URL you found in the "source_url" field of the response.
 5. Mark any content from your training data (not from sources) with "Clinical context:" prefix."""
-    use_search = True
+    else:
+        source_block = f"""Provide evidence-based content on {disease_name} using your medical knowledge.
+Reference StatPearls and NCBI Bookshelf as primary sources.
+Use the StatPearls search URL for the source_url: {statpearls_url}
+
+CRITICAL ACCURACY RULES:
+1. Only include diagnostic test statistics (Sn, Sp, LR, NNT) you are confident about.
+2. Mark any uncertain content with "Clinical context:" prefix."""
+    use_search = use_web_search
 
     prompt = f"""You are a medical education content creator for "Paging Dr. Oh," a daily
 clinical reference for internal medicine physicians and hospitalists.
@@ -1811,10 +1833,49 @@ def update_history(history, disease_name, study_id, new_item_ids):
 # SECTION 10 — MAIN
 # ═══════════════════════════════════════════════════════════════════════
 
+def api_health_check():
+    """Quick API test to catch key/model/permissions issues early."""
+    print("Running API health check...")
+    try:
+        response = CLIENT.messages.create(
+            model=MODEL,
+            max_tokens=50,
+            messages=[{"role": "user", "content": "Reply with exactly: OK"}],
+        )
+        text = response.content[0].text if response.content else ""
+        print(f"  Basic API call: OK  (response: {text[:50]})")
+    except Exception as e:
+        print(f"  *** BASIC API CALL FAILED: {type(e).__name__}: {e}")
+        print(f"  Check that ANTHROPIC_API_KEY is valid and has credits.")
+        print(f"  Model: {MODEL}")
+        sys.exit(1)
+
+    # Test web search tool
+    try:
+        response = CLIENT.messages.create(
+            model=MODEL,
+            max_tokens=100,
+            messages=[{"role": "user", "content": "What is 2+2?"}],
+            tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 1}],
+        )
+        print(f"  Web search tool: OK")
+    except Exception as e:
+        print(f"  *** WEB SEARCH TOOL FAILED: {type(e).__name__}: {e}")
+        print(f"  Web search may not be available on this API plan.")
+        print(f"  Disease generation will fall back to non-search mode.")
+        return False  # signal that web search is unavailable
+
+    print("  Health check passed!\n")
+    return True
+
+
 def main():
     print(f"=== Paging Dr. Oh — Daily Generation ===")
     print(f"Date: {TODAY_STR}")
     print()
+
+    # 0. API health check — fail fast with clear error if key/model is wrong
+    web_search_available = api_health_check()
 
     # 1. Load state files
     history          = load_json(HISTORY_PATH, default={"diseases_shown": [], "landmark_studies_shown": [], "whats_new_ids": [], "last_run": None})
@@ -1885,7 +1946,7 @@ def main():
             print(f"  Pausing 60s before next disease generation...")
             time.sleep(60)
         print(f"  Generating disease content for: {dname}")
-        content = generate_disease_content(dname)
+        content = generate_disease_content(dname, use_web_search=web_search_available)
         disease_pool.append(content)
         print(f"  Done: {dname}")
 
