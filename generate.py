@@ -1564,7 +1564,7 @@ BASE_JS = """
         html += '<div class="archive-card-meta">';
         if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
         html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
-        html += '<button class="btn-remove-fav" onclick="removeStarred(\'' + id + '\')" title="Remove">&#x2715;</button></div>';
+        html += '<button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></div>';
         if (item.bottomLine) {
           html += '<div class="archive-card-details"><div class="archive-detail-content">';
           html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
@@ -1611,7 +1611,7 @@ BASE_JS = """
         var item = starred[id];
         html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
         if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
-        html += ' <button class="btn-remove-fav" onclick="removeStarred(\'' + id + '\')" title="Remove">&#x2715;</button></li>';
+        html += ' <button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></li>';
       });
       list.innerHTML = html;
     }
