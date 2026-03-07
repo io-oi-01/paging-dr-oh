@@ -23,7 +23,7 @@ Required files (in the same directory):
 # ═══════════════════════════════════════════════════════════════════════
 
 import os, sys, json, random, re, traceback, time
-import urllib.request
+import urllib.request, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
@@ -413,34 +413,122 @@ def extract_json_array(text):
 # SECTION 5 — CONTENT GENERATION  (API prompts & calls)
 # ═══════════════════════════════════════════════════════════════════════
 
-def generate_disease_content(disease_name):
-    """Call Claude to generate the Disease of the Day content."""
+def _strip_html_to_text(html, max_chars=6000):
+    """Strip HTML tags and return plain text, truncated to max_chars."""
+    html = re.sub(r'<script[^>]*>.*?</script>', ' ', html, flags=re.DOTALL | re.IGNORECASE)
+    html = re.sub(r'<style[^>]*>.*?</style>', ' ', html, flags=re.DOTALL | re.IGNORECASE)
+    html = re.sub(r'<h[1-4][^>]*>', '\n\n### ', html, flags=re.IGNORECASE)
+    html = re.sub(r'<li[^>]*>', '\n- ', html, flags=re.IGNORECASE)
+    html = re.sub(r'<br\s*/?>', '\n', html, flags=re.IGNORECASE)
+    html = re.sub(r'<p[^>]*>', '\n', html, flags=re.IGNORECASE)
+    html = re.sub(r'<[^>]+>', '', html)
+    html = re.sub(r'&amp;', '&', html)
+    html = re.sub(r'&lt;', '<', html)
+    html = re.sub(r'&gt;', '>', html)
+    html = re.sub(r'&nbsp;', ' ', html)
+    text = re.sub(r'\n{3,}', '\n\n', html)
+    text = re.sub(r'[ \t]{2,}', ' ', text).strip()
+    if len(text) > max_chars:
+        text = text[:max_chars] + "...[truncated]"
+    return text
+
+
+def get_statpearls_search_url(disease_name):
+    """
+    Return an NCBI Bookshelf search URL for the given disease's StatPearls article.
+    Used as a source hint for the disease content prompt and as a displayed link.
+    Note: Direct StatPearls fetching requires the web_search tool (Anthropic handles the scraping).
+    """
+    query = urllib.parse.quote(f"{disease_name} StatPearls")
+    return f"https://www.ncbi.nlm.nih.gov/books/?term={query}"
+
+
+def fetch_wikijournalclub_page(study_info):
+    """
+    Try to fetch WikiJournalClub content for a landmark study.
+    Returns (text, url) or (None, None) if not found / fetch fails.
+    """
+    acronym = study_info.get("acronym", "")
+    name = study_info.get("name", "")
+
+    # Build candidate URLs to try (WJC uses MediaWiki URL format)
+    candidates = []
+    if acronym:
+        candidates.append(f"https://www.wikijournalclub.org/wiki/{urllib.parse.quote(acronym)}")
+    if name:
+        name_slug = re.sub(r'[^A-Za-z0-9]+', '_', name).strip('_')
+        candidates.append(f"https://www.wikijournalclub.org/wiki/{urllib.parse.quote(name_slug)}")
+
+    for url in candidates:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                final_url = resp.geturl()
+                html = resp.read().decode("utf-8", errors="replace")
+
+            # If redirected to main page or search page, the article doesn't exist
+            if "Main_Page" in final_url or "Special:" in final_url or len(html) < 4000:
+                continue
+
+            text = _strip_html_to_text(html, max_chars=6000)
+            if len(text) < 500:
+                continue
+
+            print(f"    Fetched WikiJournalClub: {len(text)} chars from {url}")
+            return text, url
+
+        except Exception:
+            continue
+
+    print(f"    WikiJournalClub not found for: {acronym or name}")
+    return None, None
+
+
+def generate_disease_content(disease_name, source_url=None):
+    """
+    Call Claude to generate the Disease of the Day content.
+    Uses web search targeting StatPearls / NCBI Bookshelf as the primary source.
+    source_url: a pre-constructed StatPearls search URL to include in the header link.
+    """
+    statpearls_url = source_url or get_statpearls_search_url(disease_name)
+    source_block = f"""Use web search to find the StatPearls / NCBI Bookshelf article for {disease_name}.
+Search: site:ncbi.nlm.nih.gov/books {disease_name} StatPearls
+
+CRITICAL ACCURACY RULES:
+1. Base content PRIMARILY on what you find in StatPearls / NCBI Bookshelf.
+2. Supplement with other peer-reviewed sources only for sections not covered.
+3. Never invent diagnostic test statistics (Sn, Sp, LR, NNT) — only include them when found in sources.
+4. Include the StatPearls article URL you found in the "source_url" field of the response.
+5. Mark any content from your training data (not from sources) with "Clinical context:" prefix."""
+    use_search = True
+
     prompt = f"""You are a medical education content creator for "Paging Dr. Oh," a daily
 clinical reference for internal medicine physicians and hospitalists.
 
 Today's disease is: **{disease_name}**
 Today's date is: {TODAY_STR}
 
-Generate comprehensive, evidence-based content.  This will be read by busy
-physicians at the bedside, so FORMAT EVERYTHING AS BULLET POINTS for rapid
-scanning.
+{source_block}
+
+FORMAT EVERYTHING AS BULLET POINTS for rapid bedside scanning.
 
 Rules:
 - Every bullet should be an HTML <li> element.
 - Use <strong> for key terms.  Use HTML entities for symbols (&ge; &le; &rarr; &mdash; &lt; &gt;).
-- Include diagnostic test statistics INLINE as prose (Sn, Sp, PPV, NPV, +LR, -LR) wherever data exists.
+- Include diagnostic test statistics INLINE (Sn, Sp, PPV, NPV, +LR, -LR) wherever data exists in the source.
 - Add superscript reference numbers like <sup>1</sup> throughout the text.
 - Treatment must be stratified by clinical setting (outpatient / inpatient non-ICU / ICU when applicable).
-- Include 8-12 numbered references from peer-reviewed sources.
+- Include 5-10 numbered references from peer-reviewed sources (PubMed preferred).
 - Suggest 1-3 relevant clinical calculator IDs from this list ONLY:
   {json.dumps(list(CALCULATORS.keys()))}
-  Pick only calculators that are clinically relevant to {disease_name}. If none fit, use an empty list.
-- Suggest 2-4 society guidelines with DOI or URL links.
+  Pick only calculators that are clinically relevant to {disease_name}. If none fit, use [].
+- Suggest 2-4 society guidelines with URL links.
 
-Return ONLY valid JSON (no markdown fences, no extra text) with this structure:
+Return ONLY valid JSON (no markdown fences, no extra text):
 
 {{
   "disease_name": "{disease_name}",
+  "source_url": "URL of the StatPearls/NCBI article you found, or {statpearls_url}",
   "clinical_manifestations": {{
     "symptoms": ["<li>bullet html here<sup>1</sup></li>"],
     "exam_findings": ["<li>bullet html here</li>"]
@@ -484,14 +572,14 @@ Return ONLY valid JSON (no markdown fences, no extra text) with this structure:
   ]
 }}"""
     try:
-        raw = call_claude(prompt, use_search=True, max_tokens=16000)
+        raw = call_claude(prompt, use_search=use_search, max_tokens=16000)
         return parse_json_response(raw)
     except Exception as e:
         print(f"ERROR generating disease content: {e}")
         traceback.print_exc()
-        # Return minimal fallback
         return {
             "disease_name": disease_name,
+            "source_url": statpearls_url,
             "clinical_manifestations": {"symptoms": [f"<li>Content generation failed for {disease_name}. Please try again tomorrow.</li>"], "exam_findings": []},
             "differential_diagnosis": {"common": [], "less_common": [], "mimics": []},
             "diagnostic_tests": [],
@@ -626,43 +714,62 @@ def curate_rss_items(rss_articles, existing_ids):
 who also does outpatient clinic work.
 
 Below are {len(article_summaries)} recent articles from major medical journal RSS feeds
-and FDA/CDC feeds. You MUST select 3-5 items that are most relevant.
+and FDA/CDC feeds. Select 5-10 items that are most relevant.
 
-Select articles that are likely to be:
-- Original research (RCTs, meta-analyses, observational studies)
+SELECTION CRITERIA (include these):
+- Original research: RCTs, meta-analyses, observational studies
 - Clinical practice guidelines or guideline updates
 - FDA drug approvals, new indications, or safety alerts
-- Public health updates (outbreaks, vaccination changes)
+- Public health updates (outbreaks, vaccination changes, CDC/MMWR alerts)
+- High-impact reviews relevant to IM/hospitalist practice
 
-DO NOT select: editorials, commentaries, imaging challenges, case reports, corrections,
-letters to the editor, book reviews, audio summaries, podcast episodes, obituaries,
-or "This Week in the Journal" summaries.
+EXCLUDE (do not select):
+- Editorials, commentaries, letters to the editor
+- Imaging challenges, case reports, corrections
+- Book reviews, audio summaries, podcast episodes, obituaries
+- "This Week in the Journal" or table-of-contents summaries
 
-From whatever remains after filtering, pick the 3-5 articles that would be MOST useful
-for a busy hospitalist to know about. If the title suggests it is an original research
-study or guideline, select it. When in doubt, INCLUDE it rather than exclude.
+RANKING: Prefer items with higher IM relevance, stronger evidence level, and
+practice-changing potential. Surface a mix from different specialties.
 
 Skip any items with these IDs (already covered): {json.dumps(existing_ids[-50:])}
 
 ARTICLES:
 {json.dumps(article_summaries, indent=2)}
 
-For each item you select, return a JSON array:
+ACCURACY RULES — these are strict:
+1. source_summary_bullets: ONLY paraphrase what is stated in the title/description.
+   Do NOT invent statistics, outcomes, or results. If you only have a title (no abstract),
+   write exactly 1 bullet restating the title in plain language.
+2. clinical_interpretation_bullets: 1-2 bullets of your clinical context/relevance.
+   These MUST start with "Clinical context:" so they are clearly labeled as your assessment.
+3. sample_size and primary_outcome: ONLY fill these if stated in the title/description.
+   Use empty string "" if not mentioned.
+4. limitations: list only real limitations you know for this design type, or leave as [].
+5. confidence: "high" for RCTs/meta-analyses with strong evidence; "moderate" for
+   observational studies, guidelines, or reviews; "preliminary" for news items,
+   conference abstracts, or articles with no abstract text.
+
+For each selected item, return a JSON array:
 [
   {{
     "article_index": 0,
-    "id": "short-slug-yyyy",
-    "type": "RCT" or "Meta-Analysis" or "Guideline" or "FDA Action" or "Observational" or "Public Health",
+    "id": "short-slug-{TODAY.year}",
+    "type": "RCT" | "Meta-Analysis" | "Guideline" | "Review" | "FDA Action" | "Observational" | "Public Health",
     "specialty": "e.g. Cardiology",
-    "title": "Full title from the article",
-    "study_design": "Brief description of design if you can infer it, otherwise empty string",
-    "key_findings": "What you know or can infer about the findings, otherwise restate the title",
-    "bottom_line": "One-sentence clinical takeaway based on what you know about this topic",
-    "confidence": "high" or "moderate" or "preliminary"
+    "title": "Full title exactly as given",
+    "study_design": "Brief description of study design, or empty string",
+    "sample_size": "e.g. N=3,572 or empty string if not stated",
+    "primary_outcome": "e.g. 30-day all-cause mortality or empty string if not stated",
+    "source_summary_bullets": ["bullet paraphrased from title/description only"],
+    "clinical_interpretation_bullets": ["Clinical context: why this matters in practice"],
+    "limitations": ["known limitation for this study design"],
+    "bottom_line": "One-sentence clinical takeaway",
+    "confidence": "high" | "moderate" | "preliminary"
   }}
 ]
 
-You MUST return at least 3 items. Return ONLY valid JSON (no markdown fences)."""
+Return ONLY valid JSON (no markdown fences, no extra text)."""
 
     try:
         raw = call_claude(prompt, use_search=False, max_tokens=4000)
@@ -802,31 +909,58 @@ If there are no duplicates, return: {{"merges": []}}"""
     return remaining, existing_items
 
 
-def generate_landmark_content(study_info):
-    """Call Claude to generate a deep-dive analysis of a landmark trial."""
+def generate_landmark_content(study_info, source_text=None, source_url=None):
+    """
+    Call Claude to generate a deep-dive analysis of a landmark trial.
+    If source_text (from WikiJournalClub) is provided, Claude extracts from it.
+    Otherwise generates from training data.
+    """
+    trial_name = study_info.get('name', 'Unknown')
+    trial_year = study_info.get('year', 'Unknown')
+    trial_journal = study_info.get('journal', 'Unknown')
+    trial_brief = study_info.get('one_liner', '')
+
+    if source_text:
+        source_block = f"""SOURCE TEXT (WikiJournalClub — {source_url or ""}):
+---
+{source_text}
+---
+
+ACCURACY RULES:
+1. Extract statistics (ARR, RRR, NNT, CI, p-values) ONLY from the source text above.
+2. Do NOT invent numbers not present in the source.
+3. If a field is not covered in the source, write "See source for details." """
+    else:
+        source_block = f"""Use your knowledge of this well-known trial to provide accurate statistics
+(ARR, RRR, NNT, 95% CI, p-values). This is a landmark study so cite specific numbers."""
+
     prompt = f"""You are a medical education content creator for "Paging Dr. Oh."
 
-Generate a detailed, educational deep-dive analysis of this landmark clinical trial:
+Analyze this landmark clinical trial for an internal medicine physician audience:
 
-Trial: {study_info.get('name', 'Unknown')}
-Year: {study_info.get('year', 'Unknown')}
-Journal: {study_info.get('journal', 'Unknown')}
-Brief: {study_info.get('one_liner', '')}
+Trial: {trial_name}
+Year: {trial_year}
+Journal: {trial_journal}
+Brief: {trial_brief}
 
-Write for an internal medicine physician audience. Be thorough and include specific
-statistics (absolute risk reduction, relative risk, NNT, confidence intervals, p-values).
+{source_block}
 
-Return ONLY valid JSON:
+Return ONLY valid JSON (no markdown fences):
 {{
-  "title": "{study_info.get('name', 'Unknown')}",
-  "meta": "{study_info.get('journal', '')} &bull; {study_info.get('year', '')} &bull; Authors/Group",
-  "study_design": "Detailed description of the study design, setting, and methodology...",
-  "population": "Who was enrolled, key inclusion/exclusion criteria, sample size...",
-  "primary_endpoint": "What was the primary outcome measure...",
-  "key_findings": "Detailed results with statistics (ARR, RRR, NNT, CI, p-values)...",
-  "what_changed": "How this trial changed clinical practice...",
-  "critics_said": "Major criticisms and limitations...",
-  "where_it_stands_now": "Current relevance and how subsequent evidence has refined the findings..."
+  "title": "{trial_name}",
+  "meta": "{trial_journal} &bull; {trial_year} &bull; Authors/Group",
+  "source_url": "{source_url or ""}",
+  "clinical_question": "What clinical question did this trial address?",
+  "study_design": "Design, setting, methodology, randomization, blinding...",
+  "population": "Who was enrolled, key inclusion/exclusion criteria, sample size (N=?)...",
+  "intervention": "What was the intervention arm?",
+  "comparator": "What was the comparator/control arm?",
+  "primary_endpoint": "Primary outcome measure...",
+  "key_findings": "Results with specific statistics (ARR, RRR, NNT, 95% CI, p-values)...",
+  "strengths": "Major methodological strengths...",
+  "weaknesses": "Limitations and major criticisms...",
+  "practice_impact": "How did this trial change clinical practice?",
+  "why_it_matters_now": "Current relevance, how subsequent evidence refined the findings..."
 }}"""
     try:
         raw = call_claude(prompt, use_search=False, max_tokens=8000)
@@ -834,11 +968,13 @@ Return ONLY valid JSON:
     except Exception as e:
         print(f"WARNING: Landmark study generation failed: {e}")
         return {
-            "title": study_info.get("name", "Unknown Trial"),
-            "meta": f"{study_info.get('journal', '')} &bull; {study_info.get('year', '')}",
-            "study_design": "Content generation failed. Please try again tomorrow.",
-            "population": "", "primary_endpoint": "", "key_findings": "",
-            "what_changed": "", "critics_said": "", "where_it_stands_now": "",
+            "title": trial_name,
+            "meta": f"{trial_journal} &bull; {trial_year}",
+            "source_url": source_url or "",
+            "clinical_question": "Content generation failed. Please try again tomorrow.",
+            "study_design": "", "population": "", "intervention": "", "comparator": "",
+            "primary_endpoint": "", "key_findings": "", "strengths": "",
+            "weaknesses": "", "practice_impact": "", "why_it_matters_now": "",
         }
 
 
@@ -890,16 +1026,23 @@ def build_simple_list(items):
     return html
 
 
-def build_disease_tab(content):
-    """Build the Disease of the Day tab HTML."""
+def _build_single_disease_html(content):
+    """Build the inner HTML for one disease (no outer pool wrapper)."""
     d = content
     disease_name = d.get("disease_name", "Unknown")
+    source_url = d.get("source_url", "")
 
     # -- Header card --
+    source_link = (
+        f'<a href="{source_url}" target="_blank" rel="noopener" class="statpearls-link">'
+        f'Read on StatPearls &#8594;</a>'
+        if source_url else ""
+    )
     html = f"""
       <div class="disease-header card">
         <h2>{disease_name}</h2>
         <p class="verified-date">Last verified: {TODAY_STR}</p>
+        {source_link}
       </div>"""
 
     # -- Clinical Manifestations (open by default) --
@@ -984,10 +1127,29 @@ def build_disease_tab(content):
             html += f'          <li id="ref-{i}">{ref}</li>\n'
         html += "        </ol>\n      </div>\n"
 
-    # -- Randomize Button --
-    html += """
+    return html
+
+
+def build_disease_tab(content_pool):
+    """
+    Build the Disease of the Day tab HTML.
+    content_pool is a list of disease content dicts (1-3 items).
+    The first item is shown by default; others are hidden and revealed by Randomize.
+    """
+    if not content_pool:
+        return '<p style="color:var(--gray);">Content unavailable. Try again tomorrow.</p>'
+
+    html = ""
+    for i, content in enumerate(content_pool):
+        display = '' if i == 0 else ' style="display:none"'
+        html += f'      <div class="disease-view" id="disease-view-{i}"{display}>\n'
+        html += _build_single_disease_html(content)
+        html += "\n      </div>\n"
+
+    if len(content_pool) > 1:
+        html += f"""
       <div class="randomize-wrap">
-        <button class="btn btn-primary" id="randomize-btn">Randomize Disease</button>
+        <button class="btn btn-primary" onclick="randomizeDisease({len(content_pool)})">&#8635; Show Me Another Disease</button>
       </div>"""
 
     return html
@@ -1067,7 +1229,11 @@ def _build_wn_card(item, is_trending=False):
     date = item.get("date", "")
     title = item.get("title", "")
     study_design = item.get("study_design", "")
-    key_findings = item.get("key_findings", "")
+    sample_size = item.get("sample_size", "")
+    primary_outcome = item.get("primary_outcome", "")
+    source_summary_bullets = item.get("source_summary_bullets", [])
+    clinical_interpretation_bullets = item.get("clinical_interpretation_bullets", [])
+    limitations = item.get("limitations", [])
     bottom_line = item.get("bottom_line", "")
     confidence = item.get("confidence", "moderate")
     source_url = item.get("source_url", "#")
@@ -1090,7 +1256,7 @@ def _build_wn_card(item, is_trending=False):
         <div class="wn-source">{source} &bull; {date}</div>
         <div class="wn-title">{title}</div>"""
 
-    # Add trending metadata
+    # Add talking-about metadata
     if is_trending:
         sources_seen = item.get("sources_seen", [])
         mention_count = item.get("mention_count", 1)
@@ -1112,12 +1278,35 @@ def _build_wn_card(item, is_trending=False):
           <span class="trending-count">{mention_count} sources over {days_span} day{"s" if days_span != 1 else ""}</span>
         </div>\n"""
 
+    # Study design + sample size + primary outcome row
+    meta_parts = []
     if study_design:
-        html += f"""        <div class="wn-section-label">Study Design</div>
-        <p class="wn-text">{study_design}</p>\n"""
-    if key_findings:
-        html += f"""        <div class="wn-section-label">Key Findings</div>
-        <p class="wn-text">{key_findings}</p>\n"""
+        meta_parts.append(f"<strong>Design:</strong> {study_design}")
+    if sample_size:
+        meta_parts.append(f"<strong>N:</strong> {sample_size}")
+    if primary_outcome:
+        meta_parts.append(f"<strong>Outcome:</strong> {primary_outcome}")
+    if meta_parts:
+        html += f"""        <div class="wn-study-meta">{"&ensp;&bull;&ensp;".join(meta_parts)}</div>\n"""
+
+    # Source summary bullets (what the source actually says)
+    if source_summary_bullets:
+        bullets_html = "".join(f"<li>{b}</li>" for b in source_summary_bullets)
+        html += f"""        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets">{bullets_html}</ul>\n"""
+
+    # Clinical interpretation bullets (Claude's added context, labeled)
+    if clinical_interpretation_bullets:
+        bullets_html = "".join(f"<li>{b}</li>" for b in clinical_interpretation_bullets)
+        html += f"""        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets">{bullets_html}</ul>\n"""
+
+    # Limitations
+    if limitations:
+        lim_html = "".join(f"<li>{l}</li>" for l in limitations)
+        html += f"""        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations">{lim_html}</ul>\n"""
+
     if bottom_line:
         html += f"""        <div class="wn-bottom-line">
           <strong>Bottom Line:</strong> {bottom_line}
@@ -1146,14 +1335,14 @@ def build_whatsnew_tab(items):
 
     html = ""
 
-    # --- TRENDING SECTION ---
+    # --- TALKING ABOUT SECTION ---
     if trending:
         html += """
       <div class="trending-section">
         <div class="trending-header">
-          <span class="trending-icon">&#128293;</span>
-          <h3>TRENDING</h3>
-          <span class="trending-subtitle">Covered by multiple sources</span>
+          <span class="trending-icon">&#128483;</span>
+          <h3>TALKING ABOUT</h3>
+          <span class="trending-subtitle">Covered by multiple sources this week</span>
         </div>\n"""
         for item in trending:
             html += _build_wn_card(item, is_trending=True)
@@ -1177,32 +1366,54 @@ def build_whatsnew_tab(items):
 
 
 def build_landmark_tab(content):
-    """Build the Landmark Study tab HTML."""
+    """Build the Landmark Study tab HTML with enhanced fields."""
     c = content
     title = c.get("title", "Unknown Trial")
     meta = c.get("meta", "")
+    source_url = c.get("source_url", "")
 
+    # Enhanced section order (new fields + renamed existing)
     sections_order = [
-        ("study_design",      "Study Design"),
-        ("population",        "Population"),
-        ("primary_endpoint",  "Primary Endpoint"),
-        ("key_findings",      "Key Findings"),
-        ("what_changed",      "What Changed in Practice"),
-        ("critics_said",      "What Critics Said"),
+        ("clinical_question",  "Clinical Question"),
+        ("study_design",       "Study Design"),
+        ("population",         "Population"),
+        ("intervention",       "Intervention"),
+        ("comparator",         "Comparator / Control"),
+        ("primary_endpoint",   "Primary Endpoint"),
+        ("key_findings",       "Key Findings"),
+        ("strengths",          "Strengths"),
+        ("weaknesses",         "Weaknesses / Limitations"),
+        ("practice_impact",    "Practice Impact"),
+        ("why_it_matters_now", "Why It Matters Now"),
+        # Legacy field names (backward compat with old cached data)
+        ("what_changed",       "What Changed in Practice"),
+        ("critics_said",       "What Critics Said"),
         ("where_it_stands_now", "Where It Stands Now"),
     ]
 
+    wjc_link = (
+        f'<a href="{source_url}" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">'
+        f'Read on WikiJournalClub &#8594;</a>'
+        if source_url else ""
+    )
+
+    safe_id = re.sub(r'[^a-z0-9-]', '-', title.lower())[:30]
     html = f"""
       <div class="landmark-card">
         <div class="landmark-header">
           <h3 class="landmark-title">{title}</h3>
-          <button class="action-btn star" data-id="{title.lower().replace(' ', '-')[:30]}" title="Star this study">&#9734;</button>
+          <button class="action-btn star" data-id="{safe_id}" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">{meta}</div>\n"""
+        <div class="landmark-meta">{meta}</div>
+        {wjc_link}\n"""
 
+    seen_labels = set()
     for key, label in sections_order:
+        if label in seen_labels:
+            continue
         text = c.get(key, "")
-        if text:
+        if text and text != "See source for details.":
+            seen_labels.add(label)
             html += f"""
         <div class="landmark-section">
           <h4>{label}</h4>
@@ -1226,78 +1437,26 @@ def build_landmark_tab(content):
     return html
 
 
-def build_archive_tab(archive_items):
-    """Build the Archive tab HTML."""
-    html = """
-      <h3 class="section-title" style="margin-top:0;">Archive</h3>
-      <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">Studies and updates that have rolled out of the 30-day window, organized by month.</p>\n"""
-
-    if not archive_items:
-        html += '      <p style="color:var(--gray); font-style:italic;">No archived items yet. Items will appear here after 30 days.</p>\n'
-        return html
-
-    # Group by month
-    months = {}
-    for item in archive_items:
-        date_iso = item.get("date_iso", "")
-        if date_iso:
-            try:
-                dt = datetime.strptime(date_iso, "%Y-%m-%d")
-                month_key = dt.strftime("%Y-%m")
-                month_label = dt.strftime("%B %Y")
-            except ValueError:
-                month_key = "0000-00"
-                month_label = "Unknown"
-        else:
-            month_key = "0000-00"
-            month_label = "Unknown"
-
-        if month_key not in months:
-            months[month_key] = {"label": month_label, "items": []}
-        months[month_key]["items"].append(item)
-
-    # Sort months descending
-    for month_key in sorted(months.keys(), reverse=True):
-        month = months[month_key]
-        html += f"""
-      <div class="archive-month">
-        <div class="archive-month-header" onclick="toggleArchiveMonth(this)">
-          <h3>{month["label"]}</h3>
-          <span class="archive-toggle">&#9654;</span>
-        </div>
-        <div class="archive-month-body">\n"""
-
-        for item in month["items"]:
-            item_type = item.get("type", "Study")
-            specialty = item.get("specialty", "")
-            date_str = item.get("date", "")
-            title = item.get("title", "Untitled")
-            bottom_line = item.get("bottom_line", "")
-            key_findings = item.get("key_findings", "")
-            detail = key_findings if key_findings else bottom_line
-
-            html += f"""
-          <div class="archive-card" onclick="toggleArchiveCard(this)">
-            <div class="archive-card-header">
-              <div>
-                <div class="archive-card-title">{title}</div>
-                <div class="archive-card-meta"><span class="pill {pill_class(item_type)}" style="font-size:0.65rem;padding:2px 8px;">{item_type}</span> &bull; {specialty} &bull; {date_str}</div>
-              </div>
-              <span class="accordion-toggle">+</span>
-            </div>
-            <div class="archive-card-details">
-              <div class="archive-detail-content">
-                <p>{detail}</p>
-                <p><strong>Bottom Line:</strong> {bottom_line}</p>
-              </div>
-            </div>
-          </div>\n"""
-
-        html += """
-        </div>
-      </div>\n"""
-
-    return html
+def build_archive_tab(_unused=None):
+    """
+    Build the Archive tab HTML.
+    Archive is now entirely client-side via localStorage starred items.
+    The Python server-side archive.json is no longer used.
+    """
+    return """
+      <div class="archive-intro">
+        <h3 class="section-title" style="margin-top:0;">Your Starred Items</h3>
+        <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">
+          Star any card (&#9734;) on the What&apos;s New or Landmark Trial tabs to save it here.
+          Starred items persist on this device across page reloads.
+        </p>
+      </div>
+      <div id="archive-content">
+        <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
+      </div>
+      <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
+        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()">&#x2715; Clear All Starred</button>
+      </div>"""
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1323,145 +1482,186 @@ BASE_JS = """
       accordion.classList.toggle('open');
     }
 
-    /* ===== ARCHIVE MONTH TOGGLE ===== */
-    function toggleArchiveMonth(header) {
-      header.parentElement.classList.toggle('open');
+    /* ===== STARRED ITEMS (localStorage Archive) ===== */
+    var PDR_STARRED_KEY = 'pdr-starred-v2';
+
+    function getStarred() {
+      try { return JSON.parse(localStorage.getItem(PDR_STARRED_KEY) || '{}'); }
+      catch(e) { return {}; }
     }
 
-    /* ===== ARCHIVE CARD EXPAND ===== */
-    function toggleArchiveCard(card) {
-      card.classList.toggle('expanded');
+    function saveStarred(starred) {
+      try { localStorage.setItem(PDR_STARRED_KEY, JSON.stringify(starred)); } catch(e) {}
     }
 
-    /* ===== STAR / FAVORITE BUTTONS ===== */
     document.querySelectorAll('.action-btn.star').forEach(function(btn) {
       btn.addEventListener('click', function(e) {
         e.stopPropagation();
-        btn.classList.toggle('active');
         var id = btn.getAttribute('data-id');
-        var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+        var starred = getStarred();
 
         if (btn.classList.contains('active')) {
-          btn.innerHTML = '&#9733;';
-          if (favorites.indexOf(id) === -1) favorites.push(id);
-        } else {
+          btn.classList.remove('active');
           btn.innerHTML = '&#9734;';
-          var idx = favorites.indexOf(id);
-          if (idx > -1) favorites.splice(idx, 1);
+          delete starred[id];
+        } else {
+          btn.classList.add('active');
+          btn.innerHTML = '&#9733;';
+          var card = btn.closest('.wn-card, .landmark-card');
+          var title = id;
+          var source = '';
+          var typeLabel = '';
+          var bottomLine = '';
+          var sourceUrl = '';
+          if (card) {
+            var titleEl = card.querySelector('.wn-title, .landmark-title');
+            if (titleEl) title = titleEl.textContent.trim();
+            var sourceEl = card.querySelector('.wn-source, .landmark-meta');
+            if (sourceEl) source = sourceEl.textContent.trim();
+            var pills = card.querySelectorAll('.pill');
+            if (pills.length > 0) typeLabel = pills[0].textContent.trim();
+            var blEl = card.querySelector('.wn-bottom-line');
+            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').trim();
+            var linkEl = card.querySelector('.source-link, .statpearls-link');
+            if (linkEl) sourceUrl = linkEl.href;
+          }
+          starred[id] = {
+            id: id, title: title, source: source,
+            typeLabel: typeLabel, bottomLine: bottomLine,
+            sourceUrl: sourceUrl,
+            cardType: card ? (card.classList.contains('landmark-card') ? 'landmark' : 'whats_new') : 'unknown',
+            starredAt: new Date().toISOString().split('T')[0]
+          };
         }
 
-        localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
+        saveStarred(starred);
+        renderArchive();
         updateFavoritesList();
       });
     });
 
-    /* ===== FAVORITES LIST ===== */
-    function updateFavoritesList() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      var list = document.getElementById('favorites-list');
-      if (!list) return;
-
-      if (favorites.length === 0) {
-        list.innerHTML = '<li class="favorites-empty">No favorites yet. Star studies to add them here.</li>';
+    /* ===== RENDER ARCHIVE TAB ===== */
+    function renderArchive() {
+      var container = document.getElementById('archive-content');
+      var actionsBar = document.getElementById('archive-actions');
+      if (!container) return;
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) {
+        container.innerHTML = '<p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>';
+        if (actionsBar) actionsBar.style.display = 'none';
         return;
       }
-
+      if (actionsBar) actionsBar.style.display = '';
+      ids.sort(function(a, b) { return (starred[b].starredAt||'').localeCompare(starred[a].starredAt||''); });
       var html = '';
-      favorites.forEach(function(id) {
-        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
-        var title = id;
-        if (card) {
-          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
-          if (titleEl) title = titleEl.textContent;
+      ids.forEach(function(id) {
+        var item = starred[id];
+        var typeClass = item.cardType === 'landmark' ? 'pill-rct' : 'pill-specialty';
+        html += '<div class="archive-card expanded">';
+        html += '<div class="archive-card-header"><div>';
+        html += '<div class="archive-card-title">' + (item.title || id) + '</div>';
+        html += '<div class="archive-card-meta">';
+        if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
+        html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
+        html += '<button class="btn-remove-fav" onclick="removeStarred(\'' + id + '\')" title="Remove">&#x2715;</button></div>';
+        if (item.bottomLine) {
+          html += '<div class="archive-card-details"><div class="archive-detail-content">';
+          html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
+          if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="font-size:0.8rem;">View Source &#8594;</a>';
+          html += '</div></div>';
         }
-        html += '<li><span>' + title + '</span><button class="action-btn" onclick="removeFavorite(\\'' + id + '\\')" style="opacity:1;font-size:0.9rem;color:var(--english-red);padding:2px 6px;" title="Remove">\\u2715</button></li>';
+        html += '</div>';
+      });
+      container.innerHTML = html;
+    }
+
+    function removeStarred(id) {
+      var starred = getStarred();
+      delete starred[id];
+      saveStarred(starred);
+      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+      if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9734;'; }
+      renderArchive();
+      updateFavoritesList();
+    }
+
+    function clearAllStarred() {
+      if (!confirm('Remove all starred items from archive?')) return;
+      saveStarred({});
+      document.querySelectorAll('.action-btn.star.active').forEach(function(b) {
+        b.classList.remove('active'); b.innerHTML = '&#9734;';
+      });
+      renderArchive();
+      updateFavoritesList();
+    }
+
+    /* ===== LANDMARK TAB FAVORITES LIST ===== */
+    function updateFavoritesList() {
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      var list = document.getElementById('favorites-list');
+      if (!list) return;
+      if (ids.length === 0) {
+        list.innerHTML = '<li class="favorites-empty">No starred items yet. Star cards to save them here.</li>';
+        return;
+      }
+      var html = '';
+      ids.forEach(function(id) {
+        var item = starred[id];
+        html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
+        if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
+        html += ' <button class="btn-remove-fav" onclick="removeStarred(\'' + id + '\')" title="Remove">&#x2715;</button></li>';
       });
       list.innerHTML = html;
     }
 
-    function removeFavorite(id) {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      var idx = favorites.indexOf(id);
-      if (idx > -1) favorites.splice(idx, 1);
-      localStorage.setItem('pdr-favorites', JSON.stringify(favorites));
-
-      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-      if (btn) {
-        btn.classList.remove('active');
-        btn.innerHTML = '&#9734;';
-      }
-      updateFavoritesList();
-    }
-
-    /* ===== EXPORT FAVORITES TO CLIPBOARD ===== */
+    /* ===== EXPORT TO CLIPBOARD ===== */
     function exportFavorites() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
-      if (favorites.length === 0) {
-        alert('No favorites to export. Star some studies first!');
-        return;
-      }
-
-      var text = 'Paging Dr. Oh \\u2014 Starred Studies\\n';
-      text += '========================================\\n\\n';
-
-      favorites.forEach(function(id, i) {
-        var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
-        var card = btn ? (btn.closest('.landmark-card') || btn.closest('.wn-card')) : null;
-        var title = id;
-        var meta = '';
-        if (card) {
-          var titleEl = card.querySelector('.landmark-title') || card.querySelector('.wn-title');
-          if (titleEl) title = titleEl.textContent;
-          var metaEl = card.querySelector('.landmark-meta') || card.querySelector('.wn-source');
-          if (metaEl) meta = metaEl.textContent.trim();
-        }
-        text += (i + 1) + '. ' + title + '\\n   ' + meta + '\\n\\n';
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) { alert('No starred items yet.'); return; }
+      var text = 'Paging Dr. Oh \\u2014 Starred Items\\n========================================\\n\\n';
+      ids.forEach(function(id, i) {
+        var item = starred[id];
+        text += (i + 1) + '. ' + (item.title || id) + '\\n';
+        if (item.source) text += '   ' + item.source + '\\n';
+        if (item.bottomLine) text += '   Bottom line: ' + item.bottomLine + '\\n';
+        text += '\\n';
       });
-
       navigator.clipboard.writeText(text).then(function() {
-        var exportBtn = document.getElementById('export-btn');
-        var original = exportBtn.textContent;
-        exportBtn.textContent = 'Copied!';
-        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+        var btn = document.getElementById('export-btn');
+        if (btn) { var o = btn.textContent; btn.textContent = 'Copied!'; setTimeout(function(){ btn.textContent = o; }, 2000); }
       }).catch(function() {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand('copy');
-        document.body.removeChild(ta);
-        var exportBtn = document.getElementById('export-btn');
-        var original = exportBtn.textContent;
-        exportBtn.textContent = 'Copied!';
-        setTimeout(function() { exportBtn.textContent = original; }, 2000);
+        var ta = document.createElement('textarea'); ta.value = text;
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
       });
     }
 
-    /* ===== RANDOMIZE BUTTON ===== */
-    var randomizeBtn = document.getElementById('randomize-btn');
-    if (randomizeBtn) {
-      randomizeBtn.addEventListener('click', function() {
-        randomizeBtn.textContent = 'Loading\\u2026';
-        randomizeBtn.disabled = true;
-        setTimeout(function() {
-          randomizeBtn.textContent = 'Randomize Disease';
-          randomizeBtn.disabled = false;
-          alert('A brand-new disease is generated every day at 6 AM UTC.  Come back tomorrow for a fresh topic!');
-        }, 600);
-      });
+    /* ===== RANDOMIZE DISEASE ===== */
+    var _currentDiseaseIdx = 0;
+    function randomizeDisease(poolSize) {
+      document.getElementById('disease-view-' + _currentDiseaseIdx).style.display = 'none';
+      var candidates = [];
+      for (var i = 0; i < poolSize; i++) {
+        if (i !== _currentDiseaseIdx) candidates.push(i);
+      }
+      _currentDiseaseIdx = candidates[Math.floor(Math.random() * candidates.length)];
+      document.getElementById('disease-view-' + _currentDiseaseIdx).style.display = '';
+      document.getElementById('disease-tab').scrollIntoView({behavior: 'smooth'});
     }
 
     /* ===== INITIALIZE ON LOAD ===== */
     (function init() {
-      var favorites = JSON.parse(localStorage.getItem('pdr-favorites') || '[]');
+      var starred = getStarred();
       document.querySelectorAll('.action-btn.star').forEach(function(btn) {
-        if (favorites.indexOf(btn.getAttribute('data-id')) > -1) {
+        if (starred[btn.getAttribute('data-id')]) {
           btn.classList.add('active');
           btn.innerHTML = '&#9733;';
         }
       });
       updateFavoritesList();
+      renderArchive();
     })();
 """
 
@@ -1662,36 +1862,61 @@ def main():
         new_items, wn_current = dedup_and_merge(new_items, wn_current)
         print(f"  After merge: {len(new_items)} genuinely new item(s).")
 
-    # 5. Generate Disease of the Day (API call with web search)
-    print("\nGenerating Disease of the Day content...")
-    disease_content = generate_disease_content(disease_name)
+    # 5. Build disease pool (3 diseases for Randomize button)
+    # Pick the primary disease + 2 alternates from the same list
+    print("\nBuilding disease pool (3 diseases for Randomize button)...")
+    disease_pool_names = [disease_name]
+    temp_hist = {
+        "diseases_shown": list(history.get("diseases_shown", [])),
+        "landmark_studies_shown": [],
+        "whats_new_ids": [],
+    }
+    for _ in range(2):
+        temp_hist["diseases_shown"] = temp_hist["diseases_shown"] + disease_pool_names
+        disease_pool_names.append(pick_disease(temp_hist))
 
-    print("Pausing 90 seconds to avoid API rate limits...")
+    print(f"  Disease pool: {', '.join(disease_pool_names)}")
+
+    # Generate disease content for each pool member (web search → StatPearls directed)
+    disease_pool = []
+    for i, dname in enumerate(disease_pool_names):
+        if i > 0:
+            print(f"  Pausing 60s before next disease generation...")
+            time.sleep(60)
+        print(f"  Generating disease content for: {dname}")
+        content = generate_disease_content(dname)
+        disease_pool.append(content)
+        print(f"  Done: {dname}")
+
+    print(f"\nPausing 90s to avoid API rate limits before landmark generation...")
     time.sleep(90)
 
-    # 6. Generate Landmark Study (API call, no web search — lightweight)
+    # 6. Generate Landmark Study — try WikiJournalClub first, fallback to training data
     print("Generating Landmark Study content...")
-    landmark_content = generate_landmark_content(study)
+    wjc_text, wjc_url = fetch_wikijournalclub_page(study)
+    if wjc_text:
+        print(f"  Using WikiJournalClub source: {wjc_url}")
+    else:
+        print("  WikiJournalClub not found — generating from training data")
+    landmark_content = generate_landmark_content(study, source_text=wjc_text, source_url=wjc_url)
 
-    # 7. Archive rotation
-    wn_current, archive = rotate_archive(wn_current, archive)
-
-    # 8. Add today's new items to the front of the current list
+    # 7. Add today's new items to the front of the current list (archive is now client-side localStorage)
     wn_current = new_items + wn_current
 
     # 9. Extract CSS from template
     css = get_css_from_template()
 
-    # 8. Determine which calculators are needed
-    calc_ids = disease_content.get("calculators", [])
+    # Determine which calculators are needed (from primary disease)
+    primary_disease_content = disease_pool[0] if disease_pool else {}
+    calc_ids = primary_disease_content.get("calculators", [])
     if not calc_ids:
         calc_ids = DISEASE_CALCULATORS.get(disease_name, [])
 
-    # 9. Build all tab HTML
-    disease_html  = build_disease_tab(disease_content)
+    # Build all tab HTML
+    disease_html  = build_disease_tab(disease_pool)
     whatsnew_html = build_whatsnew_tab(wn_current)
     landmark_html = build_landmark_tab(landmark_content)
-    archive_html  = build_archive_tab(archive)
+    archive_html  = build_archive_tab()
 
     # 10. Assemble full page
     page = build_full_page(css, disease_html, whatsnew_html, landmark_html, archive_html, calc_ids)
@@ -1703,7 +1928,11 @@ def main():
 
     # 12. Update state files
     new_item_ids = [item.get("id", "") for item in new_items if item.get("id")]
-    update_history(history, disease_name, study.get("id", ""), new_item_ids)
+    # Record all pool diseases in history to avoid repeating them soon
+    for dname in disease_pool_names:
+        update_history(history, dname, study.get("id", ""), new_item_ids if dname == disease_pool_names[0] else [])
+    # Deduplicate history IDs (update_history extends the list)
+    history["whats_new_ids"] = list(dict.fromkeys(history["whats_new_ids"]))
     save_json(HISTORY_PATH, history)
     save_json(WN_PATH, wn_current)
     save_json(ARCHIVE_PATH, archive)

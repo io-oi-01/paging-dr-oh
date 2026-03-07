@@ -175,6 +175,26 @@
       color: var(--gray);
     }
 
+    .statpearls-link {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      color: var(--cadet-blue);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .statpearls-link:hover {
+      color: var(--queen-blue);
+      text-decoration: underline;
+    }
+
+    .randomize-wrap {
+      text-align: center;
+      padding: 24px 0 8px;
+    }
+
     /* ========== ACCORDION ========== */
     .accordion { margin-bottom: 12px; }
 
@@ -596,7 +616,7 @@
       font-size: 0.85rem;
     }
 
-    /* ========== TRENDING SECTION ========== */
+    /* ========== TALKING ABOUT SECTION ========== */
     .trending-section {
       background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
       border-radius: var(--radius);
@@ -664,6 +684,42 @@
     .trending-count {
       color: var(--gray);
       font-weight: 500;
+    }
+
+    /* ========== ENHANCED WN CARD FIELDS ========== */
+    .wn-study-meta {
+      font-size: 0.78rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+      padding: 6px 10px;
+      background: var(--light-bg);
+      border-radius: var(--radius-sm);
+      line-height: 1.6;
+    }
+
+    .wn-bullets {
+      margin: 4px 0 10px 0;
+      padding-left: 18px;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .wn-bullets li {
+      margin-bottom: 4px;
+    }
+
+    .wn-interp-label {
+      color: var(--cadet-blue) !important;
+    }
+
+    .wn-interp-bullets {
+      color: var(--cadet-blue-dark, #3a6e72);
+    }
+
+    .wn-limitations {
+      color: var(--gray);
+      font-style: italic;
     }
 
     /* ========== LANDMARK STUDY ========== */
@@ -838,6 +894,25 @@
       font-size: 0.85rem;
       line-height: 1.65;
     }
+
+    .archive-empty-msg {
+      color: var(--gray);
+      font-style: italic;
+      padding: 20px 0;
+    }
+
+    .btn-remove-fav {
+      background: none;
+      border: none;
+      color: var(--gray);
+      cursor: pointer;
+      font-size: 0.9rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .btn-remove-fav:hover { color: var(--english-red); }
 
     .archive-card.expanded .accordion-toggle {
       transform: rotate(45deg);
