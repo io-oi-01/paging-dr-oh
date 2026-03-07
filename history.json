@@ -6,7 +6,10 @@
     "Sepsis and Septic Shock",
     "ARDS",
     "Hyponatremia",
-    "Acute Pancreatitis"
+    "Acute Pancreatitis",
+    "Acute Kidney Injury",
+    "Hypercalcemia",
+    "Diabetic Ketoacidosis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -15,7 +18,10 @@
     "ttm2-2021",
     "triss-2014",
     "triss-2014",
-    "triss-2014"
+    "triss-2014",
+    "merino-2018",
+    "merino-2018",
+    "merino-2018"
   ],
   "whats_new_ids": [],
   "last_run": "2026-03-07"
