@@ -979,9 +979,9 @@
       <div class="disease-view" id="disease-view-0">
 
       <div class="disease-header card">
-        <h2>Venous Thromboembolism</h2>
+        <h2>Alcohol Withdrawal Syndrome</h2>
         <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Venous%20Thromboembolism%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Alcohol%20Withdrawal%20Syndrome%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -992,7 +992,41 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li>Content generation failed for Venous Thromboembolism. Please try again tomorrow.</li>
+  <li>Content generation failed for Alcohol Withdrawal Syndrome. Please try again tomorrow.</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Differential Diagnosis</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="disease-view" id="disease-view-1" style="display:none">
+
+      <div class="disease-header card">
+        <h2>Infective Endocarditis</h2>
+        <p class="verified-date">Last verified: March 7, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Infective%20Endocarditis%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+      </div>
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Clinical Manifestations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Symptoms</strong></p>
+<ul>
+  <li>Content generation failed for Infective Endocarditis. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -1010,136 +1044,36 @@
         </div>
       </div>
       <h3 class="section-title">Relevant Clinical Scores</h3>
-      <div class="calculator-card" id="wells_pe-calc">
-        <h4>Wells Score for Pulmonary Embolism</h4>
+      <div class="calculator-card" id="qsofa-calc">
+        <h4>qSOFA (Quick Sepsis-Related Organ Failure Assessment)</h4>
         <div class="calc-option">
-          <input type="checkbox" id="wells-pe-1" onchange="update_wells_pe()">
-          <label for="wells-pe-1">Clinical signs/symptoms of DVT (leg swelling, pain with palpation)</label>
+          <input type="checkbox" id="qsofa-ms" onchange="update_qsofa()">
+          <label for="qsofa-ms">Altered mental status (GCS &lt; 15)</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="wells-pe-2" onchange="update_wells_pe()">
-          <label for="wells-pe-2">PE is #1 diagnosis or equally likely</label>
+          <input type="checkbox" id="qsofa-rr" onchange="update_qsofa()">
+          <label for="qsofa-rr">Respiratory Rate &ge; 22 breaths/min</label>
         </div>
         <div class="calc-option">
-          <input type="checkbox" id="wells-pe-3" onchange="update_wells_pe()">
-          <label for="wells-pe-3">Heart rate &gt; 100 bpm</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-pe-4" onchange="update_wells_pe()">
-          <label for="wells-pe-4">Immobilization (&ge;3 days) or surgery in previous 4 weeks</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-pe-5" onchange="update_wells_pe()">
-          <label for="wells-pe-5">Previous DVT/PE</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-pe-6" onchange="update_wells_pe()">
-          <label for="wells-pe-6">Hemoptysis</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-pe-7" onchange="update_wells_pe()">
-          <label for="wells-pe-7">Malignancy (treatment within 6 months or palliative)</label>
+          <input type="checkbox" id="qsofa-sbp" onchange="update_qsofa()">
+          <label for="qsofa-sbp">Systolic Blood Pressure &le; 100 mmHg</label>
         </div>
         <div class="score-result">
-          <span class="score-label">Wells Score for Pulmonary Embolism</span>
-          <span class="score-value" id="wells_pe-score">0</span>
-          <div class="score-interpretation risk-low" id="wells_pe-interp">
-            Low probability (1.3% PE incidence). Consider D-dimer; if negative, PE effectively excluded.
-          </div>
-        </div>
-      </div>
-      <div class="calculator-card" id="wells_dvt-calc">
-        <h4>Wells Score for DVT</h4>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-1" onchange="update_wells_dvt()">
-          <label for="wells-dvt-1">Active cancer (treatment ongoing, within 6 months, or palliative)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-2" onchange="update_wells_dvt()">
-          <label for="wells-dvt-2">Paralysis, paresis, or recent plaster immobilization of the lower extremities</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-3" onchange="update_wells_dvt()">
-          <label for="wells-dvt-3">Recently bedridden &gt;3 days or major surgery within 12 weeks</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-4" onchange="update_wells_dvt()">
-          <label for="wells-dvt-4">Localized tenderness along the distribution of the deep venous system</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-5" onchange="update_wells_dvt()">
-          <label for="wells-dvt-5">Entire leg swollen</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-6" onchange="update_wells_dvt()">
-          <label for="wells-dvt-6">Calf swelling &ge;3 cm compared to asymptomatic leg</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-7" onchange="update_wells_dvt()">
-          <label for="wells-dvt-7">Pitting edema confined to the symptomatic leg</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-8" onchange="update_wells_dvt()">
-          <label for="wells-dvt-8">Collateral superficial veins (non-varicose)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-9" onchange="update_wells_dvt()">
-          <label for="wells-dvt-9">Previously documented DVT</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="wells-dvt-10" onchange="update_wells_dvt()">
-          <label for="wells-dvt-10">Alternative diagnosis at least as likely as DVT</label>
-        </div>
-        <div class="score-result">
-          <span class="score-label">Wells Score for DVT</span>
-          <span class="score-value" id="wells_dvt-score">0</span>
-          <div class="score-interpretation risk-low" id="wells_dvt-interp">
-            Low probability (5%). D-dimer recommended; if negative, DVT excluded.
+          <span class="score-label">qSOFA (Quick Sepsis-Related Organ Failure Assessment)</span>
+          <span class="score-value" id="qsofa-score">0</span>
+          <div class="score-interpretation risk-low" id="qsofa-interp">
+            Low risk. qSOFA negative. Continue standard monitoring.
           </div>
         </div>
       </div>
 
-      </div>
-      <div class="disease-view" id="disease-view-1" style="display:none">
-
-      <div class="disease-header card">
-        <h2>Cirrhosis and Hepatic Encephalopathy</h2>
-        <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Cirrhosis%20and%20Hepatic%20Encephalopathy%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
-      </div>
-      <div class="accordion open">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Clinical Manifestations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Symptoms</strong></p>
-<ul>
-  <li>Content generation failed for Cirrhosis and Hepatic Encephalopathy. Please try again tomorrow.</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Differential Diagnosis</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            
-          </div>
-        </div>
-      </div>
       </div>
       <div class="disease-view" id="disease-view-2" style="display:none">
 
       <div class="disease-header card">
-        <h2>Clostridioides difficile Infection</h2>
+        <h2>Myxedema Coma</h2>
         <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Clostridioides%20difficile%20Infection%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Myxedema%20Coma%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1150,7 +1084,7 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li>Content generation failed for Clostridioides difficile Infection. Please try again tomorrow.</li>
+  <li>Content generation failed for Myxedema Coma. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -1187,11 +1121,11 @@
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">UNIFI — Ustekinumab in Ulcerative Colitis</h3>
-          <button class="action-btn star" data-id="unifi---ustekinumab-in-ulcerat" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">DCCT — Diabetes Control and Complications Trial</h3>
+          <button class="action-btn star" data-id="dcct---diabetes-control-and-co" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">NEJM &bull; 2019</div>
-        
+        <div class="landmark-meta">NEJM &bull; 1993</div>
+        <a href="https://www.wikijournalclub.org/wiki/DCCT" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
 
         <div class="landmark-section">
           <h4>Clinical Question</h4>
@@ -1237,32 +1171,6 @@
   </footer>
 
   <script>
-
-    function update_wells_pe() {
-      var criteria = [{"id": "wells-pe-1", "pts": 3}, {"id": "wells-pe-2", "pts": 3}, {"id": "wells-pe-3", "pts": 1.5}, {"id": "wells-pe-4", "pts": 1.5}, {"id": "wells-pe-5", "pts": 1.5}, {"id": "wells-pe-6", "pts": 1}, {"id": "wells-pe-7", "pts": 1}];
-      var score = 0;
-      criteria.forEach(function(c) {
-        if (document.getElementById(c.id).checked) score += c.pts;
-      });
-      document.getElementById('wells_pe-score').textContent = score;
-      var interp = document.getElementById('wells_pe-interp');
-      if (score <= 1.5) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low probability (1.3% PE incidence). Consider D-dimer; if negative, PE effectively excluded.'; }
-      else if (score <= 6) { interp.className = 'score-interpretation risk-moderate'; interp.textContent = 'Moderate probability (16.2%). Obtain D-dimer or CT pulmonary angiography.'; }
-      else { interp.className = 'score-interpretation risk-high'; interp.textContent = 'High probability (37.5%). CT pulmonary angiography recommended; do not rely on D-dimer alone.'; }
-    }
-
-    function update_wells_dvt() {
-      var criteria = [{"id": "wells-dvt-1", "pts": 1}, {"id": "wells-dvt-2", "pts": 1}, {"id": "wells-dvt-3", "pts": 1}, {"id": "wells-dvt-4", "pts": 1}, {"id": "wells-dvt-5", "pts": 1}, {"id": "wells-dvt-6", "pts": 1}, {"id": "wells-dvt-7", "pts": 1}, {"id": "wells-dvt-8", "pts": 1}, {"id": "wells-dvt-9", "pts": 1}, {"id": "wells-dvt-10", "pts": -2}];
-      var score = 0;
-      criteria.forEach(function(c) {
-        if (document.getElementById(c.id).checked) score += c.pts;
-      });
-      document.getElementById('wells_dvt-score').textContent = score;
-      var interp = document.getElementById('wells_dvt-interp');
-      if (score <= 0) { interp.className = 'score-interpretation risk-low'; interp.textContent = 'Low probability (5%). D-dimer recommended; if negative, DVT excluded.'; }
-      else if (score <= 2) { interp.className = 'score-interpretation risk-moderate'; interp.textContent = 'Moderate probability (17%). D-dimer or ultrasound recommended.'; }
-      else { interp.className = 'score-interpretation risk-high'; interp.textContent = 'High probability (53%). Compression ultrasound recommended.'; }
-    }
 
 
     /* ===== TAB SWITCHING ===== */

@@ -15,7 +15,10 @@
     "Acute Liver Failure",
     "Venous Thromboembolism",
     "Cirrhosis and Hepatic Encephalopathy",
-    "Clostridioides difficile Infection"
+    "Clostridioides difficile Infection",
+    "Alcohol Withdrawal Syndrome",
+    "Infective Endocarditis",
+    "Myxedema Coma"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -33,7 +36,10 @@
     "rewind-2019",
     "unifi-2019",
     "unifi-2019",
-    "unifi-2019"
+    "unifi-2019",
+    "dcct-1993",
+    "dcct-1993",
+    "dcct-1993"
   ],
   "whats_new_ids": [],
   "last_run": "2026-03-07"
