@@ -42,7 +42,7 @@ jobs:
           NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
         run: |
           curl -s -o response.json \
-            -F "index.html=@index.html" \
+            -F "paging-dr-oh.html=@index.html" \
             -H "Authorization: Bearer $NEOCITIES_API_KEY" \
             https://neocities.org/api/upload
           cat response.json

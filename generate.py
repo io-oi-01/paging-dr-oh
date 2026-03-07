@@ -1648,7 +1648,8 @@ BASE_JS = """
       }
       _currentDiseaseIdx = candidates[Math.floor(Math.random() * candidates.length)];
       document.getElementById('disease-view-' + _currentDiseaseIdx).style.display = '';
-      document.getElementById('disease-tab').scrollIntoView({behavior: 'smooth'});
+      var diseaseSection = document.getElementById('disease') || document.getElementById('disease-tab');
+      if (diseaseSection) diseaseSection.scrollIntoView({behavior: 'smooth'});
     }
 
     /* ===== INITIALIZE ON LOAD ===== */
