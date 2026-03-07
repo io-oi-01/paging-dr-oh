@@ -9,7 +9,10 @@
     "Acute Pancreatitis",
     "Acute Kidney Injury",
     "Hypercalcemia",
-    "Diabetic Ketoacidosis"
+    "Diabetic Ketoacidosis",
+    "Systemic Lupus Erythematosus Flare",
+    "Urinary Tract Infection and Pyelonephritis",
+    "Acute Liver Failure"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -21,7 +24,10 @@
     "triss-2014",
     "merino-2018",
     "merino-2018",
-    "merino-2018"
+    "merino-2018",
+    "rewind-2019",
+    "rewind-2019",
+    "rewind-2019"
   ],
   "whats_new_ids": [],
   "last_run": "2026-03-07"

@@ -979,9 +979,9 @@
       <div class="disease-view" id="disease-view-0">
 
       <div class="disease-header card">
-        <h2>Acute Kidney Injury</h2>
+        <h2>Systemic Lupus Erythematosus Flare</h2>
         <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Acute%20Kidney%20Injury%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Systemic%20Lupus%20Erythematosus%20Flare%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -992,7 +992,7 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li>Content generation failed for Acute Kidney Injury. Please try again tomorrow.</li>
+  <li>Content generation failed for Systemic Lupus Erythematosus Flare. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -1013,9 +1013,9 @@
       <div class="disease-view" id="disease-view-1" style="display:none">
 
       <div class="disease-header card">
-        <h2>Hypercalcemia</h2>
+        <h2>Urinary Tract Infection and Pyelonephritis</h2>
         <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Hypercalcemia%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Urinary%20Tract%20Infection%20and%20Pyelonephritis%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1026,7 +1026,7 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li>Content generation failed for Hypercalcemia. Please try again tomorrow.</li>
+  <li>Content generation failed for Urinary Tract Infection and Pyelonephritis. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -1047,9 +1047,9 @@
       <div class="disease-view" id="disease-view-2" style="display:none">
 
       <div class="disease-header card">
-        <h2>Diabetic Ketoacidosis</h2>
+        <h2>Acute Liver Failure</h2>
         <p class="verified-date">Last verified: March 7, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Diabetic%20Ketoacidosis%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Acute%20Liver%20Failure%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1060,7 +1060,7 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li>Content generation failed for Diabetic Ketoacidosis. Please try again tomorrow.</li>
+  <li>Content generation failed for Acute Liver Failure. Please try again tomorrow.</li>
 </ul>
 
           </div>
@@ -1097,10 +1097,10 @@
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">MERINO — Piperacillin-Tazobactam vs Meropenem for ESBL E. coli</h3>
-          <button class="action-btn star" data-id="merino---piperacillin-tazobact" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">REWIND — Dulaglutide CV Outcomes in T2DM</h3>
+          <button class="action-btn star" data-id="rewind---dulaglutide-cv-outcom" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">JAMA &bull; 2018</div>
+        <div class="landmark-meta">Lancet &bull; 2019</div>
         
 
         <div class="landmark-section">
@@ -1249,7 +1249,7 @@
         html += '<div class="archive-card-meta">';
         if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
         html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
-        html += '<button class="btn-remove-fav" onclick="removeStarred('' + id + '')" title="Remove">&#x2715;</button></div>';
+        html += '<button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></div>';
         if (item.bottomLine) {
           html += '<div class="archive-card-details"><div class="archive-detail-content">';
           html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
@@ -1296,7 +1296,7 @@
         var item = starred[id];
         html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
         if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
-        html += ' <button class="btn-remove-fav" onclick="removeStarred('' + id + '')" title="Remove">&#x2715;</button></li>';
+        html += ' <button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></li>';
       });
       list.innerHTML = html;
     }
