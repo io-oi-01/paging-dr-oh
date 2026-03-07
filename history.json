@@ -12,7 +12,10 @@
     "Diabetic Ketoacidosis",
     "Systemic Lupus Erythematosus Flare",
     "Urinary Tract Infection and Pyelonephritis",
-    "Acute Liver Failure"
+    "Acute Liver Failure",
+    "Venous Thromboembolism",
+    "Cirrhosis and Hepatic Encephalopathy",
+    "Clostridioides difficile Infection"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -27,7 +30,10 @@
     "merino-2018",
     "rewind-2019",
     "rewind-2019",
-    "rewind-2019"
+    "rewind-2019",
+    "unifi-2019",
+    "unifi-2019",
+    "unifi-2019"
   ],
   "whats_new_ids": [],
   "last_run": "2026-03-07"
