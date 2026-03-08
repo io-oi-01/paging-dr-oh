@@ -619,42 +619,8 @@ Return ONLY valid JSON (no markdown fences, no extra text):
 # SECTION 5b — RSS FEED SYSTEM  (What's New content via journal feeds)
 # ═══════════════════════════════════════════════════════════════════════
 
-RSS_FEEDS = [
-    # ── General IM / Hospital Medicine ──────────────────────────────────────
-    ("Annals of Internal Medicine",      "https://www.acpjournals.org/action/showFeed?jc=aim&type=etoc&feed=rss"),
-    ("JAMA",                             "https://jamanetwork.com/rss/site_3/67.xml"),
-    ("JAMA Internal Medicine",           "https://jamanetwork.com/rss/site_15/71.xml"),
-    ("NEJM",                             "https://www.nejm.org/action/showFeed?jc=nejm&type=etoc&feed=rss"),
-
-    # ── Cardiology ───────────────────────────────────────────────────────────
-    ("American Journal of Cardiology",   "https://www.ajconline.org/current.rss"),
-    ("JACC",                             "https://rss.sciencedirect.com/publication/science/07351097"),
-    ("JAMA Cardiology",                  "https://jamanetwork.com/rss/site_192/mostReadArticles.xml"),
-    ("Nature Reviews Cardiology",        "https://www.nature.com/nrcardio.rss"),
-    ("Circulation",                      "https://www.ahajournals.org/action/showFeed?jc=circ&type=etoc&feed=rss"),
-
-    # ── Pulm / Critical Care ─────────────────────────────────────────────────
-    ("CHEST",                            "https://journal.chestnet.org/current.rss"),
-    ("EMCrit",                           "https://feeds.feedburner.com/emcrit"),
-
-    # ── ID / Nephrology ──────────────────────────────────────────────────────
-    ("ACS Infectious Diseases",          "https://pubs.acs.org/action/showFeed?type=axatoc&feed=rss&jc=aidcbc"),
-    ("Clinical Infectious Diseases",     "https://academic.oup.com/rss/site_5269/3135.xml"),
-    ("Lancet Infectious Diseases",       "https://rss.sciencedirect.com/publication/science/14733099"),
-
-    # ── Guidelines / Safety ──────────────────────────────────────────────────
-    ("ACP",                              "https://www.acponline.org/news/rss.xml"),
-    ("ACC Anticoagulation/AF",           "https://www.acc.org/Feed?clinicalTopicID=07fcd7df-a463-421b-b927-d29a1be75766"),
-    ("CDC Newsroom",                     "https://tools.cdc.gov/api/v2/resources/media/132608.rss"),
-    ("CDC MMWR",                         "https://tools.cdc.gov/api/v2/resources/media/342778.rss"),
-    ("FDA MedWatch",                     "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml"),
-    ("FDA Press Releases",               "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"),
-    ("FDA Drug Approvals",               "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/drugs/rss.xml"),
-
-    # ── Medical News ─────────────────────────────────────────────────────────
-    ("Medscape Medical News",            "https://www.medscape.com/cx/rssfeeds/2700.xml"),
-    ("AAFP News",                        "https://www.aafp.org/content/brand/aafp/news.rss.xml"),
-]
+RSS_FEED_URL   = "https://www.2minutemedicine.com/feed/"
+RSS_FEED_LABEL = "2 Minute Medicine"
 
 # Namespaces commonly used in RSS/RDF feeds
 RSS_NAMESPACES = {
@@ -666,7 +632,7 @@ RSS_NAMESPACES = {
 
 
 def fetch_rss_items(label, url, max_items=10):
-    """Fetch and parse an RSS feed, returning a list of {title, link, date, source}."""
+    """Fetch and parse an RSS feed, returning a list of {title, link, date, source, description, categories}."""
     items = []
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
@@ -683,76 +649,51 @@ def fetch_rss_items(label, url, max_items=10):
         link  = (item_el.findtext("link") or "").strip()
         date  = (item_el.findtext("pubDate") or
                  item_el.findtext(f"{{{RSS_NAMESPACES['dc']}}}date") or "").strip()
+        # Extract description text (strip HTML tags for a clean summary)
+        desc_raw = item_el.findtext("description") or ""
+        desc_text = re.sub(r"<[^>]+>", " ", desc_raw).strip()
+        desc_text = re.sub(r"\s+", " ", desc_text)[:500]  # clean up whitespace, cap at 500 chars
+        # Extract categories
+        categories = [cat.text.strip() for cat in item_el.findall("category") if cat.text]
         if title:
-            items.append({"title": title, "link": link, "date": date, "source": label})
-
-    # --- RDF/RSS 1.0 (<rss1:item>) --- (used by NEJM, Annals, etc.)
-    if not items:
-        for item_el in root.findall(f"{{{RSS_NAMESPACES['rss1']}}}item")[:max_items]:
-            title = (item_el.findtext(f"{{{RSS_NAMESPACES['rss1']}}}title") or "").strip()
-            link  = (item_el.findtext(f"{{{RSS_NAMESPACES['rss1']}}}link") or "").strip()
-            date  = (item_el.findtext(f"{{{RSS_NAMESPACES['dc']}}}date") or "").strip()
-            if title:
-                items.append({"title": title, "link": link, "date": date, "source": label})
-
-    # --- Atom (<entry>) ---
-    if not items:
-        for entry in root.findall(f"{{{RSS_NAMESPACES['atom']}}}entry")[:max_items]:
-            title = (entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}title") or "").strip()
-            link_el = entry.find(f"{{{RSS_NAMESPACES['atom']}}}link")
-            link = link_el.get("href", "") if link_el is not None else ""
-            date = (entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}published") or
-                    entry.findtext(f"{{{RSS_NAMESPACES['atom']}}}updated") or "").strip()
-            if title:
-                items.append({"title": title, "link": link, "date": date, "source": label})
+            items.append({"title": title, "link": link, "date": date, "source": label,
+                          "description": desc_text, "categories": categories})
 
     return items
 
 
-def fetch_all_rss():
-    """Fetch all RSS feeds and return a combined list of recent articles."""
-    all_articles = []
-    for label, url in RSS_FEEDS:
-        print(f"    Fetching {label}...")
-        articles = fetch_rss_items(label, url, max_items=5)
-        all_articles.extend(articles)
-        print(f"      Got {len(articles)} article(s).")
-    return all_articles
+def fetch_feed():
+    """Fetch the 2 Minute Medicine RSS feed."""
+    print(f"    Fetching {RSS_FEED_LABEL}...")
+    articles = fetch_rss_items(RSS_FEED_LABEL, RSS_FEED_URL, max_items=10)
+    print(f"      Got {len(articles)} article(s).")
+    return articles
 
 
 def curate_rss_items(rss_articles, existing_ids):
-    """Send RSS article titles to Claude (no web search) to pick the most relevant."""
+    """Send 2 Minute Medicine article summaries to Claude to pick the most relevant."""
     if not rss_articles:
         return []
 
-    # Build compact list of titles + sources for Claude
+    # Build compact list for Claude — include description for better context
     article_summaries = [
-        {"index": i, "title": a["title"], "source": a["source"],
-         "date": a["date"][:30], "link": a["link"]}
+        {"index": i, "title": a["title"], "description": a.get("description", "")[:300],
+         "categories": a.get("categories", []), "date": a["date"][:30], "link": a["link"]}
         for i, a in enumerate(rss_articles)
     ]
 
-    prompt = f"""You are a medical news curator for a hospitalist / internal medicine physician
-who also does outpatient clinic work.
+    prompt = f"""You are a medical news curator for a hospitalist / internal medicine physician.
 
-Below are {len(article_summaries)} recent articles from major medical journal RSS feeds
-and FDA/CDC feeds. Select 5-10 items that are most relevant.
+Below are {len(article_summaries)} recent article summaries from 2 Minute Medicine.
+Select the 3-5 most relevant items for a hospitalist/IM doctor.
 
-SELECTION CRITERIA (include these):
-- Original research: RCTs, meta-analyses, observational studies
-- Clinical practice guidelines or guideline updates
-- FDA drug approvals, new indications, or safety alerts
-- Public health updates (outbreaks, vaccination changes, CDC/MMWR alerts)
-- High-impact reviews relevant to IM/hospitalist practice
+SELECTION CRITERIA — prioritize:
+- Studies with direct impact on hospital or outpatient IM practice
+- FDA drug approvals, safety alerts, new indications
+- Practice-changing RCTs, meta-analyses, or guideline updates
+- Public health updates relevant to clinical practice
 
-EXCLUDE (do not select):
-- Editorials, commentaries, letters to the editor
-- Imaging challenges, case reports, corrections
-- Book reviews, audio summaries, podcast episodes, obituaries
-- "This Week in the Journal" or table-of-contents summaries
-
-RANKING: Prefer items with higher IM relevance, stronger evidence level, and
-practice-changing potential. Surface a mix from different specialties.
+RANKING: Prefer items with higher IM relevance and practice-changing potential.
 
 Skip any items with these IDs (already covered): {json.dumps(existing_ids[-50:])}
 
@@ -760,17 +701,15 @@ ARTICLES:
 {json.dumps(article_summaries, indent=2)}
 
 ACCURACY RULES — these are strict:
-1. source_summary_bullets: ONLY paraphrase what is stated in the title/description.
-   Do NOT invent statistics, outcomes, or results. If you only have a title (no abstract),
-   write exactly 1 bullet restating the title in plain language.
+1. source_summary_bullets: Summarize ONLY what is stated in the title and description.
+   Use 1-3 bullets. Do NOT invent statistics or results not mentioned.
 2. clinical_interpretation_bullets: 1-2 bullets of your clinical context/relevance.
    These MUST start with "Clinical context:" so they are clearly labeled as your assessment.
-3. sample_size and primary_outcome: ONLY fill these if stated in the title/description.
+3. sample_size and primary_outcome: ONLY fill these if explicitly stated in the description.
    Use empty string "" if not mentioned.
-4. limitations: list only real limitations you know for this design type, or leave as [].
-5. confidence: "high" for RCTs/meta-analyses with strong evidence; "moderate" for
-   observational studies, guidelines, or reviews; "preliminary" for news items,
-   conference abstracts, or articles with no abstract text.
+4. limitations: list only real limitations you can infer from the study design, or leave as [].
+5. confidence: "high" for RCTs/meta-analyses; "moderate" for observational studies,
+   guidelines; "preliminary" for news items or FDA actions without trial data.
 
 For each selected item, return a JSON array:
 [
@@ -783,7 +722,7 @@ For each selected item, return a JSON array:
     "study_design": "Brief description of study design, or empty string",
     "sample_size": "e.g. N=3,572 or empty string if not stated",
     "primary_outcome": "e.g. 30-day all-cause mortality or empty string if not stated",
-    "source_summary_bullets": ["bullet paraphrased from title/description only"],
+    "source_summary_bullets": ["bullet summarizing what the article says"],
     "clinical_interpretation_bullets": ["Clinical context: why this matters in practice"],
     "limitations": ["known limitation for this study design"],
     "bottom_line": "One-sentence clinical takeaway",
@@ -809,26 +748,22 @@ Return ONLY valid JSON (no markdown fences, no extra text)."""
         idx = sel.get("article_index")
         if idx is not None and idx < len(rss_articles):
             article = rss_articles[idx]
-            sel["source"] = article["source"]
+            sel["source"] = RSS_FEED_LABEL
             sel["source_url"] = article["link"]
             sel["date"] = article["date"][:30] if article["date"] else TODAY_STR
             sel["date_iso"] = TODAY_ISO
-            sel["mention_count"] = 1
-            sel["sources_seen"] = [article["source"]]
-            sel["first_seen"] = TODAY_ISO
-            sel["last_seen"] = TODAY_ISO
         items.append(sel)
     return items
 
 
 def generate_whats_new(history):
-    """Fetch RSS feeds from major journals + FDA/CDC, then use Claude to curate."""
+    """Fetch 2 Minute Medicine RSS feed, then use Claude to curate top items."""
     existing_ids = history.get("whats_new_ids", [])
 
-    # Step 1: Fetch all RSS feeds (no API calls, just HTTP)
-    print("  Fetching RSS feeds from medical journals and agencies...")
-    rss_articles = fetch_all_rss()
-    print(f"  Total RSS articles fetched: {len(rss_articles)}")
+    # Step 1: Fetch 2 Minute Medicine feed (no API calls, just HTTP)
+    print("  Fetching 2 Minute Medicine RSS feed...")
+    rss_articles = fetch_feed()
+    print(f"  Total articles fetched: {len(rss_articles)}")
 
     if not rss_articles:
         print("  WARNING: No RSS articles fetched. Skipping curation.")
@@ -1347,41 +1282,15 @@ def _build_wn_card(item, is_trending=False):
 
 
 def build_whatsnew_tab(items):
-    """Build the What's New tab HTML with Trending and Recent sections."""
-    # Split items into trending vs regular
-    trending = [item for item in items if item.get("mention_count", 1) >= 2]
-    regular = [item for item in items if item.get("mention_count", 1) < 2]
+    """Build the What's New tab HTML."""
+    html = '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
+    html += '      <p style="color:var(--gray); font-size:0.85rem; margin-bottom:16px;">Curated from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener" style="color:var(--queen-blue);">2 Minute Medicine</a></p>\n'
 
-    # Sort trending by mention_count descending, then by last_seen descending
-    trending.sort(key=lambda x: (x.get("mention_count", 1), x.get("last_seen", "")), reverse=True)
-
-    html = ""
-
-    # --- TALKING ABOUT SECTION ---
-    if trending:
-        html += """
-      <div class="trending-section">
-        <div class="trending-header">
-          <span class="trending-icon">&#128483;</span>
-          <h3>TALKING ABOUT</h3>
-          <span class="trending-subtitle">Covered by multiple sources this week</span>
-        </div>\n"""
-        for item in trending:
-            html += _build_wn_card(item, is_trending=True)
-        html += "      </div>\n"
-
-    # --- RECENT UPDATES SECTION ---
-    html += '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
-
-    if not regular and not trending:
+    if not items:
         html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>\n'
         return html
 
-    if not regular:
-        html += '      <p style="color:var(--gray); font-style:italic; padding:10px 0;">All current items are trending above.</p>\n'
-        return html
-
-    for item in regular:
+    for item in items:
         html += _build_wn_card(item, is_trending=False)
 
     return html
@@ -1906,23 +1815,10 @@ def main():
     if isinstance(manual_additions, list) and manual_additions:
         for item in manual_additions:
             item.setdefault("date_iso", TODAY_ISO)
-            item.setdefault("mention_count", 1)
-            item.setdefault("sources_seen", [item.get("source", "Manual")])
-            item.setdefault("first_seen", TODAY_ISO)
-            item.setdefault("last_seen", TODAY_ISO)
         new_items = manual_additions + new_items
         print(f"  Added {len(manual_additions)} manual addition(s).")
 
     print(f"  Found {len(new_items)} new item(s).")
-
-    # Ensure existing items have trending fields (backward compatibility)
-    wn_current = _ensure_trending_fields(wn_current)
-
-    # Dedup/merge: identify items already in rolling window from different source
-    if new_items and wn_current:
-        print("  Running dedup/merge against existing items...")
-        new_items, wn_current = dedup_and_merge(new_items, wn_current)
-        print(f"  After merge: {len(new_items)} genuinely new item(s).")
 
     # 5. Build disease pool (3 diseases for Randomize button)
     # Pick the primary disease + 2 alternates from the same list
