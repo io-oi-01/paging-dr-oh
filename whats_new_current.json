@@ -10,6 +10,111 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
+      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This represents a potential new treatment option for multiple myeloma patients, particularly those with relapsed/refractory disease",
+      "Clinical context: Priority review designation suggests significant clinical benefit and expedited approval timeline for hospitalists managing myeloma patients"
+    ],
+    "limitations": [],
+    "bottom_line": "FDA priority review for iberdomide offers hope for improved multiple myeloma treatment outcomes with a novel mechanism of action.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
+    "date": "Fri, 06 Mar 2026 18:00:19 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 2,
+    "id": "morphine-acetaminophen-pain-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
+    "study_design": "Non-inferiority trial comparing morphine plus placebo vs morphine plus acetaminophen",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports the routine addition of acetaminophen to opioid therapy for acute pain management",
+      "Clinical context: Findings are relevant for hospitalists managing acute pain, suggesting multimodal analgesia with acetaminophen improves outcomes"
+    ],
+    "limitations": [
+      "Single-center emergency department setting may limit generalizability"
+    ],
+    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain relief compared to morphine alone in emergency settings.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
+    "date": "Fri, 06 Mar 2026 16:00:09 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 4,
+    "id": "remibrutinib-urticaria-2026",
+    "type": "RCT",
+    "specialty": "Dermatology",
+    "title": "Oral remibrutinib hits Phase 3 primary endpoint for inducible hives",
+    "study_design": "Phase III trial (RemIND trial)",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Oral remibrutinib successfully met its primary endpoint in Phase III RemIND trial, providing significant symptom relief for chronic inducible urticaria",
+      "As a selective BTK inhibitor, this represents the first targeted oral option for patients with cold, pressure, or exercise-induced urticaria"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This provides a new therapeutic option for chronic inducible urticaria patients who fail standard antihistamine therapy",
+      "Clinical context: BTK inhibitors represent a novel mechanism for urticaria treatment, potentially offering better outcomes than current therapies"
+    ],
+    "limitations": [
+      "Full safety and efficacy data not yet published"
+    ],
+    "bottom_line": "Remibrutinib offers the first targeted oral therapy for chronic inducible urticaria with promising Phase III results.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/oral-remibrutinib-hits-phase-3-primary-endpoint-for-inducible-hives/",
+    "date": "Thu, 05 Mar 2026 15:00:34 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 5,
+    "id": "sleep-apnea-postop-risk-2026",
+    "type": "Observational",
+    "specialty": "Perioperative Medicine",
+    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
+    "study_design": "Cohort study of patients with obstructive sleep apnea",
+    "sample_size": "",
+    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
+    "source_summary_bullets": [
+      "Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: SASHB may serve as a better risk stratification tool than traditional OSA severity measures for perioperative planning",
+      "Clinical context: This could help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and management"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Confounding factors may influence outcomes"
+    ],
+    "bottom_line": "Sleep apnea-specific hypoxic burden better predicts postoperative cardiovascular risk than traditional OSA metrics.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
+    "date": "Thu, 05 Mar 2026 00:00:43 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 1,
+    "id": "iberdomide-myeloma-fda-2026",
+    "type": "FDA Action",
+    "specialty": "Hematology",
+    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
       "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease"
     ],
     "clinical_interpretation_bullets": [

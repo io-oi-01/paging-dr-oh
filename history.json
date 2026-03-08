@@ -21,7 +21,10 @@
     "Myxedema Coma",
     "Status Epilepticus",
     "Aortic Dissection",
-    "Hospital-Acquired Pneumonia"
+    "Hospital-Acquired Pneumonia",
+    "Acute Decompensated Heart Failure",
+    "Asthma Exacerbation",
+    "Cellulitis and Skin Soft Tissue Infections"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -45,13 +48,17 @@
     "dcct-1993",
     "strong-hf-2022",
     "strong-hf-2022",
-    "strong-hf-2022"
+    "strong-hf-2022",
+    "avert-2019",
+    "avert-2019",
+    "avert-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
     "morphine-acetaminophen-pain-2026",
     "sleep-apnea-postop-risk-2026",
-    "lifestyle-atrial-changes-2026"
+    "lifestyle-atrial-changes-2026",
+    "remibrutinib-urticaria-2026"
   ],
   "last_run": "2026-03-08"
 }
