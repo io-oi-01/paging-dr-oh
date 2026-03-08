@@ -1,1 +1,103 @@
-[]
+[
+  {
+    "article_index": 1,
+    "id": "iberdomide-myeloma-fda-2026",
+    "type": "FDA Action",
+    "specialty": "Hematology",
+    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
+      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents potential new treatment option for multiple myeloma patients, particularly relevant for hospitalists managing myeloma complications and coordinating care with hematology-oncology"
+    ],
+    "limitations": [],
+    "bottom_line": "FDA priority review of iberdomide offers potential new oral treatment option for multiple myeloma patients.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
+    "date": "Fri, 06 Mar 2026 18:00:19 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 2,
+    "id": "morphine-acetaminophen-pain-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
+    "study_design": "Non-inferiority trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports routine addition of acetaminophen to opioids for acute pain management, relevant for hospitalists managing pain in admitted patients and optimizing multimodal analgesia"
+    ],
+    "limitations": [
+      "Study limited to emergency department setting"
+    ],
+    "bottom_line": "Adding acetaminophen to morphine appears superior to morphine alone for acute pain management.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
+    "date": "Fri, 06 Mar 2026 16:00:09 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 5,
+    "id": "sleep-apnea-postop-risk-2026",
+    "type": "Observational",
+    "specialty": "Pulmonology",
+    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
+    "study_design": "Cohort study",
+    "sample_size": "",
+    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
+    "source_summary_bullets": [
+      "Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: May help hospitalists better risk-stratify OSA patients undergoing surgery and optimize perioperative monitoring and management strategies"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "SASHB measurement may not be readily available in all clinical settings"
+    ],
+    "bottom_line": "Sleep apnea-specific hypoxic burden may serve as a useful perioperative risk stratification tool for OSA patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
+    "date": "Thu, 05 Mar 2026 00:00:43 +000",
+    "date_iso": "2026-03-08"
+  },
+  {
+    "article_index": 7,
+    "id": "lifestyle-atrial-changes-2026",
+    "type": "Observational",
+    "specialty": "Cardiology",
+    "title": "Lifestyle factors including higher body mass index and smoking are associated with changes in left-atrial size and function",
+    "study_design": "Prospective cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Higher BMI and smoking are associated with measurable changes in left-atrial size and function",
+      "Left atrial size and function are strong predictors of atrial fibrillation"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Reinforces importance of lifestyle counseling for cardiovascular risk reduction and may help identify patients at higher risk for developing atrial fibrillation"
+    ],
+    "limitations": [
+      "Observational design cannot establish causation"
+    ],
+    "bottom_line": "Obesity and smoking cause measurable left atrial changes that may predispose to atrial fibrillation.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/lifestyle-factors-including-higher-body-mass-index-and-smoking-are-associated-with-changes-in-left-atrial-size-and-function/",
+    "date": "Wed, 04 Mar 2026 00:00:37 +000",
+    "date_iso": "2026-03-08"
+  }
+]
