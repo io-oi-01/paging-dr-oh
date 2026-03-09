@@ -928,6 +928,88 @@
       border-top: 1px solid rgba(0,0,0,0.08);
     }
 
+    /* ========== IMAGE OF THE DAY ========== */
+    .image-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--cadet-blue);
+    }
+
+    .image-card:hover { box-shadow: var(--shadow-hover); }
+
+    .image-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 10px;
+    }
+
+    .image-card-title {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      color: var(--queen-blue);
+      flex: 1;
+    }
+
+    .image-card-img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .image-card-desc {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--dark);
+      margin-bottom: 14px;
+    }
+
+    .image-card-source {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.85rem;
+    }
+
+    .nejm-reminder-card {
+      background: var(--off-white);
+      border: 2px solid var(--cadet-blue);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .nejm-reminder-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .nejm-reminder-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .nejm-reminder-title {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: var(--queen-blue);
+    }
+
+    .nejm-reminder-text {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
     /* ========== FOOTER ========== */
     .site-footer {
       text-align: center;
@@ -953,6 +1035,9 @@
       .wn-card { padding: 16px; }
       .trending-header { flex-wrap: wrap; }
       .trending-meta { flex-direction: column; align-items: flex-start; }
+      .image-card { padding: 16px; }
+      .image-card-title { font-size: 1.05rem; }
+      .nejm-reminder-card { padding: 16px; }
     }
   </style>
 </head>
@@ -969,6 +1054,7 @@
     <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
     <button class="tab-btn" data-tab="whatsnew">What's New</button>
     <button class="tab-btn" data-tab="landmark">Landmark Study</button>
+    <button class="tab-btn" data-tab="imageofday">Image of the Day</button>
     <button class="tab-btn" data-tab="archive">Archive</button>
   </nav>
 
@@ -979,9 +1065,9 @@
       <div class="disease-view" id="disease-view-0">
 
       <div class="disease-header card">
-        <h2>Acute Decompensated Heart Failure</h2>
-        <p class="verified-date">Last verified: March 8, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK430873/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <h2>Acute Respiratory Failure</h2>
+        <p class="verified-date">Last verified: March 9, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK526127/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -992,21 +1078,17 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Dyspnea</strong> and respiratory distress: <cite index="1-4">overt respiratory distress in acute HF</cite>, <cite index="5-1">significant dyspnea and respiratory decompensation from pulmonary edema</cite><sup>1</sup></li>
-  <li><strong>Orthopnea</strong>: <cite index="1-4">orthopnea present in patients with acute HF</cite><sup>1</sup></li>
-  <li><strong>Paroxysmal nocturnal dyspnea</strong>: <cite index="1-4">paroxysmal nocturnal dyspnea in acute HF patients</cite><sup>1</sup></li>
-  <li><strong>Anxiety</strong> and <strong>diaphoresis</strong>: <cite index="1-1,1-9">anxiety and diaphoresis in patients with severe CHF or acutely decompensated HF</cite><sup>1</sup></li>
-  <li><strong>Air hunger</strong>: <cite index="10-10">patients frequently report air hunger, chest tightness</cite><sup>2</sup></li>
+  <li><strong>Type 1 (Hypoxemic):</strong> Progressive dyspnea, fatigue, confusion, cyanosis<sup>1</sup></li>
+  <li><strong>Type 2 (Hypercapnic):</strong> Headache, somnolence, confusion, memory loss, impaired coordination<sup>2</sup></li>
+  <li>Daytime somnolence and headaches (in chronic respiratory acidosis)<sup>2</sup></li>
+  <li><strong>Acute presentation:</strong> Sudden onset dyspnea, altered mental status<sup>1</sup></li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><strong>Tachycardia</strong> and <strong>tachypnea</strong>: <cite index="1-1,1-9">tachycardia and tachypnea in acutely decompensated HF</cite><sup>1</sup></li>
-  <li><strong>Pulmonary rales/crackles</strong>: <cite index="1-11">classical finding of pulmonary rales translates to heart failure of moderate-to-severe intensity</cite>, <cite index="1-14">absence of rales does not exclude pulmonary congestion</cite><sup>1</sup></li>
-  <li><strong>Wheezing</strong>: <cite index="1-12">wheezing may be present in acute decompensated heart failure</cite><sup>1</sup></li>
-  <li><strong>Jugular venous distention</strong>: <cite index="1-15">classical finding that must be assessed in all patients with HF</cite><sup>1</sup></li>
-  <li><strong>Hepatojugular reflux</strong>: <cite index="1-16">sustained increase in JVP >4 cm after applying pressure over the liver at 45° angle</cite><sup>1</sup></li>
-  <li><strong>Frothy, blood-tinged sputum</strong>: <cite index="1-13">as severity of pulmonary congestion increases</cite><sup>1</sup></li>
-  <li><strong>Signs of poor perfusion</strong>: <cite index="1-17">hypotension, reduced capillary refill, cold extremities, poor mentation, reduced urine output</cite><sup>1</sup></li>
+  <li><strong>Respiratory signs:</strong> Tachypnea, accessory muscle use, paradoxical breathing<sup>1</sup></li>
+  <li><strong>Hypoxemic signs:</strong> Cyanosis, restlessness, tachycardia<sup>1</sup></li>
+  <li><strong>Hypercapnic signs:</strong> Altered mental status, asterixis, papilledema (if severe)<sup>2</sup></li>
+  <li><strong>Chronic signs:</strong> Polycythemia, pulmonary hypertension, heart failure<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1021,21 +1103,23 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><strong>Pneumonia</strong>: <cite index="10-4">interalveolar fluid produces crackles, most commonly in pneumonia</cite><sup>2</sup></li>
-  <li><strong>Asthma exacerbation</strong>: <cite index="10-19">acute presentations occur in asthma exacerbation</cite><sup>2</sup></li>
-  <li><strong>Acute coronary syndrome</strong>: Clinical context: frequently precipitates or mimics acute heart failure</li>
+  <li><strong>COPD exacerbation</strong> (third most common etiology)<sup>1</sup></li>
+  <li><strong>Pneumonia</strong> (community-acquired, hospital-acquired)<sup>1</sup></li>
+  <li><strong>Acute respiratory distress syndrome (ARDS)</strong><sup>1</sup></li>
+  <li><strong>Cardiogenic pulmonary edema</strong><sup>1</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><strong>Pulmonary embolism</strong>: <cite index="10-19">acute presentations occur in pulmonary embolism</cite><sup>2</sup></li>
-  <li><strong>Pneumothorax</strong>: <cite index="10-5">conditions that limit airflow result in decreased breath sounds</cite><sup>2</sup></li>
-  <li><strong>Pleural effusion</strong>: <cite index="10-5">results in decreased breath sounds</cite><sup>2</sup></li>
+  <li><strong>Pulmonary embolism</strong><sup>1</sup></li>
+  <li><strong>Pneumothorax</strong><sup>1</sup></li>
+  <li><strong>Aspiration pneumonia</strong><sup>1</sup></li>
+  <li><strong>Drug-induced respiratory depression</strong> (opioids, CNS depressants)<sup>2</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><strong>Anxiety disorder</strong>: Clinical context: can present with dyspnea, tachycardia, and chest discomfort</li>
-  <li><strong>Upper airway obstruction</strong>: <cite index="10-2">inspiratory stridor typically indicates upper airway obstruction above vocal cords</cite><sup>2</sup></li>
-  <li><strong>Anaphylaxis</strong>: <cite index="10-3">wheezing from bronchoconstriction may occur in anaphylaxis</cite><sup>2</sup></li>
+  <li><strong>Neuromuscular disorders:</strong> Myasthenia gravis, muscular dystrophy, Guillain-Barré syndrome<sup>2</sup></li>
+  <li><strong>Central causes:</strong> Cerebrovascular accidents<sup>2</sup></li>
+  <li><strong>Obesity hypoventilation syndrome</strong> (Pickwickian syndrome)<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1048,23 +1132,22 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Laboratory Tests<sup>1</sup></strong></p>
+            <p><strong>Arterial Blood Gas<sup>1,2</sup></strong></p>
 <ul>
-  <li><strong>BNP/NT-proBNP</strong>: Clinical context: elevated in volume overload and ventricular dysfunction</li>
-  <li><strong>Creatinine/eGFR</strong>: <cite index="7-1">27.4% have mild renal dysfunction (GFR 60-89), 43.5% moderate (GFR 30-59), 13.1% severe (GFR 15-29)</cite><sup>3</sup></li>
-  <li><strong>Electrolytes</strong>: Clinical context: assess for hyponatremia, hypokalemia from diuretics</li>
+  <li><strong>Type 1 RF:</strong> PaO₂ &lt;60 mmHg, normal or decreased PaCO₂<sup>1</sup></li>
+  <li><strong>Type 2 RF:</strong> PaCO₂ &gt;45 mmHg, pH &lt;7.35, HCO₃⁻ &gt;30 mmHg<sup>2</sup></li>
+  <li><strong>A-a gradient:</strong> Normal or increased depending on cause<sup>1</sup></li>
 </ul>
-<p><strong>Imaging<sup>1</sup></strong></p>
+<p><strong>Chest Imaging<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Chest X-ray</strong>: <cite index="1-21,4-22">chest radiographs help assess for signs of pulmonary congestion or edema in acute decompensated heart failure</cite><sup>1</sup></li>
-  <li><strong>Echocardiography</strong>: Clinical context: assess ejection fraction, wall motion, valve function</li>
-  <li><strong>ECG</strong>: Clinical context: identify arrhythmias, ischemia, conduction abnormalities</li>
+  <li><strong>Chest X-ray:</strong> Evaluate for infiltrates, pneumothorax, effusion<sup>1</sup></li>
+  <li><strong>CT chest:</strong> When chest X-ray inconclusive or complications suspected<sup>1</sup></li>
 </ul>
-<p><strong>Risk Assessment Tools<sup>4</sup></strong></p>
+<p><strong>Laboratory Studies<sup>1</sup></strong></p>
 <ul>
-  <li><strong>ADHERE CART Model</strong>: <cite index="2-4,2-25">outcome predictions for acute decompensated heart failure</cite><sup>4</sup></li>
-  <li><strong>AHA Get With Guidelines Score</strong>: <cite index="2-4,2-25">outcome predictions for acute decompensated heart failure</cite><sup>4</sup></li>
-  <li><strong>EFFECT Risk Score</strong>: <cite index="2-4,2-25">outcome predictions for acute decompensated heart failure</cite><sup>4</sup></li>
+  <li><strong>Complete blood count:</strong> Evaluate for infection, polycythemia<sup>1</sup></li>
+  <li><strong>Comprehensive metabolic panel:</strong> Assess acid-base status<sup>1</sup></li>
+  <li><strong>Cardiac biomarkers:</strong> Rule out myocardial infarction<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1077,31 +1160,24 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Acute Stabilization (Inpatient)<sup>1,4,5</sup></strong></p>
+            <p><strong>Outpatient/Emergency Department<sup>3</sup></strong></p>
 <ul>
-  <li><strong>Ventilatory support</strong>: <cite index="2-12">key component of therapy for acute decompensated heart failure without shock</cite><sup>4</sup></li>
-  <li><strong>Loop diuretics IV</strong>: <cite index="2-13">loop diuretics favored over thiazide diuretics</cite>, <cite index="2-14">DOSE trial found no difference between bolus vs continuous IV</cite><sup>4</sup></li>
-  <li><strong>Acetazolamide</strong>: <cite index="2-17">ADVOR trial showed adding acetazolamide to loop diuretics increases successful decongestion within 3 days</cite><sup>4</sup></li>
+  <li><strong>Oxygen therapy:</strong> Target SpO₂ 88-92% in COPD, 94-98% in others<sup>3</sup></li>
+  <li><strong>Bronchodilators:</strong> Albuterol 2.5-5mg nebulized q20min x3, then q2-6h PRN<sup>3</sup></li>
+  <li><strong>Corticosteroids:</strong> Prednisolone 30-40mg daily x5 days for COPD exacerbation<sup>3</sup></li>
 </ul>
-<p><strong>ICU Management (Cardiogenic Shock)<sup>6,9</sup></strong></p>
+<p><strong>Inpatient Non-ICU<sup>3,4</sup></strong></p>
 <ul>
-  <li><strong>Inotropes</strong>: <cite index="2-9">consideration of milrinone or dobutamine with or without mechanical ventricular assist device</cite><sup>4</sup></li>
-  <li><strong>Vasopressors + inotropes</strong>: <cite index="2-10">combination of norepinephrine or epinephrine with inotropic agents when CPO/PAPi and BP decreased</cite><sup>4</sup></li>
-  <li><strong>Milrinone</strong>: <cite index="9-2">used in ICU for cardiac support in acute heart failure</cite><sup>9</sup></li>
-  <li><strong>IABP</strong>: <cite index="8-11,8-12">commonly used for temporary circulatory support as bridge therapy</cite><sup>8</sup></li>
+  <li><strong>Non-invasive ventilation (NIV):</strong> BiPAP for hypercapnic RF with pH ≤7.35, PaCO₂ &gt;45 mmHg, RR &gt;20-24<sup>4</sup></li>
+  <li><strong>High-flow nasal cannula:</strong> 30-60 L/min for hypoxemic respiratory failure<sup>4</sup></li>
+  <li><strong>CPAP:</strong> 5-10 cm H₂O for cardiogenic pulmonary edema<sup>4</sup></li>
 </ul>
-<p><strong>Chronic Management (Pre-discharge HFrEF/HFmrEF)<sup>4</sup></strong></p>
+<p><strong>ICU Management<sup>4,5</sup></strong></p>
 <ul>
-  <li><strong>ACE inhibitors/ARBs/ARNIs</strong>: <cite index="2-18">early initiation in stabilized acute decompensated HFrEF before discharge offers benefits</cite><sup>4</sup></li>
-  <li><strong>Beta-blockers</strong>: <cite index="2-18">early initiation in stabilized patients before discharge</cite><sup>4</sup></li>
-  <li><strong>MRAs</strong>: <cite index="2-18">mineralocorticoid receptor antagonists early initiation offers benefits</cite><sup>4</sup></li>
-  <li><strong>SGLT2 inhibitors</strong>: <cite index="2-18">therapy before hospital discharge offers benefits</cite><sup>4</sup></li>
-</ul>
-<p><strong>Contraindications<sup>4</sup></strong></p>
-<ul>
-  <li><strong>Avoid in HFpEF acute decompensation</strong>: <cite index="2-19">medications not recommended for unstable patients with acutely decompensated HFpEF</cite><sup>4</sup></li>
-  <li><strong>Avoid thiazolidinediones</strong>: <cite index="2-20">contraindicated in acutely decompensated heart failure</cite><sup>4</sup></li>
-  <li><strong>Avoid DPP-4 inhibitors</strong>: <cite index="2-20">sitagliptin or saxagliptin contraindicated</cite><sup>4</sup></li>
+  <li><strong>Mechanical ventilation:</strong> Low tidal volume (6 mL/kg IBW) for ARDS<sup>5</sup></li>
+  <li><strong>PEEP:</strong> Titrate to optimize oxygenation while minimizing hemodynamic compromise<sup>5</sup></li>
+  <li><strong>Prone positioning:</strong> &ge;16 hours/day for severe ARDS (PaO₂/FiO₂ &lt;150)<sup>5</sup></li>
+  <li><strong>ECMO:</strong> Consider for refractory hypoxemia (PaO₂/FiO₂ &lt;50, OI &gt;40)<sup>5</sup></li>
 </ul>
 
           </div>
@@ -1115,10 +1191,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Progressive disease</strong>: <cite index="12-10">HF is a progressive disease, as highlighted by ACC/AHA Stages A-D</cite><sup>10</sup></li>
-  <li><strong>Recurrent hospitalizations</strong>: <cite index="1-33">preventing recurrent hospitalizations essential to decrease morbidity and mortality</cite><sup>1</sup></li>
-  <li><strong>EF trajectory matters</strong>: <cite index="2-5,2-6">changes in EF over time more prognostic than baseline EF; patients progressing to HFrEF have worse prognosis</cite><sup>4</sup></li>
-  <li><strong>Cardiorenal syndrome risk</strong>: <cite index="7-1">91% of ADHF patients have some degree of renal dysfunction on admission</cite><sup>3</sup></li>
+  <li><strong>Type 1 RF:</strong> Course depends on underlying etiology; ARDS mortality 35-46%<sup>1</sup></li>
+  <li><strong>Type 2 RF:</strong> Generally better prognosis with appropriate ventilatory support<sup>1</sup></li>
+  <li><strong>COVID-19 related:</strong> Up to 79% of hospitalized patients required mechanical ventilation early in pandemic<sup>1</sup></li>
+  <li><strong>Chronic complications:</strong> Prolonged mechanical ventilation leads to deconditioning, cognitive changes<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1132,11 +1208,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Weight monitoring</strong>: <cite index="5-20,5-21">patient weight should be checked during each visit to track response and progression</cite><sup>5</sup></li>
-  <li><strong>Medication optimization</strong>: <cite index="12-9">all patients with current or prior HF should be considered for guideline-directed medical therapy</cite><sup>10</sup></li>
-  <li><strong>Heart failure specialty team</strong>: <cite index="14-2">guideline emphasizes care coordination with heart failure specialty team</cite><sup>11</sup></li>
-  <li><strong>Trigger identification</strong>: <cite index="1-5">identifying triggers including infection, medication noncompliance, NSAIDs, increased salt intake is essential</cite><sup>1</sup></li>
-  <li><strong>Advanced HF referral</strong>: <cite index="15-2,15-8">patients with advanced HF should be referred to HF team including palliative care</cite><sup>12</sup></li>
+  <li><strong>Acute phase:</strong> Close monitoring of ABG, respiratory status, hemodynamics<sup>1</sup></li>
+  <li><strong>Recovery phase:</strong> Gradual weaning of respiratory support, mobilization, nutrition optimization<sup>1</sup></li>
+  <li><strong>Post-discharge:</strong> Pulmonary rehabilitation for appropriate candidates<sup>1</sup></li>
+  <li><strong>Long-term:</strong> Treatment of underlying conditions (COPD, heart failure)<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1149,16 +1224,16 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Clinical Assessment</strong></p>
+            <p><strong>Basic Interventions</strong></p>
 <ul>
-  <li><strong>Daily weights</strong>: Clinical context: most accessible monitoring tool for volume status</li>
-  <li><strong>JVD assessment</strong>: <cite index="5-23,5-24">JVD can be marker for fluid overload; patient at 45-degree angle for accurate assessment</cite><sup>5</sup></li>
+  <li><strong>Pulse oximetry:</strong> Most cost-effective monitoring tool<sup>1</sup></li>
+  <li><strong>Simple oxygen delivery:</strong> Nasal cannula, simple face mask when advanced devices unavailable<sup>1</sup></li>
+  <li><strong>Position therapy:</strong> Semi-upright positioning, prone positioning when feasible<sup>1</sup></li>
 </ul>
-<p><strong>Basic Interventions</strong></p>
+<p><strong>Clinical context: Resource Allocation</strong></p>
 <ul>
-  <li><strong>Salt restriction</strong>: <cite index="8-4">salt and water restriction generally indicated for patients with HF</cite><sup>8</sup></li>
-  <li><strong>Oral diuretics</strong>: Clinical context: when IV access limited, high-dose oral loop diuretics</li>
-  <li><strong>Patient education</strong>: Clinical context: medication compliance, daily weights, symptom recognition</li>
+  <li>Prioritize non-invasive ventilation when available to reduce intubation needs<sup>4</sup></li>
+  <li>Early identification of patients suitable for comfort care to optimize resource utilization</li>
 </ul>
 
           </div>
@@ -1192,33 +1267,28 @@
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure</div>
-            <div class="guideline-meta">American Heart Association/American College of Cardiology/Heart Failure Society of America &bull; 2022</div>
+            <div class="guideline-name">Official ERS/ATS Clinical Practice Guidelines: Noninvasive Ventilation for Acute Respiratory Failure</div>
+            <div class="guideline-meta">European Respiratory Society/American Thoracic Society &bull; 2017</div>
           </div>
-          <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1183/13993003.02426-2016" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Heart Failure Society of America 2022 Guidelines</div>
-            <div class="guideline-meta">Heart Failure Society of America &bull; 2022</div>
+            <div class="guideline-name">An Official ATS/ESICM/SCCM Clinical Practice Guideline: Mechanical Ventilation in Adult Patients with Acute Respiratory Distress Syndrome</div>
+            <div class="guideline-meta">American Thoracic Society/European Society of Intensive Care Medicine/Society of Critical Care Medicine &bull; 2017</div>
           </div>
-          <a href="https://hfsa.org/hfguidelines2022" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1164/rccm.201703-0548ST" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Heidenreich PA, Bozkurt B, Aguilar D, et al. 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure. Circulation. 2022;145(18):e895-e1032.</li>
-          <li id="ref-2">Suha F, Modi P, Sharma S. Dyspnea. StatPearls Publishing; 2025. https://www.ncbi.nlm.nih.gov/books/NBK499965/</li>
-          <li id="ref-3">Kousa O, Rout P, Aslam A, Aboeata A. Cardiorenal Syndrome. StatPearls Publishing; 2026. https://www.ncbi.nlm.nih.gov/books/NBK542305/</li>
-          <li id="ref-4">Heart Failure and Ejection Fraction. StatPearls Publishing; 2024. https://www.ncbi.nlm.nih.gov/books/NBK553115/</li>
-          <li id="ref-5">Congestive Heart Failure and Pulmonary Edema. StatPearls Publishing; 2022. https://www.ncbi.nlm.nih.gov/books/NBK554557/</li>
-          <li id="ref-6">Heart Failure (Congestive Heart Failure). StatPearls Publishing; 2025. https://www.ncbi.nlm.nih.gov/books/NBK430873/</li>
-          <li id="ref-7">Ultrafiltration in Acute Decompensated Heart Failure. StatPearls Publishing; 2023. https://www.ncbi.nlm.nih.gov/books/NBK499823/</li>
-          <li id="ref-8">Cardiogenic Pulmonary Edema. StatPearls Publishing; 2023. https://www.ncbi.nlm.nih.gov/books/NBK544260/</li>
-          <li id="ref-9">Ayres JK, Maani CV. Milrinone. StatPearls Publishing; 2023. https://www.ncbi.nlm.nih.gov/books/NBK532943/</li>
-          <li id="ref-10">2022 AHA/ACC/HFSA Heart Failure Guideline: Key Perspectives. American College of Cardiology. 2022. https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/03/29/19/53/2022-AHA-ACC-HFSA-Heart-Failure-Guideline-gl-hf</li>
+          <li id="ref-1">Mirabile VS, Shebl E, Sankari A, Burns B. Respiratory Failure in Adults. StatPearls Publishing; 2023.</li>
+          <li id="ref-2">Patel S, Sharma S. Respiratory Acidosis. StatPearls Publishing; 2023.</li>
+          <li id="ref-3">Rochwerg B, Brochard L, Elliott MW, et al. Official ERS/ATS clinical practice guidelines: noninvasive ventilation for acute respiratory failure. Eur Respir J. 2017;50:1602426.</li>
+          <li id="ref-4">Fan E, Del Sorbo L, Goligher EC, et al. An Official American Thoracic Society/European Society of Intensive Care Medicine/Society of Critical Care Medicine Clinical Practice Guideline: Mechanical Ventilation in Adult Patients with Acute Respiratory Distress Syndrome. Am J Respir Crit Care Med. 2017;195(9):1253-1263.</li>
+          <li id="ref-5">Wang CF, Yandrapalli S. Venovenous ECMO for Refractory Hypoxemia. StatPearls Publishing; 2025.</li>
         </ol>
       </div>
 
@@ -1226,9 +1296,9 @@
       <div class="disease-view" id="disease-view-1" style="display:none">
 
       <div class="disease-header card">
-        <h2>Asthma Exacerbation</h2>
-        <p class="verified-date">Last verified: March 8, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK526070/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <h2>Acute Cholecystitis</h2>
+        <p class="verified-date">Last verified: March 9, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK459171/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1239,20 +1309,20 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><cite index="1-1,1-12"><strong>Intermittent dyspnea, cough, and wheezing</strong> &mdash; hallmark symptoms that can be exacerbated by triggers ranging from allergens to viral infections</cite><sup>1</sup></li>
-  <li><cite index="1-20"><strong>Shortness of breath</strong> that can be frequently exacerbated by triggers</cite><sup>1</sup></li>
-  <li><cite index="9-16,9-17"><strong>Nocturnal cough</strong> &mdash; particularly occurring at night or in response to triggers like cold air or exercise; persistent cough following viral infection may suggest asthma</cite><sup>2</sup></li>
-  <li><cite index="7-17"><strong>Diurnal variation</strong> with symptoms being worse at night</cite><sup>3</sup></li>
-  <li><cite index="9-18">Poor school performance and excessive daytime fatigue due to disrupted sleep from nocturnal symptoms</cite><sup>2</sup></li>
+  <li><strong>Right upper quadrant pain</strong> or epigastric pain lasting &gt;6 hours<sup>1</sup></li>
+  <li><strong>Post-prandial pain</strong> triggered by fatty foods (&ldquo;pork chops and gravy&rdquo;)<sup>1</sup></li>
+  <li><strong>Nausea and vomiting</strong> with abdominal distention<sup>1</sup></li>
+  <li><strong>Referred pain</strong> to right scapular tip or mid-back<sup>1</sup></li>
+  <li><strong>Fever</strong> in acute cases<sup>1</sup></li>
+  <li>Clinical context: Symptoms often begin 1-3 hours after fatty meals and may wax and wane initially</li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><cite index="7-21,7-23"><strong>Bilateral expiratory wheeze</strong> on auscultation during acute exacerbation</cite><sup>3</sup></li>
-  <li><cite index="7-21,7-22"><strong>Fine tremor in hands</strong> due to albuterol use and mild tachycardia; patients show respiratory distress, often sitting forward to splint open airways</cite><sup>3</sup></li>
-  <li><cite index="9-1,9-23"><strong>Tachypnea, hypoxia, prolonged expiratory phase, and accessory muscle use</strong> (subcostal, intercostal, supraclavicular retractions) during acute exacerbation</cite><sup>2</sup></li>
-  <li><cite index="9-24">Nasal flaring, tripod positioning, inability to speak in complete sentences, or grunting</cite><sup>2</sup></li>
-  <li><cite index="7-24"><strong>Silent chest</strong> in life-threatening asthma as air cannot enter or leave lungs, with signs of systemic hypoxia</cite><sup>3</sup></li>
-  <li><cite index="9-26">Altered mental status, lethargy, unresponsiveness, cyanosis indicating impending respiratory failure</cite><sup>2</sup></li>
+  <li><strong>Positive Murphy&rsquo;s sign</strong> (cessation of inspiration during deep palpation of RUQ)<sup>1</sup></li>
+  <li><strong>Right upper quadrant tenderness</strong> with possible guarding<sup>1</sup></li>
+  <li><strong>Palpable gallbladder mass</strong> in complicated cases<sup>1</sup></li>
+  <li><strong>Fever</strong> and <strong>tachycardia</strong> in acute inflammation<sup>1</sup></li>
+  <li>Clinical context: Murphy's sign may be absent in elderly patients or those on chronic pain medications</li>
 </ul>
 
           </div>
@@ -1267,21 +1337,24 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><cite index="8-22,8-23"><strong>Congestive heart failure</strong> &mdash; can present with wheezing; distinguished by history of orthopnea and paroxysmal nocturnal dyspnea, fine basal crackles, and characteristic chest X-ray features</cite><sup>4</sup></li>
-  <li><cite index="11-23">Chronic upper airway cough syndrome ('postnasal drip'), chronic sinusitis</cite><sup>5</sup></li>
-  <li><cite index="16-22">Inducible laryngeal obstruction (vocal cord dysfunction), upper airway cough syndrome</cite><sup>6</sup></li>
+  <li><strong>Acute cholangitis</strong> &mdash; Charcot&rsquo;s triad (fever, jaundice, RUQ pain)<sup>2</sup></li>
+  <li><strong>Acute pancreatitis</strong> &mdash; epigastric pain radiating to back, elevated lipase<sup>2</sup></li>
+  <li><strong>Peptic ulcer disease</strong> &mdash; epigastric pain, H. pylori association<sup>2</sup></li>
+  <li><strong>Hepatitis</strong> &mdash; elevated transaminases, tender hepatomegaly<sup>2</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><cite index="11-23">Gastroesophageal reflux disease (GERD), ACE inhibitor-induced cough</cite><sup>5</sup></li>
-  <li><cite index="8-21,8-24"><strong>Bronchiectasis, bronchiolitis obliterans</strong> &mdash; other chronic airway diseases that can mimic asthma</cite><sup>4</sup></li>
-  <li><cite index="16-22">Tracheobronchomalacia in patients with wheeze</cite><sup>6</sup></li>
+  <li><strong>Acute coronary syndrome</strong> &mdash; especially in elderly patients<sup>2</sup></li>
+  <li><strong>Pneumonia</strong> &mdash; right lower lobe with referred pain<sup>2</sup></li>
+  <li><strong>Kidney stones</strong> &mdash; right nephrolithiasis with colic<sup>2</sup></li>
+  <li><strong>Bowel obstruction</strong> &mdash; crampy pain, distention, nausea<sup>2</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><cite index="16-22"><strong>COPD</strong> &mdash; especially in older patients with wheeze</cite><sup>6</sup></li>
-  <li><cite index="16-22">Obesity-related wheezing</cite><sup>6</sup></li>
-  <li>Clinical context: Pulmonary embolism, pneumothorax, pneumonia in patients presenting with acute dyspnea</li>
+  <li><strong>Functional dyspepsia</strong> &mdash; chronic symptoms without inflammation<sup>2</sup></li>
+  <li><strong>GERD</strong> &mdash; burning epigastric pain, acid regurgitation<sup>2</sup></li>
+  <li><strong>Irritable bowel syndrome</strong> &mdash; chronic abdominal pain, altered bowel habits<sup>2</sup></li>
+  <li><strong>Sphincter of Oddi dysfunction</strong> &mdash; post-cholecystectomy pain<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1294,21 +1367,19 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Peak Flow Measurement<sup>7</sup></strong></p>
+            <p><strong>Laboratory Studies<sup>1</sup></strong></p>
 <ul>
-  <li><cite index="6-11,6-5"><strong>Peak flow rate &lt;50%</strong> without improvement despite aggressive therapy warrants hospital admission</cite><sup>7</sup></li>
-  <li><cite index="5-31">Peak expiratory flow below 50% needs immediate medical care</cite><sup>8</sup></li>
-  <li><cite index="6-2,6-8">Peak flow measurements indicate severe airway obstruction and constitute a medical emergency</cite><sup>7</sup></li>
+  <li><strong>CBC with differential</strong>: Leukocytosis (WBC &gt;11,000/μL) with left shift<sup>1</sup></li>
+  <li><strong>C-reactive protein</strong>: Elevated &ge;3 mg/dL supports acute inflammation<sup>3</sup></li>
+  <li><strong>Liver function tests</strong>: May show mild elevation; bilirubin &gt;2 mg/dL suggests CBD stone<sup>1</sup></li>
+  <li><strong>Lipase/Amylase</strong>: Rule out concurrent pancreatitis<sup>1</sup></li>
 </ul>
-<p><strong>Spirometry and Bronchodilator Response<sup>9</sup></strong></p>
+<p><strong>Imaging Studies<sup>1,4</sup></strong></p>
 <ul>
-  <li><cite index="10-13"><strong>Positive bronchodilator response:</strong> FEV1 increase &gt;12% and &gt;200 mL (preferably &gt;15% and &gt;400 mL) after 200-400 mcg albuterol</cite><sup>9</sup></li>
-  <li><cite index="2-17">Reversible obstruction via spirometry after bronchodilator is suggestive of asthma diagnosis</cite><sup>10</sup></li>
-</ul>
-<p><strong>Other Tests<sup>3</sup></strong></p>
-<ul>
-  <li><cite index="7-25,7-26"><strong>Pulse oximetry</strong> &mdash; useful for assessing severity; falling pO2 is a late finding indicating severely unwell or peri-arrest patient</cite><sup>3</sup></li>
-  <li><cite index="8-10">Chest radiograph may reveal hyperinflation but often cannot distinguish between asthma, COPD, and ACO</cite><sup>4</sup></li>
+  <li><strong>Right upper quadrant ultrasound</strong>: First-line imaging, readily available<sup>1</sup></li>
+  <li><strong>Gallbladder wall thickening</strong> &gt;3mm, pericholecystic fluid, positive sonographic Murphy&rsquo;s sign<sup>4</sup></li>
+  <li><strong>HIDA scan</strong>: If US negative but high suspicion; absence of GB filling diagnostic<sup>1</sup></li>
+  <li><strong>CT scan</strong>: If complications suspected or diagnosis unclear<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1321,24 +1392,24 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Acute Mild-to-Moderate Exacerbation (Outpatient)<sup>9</sup></strong></p>
+            <p><strong>Initial Management &mdash; All Settings<sup>1,5</sup></strong></p>
 <ul>
-  <li><cite index="10-23"><strong>Albuterol (SABA):</strong> 4-10 puffs every 20 minutes within first hour for mild-to-moderate exacerbations</cite><sup>9</sup></li>
-  <li><cite index="10-24">After first hour: 4-10 puffs every 3-4 hours, potentially escalating to 6-10 puffs every 1-2 hours</cite><sup>9</sup></li>
-  <li><cite index="12-13,15-8"><strong>ICS-formoterol preferred:</strong> Early use prevents need for oral steroids and reduces severe exacerbations by 60-64%</cite><sup>11,12</sup></li>
-  <li><cite index="5-32">Systemic corticosteroids within one hour of emergency presentation significantly reduces hospitalization</cite><sup>8</sup></li>
+  <li><strong>NPO status</strong> and IV fluid resuscitation<sup>5</sup></li>
+  <li><strong>Analgesics</strong>: NSAIDs or opioids as needed for pain control<sup>5</sup></li>
+  <li><strong>Antiemetics</strong>: Ondansetron 4-8mg IV q8h PRN<sup>5</sup></li>
 </ul>
-<p><strong>Severe Exacerbation/Status Asthmaticus (Inpatient)<sup>13</sup></strong></p>
+<p><strong>Antibiotic Therapy<sup>1,5</sup></strong></p>
 <ul>
-  <li><cite index="3-10,3-11"><strong>Standard therapy:</strong> β2-agonists and corticosteroids; refractory cases may require IV medications, continuous nebulizers, mechanical ventilation</cite><sup>13</sup></li>
-  <li><cite index="5-30">Correcting severe hypoxemia through oxygen application and repetitive short-acting beta2 agonists</cite><sup>8</sup></li>
-  <li><cite index="10-18,10-19"><strong>Pregnancy considerations:</strong> Aggressive management with SABA, oxygen, and early systemic corticosteroids; continue controller medications during labor</cite><sup>9</sup></li>
+  <li><strong>Grade I (Mild)</strong>: Consider observation without antibiotics if no systemic signs<sup>5</sup></li>
+  <li><strong>Grade II (Moderate)</strong>: Ceftriaxone 1-2g IV daily or Ampicillin-sulbactam 3g IV q6h<sup>5</sup></li>
+  <li><strong>Grade III (Severe)</strong>: Piperacillin-tazobactam 4.5g IV q8h or Meropenem 1g IV q8h<sup>5</sup></li>
 </ul>
-<p><strong>Current GINA 2024 Recommendations<sup>11,12</sup></strong></p>
+<p><strong>Surgical Management<sup>1,5</sup></strong></p>
 <ul>
-  <li><cite index="15-3,10-8"><strong>All adults/adolescents</strong> should receive ICS-containing medication and not be treated with SABA alone</cite><sup>12,9</sup></li>
-  <li><cite index="15-4">Track 1 (preferred): as-needed combination low-dose ICS-formoterol; Track 2: SABA with separate ICS inhaler</cite><sup>12</sup></li>
-  <li><cite index="1-9">Low-dose budesonide/formoterol 80-160 mcg/4.5 mcg inhaled 1-2 times daily for symptoms</cite><sup>1</sup></li>
+  <li><strong>Early laparoscopic cholecystectomy (ELC)</strong>: Within 72 hours of admission or 7-10 days from symptom onset<sup>5</sup></li>
+  <li><strong>Grade I-II</strong>: ELC preferred approach<sup>5</sup></li>
+  <li><strong>Grade III or high surgical risk</strong>: Percutaneous cholecystostomy as bridge to surgery<sup>5</sup></li>
+  <li><strong>Delayed surgery</strong>: If not candidate for ELC, delay &ge;6 weeks after acute episode<sup>5</sup></li>
 </ul>
 
           </div>
@@ -1352,10 +1423,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><cite index="3-25">Approximately 80-85% of asthma-related fatalities result from slow-onset exacerbations reflecting prolonged inadequate disease control</cite><sup>13</sup></li>
-  <li><cite index="3-26,3-27">Slow-onset exacerbations exhibit extensive airway inflammation and mucus plugging; sudden-onset involve predominant bronchospasm with clear airways</cite><sup>13</sup></li>
-  <li><cite index="8-2,8-3">Exacerbation rates 4-5 times higher in asthma-COPD overlap patients with more ED visits and hospitalizations</cite><sup>4</sup></li>
-  <li>Clinical context: Most patients with appropriate treatment show improvement within 1-2 hours; full recovery may take several days to weeks</li>
+  <li><cite index="1-24,1-25">With appropriate treatment, most patients recover within 7-10 days</cite></li>
+  <li><cite index="1-26,1-27,1-28,1-29">Without prompt treatment, may progress to gallbladder gangrene, empyema, or perforation</cite></li>
+  <li>Clinical context: Recurrence rate is 10-30% if treated conservatively without cholecystectomy</li>
+  <li><cite index="1-30">Approximately 95% of acute cholecystitis cases are associated with gallstones</cite></li>
 </ul>
 
           </div>
@@ -1369,10 +1440,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><cite index="1-15">Assess asthma severity, control, and exacerbation risk regularly during follow-up visits</cite><sup>1</sup></li>
-  <li><cite index="17-1,17-2">Every patient should receive written action plan explaining medication adjustment when symptoms worsen and when to seek medical help</cite><sup>14</sup></li>
-  <li><cite index="13-17">Measure lung function at diagnosis, 3-6 months after beginning ICS therapy, then periodically and more frequently in at-risk patients</cite><sup>15</sup></li>
-  <li><cite index="5-32">Patients should be sent home on oral prednisone after acute hospitalization</cite><sup>8</sup></li>
+  <li><strong>Post-surgical</strong>: Routine follow-up in 1-2 weeks for wound check and symptom resolution</li>
+  <li><strong>Non-operative management</strong>: Close monitoring for complications, arrange elective cholecystectomy in 6-12 weeks</li>
+  <li><strong>Elderly/high-risk patients</strong>: Consider percutaneous cholecystostomy with interval assessment for surgery candidacy</li>
+  <li><strong>Recurrent symptoms</strong>: Urgent surgical consultation for possible complications</li>
 </ul>
 
           </div>
@@ -1385,15 +1456,17 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Diagnostic Alternatives<sup>15</sup></strong></p>
+            <p><strong>Diagnostic Approach</strong></p>
 <ul>
-  <li><cite index="12-10,12-12">Peak expiratory flow (PEF) emphasized as viable alternative to spirometry, especially in resource-limited environments</cite><sup>11</sup></li>
-  <li><cite index="17-16">Updated diagnostic flowchart allows flexibility in choosing initial lung function tests based on available resources</cite><sup>14</sup></li>
+  <li><strong>Clinical diagnosis</strong>: Murphy&rsquo;s sign + RUQ tenderness + fever/leukocytosis when imaging unavailable</li>
+  <li><strong>Basic laboratory</strong>: CBC and basic metabolic panel if available</li>
+  <li><strong>Point-of-care ultrasound</strong>: If available, look for gallstones and wall thickening</li>
 </ul>
-<p><strong>Treatment Priorities<sup>8</sup></strong></p>
+<p><strong>Treatment Options</strong></p>
 <ul>
-  <li><cite index="5-5">Early institution of inhaled corticosteroids reduces exacerbations and decreases frequency of hospital admissions</cite><sup>8</sup></li>
-  <li>Clinical context: Focus on basic bronchodilators (albuterol) and systemic corticosteroids when advanced therapies unavailable</li>
+  <li><strong>Conservative management</strong>: IV fluids, pain control, broad-spectrum antibiotics when surgery unavailable</li>
+  <li><strong>Open cholecystectomy</strong>: When laparoscopic capability not available</li>
+  <li><strong>Drainage procedures</strong>: Percutaneous or surgical drainage for complicated cases</li>
 </ul>
 
           </div>
@@ -1403,38 +1476,45 @@
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">GINA 2024 Global Strategy for Asthma Management and Prevention</div>
-            <div class="guideline-meta">Global Initiative for Asthma &bull; 2024</div>
+            <div class="guideline-name">Tokyo Guidelines 2018: Diagnostic Criteria and Severity Grading of Acute Cholecystitis</div>
+            <div class="guideline-meta">International Association of Hepato-Pancreato-Biliary Surgery &bull; 2018</div>
           </div>
-          <a href="https://ginasthma.org/2024-report/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://onlinelibrary.wiley.com/doi/10.1002/jhbp.515" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">GINA Severe Asthma Guide 2024</div>
-            <div class="guideline-meta">Global Initiative for Asthma &bull; 2024</div>
+            <div class="guideline-name">2020 World Society of Emergency Surgery Guidelines for Acute Calculus Cholecystitis</div>
+            <div class="guideline-meta">World Society of Emergency Surgery &bull; 2020</div>
           </div>
-          <a href="https://ginasthma.org/wp-content/uploads/2024/11/GINA-Severe-Asthma-Guide-2024-WEB-WMS.pdf" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1186/s13017-020-00336-x" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">2024 IDSA Clinical Practice Guideline Update on Diagnostic Imaging of Acute Cholecystitis</div>
+            <div class="guideline-meta">Infectious Diseases Society of America &bull; 2024</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/38963820/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">American Association for Surgery of Trauma Emergency General Surgery Guidelines</div>
+            <div class="guideline-meta">American Association for the Surgery of Trauma &bull; 2019</div>
+          </div>
+          <a href="https://doi.org/10.1136/tsaco-2018-000281" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Sharma S, Chakraborty RK. Asthma. StatPearls. 2024 May 3.</li>
-          <li id="ref-2">Johnson DB, Merrell BJ, Bounds CG. Pediatric Asthma. StatPearls. 2024 May 4.</li>
-          <li id="ref-3">Goldin J, Cataletto ME, Hoover EL. Asthma (Nursing). StatPearls. 2024 May 3.</li>
-          <li id="ref-4">Chabra R, Gupta M. Asthma and COPD Overlap. StatPearls. 2023 June 11.</li>
-          <li id="ref-5">Global Initiative for Asthma. GINA 2024 Summary Guide for Asthma Management and Prevention. 2024.</li>
-          <li id="ref-6">Global Initiative for Asthma. GINA Severe Asthma Guide 2024. November 2024.</li>
-          <li id="ref-7">Johnson DB, Merrell BJ, Bounds CG. Peak Flow Rate Measurement. StatPearls. 2024 October 6.</li>
-          <li id="ref-8">Chabra R, Gupta M. Allergic and Environmentally Induced Asthma. StatPearls. 2023 August 7.</li>
-          <li id="ref-9">Johnson DB, Merrell BJ, Bounds CG. Albuterol. StatPearls. 2024 January 10.</li>
-          <li id="ref-10">Sharma S, Chakraborty RK. Pathophysiology of Asthma. StatPearls. 2023 June 24.</li>
-          <li id="ref-11">Dubin S, Patak P, Jung D. Update on Asthma Management Guidelines. PMC. 2024 October.</li>
-          <li id="ref-12">Reddel HK, Bacharier LB, Bateman ED, et al. Global Initiative for Asthma Strategy 2024. Eur Respir J. 2024.</li>
-          <li id="ref-13">Johnson DB, Merrell BJ, Bounds CG. Status Asthmaticus. StatPearls. 2025 September 15.</li>
-          <li id="ref-14">Hasan F, Nair R. Focused Overview of the 2024 Global Initiative for Asthma Guidelines. APIK J Intern Med. 2025.</li>
-          <li id="ref-15">Pulmonology Advisor. GINA 2024 Asthma Update: Revised Recommendations. 2025 June 11.</li>
+          <li id="ref-1">Jones MW, Santos G, Patel PJ, O'Rourke MC. Acute Cholecystitis. StatPearls Publishing; 2025 Jul 6.</li>
+          <li id="ref-2">Kopitnik NL, Kashyap S, Dominique E. Acute Abdomen. StatPearls Publishing; 2025 Feb 15.</li>
+          <li id="ref-3">Yokoe M, Hata J, Takada T, et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholecystitis. J Hepatobiliary Pancreat Sci. 2018;25(1):41-54.</li>
+          <li id="ref-4">Radiological Society of North America. Improving Diagnosis of Acute Cholecystitis with US: New Paradigms. RadioGraphics. 2024;44(6):e240032.</li>
+          <li id="ref-5">Di Saverio S, Podda M, De Simone B, et al. Diagnosis and treatment of acute cholecystitis: a comprehensive narrative review. J Clin Med. 2024;13(9):2695.</li>
+          <li id="ref-6">Pisano M, Allievi N, Gurusamy K, et al. 2020 World Society of Emergency Surgery updated guidelines for the diagnosis and treatment of acute calculus cholecystitis. World J Emerg Surg. 2020;15(1):61.</li>
+          <li id="ref-7">Vera K, Pei KY, Schuster KM, Davis KA. Validation of a new American Association for the Surgery of Trauma anatomic severity grading system for acute cholecystitis. J Trauma Acute Care Surg. 2018;84(4):650-654.</li>
+          <li id="ref-8">Hernandez M, Murphy B, Aho JM, et al. Validation of the AAST EGS acute cholecystitis grade and comparison with the Tokyo guidelines. Surgery. 2018;163(4):739-746.</li>
         </ol>
       </div>
 
@@ -1442,9 +1522,9 @@
       <div class="disease-view" id="disease-view-2" style="display:none">
 
       <div class="disease-header card">
-        <h2>Cellulitis and Skin Soft Tissue Infections</h2>
-        <p class="verified-date">Last verified: March 8, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK549770/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <h2>Delirium</h2>
+        <p class="verified-date">Last verified: March 9, 2026</p>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK470399/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1455,21 +1535,20 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Erythema</strong> with poorly demarcated borders<sup>1</sup></li>
-  <li><strong>Warmth</strong> over affected area<sup>1</sup></li>
-  <li><strong>Swelling</strong> and <strong>tenderness</strong> to palpation<sup>1</sup></li>
-  <li><strong>Pain</strong> at the affected site<sup>1</sup></li>
-  <li><strong>Fever</strong> and <strong>chills</strong> when systemic involvement<sup>2</sup></li>
+  <li><strong>Disturbance in attention</strong>: Reduced ability to direct, focus, sustain, or shift attention<sup>1</sup></li>
+  <li><strong>Altered awareness</strong>: Reduced orientation to the environment<sup>1</sup></li>
+  <li><strong>Fluctuating course</strong>: Symptoms develop over hours to days with marked variation in severity<sup>1</sup></li>
+  <li><strong>Sleep-wake cycle disruption</strong>: Nearly pathognomonic characteristic leading to "sundowning"<sup>2</sup></li>
+  <li><strong>Cognitive deficits</strong>: Memory impairment, disorientation, perceptual disturbances<sup>3</sup></li>
+  <li><strong>Motor subtypes</strong>: Hyperactive (agitated), hypoactive (somnolent), or mixed presentations<sup>4</sup></li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><strong>Poorly demarcated, expanding area of erythema</strong><sup>1</sup></li>
-  <li><strong>Associated edema</strong> and tenderness<sup>1</sup></li>
-  <li><strong>Absence of purulent discharge</strong> or abscess<sup>1</sup></li>
-  <li><strong>Skin may appear pink to mildly erythematous</strong> (vs bright red in erysipelas)<sup>1</sup></li>
-  <li><strong>Evidence of portal of entry</strong> (trauma, insect bites, ulcers, surgical wounds)<sup>1</sup></li>
-  <li>Clinical context: <strong>Lymphangitic streaking</strong> may be present in some cases</li>
-  <li>Clinical context: <strong>Regional lymphadenopathy</strong> may accompany infection</li>
+  <li><strong>Inattention</strong>: Difficulty focusing or shifting attention during examination<sup>1</sup></li>
+  <li><strong>Disorganized thinking</strong>: Rambling, irrelevant conversation, unclear logical flow<sup>1</sup></li>
+  <li><strong>Altered level of consciousness</strong>: Either hypervigilant or lethargic<sup>1</sup></li>
+  <li><strong>Perceptual disturbances</strong>: Visual or auditory hallucinations, illusions<sup>1</sup></li>
+  <li><strong>Psychomotor agitation or retardation</strong>: May fluctuate between hyperactive and hypoactive states<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1484,23 +1563,22 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><strong>Erysipelas</strong> - more superficial, bright red, well-demarcated borders, elevated<sup>1</sup></li>
-  <li><strong>Stasis dermatitis</strong> - bilateral, chronic, associated with venous insufficiency<sup>1</sup></li>
-  <li><strong>Venous insufficiency</strong> with inflammation<sup>1</sup></li>
-  <li><strong>Contact dermatitis</strong> - history of exposure, bilateral distribution pattern</li>
+  <li><strong>Dementia</strong>: Chronic, progressive cognitive decline vs. acute, fluctuating course of delirium<sup>5</sup></li>
+  <li><strong>Depression</strong>: Personal withdrawal, slowed speech but usually oriented<sup>2</sup></li>
+  <li><strong>Psychosis</strong>: Primary psychiatric disorder without underlying medical cause<sup>2</sup></li>
+  <li><strong>Medication-induced sedation</strong>: Altered sensorium from sedatives, may mimic hypoactive delirium<sup>6</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><strong>Deep vein thrombosis</strong> - unilateral swelling, may have erythema</li>
-  <li><strong>Cutaneous abscess</strong> - purulent, fluctuant collection<sup>2</sup></li>
-  <li><strong>Septic bursitis</strong> - localized to bursal area with collection<sup>3</sup></li>
+  <li><strong>Catatonia</strong>: Motor abnormalities with preserved consciousness<sup>1</sup></li>
+  <li><strong>Severe mood disorders</strong>: May present with psychotic features<sup>1</sup></li>
+  <li><strong>Toxic encephalopathy</strong>: From substances like anticholinergics (diphenhydramine)<sup>7</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><strong>MRSA skin infection</strong> - often misidentified as spider bite<sup>4</sup></li>
-  <li><strong>Necrotizing fasciitis</strong> - pain disproportionate to physical findings<sup>5</sup></li>
-  <li><strong>Periorbital cellulitis</strong> vs orbital cellulitis (around eyes)<sup>2</sup></li>
-  <li><strong>Chronic venous stasis dermatitis</strong> - bilateral, long-standing<sup>1</sup></li>
+  <li><strong>Coma or stupor</strong>: Complete inability to respond, not classified as delirium per DSM-5-TR<sup>6</sup></li>
+  <li><strong>Acute encephalopathy</strong>: Generalized brain pathophysiology developing rapidly<sup>6</sup></li>
+  <li><strong>ICU psychosis</strong> (outdated term): Previously used misnomer for hyperactive ICU delirium<sup>3</sup></li>
 </ul>
 
           </div>
@@ -1513,19 +1591,26 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Laboratory Studies</strong></p>
+            <p><strong>Delirium Screening Tools<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Blood cultures</strong> - not routinely recommended for uncomplicated cellulitis<sup>6</sup></li>
-  <li><strong>Wound culture</strong> - consider in purulent infections or treatment failures<sup>6</sup></li>
-  <li><strong>Complete blood count</strong> - may show leukocytosis if systemic involvement<sup>2</sup></li>
-  <li><strong>C-reactive protein</strong> and <strong>ESR</strong> - may be elevated, useful for monitoring response<sup>3</sup></li>
+  <li><strong>Confusion Assessment Method (CAM)</strong>: Sn 94-100%, Sp 90-95%<sup>1</sup></li>
+  <li><strong>CAM-ICU</strong>: For mechanically ventilated patients, Sn 95-100%, Sp 93-98%<sup>1</sup></li>
+  <li><strong>4AT</strong>: Validated bedside screening tool<sup>1</sup></li>
+  <li><strong>Delirium Rating Scale-Revised-98 (DRS-R-98)</strong>: For severity assessment<sup>1</sup></li>
 </ul>
-<p><strong>Imaging Studies</strong></p>
+<p><strong>Laboratory Assessment<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Plain radiographs</strong> - limited value, may show soft tissue swelling<sup>5</sup></li>
-  <li><strong>CT scan</strong> - greater sensitivity than plain films for necrotizing infections<sup>5</sup></li>
-  <li><strong>MRI</strong> - most sensitive for deep infections and osteomyelitis<sup>3</sup></li>
-  <li><strong>Bedside ultrasound</strong> - can help identify abscesses and guide drainage<sup>3</sup></li>
+  <li><strong>Comprehensive metabolic panel</strong>: Glucose, electrolytes, renal function<sup>1</sup></li>
+  <li><strong>Complete blood count</strong>: Infection markers, anemia<sup>1</sup></li>
+  <li><strong>Arterial blood gas</strong>: Hypoxemia, hypercapnia, acid-base status<sup>1</sup></li>
+  <li><strong>Urinalysis</strong>: Urinary tract infection<sup>1</sup></li>
+  <li><strong>Medication levels</strong>: When appropriate (digoxin, lithium)<sup>1</sup></li>
+</ul>
+<p><strong>Neuroimaging<sup>1</sup></strong></p>
+<ul>
+  <li><strong>Head CT</strong>: When focal neurological signs, trauma, or acute change<sup>1</sup></li>
+  <li><strong>MRI</strong>: For suspected stroke, encephalitis, or complex cases<sup>1</sup></li>
+  <li><strong>EEG</strong>: When seizures suspected or prolonged altered consciousness<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1538,35 +1623,27 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Outpatient - Mild Nonpurulent Cellulitis<sup>6</sup></strong></p>
+            <p><strong>Outpatient Management<sup>8</sup></strong></p>
 <ul>
-  <li><strong>Penicillin VK</strong> 500 mg PO QID &times; 5 days</li>
-  <li><strong>Cephalexin</strong> 500 mg PO QID &times; 5 days</li>
-  <li><strong>Dicloxacillin</strong> 500 mg PO QID &times; 5 days</li>
-  <li><strong>Clindamycin</strong> 300-400 mg PO TID &times; 5 days</li>
-  <li><strong>Amoxicillin</strong> 500 mg PO TID for erysipelas<sup>1</sup></li>
+  <li><strong>Address underlying causes</strong>: Medication review, treat infections, metabolic abnormalities<sup>8</sup></li>
+  <li><strong>Nonpharmacologic interventions</strong>: Environmental modifications, reorientation, family presence<sup>8</sup></li>
+  <li><strong>Avoid antipsychotics</strong> for prevention or routine treatment unless severe agitation<sup>8</sup></li>
 </ul>
-<p><strong>Inpatient - Moderate Cellulitis with SIRS<sup>6</sup></strong></p>
+<p><strong>Inpatient Non-ICU<sup>8</sup></strong></p>
 <ul>
-  <li><strong>Ceftriaxone</strong> 1-2 g IV daily</li>
-  <li><strong>Cefazolin</strong> 1-2 g IV every 8 hours</li>
-  <li><strong>Clindamycin</strong> 600 mg IV every 8 hours</li>
-  <li><strong>Penicillin G</strong> 2-4 million units IV every 4-6 hours</li>
+  <li><strong>Multicomponent interventions</strong>: Hospital Elder Life Program (HELP) model<sup>8</sup></li>
+  <li><strong>Risk factor modification</strong>: Pain control, sleep hygiene, early mobilization<sup>8</sup></li>
+  <li><strong>Medication management</strong>: Discontinue deliriogenic medications, avoid benzodiazepines<sup>8</sup></li>
+  <li><strong>Antipsychotics if needed</strong>: Haloperidol 0.5-1 mg PO/IV q6h PRN severe agitation<sup>8</sup></li>
+  <li><strong>Monitor QTc</strong>: With antipsychotic use, especially haloperidol<sup>8</sup></li>
 </ul>
-<p><strong>Severe/MRSA Risk<sup>6</sup></strong></p>
+<p><strong>ICU Management<sup>9</sup></strong></p>
 <ul>
-  <li><strong>Vancomycin</strong> 15-20 mg/kg IV every 8-12 hours (target trough 15-20)</li>
-  <li><strong>Linezolid</strong> 600 mg IV/PO every 12 hours</li>
-  <li><strong>Daptomycin</strong> 4 mg/kg IV daily for skin infections</li>
-  <li><strong>Ceftaroline</strong> 600 mg IV every 12 hours</li>
-  <li>MRSA coverage for: penetrating trauma, MRSA colonization, injection drug use, SIRS<sup>6</sup></li>
-</ul>
-<p><strong>Purulent Infections<sup>6</sup></strong></p>
-<ul>
-  <li><strong>Incision and drainage</strong> - primary therapy for abscesses</li>
-  <li><strong>Trimethoprim-sulfamethoxazole</strong> 1-2 DS tablets PO BID</li>
-  <li><strong>Clindamycin</strong> 300-400 mg PO TID</li>
-  <li><strong>Doxycycline</strong> 100 mg PO BID</li>
+  <li><strong>ABCDEF Bundle</strong>: Assess, manage pain, minimize sedation, assess delirium, early mobility<sup>9</sup></li>
+  <li><strong>Sedation strategy</strong>: Dexmedetomidine preferred over propofol for delirium reduction<sup>9</sup></li>
+  <li><strong>Avoid benzodiazepines</strong>: Except for alcohol/sedative withdrawal<sup>9</sup></li>
+  <li><strong>Melatonin</strong>: 1-6 mg daily for sleep-wake cycle regulation<sup>9</sup></li>
+  <li><strong>Antipsychotics</strong>: Limited evidence for routine use in ICU delirium<sup>9</sup></li>
 </ul>
 
           </div>
@@ -1580,11 +1657,11 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>5-day treatment course</strong> recommended for uncomplicated cellulitis<sup>6</sup></li>
-  <li><strong>Clinical improvement</strong> expected within 48-72 hours of appropriate therapy</li>
-  <li><strong>Resolution of erythema</strong> and swelling typically occurs over 7-10 days</li>
-  <li><strong>Recurrence rate</strong> approximately 8-20% in patients with risk factors</li>
-  <li>Clinical context: <strong>Failure to respond</strong> within 48-72 hours should prompt reassessment</li>
+  <li><strong>Duration</strong>: Most episodes resolve within days to weeks with treatment of underlying causes<sup>1</sup></li>
+  <li><strong>Mortality risk</strong>: <cite index="4-35">Associated with increased morbidity and mortality</cite><sup>1</sup></li>
+  <li><strong>Cognitive sequelae</strong>: May have persistent cognitive impairment, especially in elderly<sup>1</sup></li>
+  <li><strong>Functional decline</strong>: Risk of prolonged hospitalization and discharge to higher level of care<sup>2</sup></li>
+  <li><strong>Post-traumatic stress</strong>: Possible psychological trauma requiring assessment and support<sup>8</sup></li>
 </ul>
 
           </div>
@@ -1598,11 +1675,11 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Clinical reassessment</strong> within 48-72 hours if outpatient treatment<sup>6</sup></li>
-  <li><strong>Address predisposing factors</strong> - diabetes, venous insufficiency, lymphedema<sup>6</sup></li>
-  <li><strong>Consider prophylactic antibiotics</strong> for patients with 3-4 episodes per year<sup>6</sup></li>
-  <li><strong>Prophylaxis options</strong>: penicillin or erythromycin twice daily &times; 4-52 weeks<sup>1</sup></li>
-  <li><strong>Benzathine penicillin G</strong> 1.2 million units IM every 2-4 weeks for prevention<sup>1</sup></li>
+  <li><strong>Delirium resolution assessment</strong>: Continue structured screening until resolved<sup>8</sup></li>
+  <li><strong>Medication reconciliation</strong>: Review and discontinue unnecessary psychotropic medications<sup>8</sup></li>
+  <li><strong>Cognitive assessment</strong>: Evaluate for persistent cognitive impairment<sup>8</sup></li>
+  <li><strong>Functional status</strong>: Physical therapy evaluation for mobility and safety<sup>8</sup></li>
+  <li><strong>Caregiver education</strong>: Signs of recurrence, prevention strategies<sup>8</sup></li>
 </ul>
 
           </div>
@@ -1615,19 +1692,18 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Resource-Limited Settings</strong></p>
+            <p><strong>Clinical Assessment</strong></p>
 <ul>
-  <li><strong>Penicillin</strong> remains first-line for streptococcal cellulitis<sup>1</sup></li>
-  <li><strong>Amoxicillin</strong> oral alternative when penicillin unavailable</li>
-  <li><strong>Clinical assessment</strong> primary diagnostic tool when imaging unavailable</li>
-  <li><strong>Local wound care</strong> and elevation important adjuncts</li>
+  <li><strong>Bedside cognitive testing</strong>: Simple attention tests (spell WORLD backwards)<sup>1</sup></li>
+  <li><strong>Family history</strong>: Baseline cognitive function from relatives<sup>1</sup></li>
+  <li><strong>Vital signs</strong>: Temperature, pulse, BP for infection or metabolic causes<sup>1</sup></li>
 </ul>
-<p><strong>Prevention Strategies</strong></p>
+<p><strong>Management Priorities</strong></p>
 <ul>
-  <li><strong>Proper wound care</strong> and hygiene education</li>
-  <li><strong>Management of predisposing conditions</strong> - diabetes, venous disease</li>
-  <li><strong>Skin barrier protection</strong> and moisturization</li>
-  <li><strong>Early recognition</strong> and treatment education for patients</li>
+  <li><strong>Treat reversible causes</strong>: Infections, electrolyte abnormalities, hypoxia<sup>1</sup></li>
+  <li><strong>Environmental modifications</strong>: Adequate lighting, minimize noise, familiar objects<sup>1</sup></li>
+  <li><strong>Avoid restraints</strong>: Unless imminent safety risk<sup>8</sup></li>
+  <li><strong>Basic medication review</strong>: Discontinue non-essential medications<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1637,28 +1713,39 @@
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update</div>
-            <div class="guideline-meta">Infectious Diseases Society of America (IDSA) &bull; 2014</div>
+            <div class="guideline-name">Practice Guideline for the Prevention and Treatment of Delirium</div>
+            <div class="guideline-meta">American Psychiatric Association &bull; 2025</div>
           </div>
-          <a href="https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.psychiatryonline.org/doi/10.1176/appi.ajp.25182013" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Cellulitis and Erysipelas Management Guidelines</div>
-            <div class="guideline-meta">British Association of Dermatologists &bull; 2019</div>
+            <div class="guideline-name">Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU (PADIS Guidelines - Focused Update)</div>
+            <div class="guideline-meta">Society of Critical Care Medicine &bull; 2025</div>
           </div>
-          <a href="https://www.bad.org.uk/healthcare-professionals/clinical-standards/clinical-guidelines/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.sccm.org/clinical-resources/guidelines/guidelines/focused-update-padis-guideline" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU (PADIS Guidelines)</div>
+            <div class="guideline-meta">Society of Critical Care Medicine &bull; 2018</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/30113379/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Stevens DL, Bisno AL, Chambers HF, et al. Practice guidelines for the diagnosis and management of skin and soft tissue infections: 2014 update by the Infectious Diseases Society of America. Clin Infect Dis. 2014;59(2):e10-52.</li>
-          <li id="ref-2">Brown BD, Syed HA, Hood Watson KL. Cellulitis. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2025.</li>
-          <li id="ref-3">Wallace HA, Perera TB. Necrotizing Fasciitis. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-4">Taylor T, Tobin E, Unakal C. Methicillin-Resistant Staphylococcus aureus. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2025.</li>
-          <li id="ref-5">Newberger R, Hollingshead CM. Group A Streptococcal Infections. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2025.</li>
+          <li id="ref-1">Ramírez Echeverría MdL, Schoo C. Delirium. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-2">Patti L, Gupta M. Change in Mental Status. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-3">Ali M, Cascella M. ICU Delirium. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-4">Janjua MS, Spurling BC, Arthur ME. Postoperative Delirium. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-5">Jandu JS, Mohanaselvan A, Fang X. Differentiating Delirium Versus Dementia in Older Adults. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-6">Lewis K, Balas MC, Stollings JL, et al. A focused update to the clinical practice guidelines for the prevention and management of pain, anxiety, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU. Crit Care Med. 2025 Mar;53(3):e711-e727.</li>
+          <li id="ref-7">Huynh DA, Abbas M, Dabaja A. Diphenhydramine Toxicity. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan.</li>
+          <li id="ref-8">Crone C, Fochtmann LJ, Ahmed I, et al. The American Psychiatric Association Practice Guideline for the Prevention and Treatment of Delirium. Am J Psychiatry. 2025 Sep 1;182(9):880-884.</li>
+          <li id="ref-9">Devlin JW, Skrobik Y, Gélinas C, et al. Clinical Practice Guidelines for the Prevention and Management of Pain, Agitation/Sedation, Delirium, Immobility, and Sleep Disruption in Adult Patients in the ICU. Crit Care Med. 2018 Sep;46(9):e825-e873.</li>
         </ol>
       </div>
 
@@ -1674,6 +1761,123 @@
 
       <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>
       <p style="color:var(--gray); font-size:0.85rem; margin-bottom:16px;">Curated from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener" style="color:var(--queen-blue);">2 Minute Medicine</a></p>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-fda">FDA Action</span>
+            <span class="pill pill-specialty">Hematology/Oncology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="iberdomide-myeloma-priority-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 18:00:19 +000</div>
+        <div class="wn-title">FDA grants priority review for iberdomide-based myeloma regimen</div>        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>FDA has granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents</li><li>Priority review was supported by Phase III data demonstrating that iberdomide combinations significantly improve minimal residual disease</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This represents a potential new treatment option for hospitalists managing multiple myeloma patients, with improved efficacy over current therapies</li><li>Clinical context: Priority review status suggests FDA anticipates approval, making this relevant for upcoming treatment planning</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> A new oral multiple myeloma therapy with enhanced efficacy is moving toward FDA approval with priority review status.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-preliminary">
+            <span class="confidence-dot"></span>
+            Preliminary confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">RCT</span>
+            <span class="pill pill-specialty">Emergency Medicine</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-ed-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
+        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority trial</div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>Morphine plus placebo is not noninferior to morphine plus acetaminophen in the management of acute pain in the emergency department</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This supports routine addition of acetaminophen to morphine for acute pain management in hospitalized patients</li><li>Clinical context: Challenges the practice of using morphine alone and reinforces multimodal pain management strategies</li></ul>
+        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations"><li>Study limited to emergency department setting</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior pain control compared to morphine alone in acute care settings.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">Observational</span>
+            <span class="pill pill-specialty">Surgery/Cardiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="sleep-apnea-postop-cv-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 00:00:43 +000</div>
+        <div class="wn-title">Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study&ensp;&bull;&ensp;<strong>Outcome:</strong> 30-day postoperative cardiovascular events and mortality</div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>In patients with obstructive sleep apnea, higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This provides a new risk stratification tool for perioperative management of OSA patients undergoing surgery</li><li>Clinical context: May help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and cardiology consultation</li></ul>
+        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Sleep apnea-specific hypoxic burden serves as a novel predictor of postoperative cardiovascular risk in OSA patients.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Moderate confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">Observational</span>
+            <span class="pill pill-specialty">Oncology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="rezatapopt-p53-reactivator-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Tue, 03 Mar 2026 12:00:47 +000</div>
+        <div class="wn-title">Safety and efficacy profile of first-in-class oral p53 reactivator rezatapopt</div>        <div class="wn-study-meta"><strong>Design:</strong> Phase 1-2 single-group trial</div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>The p53 reactivator rezatapopt was well-tolerated in adults with solid tumors harboring the TP53 Y220C mutation</li><li>Preliminary efficacy data showed dose-dependent tumor regression in participants with ovarian, breast, and other cancers</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Represents a novel targeted therapy approach for patients with specific TP53 mutations, potentially relevant for hospitalists managing cancer patients</li><li>Clinical context: First-in-class mechanism may offer new treatment options for previously difficult-to-treat solid tumors</li></ul>
+        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations"><li>Single-group design without control arm</li><li>Early phase trial with preliminary data</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> A first-in-class p53 reactivator shows promise for treating solid tumors with specific TP53 mutations.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-preliminary">
+            <span class="confidence-dot"></span>
+            Preliminary confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/safety-and-efficacy-of-first-in-class-oral-p53-reactivator-rezatapopt/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
 
       <div class="wn-card">
         <div class="wn-card-header">
@@ -1916,80 +2120,107 @@
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">AVERT — Apixaban for Cancer-Associated VTE Prophylaxis</h3>
-          <button class="action-btn star" data-id="avert---apixaban-for-cancer-as" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">IDEAL — Timing of Dialysis Initiation</h3>
+          <button class="action-btn star" data-id="ideal---timing-of-dialysis-ini" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">NEJM &bull; 2019 &bull; Carrier M, et al.</div>
-        <a href="https://www.wikijournalclub.org/wiki/AVERT" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
+        <div class="landmark-meta">NEJM &bull; 2010 &bull; Cooper BA, et al.</div>
+        <a href="https://www.wikijournalclub.org/wiki/IDEAL" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
 
         <div class="landmark-section">
           <h4>Clinical Question</h4>
-          <p>In ambulatory patients with cancer who are initiating chemotherapy and who are at intermediate-to-high risk for venous thromboembolism, does apixaban reduce the risk of venous thromboembolism?</p>
+          <p>In patients with stage V CKD, does the initiation of early dialysis improve survival or outcomes?</p>
         </div>
 
         <div class="landmark-section">
           <h4>Study Design</h4>
-          <p>Multicenter, double-blind, placebo-controlled, randomized trial conducted at 13 centers in Canada. Enrollment from 2014-2018 with mean follow-up of 183 days. Modified intention-to-treat analysis. No routine radiology screening performed.</p>
+          <p>Multicenter, parallel-group, randomized, controlled trial conducted at 32 centers in Australia and New Zealand. Enrollment from 2000-2008 with mean follow-up of 3.6 years. Intention-to-treat analysis.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Population</h4>
-          <p>N=574 ambulatory patients with active malignancy. Inclusion criteria: age ≥18 years, newly diagnosed cancer or progression after remission, initiating chemotherapy with planned duration ≥3 months, Khorana score ≥2. Key exclusion criteria: increased bleeding risk, severe liver disease, certain cancer types (BCC, SCC, acute leukemia, MPN), life expectancy <6 months, CKD (GFR <30), platelet count <50,000. Mean age 61 years, 42% male.</p>
+          <p>828 patients with progressive CKD and estimated GFR between 10-15 ml/min/1.73 m² (using Cockcroft-Gault). Mean age 60.4 years, 71.5% white, 42.9% with diabetes, 38.9% with cardiovascular disease. Early dialysis arm n=404, late dialysis arm n=424.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Intervention</h4>
-          <p>Apixaban 2.5 mg PO BID (n=291), with first dose administered within 24 hours of first chemotherapy dose.</p>
+          <p>Early dialysis initiation when GFR 10-14 ml/min/1.73 m²</p>
         </div>
 
         <div class="landmark-section">
           <h4>Comparator / Control</h4>
-          <p>Placebo (n=283)</p>
+          <p>Late dialysis initiation when GFR 5-7 ml/min/1.73 m² or when GFR >7 ml/min at physician discretion for uremic symptoms or difficult electrolyte abnormalities</p>
         </div>
 
         <div class="landmark-section">
           <h4>Primary Endpoint</h4>
-          <p>Objectively documented proximal DVT or PE at 180 days</p>
+          <p>All-cause mortality</p>
         </div>
 
         <div class="landmark-section">
           <h4>Key Findings</h4>
-          <p>VTE reduction: 4.2% vs 10.2% (HR 0.41; 95% CI 0.26-0.65; P<0.001; NNT=17). However, increased major bleeding: 3.5% vs 1.8% (HR 2.00; 95% CI 1.01-3.95; P=0.046; NNH=59). All-cause mortality: 12.2% vs 9.8% (HR 1.29; 95% CI 0.98-1.71). Major bleeding was predominantly associated with gastrointestinal or gynecologic cancers, with no fatal bleeding events.</p>
+          <p>No significant difference in all-cause mortality: 10.2 vs 9.8 events per 100 patient-years (HR 1.04; 95% CI 0.83-1.30; P=0.75). No significant differences in composite CV events (10.9 vs 8.8, HR 1.23; 95% CI 0.97-1.56; P=0.09), infectious events (12.4 vs 14.3, HR 0.87; 95% CI 0.70-1.08; P=0.20), or dialysis complications. Time to dialysis initiation was significantly shorter in early group: 1.80 vs 7.40 months (HR 2.09; 95% CI 1.81-2.41; P<0.001).</p>
         </div>
 
         <div class="landmark-section">
           <h4>Strengths</h4>
-          <p>Double-blind, placebo-controlled design with objective VTE endpoints. Used validated Khorana risk score for patient selection. Demonstrated clear efficacy signal for VTE prevention. Good baseline characteristics balance between groups.</p>
+          <p>First and only randomized controlled trial examining timing of dialysis initiation and mortality. Large sample size with robust intention-to-treat analysis. Pragmatic design allowing for clinical judgment in starting dialysis for symptoms.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Weaknesses / Limitations</h4>
-          <p>Low rate of renal insufficiency patients (creatinine clearance <50 ml/min). Did not include distal DVT in primary outcome, which may be treated with anticoagulation in cancer patients, potentially attenuating both VTE and bleeding outcomes. Bleeding events clustered in specific cancer types.</p>
+          <p>No standardized assessment of creatinine was used. Used Cockcroft-Gault equation rather than MDRD. In practice, 76% of patients assigned to late dialysis started dialysis when GFR was ≥5-7 ml/min/1.73 m² due to symptoms, reducing the actual difference between groups (mean GFR at dialysis start: 12.0 vs 9.8 ml/min/1.73 m²).</p>
         </div>
 
         <div class="landmark-section">
           <h4>Practice Impact</h4>
-          <p>This trial provided the first high-quality evidence supporting oral anticoagulation for primary VTE prevention in high-risk ambulatory cancer patients, representing a significant advance over parenteral options like low-molecular-weight heparin.</p>
+          <p>This trial supported current practice that dialysis should be initiated in symptomatic patients due to uremia or in asymptomatic patients with extremely low GFR (approximately 10 ml/min/1.73 m²). It challenged the practice of very early dialysis initiation in asymptomatic patients.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Why It Matters Now</h4>
-          <p>AVERT established apixaban as an effective option for cancer-associated VTE prophylaxis, though the bleeding risk requires careful patient selection. The trial helped define which ambulatory cancer patients benefit most from thromboprophylaxis and contributed to evolving guidelines for cancer-associated thrombosis prevention.</p>
+          <p>IDEAL remains the definitive evidence against early dialysis initiation purely based on GFR thresholds. Current guidelines emphasize symptom-driven initiation, and this trial continues to inform the timing of renal replacement therapy decisions. The findings support a patient-centered approach rather than rigid GFR cutoffs for dialysis initiation.</p>
         </div>
       </div>
 
-      <div class="favorites-section">
-        <div class="favorites-header">
-          <h4>Starred Studies</h4>
-          <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
-        </div>
-        <ul class="favorites-list" id="favorites-list">
-          <li class="favorites-empty">No favorites yet. Star studies to add them here.</li>
-        </ul>
-      </div>
     </section>
 
-    <!-- TAB 4: ARCHIVE -->
+    <!-- TAB 4: IMAGE OF THE DAY -->
+    <section id="imageofday" class="tab-content">
+
+      <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>
+
+      <div class="image-card">
+        <div class="image-card-header">
+          <h4 class="image-card-title">Dermatology Image</h4>
+          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+        </div>
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/63f6bff0b179d470cb3f8bc9ffea5120-small.jpg" alt="Dermatology Image — clinical image 1" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/8b67daf283d0bc53768512851ab2a132-small.jpg" alt="Dermatology Image — clinical image 2" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/f0cedeb7b13c43064230b8adf84e79c7-small.jpg" alt="Dermatology Image — clinical image 3" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/4b68653cbc7501d48bac9c032611b12b-small.jpg" alt="Dermatology Image — clinical image 4" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/c4ef4b6bba92fe4972b508b88c9c0191-small.jpg" alt="Dermatology Image — clinical image 5" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/f103092efe29933ba8a0018e2285b620-small.jpg" alt="Dermatology Image — clinical image 6" class="image-card-img" loading="lazy">
+        <p class="image-card-desc">© 2026 Journal of Drugs in Dermatology. All Rights Reserved. JDD, a peer-reviewed, MEDLINE®/PubMed® indexed journal, offers the dermatology community strong content of utmost quality and relevance on drugs, devices, and methods.</p>
+        <a href="https://jddonline.com/project-atlas/inclusive-derm/hidradenitis-suppurativa/" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>
+      </div>
+
+      <div class="nejm-reminder-card">
+        <div class="nejm-reminder-header">
+          <span class="nejm-reminder-icon">&#x1F9E0;</span>
+          <h4 class="nejm-reminder-title">NEJM Image Challenge</h4>
+        </div>
+        <p class="nejm-reminder-text">
+          Test your diagnostic skills with the weekly NEJM Image Challenge.
+          A new clinical image with multiple-choice questions every week.
+        </p>
+        <a href="https://www.nejm.org/image-challenge" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Take the Challenge &#8594;
+        </a>
+      </div>
+
+    </section>
+
+    <!-- TAB 5: ARCHIVE -->
     <section id="archive" class="tab-content">
 
       <div class="archive-intro">
@@ -2003,7 +2234,8 @@
         <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
       </div>
       <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
-        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()">&#x2715; Clear All Starred</button>
+        <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
+        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()" style="margin-left:8px;">&#x2715; Clear All</button>
       </div>
     </section>
 
@@ -2102,7 +2334,6 @@
 
         saveStarred(starred);
         renderArchive();
-        updateFavoritesList();
       });
     });
 
@@ -2149,7 +2380,6 @@
       var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
       if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9734;'; }
       renderArchive();
-      updateFavoritesList();
     }
 
     function clearAllStarred() {
@@ -2159,27 +2389,6 @@
         b.classList.remove('active'); b.innerHTML = '&#9734;';
       });
       renderArchive();
-      updateFavoritesList();
-    }
-
-    /* ===== LANDMARK TAB FAVORITES LIST ===== */
-    function updateFavoritesList() {
-      var starred = getStarred();
-      var ids = Object.keys(starred);
-      var list = document.getElementById('favorites-list');
-      if (!list) return;
-      if (ids.length === 0) {
-        list.innerHTML = '<li class="favorites-empty">No starred items yet. Star cards to save them here.</li>';
-        return;
-      }
-      var html = '';
-      ids.forEach(function(id) {
-        var item = starred[id];
-        html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
-        if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
-        html += ' <button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></li>';
-      });
-      list.innerHTML = html;
     }
 
     /* ===== EXPORT TO CLIPBOARD ===== */
@@ -2227,7 +2436,6 @@
           btn.innerHTML = '&#9733;';
         }
       });
-      updateFavoritesList();
       renderArchive();
     })();
 

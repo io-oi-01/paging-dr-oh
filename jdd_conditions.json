@@ -1,1 +1,566 @@
-[]
+[
+  {
+    "name": "Acanthosis Nigricans",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acanthosis-nigricans/"
+  },
+  {
+    "name": "Acne Keloidalis Nuchae",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acne-keloidalis-nuchae/"
+  },
+  {
+    "name": "Acne",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acne/"
+  },
+  {
+    "name": "Actinic Keratosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/actinic-keratosis/"
+  },
+  {
+    "name": "Acute Cutaneous Lupus Erythematosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acute-cutaneous-lupus-erythematosus/"
+  },
+  {
+    "name": "Acute Febrile Neutrophilic Dermatosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acute-febrile-neutrophilic-dermatosis/"
+  },
+  {
+    "name": "Acute Generalized Exanthematous Pustulosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/acute-generalized-exanthematous-pustulosis/"
+  },
+  {
+    "name": "Allergic Contact Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/allergic-contact-dermatitis/"
+  },
+  {
+    "name": "Alopecia Areata",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/alopecia-areata/"
+  },
+  {
+    "name": "Androgenic Alopecia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/androgenic-alopecia/"
+  },
+  {
+    "name": "Atopic Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/atopic-dermatitis/"
+  },
+  {
+    "name": "Benign Familial Pemphigus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/benign-familial-pemphigus/"
+  },
+  {
+    "name": "Basal Cell Carcinoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/basal-cell-carcinoma/"
+  },
+  {
+    "name": "Bullous Pemphigold",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/bullous-pemphigold/"
+  },
+  {
+    "name": "Café-Au-Lait",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/cafe-au-lait/"
+  },
+  {
+    "name": "Calciphylaxis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/calciphylaxis/"
+  },
+  {
+    "name": "Confluent and Reticulated Papillomatosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/confluent-and-reticulated-papillomatosis/"
+  },
+  {
+    "name": "Central Centrifugal Cicatricial Alopecia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/central-centrifugal-cicatricial-alopecia/"
+  },
+  {
+    "name": "Chemotherapy Induced Hyperpigmentation",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/chemotherapy-induced-hyperpigmentation/"
+  },
+  {
+    "name": "Chondrodermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/chondrodermatitis/"
+  },
+  {
+    "name": "Cutaneous T-cell Lymphoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/cutaneous-t-cell-lymphoma/"
+  },
+  {
+    "name": "Cutaneous Leishmaniasis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/cutaneous-leishmaniasis/"
+  },
+  {
+    "name": "Discoid Lupus Erythematosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/discoid-lupus-erythematosus/"
+  },
+  {
+    "name": "Dermatofibroma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/dermatofibroma/"
+  },
+  {
+    "name": "Dermatomyositis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/dermatomyositis/"
+  },
+  {
+    "name": "Dissecting Cellulitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/dissecting-cellulitis/"
+  },
+  {
+    "name": "Drug Reaction with Eosinophilia and Systemic Symptoms",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-with-eosinophilia-and-systemic-symptoms/"
+  },
+  {
+    "name": "Drug Reaction: Fixed",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-fixed/"
+  },
+  {
+    "name": "Drug Reaction: Minocycline",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-minocycline/"
+  },
+  {
+    "name": "Drug Reaction: Morbiliform",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-morbiliform/"
+  },
+  {
+    "name": "Dyshidrotic Eczema",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/dyshidrotic-eczema/"
+  },
+  {
+    "name": "Drug Reaction: TNF Alpha Inhibitor",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-tnf-alpha-inhibitor/"
+  },
+  {
+    "name": "Extragenital Lichen Sclerosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/extragenital-lichen-sclerosus/"
+  },
+  {
+    "name": "Erythema",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythema/"
+  },
+  {
+    "name": "Eosinophilic Cellulitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/eosinophilic-cellulitis/"
+  },
+  {
+    "name": "Epidermoid Cyst",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/epidermoid-cyst/"
+  },
+  {
+    "name": "Erythema Dyschromicum Perstans",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythema-dyschromicum-perstans/"
+  },
+  {
+    "name": "Erythema Ab Igne",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythema-ab-igne/"
+  },
+  {
+    "name": "Erythroderma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythroderma/"
+  },
+  {
+    "name": "Eschar Ecthyma Gangrenosum",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/eschar-ecthyma-gangrenosum/"
+  },
+  {
+    "name": "Extramammary Paget Disease",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/extramammary-paget-disease/"
+  },
+  {
+    "name": "Erythema Annulare Centrifugum",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythema-annulare-centrifugum/"
+  },
+  {
+    "name": "Erythema Multiforme",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/erythema-multiforme/"
+  },
+  {
+    "name": "Folliculitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/folliculitis/"
+  },
+  {
+    "name": "Furunculosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/furunculosis/"
+  },
+  {
+    "name": "Favre-Racouchot Syndrome",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/favre-racouchot-syndrome/"
+  },
+  {
+    "name": "Foot Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/foot-dermatitis/"
+  },
+  {
+    "name": "Fissures",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/fissures/"
+  },
+  {
+    "name": "Granuloma Annulare",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/granuloma-annulare/"
+  },
+  {
+    "name": "Herpes Zoster",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/herpes-zoster/"
+  },
+  {
+    "name": "Hidradenitis Suppurativa",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/hidradenitis-suppurativa/"
+  },
+  {
+    "name": "Irritant Contact Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/irritant-contact-dermatitis/"
+  },
+  {
+    "name": "Ichthyosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/ichthyosis/"
+  },
+  {
+    "name": "Idiopathic Guttate Hypomelanosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/idiopathic-guttate-hypomelanosis/"
+  },
+  {
+    "name": "Keloid",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/keloid/"
+  },
+  {
+    "name": "Keratosis Follicularis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/keratosis-follicularis/"
+  },
+  {
+    "name": "Keratosis Lichenoides Chronica",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/keratosis-lichenoides-chronica/"
+  },
+  {
+    "name": "Lichen Planopilaris + Frontal Fibrosing Alopecia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-planopilaris-frontal-fibrosing-alopecia/"
+  },
+  {
+    "name": "Lichen Amyloidosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-amyloidosis/"
+  },
+  {
+    "name": "Leukocytoclastic Vasculitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/leukocytoclastic-vasculitis/"
+  },
+  {
+    "name": "Lichen Planus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-planus/"
+  },
+  {
+    "name": "Lichen Sclerosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-sclerosus/"
+  },
+  {
+    "name": "Lichen Striatus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichenstriatus/"
+  },
+  {
+    "name": "Lichen Planus Pigmentosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-planus-pigmentosus/"
+  },
+  {
+    "name": "Lichen Simplex Chronicus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lichen-simplex-chronicus/"
+  },
+  {
+    "name": "Lipodermatosclerosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lipodermatosclerosis/"
+  },
+  {
+    "name": "Livedo Reticularis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/livedo-reticularis/"
+  },
+  {
+    "name": "Lipoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/lipoma/"
+  },
+  {
+    "name": "Melanoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/melanomas/"
+  },
+  {
+    "name": "Macular Amyloidosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/macular-amyloidosis/"
+  },
+  {
+    "name": "Macular Lymphocytic Arteritis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/macular-lymphocytic-arteritis/"
+  },
+  {
+    "name": "Mastocytosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/mastocytosis/"
+  },
+  {
+    "name": "Melasma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/melasma/"
+  },
+  {
+    "name": "Molluscum",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/molluscum/"
+  },
+  {
+    "name": "Morphea",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/morphea/"
+  },
+  {
+    "name": "Merkel Cell",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/merkel-cell/"
+  },
+  {
+    "name": "Mucous Cyst",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/mucous-cyst/"
+  },
+  {
+    "name": "Majocchi granuloma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/majocchi-granuloma/"
+  },
+  {
+    "name": "Nevi: Halo",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-halo/"
+  },
+  {
+    "name": "Nevi: Blue",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-blue/"
+  },
+  {
+    "name": "Nevi: Compound",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-compound/"
+  },
+  {
+    "name": "Nevi: Epidermal",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-epidermal/"
+  },
+  {
+    "name": "Nevi: Intradermal",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-intradermal/"
+  },
+  {
+    "name": "Nails: Lichen Planus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nails-lichen-planus/"
+  },
+  {
+    "name": "Nails: Psoriatic",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nails-psoriatic/"
+  },
+  {
+    "name": "Necrobiosis Lipoidica",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/necrobiosis-lipoidica/"
+  },
+  {
+    "name": "Neurofibromatosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/neurofibromatosis/"
+  },
+  {
+    "name": "Nevi: Depigmentosus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-depigmentosus/"
+  },
+  {
+    "name": "Nevi: Spilus",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevi-spilus/"
+  },
+  {
+    "name": "Nummular Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nummulardermatitis/"
+  },
+  {
+    "name": "Nails: Onychomycosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nails-onychomycosis/"
+  },
+  {
+    "name": "Nails: Onychoschizia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nails-onychoschizia/"
+  },
+  {
+    "name": "Nails: Paronychia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nails-paronychia/"
+  },
+  {
+    "name": "Nevus Sebaceous",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/nevus-sebaceous/"
+  },
+  {
+    "name": "Psoriasis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/psoriasis/"
+  },
+  {
+    "name": "Post-Inflammatory Hyperpigmentation",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/post-inflammatory-hyperpigmentation/"
+  },
+  {
+    "name": "Post-Inflammatory Hypopigmentation",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/post-inflammatory-hypopigmentation/"
+  },
+  {
+    "name": "Pemphigus Vulgaris",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pemphigus-vulgaris/"
+  },
+  {
+    "name": "Periorificial Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/periorificial-dermatitis/"
+  },
+  {
+    "name": "Pseudofolliculitis Barbae",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pseudofolliculitis-barbae/"
+  },
+  {
+    "name": "Pigmented Purpuric Dermatosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pigmented-purpuric-dermatosis/"
+  },
+  {
+    "name": "Pityriasis Rosea",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pityriasis-rosea/"
+  },
+  {
+    "name": "Pityriasis Rubra Pilaris",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pityriasis-rubra-pilaris/"
+  },
+  {
+    "name": "Pityriasis Lichenoides et Varioliformis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pityriasis-lichenoides-et-varioliformis/"
+  },
+  {
+    "name": "Patch Test Reactions",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/patch-test-reactions/"
+  },
+  {
+    "name": "Post-Radiation Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/post-radiation-dermatitis/"
+  },
+  {
+    "name": "Prurigo Nodularis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/prurigo-nodularis/"
+  },
+  {
+    "name": "Psoriasiform Hepatocellular Carcinoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/psoriasiform-hepatocellular-carcinoma/"
+  },
+  {
+    "name": "PUVA Lentigo",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/puva-lentigo/"
+  },
+  {
+    "name": "Pyoderma Gangrenosum",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pyoderma-gangrenosum/"
+  },
+  {
+    "name": "Pyogenic Granuloma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pyogenic-granuloma/"
+  },
+  {
+    "name": "Pustular Psoriasis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/pustular-psoriasis/"
+  },
+  {
+    "name": "Poikiloderma of Civatte",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/poikiloderma-of-civatte/"
+  },
+  {
+    "name": "Palmoplantar Keratoderma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/palmoplantar-keratoderma/"
+  },
+  {
+    "name": "Retiform Purpura",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/retiform-purpura/"
+  },
+  {
+    "name": "Radiation Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/radiation-dermatitis/"
+  },
+  {
+    "name": "Reactive Perforating Collagenosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/reactive-perforating-collagenosis/"
+  },
+  {
+    "name": "Rosacea",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/rosacea/"
+  },
+  {
+    "name": "Retronychia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/retronychia/"
+  },
+  {
+    "name": "Squamous Cell Carcinoma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/squamous-cell-carcinoma/"
+  },
+  {
+    "name": "Sarcoidosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/sarcoidosis/"
+  },
+  {
+    "name": "Syringomas",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/syringomas/"
+  },
+  {
+    "name": "Scrotal Calcinosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/scrotal-calcinosis/"
+  },
+  {
+    "name": "Seborrheic Keratosis + Dermatosis Papulosa Nigra",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/seborrheic-keratosis-dermatosis-papulosa-nigra/"
+  },
+  {
+    "name": "Seborrheic Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/seborrheic-dermatitis/"
+  },
+  {
+    "name": "Secondary Syphilis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/secondary-syphilis/"
+  },
+  {
+    "name": "Stasis Dermatitis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/stasis-dermatitis/"
+  },
+  {
+    "name": "Steroid Acneiform Eruption",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/steroid-acneiform-eruption/"
+  },
+  {
+    "name": "Subcorneal Pustulosis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/subcorneal-pustulosis/"
+  },
+  {
+    "name": "Tinea Corporis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/tinea-corporis/"
+  },
+  {
+    "name": "Tinea Cruris",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/tinea-cruris/"
+  },
+  {
+    "name": "Tinea Pedis",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/tinea-pedis/"
+  },
+  {
+    "name": "Tinea Versicolor",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/tinea-versicolor/"
+  },
+  {
+    "name": "Traction Alopecia",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/traction-alopecia/"
+  },
+  {
+    "name": "Trichoepithelioma",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/trichoepithelioma/"
+  },
+  {
+    "name": "Urticaria: Dermatographism",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/urticaria-dermatographism/"
+  },
+  {
+    "name": "Urticaria",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/urticaria/"
+  },
+  {
+    "name": "Urticarial Pemphigoid",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/urticarialpemphigoid/"
+  },
+  {
+    "name": "Venous Leg Ulcer",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/venous-leg-ulcer/"
+  },
+  {
+    "name": "Verruca",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/verruca/"
+  },
+  {
+    "name": "Vitiligo",
+    "url": "https://jddonline.com/project-atlas/inclusive-derm/vitiligos/"
+  }
+]
