@@ -33,8 +33,9 @@ jobs:
         run: |
           git config user.name "Paging Dr. Oh Bot"
           git config user.email "bot@pagingdroh.com"
-          git add index.html history.json whats_new_current.json archive.json manual_additions.json
+          git add index.html history.json whats_new_current.json archive.json manual_additions.json jdd_conditions.json
           git diff --staged --quiet || git commit -m "Daily update: $(date -u +'%B %d, %Y')"
+          git pull --rebase origin main
           git push
 
       - name: Upload to Neocities

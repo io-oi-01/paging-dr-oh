@@ -928,6 +928,88 @@
       border-top: 1px solid rgba(0,0,0,0.08);
     }
 
+    /* ========== IMAGE OF THE DAY ========== */
+    .image-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--cadet-blue);
+    }
+
+    .image-card:hover { box-shadow: var(--shadow-hover); }
+
+    .image-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 10px;
+    }
+
+    .image-card-title {
+      font-family: 'Lora', serif;
+      font-size: 1.2rem;
+      color: var(--queen-blue);
+      flex: 1;
+    }
+
+    .image-card-img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      border-radius: var(--radius-sm);
+      margin-bottom: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .image-card-desc {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--dark);
+      margin-bottom: 14px;
+    }
+
+    .image-card-source {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.85rem;
+    }
+
+    .nejm-reminder-card {
+      background: var(--off-white);
+      border: 2px solid var(--cadet-blue);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    .nejm-reminder-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .nejm-reminder-icon {
+      font-size: 1.4rem;
+      line-height: 1;
+    }
+
+    .nejm-reminder-title {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: var(--queen-blue);
+    }
+
+    .nejm-reminder-text {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+
     /* ========== FOOTER ========== */
     .site-footer {
       text-align: center;
@@ -953,6 +1035,9 @@
       .wn-card { padding: 16px; }
       .trending-header { flex-wrap: wrap; }
       .trending-meta { flex-direction: column; align-items: flex-start; }
+      .image-card { padding: 16px; }
+      .image-card-title { font-size: 1.05rem; }
+      .nejm-reminder-card { padding: 16px; }
     }
   </style>
 </head>

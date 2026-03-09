@@ -53,6 +53,10 @@ LANDMARK_PATH  = "landmark_studies.json"
 MANUAL_PATH    = "manual_additions.json"
 WN_PATH        = "whats_new_current.json"
 ARCHIVE_PATH   = "archive.json"
+JDD_PATH       = "jdd_conditions.json"
+
+# JDD Inclusive Derm Atlas
+JDD_INDEX_URL  = "https://jddonline.com/project-atlas-a-z/"
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -494,6 +498,115 @@ def fetch_wikijournalclub_page(study_info):
 
     print(f"    WikiJournalClub not found for: {acronym or name}")
     return None, None
+
+
+# ─── JDD Inclusive Derm Atlas ─────────────────────────────────────────────
+
+def fetch_jdd_index():
+    """
+    Scrape the JDD Inclusive Derm Atlas A-Z index page.
+    Returns a list of {"name": "Condition Name", "url": "https://..."} dicts.
+    Falls back to cached jdd_conditions.json if the fetch fails.
+    """
+    try:
+        req = urllib.request.Request(JDD_INDEX_URL, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+
+        # Find all links to /project-atlas/inclusive-derm/<slug>/
+        pattern = r'<a\s+[^>]*href="(/project-atlas/inclusive-derm/[^"]+)"[^>]*>([^<]+)</a>'
+        matches = re.findall(pattern, html, re.IGNORECASE)
+
+        conditions = []
+        seen_urls = set()
+        for path, name in matches:
+            name = name.strip()
+            if not name or len(name) < 3:
+                continue
+            url = f"https://jddonline.com{path}" if path.startswith("/") else path
+            if url not in seen_urls:
+                seen_urls.add(url)
+                conditions.append({"name": name, "url": url})
+
+        if conditions:
+            print(f"    Fetched JDD A-Z index: {len(conditions)} conditions")
+            # Cache for future fallback
+            save_json(JDD_PATH, conditions)
+            return conditions
+        else:
+            print("    WARNING: JDD index returned 0 conditions, using cache")
+            return load_json(JDD_PATH, default=[])
+
+    except Exception as e:
+        print(f"    WARNING: JDD index fetch failed ({type(e).__name__}: {e}), using cache")
+        return load_json(JDD_PATH, default=[])
+
+
+def pick_jdd_condition(conditions, history):
+    """Pick a JDD condition not recently shown."""
+    recent = history.get("jdd_conditions_shown", [])[-60:]
+    candidates = [c for c in conditions if c["name"] not in recent]
+    if not candidates:
+        candidates = conditions  # reset if all shown
+    return random.choice(candidates) if candidates else None
+
+
+def fetch_jdd_condition_page(url):
+    """
+    Scrape a JDD condition page for title, description, and image URLs.
+    Returns {"title": str, "description": str, "images": [url, ...], "source_url": str}
+    or None on failure.
+    """
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+
+        # Extract title from <h1>
+        h1_match = re.search(r'<h1[^>]*>([^<]+)</h1>', html, re.IGNORECASE)
+        title = h1_match.group(1).strip() if h1_match else "Dermatology Image"
+
+        # Extract description: first substantial <p> tag (>50 chars of text)
+        p_matches = re.findall(r'<p[^>]*>(.*?)</p>', html, re.DOTALL | re.IGNORECASE)
+        description = ""
+        for p_html in p_matches:
+            p_text = re.sub(r'<[^>]+>', ' ', p_html).strip()
+            p_text = re.sub(r'\s+', ' ', p_text)
+            if len(p_text) > 50:
+                description = p_text[:500]
+                break
+
+        # Extract image URLs — look for images from cms.sanovaworks.com
+        img_matches = re.findall(r'<img\s+[^>]*src="([^"]*cms\.sanovaworks\.com[^"]*)"', html, re.IGNORECASE)
+        # Also try general content images (non-logo, non-icon)
+        if not img_matches:
+            img_matches = re.findall(r'<img\s+[^>]*src="([^"]*(?:uploads|content|images)[^"]*\.(?:jpg|jpeg|png|webp))"', html, re.IGNORECASE)
+
+        # Filter out tiny thumbnails if we have larger versions
+        images = []
+        for img_url in img_matches:
+            # Ensure absolute URL
+            if img_url.startswith("//"):
+                img_url = "https:" + img_url
+            elif img_url.startswith("/"):
+                img_url = f"https://jddonline.com{img_url}"
+            if img_url not in images:
+                images.append(img_url)
+
+        if not title and not images:
+            return None
+
+        print(f"    Fetched JDD page: {title} — {len(images)} image(s)")
+        return {
+            "title": title,
+            "description": description,
+            "images": images[:6],  # Cap at 6 images max
+            "source_url": url,
+        }
+
+    except Exception as e:
+        print(f"    WARNING: JDD condition page fetch failed ({type(e).__name__}: {e})")
+        return None
 
 
 def generate_disease_content(disease_name, source_url=None, use_web_search=True):
@@ -1353,18 +1466,6 @@ def build_landmark_tab(content):
 
     html += "      </div>\n"
 
-    # Favorites section
-    html += """
-      <div class="favorites-section">
-        <div class="favorites-header">
-          <h4>Starred Studies</h4>
-          <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
-        </div>
-        <ul class="favorites-list" id="favorites-list">
-          <li class="favorites-empty">No favorites yet. Star studies to add them here.</li>
-        </ul>
-      </div>"""
-
     return html
 
 
@@ -1386,8 +1487,87 @@ def build_archive_tab(_unused=None):
         <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
       </div>
       <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
-        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()">&#x2715; Clear All Starred</button>
+        <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
+        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()" style="margin-left:8px;">&#x2715; Clear All</button>
       </div>"""
+
+
+def build_image_tab(jdd_content):
+    """
+    Build the Image of the Day tab HTML.
+    Includes JDD Inclusive Derm Atlas image(s) + NEJM Image Challenge reminder card.
+    jdd_content: dict with {title, description, images: [url, ...], source_url} or None.
+    """
+    html = '\n      <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>\n'
+
+    # ── JDD Inclusive Derm Atlas card ────────────────────────
+    if jdd_content and jdd_content.get("images"):
+        title = jdd_content.get("title", "Dermatology Image")
+        desc = jdd_content.get("description", "")
+        source_url = jdd_content.get("source_url", "")
+        images = jdd_content.get("images", [])
+
+        html += f"""
+      <div class="image-card">
+        <div class="image-card-header">
+          <h4 class="image-card-title">{title}</h4>
+          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+        </div>\n"""
+
+        # Render each image
+        for i, img_url in enumerate(images):
+            html += f'        <img src="{img_url}" alt="{title} — clinical image {i+1}" class="image-card-img" loading="lazy">\n'
+
+        if desc:
+            html += f'        <p class="image-card-desc">{desc}</p>\n'
+
+        if source_url:
+            html += f'        <a href="{source_url}" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>\n'
+
+        html += "      </div>\n"
+
+    elif jdd_content:
+        # We have content but no images — show title + description only
+        title = jdd_content.get("title", "Dermatology Image")
+        desc = jdd_content.get("description", "")
+        source_url = jdd_content.get("source_url", "")
+
+        html += f"""
+      <div class="image-card">
+        <div class="image-card-header">
+          <h4 class="image-card-title">{title}</h4>
+          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+        </div>
+        <p class="image-card-desc">{desc if desc else 'Visit the JDD Atlas page to view clinical images for this condition.'}</p>\n"""
+        if source_url:
+            html += f'        <a href="{source_url}" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>\n'
+        html += "      </div>\n"
+
+    else:
+        html += """
+      <div class="image-card">
+        <p class="image-card-desc" style="color:var(--gray); font-style:italic;">
+          Derm image not available today. Check back tomorrow!
+        </p>
+      </div>\n"""
+
+    # ── NEJM Image Challenge reminder card ──────────────────
+    html += """
+      <div class="nejm-reminder-card">
+        <div class="nejm-reminder-header">
+          <span class="nejm-reminder-icon">&#x1F9E0;</span>
+          <h4 class="nejm-reminder-title">NEJM Image Challenge</h4>
+        </div>
+        <p class="nejm-reminder-text">
+          Test your diagnostic skills with the weekly NEJM Image Challenge.
+          A new clinical image with multiple-choice questions every week.
+        </p>
+        <a href="https://www.nejm.org/image-challenge" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+          Take the Challenge &#8594;
+        </a>
+      </div>\n"""
+
+    return html
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1467,7 +1647,6 @@ BASE_JS = """
 
         saveStarred(starred);
         renderArchive();
-        updateFavoritesList();
       });
     });
 
@@ -1514,7 +1693,6 @@ BASE_JS = """
       var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
       if (btn) { btn.classList.remove('active'); btn.innerHTML = '&#9734;'; }
       renderArchive();
-      updateFavoritesList();
     }
 
     function clearAllStarred() {
@@ -1524,27 +1702,6 @@ BASE_JS = """
         b.classList.remove('active'); b.innerHTML = '&#9734;';
       });
       renderArchive();
-      updateFavoritesList();
-    }
-
-    /* ===== LANDMARK TAB FAVORITES LIST ===== */
-    function updateFavoritesList() {
-      var starred = getStarred();
-      var ids = Object.keys(starred);
-      var list = document.getElementById('favorites-list');
-      if (!list) return;
-      if (ids.length === 0) {
-        list.innerHTML = '<li class="favorites-empty">No starred items yet. Star cards to save them here.</li>';
-        return;
-      }
-      var html = '';
-      ids.forEach(function(id) {
-        var item = starred[id];
-        html += '<li><span class="fav-title">' + (item.title || id) + '</span>';
-        if (item.source) html += '<span class="fav-meta"> &bull; ' + item.source + '</span>';
-        html += ' <button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></li>';
-      });
-      list.innerHTML = html;
     }
 
     /* ===== EXPORT TO CLIPBOARD ===== */
@@ -1592,7 +1749,6 @@ BASE_JS = """
           btn.innerHTML = '&#9733;';
         }
       });
-      updateFavoritesList();
       renderArchive();
     })();
 """
@@ -1602,7 +1758,7 @@ BASE_JS = """
 # SECTION 8 — PAGE ASSEMBLY
 # ═══════════════════════════════════════════════════════════════════════
 
-def build_full_page(css, disease_html, whatsnew_html, landmark_html, archive_html, calc_ids):
+def build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, archive_html, calc_ids):
     """Assemble the complete index.html."""
 
     # Build calculator JS for any calculators used on the page
@@ -1639,6 +1795,7 @@ def build_full_page(css, disease_html, whatsnew_html, landmark_html, archive_htm
     <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
     <button class="tab-btn" data-tab="whatsnew">What's New</button>
     <button class="tab-btn" data-tab="landmark">Landmark Study</button>
+    <button class="tab-btn" data-tab="imageofday">Image of the Day</button>
     <button class="tab-btn" data-tab="archive">Archive</button>
   </nav>
 
@@ -1659,7 +1816,12 @@ def build_full_page(css, disease_html, whatsnew_html, landmark_html, archive_htm
 {landmark_html}
     </section>
 
-    <!-- TAB 4: ARCHIVE -->
+    <!-- TAB 4: IMAGE OF THE DAY -->
+    <section id="imageofday" class="tab-content">
+{image_html}
+    </section>
+
+    <!-- TAB 5: ARCHIVE -->
     <section id="archive" class="tab-content">
 {archive_html}
     </section>
@@ -1725,17 +1887,21 @@ def rotate_archive(current_items, archive):
     return kept, archive
 
 
-def update_history(history, disease_name, study_id, new_item_ids):
+def update_history(history, disease_name, study_id, new_item_ids, jdd_condition_name=None):
     """Update the history tracker."""
     history.setdefault("diseases_shown", []).append(disease_name)
     history.setdefault("landmark_studies_shown", []).append(study_id)
     history.setdefault("whats_new_ids", []).extend(new_item_ids)
+    if jdd_condition_name:
+        history.setdefault("jdd_conditions_shown", []).append(jdd_condition_name)
     history["last_run"] = TODAY_ISO
 
     # Trim old history to keep file size reasonable
     history["diseases_shown"] = history["diseases_shown"][-90:]
     history["landmark_studies_shown"] = history["landmark_studies_shown"][-200:]
     history["whats_new_ids"] = history["whats_new_ids"][-500:]
+    if "jdd_conditions_shown" in history:
+        history["jdd_conditions_shown"] = history["jdd_conditions_shown"][-200:]
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1858,6 +2024,25 @@ def main():
         print("  WikiJournalClub not found — generating from training data")
     landmark_content = generate_landmark_content(study, source_text=wjc_text, source_url=wjc_url)
 
+    # 6b. Fetch Image of the Day from JDD Inclusive Derm Atlas
+    print("\nFetching Image of the Day from JDD Atlas...")
+    jdd_content = None
+    jdd_condition_name = None
+    try:
+        jdd_conditions = fetch_jdd_index()
+        if jdd_conditions:
+            jdd_pick = pick_jdd_condition(jdd_conditions, history)
+            if jdd_pick:
+                jdd_condition_name = jdd_pick["name"]
+                print(f"  Image of the Day: {jdd_condition_name}")
+                jdd_content = fetch_jdd_condition_page(jdd_pick["url"])
+            else:
+                print("  WARNING: No JDD conditions available to pick")
+        else:
+            print("  WARNING: JDD conditions list is empty")
+    except Exception as e:
+        print(f"  WARNING: JDD fetch failed ({type(e).__name__}: {e})")
+
     # 7. Add today's new items to the front of the current list (archive is now client-side localStorage)
     wn_current = new_items + wn_current
 
@@ -1874,10 +2059,11 @@ def main():
     disease_html  = build_disease_tab(disease_pool)
     whatsnew_html = build_whatsnew_tab(wn_current)
     landmark_html = build_landmark_tab(landmark_content)
+    image_html    = build_image_tab(jdd_content)
     archive_html  = build_archive_tab()
 
     # 10. Assemble full page
-    page = build_full_page(css, disease_html, whatsnew_html, landmark_html, archive_html, calc_ids)
+    page = build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, archive_html, calc_ids)
 
     # 11. Write index.html
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
@@ -1888,7 +2074,8 @@ def main():
     new_item_ids = [item.get("id", "") for item in new_items if item.get("id")]
     # Record all pool diseases in history to avoid repeating them soon
     for dname in disease_pool_names:
-        update_history(history, dname, study.get("id", ""), new_item_ids if dname == disease_pool_names[0] else [])
+        update_history(history, dname, study.get("id", ""), new_item_ids if dname == disease_pool_names[0] else [],
+                       jdd_condition_name=jdd_condition_name if dname == disease_pool_names[0] else None)
     # Deduplicate history IDs (update_history extends the list)
     history["whats_new_ids"] = list(dict.fromkeys(history["whats_new_ids"]))
     save_json(HISTORY_PATH, history)
