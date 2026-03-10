@@ -1,5 +1,134 @@
 [
   {
+    "article_index": 0,
+    "id": "glp1-substance-use-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
+    "study_design": "Cohort study among US veterans with type 2 diabetes",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding suggests potential dual benefit when prescribing GLP-1 agonists for diabetes, particularly in patients with substance use risk factors"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Veteran population may not be generalizable"
+    ],
+    "bottom_line": "GLP-1 agonists may provide unexpected protection against substance use disorders in diabetic patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
+    "date": "Mon, 09 Mar 2026 23:00:13 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 2,
+    "id": "ct-angiography-stroke-2026",
+    "type": "Observational",
+    "specialty": "Neurology",
+    "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
+    "study_design": "Study examining utility of CT angiography in suspected stroke patients",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients",
+      "Highest yield when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports selective use of CT angiography rather than routine ordering, potentially improving diagnostic efficiency and resource utilization in stroke workups"
+    ],
+    "limitations": [
+      "Study design and sample size not specified"
+    ],
+    "bottom_line": "CT angiography should be prioritized for stroke patients with focal deficits or abnormal initial imaging rather than used routinely.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
+    "date": "Mon, 09 Mar 2026 15:00:43 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 4,
+    "id": "hpv-vaccine-cervical-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
+    "study_design": "Cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
+      "Greatest benefit occurs when vaccination happens before age 17"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This reinforces the importance of early HPV vaccination counseling and catch-up vaccination discussions in young adult patients"
+    ],
+    "limitations": [
+      "Cohort study design limits causal inference"
+    ],
+    "bottom_line": "HPV vaccination provides durable cervical cancer protection with optimal benefit when given before age 17.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
+    "date": "Sat, 07 Mar 2026 00:00:34 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 6,
+    "id": "morphine-acetaminophen-ed-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
+    "study_design": "Non-inferiority randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Morphine plus placebo is not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports routine addition of acetaminophen to morphine for acute pain rather than using morphine alone, providing evidence for multimodal analgesia"
+    ],
+    "limitations": [
+      "Non-inferiority trial design may miss clinically meaningful differences"
+    ],
+    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain control compared to morphine alone in the ED.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
+    "date": "Fri, 06 Mar 2026 16:00:09 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 9,
+    "id": "sleep-apnea-postop-cv-2026",
+    "type": "Observational",
+    "specialty": "Pulmonology",
+    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
+    "study_design": "Cohort study of patients with obstructive sleep apnea",
+    "sample_size": "",
+    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
+    "source_summary_bullets": [
+      "Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This metric could help risk-stratify OSA patients before surgery and guide perioperative management decisions"
+    ],
+    "limitations": [
+      "Observational design",
+      "Limited to patients with known OSA"
+    ],
+    "bottom_line": "Sleep apnea hypoxic burden may be a useful preoperative risk stratification tool for cardiovascular complications.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
+    "date": "Thu, 05 Mar 2026 00:00:43 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
     "article_index": 1,
     "id": "iberdomide-myeloma-priority-2026",
     "type": "FDA Action",

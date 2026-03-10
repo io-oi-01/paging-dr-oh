@@ -27,7 +27,10 @@
     "Cellulitis and Skin Soft Tissue Infections",
     "Acute Respiratory Failure",
     "Acute Cholecystitis",
-    "Delirium"
+    "Delirium",
+    "Lower GI Bleeding",
+    "Community-Acquired Pneumonia",
+    "Takotsubo Cardiomyopathy"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -57,7 +60,10 @@
     "avert-2019",
     "ideal-2010",
     "ideal-2010",
-    "ideal-2010"
+    "ideal-2010",
+    "clovers-2023",
+    "clovers-2023",
+    "clovers-2023"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -68,10 +74,14 @@
     "iberdomide-myeloma-priority-2026",
     "morphine-acetaminophen-ed-2026",
     "sleep-apnea-postop-cv-2026",
-    "rezatapopt-p53-reactivator-2026"
+    "rezatapopt-p53-reactivator-2026",
+    "glp1-substance-use-2026",
+    "ct-angiography-stroke-2026",
+    "hpv-vaccine-cervical-2026"
   ],
-  "last_run": "2026-03-09",
+  "last_run": "2026-03-10",
   "jdd_conditions_shown": [
-    "Hidradenitis Suppurativa"
+    "Hidradenitis Suppurativa",
+    "Majocchi granuloma"
   ]
 }
