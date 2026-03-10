@@ -12,22 +12,31 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --queen-blue: #406B8C;
-      --queen-blue-dark: #345873;
-      --desert-sand: #E4C5AF;
-      --desert-sand-light: #F2E6D9;
-      --english-red: #A4485E;
-      --mandarin: #EB8445;
-      --mandarin-dark: #d4753a;
-      --cadet-blue: #9CBCC6;
-      --cadet-blue-light: #D4E6EB;
+      /* ── Palette from artwork ── */
+      --queen-blue: #7D1150;          /* Deep plum/wine — primary headings */
+      --queen-blue-dark: #5C0D3C;     /* Darker plum — gradient end */
+      --desert-sand: #F5EDE3;         /* Warm cream — page background */
+      --desert-sand-light: #F5E0D8;   /* Peach-light — accordion/score bg */
+      --english-red: #B2325A;         /* Berry/cranberry — card borders */
+      --mandarin: #C45A1A;            /* Burnt sienna — links, CTAs */
+      --mandarin-dark: #A84D16;       /* Deeper sienna — hover */
+      --cadet-blue: #CEB2D2;          /* Soft lavender — secondary accent */
+      --cadet-blue-light: #EDE0F0;    /* Light lavender — disease header */
+      --golden: #BE8E40;              /* Golden ochre — stars, highlights */
+      --olive: #A8A038;               /* Olive/chartreuse — accents */
+      --powder-blue: #B8C8DE;         /* Powder blue — cool accent */
+      --peach: #E8AE98;               /* Peach/blush — soft accent */
+      --dark-maroon: #4D2832;         /* Dark maroon — deep text alt */
+      --light-bg: #F8F4F0;            /* Warm light bg for meta */
+      --text: #2D2D2D;                /* Body text color */
+      --cadet-blue-dark: #8A6890;     /* Darker lavender — interp text */
       --white: #FFFFFF;
-      --off-white: #FDF9F5;
+      --off-white: #FDF8F5;           /* Warm off-white */
       --dark: #2D2D2D;
       --gray: #6B6B6B;
-      --light-gray: #E8E8E8;
-      --shadow: 0 2px 8px rgba(0,0,0,0.08);
-      --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+      --light-gray: #E8E0E0;          /* Warm light gray */
+      --shadow: 0 2px 10px rgba(77,40,50,0.10);
+      --shadow-hover: 0 6px 20px rgba(77,40,50,0.16);
       --radius: 12px;
       --radius-sm: 8px;
       --transition: 0.3s ease;
@@ -55,10 +64,11 @@
 
     /* ========== HEADER ========== */
     .site-header {
-      background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark));
+      background: linear-gradient(135deg, var(--english-red), var(--queen-blue), var(--queen-blue-dark));
       color: var(--white);
-      padding: 28px 20px 24px;
+      padding: 32px 20px 28px;
       text-align: center;
+      box-shadow: 0 4px 20px rgba(77,40,50,0.25);
     }
 
     .site-header h1 {
@@ -66,12 +76,13 @@
       font-weight: 700;
       letter-spacing: 0.5px;
       margin-bottom: 4px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
 
     .site-header .tagline {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.9rem;
-      opacity: 0.85;
+      opacity: 0.9;
       font-weight: 400;
     }
 
@@ -118,11 +129,11 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: var(--mandarin);
+      background: linear-gradient(90deg, var(--english-red), var(--mandarin));
       border-radius: 3px 3px 0 0;
     }
 
-    .tab-btn:hover:not(.active) { color: var(--queen-blue); }
+    .tab-btn:hover:not(.active) { color: var(--english-red); }
 
     /* ========== TAB CONTENT ========== */
     .tab-content {
@@ -156,7 +167,7 @@
 
     /* ========== DISEASE HEADER ========== */
     .disease-header {
-      background: var(--cadet-blue-light);
+      background: linear-gradient(135deg, var(--cadet-blue-light), #F0E0F4);
       border-left-color: var(--cadet-blue);
       text-align: center;
       padding: 32px 20px;
@@ -280,10 +291,10 @@
     }
 
     .pill-rct        { background: #E8F5E9; color: #2E7D32; }
-    .pill-meta       { background: #E3F2FD; color: #1565C0; }
-    .pill-guideline  { background: #FFF3E0; color: #E65100; }
-    .pill-fda        { background: #FCE4EC; color: #C62828; }
-    .pill-specialty  { background: var(--cadet-blue-light); color: var(--queen-blue); }
+    .pill-meta       { background: var(--cadet-blue-light); color: var(--queen-blue); }
+    .pill-guideline  { background: #FFF3E0; color: var(--mandarin); }
+    .pill-fda        { background: #FCE4EC; color: var(--english-red); }
+    .pill-specialty  { background: #E8E6D0; color: #6B6820; }
 
     /* ========== BUTTONS ========== */
     .btn {
@@ -303,13 +314,13 @@
     .btn:active { transform: scale(0.97); }
 
     .btn-primary {
-      background: var(--mandarin);
+      background: linear-gradient(135deg, var(--mandarin), var(--english-red));
       color: var(--white);
     }
 
     .btn-primary:hover {
-      background: var(--mandarin-dark);
-      box-shadow: 0 4px 12px rgba(235, 132, 69, 0.3);
+      background: linear-gradient(135deg, var(--mandarin-dark), #9A2A4E);
+      box-shadow: 0 4px 14px rgba(178,50,90,0.30);
     }
 
     .btn-primary:disabled {
@@ -347,7 +358,7 @@
 
     .action-btn:hover { transform: scale(1.2); opacity: 0.8; }
     .action-btn.active { opacity: 1; }
-    .action-btn.star.active { color: var(--mandarin); }
+    .action-btn.star.active { color: var(--golden); }
 
     .card-actions {
       display: flex;
@@ -361,7 +372,7 @@
       padding: 24px;
       margin-bottom: 16px;
       box-shadow: var(--shadow);
-      border: 2px solid var(--cadet-blue);
+      border: 2px solid var(--powder-blue);
     }
 
     .calculator-card h4 {
@@ -439,11 +450,11 @@
       padding: 20px;
       margin: 24px 0;
       box-shadow: var(--shadow);
-      border: 2px solid var(--mandarin);
+      border: 2px solid var(--golden);
     }
 
     .guidelines-box h4 {
-      color: var(--mandarin);
+      color: var(--golden);
       margin-bottom: 14px;
       font-size: 1.05rem;
     }
@@ -510,7 +521,7 @@
       color: var(--queen-blue);
       margin: 28px 0 16px;
       padding-bottom: 8px;
-      border-bottom: 2px solid var(--cadet-blue);
+      border-bottom: 2px solid var(--golden);
     }
 
     /* ========== WHAT'S NEW CARDS ========== */
@@ -570,13 +581,13 @@
     }
 
     .wn-bottom-line {
-      background: var(--desert-sand-light);
+      background: linear-gradient(135deg, var(--desert-sand-light), #FDF5F0);
       padding: 12px 16px;
       border-radius: var(--radius-sm);
       margin: 14px 0;
       font-size: 0.9rem;
       font-weight: 500;
-      border-left: 3px solid var(--mandarin);
+      border-left: 3px solid var(--english-red);
       line-height: 1.5;
     }
 
@@ -618,11 +629,11 @@
 
     /* ========== TALKING ABOUT SECTION ========== */
     .trending-section {
-      background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
+      background: linear-gradient(135deg, #FDF5F0, #F5E0D8);
       border-radius: var(--radius);
       padding: 20px;
       margin-bottom: 24px;
-      border: 2px solid var(--mandarin);
+      border: 2px solid var(--english-red);
     }
 
     .trending-header {
@@ -631,7 +642,7 @@
       gap: 10px;
       margin-bottom: 16px;
       padding-bottom: 12px;
-      border-bottom: 2px solid rgba(235, 132, 69, 0.3);
+      border-bottom: 2px solid rgba(178,50,90,0.25);
     }
 
     .trending-icon {
@@ -644,7 +655,7 @@
       font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: var(--mandarin-dark);
+      color: var(--english-red);
       margin: 0;
     }
 
@@ -655,12 +666,12 @@
     }
 
     .wn-card-trending {
-      border-left: 4px solid var(--mandarin) !important;
+      border-left: 4px solid var(--english-red) !important;
       background: var(--white);
     }
 
     .wn-card-trending:hover {
-      border-left-color: var(--mandarin-dark) !important;
+      border-left-color: var(--queen-blue) !important;
     }
 
     .trending-meta {
@@ -671,13 +682,13 @@
       gap: 8px;
       margin-bottom: 12px;
       padding: 8px 12px;
-      background: rgba(235, 132, 69, 0.08);
+      background: rgba(178,50,90,0.06);
       border-radius: var(--radius-sm);
       font-size: 0.8rem;
     }
 
     .trending-sources {
-      color: var(--mandarin-dark);
+      color: var(--english-red);
       font-weight: 600;
     }
 
@@ -817,7 +828,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 14px 20px;
-      background: var(--queen-blue);
+      background: linear-gradient(135deg, var(--english-red), var(--queen-blue));
       color: var(--white);
       border-radius: var(--radius-sm);
       cursor: pointer;
@@ -825,7 +836,7 @@
       user-select: none;
     }
 
-    .archive-month-header:hover { background: var(--queen-blue-dark); }
+    .archive-month-header:hover { background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark)); }
 
     .archive-month-header h3 {
       font-size: 1rem;
@@ -979,7 +990,7 @@
 
     .nejm-reminder-card {
       background: var(--off-white);
-      border: 2px solid var(--cadet-blue);
+      border: 2px solid var(--powder-blue);
       border-radius: var(--radius);
       padding: 24px;
       margin-bottom: 20px;
@@ -1065,9 +1076,9 @@
       <div class="disease-view" id="disease-view-0">
 
       <div class="disease-header card">
-        <h2>Lower GI Bleeding</h2>
+        <h2>Hypertensive Emergency</h2>
         <p class="verified-date">Last verified: March 10, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK448126/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK470371/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1078,19 +1089,23 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Hematochezia</strong>: Bright red blood per rectum &mdash; most common presentation<sup>1</sup></li>
-  <li><strong>Melena</strong>: Dark, tarry stools (less common in lower GI bleeding)<sup>1</sup></li>
-  <li><strong>Iron deficiency anemia</strong>: Fatigue, dyspnea, palpitations with occult bleeding<sup>1</sup></li>
-  <li><strong>Painless bleeding</strong> in diverticular disease (over 40% of lower GI bleeds)<sup>1</sup></li>
-  <li><strong>Systemic symptoms</strong>: Syncope, weakness, dizziness<sup>1</sup></li>
+  <li><strong>Headache</strong> &mdash; often severe and associated with hypertensive encephalopathy<sup>1</sup></li>
+  <li><strong>Visual disturbances</strong> &mdash; blurred vision, visual field defects<sup>1</sup></li>
+  <li><strong>Altered mental status</strong> &mdash; confusion, lethargy, agitation<sup>1</sup></li>
+  <li><strong>Chest pain</strong> &mdash; may indicate cardiac ischemia or aortic dissection<sup>1</sup></li>
+  <li><strong>Shortness of breath</strong> &mdash; associated with acute pulmonary edema<sup>1</sup></li>
+  <li><strong>Nausea and vomiting</strong> &mdash; particularly with neurologic involvement<sup>1</sup></li>
+  <li><strong>Oliguria</strong> &mdash; decreased urine output from acute renal failure<sup>1</sup></li>
+  <li><strong>Hematuria</strong> &mdash; blood in urine from renal damage<sup>1</sup></li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><strong>Hemodynamic instability</strong>: SBP &le; 90 mmHg, HR &gt; 100/min in massive bleeding<sup>1</sup></li>
-  <li><strong>Orthostatic vital signs</strong>: May indicate volume depletion<sup>1</sup></li>
-  <li><strong>Pallor</strong> and signs of anemia<sup>1</sup></li>
-  <li><strong>Abdominal exam</strong>: Assess for masses, tenderness, distention<sup>1</sup></li>
-  <li><strong>Digital rectal exam</strong>: Evaluate for hemorrhoids, masses, blood<sup>1</sup></li>
+  <li><strong>Severely elevated blood pressure</strong> &mdash; typically SBP &gt; 180 or DBP &gt; 110-120 mmHg<sup>1</sup></li>
+  <li><strong>Papilledema</strong> on fundoscopy &mdash; indicative of malignant hypertension<sup>2</sup></li>
+  <li><strong>Retinal hemorrhages and exudates</strong> &mdash; grade III-IV hypertensive retinopathy<sup>2</sup></li>
+  <li><strong>Pulmonary edema findings</strong> &mdash; rales, elevated JVD, S3 gallop<sup>1</sup></li>
+  <li><strong>Neurologic deficits</strong> &mdash; focal weakness, altered consciousness<sup>1</sup></li>
+  <li><strong>Arteriovenous nicking</strong> on fundoscopy<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1105,25 +1120,23 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><strong>Diverticulosis</strong>: Over 40% of lower GI bleeds, painless hematochezia<sup>1</sup></li>
-  <li><strong>Angiodysplasia</strong>: Most frequent cause of small bowel bleeding in patients &gt;60 years<sup>4</sup></li>
-  <li><strong>Ischemic colitis</strong>: 20% of lower GI bleeds, more prevalent in elderly<sup>1</sup></li>
-  <li><strong>Hemorrhoids</strong>: Bleeding with/without defecation, swelling, discomfort<sup>6</sup></li>
-  <li><strong>Inflammatory bowel disease</strong>: Ulcerative colitis and Crohn disease<sup>6</sup></li>
+  <li><strong>Hypertensive urgency</strong> &mdash; elevated BP without target organ damage<sup>1</sup></li>
+  <li><strong>Secondary hypertension</strong> &mdash; renal or endocrine causes<sup>1</sup></li>
+  <li><strong>Medication noncompliance</strong> &mdash; most common precipitant in known hypertensives<sup>1</sup></li>
+  <li><strong>Sympathomimetic use</strong> &mdash; cocaine, amphetamines<sup>1</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><strong>Colon cancer</strong>: 3.4% of rectal bleeding cases, friable pathologic vasculature<sup>6</sup></li>
-  <li><strong>Anal fissures</strong>: Painful with defecation<sup>6</sup></li>
-  <li><strong>Proctitis</strong>: May be infectious or inflammatory<sup>6</sup></li>
-  <li><strong>Small bowel bleeding</strong>: 5-10% of all GI bleeds, includes Meckel diverticulum<sup>8</sup></li>
-  <li><strong>Anticoagulant-related bleeding</strong><sup>1</sup></li>
+  <li><strong>Pheochromocytoma</strong> &mdash; catecholamine-producing tumor<sup>1</sup></li>
+  <li><strong>Renovascular disease</strong> &mdash; renal artery stenosis<sup>1</sup></li>
+  <li><strong>Primary aldosteronism</strong> &mdash; especially with hypokalemia<sup>1</sup></li>
+  <li><strong>Thyrotoxicosis</strong> &mdash; hyperthyroid crisis<sup>1</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><strong>Upper GI bleeding</strong>: 1/3 of presumed lower GI bleeds with heavy bleeding are actually upper GI<sup>1</sup></li>
-  <li><strong>Hemosuccus pancreaticus</strong>: Rare, presents with melena and abdominal pain<sup>9</sup></li>
-  <li><strong>Hemobilia</strong>: Bleeding from biliary tree<sup>9</sup></li>
+  <li><strong>Anxiety disorders</strong> &mdash; can cause elevated BP and symptoms<sup>1</sup></li>
+  <li><strong>Pain-related hypertension</strong> &mdash; reactive BP elevation<sup>1</sup></li>
+  <li><strong>White coat hypertension</strong> &mdash; measurement artifact<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1136,25 +1149,21 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Laboratory Studies<sup>1</sup></strong></p>
+            <p><strong>Laboratory Studies</strong></p>
 <ul>
-  <li><strong>Complete blood count</strong>: Hemoglobin &le; 6 g/dL in massive bleeding<sup>1</sup></li>
-  <li><strong>Basic metabolic panel</strong>: Assess volume status and renal function<sup>1</sup></li>
-  <li><strong>Coagulation studies</strong>: PT/INR, aPTT if on anticoagulants<sup>1</sup></li>
-  <li><strong>Type and crossmatch</strong>: Prepare for transfusion<sup>1</sup></li>
+  <li><strong>Complete blood count</strong> &mdash; assess for microangiopathic hemolytic anemia<sup>1</sup></li>
+  <li><strong>Comprehensive metabolic panel</strong> &mdash; evaluate renal function, electrolytes<sup>1</sup></li>
+  <li><strong>Urinalysis</strong> &mdash; proteinuria, hematuria, RBC casts<sup>1</sup></li>
+  <li><strong>Troponin</strong> &mdash; assess for cardiac ischemia<sup>1</sup></li>
+  <li><strong>LDH</strong> &mdash; elevated in microangiopathy<sup>1</sup></li>
 </ul>
-<p><strong>Endoscopic Studies<sup>1,6</sup></strong></p>
+<p><strong>Imaging and Other Tests</strong></p>
 <ul>
-  <li><strong>Colonoscopy</strong>: Gold standard for lower GI bleeding evaluation and treatment<sup>6</sup></li>
-  <li><strong>Flexible sigmoidoscopy</strong>: For distal bleeding sources<sup>6</sup></li>
-  <li><strong>Upper endoscopy</strong>: Consider if melena or upper GI symptoms<sup>1</sup></li>
-  <li><strong>Capsule endoscopy</strong>: For small bowel bleeding after negative colonoscopy<sup>8</sup></li>
-</ul>
-<p><strong>Imaging Studies<sup>7</sup></strong></p>
-<ul>
-  <li><strong>CT angiography</strong>: Detects bleeding &ge; 0.5-1.0 mL/min<sup>2</sup></li>
-  <li><strong>99mTc-RBC scan</strong>: Sn 93%, Sp 95%, detects bleeding &ge; 0.1 mL/min<sup>7</sup></li>
-  <li><strong>Mesenteric angiography</strong>: For active bleeding, allows therapeutic embolization<sup>2</sup></li>
+  <li><strong>Electrocardiogram</strong> &mdash; assess for ischemia, LV hypertrophy<sup>1</sup></li>
+  <li><strong>Chest X-ray</strong> &mdash; evaluate for pulmonary edema<sup>1</sup></li>
+  <li><strong>Echocardiogram</strong> &mdash; assess LV function if heart failure suspected<sup>1</sup></li>
+  <li><strong>Fundoscopy</strong> &mdash; grade retinopathy, assess for papilledema<sup>2</sup></li>
+  <li><strong>CT head</strong> &mdash; if neurologic symptoms present<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1167,32 +1176,27 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Emergency Department/Initial Management<sup>1</sup></strong></p>
+            <p><strong>Hypertensive Emergency - ICU Setting<sup>1</sup></strong></p>
 <ul>
-  <li><strong>IV access</strong>: Two large-bore IVs, crystalloid resuscitation<sup>1</sup></li>
-  <li><strong>Blood transfusion</strong>: PRBC if hemodynamically unstable or severe anemia<sup>1</sup></li>
-  <li><strong>Anticoagulant reversal</strong>: Consider reversal agents for life-threatening bleeding<sup>12</sup></li>
-  <li><strong>Risk stratification</strong>: Use Oakland score (&le;8 low risk) or SHA2PE score<sup>12,20</sup></li>
+  <li><strong>Labetalol</strong> 10-20 mg IV bolus q10min (max 300 mg/24h) or 0.5-2 mg/min infusion<sup>1</sup></li>
+  <li><strong>Nicardipine</strong> 5-15 mg/h IV infusion, titrate by 2.5 mg/h q15min<sup>1</sup></li>
+  <li><strong>Esmolol</strong> 0.5-1 mg/kg loading dose, then 50-300 mcg/kg/min infusion<sup>1</sup></li>
+  <li><strong>Target reduction</strong>: 10-20% in first hour, 25% in first 24 hours<sup>1</sup></li>
+  <li><strong>Avoid</strong> sublingual nifedipine and clonidine due to unpredictable effects<sup>1</sup></li>
 </ul>
-<p><strong>Inpatient Non-ICU Management<sup>1,2</sup></strong></p>
+<p><strong>Specific Conditions<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Hemodynamic monitoring</strong>: Vital signs, urine output<sup>2</sup></li>
-  <li><strong>Serial CBC monitoring</strong>: Every 6-8 hours if actively bleeding<sup>1</sup></li>
-  <li><strong>Colonoscopy</strong>: Within 24 hours for severe bleeding, within 14 days for stable patients<sup>12</sup></li>
-  <li><strong>Conservative management</strong>: &gt;80% of lower GI bleeds stop spontaneously<sup>1</sup></li>
+  <li><strong>Acute stroke</strong>: Permissive hypertension (SBP &lt; 220 mmHg) unless thrombolysis candidate<sup>1</sup></li>
+  <li><strong>Aortic dissection</strong>: Beta-blocker first (esmolol), target SBP 100-120 mmHg<sup>1</sup></li>
+  <li><strong>Acute MI</strong>: Nitroglycerin or esmolol preferred<sup>1</sup></li>
+  <li><strong>Pulmonary edema</strong>: Nitroglycerin or clevidipine<sup>1</sup></li>
 </ul>
-<p><strong>ICU Management<sup>2,4</sup></strong></p>
+<p><strong>Asymptomatic Elevated BP - Inpatient<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Intensive monitoring</strong>: Continuous cardiac monitoring, frequent vitals<sup>2</sup></li>
-  <li><strong>Airway protection</strong>: Intubation if obtunded with active bleeding<sup>4</sup></li>
-  <li><strong>Massive transfusion protocol</strong>: If ongoing severe hemorrhage<sup>2</sup></li>
-  <li><strong>Urgent intervention</strong>: Emergent colonoscopy, angiography, or surgery<sup>2</sup></li>
-</ul>
-<p><strong>Endoscopic Therapy<sup>12,20</sup></strong></p>
-<ul>
-  <li><strong>Diverticular bleeding</strong>: Through-the-scope clips, band ligation, coagulation<sup>20</sup></li>
-  <li><strong>Angiodysplasia</strong>: Thermal coagulation, hemostatic clips<sup>4</sup></li>
-  <li><strong>Injection therapy</strong>: Epinephrine for hemostasis<sup>2</sup></li>
+  <li><strong>No routine IV antihypertensives</strong> recommended for asymptomatic patients<sup>1</sup></li>
+  <li><strong>Resume home medications</strong> if held perioperatively<sup>1</sup></li>
+  <li><strong>Optimize existing regimen</strong> if inadequately controlled<sup>1</sup></li>
+  <li><strong>Outpatient follow-up</strong> within 1-2 weeks for medication adjustment<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1206,10 +1210,11 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Self-limited bleeding</strong>: &gt;80% of lower GI bleeds stop spontaneously<sup>1</sup></li>
-  <li><strong>Overall mortality</strong>: 2-4% for lower GI bleeding<sup>1</sup></li>
-  <li><strong>Massive bleeding mortality</strong>: Up to 21% in patients &gt;65 years<sup>1</sup></li>
-  <li><strong>Recurrent bleeding</strong>: Diverticular bleeding commonly recurs<sup>1</sup></li>
+  <li><strong>Mortality</strong> ranges from 0.2-11% depending on severity and organ involvement<sup>1</sup></li>
+  <li><strong>Neurologic recovery</strong> may take days to weeks after BP control<sup>1</sup></li>
+  <li><strong>Renal function</strong> often improves but may not return to baseline<sup>1</sup></li>
+  <li><strong>Retinal changes</strong> may persist despite adequate BP control<sup>2</sup></li>
+  <li>Clinical context: Long-term prognosis depends on achieving sustained BP control and preventing recurrence</li>
 </ul>
 
           </div>
@@ -1223,10 +1228,11 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Outpatient colonoscopy</strong>: If not performed during admission<sup>12</sup></li>
-  <li><strong>Iron supplementation</strong>: For iron deficiency anemia<sup>1</sup></li>
-  <li><strong>Anticoagulation management</strong>: Risk-benefit assessment for resumption<sup>12</sup></li>
-  <li><strong>Primary care follow-up</strong>: Monitor hemoglobin, symptom recurrence<sup>1</sup></li>
+  <li><strong>ICU monitoring</strong> during acute phase with frequent BP checks<sup>1</sup></li>
+  <li><strong>Outpatient follow-up</strong> within 1-2 weeks after discharge<sup>1</sup></li>
+  <li><strong>Monthly visits</strong> until BP control achieved with stable regimen<sup>1</sup></li>
+  <li><strong>Annual screening</strong> for target organ damage (echo, ophthalmology, renal function)<sup>1</sup></li>
+  <li><strong>Medication adherence counseling</strong> to prevent recurrence<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1239,17 +1245,17 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Basic Evaluation</strong></p>
+            <p><strong>Limited ICU Access</strong></p>
 <ul>
-  <li><strong>Hemoglobin/hematocrit</strong>: Point-of-care testing if available<sup>1</sup></li>
-  <li><strong>Vital signs assessment</strong>: Orthostatic measurements<sup>1</sup></li>
-  <li><strong>Digital rectal exam</strong>: Assess for obvious bleeding source<sup>1</sup></li>
+  <li><strong>Oral agents</strong>: Immediate-release nifedipine 10 mg q30min (avoid sublingual)<sup>1</sup></li>
+  <li><strong>Hydralazine</strong> 10-20 mg IV q20-30min if other agents unavailable<sup>1</sup></li>
+  <li><strong>Frequent monitoring</strong> with manual BP cuffs if automated unavailable<sup>1</sup></li>
 </ul>
-<p><strong>Management</strong></p>
+<p><strong>Diagnostic Limitations</strong></p>
 <ul>
-  <li><strong>IV fluid resuscitation</strong>: Normal saline or Ringer lactate<sup>1</sup></li>
-  <li><strong>Oral iron therapy</strong>: For chronic occult bleeding<sup>1</sup></li>
-  <li>Clinical context: <strong>Blood typing</strong> essential if transfusion anticipated</li>
+  <li><strong>Clinical assessment</strong> for target organ damage when imaging limited<sup>1</sup></li>
+  <li><strong>Basic urinalysis</strong> can identify proteinuria and hematuria<sup>1</sup></li>
+  <li><strong>ECG changes</strong> may indicate cardiac involvement<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1259,47 +1265,35 @@
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline</div>
-            <div class="guideline-meta">American College of Gastroenterology &bull; 2023</div>
+            <div class="guideline-name">Management of Elevated Blood Pressure in the Acute Care Setting</div>
+            <div class="guideline-meta">American Heart Association &bull; 2024</div>
           </div>
-          <a href="https://journals.lww.com/ajg/fulltext/2023/02000/management_of_patients_with_acute_lower.14.aspx" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.ahajournals.org/doi/10.1161/HYP.0000000000000238" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Diagnosis and Management of Acute Lower Gastrointestinal Bleeding: ESGE Guideline</div>
-            <div class="guideline-meta">European Society of Gastrointestinal Endoscopy &bull; 2021</div>
+            <div class="guideline-name">ESC Guidelines for Management of Elevated Blood Pressure and Hypertension</div>
+            <div class="guideline-meta">European Society of Cardiology &bull; 2024</div>
           </div>
-          <a href="https://www.esge.com/esge-guidelines/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://academic.oup.com/eurheartj/advance-article/doi/10.1093/eurheartj/ehae178/7741010" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Diagnosis and Management of Acute Lower GI Bleeding</div>
-            <div class="guideline-meta">British Society of Gastroenterology &bull; 2024</div>
+            <div class="guideline-name">ACC/AHA Hypertension Clinical Practice Guidelines</div>
+            <div class="guideline-meta">American College of Cardiology/American Heart Association &bull; 2025</div>
           </div>
-          <a href="https://www.bsg.org.uk/clinical-resource/diagnosis-and-management-of-acute-lgi" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">The Role of Imaging for Gastrointestinal Bleeding: Consensus Recommendations</div>
-            <div class="guideline-meta">American College of Gastroenterology and Society of Abdominal Radiology &bull; 2024</div>
-          </div>
-          <a href="https://journals.lww.com/ajg/pages/default.aspx" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.ahajournals.org/doi/10.1161/HYP.0000000000000217" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Amin SK, Antunes C. Lower Gastrointestinal Bleeding. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-2">DiGregorio AM, Alvey H. Gastrointestinal Bleeding. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-3">Sabry AO, Sood T. Rectal Bleeding. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-4">Khan AU, Mandiga P. Angiodysplasia. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-5">Oakland K, Guy R, Uberoi R, et al. Acute lower GI bleeding in the UK: patient characteristics, interventions and outcomes. Gut. 2018;67(4):654-662.</li>
-          <li id="ref-6">Sengupta N, Feuerstein JD, Jairath V, et al. Management of Patients With Acute Lower Gastrointestinal Bleeding: An Updated ACG Guideline. Am J Gastroenterol. 2023;118(2):208-231.</li>
-          <li id="ref-7">Khan AU, Mandiga P. Gastrointestinal Bleeding Scan. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-8">Gunjan D, Sharma V, Rana SS, Bhasin DK. Small bowel bleeding: a comprehensive review. Gastroenterol Rep (Oxf). 2014;2(4):262-75.</li>
-          <li id="ref-9">Alshaikhli A, Al-Hillan A. Hemosuccus Pancreaticus. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023.</li>
-          <li id="ref-10">Triantafyllou K, Gkolfakis P, Gralnek IM, et al. Diagnosis and management of acute lower gastrointestinal bleeding: European Society of Gastrointestinal Endoscopy (ESGE) Guideline. Endoscopy. 2021;53(8):850-868.</li>
+          <li id="ref-1">Alley WD, Schick MA. Hypertensive Emergency. StatPearls. 2023 Jul 24. PMID: 29262177.</li>
+          <li id="ref-2">Ahmed I, Alley WD, Chauhan S, Afzal M. Hypertensive Crisis. StatPearls. 2025 Dec 1. PMID: 30247827.</li>
+          <li id="ref-3">Bress AP, Anderson TS, Flack JM, et al. The management of elevated blood pressure in the acute care setting: a scientific statement from the American Heart Association. Hypertension. 2024;81(8):e94-e106.</li>
+          <li id="ref-4">McEvoy JW, McCarthy CP, Bruno RM, et al. 2024 ESC Guidelines for the management of elevated blood pressure and hypertension. Eur Heart J. 2024 Aug 30:ehae178.</li>
+          <li id="ref-5">Whelton PK, Carey RM, Aronow WS, et al. 2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA guideline for the prevention, detection, evaluation, and management of high blood pressure in adults. Hypertension. 2018;71:e13-e115.</li>
         </ol>
       </div>
 
@@ -1307,9 +1301,9 @@
       <div class="disease-view" id="disease-view-1" style="display:none">
 
       <div class="disease-header card">
-        <h2>Community-Acquired Pneumonia</h2>
+        <h2>Malignant Spinal Cord Compression</h2>
         <p class="verified-date">Last verified: March 10, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK430749/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK557604/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1320,22 +1314,22 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Cough</strong>: Productive or non-productive, present in majority of patients<sup>1</sup></li>
-  <li><strong>Sputum production</strong>: May be purulent, bloody, or rusty-colored<sup>1</sup></li>
-  <li><strong>Fever</strong>: Often &gt;38°C (100.4°F) with chills and rigors<sup>1</sup></li>
-  <li><strong>Pleuritic chest pain</strong>: Sharp, stabbing pain worsened by deep inspiration<sup>1</sup></li>
-  <li><strong>Dyspnea</strong>: Shortness of breath, may progress to respiratory failure<sup>1</sup></li>
-  <li><strong>Constitutional symptoms</strong>: Fatigue, malaise, headache, myalgias<sup>1</sup></li>
-  <li>Clinical context: Atypical presentations in elderly (confusion, falls) and immunocompromised patients</li>
+  <li><strong>Back pain</strong>: Present in 95% of patients, often the first symptom, progressive and unremitting<sup>1</sup></li>
+  <li><strong>Neurologic symptoms</strong>: Bilateral arm or leg symptoms, weakness, numbness<sup>1</sup></li>
+  <li><strong>Bladder dysfunction</strong>: Urinary retention, urinary incontinence<sup>1</sup></li>
+  <li><strong>Bowel dysfunction</strong>: Stool incontinence, constipation<sup>1</sup></li>
+  <li><strong>Gait abnormalities</strong>: Difficulty walking, ataxia<sup>1</sup></li>
+  <li><strong>Red flag pain features</strong>: Localised cervical or thoracic pain, pain aggravated by coughing/sneezing/defecation, severe unremitting pain<sup>2</sup></li>
+  <li><strong>Radicular pain</strong>: May precede myelopathic symptoms by weeks<sup>2</sup></li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><strong>Vital signs</strong>: Tachypnea (&gt;20/min), tachycardia, fever, hypotension<sup>1</sup></li>
-  <li><strong>Pulmonary</strong>: Crackles, decreased breath sounds, dullness to percussion<sup>1</sup></li>
-  <li><strong>Consolidation signs</strong>: Bronchial breath sounds, egophony, tactile fremitus<sup>1</sup></li>
-  <li><strong>Hypoxemia</strong>: Oxygen saturation &lt;90% on room air indicates severity<sup>2</sup></li>
-  <li><strong>Mental status changes</strong>: Confusion, especially in elderly patients<sup>2</sup></li>
-  <li>Clinical context: Physical exam has limited sensitivity for pneumonia diagnosis</li>
+  <li><strong>Motor deficits</strong>: Progressive weakness, muscle atrophy, fasciculations<sup>1</sup></li>
+  <li><strong>Sensory deficits</strong>: Loss of sensation in dermatomal distribution, sensory level<sup>1</sup></li>
+  <li><strong>Hyperreflexia</strong>: Increased deep tendon reflexes below level of compression<sup>1</sup></li>
+  <li><strong>Pathological reflexes</strong>: Babinski sign, clonus<sup>1</sup></li>
+  <li><strong>Sphincter dysfunction</strong>: Loss of anal tone, reduced perianal sensation<sup>1</sup></li>
+  <li><strong>Functional status</strong>: Ambulatory vs paretic vs paraplegic (critical for prognosis)<sup>3</sup></li>
 </ul>
 
           </div>
@@ -1350,24 +1344,24 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><strong>Viral pneumonia</strong>: Influenza, SARS-CoV-2, RSV, parainfluenza<sup>1</sup></li>
-  <li><strong>Atypical pneumonia</strong>: Mycoplasma, Chlamydia, Legionella species<sup>1</sup></li>
-  <li><strong>Acute bronchitis</strong>: Cough without infiltrate on chest imaging<sup>1</sup></li>
-  <li><strong>Congestive heart failure</strong>: Bilateral infiltrates, BNP elevation<sup>1</sup></li>
+  <li><strong>Degenerative spondylosis</strong> with myelopathy<sup>1</sup></li>
+  <li><strong>Spinal epidural abscess</strong><sup>1</sup></li>
+  <li><strong>Primary spinal cord tumors</strong> (ependymoma, astrocytoma)<sup>4</sup></li>
+  <li><strong>Herniated disc</strong> with cord compression<sup>1</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><strong>Pulmonary embolism</strong>: Pleuritic chest pain, dyspnea, D-dimer elevation<sup>1</sup></li>
-  <li><strong>Lung cancer</strong>: Mass lesion, weight loss, smoking history<sup>1</sup></li>
-  <li><strong>Aspiration pneumonia</strong>: History of dysphagia, altered mental status<sup>3</sup></li>
-  <li><strong>Drug-induced pneumonitis</strong>: Medication exposure history<sup>1</sup></li>
+  <li><strong>Spinal epidural hematoma</strong> (spontaneous or iatrogenic)<sup>1</sup></li>
+  <li><strong>Lymphomatous infiltration</strong> of epidural space<sup>1</sup></li>
+  <li><strong>Vertebral osteomyelitis</strong> with epidural extension<sup>1</sup></li>
+  <li><strong>Arteriovenous malformation</strong><sup>1</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><strong>Pulmonary contusion</strong>: Trauma history, chest wall injury<sup>1</sup></li>
-  <li><strong>Acute respiratory distress syndrome</strong>: Bilateral infiltrates, severe hypoxemia<sup>1</sup></li>
-  <li><strong>Organizing pneumonia</strong>: Subacute course, steroid responsive<sup>1</sup></li>
-  <li><strong>Vasculitis</strong>: Systemic symptoms, autoimmune markers<sup>1</sup></li>
+  <li><strong>Guillain-Barré syndrome</strong> (ascending paralysis)<sup>1</sup></li>
+  <li><strong>Transverse myelitis</strong><sup>1</sup></li>
+  <li><strong>Multiple sclerosis</strong> acute exacerbation<sup>1</sup></li>
+  <li><strong>Cauda equina syndrome</strong> from other causes<sup>1</sup></li>
 </ul>
 
           </div>
@@ -1380,24 +1374,18 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Imaging</strong></p>
+            <p><strong>Imaging<sup>5</sup></strong></p>
 <ul>
-  <li><strong>Chest X-ray</strong>: First-line imaging, shows pulmonary infiltrates<sup>1</sup></li>
-  <li><strong>CT chest</strong>: More sensitive than CXR, useful when CXR normal but clinical suspicion high<sup>1</sup></li>
+  <li><strong>MRI spine</strong> (whole spine T1, T2, STIR): Sn 44-100%, Sp 90-93% for spinal cord compression<sup>5</sup></li>
+  <li><strong>CT with 3-plane reconstruction</strong>: For spinal stability assessment and surgical planning<sup>5</sup></li>
+  <li><strong>CT myelography</strong>: When MRI contraindicated<sup>5</sup></li>
 </ul>
-<p><strong>Laboratory Studies</strong></p>
+<p><strong>Laboratory Studies<sup>6</sup></strong></p>
 <ul>
-  <li><strong>Complete blood count</strong>: May show leukocytosis or leukopenia<sup>2</sup></li>
-  <li><strong>Basic metabolic panel</strong>: Assess for renal function, electrolyte abnormalities<sup>2</sup></li>
-  <li><strong>Blood cultures</strong>: Positive in 20-25% of S. pneumoniae pneumonia cases<sup>4</sup></li>
-  <li><strong>Arterial blood gas</strong>: If hypoxemia suspected or severity assessment needed<sup>2</sup></li>
-</ul>
-<p><strong>Microbiologic Studies</strong></p>
-<ul>
-  <li><strong>Sputum culture</strong>: If adequate specimen (&gt;25 PMNs, &lt;10 epithelial cells per hpf)<sup>2</sup></li>
-  <li><strong>Urinary antigens</strong>: Streptococcus pneumoniae and Legionella pneumophila serogroup 1<sup>2</sup></li>
-  <li><strong>Influenza testing</strong>: Molecular testing preferred when influenza circulating<sup>2</sup></li>
-  <li><strong>Procalcitonin</strong>: May help differentiate bacterial from viral etiology<sup>2</sup></li>
+  <li><strong>Complete blood count</strong>: Evaluate for hematologic malignancy<sup>6</sup></li>
+  <li><strong>PSA</strong> (men): Screen for prostate cancer<sup>6</sup></li>
+  <li><strong>Myeloma screen</strong>: Serum protein electrophoresis, immunofixation<sup>6</sup></li>
+  <li><strong>Tumor markers</strong>: Based on suspected primary (CEA, CA 19-9, etc.)<sup>6</sup></li>
 </ul>
 
           </div>
@@ -1410,33 +1398,26 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Outpatient - No Comorbidities<sup>2</sup></strong></p>
+            <p><strong>Emergency Management<sup>7</sup></strong></p>
 <ul>
-  <li><strong>Amoxicillin</strong> 1g PO TID</li>
-  <li><strong>Doxycycline</strong> 100mg PO BID</li>
-  <li><strong>Azithromycin</strong> 500mg PO day 1, then 250mg daily &times; 4 days</li>
-  <li><strong>Clarithromycin</strong> 500mg PO BID</li>
+  <li><strong>Dexamethasone</strong> 10-16 mg IV immediately, then oral taper over 10-14 days<sup>7</sup></li>
+  <li><strong>PPI prophylaxis</strong> with corticosteroids (especially if on NSAIDs)<sup>7</sup></li>
+  <li><strong>Immediate neurosurgical consultation</strong> if surgical candidate<sup>2</sup></li>
+  <li><strong>Immobilization</strong> until spinal stability assessed<sup>7</sup></li>
 </ul>
-<p><strong>Outpatient - With Comorbidities<sup>2</sup></strong></p>
+<p><strong>Definitive Treatment - Inpatient<sup>8</sup></strong></p>
 <ul>
-  <li><strong>Amoxicillin/clavulanate</strong> 875/125mg PO BID PLUS macrolide</li>
-  <li><strong>Cephalexin</strong> 500mg PO QID PLUS macrolide</li>
-  <li><strong>Levofloxacin</strong> 750mg PO daily</li>
-  <li><strong>Moxifloxacin</strong> 400mg PO daily</li>
+  <li><strong>Surgery + radiotherapy</strong>: For ambulatory patients with single-level disease and &ge;3 months life expectancy<sup>8</sup></li>
+  <li><strong>Radiotherapy alone</strong>: 8 Gy single fraction or 20-30 Gy in fractions, start within 24 hours<sup>3</sup></li>
+  <li><strong>Chemotherapy</strong>: For chemosensitive tumors (lymphoma, multiple myeloma)<sup>2</sup></li>
+  <li><strong>Vertebroplasty/kyphoplasty</strong>: For vertebral compression fractures<sup>5</sup></li>
 </ul>
-<p><strong>Inpatient Non-ICU<sup>2</sup></strong></p>
+<p><strong>Supportive Care<sup>9</sup></strong></p>
 <ul>
-  <li><strong>β-lactam PLUS macrolide</strong>: Ampicillin/sulbactam 1.5-3g IV q6h + azithromycin 500mg IV daily</li>
-  <li><strong>Ceftriaxone</strong> 1-2g IV daily + azithromycin 500mg IV daily</li>
-  <li><strong>Cefotaxime</strong> 1-2g IV q8h + azithromycin 500mg IV daily</li>
-  <li><strong>Respiratory fluoroquinolone</strong>: Levofloxacin 750mg IV daily OR moxifloxacin 400mg IV daily</li>
-</ul>
-<p><strong>ICU - Severe CAP<sup>2</sup></strong></p>
-<ul>
-  <li><strong>β-lactam PLUS macrolide</strong>: Ceftriaxone 1-2g IV daily + azithromycin 500mg IV daily</li>
-  <li><strong>β-lactam PLUS fluoroquinolone</strong>: Ceftriaxone + levofloxacin 750mg IV daily</li>
-  <li><strong>Add MRSA coverage if risk factors</strong>: Vancomycin 15mg/kg IV q12h (adjust by levels) OR linezolid 600mg IV q12h</li>
-  <li><strong>Add Pseudomonas coverage if risk factors</strong>: Piperacillin/tazobactam 4.5g IV q6h</li>
+  <li><strong>DVT prophylaxis</strong>: Mechanical and/or pharmacologic as appropriate<sup>9</sup></li>
+  <li><strong>Bladder management</strong>: Foley catheter or intermittent catheterization<sup>9</sup></li>
+  <li><strong>Physiotherapy</strong>: Early mobilization when appropriate<sup>6</sup></li>
+  <li><strong>Pain management</strong>: Multimodal approach including opioids as needed<sup>6</sup></li>
 </ul>
 
           </div>
@@ -1450,11 +1431,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Clinical improvement</strong>: Expected within 48-72 hours of appropriate antibiotic therapy<sup>2</sup></li>
-  <li><strong>Radiographic resolution</strong>: May lag behind clinical improvement by weeks<sup>1</sup></li>
-  <li><strong>Mortality rates</strong>: <cite index="1-23,1-24">Overall 8th leading cause of death; ICU mortality up to 23%</cite></li>
-  <li><strong>Duration of therapy</strong>: Typically 5-7 days for most patients<sup>2</sup></li>
-  <li>Clinical context: Elderly and immunocompromised patients may have slower recovery</li>
+  <li><strong>Prognosis</strong>: Median survival 2-3 months, 17% alive at 1 year, 10% at 18 months<sup>10</sup></li>
+  <li><strong>Functional recovery</strong>: Pre-treatment ambulatory status is strongest predictor of post-treatment function<sup>2</sup></li>
+  <li><strong>Time-sensitive</strong>: Treatment within 24 hours of symptom onset optimizes functional preservation<sup>2</sup></li>
+  <li><strong>Primary tumor dependent</strong>: Hematologic malignancies and prostate cancer have better survival than lung cancer<sup>10</sup></li>
 </ul>
 
           </div>
@@ -1468,11 +1448,11 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Outpatient follow-up</strong>: 48-72 hours for clinical response assessment<sup>2</sup></li>
-  <li><strong>Chest imaging follow-up</strong>: Not routinely recommended if clinically improving<sup>2</sup></li>
-  <li><strong>Smoking cessation counseling</strong>: For all tobacco users<sup>2</sup></li>
-  <li><strong>Pneumococcal vaccination</strong>: Ensure appropriate vaccination status<sup>2</sup></li>
-  <li>Clinical context: Consider repeat imaging in high-risk patients or those with poor response</li>
+  <li><strong>Neurologic monitoring</strong>: Serial neurologic exams to assess function<sup>9</sup></li>
+  <li><strong>Pain assessment</strong>: Regular pain scores and analgesic adjustment<sup>9</sup></li>
+  <li><strong>Rehabilitation</strong>: Physical and occupational therapy for functional restoration<sup>6</sup></li>
+  <li><strong>Oncology follow-up</strong>: Primary tumor management and palliative care coordination<sup>2</sup></li>
+  <li><strong>Monitoring for complications</strong>: DVT, infections, steroid-related side effects<sup>9</sup></li>
 </ul>
 
           </div>
@@ -1485,86 +1465,58 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Limited Laboratory Access</strong></p>
+            <p><strong>Imaging Alternatives<sup>5</sup></strong></p>
 <ul>
-  <li><strong>Clinical diagnosis</strong>: Based on symptoms and physical exam findings</li>
-  <li><strong>Oxygen saturation</strong>: Pulse oximetry if available for severity assessment</li>
-  <li><strong>Basic vital signs</strong>: Focus on respiratory rate, heart rate, blood pressure</li>
+  <li><strong>CT myelography</strong>: When MRI unavailable<sup>5</sup></li>
+  <li><strong>Plain X-rays</strong>: Limited utility but may show vertebral collapse<sup>5</sup></li>
 </ul>
-<p><strong>Limited Imaging</strong></p>
+<p><strong>Treatment Modifications<sup>7</sup></strong></p>
 <ul>
-  <li><strong>Clinical scoring</strong>: Use CURB-65 for severity assessment without imaging</li>
-  <li><strong>Empirical treatment</strong>: Start antibiotics based on clinical presentation</li>
-  <li><strong>Response to therapy</strong>: Monitor clinical improvement as diagnostic confirmation</li>
-</ul>
-<p><strong>Antibiotic Selection</strong></p>
-<ul>
-  <li><strong>Amoxicillin</strong>: First-line in resource-limited settings per WHO guidelines</li>
-  <li><strong>Doxycycline</strong>: Alternative broad-spectrum option</li>
-  <li><strong>Local resistance patterns</strong>: Consider regional antibiogram data if available</li>
+  <li><strong>Oral dexamethasone</strong>: When IV access limited<sup>7</sup></li>
+  <li><strong>Single-fraction radiotherapy</strong>: 8 Gy when multiple fractions not feasible<sup>3</sup></li>
 </ul>
 
           </div>
         </div>
       </div>
-      <h3 class="section-title">Relevant Clinical Scores</h3>
-      <div class="calculator-card" id="curb65-calc">
-        <h4>CURB-65 Severity Score</h4>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-c" onchange="update_curb65()">
-          <label for="curb-c"><strong>C</strong>onfusion &mdash; new-onset disorientation to person, place, or time</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-u" onchange="update_curb65()">
-          <label for="curb-u"><strong>U</strong>rea (BUN) &gt; 19 mg/dL (7 mmol/L)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-r" onchange="update_curb65()">
-          <label for="curb-r"><strong>R</strong>espiratory Rate &ge; 30 breaths/min</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-b" onchange="update_curb65()">
-          <label for="curb-b"><strong>B</strong>lood Pressure: SBP &lt; 90 or DBP &le; 60 mmHg</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="curb-65" onchange="update_curb65()">
-          <label for="curb-65">Age &ge; <strong>65</strong> years</label>
-        </div>
-        <div class="score-result">
-          <span class="score-label">CURB-65 Severity Score</span>
-          <span class="score-value" id="curb65-score">0</span>
-          <div class="score-interpretation risk-low" id="curb65-interp">
-            Low risk (0.6% 30-day mortality). Consider outpatient treatment.
-          </div>
-        </div>
-      </div>
-
       <div class="guidelines-box">
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Diagnosis and Treatment of Adults with Community-acquired Pneumonia</div>
-            <div class="guideline-meta">ATS/IDSA &bull; 2019</div>
+            <div class="guideline-name">NICE Clinical Guideline: Spinal Metastases and Metastatic Spinal Cord Compression</div>
+            <div class="guideline-meta">National Institute for Health and Care Excellence &bull; 2023</div>
           </div>
-          <a href="https://www.atsjournals.org/doi/full/10.1164/rccm.201908-1581ST" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.ncbi.nlm.nih.gov/books/NBK595817/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">Management and Prevention Guidelines for Pneumonia</div>
-            <div class="guideline-meta">CDC &bull; 2024</div>
+            <div class="guideline-name">NCCN Guidelines: Central Nervous System Cancers</div>
+            <div class="guideline-meta">National Comprehensive Cancer Network &bull; 2023</div>
           </div>
-          <a href="https://www.cdc.gov/pneumonia/hcp/management-prevention-guidelines/index.html" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://www.nccn.org/professionals/physician_gls/pdf/cns.pdf" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">ESTRO-ACROP Guidelines for Radiotherapy in MSCC</div>
+            <div class="guideline-meta">European Society of Therapeutic Radiology and Oncology &bull; 2023</div>
+          </div>
+          <a href="https://emedicine.medscape.com/article/779872-guidelines" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Regunath H, Oba Y. Community-Acquired Pneumonia. StatPearls. 2024 Jan.</li>
-          <li id="ref-2">Metlay JP, Waterer GW, Long AC, et al. Diagnosis and Treatment of Adults with Community-acquired Pneumonia. Am J Respir Crit Care Med. 2019;200(7):e45-e67.</li>
-          <li id="ref-3">Sanivarapu RR, Vaqar S, Gibson J. Aspiration Pneumonia. StatPearls. 2024 Mar.</li>
-          <li id="ref-4">Regunath H, Oba Y. Streptococcus pneumoniae. StatPearls. 2025 May.</li>
-          <li id="ref-5">Jones BE, Herman DD, Dela Cruz CS, et al. Summary for Clinicians: Clinical Practice Guideline for the Diagnosis and Treatment of Community-acquired Pneumonia. Ann Am Thorac Soc. 2019;17(2):133-138.</li>
+          <li id="ref-1">Spiller WG. Rapidly progressive paraplegia in cancer patients. StatPearls Publishing; 2023 Feb.</li>
+          <li id="ref-2">Loblaw DA, Perry J, Chambers A, Laperriere NJ. Systematic review of the diagnosis and management of malignant extradural spinal cord compression. J Clin Oncol. 2005;23:2028-2037.</li>
+          <li id="ref-3">Patchell RA, Tibbs PA, Regine WF, et al. Direct decompressive surgical resection in the treatment of spinal cord compression caused by metastatic cancer: a randomised trial. Lancet. 2005;366(9486):643-648.</li>
+          <li id="ref-4">Ziu E, Viswanathan VK, Mesfin FB. Spinal Metastasis. StatPearls Publishing; 2023 Aug.</li>
+          <li id="ref-5">National Collaborating Centre for Cancer. Metastatic Spinal Cord Compression: Imaging. NICE Clinical Guidelines, No. 75. 2008 Nov.</li>
+          <li id="ref-6">National Collaborating Centre for Cancer. Metastatic Spinal Cord Compression: Early Detection. NICE Clinical Guidelines, No. 75. 2008 Nov.</li>
+          <li id="ref-7">Graham PH, Capp A, Delaney G, et al. A pilot randomised comparison of dexamethasone 96 mg vs 16 mg per day for malignant spinal-cord compression. Clin Oncol. 2006;18:70-76.</li>
+          <li id="ref-8">Wang JC, Boland P, Mitra N, et al. Single-stage posterolateral transpedicular approach for resection of epidural metastatic spine tumors. J Neurosurg Spine. 2004;1:287-298.</li>
+          <li id="ref-9">Lee SH, Grant R, Kennedy C, Kilbride L. Positioning and spinal bracing for pain relief in metastatic spinal cord compression in adults. Cochrane Database Syst Rev. 2015;CD007609.</li>
+          <li id="ref-10">Levack P, Graham J, Collie D, et al. Don't wait for a sensory level—listen to the symptoms: a prospective audit of the delays in diagnosis of malignant cord compression. Clin Oncol. 2002;14:472-480.</li>
         </ol>
       </div>
 
@@ -1572,9 +1524,9 @@
       <div class="disease-view" id="disease-view-2" style="display:none">
 
       <div class="disease-header card">
-        <h2>Takotsubo Cardiomyopathy</h2>
+        <h2>Antiphospholipid Syndrome</h2>
         <p class="verified-date">Last verified: March 10, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK430798/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+        <a href="https://www.ncbi.nlm.nih.gov/books/?term=Antiphospholipid%20Syndrome%20StatPearls" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
       </div>
       <div class="accordion open">
         <div class="accordion-header" onclick="toggleAccordion(this)">
@@ -1585,17 +1537,18 @@
           <div class="accordion-content">
             <p><strong>Symptoms</strong></p>
 <ul>
-  <li><strong>Chest pain</strong> and <strong>dyspnea</strong> are the most common presenting symptoms, similar to acute coronary syndrome<sup>1</sup></li>
-  <li><strong>Nausea</strong>, <strong>palpitations</strong>, <strong>syncope</strong>, and <strong>vomiting</strong> may occur<sup>1</sup></li>
-  <li>Symptoms typically occur in the <strong>mid-afternoon</strong> (unlike ACS which often occurs in early morning hours)<sup>1</sup></li>
-  <li><strong>Preceding emotional or physical stressor</strong> reported in ~72% of cases (emotional 28%, physical 36%, both 8%)<sup>2</sup></li>
-  <li>May present with complications: <strong>heart failure</strong>, <strong>cardiogenic shock</strong>, or <strong>cardiac arrest</strong><sup>3</sup></li>
+  <li><strong>Clinical context:</strong> History of recurrent venous or arterial thrombosis<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Recurrent pregnancy losses, especially in 2nd or 3rd trimester<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Unexplained stroke in young adults (&lt;50 years)<sup>2</sup></li>
+  <li><strong>Clinical context:</strong> History of pulmonary embolism without obvious risk factors<sup>2</sup></li>
+  <li><strong>Clinical context:</strong> Livedo reticularis or skin necrosis<sup>3</sup></li>
 </ul>
 <p><strong>Exam Findings</strong></p>
 <ul>
-  <li><strong>Nonspecific findings</strong> similar to heart failure: pulmonary rales, S3 gallop, systolic murmur of mitral regurgitation<sup>1</sup></li>
-  <li>May have signs of <strong>cardiogenic shock</strong> or <strong>heart failure</strong> depending on severity<sup>3</sup></li>
-  <li><strong>Hypotension</strong> and signs of <strong>cardiac tamponade</strong> may occur with rare complications like cardiac rupture<sup>4</sup></li>
+  <li><strong>Clinical context:</strong> Livedo reticularis - net-like purplish skin discoloration<sup>3</sup></li>
+  <li><strong>Clinical context:</strong> Digital ischemia or gangrene<sup>3</sup></li>
+  <li><strong>Clinical context:</strong> Evidence of valvular heart disease (Libman-Sacks endocarditis)<sup>4</sup></li>
+  <li><strong>Clinical context:</strong> Signs of acute thrombosis (DVT, PE, stroke)<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1610,23 +1563,20 @@
           <div class="accordion-content">
             <p><strong>Common</strong></p>
 <ul>
-  <li><strong>Acute myocardial infarction</strong> (ST-elevation or non-ST-elevation) - most important differential<sup>3</sup></li>
-  <li><strong>Acute myocarditis</strong> - requires cardiac MRI with LGE for differentiation<sup>3</sup></li>
-  <li><strong>Hypertrophic cardiomyopathy with apical ballooning</strong> - differentiated by thickened myocardium at apex on imaging<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Inherited thrombophilias (Factor V Leiden, Protein C/S deficiency)<sup>5</sup></li>
+  <li><strong>Clinical context:</strong> Systemic lupus erythematosus<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Malignancy-associated thrombosis<sup>5</sup></li>
 </ul>
 <p><strong>Less Common</strong></p>
 <ul>
-  <li><strong>Spontaneous coronary artery dissection</strong> (SCAD)<sup>3</sup></li>
-  <li><strong>Peripartum cardiomyopathy</strong><sup>3</sup></li>
-  <li><strong>Pheochromocytoma</strong> with catecholamine excess<sup>5</sup></li>
-  <li><strong>Thyrotoxicosis</strong><sup>6</sup></li>
+  <li><strong>Clinical context:</strong> Heparin-induced thrombocytopenia<sup>5</sup></li>
+  <li><strong>Clinical context:</strong> Catastrophic antiphospholipid syndrome<sup>6</sup></li>
+  <li><strong>Clinical context:</strong> Thrombotic thrombocytopenic purpura<sup>5</sup></li>
 </ul>
 <p><strong>Mimics</strong></p>
 <ul>
-  <li><strong>Cardiac tamponade</strong><sup>6</sup></li>
-  <li><strong>Heavy metal toxicity</strong><sup>6</sup></li>
-  <li><strong>Beriberi</strong> (thiamine deficiency)<sup>6</sup></li>
-  <li><strong>Late-stage hypertrophic cardiomyopathy</strong><sup>6</sup></li>
+  <li><strong>Clinical context:</strong> Vasculitis with thrombotic complications<sup>5</sup></li>
+  <li><strong>Clinical context:</strong> Atherosclerotic disease in young patients<sup>2</sup></li>
 </ul>
 
           </div>
@@ -1639,27 +1589,24 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Electrocardiogram<sup>1</sup></strong></p>
+            <p><strong>Antiphospholipid Antibodies<sup>1</sup></strong></p>
 <ul>
-  <li><strong>Stage 1</strong>: ST deviation (not necessarily localized to territory) in first few hours<sup>1</sup></li>
-  <li><strong>Stage 2</strong>: QTc prolongation and widespread T-wave inversion in precordial, lateral leads over 1-3 days<sup>1</sup></li>
-  <li>May show ST-elevation, T-wave inversion, or left bundle branch block<sup>1</sup></li>
+  <li><strong>Lupus anticoagulant</strong>: Most specific test for APS<sup>1</sup></li>
+  <li><strong>Anticardiolipin antibodies</strong> (IgG/IgM): Medium-high titer (&gt;40 GPL/MPL units)<sup>1</sup></li>
+  <li><strong>Anti-&beta;2 glycoprotein I antibodies</strong> (IgG/IgM): &gt;99th percentile<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Must be positive on 2 occasions &ge;12 weeks apart<sup>1</sup></li>
 </ul>
-<p><strong>Cardiac Biomarkers<sup>7</sup></strong></p>
+<p><strong>Supportive Laboratory Tests<sup>7</sup></strong></p>
 <ul>
-  <li><strong>Troponin</strong>: Mild elevation (lower than typical MI), may rarely be negative<sup>7</sup></li>
-  <li><strong>NT-proBNP/BNP</strong>: Significantly elevated, more useful diagnostic marker than troponin<sup>7</sup></li>
+  <li><strong>Complete blood count</strong>: May show thrombocytopenia (50,000-150,000/&mu;L)<sup>7</sup></li>
+  <li><strong>PT/aPTT</strong>: Prolonged aPTT that doesn't correct with mixing study<sup>1</sup></li>
+  <li><strong>D-dimer</strong>: Elevated during acute thrombotic events<sup>2</sup></li>
 </ul>
-<p><strong>Imaging Studies<sup>1,3</sup></strong></p>
+<p><strong>Imaging Studies<sup>2</sup></strong></p>
 <ul>
-  <li><strong>Transthoracic Echocardiogram</strong>: Shows characteristic regional wall motion abnormalities (apical, midventricular, basal, or focal)<sup>1</sup></li>
-  <li><strong>Coronary angiography with left ventriculography</strong>: Gold standard - normal/mild CAD with perfusion-contraction mismatch<sup>7</sup></li>
-  <li><strong>Cardiac MRI with LGE</strong>: Recommended within 5 days to confirm diagnosis and exclude mimics<sup>3</sup></li>
-</ul>
-<p><strong>InterTAK Diagnostic Score<sup>3</sup></strong></p>
-<ul>
-  <li><strong>Scoring system</strong>: Uses 7 clinical variables; score ≥40 identifies TTS with 81.8% Sn, 100% Sp<sup>8</sup></li>
-  <li><strong>Parameters</strong>: Female sex, emotional/physical triggers, absence of ST depression, psychiatric/neurologic disorders, QT prolongation<sup>3</sup></li>
+  <li><strong>Doppler ultrasound</strong>: First-line for suspected DVT<sup>2</sup></li>
+  <li><strong>CT pulmonary angiogram</strong>: For suspected pulmonary embolism<sup>2</sup></li>
+  <li><strong>Echocardiogram</strong>: Evaluate for valvular abnormalities<sup>4</sup></li>
 </ul>
 
           </div>
@@ -1672,25 +1619,24 @@
         </div>
         <div class="accordion-body">
           <div class="accordion-content">
-            <p><strong>Acute Management<sup>9</sup></strong></p>
+            <p><strong>Acute Thrombosis - Inpatient<sup>8</sup></strong></p>
 <ul>
-  <li><strong>Supportive care</strong> similar to acute heart failure management</li>
-  <li><strong>ACE inhibitors/ARBs</strong> for heart failure symptoms</li>
-  <li><strong>Beta-blockers</strong> may be used but evidence for preventing recurrence is limited<sup>9</sup></li>
-  <li><strong>Diuretics</strong> for volume overload as clinically indicated</li>
+  <li><strong>Unfractionated heparin</strong>: 80 units/kg IV bolus, then 18 units/kg/hr infusion<sup>8</sup></li>
+  <li><strong>Low molecular weight heparin</strong>: Enoxaparin 1 mg/kg SC q12h<sup>8</sup></li>
+  <li><strong>Clinical context:</strong> Bridge to warfarin therapy<sup>8</sup></li>
 </ul>
-<p><strong>Complications Management<sup>1,4</sup></strong></p>
+<p><strong>Long-term Anticoagulation - Outpatient<sup>8</sup></strong></p>
 <ul>
-  <li><strong>LVOT obstruction</strong>: Avoid inotropes, consider beta-blockers and volume expansion</li>
-  <li><strong>Ventricular arrhythmias</strong>: Monitor for torsades de pointes during 24-48 hours, manage QT prolongation<sup>1</sup></li>
-  <li><strong>Anticoagulation</strong> may be considered for wall motion abnormalities in certain situations<sup>5</sup></li>
+  <li><strong>Warfarin</strong>: Target INR 2.0-3.0 for venous thrombosis<sup>8</sup></li>
+  <li><strong>Warfarin</strong>: Target INR 3.0-4.0 for recurrent thrombosis or arterial events<sup>8</sup></li>
+  <li><strong>Clinical context:</strong> DOACs may be less effective than warfarin in APS<sup>9</sup></li>
+  <li><strong>Duration</strong>: Indefinite anticoagulation for definite APS<sup>8</sup></li>
 </ul>
-<p><strong>Long-term Management<sup>9</sup></strong></p>
+<p><strong>Pregnancy Management<sup>10</sup></strong></p>
 <ul>
-  <li>Clinical context: No established guidelines exist; treatment based on expert consensus</li>
-  <li><strong>Follow-up imaging</strong> to document recovery (typically within weeks to months)</li>
-  <li><strong>Risk factor modification</strong> and stress management counseling</li>
-  <li><strong>Recurrence monitoring</strong> - occurs in small percentage of patients<sup>9</sup></li>
+  <li><strong>Aspirin</strong>: 81 mg daily starting preconception<sup>10</sup></li>
+  <li><strong>Prophylactic heparin</strong>: LMWH throughout pregnancy<sup>10</sup></li>
+  <li><strong>Clinical context:</strong> Avoid warfarin due to teratogenicity<sup>10</sup></li>
 </ul>
 
           </div>
@@ -1704,10 +1650,9 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Recovery</strong>: Left ventricular function typically recovers within days to weeks in most patients<sup>1,5</sup></li>
-  <li><strong>Long-term outcomes</strong>: Previously considered benign, but recent studies show persistent subtle dysfunction and limiting symptoms<sup>9</sup></li>
-  <li><strong>Mortality</strong>: In-hospital mortality comparable to STEMI and non-STEMI patients<sup>5</sup></li>
-  <li><strong>Recurrence</strong>: Occurs in small percentage; "super recurrence" (≥2 episodes) in ~1.8% of patients<sup>9</sup></li>
+  <li><strong>Clinical context:</strong> Chronic condition requiring lifelong anticoagulation<sup>8</sup></li>
+  <li><strong>Clinical context:</strong> 30% risk of recurrent thrombosis within 10 years without treatment<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Improved pregnancy outcomes with appropriate treatment<sup>10</sup></li>
 </ul>
 
           </div>
@@ -1721,10 +1666,10 @@
         <div class="accordion-body">
           <div class="accordion-content">
             <ul>
-  <li><strong>Serial echocardiography</strong> to document LV function recovery<sup>1</sup></li>
-  <li><strong>ECG monitoring</strong>: T-wave changes and QTc prolongation may persist weeks to months after LV recovery<sup>7</sup></li>
-  <li><strong>Stress management</strong> and psychological support as appropriate<sup>2</sup></li>
-  <li><strong>Long-term cardiology follow-up</strong> given potential for persistent dysfunction and recurrence<sup>9</sup></li>
+  <li><strong>INR monitoring</strong>: Weekly initially, then monthly once stable<sup>8</sup></li>
+  <li><strong>Repeat antiphospholipid antibodies</strong>: Not routinely recommended once diagnosed<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Monitor for bleeding complications on anticoagulation<sup>8</sup></li>
+  <li><strong>Pregnancy counseling</strong>: Specialized care with maternal-fetal medicine<sup>10</sup></li>
 </ul>
 
           </div>
@@ -1739,50 +1684,139 @@
           <div class="accordion-content">
             <p><strong>Essential Diagnostics</strong></p>
 <ul>
-  <li><strong>12-lead ECG</strong> and <strong>basic echocardiography</strong> for initial assessment</li>
-  <li><strong>Troponin testing</strong> if available (though may be normal)</li>
-  <li><strong>Clinical scoring</strong> using InterTAK criteria when advanced imaging unavailable</li>
+  <li><strong>Clinical context:</strong> Focus on lupus anticoagulant testing if limited resources<sup>1</sup></li>
+  <li><strong>Clinical context:</strong> Clinical diagnosis based on thrombotic history + single positive test<sup>1</sup></li>
 </ul>
-<p><strong>Management Priorities</strong></p>
+<p><strong>Treatment Alternatives</strong></p>
 <ul>
-  <li><strong>Rule out MI</strong> as primary concern with available resources</li>
-  <li><strong>Supportive care</strong> for heart failure symptoms</li>
-  <li><strong>Identify and address</strong> potential triggers or stressors</li>
+  <li><strong>Clinical context:</strong> Aspirin 325 mg daily if warfarin unavailable<sup>8</sup></li>
+  <li><strong>Clinical context:</strong> Unfractionated heparin SC if LMWH unavailable<sup>8</sup></li>
 </ul>
 
           </div>
         </div>
       </div>
+      <h3 class="section-title">Relevant Clinical Scores</h3>
+      <div class="calculator-card" id="wells_pe-calc">
+        <h4>Wells Score for Pulmonary Embolism</h4>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-1" onchange="update_wells_pe()">
+          <label for="wells-pe-1">Clinical signs/symptoms of DVT (leg swelling, pain with palpation)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-2" onchange="update_wells_pe()">
+          <label for="wells-pe-2">PE is #1 diagnosis or equally likely</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-3" onchange="update_wells_pe()">
+          <label for="wells-pe-3">Heart rate &gt; 100 bpm</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-4" onchange="update_wells_pe()">
+          <label for="wells-pe-4">Immobilization (&ge;3 days) or surgery in previous 4 weeks</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-5" onchange="update_wells_pe()">
+          <label for="wells-pe-5">Previous DVT/PE</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-6" onchange="update_wells_pe()">
+          <label for="wells-pe-6">Hemoptysis</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-pe-7" onchange="update_wells_pe()">
+          <label for="wells-pe-7">Malignancy (treatment within 6 months or palliative)</label>
+        </div>
+        <div class="score-result">
+          <span class="score-label">Wells Score for Pulmonary Embolism</span>
+          <span class="score-value" id="wells_pe-score">0</span>
+          <div class="score-interpretation risk-low" id="wells_pe-interp">
+            Low probability (1.3% PE incidence). Consider D-dimer; if negative, PE effectively excluded.
+          </div>
+        </div>
+      </div>
+      <div class="calculator-card" id="wells_dvt-calc">
+        <h4>Wells Score for DVT</h4>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-1" onchange="update_wells_dvt()">
+          <label for="wells-dvt-1">Active cancer (treatment ongoing, within 6 months, or palliative)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-2" onchange="update_wells_dvt()">
+          <label for="wells-dvt-2">Paralysis, paresis, or recent plaster immobilization of the lower extremities</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-3" onchange="update_wells_dvt()">
+          <label for="wells-dvt-3">Recently bedridden &gt;3 days or major surgery within 12 weeks</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-4" onchange="update_wells_dvt()">
+          <label for="wells-dvt-4">Localized tenderness along the distribution of the deep venous system</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-5" onchange="update_wells_dvt()">
+          <label for="wells-dvt-5">Entire leg swollen</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-6" onchange="update_wells_dvt()">
+          <label for="wells-dvt-6">Calf swelling &ge;3 cm compared to asymptomatic leg</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-7" onchange="update_wells_dvt()">
+          <label for="wells-dvt-7">Pitting edema confined to the symptomatic leg</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-8" onchange="update_wells_dvt()">
+          <label for="wells-dvt-8">Collateral superficial veins (non-varicose)</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-9" onchange="update_wells_dvt()">
+          <label for="wells-dvt-9">Previously documented DVT</label>
+        </div>
+        <div class="calc-option">
+          <input type="checkbox" id="wells-dvt-10" onchange="update_wells_dvt()">
+          <label for="wells-dvt-10">Alternative diagnosis at least as likely as DVT</label>
+        </div>
+        <div class="score-result">
+          <span class="score-label">Wells Score for DVT</span>
+          <span class="score-value" id="wells_dvt-score">0</span>
+          <div class="score-interpretation risk-low" id="wells_dvt-interp">
+            Low probability (5%). D-dimer recommended; if negative, DVT excluded.
+          </div>
+        </div>
+      </div>
+
       <div class="guidelines-box">
         <h4>Society Guidelines Quick Reference</h4>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">International Expert Consensus Document on Takotsubo Syndrome (Part II): Diagnostic Workup, Outcome, and Management</div>
-            <div class="guideline-meta">European Society of Cardiology &bull; 2018</div>
+            <div class="guideline-name">International Consensus Statement on Antiphospholipid Syndrome</div>
+            <div class="guideline-meta">International Society on Thrombosis and Haemostasis &bull; 2023</div>
           </div>
-          <a href="https://academic.oup.com/eurheartj/article/39/22/2047/5025411" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1016/j.jtha.2023.02.009" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
         <div class="guideline-item">
           <div class="guideline-info">
-            <div class="guideline-name">2023 ESC Guidelines for the management of cardiomyopathies</div>
-            <div class="guideline-meta">European Society of Cardiology &bull; 2023</div>
+            <div class="guideline-name">Antiphospholipid Syndrome Guidelines</div>
+            <div class="guideline-meta">European Society of Cardiology &bull; 2022</div>
           </div>
-          <a href="https://academic.oup.com/eurheartj/article/44/37/3503/7246608" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+          <a href="https://doi.org/10.1093/eurheartj/ehac022" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
         </div>
       </div>
 
       <div class="references">
         <h4>References</h4>
         <ol>
-          <li id="ref-1">Ahmad SA, Khalid N, Ibrahim MA. Takotsubo Cardiomyopathy. StatPearls Publishing; 2023.</li>
-          <li id="ref-2">Templin C, Ghadri JR, Diekmann J, et al. Clinical Features and Outcomes of Takotsubo (Stress) Cardiomyopathy. N Engl J Med. 2015;373(10):929-38.</li>
-          <li id="ref-3">Assad J, Femia G, Pender P, et al. Takotsubo Syndrome: A Review of Presentation, Diagnosis and Management. Clin Med Insights Cardiol. 2022;16:11795468211065782.</li>
-          <li id="ref-4">Kumar S, Kaushik S, Nautiyal A, et al. Cardiac rupture in takotsubo cardiomyopathy: a systematic review. Clin Cardiol. 2011;34(11):672-6.</li>
-          <li id="ref-5">Ghadri JR, Wittstein IS, Prasad A, et al. International Expert Consensus Document on Takotsubo Syndrome (Part I): Clinical characteristics, diagnostic criteria, and pathophysiology. Eur Heart J. 2018;39(22):2032-2046.</li>
-          <li id="ref-6">Bhandari B, Quintanilla Rodriguez BS, Masood W. Ischemic Cardiomyopathy. StatPearls Publishing; 2023.</li>
-          <li id="ref-7">Scantlebury DC, Prasad A. Diagnosis of takotsubo cardiomyopathy - Mayo Clinic criteria. Circ J. 2014;78(9):2129-39.</li>
-          <li id="ref-8">Validation of the InterTAK Diagnostic Score for Differentiating Takotsubo Syndrome from Acute Coronary Syndrome in a Middle Eastern Population. J Clin Med. 2025;14(21):7806.</li>
-          <li id="ref-9">Schweiger V, Cammann VL, Crisci G, et al. Temporal trends in takotsubo syndrome: Results from the International Takotsubo Registry. J Am Coll Cardiol. 2024;84:1178-89.</li>
+          <li id="ref-1">Miyakis S, Lockshin MD, Atsumi T, et al. International consensus statement on an update of the classification criteria for definite antiphospholipid syndrome (APS). J Thromb Haemost. 2006;4(2):295-306.</li>
+          <li id="ref-2">Cervera R, Piette JC, Font J, et al. Antiphospholipid syndrome: clinical and immunologic manifestations and patterns of disease expression in a cohort of 1,000 patients. Arthritis Rheum. 2002;46(4):1019-1027.</li>
+          <li id="ref-3">Asherson RA, Cervera R, de Groot PG, et al. Catastrophic antiphospholipid syndrome: international consensus statement on classification criteria and treatment guidelines. Lupus. 2003;12(7):530-534.</li>
+          <li id="ref-4">Roldan CA, Shively BK, Crawford MH. An echocardiographic study of valvular heart disease associated with systemic lupus erythematosus. N Engl J Med. 1996;335(19):1424-1430.</li>
+          <li id="ref-5">Garcia D, Erkan D. Diagnosis and management of the antiphospholipid syndrome. N Engl J Med. 2018;378(21):2010-2021.</li>
+          <li id="ref-6">Erkan D, Lockshin MD. What is catastrophic antiphospholipid syndrome? Curr Rheumatol Rep. 2010;12(1):64-71.</li>
+          <li id="ref-7">Giannakopoulos B, Krilis SA. The pathogenesis of the antiphospholipid syndrome. N Engl J Med. 2013;368(11):1033-1044.</li>
+          <li id="ref-8">Kearon C, Akl EA, Ornelas J, et al. Antithrombotic therapy for VTE disease: CHEST guideline and expert panel report. Chest. 2016;149(2):315-352.</li>
+          <li id="ref-9">Pengo V, Denas G, Zoppellaro G, et al. Rivaroxaban vs warfarin in high-risk patients with antiphospholipid syndrome. Blood. 2018;132(13):1365-1371.</li>
+          <li id="ref-10">Andreoli L, Bertsias GK, Agmon-Levin N, et al. EULAR recommendations for women's health and the management of family planning, assisted reproduction, pregnancy and menopause in patients with systemic lupus erythematosus and/or antiphospholipid syndrome. Ann Rheum Dis. 2017;76(3):476-485.</li>
         </ol>
       </div>
 
@@ -1806,19 +1840,19 @@
             <span class="pill pill-specialty">Endocrinology</span>
           </div>
           <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="glp1-substance-use-2026">&#9734;</button>
+            <button class="action-btn star" title="Star this study" data-id="glp1-substance-use-reduced-2026">&#9734;</button>
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Mon, 09 Mar 2026 23:00:13 +000</div>
-        <div class="wn-title">Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study among US veterans with type 2 diabetes</div>
+        <div class="wn-title">Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders</div>        <div class="wn-study-meta"><strong>Design:</strong> Retrospective cohort study of US veterans with type 2 diabetes</div>
         <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes</li></ul>
+        <ul class="wn-bullets"><li>GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes</li><li>Study received Evidence Rating Level 2 (Good)</li></ul>
         <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This finding suggests potential dual benefit when prescribing GLP-1 agonists for diabetes, particularly in patients with substance use risk factors</li></ul>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This finding may influence prescribing decisions for GLP-1 agonists in diabetic patients with substance use risk factors</li><li>Clinical context: Adds to growing evidence of pleiotropic effects of GLP-1 agonists beyond glycemic control and weight management</li></ul>
         <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>Veteran population may not be generalizable</li></ul>
+        <ul class="wn-bullets wn-limitations"><li>Observational design cannot establish causation</li><li>Veterans population may limit generalizability</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> GLP-1 agonists may provide unexpected protection against substance use disorders in diabetic patients.
+          <strong>Bottom Line:</strong> GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in diabetic patients.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-moderate">
@@ -1836,19 +1870,19 @@
             <span class="pill pill-specialty">Neurology</span>
           </div>
           <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="ct-angiography-stroke-2026">&#9734;</button>
+            <button class="action-btn star" title="Star this study" data-id="ct-angiography-stroke-management-2026">&#9734;</button>
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Mon, 09 Mar 2026 15:00:43 +000</div>
-        <div class="wn-title">Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke</div>        <div class="wn-study-meta"><strong>Design:</strong> Study examining utility of CT angiography in suspected stroke patients</div>
+        <div class="wn-title">Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke</div>        <div class="wn-study-meta"><strong>Design:</strong> Study evaluating CT angiography findings in suspected stroke patients</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients</li><li>Highest yield when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms</li></ul>
         <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This supports selective use of CT angiography rather than routine ordering, potentially improving diagnostic efficiency and resource utilization in stroke workups</li></ul>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Helps guide appropriate use of CT angiography resources in emergency stroke evaluation</li><li>Clinical context: May improve diagnostic accuracy and treatment decisions in acute stroke care</li></ul>
         <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Study design and sample size not specified</li></ul>
+        <ul class="wn-bullets wn-limitations"><li>Study design and methodology not fully described</li><li>Unclear if cost-effectiveness was evaluated</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> CT angiography should be prioritized for stroke patients with focal deficits or abnormal initial imaging rather than used routinely.
+          <strong>Bottom Line:</strong> CT angiography is most valuable for stroke evaluation when patients have focal deficits or abnormal initial imaging.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-moderate">
@@ -1856,6 +1890,66 @@
             Moderate confidence
           </div>
           <a href="https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">RCT</span>
+            <span class="pill pill-specialty">Emergency Medicine</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-ed-pain-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
+        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority randomized controlled trial</div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the ED</li><li>Study received Evidence Rating Level 1 (Excellent)</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Supports routine addition of acetaminophen to morphine for acute pain management in hospital settings</li><li>Clinical context: May help reduce opioid requirements through multimodal pain management approach</li></ul>
+        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations"><li>Single-center study may limit generalizability</li><li>Specific patient populations and pain types not detailed</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior pain control compared to morphine alone in the emergency department.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">Observational</span>
+            <span class="pill pill-specialty">Neonatology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="environmental-preterm-survival-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 00:00:28 +000</div>
+        <div class="wn-title">Maternal exposure to environmental stressors is associated with decreased odds of infant survival among preterm infants</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study of very preterm infants&ensp;&bull;&ensp;<strong>Outcome:</strong> Infant survival without major morbidity</div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>Maternal exposure to low greenness levels, high ozone levels, and low temperatures was associated with decreased odds of infant survival without major morbidity in very preterm infants</li><li>Study received Evidence Rating Level 2 (Good)</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Environmental factors during pregnancy may influence neonatal outcomes and should be considered in preterm birth risk assessment</li><li>Clinical context: May inform public health interventions and counseling for high-risk pregnancies</li></ul>
+        <div class="wn-section-label">Limitations</div>
+        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>Confounding by socioeconomic factors may not be fully controlled</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Environmental stressors during pregnancy may adversely affect survival outcomes in very preterm infants.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Moderate confidence
+          </div>
+          <a href="https://www.2minutemedicine.com/maternal-exposure-to-environmental-stressors-is-associated-with-decreased-odds-of-infant-survival-among-preterm-infants/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
         </div>
       </div>
 
@@ -1886,36 +1980,6 @@
             Moderate confidence
           </div>
           <a href="https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">RCT</span>
-            <span class="pill pill-specialty">Emergency Medicine</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-ed-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
-        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority randomized controlled trial</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Morphine plus placebo is not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This supports routine addition of acetaminophen to morphine for acute pain rather than using morphine alone, providing evidence for multimodal analgesia</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Non-inferiority trial design may miss clinically meaningful differences</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior acute pain control compared to morphine alone in the ED.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
         </div>
       </div>
 
@@ -1979,66 +2043,6 @@
       <div class="wn-card">
         <div class="wn-card-header">
           <div class="wn-tags">
-            <span class="pill pill-rct">RCT</span>
-            <span class="pill pill-specialty">Emergency Medicine</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-ed-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
-        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority trial</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Morphine plus placebo is not noninferior to morphine plus acetaminophen in the management of acute pain in the emergency department</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This supports routine addition of acetaminophen to morphine for acute pain management in hospitalized patients</li><li>Clinical context: Challenges the practice of using morphine alone and reinforces multimodal pain management strategies</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Study limited to emergency department setting</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior pain control compared to morphine alone in acute care settings.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Surgery/Cardiology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="sleep-apnea-postop-cv-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 00:00:43 +000</div>
-        <div class="wn-title">Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study&ensp;&bull;&ensp;<strong>Outcome:</strong> 30-day postoperative cardiovascular events and mortality</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>In patients with obstructive sleep apnea, higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This provides a new risk stratification tool for perioperative management of OSA patients undergoing surgery</li><li>Clinical context: May help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and cardiology consultation</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Sleep apnea-specific hypoxic burden serves as a novel predictor of postoperative cardiovascular risk in OSA patients.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-moderate">
-            <span class="confidence-dot"></span>
-            Moderate confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
             <span class="pill pill-rct">Observational</span>
             <span class="pill pill-specialty">Oncology</span>
           </div>
@@ -2069,63 +2073,6 @@
       <div class="wn-card">
         <div class="wn-card-header">
           <div class="wn-tags">
-            <span class="pill pill-fda">FDA Action</span>
-            <span class="pill pill-specialty">Hematology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="iberdomide-myeloma-fda-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 18:00:19 +000</div>
-        <div class="wn-title">FDA grants priority review for iberdomide-based myeloma regimen</div>        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents</li><li>Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This represents a potential new treatment option for multiple myeloma patients, particularly those with relapsed/refractory disease</li><li>Clinical context: Priority review designation suggests significant clinical benefit and expedited approval timeline for hospitalists managing myeloma patients</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> FDA priority review for iberdomide offers hope for improved multiple myeloma treatment outcomes with a novel mechanism of action.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-preliminary">
-            <span class="confidence-dot"></span>
-            Preliminary confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">RCT</span>
-            <span class="pill pill-specialty">Emergency Medicine</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-pain-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
-        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority trial comparing morphine plus placebo vs morphine plus acetaminophen</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This supports the routine addition of acetaminophen to opioid therapy for acute pain management</li><li>Clinical context: Findings are relevant for hospitalists managing acute pain, suggesting multimodal analgesia with acetaminophen improves outcomes</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Single-center emergency department setting may limit generalizability</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior acute pain relief compared to morphine alone in emergency settings.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
             <span class="pill pill-rct">RCT</span>
             <span class="pill pill-specialty">Dermatology</span>
           </div>
@@ -2150,123 +2097,6 @@
             Moderate confidence
           </div>
           <a href="https://www.2minutemedicine.com/oral-remibrutinib-hits-phase-3-primary-endpoint-for-inducible-hives/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Perioperative Medicine</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="sleep-apnea-postop-risk-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 00:00:43 +000</div>
-        <div class="wn-title">Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study of patients with obstructive sleep apnea&ensp;&bull;&ensp;<strong>Outcome:</strong> 30-day postoperative cardiovascular events and mortality</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: SASHB may serve as a better risk stratification tool than traditional OSA severity measures for perioperative planning</li><li>Clinical context: This could help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and management</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>Confounding factors may influence outcomes</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Sleep apnea-specific hypoxic burden better predicts postoperative cardiovascular risk than traditional OSA metrics.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-moderate">
-            <span class="confidence-dot"></span>
-            Moderate confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-fda">FDA Action</span>
-            <span class="pill pill-specialty">Hematology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="iberdomide-myeloma-fda-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 18:00:19 +000</div>
-        <div class="wn-title">FDA grants priority review for iberdomide-based myeloma regimen</div>        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents</li><li>Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Represents potential new treatment option for multiple myeloma patients, particularly relevant for hospitalists managing myeloma complications and coordinating care with hematology-oncology</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> FDA priority review of iberdomide offers potential new oral treatment option for multiple myeloma patients.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-preliminary">
-            <span class="confidence-dot"></span>
-            Preliminary confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">RCT</span>
-            <span class="pill pill-specialty">Emergency Medicine</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="morphine-acetaminophen-pain-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
-        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority trial</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Supports routine addition of acetaminophen to opioids for acute pain management, relevant for hospitalists managing pain in admitted patients and optimizing multimodal analgesia</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Study limited to emergency department setting</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Adding acetaminophen to morphine appears superior to morphine alone for acute pain management.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-high">
-            <span class="confidence-dot"></span>
-            High confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Pulmonology</span>
-          </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="sleep-apnea-postop-risk-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 00:00:43 +000</div>
-        <div class="wn-title">Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study&ensp;&bull;&ensp;<strong>Outcome:</strong> 30-day postoperative cardiovascular events and mortality</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: May help hospitalists better risk-stratify OSA patients undergoing surgery and optimize perioperative monitoring and management strategies</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>SASHB measurement may not be readily available in all clinical settings</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Sleep apnea-specific hypoxic burden may serve as a useful perioperative risk stratification tool for OSA patients.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-moderate">
-            <span class="confidence-dot"></span>
-            Moderate confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
         </div>
       </div>
 
@@ -2307,60 +2137,65 @@
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">CLOVERS — Liberal vs Restrictive Early Fluids in Sepsis</h3>
-          <button class="action-btn star" data-id="clovers---liberal-vs-restricti" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">EMPA-KIDNEY — Empagliflozin in CKD</h3>
+          <button class="action-btn star" data-id="empa-kidney---empagliflozin-in" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">NEJM • 2023 • Shapiro NI, et al.</div>
-        <a href="https://www.wikijournalclub.org/wiki/CLOVERS" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
+        <div class="landmark-meta">NEJM &bull; 2023 &bull; EMPA-KIDNEY Collaborative Group</div>
+        
 
         <div class="landmark-section">
           <h4>Clinical Question</h4>
-          <p>In patients with sepsis-induced hypotension who have already received 1-3L of IV fluids, is a strategy that prioritizes early use of vasopressors superior to one that prioritizes fluid boluses?</p>
+          <p>Does empagliflozin reduce kidney disease progression or cardiovascular death in patients with chronic kidney disease, including those with and without diabetes?</p>
         </div>
 
         <div class="landmark-section">
           <h4>Study Design</h4>
-          <p>Multicenter, unblinded, randomized controlled trial with intention-to-treat analysis. Study was halted by DSMB at second interim analysis for futility in primary outcome. Trial protocols applied for 24 hours post-randomization.</p>
+          <p>Randomized, double-blind, placebo-controlled, international multicenter trial. Participants randomized 1:1 to empagliflozin 10mg daily vs placebo. Event-driven trial with planned follow-up until 1,070 primary outcome events occurred.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Population</h4>
-          <p>N=1,563 adults >18 years with sepsis-induced hypotension (SBP <100 after >1L IVF). Mean age 59, 47% female, mean SOFA score 3.4, mean SBP 93.5 mmHg. 92% randomized in ER, median time to randomization 61 minutes, median pre-randomization fluid volume 2050 mL.</p>
+          <p>6,609 adults with CKD (eGFR 20-45 mL/min/1.73m² or eGFR 45-90 with urine albumin ≥200 mg/g). Mean age 63.8 years, 33.6% female, 46.4% with diabetes. Mean eGFR 37.5 mL/min/1.73m², median UACR 412 mg/g. Excluded patients with polycystic kidney disease or recent immunosuppression.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Intervention</h4>
-          <p>Restrictive group (n=782): Prioritized early vasopressor use, halted maintenance/bolus fluids, maximum 2L total fluids including pre-randomization volume. Started norepinephrine for MAP <65 or SBP <90 to achieve MAP ≥65. 'Rescue fluids' allowed for severe hypotension, refractory shock, lactate >4 and rising, or clinical deterioration.</p>
+          <p>Empagliflozin 10 mg once daily (N=3,304)</p>
         </div>
 
         <div class="landmark-section">
           <h4>Comparator / Control</h4>
-          <p>Liberal group (n=781): Prioritized fluid resuscitation with 2L bolus at randomization, then 500cc boluses for MAP <65, SBP <90, lactate >4 and rising, UOP <30cc/hr, HR >110, or vasopressor requirement. 'Rescue vasopressors' allowed for severe hypotension, rising lactate after 2 hours, fluid overload, or >5L total fluids.</p>
+          <p>Matching placebo once daily (N=3,305)</p>
         </div>
 
         <div class="landmark-section">
           <h4>Primary Endpoint</h4>
-          <p>Death from any cause before discharge home at 90 days</p>
+          <p>Composite of kidney disease progression (sustained decline in eGFR ≥40%, end-stage kidney disease, sustained eGFR <10 mL/min/1.73m², or kidney death) or cardiovascular death</p>
         </div>
 
         <div class="landmark-section">
           <h4>Key Findings</h4>
-          <p>No significant difference in 90-day mortality: 14% restrictive vs 14.9% liberal (difference -0.9%, 95% CI -4.4% to 2.6%, p=0.61). Secondary outcomes showed no significant differences in organ-free days, ventilator-free days (23.4 vs 22.8 days), renal replacement therapy-free days, vasopressor-free days, ICU-free days, or hospital-free days.</p>
+          <p>Primary endpoint: 13.1% empagliflozin vs 16.9% placebo (HR 0.72, 95% CI 0.64-0.82, p<0.001). ARR = 3.8%, RRR = 28%, NNT = 26 over median 2.0 years. Kidney-specific component: HR 0.71 (95% CI 0.62-0.81). CV death: HR 0.78 (95% CI 0.56-1.07). Hospitalization for heart failure: HR 0.73 (95% CI 0.54-0.98). All-cause death: HR 0.93 (95% CI 0.78-1.11).</p>
         </div>
 
         <div class="landmark-section">
           <h4>Strengths</h4>
-          <p>Large multicenter RCT with pragmatic design reflecting real-world ED practice. Early randomization (median 61 minutes) in predominantly ED setting (92%). Included safety data on peripheral vasopressor administration. Well-defined protocols with rescue options for both arms.</p>
+          <p>Large, well-powered study with robust primary endpoint. Broad CKD population including non-diabetic patients. Consistent benefit across prespecified subgroups including diabetes status, baseline eGFR, and UACR levels. Low dropout rate (2.1%). Independent adjudication of outcomes.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Weaknesses / Limitations</h4>
-          <p>Unblinded design, stopped early for futility. Significant protocol deviations likely occurred given unblinded nature. Median fluid volume already substantial (2050 mL) before randomization, potentially limiting ability to detect differences between strategies.</p>
+          <p>Relatively short median follow-up (2.0 years). Primary endpoint driven largely by kidney outcomes rather than CV death. Limited racial diversity. Unclear long-term safety beyond 2 years. Post-hoc nature of some subgroup analyses for lower proteinuria levels.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Practice Impact</h4>
+          <p>Established SGLT2 inhibitors as standard of care for CKD progression regardless of diabetes status. Led to FDA approval of empagliflozin for CKD in adults. Updated major guidelines (KDIGO, ADA/ESC) to recommend SGLT2 inhibitors in CKD patients with eGFR ≥20 mL/min/1.73m².</p>
         </div>
 
         <div class="landmark-section">
           <h4>Why It Matters Now</h4>
-          <p>Adds to growing evidence from trials like CLASSIC that restrictive fluid strategies don't improve mortality in sepsis. Provides safety data supporting early peripheral vasopressor use and challenges traditional fluid-first approaches in septic shock management.</p>
+          <p>Represents paradigm shift toward early, aggressive nephroprotection in CKD. Complements DAPA-CKD findings with dapagliflozin. Ongoing questions about optimal timing, combination with other nephroprotective agents (finerenone), and cost-effectiveness in healthcare systems. Real-world implementation studies are validating trial benefits.</p>
         </div>
       </div>
 
@@ -2376,9 +2211,14 @@
           <h4 class="image-card-title">Dermatology Image</h4>
           <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
         </div>
-        <img src="https://cms.sanovaworks.com/uploads/2023/12/f802fdeee91b18cab0f35c62331352bd-small.jpg" alt="Dermatology Image — clinical image 1" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/604fdacb60068cd5e2efa1d91c163eb0-small.jpg" alt="Dermatology Image — clinical image 1" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/0eaf8c0645efe0826e7adda6aa3fb449-small.jpg" alt="Dermatology Image — clinical image 2" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/43ae01cac4f750bf299a35ba0c5e1ef6-small.jpg" alt="Dermatology Image — clinical image 3" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/5356394fc73334ac6ed8f54ee69de57c-small.jpg" alt="Dermatology Image — clinical image 4" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/2bb2b7b4e40dc8a48b754958ef038989-small.jpg" alt="Dermatology Image — clinical image 5" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/64ba4956a2ccebcba51a51d77cc9bc9a-small.jpg" alt="Dermatology Image — clinical image 6" class="image-card-img" loading="lazy">
         <p class="image-card-desc">© 2026 Journal of Drugs in Dermatology. All Rights Reserved. JDD, a peer-reviewed, MEDLINE®/PubMed® indexed journal, offers the dermatology community strong content of utmost quality and relevance on drugs, devices, and methods.</p>
-        <a href="https://jddonline.com/project-atlas/inclusive-derm/majocchi-granuloma/" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>
+        <a href="https://jddonline.com/project-atlas/inclusive-derm/nevi-compound/" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>
       </div>
 
       <div class="nejm-reminder-card">

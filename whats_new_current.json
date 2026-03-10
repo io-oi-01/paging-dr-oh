@@ -1,24 +1,26 @@
 [
   {
-    "article_index": 0,
-    "id": "glp1-substance-use-2026",
+    "article_index": 1,
+    "id": "glp1-substance-use-reduced-2026",
     "type": "Observational",
     "specialty": "Endocrinology",
     "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Cohort study among US veterans with type 2 diabetes",
+    "study_design": "Retrospective cohort study of US veterans with type 2 diabetes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes",
+      "Study received Evidence Rating Level 2 (Good)"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding suggests potential dual benefit when prescribing GLP-1 agonists for diabetes, particularly in patients with substance use risk factors"
+      "Clinical context: This finding may influence prescribing decisions for GLP-1 agonists in diabetic patients with substance use risk factors",
+      "Clinical context: Adds to growing evidence of pleiotropic effects of GLP-1 agonists beyond glycemic control and weight management"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Veteran population may not be generalizable"
+      "Observational design cannot establish causation",
+      "Veterans population may limit generalizability"
     ],
-    "bottom_line": "GLP-1 agonists may provide unexpected protection against substance use disorders in diabetic patients.",
+    "bottom_line": "GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in diabetic patients.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
@@ -26,12 +28,12 @@
     "date_iso": "2026-03-10"
   },
   {
-    "article_index": 2,
-    "id": "ct-angiography-stroke-2026",
+    "article_index": 3,
+    "id": "ct-angiography-stroke-management-2026",
     "type": "Observational",
     "specialty": "Neurology",
     "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Study examining utility of CT angiography in suspected stroke patients",
+    "study_design": "Study evaluating CT angiography findings in suspected stroke patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -39,16 +41,74 @@
       "Highest yield when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports selective use of CT angiography rather than routine ordering, potentially improving diagnostic efficiency and resource utilization in stroke workups"
+      "Clinical context: Helps guide appropriate use of CT angiography resources in emergency stroke evaluation",
+      "Clinical context: May improve diagnostic accuracy and treatment decisions in acute stroke care"
     ],
     "limitations": [
-      "Study design and sample size not specified"
+      "Study design and methodology not fully described",
+      "Unclear if cost-effectiveness was evaluated"
     ],
-    "bottom_line": "CT angiography should be prioritized for stroke patients with focal deficits or abnormal initial imaging rather than used routinely.",
+    "bottom_line": "CT angiography is most valuable for stroke evaluation when patients have focal deficits or abnormal initial imaging.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
     "date": "Mon, 09 Mar 2026 15:00:43 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 7,
+    "id": "morphine-acetaminophen-ed-pain-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
+    "study_design": "Non-inferiority randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the ED",
+      "Study received Evidence Rating Level 1 (Excellent)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports routine addition of acetaminophen to morphine for acute pain management in hospital settings",
+      "Clinical context: May help reduce opioid requirements through multimodal pain management approach"
+    ],
+    "limitations": [
+      "Single-center study may limit generalizability",
+      "Specific patient populations and pain types not detailed"
+    ],
+    "bottom_line": "Adding acetaminophen to morphine provides superior pain control compared to morphine alone in the emergency department.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
+    "date": "Fri, 06 Mar 2026 16:00:09 +000",
+    "date_iso": "2026-03-10"
+  },
+  {
+    "article_index": 8,
+    "id": "environmental-preterm-survival-2026",
+    "type": "Observational",
+    "specialty": "Neonatology",
+    "title": "Maternal exposure to environmental stressors is associated with decreased odds of infant survival among preterm infants",
+    "study_design": "Cohort study of very preterm infants",
+    "sample_size": "",
+    "primary_outcome": "Infant survival without major morbidity",
+    "source_summary_bullets": [
+      "Maternal exposure to low greenness levels, high ozone levels, and low temperatures was associated with decreased odds of infant survival without major morbidity in very preterm infants",
+      "Study received Evidence Rating Level 2 (Good)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Environmental factors during pregnancy may influence neonatal outcomes and should be considered in preterm birth risk assessment",
+      "Clinical context: May inform public health interventions and counseling for high-risk pregnancies"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Confounding by socioeconomic factors may not be fully controlled"
+    ],
+    "bottom_line": "Environmental stressors during pregnancy may adversely affect survival outcomes in very preterm infants.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/maternal-exposure-to-environmental-stressors-is-associated-with-decreased-odds-of-infant-survival-among-preterm-infants/",
+    "date": "Fri, 06 Mar 2026 00:00:28 +000",
     "date_iso": "2026-03-10"
   },
   {
@@ -75,31 +135,6 @@
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
     "date": "Sat, 07 Mar 2026 00:00:34 +000",
-    "date_iso": "2026-03-10"
-  },
-  {
-    "article_index": 6,
-    "id": "morphine-acetaminophen-ed-2026",
-    "type": "RCT",
-    "specialty": "Emergency Medicine",
-    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Morphine plus placebo is not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports routine addition of acetaminophen to morphine for acute pain rather than using morphine alone, providing evidence for multimodal analgesia"
-    ],
-    "limitations": [
-      "Non-inferiority trial design may miss clinically meaningful differences"
-    ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain control compared to morphine alone in the ED.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "date": "Fri, 06 Mar 2026 16:00:09 +000",
     "date_iso": "2026-03-10"
   },
   {
@@ -154,58 +189,6 @@
     "date_iso": "2026-03-09"
   },
   {
-    "article_index": 2,
-    "id": "morphine-acetaminophen-ed-2026",
-    "type": "RCT",
-    "specialty": "Emergency Medicine",
-    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Morphine plus placebo is not noninferior to morphine plus acetaminophen in the management of acute pain in the emergency department"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports routine addition of acetaminophen to morphine for acute pain management in hospitalized patients",
-      "Clinical context: Challenges the practice of using morphine alone and reinforces multimodal pain management strategies"
-    ],
-    "limitations": [
-      "Study limited to emergency department setting"
-    ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior pain control compared to morphine alone in acute care settings.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-09"
-  },
-  {
-    "article_index": 5,
-    "id": "sleep-apnea-postop-cv-2026",
-    "type": "Observational",
-    "specialty": "Surgery/Cardiology",
-    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
-    "study_design": "Cohort study",
-    "sample_size": "",
-    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
-    "source_summary_bullets": [
-      "In patients with obstructive sleep apnea, higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This provides a new risk stratification tool for perioperative management of OSA patients undergoing surgery",
-      "Clinical context: May help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and cardiology consultation"
-    ],
-    "limitations": [
-      "Observational design limits causal inference"
-    ],
-    "bottom_line": "Sleep apnea-specific hypoxic burden serves as a novel predictor of postoperative cardiovascular risk in OSA patients.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
-    "date": "Thu, 05 Mar 2026 00:00:43 +000",
-    "date_iso": "2026-03-09"
-  },
-  {
     "article_index": 9,
     "id": "rezatapopt-p53-reactivator-2026",
     "type": "Observational",
@@ -234,57 +217,6 @@
     "date_iso": "2026-03-09"
   },
   {
-    "article_index": 1,
-    "id": "iberdomide-myeloma-fda-2026",
-    "type": "FDA Action",
-    "specialty": "Hematology",
-    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
-      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential new treatment option for multiple myeloma patients, particularly those with relapsed/refractory disease",
-      "Clinical context: Priority review designation suggests significant clinical benefit and expedited approval timeline for hospitalists managing myeloma patients"
-    ],
-    "limitations": [],
-    "bottom_line": "FDA priority review for iberdomide offers hope for improved multiple myeloma treatment outcomes with a novel mechanism of action.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
-    "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
-    "article_index": 2,
-    "id": "morphine-acetaminophen-pain-2026",
-    "type": "RCT",
-    "specialty": "Emergency Medicine",
-    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority trial comparing morphine plus placebo vs morphine plus acetaminophen",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports the routine addition of acetaminophen to opioid therapy for acute pain management",
-      "Clinical context: Findings are relevant for hospitalists managing acute pain, suggesting multimodal analgesia with acetaminophen improves outcomes"
-    ],
-    "limitations": [
-      "Single-center emergency department setting may limit generalizability"
-    ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain relief compared to morphine alone in emergency settings.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
     "article_index": 4,
     "id": "remibrutinib-urticaria-2026",
     "type": "RCT",
@@ -309,108 +241,6 @@
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/oral-remibrutinib-hits-phase-3-primary-endpoint-for-inducible-hives/",
     "date": "Thu, 05 Mar 2026 15:00:34 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
-    "article_index": 5,
-    "id": "sleep-apnea-postop-risk-2026",
-    "type": "Observational",
-    "specialty": "Perioperative Medicine",
-    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
-    "study_design": "Cohort study of patients with obstructive sleep apnea",
-    "sample_size": "",
-    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
-    "source_summary_bullets": [
-      "Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: SASHB may serve as a better risk stratification tool than traditional OSA severity measures for perioperative planning",
-      "Clinical context: This could help hospitalists identify high-risk OSA patients who need enhanced perioperative monitoring and management"
-    ],
-    "limitations": [
-      "Observational design limits causal inference",
-      "Confounding factors may influence outcomes"
-    ],
-    "bottom_line": "Sleep apnea-specific hypoxic burden better predicts postoperative cardiovascular risk than traditional OSA metrics.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
-    "date": "Thu, 05 Mar 2026 00:00:43 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
-    "article_index": 1,
-    "id": "iberdomide-myeloma-fda-2026",
-    "type": "FDA Action",
-    "specialty": "Hematology",
-    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
-      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Represents potential new treatment option for multiple myeloma patients, particularly relevant for hospitalists managing myeloma complications and coordinating care with hematology-oncology"
-    ],
-    "limitations": [],
-    "bottom_line": "FDA priority review of iberdomide offers potential new oral treatment option for multiple myeloma patients.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
-    "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
-    "article_index": 2,
-    "id": "morphine-acetaminophen-pain-2026",
-    "type": "RCT",
-    "specialty": "Emergency Medicine",
-    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Supports routine addition of acetaminophen to opioids for acute pain management, relevant for hospitalists managing pain in admitted patients and optimizing multimodal analgesia"
-    ],
-    "limitations": [
-      "Study limited to emergency department setting"
-    ],
-    "bottom_line": "Adding acetaminophen to morphine appears superior to morphine alone for acute pain management.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-08"
-  },
-  {
-    "article_index": 5,
-    "id": "sleep-apnea-postop-risk-2026",
-    "type": "Observational",
-    "specialty": "Pulmonology",
-    "title": "Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea",
-    "study_design": "Cohort study",
-    "sample_size": "",
-    "primary_outcome": "30-day postoperative cardiovascular events and mortality",
-    "source_summary_bullets": [
-      "Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: May help hospitalists better risk-stratify OSA patients undergoing surgery and optimize perioperative monitoring and management strategies"
-    ],
-    "limitations": [
-      "Observational design limits causal inference",
-      "SASHB measurement may not be readily available in all clinical settings"
-    ],
-    "bottom_line": "Sleep apnea-specific hypoxic burden may serve as a useful perioperative risk stratification tool for OSA patients.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
-    "date": "Thu, 05 Mar 2026 00:00:43 +000",
     "date_iso": "2026-03-08"
   },
   {
