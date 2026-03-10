@@ -979,6 +979,58 @@ If there are no duplicates, return: {{"merges": []}}"""
     return remaining, existing_items
 
 
+def remove_wn_duplicates(items):
+    """Remove duplicate What's New items based on id, source_url, and normalized title.
+
+    Keeps the FIRST occurrence (most recent, since newest items are prepended).
+    No LLM call needed — pure Python string matching.
+    """
+    if not items:
+        return items
+
+    seen_ids   = set()
+    seen_urls  = set()
+    seen_titles = set()
+    unique = []
+
+    for item in items:
+        # Check by id
+        item_id = item.get("id", "").strip()
+        if item_id and item_id in seen_ids:
+            continue
+
+        # Check by source_url
+        url = item.get("source_url", "").strip().rstrip("/")
+        if url and url in seen_urls:
+            if item_id:
+                seen_ids.add(item_id)
+            continue
+
+        # Check by normalized title (lowercase, strip punctuation/whitespace)
+        title = item.get("title", "")
+        norm_title = re.sub(r'[^a-z0-9]', '', title.lower())
+        if norm_title and norm_title in seen_titles:
+            if item_id:
+                seen_ids.add(item_id)
+            if url:
+                seen_urls.add(url)
+            continue
+
+        # Not a duplicate — keep it
+        if item_id:
+            seen_ids.add(item_id)
+        if url:
+            seen_urls.add(url)
+        if norm_title:
+            seen_titles.add(norm_title)
+        unique.append(item)
+
+    removed = len(items) - len(unique)
+    if removed:
+        print(f"  Removed {removed} duplicate(s) from What's New ({len(unique)} items remaining).")
+    return unique
+
+
 def generate_landmark_content(study_info, source_text=None, source_url=None):
     """
     Call Claude to generate a deep-dive analysis of a landmark trial.
@@ -2045,6 +2097,9 @@ def main():
 
     # 7. Add today's new items to the front of the current list (archive is now client-side localStorage)
     wn_current = new_items + wn_current
+
+    # 7b. Remove duplicates (by id, URL, or title)
+    wn_current = remove_wn_duplicates(wn_current)
 
     # 9. Extract CSS from template
     css = get_css_from_template()

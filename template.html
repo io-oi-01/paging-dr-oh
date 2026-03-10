@@ -12,22 +12,31 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --queen-blue: #406B8C;
-      --queen-blue-dark: #345873;
-      --desert-sand: #E4C5AF;
-      --desert-sand-light: #F2E6D9;
-      --english-red: #A4485E;
-      --mandarin: #EB8445;
-      --mandarin-dark: #d4753a;
-      --cadet-blue: #9CBCC6;
-      --cadet-blue-light: #D4E6EB;
+      /* ── Palette from artwork ── */
+      --queen-blue: #7D1150;          /* Deep plum/wine — primary headings */
+      --queen-blue-dark: #5C0D3C;     /* Darker plum — gradient end */
+      --desert-sand: #F5EDE3;         /* Warm cream — page background */
+      --desert-sand-light: #F5E0D8;   /* Peach-light — accordion/score bg */
+      --english-red: #B2325A;         /* Berry/cranberry — card borders */
+      --mandarin: #C45A1A;            /* Burnt sienna — links, CTAs */
+      --mandarin-dark: #A84D16;       /* Deeper sienna — hover */
+      --cadet-blue: #CEB2D2;          /* Soft lavender — secondary accent */
+      --cadet-blue-light: #EDE0F0;    /* Light lavender — disease header */
+      --golden: #BE8E40;              /* Golden ochre — stars, highlights */
+      --olive: #A8A038;               /* Olive/chartreuse — accents */
+      --powder-blue: #B8C8DE;         /* Powder blue — cool accent */
+      --peach: #E8AE98;               /* Peach/blush — soft accent */
+      --dark-maroon: #4D2832;         /* Dark maroon — deep text alt */
+      --light-bg: #F8F4F0;            /* Warm light bg for meta */
+      --text: #2D2D2D;                /* Body text color */
+      --cadet-blue-dark: #8A6890;     /* Darker lavender — interp text */
       --white: #FFFFFF;
-      --off-white: #FDF9F5;
+      --off-white: #FDF8F5;           /* Warm off-white */
       --dark: #2D2D2D;
       --gray: #6B6B6B;
-      --light-gray: #E8E8E8;
-      --shadow: 0 2px 8px rgba(0,0,0,0.08);
-      --shadow-hover: 0 4px 16px rgba(0,0,0,0.12);
+      --light-gray: #E8E0E0;          /* Warm light gray */
+      --shadow: 0 2px 10px rgba(77,40,50,0.10);
+      --shadow-hover: 0 6px 20px rgba(77,40,50,0.16);
       --radius: 12px;
       --radius-sm: 8px;
       --transition: 0.3s ease;
@@ -55,10 +64,11 @@
 
     /* ========== HEADER ========== */
     .site-header {
-      background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark));
+      background: linear-gradient(135deg, var(--english-red), var(--queen-blue), var(--queen-blue-dark));
       color: var(--white);
-      padding: 28px 20px 24px;
+      padding: 32px 20px 28px;
       text-align: center;
+      box-shadow: 0 4px 20px rgba(77,40,50,0.25);
     }
 
     .site-header h1 {
@@ -66,12 +76,13 @@
       font-weight: 700;
       letter-spacing: 0.5px;
       margin-bottom: 4px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
     }
 
     .site-header .tagline {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.9rem;
-      opacity: 0.85;
+      opacity: 0.9;
       font-weight: 400;
     }
 
@@ -118,11 +129,11 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: var(--mandarin);
+      background: linear-gradient(90deg, var(--english-red), var(--mandarin));
       border-radius: 3px 3px 0 0;
     }
 
-    .tab-btn:hover:not(.active) { color: var(--queen-blue); }
+    .tab-btn:hover:not(.active) { color: var(--english-red); }
 
     /* ========== TAB CONTENT ========== */
     .tab-content {
@@ -156,7 +167,7 @@
 
     /* ========== DISEASE HEADER ========== */
     .disease-header {
-      background: var(--cadet-blue-light);
+      background: linear-gradient(135deg, var(--cadet-blue-light), #F0E0F4);
       border-left-color: var(--cadet-blue);
       text-align: center;
       padding: 32px 20px;
@@ -280,10 +291,10 @@
     }
 
     .pill-rct        { background: #E8F5E9; color: #2E7D32; }
-    .pill-meta       { background: #E3F2FD; color: #1565C0; }
-    .pill-guideline  { background: #FFF3E0; color: #E65100; }
-    .pill-fda        { background: #FCE4EC; color: #C62828; }
-    .pill-specialty  { background: var(--cadet-blue-light); color: var(--queen-blue); }
+    .pill-meta       { background: var(--cadet-blue-light); color: var(--queen-blue); }
+    .pill-guideline  { background: #FFF3E0; color: var(--mandarin); }
+    .pill-fda        { background: #FCE4EC; color: var(--english-red); }
+    .pill-specialty  { background: #E8E6D0; color: #6B6820; }
 
     /* ========== BUTTONS ========== */
     .btn {
@@ -303,13 +314,13 @@
     .btn:active { transform: scale(0.97); }
 
     .btn-primary {
-      background: var(--mandarin);
+      background: linear-gradient(135deg, var(--mandarin), var(--english-red));
       color: var(--white);
     }
 
     .btn-primary:hover {
-      background: var(--mandarin-dark);
-      box-shadow: 0 4px 12px rgba(235, 132, 69, 0.3);
+      background: linear-gradient(135deg, var(--mandarin-dark), #9A2A4E);
+      box-shadow: 0 4px 14px rgba(178,50,90,0.30);
     }
 
     .btn-primary:disabled {
@@ -347,7 +358,7 @@
 
     .action-btn:hover { transform: scale(1.2); opacity: 0.8; }
     .action-btn.active { opacity: 1; }
-    .action-btn.star.active { color: var(--mandarin); }
+    .action-btn.star.active { color: var(--golden); }
 
     .card-actions {
       display: flex;
@@ -361,7 +372,7 @@
       padding: 24px;
       margin-bottom: 16px;
       box-shadow: var(--shadow);
-      border: 2px solid var(--cadet-blue);
+      border: 2px solid var(--powder-blue);
     }
 
     .calculator-card h4 {
@@ -439,11 +450,11 @@
       padding: 20px;
       margin: 24px 0;
       box-shadow: var(--shadow);
-      border: 2px solid var(--mandarin);
+      border: 2px solid var(--golden);
     }
 
     .guidelines-box h4 {
-      color: var(--mandarin);
+      color: var(--golden);
       margin-bottom: 14px;
       font-size: 1.05rem;
     }
@@ -510,7 +521,7 @@
       color: var(--queen-blue);
       margin: 28px 0 16px;
       padding-bottom: 8px;
-      border-bottom: 2px solid var(--cadet-blue);
+      border-bottom: 2px solid var(--golden);
     }
 
     /* ========== WHAT'S NEW CARDS ========== */
@@ -570,13 +581,13 @@
     }
 
     .wn-bottom-line {
-      background: var(--desert-sand-light);
+      background: linear-gradient(135deg, var(--desert-sand-light), #FDF5F0);
       padding: 12px 16px;
       border-radius: var(--radius-sm);
       margin: 14px 0;
       font-size: 0.9rem;
       font-weight: 500;
-      border-left: 3px solid var(--mandarin);
+      border-left: 3px solid var(--english-red);
       line-height: 1.5;
     }
 
@@ -618,11 +629,11 @@
 
     /* ========== TALKING ABOUT SECTION ========== */
     .trending-section {
-      background: linear-gradient(135deg, #FFF8F0, #FFF3E0);
+      background: linear-gradient(135deg, #FDF5F0, #F5E0D8);
       border-radius: var(--radius);
       padding: 20px;
       margin-bottom: 24px;
-      border: 2px solid var(--mandarin);
+      border: 2px solid var(--english-red);
     }
 
     .trending-header {
@@ -631,7 +642,7 @@
       gap: 10px;
       margin-bottom: 16px;
       padding-bottom: 12px;
-      border-bottom: 2px solid rgba(235, 132, 69, 0.3);
+      border-bottom: 2px solid rgba(178,50,90,0.25);
     }
 
     .trending-icon {
@@ -644,7 +655,7 @@
       font-size: 0.85rem;
       font-weight: 700;
       letter-spacing: 2px;
-      color: var(--mandarin-dark);
+      color: var(--english-red);
       margin: 0;
     }
 
@@ -655,12 +666,12 @@
     }
 
     .wn-card-trending {
-      border-left: 4px solid var(--mandarin) !important;
+      border-left: 4px solid var(--english-red) !important;
       background: var(--white);
     }
 
     .wn-card-trending:hover {
-      border-left-color: var(--mandarin-dark) !important;
+      border-left-color: var(--queen-blue) !important;
     }
 
     .trending-meta {
@@ -671,13 +682,13 @@
       gap: 8px;
       margin-bottom: 12px;
       padding: 8px 12px;
-      background: rgba(235, 132, 69, 0.08);
+      background: rgba(178,50,90,0.06);
       border-radius: var(--radius-sm);
       font-size: 0.8rem;
     }
 
     .trending-sources {
-      color: var(--mandarin-dark);
+      color: var(--english-red);
       font-weight: 600;
     }
 
@@ -817,7 +828,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 14px 20px;
-      background: var(--queen-blue);
+      background: linear-gradient(135deg, var(--english-red), var(--queen-blue));
       color: var(--white);
       border-radius: var(--radius-sm);
       cursor: pointer;
@@ -825,7 +836,7 @@
       user-select: none;
     }
 
-    .archive-month-header:hover { background: var(--queen-blue-dark); }
+    .archive-month-header:hover { background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark)); }
 
     .archive-month-header h3 {
       font-size: 1rem;
@@ -979,7 +990,7 @@
 
     .nejm-reminder-card {
       background: var(--off-white);
-      border: 2px solid var(--cadet-blue);
+      border: 2px solid var(--powder-blue);
       border-radius: var(--radius);
       padding: 24px;
       margin-bottom: 20px;
