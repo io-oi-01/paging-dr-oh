@@ -33,7 +33,10 @@
     "Takotsubo Cardiomyopathy",
     "Hypertensive Emergency",
     "Malignant Spinal Cord Compression",
-    "Antiphospholipid Syndrome"
+    "Antiphospholipid Syndrome",
+    "Pericarditis and Pericardial Effusion",
+    "Cardiac Tamponade",
+    "Osteomyelitis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -69,7 +72,10 @@
     "clovers-2023",
     "empa-kidney-2023",
     "empa-kidney-2023",
-    "empa-kidney-2023"
+    "empa-kidney-2023",
+    "65-trial-2020",
+    "65-trial-2020",
+    "65-trial-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -87,12 +93,18 @@
     "glp1-substance-use-reduced-2026",
     "ct-angiography-stroke-management-2026",
     "morphine-acetaminophen-ed-pain-2026",
-    "environmental-preterm-survival-2026"
+    "environmental-preterm-survival-2026",
+    "glp1-substance-use-risk-2026",
+    "ct-angiography-stroke-emergency-2026",
+    "hpv-vaccine-cervical-protection-2026",
+    "iberdomide-myeloma-priority-review-2026",
+    "morphine-acetaminophen-emergency-pain-2026"
   ],
-  "last_run": "2026-03-10",
+  "last_run": "2026-03-11",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
-    "Nevi: Compound"
+    "Nevi: Compound",
+    "Macular Amyloidosis"
   ]
 }

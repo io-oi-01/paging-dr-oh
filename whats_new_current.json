@@ -1,63 +1,115 @@
 [
   {
-    "article_index": 1,
-    "id": "glp1-substance-use-reduced-2026",
+    "article_index": 2,
+    "id": "glp1-substance-use-risk-2026",
     "type": "Observational",
-    "specialty": "Endocrinology",
+    "specialty": "Endocrinology/Internal Medicine",
     "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Retrospective cohort study of US veterans with type 2 diabetes",
+    "study_design": "Retrospective cohort study among US veterans with type 2 diabetes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes",
-      "Study received Evidence Rating Level 2 (Good)"
+      "Use of GLP-1 receptor agonists was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes",
+      "Evidence rating level: 2 (Good)"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding may influence prescribing decisions for GLP-1 agonists in diabetic patients with substance use risk factors",
-      "Clinical context: Adds to growing evidence of pleiotropic effects of GLP-1 agonists beyond glycemic control and weight management"
+      "Clinical context: This finding adds to growing evidence of GLP-1 agonists' effects beyond glycemic control, potentially informing prescribing decisions for diabetic patients with addiction risk factors",
+      "Clinical context: May influence treatment selection in patients with comorbid diabetes and substance use history or risk"
     ],
     "limitations": [
-      "Observational design cannot establish causation",
-      "Veterans population may limit generalizability"
+      "Observational design limits causal inference",
+      "Veteran population may not be generalizable"
     ],
-    "bottom_line": "GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in diabetic patients.",
+    "bottom_line": "GLP-1 receptor agonists may provide additional benefit in reducing substance use disorder risk in diabetic patients.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
     "date": "Mon, 09 Mar 2026 23:00:13 +000",
-    "date_iso": "2026-03-10"
+    "date_iso": "2026-03-11"
   },
   {
-    "article_index": 3,
-    "id": "ct-angiography-stroke-management-2026",
+    "article_index": 4,
+    "id": "ct-angiography-stroke-emergency-2026",
     "type": "Observational",
-    "specialty": "Neurology",
+    "specialty": "Neurology/Emergency Medicine",
     "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Study evaluating CT angiography findings in suspected stroke patients",
+    "study_design": "Study of CT angiography utility in suspected stroke patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients",
-      "Highest yield when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+      "CTAHN is most likely to reveal acute findings that change emergency management in patients with suspected stroke, especially with focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Helps guide appropriate use of CT angiography resources in emergency stroke evaluation",
-      "Clinical context: May improve diagnostic accuracy and treatment decisions in acute stroke care"
+      "Clinical context: Provides evidence-based guidance for when CT angiography adds clinical value in suspected stroke evaluation",
+      "Clinical context: May help optimize imaging protocols and resource utilization in emergency stroke workup"
     ],
     "limitations": [
-      "Study design and methodology not fully described",
-      "Unclear if cost-effectiveness was evaluated"
+      "Study design and outcome measures not fully described"
     ],
-    "bottom_line": "CT angiography is most valuable for stroke evaluation when patients have focal deficits or abnormal initial imaging.",
+    "bottom_line": "CT angiography of head and neck provides greatest clinical utility in suspected stroke patients with focal deficits or abnormal initial imaging.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
     "date": "Mon, 09 Mar 2026 15:00:43 +000",
-    "date_iso": "2026-03-10"
+    "date_iso": "2026-03-11"
+  },
+  {
+    "article_index": 6,
+    "id": "hpv-vaccine-cervical-protection-2026",
+    "type": "Observational",
+    "specialty": "Preventive Medicine/Internal Medicine",
+    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
+    "study_design": "Cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "The quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
+      "Greatest benefit occurs if vaccination occurs before age 17",
+      "Evidence rating level: 2 (Good)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Reinforces the importance of HPV vaccination in cancer prevention and supports current recommendations for early adolescent vaccination",
+      "Clinical context: Relevant for primary care providers counseling patients and families about vaccination timing and benefits"
+    ],
+    "limitations": [
+      "Cohort study design",
+      "Long-term follow-up may have selection bias"
+    ],
+    "bottom_line": "HPV vaccination provides durable protection against cervical cancer with optimal benefit when administered before age 17.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
+    "date": "Sat, 07 Mar 2026 00:00:34 +000",
+    "date_iso": "2026-03-11"
   },
   {
     "article_index": 7,
-    "id": "morphine-acetaminophen-ed-pain-2026",
+    "id": "iberdomide-myeloma-priority-review-2026",
+    "type": "FDA Action",
+    "specialty": "Hematology/Oncology",
+    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
+      "Priority review supported by Phase III data demonstrating that iberdomide combinations significantly improve minimal residual disease outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents potential new treatment option for multiple myeloma patients, particularly those with relapsed/refractory disease",
+      "Clinical context: Priority review designation suggests significant clinical need and potential therapeutic advance in myeloma treatment"
+    ],
+    "limitations": [],
+    "bottom_line": "FDA priority review for iberdomide indicates promising new multiple myeloma treatment option may be available soon.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
+    "date": "Fri, 06 Mar 2026 18:00:19 +000",
+    "date_iso": "2026-03-11"
+  },
+  {
+    "article_index": 8,
+    "id": "morphine-acetaminophen-emergency-pain-2026",
     "type": "RCT",
     "specialty": "Emergency Medicine",
     "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
@@ -65,23 +117,22 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the ED",
-      "Study received Evidence Rating Level 1 (Excellent)"
+      "Morphine plus placebo is not noninferior to morphine plus acetaminophen in the management of acute pain in the emergency department",
+      "Evidence rating level: 1 (Excellent)"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports routine addition of acetaminophen to morphine for acute pain management in hospital settings",
-      "Clinical context: May help reduce opioid requirements through multimodal pain management approach"
+      "Clinical context: Supports routine addition of acetaminophen to morphine for acute pain management in the ED, potentially improving pain control",
+      "Clinical context: May influence standard pain management protocols and reduce reliance on opioid monotherapy"
     ],
     "limitations": [
-      "Single-center study may limit generalizability",
-      "Specific patient populations and pain types not detailed"
+      "Single-center study may limit generalizability"
     ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior pain control compared to morphine alone in the emergency department.",
+    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain management compared to morphine alone in the emergency department.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
     "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-10"
+    "date_iso": "2026-03-11"
   },
   {
     "article_index": 8,
@@ -112,32 +163,6 @@
     "date_iso": "2026-03-10"
   },
   {
-    "article_index": 4,
-    "id": "hpv-vaccine-cervical-2026",
-    "type": "Observational",
-    "specialty": "Infectious Disease",
-    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
-    "study_design": "Cohort study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
-      "Greatest benefit occurs when vaccination happens before age 17"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of early HPV vaccination counseling and catch-up vaccination discussions in young adult patients"
-    ],
-    "limitations": [
-      "Cohort study design limits causal inference"
-    ],
-    "bottom_line": "HPV vaccination provides durable cervical cancer protection with optimal benefit when given before age 17.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
-    "date": "Sat, 07 Mar 2026 00:00:34 +000",
-    "date_iso": "2026-03-10"
-  },
-  {
     "article_index": 9,
     "id": "sleep-apnea-postop-cv-2026",
     "type": "Observational",
@@ -162,31 +187,6 @@
     "source_url": "https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/",
     "date": "Thu, 05 Mar 2026 00:00:43 +000",
     "date_iso": "2026-03-10"
-  },
-  {
-    "article_index": 1,
-    "id": "iberdomide-myeloma-priority-2026",
-    "type": "FDA Action",
-    "specialty": "Hematology/Oncology",
-    "title": "FDA grants priority review for iberdomide-based myeloma regimen",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "FDA has granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
-      "Priority review was supported by Phase III data demonstrating that iberdomide combinations significantly improve minimal residual disease"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential new treatment option for hospitalists managing multiple myeloma patients, with improved efficacy over current therapies",
-      "Clinical context: Priority review status suggests FDA anticipates approval, making this relevant for upcoming treatment planning"
-    ],
-    "limitations": [],
-    "bottom_line": "A new oral multiple myeloma therapy with enhanced efficacy is moving toward FDA approval with priority review status.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
-    "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-09"
   },
   {
     "article_index": 9,
