@@ -49,7 +49,7 @@ THIRTY_DAYS_AGO = (TODAY - timedelta(days=30)).strftime("%Y-%m-%d")
 # File paths (relative to repo root)
 STYLES_PATH    = "styles.css"
 TEMPLATE_PATH  = "template.html"
-OUTPUT_PATH    = "paging-dr-oh.html"
+OUTPUT_PATH    = "index.html"
 HISTORY_PATH   = "history.json"
 LANDMARK_PATH  = "landmark_studies.json"
 MANUAL_PATH    = "manual_additions.json"
