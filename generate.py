@@ -26,6 +26,7 @@ import os, sys, json, random, re, traceback, time
 import urllib.request, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 try:
     from anthropic import Anthropic
@@ -46,8 +47,9 @@ TODAY_ISO = TODAY.strftime("%Y-%m-%d")
 THIRTY_DAYS_AGO = (TODAY - timedelta(days=30)).strftime("%Y-%m-%d")
 
 # File paths (relative to repo root)
+STYLES_PATH    = "styles.css"
 TEMPLATE_PATH  = "template.html"
-OUTPUT_PATH    = "index.html"
+OUTPUT_PATH    = "paging-dr-oh.html"
 HISTORY_PATH   = "history.json"
 LANDMARK_PATH  = "landmark_studies.json"
 MANUAL_PATH    = "manual_additions.json"
@@ -57,6 +59,67 @@ JDD_PATH       = "jdd_conditions.json"
 
 # JDD Inclusive Derm Atlas
 JDD_INDEX_URL  = "https://jddonline.com/project-atlas-a-z/"
+
+# LITFL Case Study Sources
+LITFL_CASES_PATH = "litfl_cases.json"
+LITFL_CLINICAL_INDEX_URL = "https://litfl.com/clinical-cases/"
+
+LITFL_CATEGORIES = {
+    "ecg": {
+        "label": "ECG of the Day",
+        "pill_text": "ECG Case",
+        "specialty": "Cardiology",
+        "url_template": "https://litfl.com/ecg-case-{num:03d}/",
+        "max_case": 137,
+        "questions": [
+            "What is the rate and rhythm?",
+            "Are there ST-segment or T-wave changes?",
+            "What is the axis?",
+            "What is your interpretation?",
+        ],
+    },
+    "cxr": {
+        "label": "CXR of the Day",
+        "pill_text": "CXR Case",
+        "specialty": "Radiology",
+        "url_template": "https://litfl.com/cxr-case-{num:03d}/",
+        "max_case": 92,
+        "questions": [
+            "What are the key findings?",
+            "Is the mediastinum normal?",
+            "Are there any opacities or effusions?",
+            "What is your interpretation?",
+        ],
+    },
+    "ct": {
+        "label": "CT of the Day",
+        "pill_text": "CT Case",
+        "specialty": "Radiology",
+        "url_template": "https://litfl.com/ct-case-{num:03d}/",
+        "max_case": 92,
+        "questions": [
+            "What organ system is primarily affected?",
+            "Are there any masses, fluid collections, or abnormal enhancements?",
+            "What is your interpretation?",
+        ],
+    },
+    "clinical": {
+        "label": "Clinical Case of the Day",
+        "pill_text": "Clinical Case",
+        "specialty": "Emergency Medicine",
+        "questions": [
+            "What is the most likely diagnosis?",
+            "What key findings support your differential?",
+            "What initial workup would you order?",
+        ],
+    },
+}
+
+LITFL_ANSWER_BOUNDARIES = [
+    r'<h[23][^>]*>[^<]*(ANSWER|INTERPRETATION|CLINICAL PEARLS)[^<]*</h[23]>',
+    r'<strong>\s*Q1\.',
+    r'Reveal the .* answer',
+]
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -332,15 +395,13 @@ def save_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def get_css_from_template():
-    """Extract the CSS block from template.html so styling stays in sync."""
+def get_css():
+    """Read the CSS from styles.css (single source of truth for all styling)."""
     try:
-        with open(TEMPLATE_PATH, "r", encoding="utf-8") as f:
-            html = f.read()
-        m = re.search(r"<style>(.*?)</style>", html, re.DOTALL)
-        return m.group(1).strip() if m else ""
+        with open(STYLES_PATH, "r", encoding="utf-8") as f:
+            return f.read().strip()
     except FileNotFoundError:
-        print(f"WARNING: {TEMPLATE_PATH} not found. Using empty CSS.")
+        print(f"WARNING: {STYLES_PATH} not found. Using empty CSS.")
         return ""
 
 
@@ -609,6 +670,163 @@ def fetch_jdd_condition_page(url):
         return None
 
 
+# ── LITFL Case Study Functions ──────────────────────────────────────────
+
+def fetch_litfl_clinical_index():
+    """
+    Scrape the LITFL clinical cases index page.
+    Returns a list of {"slug": "descriptive-slug", "url": "https://..."} dicts.
+    Falls back to cached litfl_cases.json if the fetch fails.
+    """
+    try:
+        req = urllib.request.Request(LITFL_CLINICAL_INDEX_URL,
+                                     headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+
+        pattern = r'<a\s+[^>]*href="(https?://litfl\.com/([^"]+)/)"[^>]*>'
+        matches = re.findall(pattern, html, re.IGNORECASE)
+
+        cases = []
+        seen = set()
+        exclude_slugs = {"clinical-cases", "top-100", "ecg-library",
+                         "cxr-library", "ct-scan-library", "category",
+                         "litfl-top-100", "clinical-case-database"}
+        for url, slug in matches:
+            slug = slug.strip("/")
+            if slug in seen or slug in exclude_slugs:
+                continue
+            if re.match(r'(ecg|cxr|ct)-case-\d+', slug):
+                continue
+            if slug.startswith("top-100") or slug.startswith("category/"):
+                continue
+            seen.add(slug)
+            cases.append({"slug": slug, "url": url})
+
+        if cases:
+            print(f"    Fetched LITFL clinical index: {len(cases)} cases")
+            save_json(LITFL_CASES_PATH, cases)
+            return cases
+        else:
+            print("    WARNING: LITFL clinical index returned 0 cases, using cache")
+            return load_json(LITFL_CASES_PATH, default=[])
+
+    except Exception as e:
+        print(f"    WARNING: LITFL clinical index fetch failed ({type(e).__name__}: {e}), using cache")
+        return load_json(LITFL_CASES_PATH, default=[])
+
+
+def pick_litfl_cases(history, clinical_cases=None):
+    """
+    Pick one LITFL case per category, avoiding recently shown.
+    Returns dict: {"ecg": {"num": int, "url": str}, ...
+                    "clinical": {"slug": str, "url": str}}.
+    """
+    recent = history.get("litfl_cases_shown", [])[-120:]
+    picks = {}
+
+    for cat_key, cfg in LITFL_CATEGORIES.items():
+        if cat_key == "clinical":
+            if not clinical_cases:
+                picks[cat_key] = None
+                continue
+            candidates = [c for c in clinical_cases if f"clinical-{c['slug']}" not in recent]
+            if not candidates:
+                candidates = clinical_cases
+            pick = random.choice(candidates) if candidates else None
+            picks[cat_key] = pick
+        else:
+            max_num = cfg["max_case"]
+            all_nums = list(range(1, max_num + 1))
+            candidates = [n for n in all_nums if f"{cat_key}-{n:03d}" not in recent]
+            if not candidates:
+                candidates = all_nums
+            num = random.choice(candidates)
+            url = cfg["url_template"].format(num=num)
+            picks[cat_key] = {"num": num, "url": url}
+
+    return picks
+
+
+def fetch_litfl_case_page(url, category):
+    """
+    Scrape a LITFL case page for clinical stem and images.
+    Anti-spoiler: stops extracting at ANSWER/INTERPRETATION/CLINICAL PEARLS
+    headings, <strong>Q1. markers, or Reveal-the-answer blocks.
+    Returns {"clinical_stem": str, "images": [url, ...], "source_url": str}
+    or None on failure.
+    """
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+
+        # Find .entry-content block
+        entry_match = re.search(
+            r'<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>(.*)',
+            html, re.DOTALL | re.IGNORECASE)
+        if not entry_match:
+            return None
+        content = entry_match.group(1)
+
+        # ── Truncate at answer boundaries (ANTI-SPOILER) ──
+        for boundary in LITFL_ANSWER_BOUNDARIES:
+            m = re.search(boundary, content, re.IGNORECASE)
+            if m:
+                content = content[:m.start()]
+
+        # Truncate at <hr> if it appears after the first image
+        hr_positions = [m.start() for m in re.finditer(r'<hr\s*/?>', content, re.IGNORECASE)]
+        img_positions = [m.start() for m in re.finditer(r'<img\s', content, re.IGNORECASE)]
+        if hr_positions and img_positions:
+            first_img = min(img_positions)
+            post_img_hrs = [pos for pos in hr_positions if pos > first_img]
+            if post_img_hrs:
+                content = content[:post_img_hrs[0]]
+
+        # ── Extract clinical stem (paragraph text) ──
+        paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', content, re.DOTALL | re.IGNORECASE)
+        stem_parts = []
+        for p_html in paragraphs:
+            p_text = re.sub(r'<[^>]+>', ' ', p_html).strip()
+            p_text = re.sub(r'\s+', ' ', p_text)
+            if len(p_text) > 20:
+                stem_parts.append(p_text)
+
+        clinical_stem = " ".join(stem_parts)[:800]
+
+        # ── Extract image URLs ──
+        img_matches = re.findall(r'<img\s+[^>]*src="([^"]+)"', content, re.IGNORECASE)
+        images = []
+        for img_url in img_matches:
+            if any(skip in img_url.lower() for skip in
+                   ['avatar', 'logo', 'icon', 'gravatar', 'emoji', 'ads', 'banner',
+                    'widget', 'badge', '1x1', 'pixel']):
+                continue
+            if img_url.startswith("//"):
+                img_url = "https:" + img_url
+            elif img_url.startswith("/"):
+                img_url = f"https://litfl.com{img_url}"
+            if img_url not in images:
+                images.append(img_url)
+
+        if not clinical_stem and not images:
+            return None
+
+        print(f"    Fetched LITFL {category}: {len(images)} image(s), "
+              f"{len(clinical_stem)} chars stem")
+        return {
+            "clinical_stem": clinical_stem,
+            "images": images[:4],
+            "source_url": url,
+        }
+
+    except Exception as e:
+        print(f"    WARNING: LITFL {category} page fetch failed "
+              f"({type(e).__name__}: {e})")
+        return None
+
+
 def generate_disease_content(disease_name, source_url=None, use_web_search=True):
     """
     Call Claude to generate the Disease of the Day content.
@@ -783,6 +1001,161 @@ def fetch_feed():
     return articles
 
 
+def fetch_2mm_article(url):
+    """Fetch a 2 Minute Medicine article page and extract DOI/PMID/journal clues.
+
+    Returns dict with keys: doi, pmid, journal_clue, article_text (first ~2000 chars of body text).
+    All values may be empty strings if not found. No API calls — just HTTP + regex.
+    """
+    result = {"doi": "", "pmid": "", "journal_clue": "", "article_text": ""}
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            html = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"    WARNING: Could not fetch 2MM article: {e}")
+        return result
+
+    # Extract DOI (common patterns in 2MM articles)
+    doi_match = re.search(r'(?:doi\.org/|DOI:\s*)(10\.\d{4,}/[^\s"<>]+)', html)
+    if doi_match:
+        result["doi"] = doi_match.group(1).rstrip(".")
+
+    # Extract PMID
+    pmid_match = re.search(r'(?:pubmed\.ncbi\.nlm\.nih\.gov/|PMID:\s*)(\d{7,9})', html)
+    if pmid_match:
+        result["pmid"] = pmid_match.group(1)
+
+    # Extract journal name clue from common patterns
+    journal_match = re.search(r'(?:published in|appeared in|from)\s+(?:the\s+)?([A-Z][A-Za-z\s&]+?)(?:\.|,|\s+on\s)', html)
+    if journal_match:
+        result["journal_clue"] = journal_match.group(1).strip()[:80]
+
+    # Extract body text (strip HTML, take first ~2000 chars for context)
+    body_match = re.search(r'<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>(.*?)</div>', html, re.DOTALL)
+    if not body_match:
+        body_match = re.search(r'<article[^>]*>(.*?)</article>', html, re.DOTALL)
+    if body_match:
+        text = re.sub(r'<[^>]+>', ' ', body_match.group(1))
+        text = re.sub(r'\s+', ' ', text).strip()
+        result["article_text"] = text[:2000]
+
+    return result
+
+
+def search_pubmed(query, doi=None):
+    """Search PubMed via E-utilities for a PMID. Free, no API key needed.
+
+    Tries DOI first (exact match), then title search.
+    Returns PMID string or empty string if not found.
+    """
+    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+
+    # Try DOI first (most reliable)
+    if doi:
+        params = urllib.parse.urlencode({
+            "db": "pubmed", "term": f"{doi}[DOI]", "retmode": "json", "retmax": "1"
+        })
+        try:
+            req = urllib.request.Request(f"{base}?{params}", headers={"User-Agent": "PagingDrOh/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read())
+            ids = data.get("esearchresult", {}).get("idlist", [])
+            if ids:
+                return ids[0]
+        except Exception:
+            pass
+
+    # Fallback: title search
+    if query:
+        # Clean up query: remove special chars, limit length
+        clean_q = re.sub(r'[^\w\s]', '', query)[:200]
+        params = urllib.parse.urlencode({
+            "db": "pubmed", "term": f"{clean_q}[Title]", "retmode": "json", "retmax": "1"
+        })
+        try:
+            req = urllib.request.Request(f"{base}?{params}", headers={"User-Agent": "PagingDrOh/1.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                data = json.loads(resp.read())
+            ids = data.get("esearchresult", {}).get("idlist", [])
+            if ids:
+                return ids[0]
+        except Exception:
+            pass
+
+    return ""
+
+
+def fetch_pubmed_abstract(pmid):
+    """Fetch a structured abstract from PubMed via E-utilities efetch.
+
+    Returns dict with: title, authors, abstract, journal, doi, pub_date.
+    All values may be empty strings. No API key needed.
+    """
+    result = {"title": "", "authors": "", "abstract": "", "journal": "", "doi": "", "pub_date": ""}
+    if not pmid:
+        return result
+
+    url = (f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+           f"?db=pubmed&id={pmid}&rettype=xml&retmode=xml")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw_xml = resp.read()
+        root = ET.fromstring(raw_xml)
+    except Exception as e:
+        print(f"    WARNING: PubMed fetch failed for PMID {pmid}: {e}")
+        return result
+
+    article = root.find(".//MedlineCitation/Article")
+    if article is None:
+        return result
+
+    # Title
+    result["title"] = (article.findtext("ArticleTitle") or "").strip()
+
+    # Authors (first 3 + et al.)
+    authors = []
+    for author in article.findall(".//AuthorList/Author")[:3]:
+        last = author.findtext("LastName") or ""
+        initials = author.findtext("Initials") or ""
+        if last:
+            authors.append(f"{last} {initials}".strip())
+    total_authors = len(article.findall(".//AuthorList/Author"))
+    if total_authors > 3:
+        authors.append("et al.")
+    result["authors"] = ", ".join(authors)
+
+    # Abstract — handle structured (labeled sections) and plain
+    abstract_parts = []
+    for abstract_text in article.findall(".//Abstract/AbstractText"):
+        label = abstract_text.get("Label", "")
+        text = "".join(abstract_text.itertext()).strip()
+        if label:
+            abstract_parts.append(f"{label}: {text}")
+        elif text:
+            abstract_parts.append(text)
+    result["abstract"] = "\n".join(abstract_parts)
+
+    # Journal
+    result["journal"] = (article.findtext(".//Journal/Title") or "").strip()
+
+    # DOI
+    for aid in root.findall(".//PubmedData/ArticleIdList/ArticleId"):
+        if aid.get("IdType") == "doi":
+            result["doi"] = (aid.text or "").strip()
+            break
+
+    # Publication date
+    pub_date = article.find(".//Journal/JournalIssue/PubDate")
+    if pub_date is not None:
+        year = pub_date.findtext("Year") or ""
+        month = pub_date.findtext("Month") or ""
+        result["pub_date"] = f"{month} {year}".strip()
+
+    return result
+
+
 def curate_rss_items(rss_articles, existing_ids):
     """Send 2 Minute Medicine article summaries to Claude to pick the most relevant."""
     if not rss_articles:
@@ -798,7 +1171,7 @@ def curate_rss_items(rss_articles, existing_ids):
     prompt = f"""You are a medical news curator for a hospitalist / internal medicine physician.
 
 Below are {len(article_summaries)} recent article summaries from 2 Minute Medicine.
-Select the 3-5 most relevant items for a hospitalist/IM doctor.
+Select the 5-10 most relevant items for a hospitalist/IM doctor.
 
 SELECTION CRITERIA — prioritize:
 - Studies with direct impact on hospital or outpatient IM practice
@@ -869,11 +1242,124 @@ Return ONLY valid JSON (no markdown fences, no extra text)."""
     return items
 
 
+def enrich_whats_new(curated_items, primary_sources):
+    """Use Claude to build rich cards from curated items + primary-source abstracts.
+
+    curated_items: list of dicts from curate_rss_items()
+    primary_sources: dict mapping item index → {source_basis, abstract, pubmed_data, ...}
+
+    Returns list of enriched item dicts with new fields. One Claude API call.
+    """
+    if not curated_items:
+        return curated_items
+
+    # Build the enrichment payload — pair each item with its primary source material
+    items_for_claude = []
+    for i, item in enumerate(curated_items):
+        src = primary_sources.get(i, {})
+        entry = {
+            "index": i,
+            "title": item.get("title", ""),
+            "type": item.get("type", ""),
+            "specialty": item.get("specialty", ""),
+            "twomm_description": item.get("source_summary_bullets", []),
+            "source_basis": src.get("source_basis", "2MM summary only"),
+            "abstract_text": src.get("abstract", "")[:3000],
+            "pubmed_title": src.get("pubmed_title", ""),
+            "pubmed_authors": src.get("pubmed_authors", ""),
+            "pubmed_journal": src.get("pubmed_journal", ""),
+            "pubmed_doi": src.get("pubmed_doi", ""),
+            "original_source_url": src.get("original_source_url", ""),
+        }
+        items_for_claude.append(entry)
+
+    prompt = f"""You are an evidence-based medicine summarizer for a hospitalist / internal medicine physician.
+
+Below are {len(items_for_claude)} medical studies/updates. Each includes:
+- A title and type from 2 Minute Medicine (discovery source)
+- The source_basis label indicating what primary-source material is available
+- If available: the PubMed abstract text (the primary source)
+- If no abstract: only the 2MM summary bullets (fallback)
+
+For EACH item, build a structured card. When a PubMed abstract is available, derive ALL
+factual content from that abstract — not from 2MM. When only 2MM is available, use that
+but keep the card shorter and lower-confidence.
+
+ITEMS:
+{json.dumps(items_for_claude, indent=2)}
+
+ACCURACY RULES (strict):
+1. key_results: Extract ONLY from the abstract or stated source. Do NOT invent statistics.
+2. population, intervention_exposure, comparator: ONLY fill if explicitly stated. Use "" if unknown.
+3. limitations: Only real limitations inferable from the study design. Use [] if uncertain.
+4. clinical_interpretation: YOUR clinical assessment — clearly separate from source findings.
+5. If source_basis is "2MM summary only": keep card shorter, set confidence to "moderate" or "preliminary",
+   and do NOT invent methodological details not present in the 2MM description.
+6. practice_readiness: "Practice-changing", "Informative", or "Preliminary" — be conservative.
+
+Return a JSON array with one object per item:
+[
+  {{
+    "index": 0,
+    "why_this_matters": "1-2 sentence plain-language clinical relevance",
+    "study_design": "Design description from abstract, or empty string",
+    "population": "Study population from abstract, or empty string",
+    "intervention_exposure": "Intervention or exposure, or empty string",
+    "comparator": "Control/comparator group, or empty string",
+    "primary_outcome": "Primary outcome measure, or empty string",
+    "key_results": ["Finding 1 with stats", "Finding 2"],
+    "limitations": ["Limitation 1"],
+    "clinical_interpretation": ["Your clinical assessment of what this means"],
+    "practice_readiness": "Practice-changing" | "Informative" | "Preliminary",
+    "bottom_line": "One-sentence clinical takeaway"
+  }}
+]
+
+Return ONLY valid JSON (no markdown fences, no extra text)."""
+
+    try:
+        raw = call_claude(prompt, use_search=False, max_tokens=8000)
+        enriched = extract_json_array(raw)
+        print(f"  Enrichment: got {len(enriched)} enriched cards")
+    except Exception as e:
+        print(f"  WARNING: Enrichment call failed: {e}. Using curated items as-is.")
+        return curated_items
+
+    # Merge enriched data back into curated items
+    enrichment_map = {e.get("index", -1): e for e in enriched}
+    for i, item in enumerate(curated_items):
+        enr = enrichment_map.get(i, {})
+        src = primary_sources.get(i, {})
+
+        # New enriched fields (overwrite curation-level fields if enrichment succeeded)
+        if enr:
+            item["why_this_matters"] = enr.get("why_this_matters", "")
+            item["study_design"] = enr.get("study_design", "") or item.get("study_design", "")
+            item["population"] = enr.get("population", "")
+            item["intervention_exposure"] = enr.get("intervention_exposure", "")
+            item["comparator"] = enr.get("comparator", "")
+            item["primary_outcome"] = enr.get("primary_outcome", "") or item.get("primary_outcome", "")
+            item["key_results"] = enr.get("key_results", item.get("source_summary_bullets", []))
+            item["limitations"] = enr.get("limitations", item.get("limitations", []))
+            item["clinical_interpretation"] = enr.get("clinical_interpretation", item.get("clinical_interpretation_bullets", []))
+            item["practice_readiness"] = enr.get("practice_readiness", "")
+            item["bottom_line"] = enr.get("bottom_line", "") or item.get("bottom_line", "")
+
+        # Source metadata (from HTTP scraping, not Claude)
+        item["source_basis"] = src.get("source_basis", "2MM summary only")
+        item["original_source_url"] = src.get("original_source_url", "")
+        item["pubmed_id"] = src.get("pmid", "")
+        # Rename source_url → twomm_url, keep source_url for backward compat
+        item["twomm_url"] = item.get("source_url", "")
+
+    return curated_items
+
+
 def generate_whats_new(history):
-    """Fetch 2 Minute Medicine RSS feed, then use Claude to curate top items."""
+    """Fetch 2MM RSS → curate → find primary sources → enrich from abstracts."""
     existing_ids = history.get("whats_new_ids", [])
 
-    # Step 1: Fetch 2 Minute Medicine feed (no API calls, just HTTP)
+    # Step 1: Fetch 2 Minute Medicine feed (HTTP only)
     print("  Fetching 2 Minute Medicine RSS feed...")
     rss_articles = fetch_feed()
     print(f"  Total articles fetched: {len(rss_articles)}")
@@ -882,10 +1368,67 @@ def generate_whats_new(history):
         print("  WARNING: No RSS articles fetched. Skipping curation.")
         return []
 
-    # Step 2: One Claude call (no web search) to curate the best items
+    # Step 2: Claude call #1 — curate 5-10 best items
     print("  Asking Claude to curate the most important items...")
     items = curate_rss_items(rss_articles, existing_ids)
     print(f"  Claude selected {len(items)} item(s).")
+
+    if not items:
+        return []
+
+    # Step 3: For each curated item, find primary source (HTTP only, no API cost)
+    # Parallelized with 3 workers to respect NCBI's rate limit (≤3 requests/sec)
+    print("  Searching for primary sources (PubMed) — parallel...")
+
+    def _lookup_primary_source(i, item):
+        """Look up a single item's primary source. Thread-safe HTTP calls only."""
+        twomm_url = item.get("source_url", "")
+        title = item.get("title", "")
+        src = {"source_basis": "2MM summary only", "abstract": "", "pmid": "",
+               "pubmed_title": "", "pubmed_authors": "", "pubmed_journal": "",
+               "pubmed_doi": "", "original_source_url": twomm_url}
+        try:
+            clues = fetch_2mm_article(twomm_url) if twomm_url else {}
+            doi = clues.get("doi", "")
+            pmid = clues.get("pmid", "")
+            if not pmid:
+                pmid = search_pubmed(title, doi=doi)
+            if pmid:
+                pubmed_data = fetch_pubmed_abstract(pmid)
+                if pubmed_data.get("abstract"):
+                    src["source_basis"] = "PubMed abstract"
+                    src["abstract"] = pubmed_data["abstract"]
+                    src["pmid"] = pmid
+                    src["pubmed_title"] = pubmed_data.get("title", "")
+                    src["pubmed_authors"] = pubmed_data.get("authors", "")
+                    src["pubmed_journal"] = pubmed_data.get("journal", "")
+                    src["pubmed_doi"] = pubmed_data.get("doi", "")
+                    if pubmed_data.get("doi"):
+                        src["original_source_url"] = f"https://doi.org/{pubmed_data['doi']}"
+                    else:
+                        src["original_source_url"] = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+                    print(f"    [{i+1}] Found PubMed abstract (PMID: {pmid}) — {title[:50]}")
+                else:
+                    print(f"    [{i+1}] PMID {pmid} found but no abstract — {title[:50]}")
+            else:
+                print(f"    [{i+1}] No PubMed match — {title[:50]}")
+        except Exception as e:
+            print(f"    [{i+1}] PubMed lookup error: {e}")
+        return i, src
+
+    primary_sources = {}
+    with ThreadPoolExecutor(max_workers=3) as pubmed_pool:
+        futures = [pubmed_pool.submit(_lookup_primary_source, i, item) for i, item in enumerate(items)]
+        for future in as_completed(futures):
+            idx, src = future.result()
+            primary_sources[idx] = src
+
+    found_count = sum(1 for s in primary_sources.values() if s["source_basis"] != "2MM summary only")
+    print(f"  Primary sources found: {found_count}/{len(items)}")
+
+    # Step 4: Claude call #2 — enrich items with primary-source material
+    print("  Enriching cards from primary sources...")
+    items = enrich_whats_new(items, primary_sources)
 
     return items
 
@@ -999,8 +1542,8 @@ def remove_wn_duplicates(items):
         if item_id and item_id in seen_ids:
             continue
 
-        # Check by source_url
-        url = item.get("source_url", "").strip().rstrip("/")
+        # Check by source_url or twomm_url
+        url = (item.get("source_url", "") or item.get("twomm_url", "")).strip().rstrip("/")
         if url and url in seen_urls:
             if item_id:
                 seen_ids.add(item_id)
@@ -1155,16 +1698,10 @@ def _build_single_disease_html(content):
     source_url = d.get("source_url", "")
 
     # -- Header card --
-    source_link = (
-        f'<a href="{source_url}" target="_blank" rel="noopener" class="statpearls-link">'
-        f'Read on StatPearls &#8594;</a>'
-        if source_url else ""
-    )
     html = f"""
       <div class="disease-header card">
         <h2>{disease_name}</h2>
         <p class="verified-date">Last verified: {TODAY_STR}</p>
-        {source_link}
       </div>"""
 
     # -- Clinical Manifestations (open by default) --
@@ -1248,6 +1785,13 @@ def _build_single_disease_html(content):
         for i, ref in enumerate(refs, 1):
             html += f'          <li id="ref-{i}">{ref}</li>\n'
         html += "        </ol>\n      </div>\n"
+
+    # -- Source link at bottom of disease page --
+    if source_url:
+        html += f"""
+      <div class="statpearls-wrap" style="margin-top:24px;">
+        <a href="{source_url}" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+      </div>\n"""
 
     return html
 
@@ -1343,7 +1887,7 @@ def pill_class(item_type):
 
 
 def _build_wn_card(item, is_trending=False):
-    """Build HTML for a single What's New card."""
+    """Build HTML for a single What's New card. Handles both old and enriched formats."""
     wn_id = item.get("id", "wn-unknown")
     item_type = item.get("type", "Study")
     specialty = item.get("specialty", "")
@@ -1353,16 +1897,34 @@ def _build_wn_card(item, is_trending=False):
     study_design = item.get("study_design", "")
     sample_size = item.get("sample_size", "")
     primary_outcome = item.get("primary_outcome", "")
-    source_summary_bullets = item.get("source_summary_bullets", [])
-    clinical_interpretation_bullets = item.get("clinical_interpretation_bullets", [])
-    limitations = item.get("limitations", [])
     bottom_line = item.get("bottom_line", "")
     confidence = item.get("confidence", "moderate")
-    source_url = item.get("source_url", "#")
+
+    # New enriched fields (with backward-compatible fallbacks)
+    source_basis = item.get("source_basis", "")
+    why_this_matters = item.get("why_this_matters", "")
+    population = item.get("population", "")
+    intervention_exposure = item.get("intervention_exposure", "")
+    comparator = item.get("comparator", "")
+    key_results = item.get("key_results", item.get("source_summary_bullets", []))
+    clinical_interpretation = item.get("clinical_interpretation", item.get("clinical_interpretation_bullets", []))
+    limitations = item.get("limitations", [])
+    practice_readiness = item.get("practice_readiness", "")
+    original_source_url = item.get("original_source_url", "")
+    twomm_url = item.get("twomm_url", item.get("source_url", "#"))
+    # Primary link: prefer original source, fallback to 2MM
+    primary_link = original_source_url if original_source_url else twomm_url
 
     conf_class = f"confidence-{confidence}"
     conf_label = confidence.capitalize()
-    card_class = "wn-card wn-card-trending" if is_trending else "wn-card"
+    card_class = "wn-card"
+
+    # Source basis badge
+    basis_badge = ""
+    if source_basis and source_basis != "2MM summary only":
+        basis_badge = f'<span class="wn-basis-badge">Based on: {source_basis}</span>'
+    elif source_basis == "2MM summary only":
+        basis_badge = '<span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>'
 
     html = f"""
       <div class="{card_class}">
@@ -1376,29 +1938,12 @@ def _build_wn_card(item, is_trending=False):
           </div>
         </div>
         <div class="wn-source">{source} &bull; {date}</div>
+        {basis_badge}
         <div class="wn-title">{title}</div>"""
 
-    # Add talking-about metadata
-    if is_trending:
-        sources_seen = item.get("sources_seen", [])
-        mention_count = item.get("mention_count", 1)
-        first_seen = item.get("first_seen", "")
-        last_seen = item.get("last_seen", "")
-
-        days_span = 1
-        if first_seen and last_seen:
-            try:
-                d1 = datetime.strptime(first_seen, "%Y-%m-%d")
-                d2 = datetime.strptime(last_seen, "%Y-%m-%d")
-                days_span = max(1, (d2 - d1).days + 1)
-            except ValueError:
-                pass
-
-        sources_str = " &middot; ".join(sources_seen)
-        html += f"""        <div class="trending-meta">
-          <span class="trending-sources">Seen in: {sources_str}</span>
-          <span class="trending-count">{mention_count} sources over {days_span} day{"s" if days_span != 1 else ""}</span>
-        </div>\n"""
+    # Why This Matters (new enriched field)
+    if why_this_matters:
+        html += f"""        <div class="wn-why-matters">{why_this_matters}</div>\n"""
 
     # Study design + sample size + primary outcome row
     meta_parts = []
@@ -1411,16 +1956,29 @@ def _build_wn_card(item, is_trending=False):
     if meta_parts:
         html += f"""        <div class="wn-study-meta">{"&ensp;&bull;&ensp;".join(meta_parts)}</div>\n"""
 
-    # Source summary bullets (what the source actually says)
-    if source_summary_bullets:
-        bullets_html = "".join(f"<li>{b}</li>" for b in source_summary_bullets)
-        html += f"""        <div class="wn-section-label">From the Source</div>
+    # PICO details (new enriched fields — only show if at least one is populated)
+    pico_parts = []
+    if population:
+        pico_parts.append(f"<strong>Population:</strong> {population}")
+    if intervention_exposure:
+        pico_parts.append(f"<strong>Intervention:</strong> {intervention_exposure}")
+    if comparator:
+        pico_parts.append(f"<strong>Comparator:</strong> {comparator}")
+    if pico_parts:
+        pico_html = "</div><div class='wn-pico-item'>".join(pico_parts)
+        html += f"""        <div class="wn-pico"><div class="wn-pico-item">{pico_html}</div></div>\n"""
+
+    # Key Results (replaces source_summary_bullets for enriched cards)
+    if key_results:
+        label = "Key Results" if source_basis and source_basis != "2MM summary only" else "From the Source"
+        bullets_html = "".join(f"<li>{b}</li>" for b in key_results)
+        html += f"""        <div class="wn-section-label">{label}</div>
         <ul class="wn-bullets">{bullets_html}</ul>\n"""
 
-    # Clinical interpretation bullets (Claude's added context, labeled)
-    if clinical_interpretation_bullets:
-        bullets_html = "".join(f"<li>{b}</li>" for b in clinical_interpretation_bullets)
-        html += f"""        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+    # Clinical Interpretation (replaces clinical_interpretation_bullets)
+    if clinical_interpretation:
+        bullets_html = "".join(f"<li>{b}</li>" for b in clinical_interpretation)
+        html += f"""        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets">{bullets_html}</ul>\n"""
 
     # Limitations
@@ -1429,17 +1987,33 @@ def _build_wn_card(item, is_trending=False):
         html += f"""        <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations">{lim_html}</ul>\n"""
 
+    # Bottom line
     if bottom_line:
         html += f"""        <div class="wn-bottom-line">
           <strong>Bottom Line:</strong> {bottom_line}
         </div>\n"""
 
+    # Footer: confidence + practice readiness + links
+    readiness_html = ""
+    if practice_readiness:
+        readiness_html = f'<span class="wn-readiness">&#x1F4CA; {practice_readiness}</span>'
+
     html += f"""        <div class="wn-footer">
           <div class="confidence {conf_class}">
             <span class="confidence-dot"></span>
             {conf_label} confidence
+            {readiness_html}
           </div>
-          <a href="{source_url}" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="{primary_link}" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>"""
+
+    # Secondary link to 2MM if primary link is different
+    if original_source_url and twomm_url and original_source_url != twomm_url:
+        html += f"""
+            <a href="{twomm_url}" class="wn-secondary-link" target="_blank" rel="noopener">2MM &#8594;</a>"""
+
+    html += """
+          </div>
         </div>
       </div>\n"""
 
@@ -1449,7 +2023,7 @@ def _build_wn_card(item, is_trending=False):
 def build_whatsnew_tab(items):
     """Build the What's New tab HTML."""
     html = '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
-    html += '      <p style="color:var(--gray); font-size:0.85rem; margin-bottom:16px;">Curated from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener" style="color:var(--queen-blue);">2 Minute Medicine</a></p>\n'
+    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Selected from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener">2 Minute Medicine</a>, enriched from primary sources</p>\n'
 
     if not items:
         html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>\n'
@@ -1500,8 +2074,7 @@ def build_landmark_tab(content):
           <h3 class="landmark-title">{title}</h3>
           <button class="action-btn star" data-id="{safe_id}" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">{meta}</div>
-        {wjc_link}\n"""
+        <div class="landmark-meta">{meta}</div>\n"""
 
     seen_labels = set()
     for key, label in sections_order:
@@ -1516,8 +2089,228 @@ def build_landmark_tab(content):
           <p>{text}</p>
         </div>\n"""
 
+    # Source link at the bottom of the card
+    if wjc_link:
+        html += f"        {wjc_link}\n"
+
     html += "      </div>\n"
 
+    return html
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# SECTION 7b — PODCASTS
+# ═══════════════════════════════════════════════════════════════════════
+
+PODCAST_CONFIGS = [
+    {
+        "id": "core-im",
+        "podcast_name": "Core IM",
+        "podcast_slug": "core-im",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/core-im-podcast/id1240596890",
+        "website_url": "https://www.coreimpodcast.com",
+        "rss_feed_url": "https://feeds.captivate.fm/coreim/",
+        "fallback_description": "Exploring the core topics of internal medicine with deep-dive episodes on diagnosis, management, and clinical reasoning.",
+    },
+    {
+        "id": "curbsiders",
+        "podcast_name": "The Curbsiders",
+        "podcast_slug": "the-curbsiders",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/the-curbsiders-internal-medicine-podcast/id1198732014",
+        "website_url": "https://thecurbsiders.com",
+        "rss_feed_url": "https://feeds.captivate.fm/the-curbsiders/",
+        "fallback_description": "Internal medicine podcast bringing you clinical pearls and practice-changing knowledge through expert interviews.",
+    },
+    {
+        "id": "clinical-problem-solvers",
+        "podcast_name": "The Clinical Problem Solvers",
+        "podcast_slug": "clinical-problem-solvers",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/the-clinical-problem-solvers/id1459685586",
+        "website_url": "https://clinicalproblemsolving.com",
+        "rss_feed_url": "https://feeds.simplecast.com/1GNx8n0l",
+        "fallback_description": "Tackling clinical reasoning through real cases and schema-based approaches to internal medicine.",
+    },
+    {
+        "id": "harrisons-podclass",
+        "podcast_name": "Harrison's PodClass",
+        "podcast_slug": "harrisons-podclass",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/harrisons-podclass/id1463960076",
+        "website_url": "",
+        "rss_feed_url": "https://feeds.simplecast.com/GZGmrP3G",
+        "fallback_description": "Bite-sized internal medicine education from the authority behind Harrison's Principles of Internal Medicine.",
+    },
+]
+
+ITUNES_NS = "http://www.itunes.com/dtds/podcast-1.0.dtd"
+
+
+def fetch_podcast_latest(config):
+    """Fetch the latest episode from a podcast RSS feed.
+
+    Returns dict with structured fields. No LLM call — just HTTP + XML parsing.
+    Falls back gracefully if feed is unavailable.
+    """
+    result = {
+        "id": config["id"],
+        "podcast_name": config["podcast_name"],
+        "podcast_slug": config["podcast_slug"],
+        "apple_podcasts_url": config["apple_podcasts_url"],
+        "website_url": config.get("website_url", ""),
+        "artwork_url": "",
+        "latest_episode_title": "",
+        "latest_episode_url": "",
+        "latest_episode_date": "",
+        "latest_episode_summary": "",
+        "extraction_status": "failed",
+        "fallback_used": True,
+        "fallback_description": config.get("fallback_description", ""),
+    }
+
+    rss_url = config.get("rss_feed_url", "")
+    if not rss_url:
+        return result
+
+    try:
+        req = urllib.request.Request(rss_url, headers={"User-Agent": "PagingDrOh/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw_xml = resp.read()
+        root = ET.fromstring(raw_xml)
+    except Exception as e:
+        print(f"    WARNING: Could not fetch podcast feed for {config['podcast_name']}: {e}")
+        return result
+
+    channel = root.find("channel") or root
+    itunes_ns = f"{{{ITUNES_NS}}}"
+
+    # Channel-level artwork
+    itunes_img = channel.find(f"{itunes_ns}image")
+    if itunes_img is not None:
+        result["artwork_url"] = itunes_img.get("href", "")
+    if not result["artwork_url"]:
+        img_url_el = channel.find("image/url")
+        if img_url_el is not None and img_url_el.text:
+            result["artwork_url"] = img_url_el.text.strip()
+
+    # Latest episode (first <item>)
+    item = channel.find("item")
+    if item is None:
+        return result
+
+    result["latest_episode_title"] = (item.findtext("title") or "").strip()
+
+    # Episode link
+    result["latest_episode_url"] = (item.findtext("link") or "").strip()
+
+    # Episode date
+    result["latest_episode_date"] = (item.findtext("pubDate") or "").strip()[:30]
+
+    # Episode summary — try itunes:summary, then itunes:subtitle, then description
+    summary = (item.findtext(f"{itunes_ns}summary") or "").strip()
+    if not summary:
+        summary = (item.findtext(f"{itunes_ns}subtitle") or "").strip()
+    if not summary:
+        desc_raw = item.findtext("description") or ""
+        summary = re.sub(r'<[^>]+>', ' ', desc_raw).strip()
+        summary = re.sub(r'\s+', ' ', summary)
+    # Cap summary at 300 chars for card display
+    if len(summary) > 300:
+        summary = summary[:297].rsplit(' ', 1)[0] + "..."
+    result["latest_episode_summary"] = summary
+
+    # Episode-level artwork (override channel if present)
+    ep_img = item.find(f"{itunes_ns}image")
+    if ep_img is not None and ep_img.get("href"):
+        result["artwork_url"] = ep_img.get("href", "")
+
+    result["extraction_status"] = "success"
+    result["fallback_used"] = False
+
+    return result
+
+
+def fetch_all_podcasts():
+    """Fetch latest episode metadata for all configured podcasts. No LLM calls."""
+    print("  Fetching podcast feeds...")
+    podcasts = []
+    for config in PODCAST_CONFIGS:
+        print(f"    Fetching {config['podcast_name']}...")
+        podcast = fetch_podcast_latest(config)
+        status = "OK" if podcast["extraction_status"] == "success" else "fallback"
+        ep = podcast.get("latest_episode_title", "")[:50]
+        print(f"      [{status}] {ep}")
+        podcasts.append(podcast)
+        time.sleep(0.3)  # Be polite to feed servers
+    ok_count = sum(1 for p in podcasts if p["extraction_status"] == "success")
+    print(f"  Podcasts: {ok_count}/{len(podcasts)} feeds fetched successfully")
+    return podcasts
+
+
+def build_podcast_tab(podcasts):
+    """Build the Podcasts tab HTML. Simple card list, mobile-friendly."""
+    html = '\n      <h3 class="section-title" style="margin-top:0;">Podcasts</h3>\n'
+    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">High-yield internal medicine podcasts for learning on the go</p>\n'
+
+    if not podcasts:
+        html += '      <p style="color:var(--gray); font-style:italic;">No podcast data available. Check back tomorrow!</p>\n'
+        return html
+
+    html += '      <div class="podcast-grid">\n'
+
+    for p in podcasts:
+        name = p.get("podcast_name", "Unknown Podcast")
+        artwork = p.get("artwork_url", "")
+        ep_title = p.get("latest_episode_title", "")
+        ep_date = p.get("latest_episode_date", "")
+        ep_summary = p.get("latest_episode_summary", "")
+        apple_url = p.get("apple_podcasts_url", "#")
+        website_url = p.get("website_url", "")
+        ep_url = p.get("latest_episode_url", "")
+        fallback_used = p.get("fallback_used", True)
+        fallback_desc = p.get("fallback_description", "")
+
+        # Artwork or placeholder
+        if artwork:
+            img_html = f'<img src="{artwork}" alt="{name}" class="podcast-artwork" loading="lazy">'
+        else:
+            img_html = f'<div class="podcast-artwork podcast-artwork-placeholder">{name[0]}</div>'
+
+        # Episode info or fallback
+        if ep_title:
+            info_html = f'<div class="podcast-ep-title">{ep_title}</div>'
+            if ep_date:
+                # Format date to be shorter
+                try:
+                    parsed = datetime.strptime(ep_date.strip()[:25], "%a, %d %b %Y %H:%M:%S")
+                    nice_date = parsed.strftime("%b %d, %Y")
+                except Exception:
+                    nice_date = ep_date[:16]
+                info_html += f'<div class="podcast-ep-date">{nice_date}</div>'
+            if ep_summary:
+                info_html += f'<div class="podcast-ep-summary">{ep_summary}</div>'
+        else:
+            # Fallback — just show podcast description
+            info_html = f'<div class="podcast-ep-summary">{fallback_desc}</div>'
+
+        # Buttons
+        buttons_html = f'<a href="{apple_url}" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a>'
+        if ep_url and ep_url != apple_url:
+            buttons_html += f' <a href="{ep_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Show Notes &#8594;</a>'
+        elif website_url:
+            buttons_html += f' <a href="{website_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a>'
+
+        html += f"""        <div class="podcast-card">
+          <div class="podcast-card-top">
+            {img_html}
+            <div class="podcast-card-info">
+              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
+              <div class="podcast-name">{name}</div>
+            </div>
+          </div>
+          {info_html}
+          <div class="podcast-actions">{buttons_html}</div>
+        </div>\n"""
+
+    html += '      </div>\n'
     return html
 
 
@@ -1538,72 +2331,158 @@ def build_archive_tab(_unused=None):
       <div id="archive-content">
         <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
       </div>
-      <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
-        <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
-        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()" style="margin-left:8px;">&#x2715; Clear All</button>
+      <div class="archive-actions-bar" style="margin-top:16px; display:none" id="archive-actions">
+        <button class="archive-action-btn" id="export-btn" onclick="exportFavorites()">
+          <span class="archive-action-icon">&#x1F4CB;</span> Copy to Clipboard
+        </button>
+        <button class="archive-action-btn archive-action-btn-danger" onclick="clearAllStarred()">
+          <span class="archive-action-icon">&#x2715;</span> Clear All
+        </button>
       </div>"""
 
 
-def build_image_tab(jdd_content):
-    """
-    Build the Image of the Day tab HTML.
-    Includes JDD Inclusive Derm Atlas image(s) + NEJM Image Challenge reminder card.
-    jdd_content: dict with {title, description, images: [url, ...], source_url} or None.
-    """
-    html = '\n      <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>\n'
+def build_jdd_card(jdd_content):
+    """Build a .wn-card for the JDD Inclusive Derm Atlas image."""
+    if not jdd_content:
+        return ""
 
-    # ── JDD Inclusive Derm Atlas card ────────────────────────
-    if jdd_content and jdd_content.get("images"):
-        title = jdd_content.get("title", "Dermatology Image")
-        desc = jdd_content.get("description", "")
-        source_url = jdd_content.get("source_url", "")
-        images = jdd_content.get("images", [])
+    title = jdd_content.get("title", "Dermatology Image")
+    desc = jdd_content.get("description", "")
+    source_url = jdd_content.get("source_url", "#")
+    images = jdd_content.get("images", [])
+    card_id = f"img-jdd-{title.lower().replace(' ', '-')[:30]}"
 
-        html += f"""
-      <div class="image-card">
-        <div class="image-card-header">
-          <h4 class="image-card-title">{title}</h4>
-          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+    html = f"""
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">Derm Image</span>
+            <span class="pill pill-specialty">Dermatology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="{card_id}">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">JDD Atlas &bull; {TODAY_STR}</div>
+        <div class="wn-title">{title}</div>\n"""
+
+    if desc:
+        html += f'        <div class="wn-study-meta">{desc}</div>\n'
+
+    for i, img_url in enumerate(images):
+        html += (f'        <img src="{img_url}" alt="{title} — clinical image {i+1}" '
+                 f'class="image-card-img" loading="lazy">\n')
+
+    html += """        <div class="wn-bottom-line">
+          <strong>Visual Diagnosis:</strong> Study the images above and consider the clinical description. What is your diagnosis?
         </div>\n"""
 
-        # Render each image
-        for i, img_url in enumerate(images):
-            html += f'        <img src="{img_url}" alt="{title} — clinical image {i+1}" class="image-card-img" loading="lazy">\n'
-
-        if desc:
-            html += f'        <p class="image-card-desc">{desc}</p>\n'
-
-        if source_url:
-            html += f'        <a href="{source_url}" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>\n'
-
-        html += "      </div>\n"
-
-    elif jdd_content:
-        # We have content but no images — show title + description only
-        title = jdd_content.get("title", "Dermatology Image")
-        desc = jdd_content.get("description", "")
-        source_url = jdd_content.get("source_url", "")
-
-        html += f"""
-      <div class="image-card">
-        <div class="image-card-header">
-          <h4 class="image-card-title">{title}</h4>
-          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+    html += f"""        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High-yield visual
+          </div>
+          <div class="wn-links">
+            <a href="{source_url}" class="source-link" target="_blank" rel="noopener">View on JDD Atlas &#8594;</a>
+          </div>
         </div>
-        <p class="image-card-desc">{desc if desc else 'Visit the JDD Atlas page to view clinical images for this condition.'}</p>\n"""
-        if source_url:
-            html += f'        <a href="{source_url}" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>\n'
-        html += "      </div>\n"
-
-    else:
-        html += """
-      <div class="image-card">
-        <p class="image-card-desc" style="color:var(--gray); font-style:italic;">
-          Derm image not available today. Check back tomorrow!
-        </p>
       </div>\n"""
 
-    # ── NEJM Image Challenge reminder card ──────────────────
+    return html
+
+
+def build_litfl_card(category_key, case_content):
+    """Build a .wn-card for a single LITFL case (ECG/CXR/CT/Clinical)."""
+    cfg = LITFL_CATEGORIES[category_key]
+    label = cfg["label"]
+    pill_text = cfg["pill_text"]
+    specialty = cfg["specialty"]
+    questions = cfg["questions"]
+
+    stem = case_content.get("clinical_stem", "")
+    images = case_content.get("images", [])
+    source_url = case_content.get("source_url", "#")
+
+    # Build unique ID for starring
+    if category_key == "clinical":
+        slug = source_url.rstrip("/").split("/")[-1]
+        card_id = f"img-clinical-{slug}"
+    else:
+        num_match = re.search(r'-(\d+)/?$', source_url.rstrip("/"))
+        num_str = num_match.group(1) if num_match else "000"
+        card_id = f"img-{category_key}-{num_str}"
+
+    html = f"""
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">{pill_text}</span>
+            <span class="pill pill-specialty">{specialty}</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="{card_id}">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; {TODAY_STR}</div>
+        <div class="wn-title">{label}</div>\n"""
+
+    # Clinical stem in beige context box
+    if stem:
+        html += f'        <div class="wn-study-meta">{stem}</div>\n'
+
+    # Images
+    for i, img_url in enumerate(images):
+        html += (f'        <img src="{img_url}" alt="{label} — clinical image {i+1}" '
+                 f'class="image-card-img" loading="lazy">\n')
+
+    # Key Questions
+    html += '        <div class="wn-section-label">Key Questions</div>\n'
+    html += '        <ul class="wn-bullets">\n'
+    for q in questions:
+        html += f'          <li>{q}</li>\n'
+    html += '        </ul>\n'
+
+    # Challenge bottom line
+    html += """        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>\n"""
+
+    # Footer
+    html += f"""        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="{source_url}" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>\n"""
+
+    return html
+
+
+def build_image_tab(jdd_content, litfl_results=None):
+    """
+    Build the Image of the Day tab HTML.
+    Includes: JDD Derm Atlas card + 4 LITFL case cards + NEJM reminder.
+    """
+    if litfl_results is None:
+        litfl_results = {}
+
+    html = '\n      <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>\n'
+    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Visual cases from <a href="https://jddonline.com" target="_blank" rel="noopener">JDD Atlas</a> and <a href="https://litfl.com" target="_blank" rel="noopener">LITFL</a> &mdash; test your interpretation skills</p>\n'
+
+    # ── JDD Derm card ──
+    html += build_jdd_card(jdd_content)
+
+    # ── LITFL case cards ──
+    for cat_key in ["ecg", "cxr", "ct", "clinical"]:
+        content = litfl_results.get(cat_key)
+        if content:
+            html += build_litfl_card(cat_key, content)
+
+    # ── NEJM Image Challenge reminder card ──
     html += """
       <div class="nejm-reminder-card">
         <div class="nejm-reminder-header">
@@ -1683,15 +2562,24 @@ BASE_JS = """
             if (sourceEl) source = sourceEl.textContent.trim();
             var pills = card.querySelectorAll('.pill');
             if (pills.length > 0) typeLabel = pills[0].textContent.trim();
-            var blEl = card.querySelector('.wn-bottom-line');
-            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').trim();
+            var blEl = card.querySelector('.wn-bottom-line, .bottom-line');
+            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').replace('Bottom line:', '').trim();
             var linkEl = card.querySelector('.source-link, .statpearls-link');
             if (linkEl) sourceUrl = linkEl.href;
+          }
+          var landmarkSections = [];
+          if (card && card.classList.contains('landmark-card')) {
+            card.querySelectorAll('.landmark-section').forEach(function(sec) {
+              var h = sec.querySelector('h4');
+              var p = sec.querySelector('p');
+              if (h && p) landmarkSections.push({ heading: h.textContent.trim(), text: p.textContent.trim() });
+            });
           }
           starred[id] = {
             id: id, title: title, source: source,
             typeLabel: typeLabel, bottomLine: bottomLine,
             sourceUrl: sourceUrl,
+            landmarkSections: landmarkSections.length > 0 ? landmarkSections : undefined,
             cardType: card ? (card.classList.contains('landmark-card') ? 'landmark' : 'whats_new') : 'unknown',
             starredAt: new Date().toISOString().split('T')[0]
           };
@@ -1719,20 +2607,31 @@ BASE_JS = """
       var html = '';
       ids.forEach(function(id) {
         var item = starred[id];
-        var typeClass = item.cardType === 'landmark' ? 'pill-rct' : 'pill-specialty';
-        html += '<div class="archive-card expanded">';
-        html += '<div class="archive-card-header"><div>';
+        var typeClass = item.cardType === 'landmark' ? 'pill-landmark' : 'pill-saved';
+        html += '<div class="archive-card">';
+        html += '<div class="archive-card-top">';
+        html += '<div class="meta-pills" style="margin-bottom:0;">';
+        html += '<span class="pill ' + typeClass + '">' + (item.cardType === 'landmark' ? 'Landmark' : 'Saved') + '</span>';
+        if (item.typeLabel) html += '<span class="pill pill-specialty">' + item.typeLabel + '</span>';
+        html += '</div>';
+        html += '<button class="action-btn btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button>';
+        html += '</div>';
         html += '<div class="archive-card-title">' + (item.title || id) + '</div>';
-        html += '<div class="archive-card-meta">';
-        if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
-        html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
-        html += '<button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></div>';
+        html += '<div class="archive-card-meta">' + (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div>';
         if (item.bottomLine) {
-          html += '<div class="archive-card-details"><div class="archive-detail-content">';
-          html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
-          if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="font-size:0.8rem;">View Source &#8594;</a>';
-          html += '</div></div>';
+          html += '<div class="wn-bottom-line"><strong>Bottom Line:</strong> ' + item.bottomLine + '</div>';
         }
+        if (item.landmarkSections && item.landmarkSections.length > 0) {
+          var showHeadings = ['Clinical Question', 'Key Findings', 'Practice Impact'];
+          html += '<div style="margin-top:10px; font-size:0.85rem; line-height:1.6;">';
+          item.landmarkSections.forEach(function(sec) {
+            if (showHeadings.indexOf(sec.heading) !== -1) {
+              html += '<p style="margin-bottom:6px;"><strong style="color:var(--english-red);">' + sec.heading + ':</strong> ' + sec.text + '</p>';
+            }
+          });
+          html += '</div>';
+        }
+        if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="display:block; text-align:right;">View Source &#8594;</a>';
         html += '</div>';
       });
       container.innerHTML = html;
@@ -1810,7 +2709,7 @@ BASE_JS = """
 # SECTION 8 — PAGE ASSEMBLY
 # ═══════════════════════════════════════════════════════════════════════
 
-def build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, archive_html, calc_ids):
+def build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, podcast_html, archive_html, calc_ids):
     """Assemble the complete index.html."""
 
     # Build calculator JS for any calculators used on the page
@@ -1844,28 +2743,29 @@ def build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html,
 
   <!-- TAB NAVIGATION -->
   <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
-    <button class="tab-btn" data-tab="whatsnew">What's New</button>
-    <button class="tab-btn" data-tab="landmark">Landmark Study</button>
+    <button class="tab-btn active" data-tab="whatsnew">What's New</button>
+    <button class="tab-btn" data-tab="landmark">Landmark Trial</button>
+    <button class="tab-btn" data-tab="disease">Disease of the Day</button>
     <button class="tab-btn" data-tab="imageofday">Image of the Day</button>
+    <button class="tab-btn" data-tab="podcasts">Podcasts</button>
     <button class="tab-btn" data-tab="archive">Archive</button>
   </nav>
 
   <main>
 
-    <!-- TAB 1: DISEASE OF THE DAY -->
-    <section id="disease" class="tab-content active">
-{disease_html}
-    </section>
-
-    <!-- TAB 2: WHAT'S NEW -->
-    <section id="whatsnew" class="tab-content">
+    <!-- TAB 1: WHAT'S NEW -->
+    <section id="whatsnew" class="tab-content active">
 {whatsnew_html}
     </section>
 
-    <!-- TAB 3: LANDMARK STUDY -->
+    <!-- TAB 2: LANDMARK TRIAL -->
     <section id="landmark" class="tab-content">
 {landmark_html}
+    </section>
+
+    <!-- TAB 3: DISEASE OF THE DAY -->
+    <section id="disease" class="tab-content">
+{disease_html}
     </section>
 
     <!-- TAB 4: IMAGE OF THE DAY -->
@@ -1873,7 +2773,12 @@ def build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html,
 {image_html}
     </section>
 
-    <!-- TAB 5: ARCHIVE -->
+    <!-- TAB 5: PODCASTS -->
+    <section id="podcasts" class="tab-content">
+{podcast_html}
+    </section>
+
+    <!-- TAB 6: ARCHIVE -->
     <section id="archive" class="tab-content">
 {archive_html}
     </section>
@@ -1939,13 +2844,16 @@ def rotate_archive(current_items, archive):
     return kept, archive
 
 
-def update_history(history, disease_name, study_id, new_item_ids, jdd_condition_name=None):
+def update_history(history, disease_name, study_id, new_item_ids,
+                   jdd_condition_name=None, litfl_shown_ids=None):
     """Update the history tracker."""
     history.setdefault("diseases_shown", []).append(disease_name)
     history.setdefault("landmark_studies_shown", []).append(study_id)
     history.setdefault("whats_new_ids", []).extend(new_item_ids)
     if jdd_condition_name:
         history.setdefault("jdd_conditions_shown", []).append(jdd_condition_name)
+    if litfl_shown_ids:
+        history.setdefault("litfl_cases_shown", []).extend(litfl_shown_ids)
     history["last_run"] = TODAY_ISO
 
     # Trim old history to keep file size reasonable
@@ -1954,6 +2862,8 @@ def update_history(history, disease_name, study_id, new_item_ids, jdd_condition_
     history["whats_new_ids"] = history["whats_new_ids"][-500:]
     if "jdd_conditions_shown" in history:
         history["jdd_conditions_shown"] = history["jdd_conditions_shown"][-200:]
+    if "litfl_cases_shown" in history:
+        history["litfl_cases_shown"] = history["litfl_cases_shown"][-200:]
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -2025,7 +2935,76 @@ def main():
                  "one_liner": "Low tidal volume ventilation reduced ARDS mortality by 22%."}
     print(f"Landmark Study: {study.get('name', 'Unknown')}")
 
-    # 4. Fetch RSS feeds first (no API calls, just HTTP — fast)
+    # ── Phase 1: Kick off ALL independent HTTP fetches in parallel ──
+    # These run in background threads while we do Claude API calls below.
+    # Saves 15-30s vs doing them sequentially after the API work.
+    print("\n--- Parallel HTTP fetches starting (JDD, LITFL, podcasts, WikiJournalClub) ---")
+    http_pool = ThreadPoolExecutor(max_workers=5)
+
+    def _fetch_jdd_safe():
+        """Fetch JDD image content (HTTP only). Returns (jdd_content, condition_name)."""
+        try:
+            conditions = fetch_jdd_index()
+            if conditions:
+                pick = pick_jdd_condition(conditions, history)
+                if pick:
+                    content = fetch_jdd_condition_page(pick["url"])
+                    return content, pick["name"]
+            return None, None
+        except Exception as e:
+            print(f"  WARNING: JDD fetch failed ({type(e).__name__}: {e})")
+            return None, None
+
+    def _fetch_litfl_safe():
+        """Fetch all 4 LITFL cases in parallel. Returns (results_dict, shown_ids)."""
+        try:
+            clinical_cases = fetch_litfl_clinical_index()
+            picks = pick_litfl_cases(history, clinical_cases)
+
+            results = {}
+            shown_ids = []
+            with ThreadPoolExecutor(max_workers=4) as inner_pool:
+                futures = {}
+                for cat_key, pick in picks.items():
+                    if pick is None:
+                        continue
+                    url = pick.get("url")
+                    if url:
+                        futures[cat_key] = inner_pool.submit(
+                            fetch_litfl_case_page, url, cat_key)
+
+                for cat_key, future in futures.items():
+                    try:
+                        content = future.result(timeout=20)
+                        if content:
+                            results[cat_key] = content
+                            pick = picks[cat_key]
+                            if cat_key == "clinical":
+                                shown_ids.append(f"clinical-{pick['slug']}")
+                            else:
+                                shown_ids.append(f"{cat_key}-{pick['num']:03d}")
+                    except Exception as e:
+                        print(f"  WARNING: LITFL {cat_key} fetch failed: {e}")
+
+            return results, shown_ids
+        except Exception as e:
+            print(f"  WARNING: LITFL fetch failed ({type(e).__name__}: {e})")
+            return {}, []
+
+    def _fetch_podcasts_safe():
+        """Fetch podcast feeds (HTTP only). Returns list."""
+        try:
+            return fetch_all_podcasts()
+        except Exception as e:
+            print(f"  WARNING: Podcast fetch failed ({type(e).__name__}: {e})")
+            return []
+
+    jdd_future = http_pool.submit(_fetch_jdd_safe)
+    litfl_future = http_pool.submit(_fetch_litfl_safe)
+    podcast_future = http_pool.submit(_fetch_podcasts_safe)
+    wjc_future = http_pool.submit(fetch_wikijournalclub_page, study)
+
+    # ── Phase 2: What's New (RSS HTTP + Claude curate + PubMed HTTP + Claude enrich) ──
     print("\nFetching What's New from RSS feeds...")
     new_items = generate_whats_new(history)
 
@@ -2038,71 +3017,55 @@ def main():
 
     print(f"  Found {len(new_items)} new item(s).")
 
-    # 5. Build disease pool (3 diseases for Randomize button)
-    # Pick the primary disease + 2 alternates from the same list
-    print("\nBuilding disease pool (3 diseases for Randomize button)...")
+    # ── Phase 3: Disease of the Day (single Claude API call) ──
+    print(f"\nGenerating disease content: {disease_name}...")
+    disease_content = generate_disease_content(disease_name, use_web_search=web_search_available)
+    disease_pool = [disease_content]
     disease_pool_names = [disease_name]
-    temp_hist = {
-        "diseases_shown": list(history.get("diseases_shown", [])),
-        "landmark_studies_shown": [],
-        "whats_new_ids": [],
-    }
-    for _ in range(2):
-        temp_hist["diseases_shown"] = temp_hist["diseases_shown"] + disease_pool_names
-        disease_pool_names.append(pick_disease(temp_hist))
+    print(f"  Done: {disease_name}")
 
-    print(f"  Disease pool: {', '.join(disease_pool_names)}")
-
-    # Generate disease content for each pool member (web search → StatPearls directed)
-    disease_pool = []
-    for i, dname in enumerate(disease_pool_names):
-        if i > 0:
-            print(f"  Pausing 60s before next disease generation...")
-            time.sleep(60)
-        print(f"  Generating disease content for: {dname}")
-        content = generate_disease_content(dname, use_web_search=web_search_available)
-        disease_pool.append(content)
-        print(f"  Done: {dname}")
-
-    print(f"\nPausing 90s to avoid API rate limits before landmark generation...")
-    time.sleep(90)
-
-    # 6. Generate Landmark Study — try WikiJournalClub first, fallback to training data
-    print("Generating Landmark Study content...")
-    wjc_text, wjc_url = fetch_wikijournalclub_page(study)
+    # ── Phase 4: Collect HTTP results + generate landmark ──
+    # WikiJournalClub fetch should be done by now (started in Phase 1)
+    print("\nCollecting parallel HTTP results...")
+    wjc_text, wjc_url = wjc_future.result()
     if wjc_text:
-        print(f"  Using WikiJournalClub source: {wjc_url}")
+        print(f"  WikiJournalClub source ready: {wjc_url}")
     else:
         print("  WikiJournalClub not found — generating from training data")
+
+    print(f"Pausing 10s before landmark generation...")
+    time.sleep(10)
+
+    print("Generating Landmark Study content...")
     landmark_content = generate_landmark_content(study, source_text=wjc_text, source_url=wjc_url)
 
-    # 6b. Fetch Image of the Day from JDD Inclusive Derm Atlas
-    print("\nFetching Image of the Day from JDD Atlas...")
-    jdd_content = None
-    jdd_condition_name = None
-    try:
-        jdd_conditions = fetch_jdd_index()
-        if jdd_conditions:
-            jdd_pick = pick_jdd_condition(jdd_conditions, history)
-            if jdd_pick:
-                jdd_condition_name = jdd_pick["name"]
-                print(f"  Image of the Day: {jdd_condition_name}")
-                jdd_content = fetch_jdd_condition_page(jdd_pick["url"])
-            else:
-                print("  WARNING: No JDD conditions available to pick")
-        else:
-            print("  WARNING: JDD conditions list is empty")
-    except Exception as e:
-        print(f"  WARNING: JDD fetch failed ({type(e).__name__}: {e})")
+    # ── Phase 5: Collect remaining HTTP results ──
+    jdd_content, jdd_condition_name = jdd_future.result()
+    if jdd_condition_name:
+        print(f"  JDD Image: {jdd_condition_name}")
+    else:
+        print("  WARNING: No JDD image available")
 
-    # 7. Add today's new items to the front of the current list (archive is now client-side localStorage)
+    litfl_results, litfl_shown_ids = litfl_future.result()
+    if litfl_results:
+        print(f"  LITFL Cases: {len(litfl_results)} loaded ({', '.join(litfl_results.keys())})")
+    else:
+        print("  WARNING: No LITFL cases available")
+
+    podcasts = podcast_future.result()
+    print(f"  Podcasts fetched: {len(podcasts)} feed(s)")
+
+    http_pool.shutdown(wait=False)
+    print("--- All parallel work complete ---\n")
+
+    # 7. Add today's new items to the front of the current list
     wn_current = new_items + wn_current
 
     # 7b. Remove duplicates (by id, URL, or title)
     wn_current = remove_wn_duplicates(wn_current)
 
-    # 9. Extract CSS from template
-    css = get_css_from_template()
+    # 9. Read CSS from styles.css
+    css = get_css()
 
     # Determine which calculators are needed (from primary disease)
     primary_disease_content = disease_pool[0] if disease_pool else {}
@@ -2114,11 +3077,12 @@ def main():
     disease_html  = build_disease_tab(disease_pool)
     whatsnew_html = build_whatsnew_tab(wn_current)
     landmark_html = build_landmark_tab(landmark_content)
-    image_html    = build_image_tab(jdd_content)
+    image_html    = build_image_tab(jdd_content, litfl_results)
+    podcast_html  = build_podcast_tab(podcasts)
     archive_html  = build_archive_tab()
 
     # 10. Assemble full page
-    page = build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, archive_html, calc_ids)
+    page = build_full_page(css, disease_html, whatsnew_html, landmark_html, image_html, podcast_html, archive_html, calc_ids)
 
     # 11. Write index.html
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
@@ -2127,10 +3091,10 @@ def main():
 
     # 12. Update state files
     new_item_ids = [item.get("id", "") for item in new_items if item.get("id")]
-    # Record all pool diseases in history to avoid repeating them soon
-    for dname in disease_pool_names:
-        update_history(history, dname, study.get("id", ""), new_item_ids if dname == disease_pool_names[0] else [],
-                       jdd_condition_name=jdd_condition_name if dname == disease_pool_names[0] else None)
+    # Record disease in history to avoid repeating it soon
+    update_history(history, disease_name, study.get("id", ""), new_item_ids,
+                   jdd_condition_name=jdd_condition_name,
+                   litfl_shown_ids=litfl_shown_ids)
     # Deduplicate history IDs (update_history extends the list)
     history["whats_new_ids"] = list(dict.fromkeys(history["whats_new_ids"]))
     save_json(HISTORY_PATH, history)

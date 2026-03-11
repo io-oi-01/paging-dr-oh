@@ -33,9 +33,16 @@ jobs:
         run: |
           git config user.name "Paging Dr. Oh Bot"
           git config user.email "bot@pagingdroh.com"
-          git add index.html history.json whats_new_current.json archive.json manual_additions.json jdd_conditions.json
+          git add index.html history.json whats_new_current.json archive.json manual_additions.json jdd_conditions.json litfl_cases.json
           git diff --staged --quiet || git commit -m "Daily update: $(date -u +'%B %d, %Y')"
-          git pull --rebase origin main
+          # Fetch latest and rebase; on conflict keep our freshly generated files
+          git fetch origin main
+          git rebase origin/main || {
+            echo "Rebase conflict — accepting our generated versions"
+            git checkout --ours -- index.html history.json whats_new_current.json archive.json manual_additions.json jdd_conditions.json litfl_cases.json 2>/dev/null || true
+            git add index.html history.json whats_new_current.json archive.json manual_additions.json jdd_conditions.json litfl_cases.json 2>/dev/null || true
+            GIT_EDITOR=true git rebase --continue || true
+          }
           git push
 
       - name: Upload to Neocities

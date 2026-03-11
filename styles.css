@@ -1,0 +1,1584 @@
+/*
+ * ============================================================
+ *  Paging Dr. Oh — Stylesheet (Dark Clinical Theme)
+ * ============================================================
+ *
+ *  LOCKED PALETTE — do not substitute different base colors.
+ *  Hover/active/border/tint variants may be derived from these.
+ *
+ *  This file is the SINGLE SOURCE OF TRUTH for all styling.
+ *  - generate.py reads it and inlines it into paging-dr-oh.html
+ *  - template.html links it for local preview
+ *  - mockup.html links it for design iteration
+ *
+ *  Section order:
+ *    1. Design Tokens (CSS Variables)
+ *    2. Reset & Base Typography
+ *    3. Header
+ *    4. Tab Navigation
+ *    5. Cards, Pills, Buttons (shared)
+ *    6. Disease of the Day
+ *    7. What's New
+ *    8. Landmark Study
+ *    9. Image of the Day
+ *   10. Podcasts
+ *   11. Favorites & Archive
+ *   12. Footer
+ *   13. Mobile Responsive
+ * ============================================================
+ */
+
+
+/* ==========================================================
+   1. DESIGN TOKENS
+   ========================================================== */
+
+:root {
+  /* ── Base Neutrals ── */
+  --bg:            #0B101A;   /* Page / body background */
+  --surface:       #161D29;   /* Cards, containers, panels */
+  --surface-alt:   #1D2536;   /* Nested sections, accordions, interior boxes */
+  --border:        #2D3749;   /* Borders, dividers, outlines */
+  --text-primary:  #E6ECF5;   /* Main readable text */
+  --text-muted:    #A0AEC0;   /* Metadata, timestamps, quiet labels */
+
+  /* ── Accent Colors ── */
+  --teal:   #3A937F;   /* Disease tab · guidelines · primary CTA · bottom-line */
+  --green:  #6BAA60;   /* Observational pill · GI · podcasts tab */
+  --blue-1: #3F7CE7;   /* What's New tab · RCT pill · cardiology · links */
+  --blue-2: #4E6FB3;   /* EKG tab · technical pill · nephrology */
+  --violet: #8161DB;   /* Landmark tab · landmark pill · ID · CT tab */
+  --rose:   #BA86C2;   /* Clinical Case tab · featured pill · heme-onc */
+  --amber:  #D4A43D;   /* FDA pill · emergency · CXR tab · stars */
+  --ochre:  #BD8747;   /* Imaging pill · radiology · image tab */
+
+  /* ── Derived helpers ── */
+  --teal-hover:   #44A990;
+  --blue-1-hover: #5A93F0;
+  --violet-hover: #9B7EE8;
+  --amber-hover:  #E0B94E;
+  --white:        #FFFFFF;
+
+  /* ── Surfaces & Elevation ── */
+  --shadow:       0 2px 12px rgba(0,0,0,0.45);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,0.55);
+  --radius:       12px;
+  --radius-sm:    8px;
+  --transition:   0.3s ease;
+}
+
+
+/* ==========================================================
+   2. RESET & BASE TYPOGRAPHY
+   ========================================================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  max-width: 860px;
+  margin: 0 auto;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+a { color: var(--blue-1); text-decoration: none; }
+a:hover { color: var(--blue-1-hover); text-decoration: underline; }
+
+
+/* ==========================================================
+   3. HEADER
+   ========================================================== */
+
+.site-header {
+  background: linear-gradient(135deg, var(--bg) 0%, var(--surface) 60%, var(--surface-alt) 100%);
+  color: var(--text-primary);
+  padding: 32px 20px 28px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.site-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.site-header .tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+
+/* ==========================================================
+   4. TAB NAVIGATION
+   ========================================================== */
+
+.tab-nav {
+  display: flex;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tab-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  flex: 1;
+  min-width: fit-content;
+  padding: 14px 16px;
+  border: none;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+
+/* Default active state (fallback) */
+.tab-btn.active { font-weight: 700; }
+
+/* Per-tab active colors */
+.tab-btn[data-tab="whatsnew"].active          { color: var(--blue-1); }
+.tab-btn[data-tab="landmark"].active          { color: var(--violet); }
+.tab-btn[data-tab="disease"].active           { color: var(--teal); }
+.tab-btn[data-tab="imageofday"].active        { color: var(--ochre); }
+.tab-btn[data-tab="podcasts"].active          { color: var(--green); }
+.tab-btn[data-tab="archive"].active           { color: var(--text-primary); }
+
+/* Per-tab active underline */
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+.tab-btn[data-tab="whatsnew"].active::after    { background: var(--blue-1); }
+.tab-btn[data-tab="landmark"].active::after    { background: var(--violet); }
+.tab-btn[data-tab="disease"].active::after     { background: var(--teal); }
+.tab-btn[data-tab="imageofday"].active::after  { background: var(--ochre); }
+.tab-btn[data-tab="podcasts"].active::after    { background: var(--green); }
+.tab-btn[data-tab="archive"].active::after     { background: var(--border); }
+
+/* Hover (non-active) */
+.tab-btn:hover:not(.active) { color: var(--text-primary); }
+
+/* ── Tab Content ── */
+
+.tab-content {
+  display: none;
+  padding: 20px 16px 40px;
+  animation: fadeIn 0.35s ease;
+}
+
+.tab-content.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==========================================================
+   5. CARDS, PILLS, BUTTONS (shared)
+   ========================================================== */
+
+/* ── Cards ── */
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.card:hover { box-shadow: var(--shadow-hover); }
+
+/* ── Pill Tags ── */
+
+.pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+}
+
+.meta-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* ── PRIMARY pills (study/content type) — stronger, more saturated ── */
+
+.pill-rct {
+  background: rgba(63,124,231,0.15);
+  color: #6FA0F0;
+  border-color: rgba(63,124,231,0.30);
+}
+
+.pill-meta {
+  background: rgba(107,170,96,0.15);
+  color: #8DC480;
+  border-color: rgba(107,170,96,0.30);
+}
+
+.pill-guideline {
+  background: rgba(58,147,127,0.15);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.30);
+}
+
+.pill-fda {
+  background: rgba(212,164,61,0.15);
+  color: #E0B94E;
+  border-color: rgba(212,164,61,0.30);
+}
+
+.pill-landmark {
+  background: rgba(129,97,219,0.18);
+  color: #A48FE8;
+  border-color: rgba(129,97,219,0.35);
+}
+
+.pill-image {
+  background: rgba(189,135,71,0.15);
+  color: #D4A260;
+  border-color: rgba(189,135,71,0.30);
+}
+
+.pill-podcast {
+  background: rgba(107,170,96,0.15);
+  color: #8DC480;
+  border-color: rgba(107,170,96,0.30);
+}
+
+.pill-core {
+  background: rgba(58,147,127,0.15);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.30);
+}
+
+.pill-saved {
+  background: rgba(78,111,179,0.15);
+  color: #7B9BD4;
+  border-color: rgba(78,111,179,0.30);
+}
+
+/* ── SECONDARY pills (specialty) — softer, outlined, quieter ── */
+
+.pill-specialty {
+  background: rgba(58,147,127,0.08);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.20);
+}
+
+.pill-cardiology {
+  background: rgba(63,124,231,0.08);
+  color: #6FA0F0;
+  border-color: rgba(63,124,231,0.20);
+}
+
+.pill-pulmonology {
+  background: rgba(58,147,127,0.08);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.20);
+}
+
+.pill-id {
+  background: rgba(129,97,219,0.08);
+  color: #A48FE8;
+  border-color: rgba(129,97,219,0.20);
+}
+
+.pill-nephrology {
+  background: rgba(78,111,179,0.08);
+  color: #7B9BD4;
+  border-color: rgba(78,111,179,0.20);
+}
+
+.pill-derm {
+  background: rgba(189,135,71,0.08);
+  color: #D4A260;
+  border-color: rgba(189,135,71,0.20);
+}
+
+/* ── Buttons ── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--teal-hover);
+  box-shadow: 0 4px 14px rgba(58,147,127,0.35);
+}
+
+.btn-primary:disabled {
+  background: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background: var(--surface-alt);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+/* ── Action Buttons (Star, Save) ── */
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: transform var(--transition), opacity var(--transition);
+  opacity: 0.4;
+  line-height: 1;
+  color: var(--text-muted);
+}
+
+.action-btn:hover { transform: scale(1.2); opacity: 0.8; }
+.action-btn.active { opacity: 1; }
+.action-btn.star.active { color: var(--amber); }
+
+.card-actions {
+  display: flex;
+  gap: 4px;
+}
+
+/* ── Section Title ── */
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--amber);
+}
+
+/* ── Superscript References ── */
+
+sup {
+  color: var(--blue-1);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+
+
+/* ==========================================================
+   6. DISEASE OF THE DAY
+   ========================================================== */
+
+.disease-header {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border-top: 4px solid var(--teal);
+  text-align: center;
+  padding: 32px 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.disease-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.disease-header .verified-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.statpearls-link {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+
+.statpearls-link:hover {
+  color: var(--teal-hover);
+  text-decoration: underline;
+}
+
+.statpearls-wrap {
+  text-align: right;
+  margin-top: 12px;
+}
+
+/* ── Accordion ── */
+
+.accordion { margin-bottom: 12px; }
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  user-select: none;
+  border: 1px solid var(--border);
+}
+
+.accordion-header:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(58,147,127,0.3);
+}
+
+.accordion-header h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.accordion-toggle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: transform var(--transition), background var(--transition), color var(--transition);
+  flex-shrink: 0;
+  margin-left: 12px;
+  line-height: 1;
+}
+
+.accordion.open .accordion-toggle {
+  transform: rotate(45deg);
+  background: var(--teal);
+  color: var(--white);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.accordion.open .accordion-body { max-height: 3000px; }
+
+.accordion-content {
+  padding: 16px 20px;
+  background: var(--surface-alt);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  margin-top: 2px;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.accordion-content p { margin-bottom: 12px; }
+.accordion-content p:last-child { margin-bottom: 0; }
+.accordion-content ul, .accordion-content ol { margin: 8px 0 12px 20px; }
+.accordion-content li { margin-bottom: 6px; }
+
+.card-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+/* ── Calculator ── */
+
+.calculator-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.calculator-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.calc-option {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.calc-option:last-of-type { border-bottom: none; }
+
+.calc-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  accent-color: var(--teal);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.calc-option label {
+  font-size: 0.95rem;
+  cursor: pointer;
+  flex: 1;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.score-result {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.score-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.score-value {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  line-height: 1.2;
+}
+
+.score-interpretation {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.risk-low      { background: rgba(107,170,96,0.15); color: #8DC480; }
+.risk-moderate { background: rgba(212,164,61,0.15); color: var(--amber); }
+.risk-high     { background: rgba(186,134,194,0.15); color: var(--rose); }
+
+/* ── Guidelines Box ── */
+
+.guidelines-box {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 24px 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.guidelines-box h4 {
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+.guideline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.guideline-item:last-child { border-bottom: none; }
+
+.guideline-info { flex: 1; min-width: 200px; }
+
+.guideline-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.guideline-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+.guideline-link {
+  color: var(--blue-1);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.guideline-link:hover { color: var(--blue-1-hover); }
+
+/* ── References ── */
+
+.references {
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.references h4 {
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.references ol { padding-left: 24px; }
+
+.references li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ── Randomize Button (bottom of Disease tab) ── */
+
+.randomize-wrap {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+
+/* ==========================================================
+   7. WHAT'S NEW
+   ========================================================== */
+
+.wn-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.wn-card:hover { box-shadow: var(--shadow-hover); }
+
+.wn-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.wn-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.wn-source {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.wn-title {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.wn-section-label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.wn-text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+/* ── Bottom Line (dark callout with teal accent) ── */
+
+.wn-bottom-line {
+  background: var(--surface-alt);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin: 14px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-left: 3px solid var(--teal);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+}
+
+.wn-bottom-line strong {
+  color: var(--teal);
+}
+
+/* ── Bottom Line (class used in landmark) ── */
+.bottom-line {
+  background: var(--surface-alt);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin: 14px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+}
+
+.bottom-line strong {
+  color: var(--teal);
+}
+
+.wn-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.confidence {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.confidence-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.confidence-high .confidence-dot        { background: var(--green); }
+.confidence-moderate .confidence-dot     { background: var(--amber); }
+.confidence-preliminary .confidence-dot  { background: var(--text-muted); }
+
+.source-link {
+  color: var(--blue-1);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.source-link:hover { color: var(--blue-1-hover); }
+
+/* ── Talking About Section ── */
+
+.trending-section {
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(212,164,61,0.30);
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trending-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.trending-header h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--amber);
+  margin: 0;
+}
+
+.trending-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.wn-card-trending {
+  border-left: 3px solid var(--amber) !important;
+}
+
+.trending-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: rgba(212,164,61,0.08);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+}
+
+.trending-sources {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.trending-count {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── Enhanced WN Card Fields ── */
+
+.wn-study-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  line-height: 1.6;
+  border: 1px solid var(--border);
+}
+
+.wn-study-meta strong {
+  color: var(--text-primary);
+}
+
+.wn-bullets {
+  margin: 4px 0 10px 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+
+.wn-bullets li {
+  margin-bottom: 4px;
+}
+
+.wn-interp-label {
+  color: var(--blue-2) !important;
+}
+
+.wn-interp-bullets {
+  color: var(--blue-2);
+}
+
+.wn-limitations {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Enrichment Card Fields ── */
+
+.wn-basis-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  background: rgba(58,147,127,0.12);
+  color: var(--teal);
+}
+
+.wn-basis-fallback {
+  background: rgba(212,164,61,0.12);
+  color: var(--amber);
+}
+
+.wn-why-matters {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  line-height: 1.55;
+  font-style: italic;
+  border: 1px solid var(--border);
+}
+
+.wn-pico {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.wn-pico strong {
+  color: var(--text-primary);
+}
+
+.wn-pico-item {
+  margin-bottom: 4px;
+}
+
+.wn-pico-item:last-child {
+  margin-bottom: 0;
+}
+
+.wn-readiness {
+  margin-left: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.wn-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wn-secondary-link {
+  font-size: 0.78rem;
+  opacity: 0.7;
+  color: var(--text-muted);
+}
+
+.wn-secondary-link:hover { color: var(--blue-1); opacity: 1; }
+
+
+/* ==========================================================
+   8. LANDMARK STUDY
+   ========================================================== */
+
+.landmark-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.landmark-card:hover { box-shadow: var(--shadow-hover); }
+
+.landmark-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.landmark-title {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  flex: 1;
+  margin-right: 12px;
+}
+
+.landmark-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.landmark-section { margin-bottom: 18px; }
+
+.landmark-section h4 {
+  color: var(--violet);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.landmark-section p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+
+/* ==========================================================
+   9. IMAGE OF THE DAY
+   ========================================================== */
+
+.image-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.image-card:hover { box-shadow: var(--shadow-hover); }
+
+.image-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.image-card-title {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.image-card-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.image-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.image-card-source {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+  color: var(--blue-1);
+}
+
+/* ── Card Footer (shared for Image of the Day) ── */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ── NEJM Image Challenge ── */
+
+.nejm-reminder-card {
+  background: var(--surface);
+  border: 1px solid var(--blue-2);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.nejm-reminder-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.nejm-reminder-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.nejm-reminder-title {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.nejm-reminder-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+
+/* ==========================================================
+   10. PODCASTS
+   ========================================================== */
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 520px) {
+  .podcast-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.podcast-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.podcast-card-top {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.podcast-artwork {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.podcast-artwork-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--surface-alt), var(--border));
+  color: var(--text-muted);
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.podcast-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.podcast-name {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.podcast-ep-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.podcast-ep-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.podcast-ep-summary {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.podcast-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  justify-content: flex-end;
+}
+
+.podcast-btn,
+.podcast-btn-secondary {
+  font-size: 0.75rem !important;
+  padding: 6px 12px !important;
+}
+
+
+/* ==========================================================
+   11. FAVORITES & ARCHIVE
+   ========================================================== */
+
+/* ── Favorites ── */
+
+.favorites-section {
+  margin-top: 32px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.favorites-header h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.favorites-list { list-style: none; }
+
+.favorites-list li {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.favorites-list li:last-child { border-bottom: none; }
+
+.favorites-empty {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+/* ── Archive ── */
+
+.archive-month { margin-bottom: 12px; }
+
+.archive-month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--surface-alt);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition);
+  user-select: none;
+  border: 1px solid var(--border);
+}
+
+.archive-month-header:hover {
+  background: var(--border);
+}
+
+.archive-month-header h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.archive-toggle {
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+  color: var(--text-muted);
+}
+
+.archive-month.open .archive-toggle { transform: rotate(90deg); }
+
+.archive-month-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.archive-month.open .archive-month-body { max-height: 5000px; }
+
+.archive-card {
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 8px 0;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.archive-card:hover { box-shadow: var(--shadow-hover); }
+
+.archive-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.archive-card-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.archive-card-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.archive-card-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.archive-card.expanded .archive-card-details { max-height: 500px; }
+
+.archive-detail-content {
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+}
+
+.archive-empty-msg {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* ── Archive Action Buttons ── */
+
+.archive-actions-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.archive-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.archive-action-btn:hover {
+  border-color: var(--teal);
+  background: var(--surface-alt);
+}
+
+.archive-action-btn:active { transform: scale(0.97); }
+
+.archive-action-btn-danger {
+  color: var(--amber);
+  border-color: rgba(212,164,61,0.3);
+}
+
+.archive-action-btn-danger:hover {
+  border-color: var(--amber);
+  background: rgba(212,164,61,0.08);
+}
+
+.archive-action-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.archive-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.btn-remove-fav {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: transform var(--transition), opacity var(--transition), color var(--transition);
+  line-height: 1;
+}
+
+.btn-remove-fav:hover {
+  color: var(--amber);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.archive-card.expanded .accordion-toggle {
+  transform: rotate(45deg);
+  background: var(--teal);
+  color: var(--white);
+}
+
+
+/* ==========================================================
+   12. FOOTER
+   ========================================================== */
+
+.site-footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   13. MOBILE RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 480px) {
+  .site-header h1 { font-size: 1.4rem; }
+  .site-header { padding: 22px 16px 20px; }
+  .tab-btn { font-size: 0.78rem; padding: 12px 10px; }
+  .disease-header h2 { font-size: 1.25rem; }
+  .disease-header { padding: 24px 16px; }
+  .accordion-header { padding: 14px 16px; }
+  .accordion-content { padding: 14px 16px; }
+  .calculator-card { padding: 18px; }
+  .landmark-title { font-size: 1.1rem; }
+  .guideline-item { flex-direction: column; align-items: flex-start; }
+  .wn-card { padding: 16px; }
+  .trending-header { flex-wrap: wrap; }
+  .trending-meta { flex-direction: column; align-items: flex-start; }
+  .image-card { padding: 16px; }
+  .image-card-title { font-size: 1.05rem; }
+  .nejm-reminder-card { padding: 16px; }
+  .podcast-artwork { width: 56px; height: 56px; }
+  .podcast-card { padding: 14px; }
+  .podcast-name { font-size: 0.9rem; }
+}

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paging Dr. Oh — Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css?v=2">
+  <!-- Styles live in styles.css — edit that file to change the appearance -->
+</head>
+<body>
+  <header class="site-header">
+    <h1>Paging Dr. Oh</h1>
+    <div class="tagline">Practice-changing studies, disease refreshers, and visual learning pearls</div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="whatsnew" onclick="switchTab('whatsnew')">What's New</button>
+    <button class="tab-btn" data-tab="landmark" onclick="switchTab('landmark')">Landmark Trial</button>
+    <button class="tab-btn" data-tab="disease" onclick="switchTab('disease')">Disease of the Day</button>
+    <button class="tab-btn" data-tab="imageofday" onclick="switchTab('imageofday')">Image of the Day</button>
+    <button class="tab-btn" data-tab="podcasts" onclick="switchTab('podcasts')">Podcasts</button>
+    <button class="tab-btn" data-tab="archive" onclick="switchTab('archive')">Archive</button>
+  </nav>
+
+  <main>
+    <section id="whatsnew" class="tab-content active">
+      <div class="trending-section">
+        <div class="trending-header">
+          <span class="trending-icon">🔥</span>
+          <h3>TALKING ABOUT</h3>
+        </div>
+
+        <div class="trending-meta">
+          <span>Seen in: 2 Minute Medicine, NEJM</span>
+          <span>2 sources over 5 days</span>
+        </div>
+
+        <div class="talking-card">
+          <div class="wn-card-header">
+            <div class="wn-tags">
+              <span class="pill pill-rct">RCT</span>
+              <span class="pill pill-cardiology">Cardiology</span>
+            </div>
+            <div class="card-actions">
+              <button class="action-btn star" data-id="wn-sglt2-hfpef" title="Star this study">☆</button>
+            </div>
+          </div>
+
+          <p class="wn-title">SGLT2 Inhibitor Dapagliflozin Reduces Heart Failure Hospitalizations in HFpEF</p>
+          <div class="wn-study-meta">RCT • N=6,263 • Primary outcome: worsening HF or CV death</div>
+
+          <p class="wn-section-label">Source Summary</p>
+          <ul class="wn-bullets">
+            <li>Dapagliflozin reduced the composite endpoint by 18% versus placebo.</li>
+            <li>Benefits were consistent across the ejection fraction spectrum.</li>
+          </ul>
+
+          <p class="wn-section-label">Clinical Interpretation</p>
+          <ul class="wn-bullets">
+            <li>This further strengthens SGLT2 inhibitors as heart-failure therapy beyond classic HFrEF populations.</li>
+          </ul>
+
+          <div class="wn-bottom-line">
+            <strong>Bottom line:</strong> Dapagliflozin is now a central evidence-based HF therapy regardless of EF context.
+          </div>
+
+          <div class="wn-footer">
+            <span class="confidence confidence-high"><span class="confidence-dot"></span> High confidence</span>
+            <a href="#" class="source-link">Read full article →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-fda">FDA Action</span>
+            <span class="pill pill-id">Infectious Disease</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" data-id="wn-fda-oral-abx" title="Star this study">☆</button>
+          </div>
+        </div>
+
+        <p class="wn-source">2 Minute Medicine • March 8, 2026</p>
+        <p class="wn-title">FDA Approves Novel Oral Antibiotic for Community-Acquired Bacterial Pneumonia</p>
+
+        <p class="wn-section-label">Source Summary</p>
+        <ul class="wn-bullets">
+          <li>Zoliflodacin approved for treatment of adult CABP.</li>
+          <li>Approval followed Phase 3 non-inferiority data against moxifloxacin.</li>
+        </ul>
+
+        <div class="wn-bottom-line">
+          <strong>Bottom line:</strong> A new oral CABP option may be useful in settings where fluoroquinolone resistance or tolerability is a concern.
+        </div>
+
+        <div class="wn-footer">
+          <span class="confidence confidence-moderate"><span class="confidence-dot"></span> Moderate confidence</span>
+          <a href="#" class="source-link">Read full article →</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-meta">Meta-Analysis</span>
+            <span class="pill pill-nephrology">Nephrology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" data-id="wn-bp-ckd" title="Star this study">☆</button>
+          </div>
+        </div>
+
+        <p class="wn-source">2 Minute Medicine • March 6, 2026</p>
+        <p class="wn-title">Intensive BP Control Reduces CKD Progression: Systematic Review</p>
+
+        <div class="wn-bottom-line">
+          <strong>Bottom line:</strong> Intensive BP control under 130/80 was associated with slower CKD progression across pooled randomized data.
+        </div>
+
+        <div class="wn-footer">
+          <span class="confidence confidence-high"><span class="confidence-dot"></span> High confidence</span>
+          <a href="#" class="source-link">Read full article →</a>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-guideline">Guideline</span>
+            <span class="pill pill-pulmonology">Pulmonology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" data-id="wn-ats-lung-screen" title="Star this study">☆</button>
+          </div>
+        </div>
+
+        <p class="wn-source">2 Minute Medicine • March 4, 2026</p>
+        <p class="wn-title">ATS/CHEST Update Lung Cancer Screening Recommendations</p>
+
+        <div class="wn-bottom-line">
+          <strong>Bottom line:</strong> Expanded eligibility supports annual LDCT for adults 50–80 with at least a 20 pack-year smoking history.
+        </div>
+
+        <div class="wn-footer">
+          <span class="confidence confidence-moderate"><span class="confidence-dot"></span> Moderate confidence</span>
+          <a href="#" class="source-link">Read full article →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="landmark" class="tab-content">
+      <div class="landmark-card">
+        <div class="meta-pills">
+          <span class="pill pill-landmark">Landmark RCT</span>
+          <span class="pill pill-cardiology">Cardiology</span>
+        </div>
+
+        <div class="landmark-header">
+          <h3 class="landmark-title">PARADIGM-HF Trial</h3>
+          <button class="action-btn star" data-id="paradigm-hf-trial" title="Star this study">☆</button>
+        </div>
+
+        <div class="card-meta">McMurray et al. • NEJM 2014 • N=8,442</div>
+
+        <div class="bottom-line">
+          <strong>Bottom line:</strong> Sacubitril/valsartan outperformed enalapril and reset first-line HFrEF therapy.
+        </div>
+
+        <div class="landmark-section">
+          <h4>Clinical Question</h4>
+          <p>Does sacubitril/valsartan reduce cardiovascular death and heart failure hospitalization compared with enalapril in HFrEF?</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Study Design</h4>
+          <p>Multicenter randomized controlled trial in symptomatic HFrEF, with 8,442 participants and reduced LVEF eligibility criteria.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Key Findings</h4>
+          <p>The primary composite endpoint was reduced by about 20%, and the trial was stopped early for benefit.</p>
+        </div>
+
+        <div class="landmark-section">
+          <h4>Practice Impact</h4>
+          <p>ARNI therapy displaced ACE inhibitor monotherapy as a foundational component of guideline-directed therapy in HFrEF.</p>
+        </div>
+
+        <a href="#" class="statpearls-link">Read on WikiJournalClub →</a>
+      </div>
+    </section>
+
+    <section id="disease" class="tab-content">
+      <div class="disease-header">
+        <div class="meta-pills">
+          <span class="pill pill-cardiology">Cardiology</span>
+          <span class="pill pill-core">Core Topic</span>
+        </div>
+        <h2>Acute Decompensated Heart Failure</h2>
+        <div class="verified-date">Last reviewed: March 10, 2026</div>
+      </div>
+
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Overview</h3>
+          <div class="accordion-toggle">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <div class="card-kicker">Clinical frame</div>
+            <p>ADHF is a rapid or gradual worsening of heart failure symptoms requiring urgent therapy or hospitalization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Presentation</h3>
+          <div class="accordion-toggle">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <div class="card-kicker">Typical features</div>
+            <p>Dyspnea, orthopnea, edema, elevated JVP, pulmonary edema, fatigue, and weight gain are common bedside clues.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Diagnosis</h3>
+          <div class="accordion-toggle">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <div class="card-kicker">Workup</div>
+            <p>Clinical congestion plus BNP or NT-proBNP, chest imaging, ECG, troponin, renal function, echocardiography, and search for precipitant.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Management</h3>
+          <div class="accordion-toggle">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <div class="card-kicker">Immediate priorities</div>
+            <p>IV loop diuretics, oxygen as needed, vasodilators when appropriate, treatment of precipitant, and early optimization of GDMT before discharge.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="calculator-card">
+        <div class="meta-pills">
+          <span class="pill pill-meta">Calculator</span>
+          <span class="pill pill-cardiology">Functional Status</span>
+        </div>
+        <h4>NYHA Functional Classification</h4>
+        <div class="calc-option"><input type="checkbox" id="c1" /><label for="c1">No limitation of physical activity (Class I)</label></div>
+        <div class="calc-option"><input type="checkbox" id="c2" /><label for="c2">Slight limitation; comfortable at rest (Class II)</label></div>
+        <div class="calc-option"><input type="checkbox" id="c3" /><label for="c3">Marked limitation; comfortable only at rest (Class III)</label></div>
+        <div class="calc-option"><input type="checkbox" id="c4" /><label for="c4">Symptoms at rest (Class IV)</label></div>
+        <div class="score-result">
+          <span class="score-label">NYHA Class</span>
+          <span class="score-value">II</span>
+        </div>
+      </div>
+
+      <div class="guidelines-box">
+        <div class="meta-pills">
+          <span class="pill pill-guideline">Guideline</span>
+          <span class="pill pill-cardiology">Heart Failure</span>
+        </div>
+        <h4>Related Guidelines</h4>
+        <div class="guideline-item">
+          <div>
+            <div class="guideline-name">2022 AHA/ACC/HFSA Heart Failure Guideline</div>
+            <div class="guideline-meta">AHA/ACC • 2022</div>
+          </div>
+          <a href="#" class="guideline-link">View →</a>
+        </div>
+        <div class="guideline-item">
+          <div>
+            <div class="guideline-name">ESC 2023 Focused Update on Heart Failure</div>
+            <div class="guideline-meta">ESC • 2023</div>
+          </div>
+          <a href="#" class="guideline-link">View →</a>
+        </div>
+      </div>
+
+      <div class="references">
+        <div class="meta-pills">
+          <span class="pill pill-meta">References</span>
+          <span class="pill pill-cardiology">Primary Literature</span>
+        </div>
+        <h4>References</h4>
+        <ol>
+          <li>Heidenreich PA, et al. 2022 AHA/ACC/HFSA Guideline. Circulation. 2022;145(18):e895-e1032.</li>
+          <li>Virani SS, et al. Heart Disease and Stroke Statistics. Circulation. 2021;143(8):e254-e743.</li>
+        </ol>
+      </div>
+
+      <div class="statpearls-wrap" style="margin-top:24px;">
+        <a href="#" class="statpearls-link">Read on StatPearls →</a>
+      </div>
+
+      <div class="randomize-wrap">
+        <button class="btn btn-primary">🎲 Randomize Disease</button>
+      </div>
+    </section>
+
+    <section id="imageofday" class="tab-content">
+      <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>
+      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Visual cases from <a href="https://jddonline.com" target="_blank" rel="noopener">JDD Atlas</a> and <a href="https://litfl.com" target="_blank" rel="noopener">LITFL</a> &mdash; test your interpretation skills</p>
+
+      <!-- JDD Derm Image -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">Derm Image</span>
+            <span class="pill pill-specialty">Dermatology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-jdd-erythema-nodosum">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">JDD Atlas &bull; March 11, 2026</div>
+        <div class="wn-title">Erythema Nodosum</div>
+        <div class="wn-study-meta">Tender erythematous subcutaneous nodules on the anterior shins, often representing a hypersensitivity pattern rather than a primary isolated skin disease.</div>
+        <div class="image-card-img" style="background:var(--surface-alt); height:160px; display:flex; align-items:center; justify-content:center; color:var(--text-muted); border-radius:var(--radius-sm); margin-bottom:14px; border:1px solid var(--border);">Clinical image placeholder</div>
+        <div class="wn-bottom-line">
+          <strong>Visual Diagnosis:</strong> Study the images above and consider the clinical description. What is your diagnosis?
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High-yield visual
+          </div>
+          <div class="wn-links">
+            <a href="#" class="source-link" target="_blank" rel="noopener">View on JDD Atlas &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ECG Case -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">ECG Case</span>
+            <span class="pill pill-specialty">Cardiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-ecg-042">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 11, 2026</div>
+        <div class="wn-title">ECG of the Day</div>
+        <div class="wn-study-meta">A 65-year-old man presents to the emergency department with acute onset chest pain radiating to his left arm. He has a history of hypertension and type 2 diabetes. The following ECG is obtained on arrival.</div>
+        <div class="image-card-img" style="background:var(--surface-alt); height:120px; display:flex; align-items:center; justify-content:center; color:var(--text-muted); border-radius:var(--radius-sm); margin-bottom:14px; border:1px solid var(--border);">ECG image placeholder</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What is the rate and rhythm?</li>
+          <li>Are there ST-segment or T-wave changes?</li>
+          <li>What is the axis?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="#" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CXR Case -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">CXR Case</span>
+            <span class="pill pill-specialty">Radiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-cxr-015">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 11, 2026</div>
+        <div class="wn-title">CXR of the Day</div>
+        <div class="wn-study-meta">A 45-year-old woman presents with progressive shortness of breath over three weeks. She has no significant past medical history. A PA chest radiograph is obtained.</div>
+        <div class="image-card-img" style="background:var(--surface-alt); height:120px; display:flex; align-items:center; justify-content:center; color:var(--text-muted); border-radius:var(--radius-sm); margin-bottom:14px; border:1px solid var(--border);">CXR image placeholder</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What are the key findings?</li>
+          <li>Is the mediastinum normal?</li>
+          <li>Are there any opacities or effusions?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="#" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CT Case -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">CT Case</span>
+            <span class="pill pill-specialty">Radiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-ct-007">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 11, 2026</div>
+        <div class="wn-title">CT of the Day</div>
+        <div class="wn-study-meta">A 72-year-old man with sudden onset abdominal pain. CT abdomen with IV contrast is performed.</div>
+        <div class="image-card-img" style="background:var(--surface-alt); height:120px; display:flex; align-items:center; justify-content:center; color:var(--text-muted); border-radius:var(--radius-sm); margin-bottom:14px; border:1px solid var(--border);">CT image placeholder</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What organ system is primarily affected?</li>
+          <li>Are there any masses, fluid collections, or abnormal enhancements?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="#" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Clinical Case -->
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">Clinical Case</span>
+            <span class="pill pill-specialty">Emergency Medicine</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-clinical-marathon-runner">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 11, 2026</div>
+        <div class="wn-title">Clinical Case of the Day</div>
+        <div class="wn-study-meta">A 28-year-old marathon runner presents to the ED with severe muscle pain and dark brown urine following a race in hot weather. He reports drinking minimal fluids during the event.</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What is the most likely diagnosis?</li>
+          <li>What key findings support your differential?</li>
+          <li>What initial workup would you order?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="#" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEJM Image Challenge -->
+      <div class="nejm-reminder-card">
+        <div class="nejm-reminder-header">
+          <span class="nejm-reminder-icon">&#x1F9E0;</span>
+          <h4 class="nejm-reminder-title">NEJM Image Challenge</h4>
+        </div>
+        <p class="nejm-reminder-text">Test your diagnostic skills with the weekly NEJM Image Challenge. A new clinical image with multiple-choice questions every week.</p>
+        <a href="https://www.nejm.org/image-challenge" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Take the Challenge &#8594;</a>
+      </div>
+    </section>
+
+    <section id="podcasts" class="tab-content">
+      <h3 class="section-title" style="margin-top:0;">Internal Medicine Podcasts</h3>
+      <div class="podcast-grid">
+
+        <div class="podcast-card">
+          <div class="meta-pills">
+            <span class="pill pill-podcast">Podcast</span>
+            <span class="pill pill-core">5 Pearls</span>
+          </div>
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">C</div>
+            <div class="podcast-card-info">
+              <div class="podcast-name">Core IM</div>
+              <div class="podcast-ep-title">5 Pearls on Hyponatremia</div>
+              <div class="podcast-ep-date">March 4, 2026</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">A rapid-fire review of hyponatremia for the busy internist: from diagnosis to treatment pearls you can use on the wards today.</div>
+          <div class="podcast-actions">
+            <a href="#" class="source-link">Apple Podcasts →</a>
+          </div>
+        </div>
+
+        <div class="podcast-card">
+          <div class="meta-pills">
+            <span class="pill pill-podcast">Podcast</span>
+            <span class="pill pill-core">Deep Dive</span>
+          </div>
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">T</div>
+            <div class="podcast-card-info">
+              <div class="podcast-name">The Curbsiders</div>
+              <div class="podcast-ep-title">#450 Gout Management Update</div>
+              <div class="podcast-ep-date">March 1, 2026</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Expert-driven deep dive into modern gout management including treat-to-target urate lowering and prophylaxis duration.</div>
+          <div class="podcast-actions">
+            <a href="#" class="source-link">Apple Podcasts →</a>
+          </div>
+        </div>
+
+        <div class="podcast-card">
+          <div class="meta-pills">
+            <span class="pill pill-podcast">Podcast</span>
+            <span class="pill pill-id">Clinical Reasoning</span>
+          </div>
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">C</div>
+            <div class="podcast-card-info">
+              <div class="podcast-name">The Clinical Problem Solvers</div>
+              <div class="podcast-ep-title">Schema: Recurrent Fevers</div>
+              <div class="podcast-ep-date">February 26, 2026</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Exploring the diagnostic schema for recurrent fevers, walking through the differential and illness scripts.</div>
+          <div class="podcast-actions">
+            <a href="#" class="source-link">Apple Podcasts →</a>
+          </div>
+        </div>
+
+        <div class="podcast-card">
+          <div class="meta-pills">
+            <span class="pill pill-podcast">Podcast</span>
+            <span class="pill pill-core">Board Review</span>
+          </div>
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">H</div>
+            <div class="podcast-card-info">
+              <div class="podcast-name">Harrison’s PodClass</div>
+              <div class="podcast-ep-title">Approach to Thrombocytopenia</div>
+              <div class="podcast-ep-date">February 20, 2026</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Harrison’s faculty review the systematic approach to thrombocytopenia, from production defects to increased destruction.</div>
+          <div class="podcast-actions">
+            <a href="#" class="source-link">Apple Podcasts →</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="archive" class="tab-content">
+      <h3 class="section-title" style="margin-top:0;">Your Starred Items</h3>
+      <p style="font-size:0.9rem; color:var(--gray); margin-bottom:20px;">
+        Star any card (☆) on What's New or Landmark Trial to save it here.
+        Starred items persist on this device.
+      </p>
+
+      <div id="archive-content">
+        <p class="archive-empty-msg">No starred items yet. Tap ☆ on any card to save it here.</p>
+      </div>
+
+      <div class="archive-actions-bar" id="archive-actions" style="display:none; margin-top:20px;">
+        <button class="archive-action-btn" id="export-btn" onclick="exportFavorites()">
+          <span class="archive-action-icon">📋</span>
+          Copy to Clipboard
+        </button>
+        <button class="archive-action-btn archive-action-btn-danger" onclick="clearAllStarred()">
+          <span class="archive-action-icon">✕</span>
+          Clear All
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Paging Dr. Oh — For educational purposes only. Not a substitute for clinical judgment.</p>
+    <p>Content generated via AI with evidence-based sources. Always verify with primary literature.</p>
+  </footer>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-tab') === tabId);
+      });
+
+      document.querySelectorAll('.tab-content').forEach(section => {
+        section.classList.toggle('active', section.id === tabId);
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function toggleAccordion(headerEl) {
+      const accordion = headerEl.parentElement;
+      accordion.classList.toggle('open');
+    }
+
+    /* ===== STARRED ITEMS (localStorage) ===== */
+    var PDR_STARRED_KEY = 'pdr-starred-v2';
+
+    function getStarred() {
+      try { return JSON.parse(localStorage.getItem(PDR_STARRED_KEY) || '{}'); }
+      catch(e) { return {}; }
+    }
+
+    function saveStarred(starred) {
+      try { localStorage.setItem(PDR_STARRED_KEY, JSON.stringify(starred)); } catch(e) {}
+    }
+
+    document.querySelectorAll('.action-btn.star').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        var id = btn.getAttribute('data-id');
+        var starred = getStarred();
+
+        if (btn.classList.contains('active')) {
+          btn.classList.remove('active');
+          btn.innerHTML = '☆';
+          delete starred[id];
+        } else {
+          btn.classList.add('active');
+          btn.innerHTML = '★';
+          var card = btn.closest('.wn-card, .talking-card, .landmark-card');
+          var title = id, source = '', typeLabel = '', bottomLine = '', sourceUrl = '';
+          if (card) {
+            var titleEl = card.querySelector('.wn-title, .landmark-title');
+            if (titleEl) title = titleEl.textContent.trim();
+            var sourceEl = card.querySelector('.wn-source, .card-meta');
+            if (sourceEl) source = sourceEl.textContent.trim();
+            var pills = card.querySelectorAll('.pill');
+            if (pills.length > 0) typeLabel = pills[0].textContent.trim();
+            var blEl = card.querySelector('.wn-bottom-line, .bottom-line');
+            if (blEl) bottomLine = blEl.textContent.replace('Bottom line:', '').replace('Bottom Line:', '').trim();
+            var linkEl = card.querySelector('.source-link, .statpearls-link');
+            if (linkEl) sourceUrl = linkEl.href;
+          }
+          var landmarkSections = [];
+          if (card && card.classList.contains('landmark-card')) {
+            card.querySelectorAll('.landmark-section').forEach(function(sec) {
+              var h = sec.querySelector('h4');
+              var p = sec.querySelector('p');
+              if (h && p) landmarkSections.push({ heading: h.textContent.trim(), text: p.textContent.trim() });
+            });
+          }
+          starred[id] = {
+            id: id, title: title, source: source,
+            typeLabel: typeLabel, bottomLine: bottomLine,
+            sourceUrl: sourceUrl,
+            landmarkSections: landmarkSections.length > 0 ? landmarkSections : undefined,
+            cardType: card && card.classList.contains('landmark-card') ? 'landmark' : 'whats_new',
+            starredAt: new Date().toISOString().split('T')[0]
+          };
+        }
+
+        saveStarred(starred);
+        renderArchive();
+      });
+    });
+
+    function renderArchive() {
+      var container = document.getElementById('archive-content');
+      var actionsBar = document.getElementById('archive-actions');
+      if (!container) return;
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) {
+        container.innerHTML = '<p class="archive-empty-msg">No starred items yet. Tap ☆ on any card to save it here.</p>';
+        if (actionsBar) actionsBar.style.display = 'none';
+        return;
+      }
+      if (actionsBar) actionsBar.style.display = '';
+      ids.sort(function(a, b) { return (starred[b].starredAt||'').localeCompare(starred[a].starredAt||''); });
+      var html = '';
+      ids.forEach(function(id) {
+        var item = starred[id];
+        var typeClass = item.cardType === 'landmark' ? 'pill-landmark' : 'pill-saved';
+        var specClass = 'pill-cardiology'; // default for mockup
+        html += '<div class="archive-card">';
+        html += '<div class="archive-card-top">';
+        html += '<div class="meta-pills" style="margin-bottom:0;"><span class="pill ' + typeClass + '">' + (item.cardType === 'landmark' ? 'Landmark' : 'Saved') + '</span>';
+        if (item.typeLabel) html += '<span class="pill ' + specClass + '">' + item.typeLabel + '</span>';
+        html += '</div>';
+        html += '<button class="action-btn btn-remove-fav" data-id="' + id + '" onclick="removeStarred(\'' + id + '\')" title="Remove">✕</button>';
+        html += '</div>';
+        html += '<h4>' + (item.title || id) + '</h4>';
+        html += '<div class="archive-card-meta">' + (item.source || '') + ' • Starred ' + (item.starredAt || '') + '</div>';
+        if (item.bottomLine) {
+          html += '<div class="wn-bottom-line"><strong>Bottom line:</strong> ' + item.bottomLine + '</div>';
+        }
+        if (item.landmarkSections && item.landmarkSections.length > 0) {
+          var showHeadings = ['Clinical Question', 'Key Findings', 'Practice Impact'];
+          html += '<div style="margin-top:10px; font-size:0.85rem; line-height:1.6;">';
+          item.landmarkSections.forEach(function(sec) {
+            if (showHeadings.indexOf(sec.heading) !== -1) {
+              html += '<p style="margin-bottom:6px;"><strong style="color:var(--english-red);">' + sec.heading + ':</strong> ' + sec.text + '</p>';
+            }
+          });
+          html += '</div>';
+        }
+        if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="display:block; text-align:right;">View Source →</a>';
+        html += '</div>';
+      });
+      container.innerHTML = html;
+    }
+
+    function removeStarred(id) {
+      var starred = getStarred();
+      delete starred[id];
+      saveStarred(starred);
+      var btn = document.querySelector('.action-btn.star[data-id="' + id + '"]');
+      if (btn) { btn.classList.remove('active'); btn.innerHTML = '☆'; }
+      renderArchive();
+    }
+
+    function clearAllStarred() {
+      if (!confirm('Remove all starred items from archive?')) return;
+      saveStarred({});
+      document.querySelectorAll('.action-btn.star.active').forEach(function(b) {
+        b.classList.remove('active'); b.innerHTML = '☆';
+      });
+      renderArchive();
+    }
+
+    function exportFavorites() {
+      var starred = getStarred();
+      var ids = Object.keys(starred);
+      if (ids.length === 0) { alert('No starred items yet.'); return; }
+      var text = 'Paging Dr. Oh — Starred Items\n========================================\n\n';
+      ids.forEach(function(id, i) {
+        var item = starred[id];
+        text += (i + 1) + '. ' + (item.title || id) + '\n';
+        if (item.source) text += '   ' + item.source + '\n';
+        if (item.bottomLine) text += '   Bottom line: ' + item.bottomLine + '\n';
+        text += '\n';
+      });
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = document.getElementById('export-btn');
+        if (btn) { var o = btn.textContent; btn.textContent = 'Copied!'; setTimeout(function(){ btn.textContent = o; }, 2000); }
+      });
+    }
+
+    // Initialize: restore star states + render archive
+    (function init() {
+      var starred = getStarred();
+      document.querySelectorAll('.action-btn.star').forEach(function(btn) {
+        if (starred[btn.getAttribute('data-id')]) {
+          btn.classList.add('active');
+          btn.innerHTML = '★';
+        }
+      });
+      renderArchive();
+    })();
+  </script>
+</body>
+</html>
