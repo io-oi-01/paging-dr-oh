@@ -42,7 +42,8 @@
     "Acute Kidney Injury",
     "Pneumothorax",
     "Atrial Fibrillation",
-    "Heparin-Induced Thrombocytopenia"
+    "Heparin-Induced Thrombocytopenia",
+    "Hemophagocytic Lymphohistiocytosis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -87,7 +88,8 @@
     "nice-sugar-2009",
     "interact2-2013",
     "interact2-2013",
-    "interact2-2013"
+    "interact2-2013",
+    "partner-2010"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -117,7 +119,9 @@
     "morphine-acetaminophen-ed-acute-pain-2026",
     "glp1-substance-use-disorders-2026",
     "hpv-vaccine-cervical-cancer-2026",
-    "morphine-acetaminophen-emergency-2026"
+    "morphine-acetaminophen-emergency-2026",
+    "shingles-sildenafil-alzheimers-2026",
+    "glp1-substance-disorders-2026"
   ],
   "last_run": "2026-03-11",
   "jdd_conditions_shown": [
@@ -126,6 +130,13 @@
     "Nevi: Compound",
     "Macular Amyloidosis",
     "Urticaria",
-    "Drug Reaction: Minocycline"
+    "Drug Reaction: Minocycline",
+    "Calciphylaxis"
+  ],
+  "litfl_cases_shown": [
+    "ecg-109",
+    "cxr-047",
+    "ct-075",
+    "clinical-the-toddler-with-the-iron-gut"
   ]
 }
