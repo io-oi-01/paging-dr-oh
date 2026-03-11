@@ -1,26 +1,26 @@
 [
   {
     "article_index": 2,
-    "id": "glp1-substance-use-prevention-2026",
+    "id": "glp1-substance-use-disorders-2026",
     "type": "Observational",
-    "specialty": "Endocrinology",
+    "specialty": "Endocrinology/Internal Medicine",
     "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Observational study in US veterans with type 2 diabetes",
+    "study_design": "Observational cohort study in US veterans with type 2 diabetes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes",
-      "This adds to growing evidence of GLP-1 agonists' benefits beyond glycemic control"
+      "Study received an Evidence Rating Level of 2 (Good)"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This potential benefit could influence GLP-1 agonist selection in diabetic patients with substance use risk factors",
-      "Clinical context: Adds another dimension to the risk-benefit discussion when prescribing these medications"
+      "Clinical context: This finding suggests potential dual benefits for GLP-1 agonists beyond glycemic control and weight management in diabetic patients",
+      "Clinical context: May inform prescribing decisions for patients with diabetes who have risk factors for or history of substance use disorders"
     ],
     "limitations": [
-      "Observational design cannot establish causation",
-      "Limited to veteran population which may not be generalizable"
+      "Observational design limits causal inference",
+      "Single population (veterans) may limit generalizability"
     ],
-    "bottom_line": "GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in diabetic patients.",
+    "bottom_line": "GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in patients with type 2 diabetes.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
@@ -29,30 +29,85 @@
   },
   {
     "article_index": 4,
-    "id": "ct-angiography-stroke-emergency-management-2026",
+    "id": "ct-angiography-stroke-emergency-2026",
     "type": "Observational",
-    "specialty": "Emergency Medicine",
+    "specialty": "Neurology/Emergency Medicine",
     "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Study evaluating CT angiography findings that change emergency management",
+    "study_design": "Observational study evaluating CT angiography findings in suspected stroke patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients",
-      "Particularly useful when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+      "CT angiography of the head and neck is most likely to reveal acute findings that change emergency management in patients with suspected stroke",
+      "Highest yield occurs in patients with focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides guidance on when CT angiography adds value to stroke workup beyond standard imaging",
-      "Clinical context: Could help optimize resource utilization and patient triage in emergency settings"
+      "Clinical context: Helps inform emergency imaging decisions and resource utilization in suspected stroke patients",
+      "Clinical context: May guide more targeted use of CTA rather than routine ordering for all suspected stroke cases"
     ],
     "limitations": [
-      "Study design not clearly described",
-      "No information on patient outcomes or cost-effectiveness"
+      "Unclear sample size and methodology details provided"
     ],
-    "bottom_line": "CT angiography of head and neck provides actionable information for emergency stroke management, especially in patients with focal deficits or abnormal initial imaging.",
+    "bottom_line": "CT angiography has highest diagnostic yield for emergency stroke management when patients present with focal deficits or abnormal initial imaging.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
     "date": "Mon, 09 Mar 2026 15:00:43 +000",
+    "date_iso": "2026-03-11"
+  },
+  {
+    "article_index": 6,
+    "id": "hpv-vaccine-cervical-cancer-2026",
+    "type": "Observational",
+    "specialty": "Preventive Medicine/Internal Medicine",
+    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
+    "study_design": "Cohort study evaluating long-term HPV vaccine effectiveness",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
+      "Greatest benefit observed when vaccination occurs before age 17",
+      "Study received an Evidence Rating Level of 2 (Good)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Reinforces importance of age-appropriate HPV vaccination recommendations in primary care practice",
+      "Clinical context: Supports counseling patients and families about long-term cancer prevention benefits of timely HPV vaccination"
+    ],
+    "limitations": [
+      "Cohort design may have unmeasured confounders",
+      "Long-term follow-up may have selection bias"
+    ],
+    "bottom_line": "HPV vaccination provides durable protection against cervical cancer with optimal benefit when given before age 17.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
+    "date": "Sat, 07 Mar 2026 00:00:34 +000",
+    "date_iso": "2026-03-11"
+  },
+  {
+    "article_index": 8,
+    "id": "morphine-acetaminophen-emergency-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
+    "study_design": "Non-inferiority randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department",
+      "Study received an Evidence Rating Level of 1 (Excellent)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports routine addition of acetaminophen to opioid therapy for acute pain management",
+      "Clinical context: May help reduce opioid requirements and improve pain control through multimodal analgesia approach"
+    ],
+    "limitations": [
+      "Non-inferiority design may miss clinically important differences"
+    ],
+    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain control compared to morphine alone in the emergency department.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
+    "date": "Fri, 06 Mar 2026 16:00:09 +000",
     "date_iso": "2026-03-11"
   },
   {
@@ -78,63 +133,6 @@
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
     "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-11"
-  },
-  {
-    "article_index": 8,
-    "id": "morphine-acetaminophen-ed-acute-pain-2026",
-    "type": "RCT",
-    "specialty": "Emergency Medicine",
-    "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority trial comparing morphine plus placebo vs morphine plus acetaminophen",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Morphine plus placebo was not noninferior to morphine plus acetaminophen for acute pain management in the emergency department",
-      "Study demonstrates that adding acetaminophen to morphine provides superior pain control compared to morphine alone"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Supports routine use of acetaminophen as adjunct to opioid therapy for acute pain in ED settings",
-      "Clinical context: May help optimize pain management while potentially reducing total opioid requirements"
-    ],
-    "limitations": [
-      "Sample size not specified",
-      "Limited to ED setting"
-    ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior acute pain management compared to morphine alone in the emergency department.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-11"
-  },
-  {
-    "article_index": 6,
-    "id": "hpv-vaccine-cervical-protection-2026",
-    "type": "Observational",
-    "specialty": "Preventive Medicine/Internal Medicine",
-    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
-    "study_design": "Cohort study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "The quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
-      "Greatest benefit occurs if vaccination occurs before age 17",
-      "Evidence rating level: 2 (Good)"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Reinforces the importance of HPV vaccination in cancer prevention and supports current recommendations for early adolescent vaccination",
-      "Clinical context: Relevant for primary care providers counseling patients and families about vaccination timing and benefits"
-    ],
-    "limitations": [
-      "Cohort study design",
-      "Long-term follow-up may have selection bias"
-    ],
-    "bottom_line": "HPV vaccination provides durable protection against cervical cancer with optimal benefit when administered before age 17.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
-    "date": "Sat, 07 Mar 2026 00:00:34 +000",
     "date_iso": "2026-03-11"
   },
   {
