@@ -8,1048 +8,1590 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-/* ========== RESET & VARIABLES ========== */
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      /* ── Palette from artwork ── */
-      --queen-blue: #7D1150;          /* Deep plum/wine — primary headings */
-      --queen-blue-dark: #5C0D3C;     /* Darker plum — gradient end */
-      --desert-sand: #F5EDE3;         /* Warm cream — page background */
-      --desert-sand-light: #F5E0D8;   /* Peach-light — accordion/score bg */
-      --english-red: #B2325A;         /* Berry/cranberry — card borders */
-      --mandarin: #C45A1A;            /* Burnt sienna — links, CTAs */
-      --mandarin-dark: #A84D16;       /* Deeper sienna — hover */
-      --cadet-blue: #CEB2D2;          /* Soft lavender — secondary accent */
-      --cadet-blue-light: #EDE0F0;    /* Light lavender — disease header */
-      --golden: #BE8E40;              /* Golden ochre — stars, highlights */
-      --olive: #A8A038;               /* Olive/chartreuse — accents */
-      --powder-blue: #B8C8DE;         /* Powder blue — cool accent */
-      --peach: #E8AE98;               /* Peach/blush — soft accent */
-      --dark-maroon: #4D2832;         /* Dark maroon — deep text alt */
-      --light-bg: #F8F4F0;            /* Warm light bg for meta */
-      --text: #2D2D2D;                /* Body text color */
-      --cadet-blue-dark: #8A6890;     /* Darker lavender — interp text */
-      --white: #FFFFFF;
-      --off-white: #FDF8F5;           /* Warm off-white */
-      --dark: #2D2D2D;
-      --gray: #6B6B6B;
-      --light-gray: #E8E0E0;          /* Warm light gray */
-      --shadow: 0 2px 10px rgba(77,40,50,0.10);
-      --shadow-hover: 0 6px 20px rgba(77,40,50,0.16);
-      --radius: 12px;
-      --radius-sm: 8px;
-      --transition: 0.3s ease;
-    }
-
-    /* ========== BASE TYPOGRAPHY ========== */
-    body {
-      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--desert-sand);
-      color: var(--dark);
-      line-height: 1.6;
-      max-width: 860px;
-      margin: 0 auto;
-      min-height: 100vh;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-family: 'Lora', Georgia, serif;
-      line-height: 1.3;
-    }
-
-    a { color: var(--mandarin); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* ========== HEADER ========== */
-    .site-header {
-      background: linear-gradient(135deg, var(--english-red), var(--queen-blue), var(--queen-blue-dark));
-      color: var(--white);
-      padding: 32px 20px 28px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(77,40,50,0.25);
-    }
-
-    .site-header h1 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      margin-bottom: 4px;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    }
-
-    .site-header .tagline {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      opacity: 0.9;
-      font-weight: 400;
-    }
-
-    /* ========== TAB NAVIGATION ========== */
-    .tab-nav {
-      display: flex;
-      background: var(--white);
-      border-bottom: 2px solid var(--light-gray);
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    .tab-nav::-webkit-scrollbar { display: none; }
-
-    .tab-btn {
-      flex: 1;
-      min-width: fit-content;
-      padding: 14px 16px;
-      border: none;
-      background: none;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--gray);
-      cursor: pointer;
-      position: relative;
-      transition: color var(--transition);
-      white-space: nowrap;
-    }
-
-    .tab-btn.active {
-      color: var(--mandarin);
-      font-weight: 700;
-    }
-
-    .tab-btn.active::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--english-red), var(--mandarin));
-      border-radius: 3px 3px 0 0;
-    }
-
-    .tab-btn:hover:not(.active) { color: var(--english-red); }
-
-    /* ========== TAB CONTENT ========== */
-    .tab-content {
-      display: none;
-      padding: 20px 16px 40px;
-      animation: fadeIn 0.35s ease;
-    }
-
-    .tab-content.active { display: block; }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ========== CARDS ========== */
-    .card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow);
-      border-left: 4px solid transparent;
-      transition: all var(--transition);
-    }
-
-    .card:hover {
-      box-shadow: var(--shadow-hover);
-      border-left-color: var(--english-red);
-    }
-
-    /* ========== DISEASE HEADER ========== */
-    .disease-header {
-      background: linear-gradient(135deg, var(--cadet-blue-light), #F0E0F4);
-      border-left-color: var(--cadet-blue);
-      text-align: center;
-      padding: 32px 20px;
-    }
-
-    .disease-header:hover { border-left-color: var(--queen-blue); }
-
-    .disease-header h2 {
-      font-size: 1.5rem;
-      color: var(--queen-blue);
-      margin-bottom: 8px;
-    }
-
-    .disease-header .verified-date {
-      font-size: 0.8rem;
-      color: var(--gray);
-    }
-
-    .statpearls-link {
-      display: inline-block;
-      margin-top: 6px;
-      font-size: 0.8rem;
-      color: var(--cadet-blue);
-      text-decoration: none;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-    }
-
-    .statpearls-link:hover {
-      color: var(--queen-blue);
-      text-decoration: underline;
-    }
-
-    .randomize-wrap {
-      text-align: center;
-      padding: 24px 0 8px;
-    }
-
-    /* ========== ACCORDION ========== */
-    .accordion { margin-bottom: 12px; }
-
-    .accordion-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 20px;
-      background: var(--white);
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      box-shadow: var(--shadow);
-      transition: all var(--transition);
-      border-left: 4px solid transparent;
-      user-select: none;
-    }
-
-    .accordion-header:hover {
-      border-left-color: var(--english-red);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .accordion-header h3 {
-      font-size: 1rem;
-      color: var(--queen-blue);
-      flex: 1;
-    }
-
-    .accordion-toggle {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--desert-sand-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--queen-blue);
-      transition: transform var(--transition), background var(--transition), color var(--transition);
-      flex-shrink: 0;
-      margin-left: 12px;
-      line-height: 1;
-    }
-
-    .accordion.open .accordion-toggle {
-      transform: rotate(45deg);
-      background: var(--mandarin);
-      color: var(--white);
-    }
-
-    .accordion-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.45s ease;
-    }
-
-    .accordion.open .accordion-body { max-height: 3000px; }
-
-    .accordion-content {
-      padding: 16px 20px;
-      background: var(--off-white);
-      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-      margin-top: 2px;
-      line-height: 1.75;
-      font-size: 0.95rem;
-    }
-
-    .accordion-content p { margin-bottom: 12px; }
-    .accordion-content p:last-child { margin-bottom: 0; }
-    .accordion-content ul, .accordion-content ol { margin: 8px 0 12px 20px; }
-    .accordion-content li { margin-bottom: 6px; }
-
-    /* ========== PILL TAGS ========== */
-    .pill {
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .pill-rct        { background: #E8F5E9; color: #2E7D32; }
-    .pill-meta       { background: var(--cadet-blue-light); color: var(--queen-blue); }
-    .pill-guideline  { background: #FFF3E0; color: var(--mandarin); }
-    .pill-fda        { background: #FCE4EC; color: var(--english-red); }
-    .pill-specialty  { background: #E8E6D0; color: #6B6820; }
-
-    /* ========== BUTTONS ========== */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border: none;
-      border-radius: var(--radius-sm);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all var(--transition);
-    }
-
-    .btn:active { transform: scale(0.97); }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--mandarin), var(--english-red));
-      color: var(--white);
-    }
-
-    .btn-primary:hover {
-      background: linear-gradient(135deg, var(--mandarin-dark), #9A2A4E);
-      box-shadow: 0 4px 14px rgba(178,50,90,0.30);
-    }
-
-    .btn-primary:disabled {
-      background: var(--gray);
-      cursor: not-allowed;
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 2px solid var(--queen-blue);
-      color: var(--queen-blue);
-    }
-
-    .btn-outline:hover {
-      background: var(--queen-blue);
-      color: var(--white);
-    }
-
-    .btn-sm {
-      padding: 8px 16px;
-      font-size: 0.8rem;
-    }
-
-    /* ========== ACTION BUTTONS (Star, Save) ========== */
-    .action-btn {
-      background: none;
-      border: none;
-      font-size: 1.3rem;
-      cursor: pointer;
-      padding: 4px 6px;
-      transition: transform var(--transition), opacity var(--transition);
-      opacity: 0.4;
-      line-height: 1;
-    }
-
-    .action-btn:hover { transform: scale(1.2); opacity: 0.8; }
-    .action-btn.active { opacity: 1; }
-    .action-btn.star.active { color: var(--golden); }
-
-    .card-actions {
-      display: flex;
-      gap: 4px;
-    }
-
-    /* ========== CALCULATOR ========== */
-    .calculator-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow);
-      border: 2px solid var(--powder-blue);
-    }
-
-    .calculator-card h4 {
-      color: var(--queen-blue);
-      margin-bottom: 16px;
-      font-size: 1.1rem;
-    }
-
-    .calc-option {
-      display: flex;
-      align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--light-gray);
-    }
-
-    .calc-option:last-of-type { border-bottom: none; }
-
-    .calc-option input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
-      margin-right: 12px;
-      accent-color: var(--mandarin);
-      cursor: pointer;
-      flex-shrink: 0;
-    }
-
-    .calc-option label {
-      font-size: 0.95rem;
-      cursor: pointer;
-      flex: 1;
-      line-height: 1.4;
-    }
-
-    .score-result {
-      margin-top: 20px;
-      padding: 20px;
-      background: var(--desert-sand-light);
-      border-radius: var(--radius-sm);
-      text-align: center;
-    }
-
-    .score-label {
-      font-size: 0.85rem;
-      color: var(--gray);
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .score-value {
-      font-family: 'Lora', serif;
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: var(--queen-blue);
-      display: block;
-      line-height: 1.2;
-    }
-
-    .score-interpretation {
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-top: 8px;
-      padding: 10px 14px;
-      border-radius: var(--radius-sm);
-      display: inline-block;
-    }
-
-    .risk-low      { background: #E8F5E9; color: #2E7D32; }
-    .risk-moderate { background: #FFF3E0; color: #E65100; }
-    .risk-high     { background: #FFEBEE; color: #C62828; }
-
-    /* ========== GUIDELINES BOX ========== */
-    .guidelines-box {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin: 24px 0;
-      box-shadow: var(--shadow);
-      border: 2px solid var(--golden);
-    }
-
-    .guidelines-box h4 {
-      color: var(--golden);
-      margin-bottom: 14px;
-      font-size: 1.05rem;
-    }
-
-    .guideline-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid var(--light-gray);
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .guideline-item:last-child { border-bottom: none; }
-
-    .guideline-info { flex: 1; min-width: 200px; }
-
-    .guideline-name { font-weight: 600; font-size: 0.9rem; }
-
-    .guideline-meta { font-size: 0.8rem; color: var(--gray); margin-top: 2px; }
-
-    .guideline-link {
-      color: var(--mandarin);
-      font-weight: 600;
-      font-size: 0.85rem;
-      white-space: nowrap;
-    }
-
-    /* ========== REFERENCES ========== */
-    .references {
-      margin-top: 24px;
-      padding: 20px;
-      background: var(--off-white);
-      border-radius: var(--radius);
-    }
-
-    .references h4 {
-      color: var(--queen-blue);
-      margin-bottom: 12px;
-      font-size: 1rem;
-    }
-
-    .references ol { padding-left: 24px; }
-
-    .references li {
-      font-size: 0.8rem;
-      color: var(--gray);
-      margin-bottom: 8px;
-      line-height: 1.5;
-    }
-
-    sup {
-      color: var(--mandarin);
-      font-weight: 700;
-      cursor: pointer;
-      font-size: 0.75em;
-    }
-
-    /* ========== SECTION TITLE ========== */
-    .section-title {
-      font-family: 'Lora', serif;
-      font-size: 1.15rem;
-      color: var(--queen-blue);
-      margin: 28px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid var(--golden);
-    }
-
-    /* ========== WHAT'S NEW CARDS ========== */
-    .wn-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin-bottom: 16px;
-      box-shadow: var(--shadow);
-      border-left: 4px solid transparent;
-      transition: all var(--transition);
-    }
-
-    .wn-card:hover {
-      box-shadow: var(--shadow-hover);
-      border-left-color: var(--english-red);
-    }
-
-    .wn-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-
-    .wn-tags { display: flex; gap: 6px; flex-wrap: wrap; }
-
-    .wn-source {
-      font-size: 0.8rem;
-      color: var(--gray);
-      margin-bottom: 6px;
-    }
-
-    .wn-title {
-      font-family: 'Lora', serif;
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--dark);
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-
-    .wn-section-label {
-      font-weight: 700;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--queen-blue);
-      margin-top: 10px;
-      margin-bottom: 4px;
-    }
-
-    .wn-text {
-      font-size: 0.9rem;
-      line-height: 1.65;
-      margin-bottom: 6px;
-    }
-
-    .wn-bottom-line {
-      background: linear-gradient(135deg, var(--desert-sand-light), #FDF5F0);
-      padding: 12px 16px;
-      border-radius: var(--radius-sm);
-      margin: 14px 0;
-      font-size: 0.9rem;
-      font-weight: 500;
-      border-left: 3px solid var(--english-red);
-      line-height: 1.5;
-    }
-
-    .wn-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 1px solid var(--light-gray);
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .confidence {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      color: var(--gray);
-    }
-
-    .confidence-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    .confidence-high .confidence-dot     { background: #2E7D32; }
-    .confidence-moderate .confidence-dot  { background: #F57F17; }
-    .confidence-preliminary .confidence-dot { background: #9E9E9E; }
-
-    .source-link {
-      color: var(--mandarin);
-      font-weight: 600;
-      font-size: 0.85rem;
-    }
-
-    /* ========== TALKING ABOUT SECTION ========== */
-    .trending-section {
-      background: linear-gradient(135deg, #FDF5F0, #F5E0D8);
-      border-radius: var(--radius);
-      padding: 20px;
-      margin-bottom: 24px;
-      border: 2px solid var(--english-red);
-    }
-
-    .trending-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 16px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid rgba(178,50,90,0.25);
-    }
-
-    .trending-icon {
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-
-    .trending-header h3 {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: var(--english-red);
-      margin: 0;
-    }
-
-    .trending-subtitle {
-      font-size: 0.8rem;
-      color: var(--gray);
-      font-style: italic;
-    }
-
-    .wn-card-trending {
-      border-left: 4px solid var(--english-red) !important;
-      background: var(--white);
-    }
-
-    .wn-card-trending:hover {
-      border-left-color: var(--queen-blue) !important;
-    }
-
-    .trending-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 12px;
-      padding: 8px 12px;
-      background: rgba(178,50,90,0.06);
-      border-radius: var(--radius-sm);
-      font-size: 0.8rem;
-    }
-
-    .trending-sources {
-      color: var(--english-red);
-      font-weight: 600;
-    }
-
-    .trending-count {
-      color: var(--gray);
-      font-weight: 500;
-    }
-
-    /* ========== ENHANCED WN CARD FIELDS ========== */
-    .wn-study-meta {
-      font-size: 0.78rem;
-      color: var(--gray);
-      margin-bottom: 10px;
-      padding: 6px 10px;
-      background: var(--light-bg);
-      border-radius: var(--radius-sm);
-      line-height: 1.6;
-    }
-
-    .wn-bullets {
-      margin: 4px 0 10px 0;
-      padding-left: 18px;
-      font-size: 0.85rem;
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    .wn-bullets li {
-      margin-bottom: 4px;
-    }
-
-    .wn-interp-label {
-      color: var(--cadet-blue) !important;
-    }
-
-    .wn-interp-bullets {
-      color: var(--cadet-blue-dark, #3a6e72);
-    }
-
-    .wn-limitations {
-      color: var(--gray);
-      font-style: italic;
-    }
-
-    /* ========== LANDMARK STUDY ========== */
-    .landmark-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 24px;
-      box-shadow: var(--shadow);
-      border-left: 4px solid var(--english-red);
-    }
-
-    .landmark-card:hover { box-shadow: var(--shadow-hover); }
-
-    .landmark-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 4px;
-    }
-
-    .landmark-title {
-      font-family: 'Lora', serif;
-      font-size: 1.3rem;
-      color: var(--queen-blue);
-      flex: 1;
-      margin-right: 12px;
-    }
-
-    .landmark-meta {
-      font-size: 0.85rem;
-      color: var(--gray);
-      margin-bottom: 20px;
-    }
-
-    .landmark-section { margin-bottom: 18px; }
-
-    .landmark-section h4 {
-      color: var(--english-red);
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    .landmark-section p {
-      font-size: 0.9rem;
-      line-height: 1.75;
-    }
-
-    /* ========== FAVORITES ========== */
-    .favorites-section {
-      margin-top: 32px;
-      padding: 20px;
-      background: var(--off-white);
-      border-radius: var(--radius);
-    }
-
-    .favorites-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .favorites-header h4 {
-      color: var(--queen-blue);
-      font-size: 1rem;
-    }
-
-    .favorites-list { list-style: none; }
-
-    .favorites-list li {
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--light-gray);
-      font-size: 0.9rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .favorites-list li:last-child { border-bottom: none; }
-
-    .favorites-empty {
-      color: var(--gray);
-      font-style: italic;
-      font-size: 0.9rem;
-      padding: 8px 0;
-    }
-
-    /* ========== ARCHIVE ========== */
-    .archive-month { margin-bottom: 12px; }
-
-    .archive-month-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 20px;
-      background: linear-gradient(135deg, var(--english-red), var(--queen-blue));
-      color: var(--white);
-      border-radius: var(--radius-sm);
-      cursor: pointer;
-      transition: background var(--transition);
-      user-select: none;
-    }
-
-    .archive-month-header:hover { background: linear-gradient(135deg, var(--queen-blue), var(--queen-blue-dark)); }
-
-    .archive-month-header h3 {
-      font-size: 1rem;
-      color: var(--white);
-    }
-
-    .archive-toggle {
-      font-size: 1.2rem;
-      transition: transform var(--transition);
-    }
-
-    .archive-month.open .archive-toggle { transform: rotate(90deg); }
-
-    .archive-month-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.45s ease;
-    }
-
-    .archive-month.open .archive-month-body { max-height: 5000px; }
-
-    .archive-card {
-      background: var(--white);
-      border-radius: var(--radius-sm);
-      padding: 14px 16px;
-      margin: 8px 0;
-      box-shadow: var(--shadow);
-      cursor: pointer;
-      border-left: 4px solid transparent;
-      transition: all var(--transition);
-    }
-
-    .archive-card:hover { border-left-color: var(--english-red); }
-
-    .archive-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .archive-card-title {
-      font-weight: 600;
-      font-size: 0.9rem;
-      flex: 1;
-    }
-
-    .archive-card-meta {
-      font-size: 0.75rem;
-      color: var(--gray);
-      margin-top: 4px;
-    }
-
-    .archive-card-details {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease;
-    }
-
-    .archive-card.expanded .archive-card-details { max-height: 500px; }
-
-    .archive-detail-content {
-      padding-top: 12px;
-      margin-top: 12px;
-      border-top: 1px solid var(--light-gray);
-      font-size: 0.85rem;
-      line-height: 1.65;
-    }
-
-    .archive-empty-msg {
-      color: var(--gray);
-      font-style: italic;
-      padding: 20px 0;
-    }
-
-    .btn-remove-fav {
-      background: none;
-      border: none;
-      color: var(--gray);
-      cursor: pointer;
-      font-size: 0.9rem;
-      padding: 2px 6px;
-      border-radius: 4px;
-      flex-shrink: 0;
-    }
-
-    .btn-remove-fav:hover { color: var(--english-red); }
-
-    .archive-card.expanded .accordion-toggle {
-      transform: rotate(45deg);
-      background: var(--mandarin);
-      color: var(--white);
-    }
-
-    /* ========== RANDOMIZE BUTTON ========== */
-    .randomize-wrap {
-      text-align: center;
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(0,0,0,0.08);
-    }
-
-    /* ========== IMAGE OF THE DAY ========== */
-    .image-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 20px;
-      box-shadow: var(--shadow);
-      border-left: 4px solid var(--cadet-blue);
-    }
-
-    .image-card:hover { box-shadow: var(--shadow-hover); }
-
-    .image-card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 16px;
-      gap: 10px;
-    }
-
-    .image-card-title {
-      font-family: 'Lora', serif;
-      font-size: 1.2rem;
-      color: var(--queen-blue);
-      flex: 1;
-    }
-
-    .image-card-img {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      border-radius: var(--radius-sm);
-      margin-bottom: 14px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-    }
-
-    .image-card-desc {
-      font-size: 0.9rem;
-      line-height: 1.65;
-      color: var(--dark);
-      margin-bottom: 14px;
-    }
-
-    .image-card-source {
-      display: inline-block;
-      margin-top: 4px;
-      font-size: 0.85rem;
-    }
-
-    .nejm-reminder-card {
-      background: var(--off-white);
-      border: 2px solid var(--powder-blue);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 20px;
-    }
-
-    .nejm-reminder-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-
-    .nejm-reminder-icon {
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-
-    .nejm-reminder-title {
-      font-family: 'Lora', serif;
-      font-size: 1.05rem;
-      color: var(--queen-blue);
-    }
-
-    .nejm-reminder-text {
-      font-size: 0.9rem;
-      color: var(--gray);
-      line-height: 1.55;
-      margin-bottom: 14px;
-    }
-
-    /* ========== FOOTER ========== */
-    .site-footer {
-      text-align: center;
-      padding: 24px 16px;
-      font-size: 0.78rem;
-      color: var(--gray);
-      border-top: 1px solid rgba(0,0,0,0.08);
-      line-height: 1.6;
-    }
-
-    /* ========== MOBILE TWEAKS ========== */
-    @media (max-width: 480px) {
-      .site-header h1 { font-size: 1.4rem; }
-      .site-header { padding: 22px 16px 20px; }
-      .tab-btn { font-size: 0.78rem; padding: 12px 10px; }
-      .disease-header h2 { font-size: 1.25rem; }
-      .disease-header { padding: 24px 16px; }
-      .accordion-header { padding: 14px 16px; }
-      .accordion-content { padding: 14px 16px; }
-      .calculator-card { padding: 18px; }
-      .landmark-title { font-size: 1.1rem; }
-      .guideline-item { flex-direction: column; align-items: flex-start; }
-      .wn-card { padding: 16px; }
-      .trending-header { flex-wrap: wrap; }
-      .trending-meta { flex-direction: column; align-items: flex-start; }
-      .image-card { padding: 16px; }
-      .image-card-title { font-size: 1.05rem; }
-      .nejm-reminder-card { padding: 16px; }
-    }
+/*
+ * ============================================================
+ *  Paging Dr. Oh — Stylesheet (Dark Clinical Theme)
+ * ============================================================
+ *
+ *  LOCKED PALETTE — do not substitute different base colors.
+ *  Hover/active/border/tint variants may be derived from these.
+ *
+ *  This file is the SINGLE SOURCE OF TRUTH for all styling.
+ *  - generate.py reads it and inlines it into paging-dr-oh.html
+ *  - template.html links it for local preview
+ *  - mockup.html links it for design iteration
+ *
+ *  Section order:
+ *    1. Design Tokens (CSS Variables)
+ *    2. Reset & Base Typography
+ *    3. Header
+ *    4. Tab Navigation
+ *    5. Cards, Pills, Buttons (shared)
+ *    6. Disease of the Day
+ *    7. What's New
+ *    8. Landmark Study
+ *    9. Image of the Day
+ *   10. Podcasts
+ *   11. Favorites & Archive
+ *   12. Footer
+ *   13. Mobile Responsive
+ * ============================================================
+ */
+
+
+/* ==========================================================
+   1. DESIGN TOKENS
+   ========================================================== */
+
+:root {
+  /* ── Base Neutrals ── */
+  --bg:            #0B101A;   /* Page / body background */
+  --surface:       #161D29;   /* Cards, containers, panels */
+  --surface-alt:   #1D2536;   /* Nested sections, accordions, interior boxes */
+  --border:        #2D3749;   /* Borders, dividers, outlines */
+  --text-primary:  #E6ECF5;   /* Main readable text */
+  --text-muted:    #A0AEC0;   /* Metadata, timestamps, quiet labels */
+
+  /* ── Accent Colors ── */
+  --teal:   #3A937F;   /* Disease tab · guidelines · primary CTA · bottom-line */
+  --green:  #6BAA60;   /* Observational pill · GI · podcasts tab */
+  --blue-1: #3F7CE7;   /* What's New tab · RCT pill · cardiology · links */
+  --blue-2: #4E6FB3;   /* EKG tab · technical pill · nephrology */
+  --violet: #8161DB;   /* Landmark tab · landmark pill · ID · CT tab */
+  --rose:   #BA86C2;   /* Clinical Case tab · featured pill · heme-onc */
+  --amber:  #D4A43D;   /* FDA pill · emergency · CXR tab · stars */
+  --ochre:  #BD8747;   /* Imaging pill · radiology · image tab */
+
+  /* ── Derived helpers ── */
+  --teal-hover:   #44A990;
+  --blue-1-hover: #5A93F0;
+  --violet-hover: #9B7EE8;
+  --amber-hover:  #E0B94E;
+  --white:        #FFFFFF;
+
+  /* ── Surfaces & Elevation ── */
+  --shadow:       0 2px 12px rgba(0,0,0,0.45);
+  --shadow-hover: 0 6px 24px rgba(0,0,0,0.55);
+  --radius:       12px;
+  --radius-sm:    8px;
+  --transition:   0.3s ease;
+}
+
+
+/* ==========================================================
+   2. RESET & BASE TYPOGRAPHY
+   ========================================================== */
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  max-width: 860px;
+  margin: 0 auto;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+a { color: var(--blue-1); text-decoration: none; }
+a:hover { color: var(--blue-1-hover); text-decoration: underline; }
+
+
+/* ==========================================================
+   3. HEADER
+   ========================================================== */
+
+.site-header {
+  background: linear-gradient(135deg, var(--bg) 0%, var(--surface) 60%, var(--surface-alt) 100%);
+  color: var(--text-primary);
+  padding: 32px 20px 28px;
+  text-align: center;
+  border-bottom: 2px solid var(--border);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.site-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.site-header .tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+
+/* ==========================================================
+   4. TAB NAVIGATION
+   ========================================================== */
+
+.tab-nav {
+  display: flex;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tab-nav::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  flex: 1;
+  min-width: fit-content;
+  padding: 14px 16px;
+  border: none;
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  transition: color var(--transition);
+  white-space: nowrap;
+}
+
+/* Default active state (fallback) */
+.tab-btn.active { font-weight: 700; }
+
+/* Per-tab active colors */
+.tab-btn[data-tab="whatsnew"].active          { color: var(--blue-1); }
+.tab-btn[data-tab="landmark"].active          { color: var(--violet); }
+.tab-btn[data-tab="disease"].active           { color: var(--teal); }
+.tab-btn[data-tab="imageofday"].active        { color: var(--ochre); }
+.tab-btn[data-tab="podcasts"].active          { color: var(--green); }
+.tab-btn[data-tab="archive"].active           { color: var(--text-primary); }
+
+/* Per-tab active underline */
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+}
+.tab-btn[data-tab="whatsnew"].active::after    { background: var(--blue-1); }
+.tab-btn[data-tab="landmark"].active::after    { background: var(--violet); }
+.tab-btn[data-tab="disease"].active::after     { background: var(--teal); }
+.tab-btn[data-tab="imageofday"].active::after  { background: var(--ochre); }
+.tab-btn[data-tab="podcasts"].active::after    { background: var(--green); }
+.tab-btn[data-tab="archive"].active::after     { background: var(--border); }
+
+/* Hover (non-active) */
+.tab-btn:hover:not(.active) { color: var(--text-primary); }
+
+/* ── Tab Content ── */
+
+.tab-content {
+  display: none;
+  padding: 20px 16px 40px;
+  animation: fadeIn 0.35s ease;
+}
+
+.tab-content.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==========================================================
+   5. CARDS, PILLS, BUTTONS (shared)
+   ========================================================== */
+
+/* ── Cards ── */
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.card:hover { box-shadow: var(--shadow-hover); }
+
+/* ── Pill Tags ── */
+
+.pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid transparent;
+}
+
+.meta-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+/* ── PRIMARY pills (study/content type) — stronger, more saturated ── */
+
+.pill-rct {
+  background: rgba(63,124,231,0.15);
+  color: #6FA0F0;
+  border-color: rgba(63,124,231,0.30);
+}
+
+.pill-meta {
+  background: rgba(107,170,96,0.15);
+  color: #8DC480;
+  border-color: rgba(107,170,96,0.30);
+}
+
+.pill-guideline {
+  background: rgba(58,147,127,0.15);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.30);
+}
+
+.pill-fda {
+  background: rgba(212,164,61,0.15);
+  color: #E0B94E;
+  border-color: rgba(212,164,61,0.30);
+}
+
+.pill-landmark {
+  background: rgba(129,97,219,0.18);
+  color: #A48FE8;
+  border-color: rgba(129,97,219,0.35);
+}
+
+.pill-image {
+  background: rgba(189,135,71,0.15);
+  color: #D4A260;
+  border-color: rgba(189,135,71,0.30);
+}
+
+.pill-podcast {
+  background: rgba(107,170,96,0.15);
+  color: #8DC480;
+  border-color: rgba(107,170,96,0.30);
+}
+
+.pill-core {
+  background: rgba(58,147,127,0.15);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.30);
+}
+
+.pill-saved {
+  background: rgba(78,111,179,0.15);
+  color: #7B9BD4;
+  border-color: rgba(78,111,179,0.30);
+}
+
+/* ── SECONDARY pills (specialty) — softer, outlined, quieter ── */
+
+.pill-specialty {
+  background: rgba(58,147,127,0.08);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.20);
+}
+
+.pill-cardiology {
+  background: rgba(63,124,231,0.08);
+  color: #6FA0F0;
+  border-color: rgba(63,124,231,0.20);
+}
+
+.pill-pulmonology {
+  background: rgba(58,147,127,0.08);
+  color: #5DBAA5;
+  border-color: rgba(58,147,127,0.20);
+}
+
+.pill-id {
+  background: rgba(129,97,219,0.08);
+  color: #A48FE8;
+  border-color: rgba(129,97,219,0.20);
+}
+
+.pill-nephrology {
+  background: rgba(78,111,179,0.08);
+  color: #7B9BD4;
+  border-color: rgba(78,111,179,0.20);
+}
+
+.pill-derm {
+  background: rgba(189,135,71,0.08);
+  color: #D4A260;
+  border-color: rgba(189,135,71,0.20);
+}
+
+/* ── Buttons ── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn:active { transform: scale(0.97); }
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--teal-hover);
+  box-shadow: 0 4px 14px rgba(58,147,127,0.35);
+}
+
+.btn-primary:disabled {
+  background: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background: var(--surface-alt);
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+}
+
+/* ── Action Buttons (Star, Save) ── */
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  transition: transform var(--transition), opacity var(--transition);
+  opacity: 0.4;
+  line-height: 1;
+  color: var(--text-muted);
+}
+
+.action-btn:hover { transform: scale(1.2); opacity: 0.8; }
+.action-btn.active { opacity: 1; }
+.action-btn.star.active { color: var(--amber); }
+
+.card-actions {
+  display: flex;
+  gap: 4px;
+}
+
+/* ── Section Title ── */
+
+.section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 28px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--amber);
+}
+
+/* ── Superscript References ── */
+
+sup {
+  color: var(--blue-1);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.75em;
+}
+
+
+/* ==========================================================
+   6. DISEASE OF THE DAY
+   ========================================================== */
+
+.disease-header {
+  background: var(--surface);
+  border-radius: var(--radius);
+  border-top: 4px solid var(--teal);
+  text-align: center;
+  padding: 32px 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.disease-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.disease-header .verified-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.statpearls-link {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-align: right;
+}
+
+.statpearls-link:hover {
+  color: var(--teal-hover);
+  text-decoration: underline;
+}
+
+.statpearls-wrap {
+  text-align: right;
+  margin-top: 12px;
+}
+
+/* ── Accordion ── */
+
+.accordion { margin-bottom: 12px; }
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  user-select: none;
+  border: 1px solid var(--border);
+}
+
+.accordion-header:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(58,147,127,0.3);
+}
+
+.accordion-header h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.accordion-toggle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  transition: transform var(--transition), background var(--transition), color var(--transition);
+  flex-shrink: 0;
+  margin-left: 12px;
+  line-height: 1;
+}
+
+.accordion.open .accordion-toggle {
+  transform: rotate(45deg);
+  background: var(--teal);
+  color: var(--white);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.accordion.open .accordion-body { max-height: 3000px; }
+
+.accordion-content {
+  padding: 16px 20px;
+  background: var(--surface-alt);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  margin-top: 2px;
+  line-height: 1.75;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.accordion-content p { margin-bottom: 12px; }
+.accordion-content p:last-child { margin-bottom: 0; }
+.accordion-content ul, .accordion-content ol { margin: 8px 0 12px 20px; }
+.accordion-content li { margin-bottom: 6px; }
+
+.card-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+  margin-bottom: 6px;
+}
+
+/* ── Calculator ── */
+
+.calculator-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.calculator-card h4 {
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.calc-option {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.calc-option:last-of-type { border-bottom: none; }
+
+.calc-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  accent-color: var(--teal);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.calc-option label {
+  font-size: 0.95rem;
+  cursor: pointer;
+  flex: 1;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.score-result {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.score-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.score-value {
+  font-family: 'Lora', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  line-height: 1.2;
+}
+
+.score-interpretation {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+
+.risk-low      { background: rgba(107,170,96,0.15); color: #8DC480; }
+.risk-moderate { background: rgba(212,164,61,0.15); color: var(--amber); }
+.risk-high     { background: rgba(186,134,194,0.15); color: var(--rose); }
+
+/* ── Guidelines Box ── */
+
+.guidelines-box {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin: 24px 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.guidelines-box h4 {
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+}
+
+.guideline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.guideline-item:last-child { border-bottom: none; }
+
+.guideline-info { flex: 1; min-width: 200px; }
+
+.guideline-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.guideline-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+
+.guideline-link {
+  color: var(--blue-1);
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.guideline-link:hover { color: var(--blue-1-hover); }
+
+/* ── References ── */
+
+.references {
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.references h4 {
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.references ol { padding-left: 24px; }
+
+.references li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* ── Randomize Button (bottom of Disease tab) ── */
+
+.randomize-wrap {
+  text-align: center;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+
+/* ==========================================================
+   7. WHAT'S NEW
+   ========================================================== */
+
+.wn-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.wn-card:hover { box-shadow: var(--shadow-hover); }
+
+.wn-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.wn-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.wn-source {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.wn-title {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.wn-section-label {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.wn-text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+/* ── Bottom Line (dark callout with teal accent) ── */
+
+.wn-bottom-line {
+  background: var(--surface-alt);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin: 14px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border-left: 3px solid var(--teal);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+}
+
+.wn-bottom-line strong {
+  color: var(--teal);
+}
+
+/* ── Bottom Line (class used in landmark) ── */
+.bottom-line {
+  background: var(--surface-alt);
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  margin: 14px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--teal);
+}
+
+.bottom-line strong {
+  color: var(--teal);
+}
+
+.wn-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.confidence {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.confidence-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.confidence-high .confidence-dot        { background: var(--green); }
+.confidence-moderate .confidence-dot     { background: var(--amber); }
+.confidence-preliminary .confidence-dot  { background: var(--text-muted); }
+
+.source-link {
+  color: var(--blue-1);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.source-link:hover { color: var(--blue-1-hover); }
+
+/* ── Talking About Section ── */
+
+.trending-section {
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(212,164,61,0.30);
+}
+
+.trending-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.trending-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.trending-header h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--amber);
+  margin: 0;
+}
+
+.trending-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.wn-card-trending {
+  border-left: 3px solid var(--amber) !important;
+}
+
+.trending-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: rgba(212,164,61,0.08);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+}
+
+.trending-sources {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.trending-count {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* ── Enhanced WN Card Fields ── */
+
+.wn-study-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  line-height: 1.6;
+  border: 1px solid var(--border);
+}
+
+.wn-study-meta strong {
+  color: var(--text-primary);
+}
+
+.wn-bullets {
+  margin: 4px 0 10px 0;
+  padding-left: 18px;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.55;
+}
+
+.wn-bullets li {
+  margin-bottom: 4px;
+}
+
+.wn-interp-label {
+  color: var(--blue-2) !important;
+}
+
+.wn-interp-bullets {
+  color: var(--blue-2);
+}
+
+.wn-limitations {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* ── Enrichment Card Fields ── */
+
+.wn-basis-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  background: rgba(58,147,127,0.12);
+  color: var(--teal);
+}
+
+.wn-basis-fallback {
+  background: rgba(212,164,61,0.12);
+  color: var(--amber);
+}
+
+.wn-why-matters {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  line-height: 1.55;
+  font-style: italic;
+  border: 1px solid var(--border);
+}
+
+.wn-pico {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.wn-pico strong {
+  color: var(--text-primary);
+}
+
+.wn-pico-item {
+  margin-bottom: 4px;
+}
+
+.wn-pico-item:last-child {
+  margin-bottom: 0;
+}
+
+.wn-readiness {
+  margin-left: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.wn-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wn-secondary-link {
+  font-size: 0.78rem;
+  opacity: 0.7;
+  color: var(--text-muted);
+}
+
+.wn-secondary-link:hover { color: var(--blue-1); opacity: 1; }
+
+
+/* ==========================================================
+   8. LANDMARK STUDY
+   ========================================================== */
+
+.landmark-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.landmark-card:hover { box-shadow: var(--shadow-hover); }
+
+.landmark-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.landmark-title {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  flex: 1;
+  margin-right: 12px;
+}
+
+.landmark-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.landmark-section { margin-bottom: 18px; }
+
+.landmark-section h4 {
+  color: var(--violet);
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.landmark-section p {
+  font-size: 0.9rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+
+/* ==========================================================
+   9. IMAGE OF THE DAY
+   ========================================================== */
+
+.image-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.image-card:hover { box-shadow: var(--shadow-hover); }
+
+.image-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.image-card-title {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.image-card-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.image-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.image-card-source {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: right;
+  color: var(--blue-1);
+}
+
+/* ── Card Footer (shared for Image of the Day) ── */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ── NEJM Image Challenge ── */
+
+.nejm-reminder-card {
+  background: var(--surface);
+  border: 1px solid var(--blue-2);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.nejm-reminder-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.nejm-reminder-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.nejm-reminder-title {
+  font-family: 'Lora', serif;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.nejm-reminder-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+
+/* ==========================================================
+   10. PODCASTS
+   ========================================================== */
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 520px) {
+  .podcast-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.podcast-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.podcast-card-top {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.podcast-artwork {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.podcast-artwork-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--surface-alt), var(--border));
+  color: var(--text-muted);
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.podcast-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.podcast-name {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.podcast-ep-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.podcast-ep-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.podcast-ep-summary {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.podcast-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  justify-content: flex-end;
+}
+
+.podcast-btn,
+.podcast-btn-secondary {
+  font-size: 0.75rem !important;
+  padding: 6px 12px !important;
+}
+
+
+/* ==========================================================
+   11. FAVORITES & ARCHIVE
+   ========================================================== */
+
+/* ── Favorites ── */
+
+.favorites-section {
+  margin-top: 32px;
+  padding: 20px;
+  background: var(--surface-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.favorites-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.favorites-header h4 {
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.favorites-list { list-style: none; }
+
+.favorites-list li {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.favorites-list li:last-child { border-bottom: none; }
+
+.favorites-empty {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+/* ── Archive ── */
+
+.archive-month { margin-bottom: 12px; }
+
+.archive-month-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: var(--surface-alt);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition);
+  user-select: none;
+  border: 1px solid var(--border);
+}
+
+.archive-month-header:hover {
+  background: var(--border);
+}
+
+.archive-month-header h3 {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.archive-toggle {
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+  color: var(--text-muted);
+}
+
+.archive-month.open .archive-toggle { transform: rotate(90deg); }
+
+.archive-month-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease;
+}
+
+.archive-month.open .archive-month-body { max-height: 5000px; }
+
+.archive-card {
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin: 8px 0;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 1px solid var(--border);
+}
+
+.archive-card:hover { box-shadow: var(--shadow-hover); }
+
+.archive-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.archive-card-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.archive-card-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.archive-card-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.archive-card.expanded .archive-card-details { max-height: 500px; }
+
+.archive-detail-content {
+  padding-top: 12px;
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+}
+
+.archive-empty-msg {
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 20px 0;
+}
+
+/* ── Archive Action Buttons ── */
+
+.archive-actions-bar {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.archive-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.archive-action-btn:hover {
+  border-color: var(--teal);
+  background: var(--surface-alt);
+}
+
+.archive-action-btn:active { transform: scale(0.97); }
+
+.archive-action-btn-danger {
+  color: var(--amber);
+  border-color: rgba(212,164,61,0.3);
+}
+
+.archive-action-btn-danger:hover {
+  border-color: var(--amber);
+  background: rgba(212,164,61,0.08);
+}
+
+.archive-action-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.archive-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.btn-remove-fav {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: transform var(--transition), opacity var(--transition), color var(--transition);
+  line-height: 1;
+}
+
+.btn-remove-fav:hover {
+  color: var(--amber);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.archive-card.expanded .accordion-toggle {
+  transform: rotate(45deg);
+  background: var(--teal);
+  color: var(--white);
+}
+
+
+/* ==========================================================
+   12. FOOTER
+   ========================================================== */
+
+.site-footer {
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   13. MOBILE RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 480px) {
+  .site-header h1 { font-size: 1.4rem; }
+  .site-header { padding: 22px 16px 20px; }
+  .tab-btn { font-size: 0.78rem; padding: 12px 10px; }
+  .disease-header h2 { font-size: 1.25rem; }
+  .disease-header { padding: 24px 16px; }
+  .accordion-header { padding: 14px 16px; }
+  .accordion-content { padding: 14px 16px; }
+  .calculator-card { padding: 18px; }
+  .landmark-title { font-size: 1.1rem; }
+  .guideline-item { flex-direction: column; align-items: flex-start; }
+  .wn-card { padding: 16px; }
+  .trending-header { flex-wrap: wrap; }
+  .trending-meta { flex-direction: column; align-items: flex-start; }
+  .image-card { padding: 16px; }
+  .image-card-title { font-size: 1.05rem; }
+  .nejm-reminder-card { padding: 16px; }
+  .podcast-artwork { width: 56px; height: 56px; }
+  .podcast-card { padding: 14px; }
+  .podcast-name { font-size: 0.9rem; }
+}
   </style>
 </head>
 <body>
@@ -1062,802 +1604,87 @@
 
   <!-- TAB NAVIGATION -->
   <nav class="tab-nav">
-    <button class="tab-btn active" data-tab="disease">Disease of the Day</button>
-    <button class="tab-btn" data-tab="whatsnew">What's New</button>
-    <button class="tab-btn" data-tab="landmark">Landmark Study</button>
+    <button class="tab-btn active" data-tab="whatsnew">What's New</button>
+    <button class="tab-btn" data-tab="landmark">Landmark Trial</button>
+    <button class="tab-btn" data-tab="disease">Disease of the Day</button>
     <button class="tab-btn" data-tab="imageofday">Image of the Day</button>
+    <button class="tab-btn" data-tab="podcasts">Podcasts</button>
     <button class="tab-btn" data-tab="archive">Archive</button>
   </nav>
 
   <main>
 
-    <!-- TAB 1: DISEASE OF THE DAY -->
-    <section id="disease" class="tab-content active">
-      <div class="disease-view" id="disease-view-0">
-
-      <div class="disease-header card">
-        <h2>Pneumothorax</h2>
-        <p class="verified-date">Last verified: March 11, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK441885/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
-      </div>
-      <div class="accordion open">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Clinical Manifestations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Symptoms</strong></p>
-<ul>
-  <li><strong>Acute onset unilateral chest pain</strong> &mdash; sharp, pleuritic nature<sup>1</sup></li>
-  <li><strong>Dyspnea</strong> and shortness of breath<sup>1</sup></li>
-  <li><strong>Chest tightness</strong> and fatigue<sup>2</sup></li>
-  <li><strong>Tachycardia</strong> and cyanosis if significant lung collapse present<sup>2</sup></li>
-</ul>
-<p><strong>Exam Findings</strong></p>
-<ul>
-  <li><strong>Diminished or absent breath sounds</strong> on affected side<sup>1</sup></li>
-  <li><strong>Hyperresonance to percussion</strong> ipsilaterally<sup>1</sup></li>
-  <li><strong>Decreased tactile fremitus</strong> over pneumothorax<sup>1</sup></li>
-  <li><strong>Tachypnea and tachycardia</strong> if tension pneumothorax<sup>3</sup></li>
-  <li><strong>Mediastinal shift</strong> and jugular venous distension in tension pneumothorax<sup>3</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Differential Diagnosis</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Common</strong></p>
-<ul>
-  <li><strong>Myocardial infarction</strong> &mdash; chest pain with ECG changes<sup>3</sup></li>
-  <li><strong>Pulmonary embolism</strong> &mdash; dyspnea with risk factors<sup>3</sup></li>
-  <li><strong>Pleural effusion</strong> &mdash; dullness to percussion vs hyperresonance<sup>1</sup></li>
-</ul>
-<p><strong>Less Common</strong></p>
-<ul>
-  <li><strong>Pericarditis</strong> &mdash; positional chest pain with pericardial rub<sup>3</sup></li>
-  <li><strong>Aortic dissection</strong> &mdash; tearing chest pain radiating to back<sup>3</sup></li>
-  <li><strong>Esophageal rupture</strong> &mdash; chest pain with subcutaneous emphysema<sup>1</sup></li>
-</ul>
-<p><strong>Mimics</strong></p>
-<ul>
-  <li><strong>Large emphysematous bullae</strong> &mdash; can mimic pneumothorax on imaging<sup>5</sup></li>
-  <li><strong>Skin fold artifact</strong> on chest X-ray &mdash; lung markings visible beyond fold<sup>1</sup></li>
-  <li><strong>Massive pulmonary embolism</strong> &mdash; cardiovascular collapse<sup>3</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Diagnostic Tests</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Chest Radiography<sup>1,4</sup></strong></p>
-<ul>
-  <li><strong>Upright chest X-ray</strong>: Sn 46%, Sp 100% for pneumothorax detection<sup>11</sup></li>
-  <li><strong>Supine chest X-ray</strong>: Sn 31.8%, Sp 100% in trauma patients<sup>17</sup></li>
-  <li><strong>Deep sulcus sign</strong> in supine films suggests pneumothorax<sup>13</sup></li>
-</ul>
-<p><strong>Point-of-Care Ultrasound (POCUS)<sup>11,12</sup></strong></p>
-<ul>
-  <li><strong>Lung sliding assessment</strong>: Sn 87%, Sp 99% for pneumothorax detection<sup>11</sup></li>
-  <li><strong>Absence of lung sliding + A-lines</strong>: Sn 95%, Sp 94% for occult pneumothorax<sup>18</sup></li>
-  <li><strong>B-lines presence</strong> rules out pneumothorax with high NPV<sup>19</sup></li>
-  <li><strong>Lung point sign</strong>: Sp 100%, PPV 100% when present<sup>18,19</sup></li>
-</ul>
-<p><strong>Computed Tomography<sup>1,4</sup></strong></p>
-<ul>
-  <li><strong>Gold standard</strong> for pneumothorax detection and sizing<sup>16</sup></li>
-  <li><strong>Indicated for</strong>: recurrent pneumothorax, persistent air leak &gt;4 days, surgical planning<sup>1</sup></li>
-  <li><strong>Size concordance</strong> with ultrasound within 1.9&mdash;2.3 cm<sup>18</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Treatment</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Small Primary Spontaneous Pneumothorax (&lt;2 cm rim)<sup>1,4</sup></strong></p>
-<ul>
-  <li><strong>Conservative management</strong> with observation and supplemental oxygen<sup>1</sup></li>
-  <li><strong>Serial chest X-rays</strong> at 4&mdash;6 hours to assess progression<sup>1</sup></li>
-  <li><strong>Discharge criteria</strong>: stable size, room air tolerance, adequate follow-up<sup>1</sup></li>
-</ul>
-<p><strong>Large Primary Spontaneous Pneumothorax (&ge;2 cm rim)<sup>1,4</sup></strong></p>
-<ul>
-  <li><strong>Needle aspiration</strong> as first-line intervention per BTS guidelines<sup>1</sup></li>
-  <li><strong>Small-bore chest tube</strong> (pigtail catheter) if aspiration fails<sup>1</sup></li>
-  <li><strong>Large-bore chest tube</strong> for significant respiratory distress<sup>1</sup></li>
-</ul>
-<p><strong>Secondary Spontaneous Pneumothorax<sup>1,2</sup></strong></p>
-<ul>
-  <li><strong>Chest tube drainage</strong> indicated for most cases due to underlying lung disease<sup>1</sup></li>
-  <li><strong>Avoid simple aspiration</strong> in patients with COPD or significant comorbidities<sup>1</sup></li>
-  <li><strong>Consider pleurodesis</strong> for recurrent episodes<sup>1</sup></li>
-</ul>
-<p><strong>Tension Pneumothorax (ICU/Emergency)<sup>3</sup></strong></p>
-<ul>
-  <li><strong>Immediate needle decompression</strong> 2nd intercostal space, mid-clavicular line<sup>3</sup></li>
-  <li><strong>14-gauge angiocatheter</strong> or longer needle based on chest wall thickness<sup>6</sup></li>
-  <li><strong>Followed by definitive chest tube</strong> placement<sup>3</sup></li>
-</ul>
-<p><strong>Surgical Management<sup>1,4</sup></strong></p>
-<ul>
-  <li><strong>VATS bullectomy + pleurodesis</strong> for recurrent pneumothorax<sup>1</sup></li>
-  <li><strong>Open thoracotomy</strong> if VATS contraindicated or unsuccessful<sup>1</sup></li>
-  <li><strong>Indications</strong>: &ge;2 recurrences, persistent air leak &gt;7 days, bilateral pneumothorax<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Expected Course</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Spontaneous resolution</strong> at rate of 1.25% of pleural space per day without intervention<sup>1</sup></li>
-  <li><strong>Primary pneumothorax recurrence</strong>: 30% after first episode, 60% after second<sup>1</sup></li>
-  <li><strong>Complete resolution</strong> typically within 2&mdash;4 weeks with appropriate management<sup>1</sup></li>
-  <li>Clinical context: Oxygen supplementation can increase reabsorption rate by up to 4-fold</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Follow-up</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Chest X-ray at 2&mdash;4 weeks</strong> to confirm complete resolution<sup>1</sup></li>
-  <li><strong>Activity restrictions</strong>: avoid air travel for 6 weeks, diving permanently contraindicated<sup>1</sup></li>
-  <li><strong>Smoking cessation counseling</strong> essential for prevention<sup>1</sup></li>
-  <li><strong>Return precautions</strong>: worsening dyspnea, chest pain, signs of recurrence<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Low-Resource Considerations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Diagnostic Alternatives</strong></p>
-<ul>
-  <li><strong>Clinical diagnosis</strong> based on physical exam when imaging unavailable<sup>7</sup></li>
-  <li><strong>Needle aspiration</strong> both diagnostic and therapeutic<sup>1</sup></li>
-  <li><strong>Improvised chest seal</strong> using occlusive dressing for tension pneumothorax<sup>6</sup></li>
-</ul>
-<p><strong>Treatment Modifications</strong></p>
-<ul>
-  <li><strong>Heimlich valve</strong> for ambulatory management when available<sup>1</sup></li>
-  <li><strong>Water seal drainage</strong> using improvised system if commercial unavailable<sup>1</sup></li>
-  <li><strong>Extended observation</strong> with serial clinical assessments<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="guidelines-box">
-        <h4>Society Guidelines Quick Reference</h4>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Management of Spontaneous Pneumothorax: British Thoracic Society Pleural Disease Guideline</div>
-            <div class="guideline-meta">British Thoracic Society &bull; 2023</div>
-          </div>
-          <a href="https://thorax.bmj.com/content/78/Suppl_3/s1" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Management of Spontaneous Pneumothorax: An American College of Chest Physicians Delphi Consensus Statement</div>
-            <div class="guideline-meta">American College of Chest Physicians &bull; 2001</div>
-          </div>
-          <a href="https://journal.chestnet.org/article/S0012-3692(15)38241-6/fulltext" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-      </div>
-
-      <div class="references">
-        <h4>References</h4>
-        <ol>
-          <li id="ref-1">McKnight CL, Burns B. Pneumothorax. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 28722915.</li>
-          <li id="ref-2">Gurung I, Ghassemzadeh S. Spontaneous Pneumothorax. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 29083723.</li>
-          <li id="ref-3">Sahota RJ, Sayad E. Tension Pneumothorax. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 30020613.</li>
-          <li id="ref-4">Sankari A, Gupta N. Acute Pneumothorax Evaluation and Treatment. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Jan-. PMID: 28613528.</li>
-          <li id="ref-5">Ojeda Rodriguez JA, Hipskind JE. Iatrogenic Pneumothorax. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 30252313.</li>
-          <li id="ref-6">Koch BW, Howell DM, Kahwaji CI. EMS Pneumothorax. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 30020640.</li>
-          <li id="ref-7">Talbott MM, Campos A, Kuhl EA, Martel TJ. EMS Pneumothorax Identification Without Ancillary Testing. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2026 Jan-. PMID: 30422463.</li>
-          <li id="ref-8">Rajdev K, Leef G, Coren M. Diagnostic accuracy of chest ultrasonography versus chest radiography for identification of pneumothorax: a systematic review and meta-analysis. Ann Emerg Med. 2015;65(4):430-441. PMID: 25557905.</li>
-          <li id="ref-9">Roberts DJ, Leigh-Smith S, Faris PD, et al. Clinical presentation of patients with tension pneumothorax: a systematic review. Ann Surg. 2015;261(6):1068-1078. PMID: 25563887.</li>
-          <li id="ref-10">MacDuff A, Arnold A, Harvey J. Management of spontaneous pneumothorax: British Thoracic Society pleural disease guideline 2010. Thorax. 2010;65 Suppl 2:ii18-31. PMID: 20696690.</li>
-        </ol>
-      </div>
-
-      </div>
-      <div class="disease-view" id="disease-view-1" style="display:none">
-
-      <div class="disease-header card">
-        <h2>Atrial Fibrillation</h2>
-        <p class="verified-date">Last verified: March 11, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK526072/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
-      </div>
-      <div class="accordion open">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Clinical Manifestations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Symptoms</strong></p>
-<ul>
-  <li><strong>Palpitations</strong> - sensation of rapid, irregular, or skipping heartbeat<sup>1</sup></li>
-  <li><strong>Chest pain</strong><sup>1</sup></li>
-  <li><strong>Shortness of breath</strong><sup>1</sup></li>
-  <li><strong>Fatigue</strong> and generalized weakness<sup>1</sup></li>
-  <li><strong>Dizziness</strong> or lightheadedness<sup>1</sup></li>
-  <li><strong>Nausea</strong><sup>1</sup></li>
-  <li><strong>Diaphoresis</strong> (severe sweating)<sup>1</sup></li>
-  <li><strong>Exercise intolerance</strong><sup>2</sup></li>
-  <li>Clinical context: <strong>Asymptomatic presentation</strong> - may be detected on routine examination or ECG<sup>1</sup></li>
-</ul>
-<p><strong>Exam Findings</strong></p>
-<ul>
-  <li><strong>Irregularly irregular pulse</strong><sup>1</sup></li>
-  <li><strong>Tachycardia</strong> - heart rate often &gt; 100 bpm (100-175 bpm typical)<sup>3</sup></li>
-  <li><strong>Signs of heart failure</strong> - if present may include peripheral edema, jugular venous distension<sup>1</sup></li>
-  <li><strong>Variable pulse intensity</strong> due to irregular ventricular filling<sup>1</sup></li>
-  <li>Clinical context: <strong>Signs of stroke or TIA</strong> if thromboembolic event has occurred<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Differential Diagnosis</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Common</strong></p>
-<ul>
-  <li><strong>Atrial flutter</strong> - regular sawtooth pattern on ECG<sup>2</sup></li>
-  <li><strong>Multifocal atrial tachycardia (MAT)</strong> - irregular but with visible P waves<sup>2</sup></li>
-  <li><strong>Sinus tachycardia with frequent PACs</strong><sup>2</sup></li>
-  <li><strong>AVNRT</strong> (atrioventricular nodal reentrant tachycardia)<sup>2</sup></li>
-</ul>
-<p><strong>Less Common</strong></p>
-<ul>
-  <li><strong>AVRT</strong> (atrioventricular reentrant tachycardia)<sup>2</sup></li>
-  <li><strong>Ventricular tachycardia with irregular conduction</strong><sup>2</sup></li>
-  <li><strong>Ashman phenomenon</strong> - wide QRS in AF due to aberrant conduction<sup>4</sup></li>
-</ul>
-<p><strong>Mimics</strong></p>
-<ul>
-  <li><strong>Artifact on ECG monitoring</strong><sup>2</sup></li>
-  <li><strong>Frequent premature ventricular contractions</strong><sup>2</sup></li>
-  <li><strong>Sinus arrhythmia</strong> - respiratory variation in healthy individuals<sup>2</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Diagnostic Tests</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Electrocardiographic Tests</strong></p>
-<ul>
-  <li><strong>12-lead ECG</strong>: Gold standard - shows absence of P waves, irregularly irregular R-R intervals, narrow QRS complexes (&lt; 120ms unless aberrancy)<sup>1,5</sup></li>
-  <li><strong>Holter monitor</strong>: 24-48 hours - useful for paroxysmal AF detection<sup>1</sup></li>
-  <li><strong>Event monitor/Loop recorder</strong>: Extended monitoring for infrequent episodes<sup>1</sup></li>
-  <li><strong>Fibrillatory waves</strong>: May be fine (&lt; 0.5mm) or coarse (&gt; 0.5mm amplitude)<sup>5</sup></li>
-</ul>
-<p><strong>Laboratory Tests</strong></p>
-<ul>
-  <li><strong>Basic metabolic panel</strong>: Sodium, potassium, creatinine, eGFR<sup>1</sup></li>
-  <li><strong>Thyroid function</strong>: TSH, T4 - rule out hyperthyroidism<sup>1</sup></li>
-  <li><strong>Complete blood count</strong>: Hemoglobin assessment<sup>1</sup></li>
-  <li><strong>Liver enzymes</strong>: Baseline for anticoagulation therapy<sup>1</sup></li>
-  <li><strong>Coagulation studies</strong>: PT/INR, aPTT<sup>1</sup></li>
-</ul>
-<p><strong>Imaging Studies</strong></p>
-<ul>
-  <li><strong>Transthoracic echocardiogram</strong>: Assess valve disease, LV function, left atrial size<sup>1</sup></li>
-  <li><strong>Chest X-ray</strong>: Evaluate for heart failure, pulmonary disease<sup>1</sup></li>
-  <li><strong>Transesophageal echocardiogram</strong>: Rule out atrial thrombus before cardioversion<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Treatment</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Stroke Prevention - Outpatient<sup>6,7</sup></strong></p>
-<ul>
-  <li><strong>CHA₂DS₂-VASc score</strong> assessment for thromboembolism risk<sup>6</sup></li>
-  <li><strong>Direct oral anticoagulants (DOACs)</strong> preferred: apixaban, rivaroxaban, dabigatran, edoxaban<sup>6</sup></li>
-  <li><strong>Warfarin</strong>: Alternative when DOACs contraindicated or mechanical heart valve<sup>6</sup></li>
-  <li><strong>Anticoagulation recommended</strong> for CHA₂DS₂-VA ≥ 1 (excluding female sex as risk factor)<sup>6</sup></li>
-</ul>
-<p><strong>Rate Control - Outpatient<sup>6</sup></strong></p>
-<ul>
-  <li><strong>Beta-blockers</strong>: Metoprolol, atenolol (any EF) - first-line<sup>6</sup></li>
-  <li><strong>Calcium channel blockers</strong>: Diltiazem, verapamil (LVEF &gt; 40% only)<sup>6</sup></li>
-  <li><strong>Digoxin</strong>: Any EF, useful in heart failure patients<sup>6</sup></li>
-  <li><strong>Target heart rate</strong>: &lt; 110 bpm at rest, individualize based on symptoms<sup>1</sup></li>
-</ul>
-<p><strong>Rhythm Control - Outpatient<sup>6</sup></strong></p>
-<ul>
-  <li><strong>Electrical cardioversion</strong>: For symptom relief and diagnostic purposes<sup>6</sup></li>
-  <li><strong>Catheter ablation</strong>: Expanded indications, consider in suitable patients within 12 months<sup>6</sup></li>
-  <li><strong>Antiarrhythmic drugs</strong>: Amiodarone, sotalol, flecainide (structure-dependent)<sup>1</sup></li>
-  <li><strong>Rhythm control recommended</strong> for symptom reduction and quality of life improvement<sup>6</sup></li>
-</ul>
-<p><strong>Emergency/Inpatient Management<sup>1</sup></strong></p>
-<ul>
-  <li><strong>Hemodynamic instability</strong>: Immediate electrical cardioversion<sup>1</sup></li>
-  <li><strong>Rate control</strong>: IV metoprolol, diltiazem, or digoxin<sup>1</sup></li>
-  <li><strong>Anticoagulation</strong>: Heparin bridge if cardioversion planned within 48 hours<sup>1</sup></li>
-  <li><strong>Monitor for complications</strong>: Stroke, heart failure, thromboembolism<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Expected Course</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Paroxysmal AF</strong>: Episodes &lt; 7 days, may progress to persistent<sup>1</sup></li>
-  <li><strong>Persistent AF</strong>: Episodes &gt; 7 days, often requires intervention<sup>1</sup></li>
-  <li><strong>Permanent AF</strong>: Accepted arrhythmia, focus on rate control and anticoagulation<sup>1</sup></li>
-  <li><strong>Stroke risk</strong>: 5-fold increased risk, leading cardiac cause of stroke<sup>1</sup></li>
-  <li><strong>Heart failure development</strong>: May occur due to tachycardia-induced cardiomyopathy<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Follow-up</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><strong>Anticoagulation monitoring</strong>: INR if on warfarin, renal function for DOACs<sup>1</sup></li>
-  <li><strong>Rhythm monitoring</strong>: Periodic ECGs or event monitors<sup>1</sup></li>
-  <li><strong>Symptom assessment</strong>: Modified EHRA score for symptom burden<sup>6</sup></li>
-  <li><strong>Echocardiography</strong>: Annual or with clinical change<sup>1</sup></li>
-  <li><strong>Risk factor modification</strong>: Blood pressure control, weight management, OSA treatment<sup>6</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Low-Resource Considerations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Basic Diagnosis</strong></p>
-<ul>
-  <li><strong>Pulse palpation</strong>: Screen for irregularly irregular rhythm<sup>1</sup></li>
-  <li><strong>Basic ECG</strong>: Single-lead ECG devices for detection<sup>1</sup></li>
-  <li><strong>Clinical assessment</strong>: Focus on stroke risk factors<sup>1</sup></li>
-</ul>
-<p><strong>Essential Treatment</strong></p>
-<ul>
-  <li><strong>Aspirin</strong>: If anticoagulation unavailable (suboptimal stroke prevention)<sup>1</sup></li>
-  <li><strong>Rate control</strong>: Beta-blockers or digoxin<sup>1</sup></li>
-  <li><strong>Risk factor modification</strong>: Blood pressure control, lifestyle changes<sup>1</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <h3 class="section-title">Relevant Clinical Scores</h3>
-      <div class="calculator-card" id="cha2ds2vasc-calc">
-        <h4>CHA₂DS₂-VASc Score</h4>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-c" onchange="update_cha2ds2vasc()">
-          <label for="cha-c"><strong>C</strong>ongestive Heart Failure (or LVEF &le;40%)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-h" onchange="update_cha2ds2vasc()">
-          <label for="cha-h"><strong>H</strong>ypertension</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-a2" onchange="update_cha2ds2vasc()">
-          <label for="cha-a2"><strong>A</strong>ge &ge;75 years</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-d" onchange="update_cha2ds2vasc()">
-          <label for="cha-d"><strong>D</strong>iabetes mellitus</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-s2" onchange="update_cha2ds2vasc()">
-          <label for="cha-s2"><strong>S</strong>troke / TIA / thromboembolism history</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-v" onchange="update_cha2ds2vasc()">
-          <label for="cha-v"><strong>V</strong>ascular disease (prior MI, PAD, aortic plaque)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-a" onchange="update_cha2ds2vasc()">
-          <label for="cha-a"><strong>A</strong>ge 65&ndash;74 years</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="cha-sc" onchange="update_cha2ds2vasc()">
-          <label for="cha-sc"><strong>Sc</strong> &mdash; Sex category: female</label>
-        </div>
-        <div class="score-result">
-          <span class="score-label">CHA₂DS₂-VASc Score</span>
-          <span class="score-value" id="cha2ds2vasc-score">0</span>
-          <div class="score-interpretation risk-low" id="cha2ds2vasc-interp">
-            0 points: Low risk. Anticoagulation generally not recommended.
-          </div>
-        </div>
-      </div>
-      <div class="calculator-card" id="hasbled-calc">
-        <h4>HAS-BLED Bleeding Risk Score</h4>
-        <div class="calc-option">
-          <input type="checkbox" id="has-h" onchange="update_hasbled()">
-          <label for="has-h"><strong>H</strong>ypertension (uncontrolled, SBP &gt;160)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-a" onchange="update_hasbled()">
-          <label for="has-a"><strong>A</strong>bnormal renal or liver function (1 point each)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-s" onchange="update_hasbled()">
-          <label for="has-s"><strong>S</strong>troke history</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-b" onchange="update_hasbled()">
-          <label for="has-b"><strong>B</strong>leeding history or predisposition</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-l" onchange="update_hasbled()">
-          <label for="has-l"><strong>L</strong>abile INR (if on warfarin; TTR &lt;60%)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-e" onchange="update_hasbled()">
-          <label for="has-e"><strong>E</strong>lderly (age &gt;65)</label>
-        </div>
-        <div class="calc-option">
-          <input type="checkbox" id="has-d" onchange="update_hasbled()">
-          <label for="has-d"><strong>D</strong>rugs (antiplatelets, NSAIDs) or alcohol (1 point each)</label>
-        </div>
-        <div class="score-result">
-          <span class="score-label">HAS-BLED Bleeding Risk Score</span>
-          <span class="score-value" id="hasbled-score">0</span>
-          <div class="score-interpretation risk-low" id="hasbled-interp">
-            Low bleeding risk. Proceed with anticoagulation if indicated.
-          </div>
-        </div>
-      </div>
-
-      <div class="guidelines-box">
-        <h4>Society Guidelines Quick Reference</h4>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">2024 ESC Guidelines for the management of atrial fibrillation</div>
-            <div class="guideline-meta">European Society of Cardiology &bull; 2024</div>
-          </div>
-          <a href="https://academic.oup.com/eurheartj/article/45/36/3314/7738779" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation</div>
-            <div class="guideline-meta">American College of Cardiology/American Heart Association &bull; 2023</div>
-          </div>
-          <a href="https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-      </div>
-
-      <div class="references">
-        <h4>References</h4>
-        <ol>
-          <li id="ref-1">Nesheiwat Z, Goyal A, Jagtap M. Atrial Fibrillation. StatPearls. 2023 Apr 26.</li>
-          <li id="ref-2">Ludhwani D, Wieters JS. Paroxysmal Atrial Fibrillation. StatPearls. 2023 Jun 20.</li>
-          <li id="ref-3">van Gelder IC, Rienstra M, Bunting KV, et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J. 2024;45(36):3314-3414.</li>
-          <li id="ref-4">Joglar JA, Chung MK, Armbruster AL, et al. 2023 ACC/AHA/ACCP/HRS Guideline for the diagnosis and management of atrial fibrillation. Circulation. 2024;149(1):e1-e156.</li>
-          <li id="ref-5">Chugh SS, Havmoeller R, Narayanan K, et al. Worldwide epidemiology of atrial fibrillation. Circulation. 2014;129(8):837-847.</li>
-        </ol>
-      </div>
-
-      </div>
-      <div class="disease-view" id="disease-view-2" style="display:none">
-
-      <div class="disease-header card">
-        <h2>Heparin-Induced Thrombocytopenia</h2>
-        <p class="verified-date">Last verified: March 11, 2026</p>
-        <a href="https://www.ncbi.nlm.nih.gov/books/NBK482330/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
-      </div>
-      <div class="accordion open">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Clinical Manifestations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Symptoms</strong></p>
-<ul>
-  <li><cite index="1-30">HIT is generally not associated with bleeding</cite><sup>1</sup></li>
-  <li>Clinical context: Patients may be asymptomatic if no thrombotic complications occur</li>
-  <li>Symptoms related to thrombotic complications: chest pain, shortness of breath, limb pain or swelling<sup>1</sup></li>
-</ul>
-<p><strong>Exam Findings</strong></p>
-<ul>
-  <li><cite index="1-3,1-19">A fall in platelet counts and a hypercoagulable state characterize HIT</cite><sup>1</sup></li>
-  <li><cite index="5-1,5-5">Most patients have platelet count ranging from 60,000 to 80,000/mm³</cite><sup>2</sup></li>
-  <li><cite index="1-10,1-20">Patients who experience HIT may develop thromboembolic complications that are associated with significant morbidity and mortality</cite><sup>1</sup></li>
-  <li>Clinical context: Signs of thrombosis including limb ischemia, organ infarction, or pulmonary embolism may be present</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Differential Diagnosis</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Common</strong></p>
-<ul>
-  <li><cite index="1-22">Type I HIT (HAT) &mdash; non-immune mediated thrombocytopenia</cite><sup>1</sup></li>
-  <li><cite index="1-22">Immune thrombocytopenia (ITP)</cite><sup>1</sup></li>
-  <li><cite index="1-22">Disseminated intravascular coagulation (DIC)</cite><sup>1</sup></li>
-  <li><cite index="1-22">Drug-induced thrombocytopenia from other medications</cite><sup>1</sup></li>
-</ul>
-<p><strong>Less Common</strong></p>
-<ul>
-  <li><cite index="1-22">Liver disease</cite><sup>1</sup></li>
-  <li><cite index="1-22">Myelosuppression</cite><sup>1</sup></li>
-  <li><cite index="1-22">Hemodilution</cite><sup>1</sup></li>
-  <li>Clinical context: Pseudothrombocytopenia from EDTA-induced platelet clumping</li>
-</ul>
-<p><strong>Mimics</strong></p>
-<ul>
-  <li><cite index="2-7">Antiphospholipid antibody syndrome (APS) &mdash; thrombocytopenia with thrombotic events</cite><sup>3</sup></li>
-  <li><cite index="2-7">Thrombotic microangiopathy</cite><sup>3</sup></li>
-  <li><cite index="2-7">Paroxysmal nocturnal hemoglobinuria (PNH)</cite><sup>3</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Diagnostic Tests</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Clinical Scoring Systems</strong></p>
-<ul>
-  <li><strong>4Ts Score</strong>: <cite index="11-11">NPV for low probability score 0.998 (95% CI 0.970-1.000)</cite>, <cite index="11-1,11-16">PPV for intermediate probability 0.14 (0.09-0.22), PPV for high probability 0.64 (0.40-0.82)</cite><sup>4</sup></li>
-  <li><cite index="4-1,4-10">Score of 3 or less effectively rules out HIT; further testing is not required</cite><sup>5</sup></li>
-</ul>
-<p><strong>Laboratory Tests</strong></p>
-<ul>
-  <li><strong>Immunoassays (PF4/heparin ELISA)</strong>: <cite index="16-2">Widely available, sensitive and simple to perform but yield frequent false-positive results</cite><sup>6</sup></li>
-  <li><strong>Functional assays (Serotonin Release Assay)</strong>: <cite index="16-2">Much greater specificity but require radioisotope and reactive donor platelets</cite><sup>6</sup></li>
-  <li><cite index="4-11,4-13">Score &ge; 4 warrants PF4-heparin antibody testing; if positive, functional assay should be performed</cite><sup>5</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Treatment</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Acute Management<sup>7</sup></strong></p>
-<ul>
-  <li><strong>Immediate heparin discontinuation</strong>: <cite index="24-16">The 2 key principles are (1) avoid heparin and (2) use nonheparin anticoagulation</cite><sup>7</sup></li>
-  <li><cite index="4-11,4-14">Score &ge; 4 warrants immediate discontinuation of heparin and initiation of non-heparin anticoagulant</cite><sup>5</sup></li>
-</ul>
-<p><strong>Non-Heparin Anticoagulants</strong></p>
-<ul>
-  <li><strong>Argatroban</strong>: <cite index="3-36">2 mcg/kg/min as continuous IV infusion</cite>; <cite index="5-10">metabolized by liver, dose should be reduced in hepatic impairment</cite><sup>8,2</sup></li>
-  <li><strong>Bivalirudin</strong>: <cite index="7-2,7-8">0.75 mg/kg IV bolus followed by 1.75 mg/kg/h maintenance infusion</cite><sup>9</sup></li>
-  <li><strong>Fondaparinux</strong>: Clinical context: Alternative option, typical dosing 7.5 mg subcutaneous daily</li>
-  <li><strong>DOACs</strong>: <cite index="8-1,8-30">Rivaroxaban for treatment of acute HIT as initial therapy in hemodynamically stable patients</cite><sup>10</sup></li>
-</ul>
-<p><strong>Special Considerations</strong></p>
-<ul>
-  <li><cite index="25-11">ASH guideline: therapeutic intensity anticoagulation for high-probability 4T score (6-8) or intermediate-probability (4-5) with indication for anticoagulation</cite><sup>1</sup></li>
-  <li><cite index="5-11">Warfarin should be avoided during acute episode</cite><sup>2</sup></li>
-  <li>Clinical context: Platelet transfusions are contraindicated and may worsen thrombosis</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Expected Course</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li><cite index="1-31">Onset typically occurs 5-14 days after start of heparin therapy, may occur after heparin cessation</cite><sup>1</sup></li>
-  <li><cite index="5-4">May develop sooner if prior heparin exposure within preceding 3 months</cite><sup>2</sup></li>
-  <li><cite index="11-20">Initial 5-10% daily risk of thrombosis, amputation, or death without treatment</cite><sup>4</sup></li>
-  <li><cite index="26-1,26-2">High morbidity (60-90%) and mortality rates (6-30%); even with early recognition, morbidity 7.4% and mortality 1.1%</cite><sup>11</sup></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Follow-up</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <ul>
-  <li>Clinical context: Platelet count monitoring until recovery to normal levels</li>
-  <li>Clinical context: Continue non-heparin anticoagulation until platelet count recovery and resolution of thrombotic complications</li>
-  <li><cite index="24-15">Patient education on heparin avoidance and medical alert bracelet for 3 months</cite><sup>7</sup></li>
-  <li>Clinical context: Long-term anticoagulation duration depends on presence and type of thrombotic complications</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(this)">
-          <h3>Low-Resource Considerations</h3>
-          <span class="accordion-toggle">+</span>
-        </div>
-        <div class="accordion-body">
-          <div class="accordion-content">
-            <p><strong>Limited Laboratory Access</strong></p>
-<ul>
-  <li>Clinical context: Rely on 4Ts score for clinical decision-making when laboratory tests unavailable</li>
-  <li>Clinical context: Consider empiric treatment with non-heparin anticoagulant if high clinical suspicion</li>
-</ul>
-<p><strong>Alternative Anticoagulants</strong></p>
-<ul>
-  <li>Clinical context: Fondaparinux may be more readily available than argatroban or bivalirudin</li>
-  <li>Clinical context: DOACs may be considered if available and patient is hemodynamically stable</li>
-</ul>
-
-          </div>
-        </div>
-      </div>
-      <div class="guidelines-box">
-        <h4>Society Guidelines Quick Reference</h4>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">ASH Guidelines for Management of Venous Thromboembolism: Heparin-Induced Thrombocytopenia</div>
-            <div class="guideline-meta">American Society of Hematology &bull; 2018</div>
-          </div>
-          <a href="https://ashpublications.org/bloodadvances/article/2/22/3360/59831/American-Society-of-Hematology-2018-guidelines-for" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">ASH VTE Guidelines: Heparin-Induced Thrombocytopenia</div>
-            <div class="guideline-meta">American Society of Hematology &bull; 2024</div>
-          </div>
-          <a href="https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines/heparin-induced-thrombocytopenia" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-        <div class="guideline-item">
-          <div class="guideline-info">
-            <div class="guideline-name">Diagnosis and Management of Heparin-Induced Thrombocytopenia</div>
-            <div class="guideline-meta">British Society of Haematology &bull; 2024</div>
-          </div>
-          <a href="https://onlinelibrary.wiley.com/doi/10.1111/bjh.19180" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
-        </div>
-      </div>
-
-      <div class="references">
-        <h4>References</h4>
-        <ol>
-          <li id="ref-1">Nicolas D, Nicolas S, Hodgens A, Reed M. Heparin-Induced Thrombocytopenia. StatPearls. 2023 May 16.</li>
-          <li id="ref-2">DeSancho MT, Rand JH. Heparin-Induced Thrombocytopenia. In: Holland-Frei Cancer Medicine. 6th edition. 2003.</li>
-          <li id="ref-3">Patel P, Varacallo MA. Low-Molecular-Weight Heparin (LMWH). StatPearls. 2025 Mar 28.</li>
-          <li id="ref-4">Cuker A, Gimotty PA, Crowther MA, Warkentin TE. Predictive value of the 4Ts scoring system for heparin-induced thrombocytopenia: a systematic review and meta-analysis. Blood. 2012;120(20):4160-4167.</li>
-          <li id="ref-5">Patel P, Huang D. Heparin. StatPearls. 2025 Aug 9.</li>
-          <li id="ref-6">Cuker A, Gimotty PA, Crowther MA, Warkentin TE. Predictive value of the 4Ts scoring system for heparin-induced thrombocytopenia. Blood. 2012;120(20):4160-4167.</li>
-          <li id="ref-7">May J, Cuker A. Practical guide to the diagnosis and management of heparin-induced thrombocytopenia. Hematology Am Soc Hematol Educ Program. 2024;2024(1):388-395.</li>
-          <li id="ref-8">Mahat KC, Sedhai YR, Krishnan P. Argatroban. StatPearls. 2023 Aug 4.</li>
-          <li id="ref-9">Berlioz B, Patel P, Sanghavi D. Bivalirudin. StatPearls. 2024 Feb 28.</li>
-          <li id="ref-10">Singh R, Emmady PD. Rivaroxaban. StatPearls. 2023 Apr 17.</li>
-          <li id="ref-11">Favaloro EJ, Henry BM, Lippi G. Management of Heparin-Induced Thrombocytopenia: A Contemporary Review. J Clin Med. 2024;13(16):4686.</li>
-        </ol>
-      </div>
-
-      </div>
-
-      <div class="randomize-wrap">
-        <button class="btn btn-primary" onclick="randomizeDisease(3)">&#8635; Show Me Another Disease</button>
-      </div>
-    </section>
-
-    <!-- TAB 2: WHAT'S NEW -->
-    <section id="whatsnew" class="tab-content">
+    <!-- TAB 1: WHAT'S NEW -->
+    <section id="whatsnew" class="tab-content active">
 
       <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>
-      <p style="color:var(--gray); font-size:0.85rem; margin-bottom:16px;">Curated from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener" style="color:var(--queen-blue);">2 Minute Medicine</a></p>
+      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Selected from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener">2 Minute Medicine</a>, enriched from primary sources</p>
 
       <div class="wn-card">
         <div class="wn-card-header">
           <div class="wn-tags">
             <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Endocrinology/Internal Medicine</span>
+            <span class="pill pill-specialty">Internal Medicine</span>
           </div>
           <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="glp1-substance-use-disorders-2026">&#9734;</button>
+            <button class="action-btn star" title="Star this study" data-id="preop-calcium-orthopedic-2026">&#9734;</button>
           </div>
         </div>
-        <div class="wn-source">2 Minute Medicine &bull; Mon, 09 Mar 2026 23:00:13 +000</div>
-        <div class="wn-title">Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders</div>        <div class="wn-study-meta"><strong>Design:</strong> Observational cohort study in US veterans with type 2 diabetes</div>
+        <div class="wn-source">2 Minute Medicine &bull; Wed, 11 Mar 2026 23:00:27 +000</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">Lower preoperative serum calcium is associated with increased risk of postoperative complications in patients undergoing orthopedic surgery</div>        <div class="wn-why-matters">Preoperative serum calcium levels may help identify orthopedic surgery patients at higher risk for postoperative complications, potentially guiding perioperative optimization.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Observational study of older orthopedic patients</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Population:</strong> Older orthopedic surgery patients</div><div class='wn-pico-item'><strong>Intervention:</strong> Lower preoperative serum calcium levels</div></div>
         <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes</li><li>Study received an Evidence Rating Level of 2 (Good)</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This finding suggests potential dual benefits for GLP-1 agonists beyond glycemic control and weight management in diabetic patients</li><li>Clinical context: May inform prescribing decisions for patients with diabetes who have risk factors for or history of substance use disorders</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>Single population (veterans) may limit generalizability</li></ul>
+        <ul class="wn-bullets"><li>Lower preoperative serum calcium levels were associated with higher risk of postoperative complications</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>This suggests calcium levels could be part of preoperative risk assessment, though the clinical significance and optimal thresholds remain unclear</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> GLP-1 receptor agonists may provide additional benefit by reducing substance use disorder risk in patients with type 2 diabetes.
+          <strong>Bottom Line:</strong> Lower preoperative calcium may identify orthopedic patients at higher complication risk, but more data needed for clinical application.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            <span class="wn-readiness">&#x1F4CA; Preliminary</span>
           </div>
-          <a href="https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-specialty">Review</span>
+            <span class="pill pill-specialty">Internal Medicine</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="shingles-sildenafil-alzheimers-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Tue, 10 Mar 2026 14:00:06 +000</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">Shingles vaccine and sildenafil linked to lower Alzheimer's risk</div>        <div class="wn-why-matters">Drug repurposing could accelerate Alzheimer's prevention strategies using medications already proven safe and available.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Expert panel review</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Intervention:</strong> Shingles vaccine and sildenafil</div></div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>Expert panel identified shingles vaccine and sildenafil as top candidates for Alzheimer's protection</li><li>Drug repurposing could reduce dementia drug development timeline by up to a decade</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>This represents early-stage research identification rather than proven clinical benefit - rigorous trials would be needed before clinical application</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Shingles vaccine and sildenafil show promise for Alzheimer's prevention but require clinical trials before implementation.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-preliminary">
+            <span class="confidence-dot"></span>
+            Preliminary confidence
+            <span class="wn-readiness">&#x1F4CA; Preliminary</span>
+          </div>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -1865,29 +1692,67 @@
         <div class="wn-card-header">
           <div class="wn-tags">
             <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Neurology/Emergency Medicine</span>
+            <span class="pill pill-specialty">Endocrinology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="glp1-substance-disorders-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Mon, 09 Mar 2026 23:00:13 +000</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders</div>        <div class="wn-why-matters">GLP-1 agonists may provide unexpected benefits beyond diabetes management, potentially reducing substance use disorders in high-risk populations.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Cohort study of US veterans with type 2 diabetes</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Population:</strong> US veterans with type 2 diabetes</div><div class='wn-pico-item'><strong>Intervention:</strong> GLP-1 receptor agonists</div></div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>This observational finding suggests potential neuropsychiatric benefits of GLP-1 agonists, though causality cannot be established and results may not generalize beyond veterans</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> GLP-1 agonists may reduce substance use disorder risk in diabetic patients, but more research needed to confirm this association.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Moderate confidence
+            <span class="wn-readiness">&#x1F4CA; Preliminary</span>
+          </div>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-rct">Observational</span>
+            <span class="pill pill-specialty">Emergency Medicine</span>
           </div>
           <div class="card-actions">
             <button class="action-btn star" title="Star this study" data-id="ct-angiography-stroke-emergency-2026">&#9734;</button>
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Mon, 09 Mar 2026 15:00:43 +000</div>
-        <div class="wn-title">Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke</div>        <div class="wn-study-meta"><strong>Design:</strong> Observational study evaluating CT angiography findings in suspected stroke patients</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke</div>        <div class="wn-why-matters">CT angiography may improve acute stroke management by identifying findings that change treatment decisions in the emergency setting.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Study of CT angiography utility in suspected stroke patients</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Population:</strong> Patients with suspected stroke</div><div class='wn-pico-item'><strong>Intervention:</strong> CT angiography of head and neck</div></div>
         <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>CT angiography of the head and neck is most likely to reveal acute findings that change emergency management in patients with suspected stroke</li><li>Highest yield occurs in patients with focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Helps inform emergency imaging decisions and resource utilization in suspected stroke patients</li><li>Clinical context: May guide more targeted use of CTA rather than routine ordering for all suspected stroke cases</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Unclear sample size and methodology details provided</li></ul>
+        <ul class="wn-bullets"><li>CT angiography most likely to reveal acute findings that change emergency management</li><li>Particularly useful with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>This supports selective use of CT angiography in stroke workup rather than universal application, focusing on patients with higher-yield clinical features</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> CT angiography has highest diagnostic yield for emergency stroke management when patients present with focal deficits or abnormal initial imaging.
+          <strong>Bottom Line:</strong> CT angiography should be prioritized for suspected stroke patients with focal deficits, abnormal CT, or new symptoms.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            <span class="wn-readiness">&#x1F4CA; Informative</span>
           </div>
-          <a href="https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -1895,29 +1760,66 @@
         <div class="wn-card-header">
           <div class="wn-tags">
             <span class="pill pill-rct">Observational</span>
-            <span class="pill pill-specialty">Preventive Medicine/Internal Medicine</span>
+            <span class="pill pill-specialty">Preventive Medicine</span>
           </div>
           <div class="card-actions">
             <button class="action-btn star" title="Star this study" data-id="hpv-vaccine-cervical-cancer-2026">&#9734;</button>
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Sat, 07 Mar 2026 00:00:34 +000</div>
-        <div class="wn-title">The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study evaluating long-term HPV vaccine effectiveness</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer</div>        <div class="wn-why-matters">Long-term real-world data confirms HPV vaccination effectiveness against invasive cervical cancer, supporting current vaccination recommendations.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Cohort study</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Intervention:</strong> Quadrivalent HPV vaccine</div></div>
         <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer</li><li>Greatest benefit observed when vaccination occurs before age 17</li><li>Study received an Evidence Rating Level of 2 (Good)</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Reinforces importance of age-appropriate HPV vaccination recommendations in primary care practice</li><li>Clinical context: Supports counseling patients and families about long-term cancer prevention benefits of timely HPV vaccination</li></ul>
-        <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Cohort design may have unmeasured confounders</li><li>Long-term follow-up may have selection bias</li></ul>
+        <ul class="wn-bullets"><li>Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer</li><li>Greatest benefit occurs if vaccination occurs before age 17</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>This reinforces the importance of early HPV vaccination and provides reassurance about long-term cancer prevention benefits</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> HPV vaccination provides durable protection against cervical cancer with optimal benefit when given before age 17.
+          <strong>Bottom Line:</strong> HPV vaccination provides durable cervical cancer protection, with optimal benefit when given before age 17.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            <span class="wn-readiness">&#x1F4CA; Practice-changing</span>
           </div>
-          <a href="https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-fda">FDA Action</span>
+            <span class="pill pill-specialty">Hematology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star this study" data-id="iberdomide-myeloma-priority-2026">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 18:00:19 +000</div>
+        <span class="wn-basis-badge wn-basis-fallback">Based on: 2MM summary</span>
+        <div class="wn-title">FDA grants priority review for iberdomide-based myeloma regimen</div>        <div class="wn-why-matters">A new oral therapy for multiple myeloma may provide additional treatment options for patients with relapsed/refractory disease.</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Population:</strong> Multiple myeloma patients</div><div class='wn-pico-item'><strong>Intervention:</strong> Iberdomide (oral CELMoD)</div></div>
+        <div class="wn-section-label">From the Source</div>
+        <ul class="wn-bullets"><li>FDA granted priority review for iberdomide as first-in-class oral CELMoD</li><li>Priority review supported by Phase III data showing improved minimal residual disease outcomes</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>Priority review suggests promising efficacy data, though full approval and safety profile await FDA decision</li></ul>
+        <div class="wn-bottom-line">
+          <strong>Bottom Line:</strong> Iberdomide shows promise as a new oral multiple myeloma therapy with FDA priority review status.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-preliminary">
+            <span class="confidence-dot"></span>
+            Preliminary confidence
+            <span class="wn-readiness">&#x1F4CA; Preliminary</span>
+          </div>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -1932,49 +1834,29 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 16:00:09 +000</div>
-        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-study-meta"><strong>Design:</strong> Non-inferiority randomized controlled trial</div>
-        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department</li><li>Study received an Evidence Rating Level of 1 (Excellent)</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Supports routine addition of acetaminophen to opioid therapy for acute pain management</li><li>Clinical context: May help reduce opioid requirements and improve pain control through multimodal analgesia approach</li></ul>
+        <span class="wn-basis-badge">Based on: PubMed abstract</span>
+        <div class="wn-title">Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department</div>        <div class="wn-why-matters">Understanding optimal pain management combinations in emergency settings is crucial given the ongoing opioid crisis and need for effective multimodal analgesia.</div>
+        <div class="wn-study-meta"><strong>Design:</strong> Prospective cohort study comparing patients who received intravenous acetaminophen with opioids versus those who received opioids alone&ensp;&bull;&ensp;<strong>Outcome:</strong> Opioid requirement measured in Morphine Equivalent Units during Emergency Department stay</div>
+        <div class="wn-pico"><div class="wn-pico-item"><strong>Population:</strong> Adult Emergency Department patients aged 18 years and older treated with opioids for painful conditions</div><div class='wn-pico-item'><strong>Intervention:</strong> Intravenous acetaminophen plus opioids</div><div class='wn-pico-item'><strong>Comparator:</strong> Opioids alone</div></div>
+        <div class="wn-section-label">Key Results</div>
+        <ul class="wn-bullets"><li>No significant difference in opioid consumption during ED stay between groups (10.0 MEU vs 10.0 MEU, p=0.53)</li><li>Trend toward decreased opioid requirement at 24h post-discharge (15.0 MEU vs 30.0 MEU, p=0.059)</li><li>Both groups achieved similar pain reduction (median NRS from 9.0 to 4.0) and patient satisfaction (>80%)</li><li>Nine minor adverse events recorded, equally distributed between groups</li></ul>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
+        <ul class="wn-bullets wn-interp-bullets"><li>IV acetaminophen did not provide opioid-sparing effects during ED stay, contrary to expectations for multimodal analgesia</li><li>The trend toward reduced post-discharge opioid use suggests potential delayed benefits</li><li>Both approaches achieved similar pain control and patient satisfaction</li></ul>
         <div class="wn-section-label">Limitations</div>
-        <ul class="wn-bullets wn-limitations"><li>Non-inferiority design may miss clinically important differences</li></ul>
+        <ul class="wn-bullets wn-limitations"><li>Single-center study</li><li>Non-randomized design</li><li>Relatively small sample size (116 patients)</li></ul>
         <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> Adding acetaminophen to morphine provides superior acute pain control compared to morphine alone in the emergency department.
+          <strong>Bottom Line:</strong> IV acetaminophen does not reduce opioid requirements during ED stay but may decrease post-discharge opioid use.
         </div>
         <div class="wn-footer">
           <div class="confidence confidence-high">
             <span class="confidence-dot"></span>
             High confidence
+            <span class="wn-readiness">&#x1F4CA; Informative</span>
           </div>
-          <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
-        </div>
-      </div>
-
-      <div class="wn-card">
-        <div class="wn-card-header">
-          <div class="wn-tags">
-            <span class="pill pill-fda">FDA Action</span>
-            <span class="pill pill-specialty">Hematology</span>
+          <div class="wn-links">
+            <a href="https://doi.org/10.1016/j.ajem.2020.01.049" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+            <a href="https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/" class="wn-secondary-link" target="_blank" rel="noopener">2MM &#8594;</a>
           </div>
-          <div class="card-actions">
-            <button class="action-btn star" title="Star this study" data-id="iberdomide-myeloma-priority-fda-2026">&#9734;</button>
-          </div>
-        </div>
-        <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 18:00:19 +000</div>
-        <div class="wn-title">FDA grants priority review for iberdomide-based myeloma regimen</div>        <div class="wn-section-label">From the Source</div>
-        <ul class="wn-bullets"><li>FDA granted priority review for iberdomide, a first-in-class oral CELMoD that degrades transcription factors more effectively than earlier agents</li><li>Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
-        <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Represents potential advancement in multiple myeloma treatment with a novel mechanism of action</li><li>Clinical context: Priority review suggests this could become an important option for hospitalists managing myeloma patients</li></ul>
-        <div class="wn-bottom-line">
-          <strong>Bottom Line:</strong> FDA priority review of iberdomide signals a potentially important new treatment option for multiple myeloma patients.
-        </div>
-        <div class="wn-footer">
-          <div class="confidence confidence-preliminary">
-            <span class="confidence-dot"></span>
-            Preliminary confidence
-          </div>
-          <a href="https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
         </div>
       </div>
 
@@ -1989,10 +1871,11 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Fri, 06 Mar 2026 00:00:28 +000</div>
+        
         <div class="wn-title">Maternal exposure to environmental stressors is associated with decreased odds of infant survival among preterm infants</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study of very preterm infants&ensp;&bull;&ensp;<strong>Outcome:</strong> Infant survival without major morbidity</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>Maternal exposure to low greenness levels, high ozone levels, and low temperatures was associated with decreased odds of infant survival without major morbidity in very preterm infants</li><li>Study received Evidence Rating Level 2 (Good)</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Environmental factors during pregnancy may influence neonatal outcomes and should be considered in preterm birth risk assessment</li><li>Clinical context: May inform public health interventions and counseling for high-risk pregnancies</li></ul>
         <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations"><li>Observational design limits causal inference</li><li>Confounding by socioeconomic factors may not be fully controlled</li></ul>
@@ -2003,8 +1886,11 @@
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            
           </div>
-          <a href="https://www.2minutemedicine.com/maternal-exposure-to-environmental-stressors-is-associated-with-decreased-odds-of-infant-survival-among-preterm-infants/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/maternal-exposure-to-environmental-stressors-is-associated-with-decreased-odds-of-infant-survival-among-preterm-infants/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -2019,10 +1905,11 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 00:00:43 +000</div>
+        
         <div class="wn-title">Higher sleep apnea-specific hypoxic burden may predict postoperative cardiovascular complications and mortality in obstructive sleep apnea</div>        <div class="wn-study-meta"><strong>Design:</strong> Cohort study of patients with obstructive sleep apnea&ensp;&bull;&ensp;<strong>Outcome:</strong> 30-day postoperative cardiovascular events and mortality</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>Higher sleep apnea-specific hypoxic burden (SASHB) was associated with significantly greater risk of 30-day postoperative cardiovascular events and mortality in OSA patients</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This metric could help risk-stratify OSA patients before surgery and guide perioperative management decisions</li></ul>
         <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations"><li>Observational design</li><li>Limited to patients with known OSA</li></ul>
@@ -2033,8 +1920,11 @@
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            
           </div>
-          <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/higher-sleep-apnea-specific-hypoxic-burden-may-predict-postoperative-cardiovascular-complications-and-mortality-in-obstructive-sleep-apnea/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -2049,10 +1939,11 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Tue, 03 Mar 2026 12:00:47 +000</div>
+        
         <div class="wn-title">Safety and efficacy profile of first-in-class oral p53 reactivator rezatapopt</div>        <div class="wn-study-meta"><strong>Design:</strong> Phase 1-2 single-group trial</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>The p53 reactivator rezatapopt was well-tolerated in adults with solid tumors harboring the TP53 Y220C mutation</li><li>Preliminary efficacy data showed dose-dependent tumor regression in participants with ovarian, breast, and other cancers</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Represents a novel targeted therapy approach for patients with specific TP53 mutations, potentially relevant for hospitalists managing cancer patients</li><li>Clinical context: First-in-class mechanism may offer new treatment options for previously difficult-to-treat solid tumors</li></ul>
         <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations"><li>Single-group design without control arm</li><li>Early phase trial with preliminary data</li></ul>
@@ -2063,8 +1954,11 @@
           <div class="confidence confidence-preliminary">
             <span class="confidence-dot"></span>
             Preliminary confidence
+            
           </div>
-          <a href="https://www.2minutemedicine.com/safety-and-efficacy-of-first-in-class-oral-p53-reactivator-rezatapopt/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/safety-and-efficacy-of-first-in-class-oral-p53-reactivator-rezatapopt/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -2079,10 +1973,11 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Thu, 05 Mar 2026 15:00:34 +000</div>
+        
         <div class="wn-title">Oral remibrutinib hits Phase 3 primary endpoint for inducible hives</div>        <div class="wn-study-meta"><strong>Design:</strong> Phase III trial (RemIND trial)</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>Oral remibrutinib successfully met its primary endpoint in Phase III RemIND trial, providing significant symptom relief for chronic inducible urticaria</li><li>As a selective BTK inhibitor, this represents the first targeted oral option for patients with cold, pressure, or exercise-induced urticaria</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: This provides a new therapeutic option for chronic inducible urticaria patients who fail standard antihistamine therapy</li><li>Clinical context: BTK inhibitors represent a novel mechanism for urticaria treatment, potentially offering better outcomes than current therapies</li></ul>
         <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations"><li>Full safety and efficacy data not yet published</li></ul>
@@ -2093,8 +1988,11 @@
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            
           </div>
-          <a href="https://www.2minutemedicine.com/oral-remibrutinib-hits-phase-3-primary-endpoint-for-inducible-hives/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/oral-remibrutinib-hits-phase-3-primary-endpoint-for-inducible-hives/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
@@ -2109,10 +2007,11 @@
           </div>
         </div>
         <div class="wn-source">2 Minute Medicine &bull; Wed, 04 Mar 2026 00:00:37 +000</div>
+        
         <div class="wn-title">Lifestyle factors including higher body mass index and smoking are associated with changes in left-atrial size and function</div>        <div class="wn-study-meta"><strong>Design:</strong> Prospective cohort study</div>
         <div class="wn-section-label">From the Source</div>
         <ul class="wn-bullets"><li>Higher BMI and smoking are associated with measurable changes in left-atrial size and function</li><li>Left atrial size and function are strong predictors of atrial fibrillation</li></ul>
-        <div class="wn-section-label wn-interp-label">Clinical Context</div>
+        <div class="wn-section-label wn-interp-label">Clinical Interpretation</div>
         <ul class="wn-bullets wn-interp-bullets"><li>Clinical context: Reinforces importance of lifestyle counseling for cardiovascular risk reduction and may help identify patients at higher risk for developing atrial fibrillation</li></ul>
         <div class="wn-section-label">Limitations</div>
         <ul class="wn-bullets wn-limitations"><li>Observational design cannot establish causation</li></ul>
@@ -2123,78 +2022,314 @@
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Moderate confidence
+            
           </div>
-          <a href="https://www.2minutemedicine.com/lifestyle-factors-including-higher-body-mass-index-and-smoking-are-associated-with-changes-in-left-atrial-size-and-function/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          <div class="wn-links">
+            <a href="https://www.2minutemedicine.com/lifestyle-factors-including-higher-body-mass-index-and-smoking-are-associated-with-changes-in-left-atrial-size-and-function/" class="source-link" target="_blank" rel="noopener">View Source &#8594;</a>
+          </div>
         </div>
       </div>
 
     </section>
 
-    <!-- TAB 3: LANDMARK STUDY -->
+    <!-- TAB 2: LANDMARK TRIAL -->
     <section id="landmark" class="tab-content">
 
       <div class="landmark-card">
         <div class="landmark-header">
-          <h3 class="landmark-title">INTERACT2 — Intensive BP Lowering in Acute ICH</h3>
-          <button class="action-btn star" data-id="interact2---intensive-bp-lower" title="Star this study">&#9734;</button>
+          <h3 class="landmark-title">SURPASS-2 — Tirzepatide vs Semaglutide in T2DM</h3>
+          <button class="action-btn star" data-id="surpass-2---tirzepatide-vs-sem" title="Star this study">&#9734;</button>
         </div>
-        <div class="landmark-meta">NEJM • 2013 • Anderson CS, Heeley E, Huang Y, et al.</div>
-        <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1214609" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
+        <div class="landmark-meta">NEJM &bull; 2021 &bull; Frías et al.</div>
 
         <div class="landmark-section">
           <h4>Clinical Question</h4>
-          <p>Does intensive blood pressure lowering to <140 mmHg systolic within 6 hours of acute intracerebral hemorrhage improve functional outcomes compared to standard care?</p>
+          <p>Is tirzepatide superior to semaglutide 1 mg for glycemic control and weight reduction in adults with type 2 diabetes inadequately controlled on metformin?</p>
         </div>
 
         <div class="landmark-section">
           <h4>Study Design</h4>
-          <p>Randomized, controlled, open-label trial with blinded outcome assessment. International multicenter study across 144 hospitals in 21 countries. Patients randomized 1:1 to intensive vs. guideline-recommended BP management.</p>
+          <p>Phase 3, randomized, open-label, active-controlled trial conducted at 122 sites across 6 countries. Participants were randomized 1:1:1:1 to tirzepatide 5 mg, 10 mg, 15 mg, or semaglutide 1 mg once weekly for 40 weeks.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Population</h4>
-          <p>2,839 patients with acute spontaneous ICH within 6 hours of onset, elevated systolic BP (150-220 mmHg), no definite indication/contraindication for intensive BP lowering. Excluded: structural causes, deep coma, massive hematoma with poor prognosis.</p>
+          <p>Adults with T2DM on stable metformin ≥1500 mg/day, HbA1c 7.0-10.5%, BMI ≥25 kg/m². Key exclusions: T1DM, recent cardiovascular events, severe renal impairment. N=1,879 randomized and treated.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Intervention</h4>
-          <p>Intensive BP lowering: target SBP <140 mmHg within 1 hour and maintained for 7 days using IV antihypertensive agents (nicardipine, labetalol, enalaprilat, hydralazine per local protocols).</p>
+          <p>Tirzepatide 5 mg, 10 mg, or 15 mg subcutaneous injection once weekly (dual GIP/GLP-1 receptor agonist)</p>
         </div>
 
         <div class="landmark-section">
           <h4>Comparator / Control</h4>
-          <p>Guideline-recommended BP management: target SBP <180 mmHg using same antihypertensive agents. More conservative approach following 2007 AHA/ASA guidelines.</p>
+          <p>Semaglutide 1 mg subcutaneous injection once weekly (GLP-1 receptor agonist)</p>
         </div>
 
         <div class="landmark-section">
           <h4>Primary Endpoint</h4>
-          <p>Death or major disability at 90 days, defined as modified Rankin Scale (mRS) scores 3-6. Secondary endpoints included ordinal analysis of mRS, mortality, serious adverse events.</p>
+          <p>Change in HbA1c from baseline to week 40 (non-inferiority margin 0.4%, superiority margin 0%)</p>
         </div>
 
         <div class="landmark-section">
           <h4>Key Findings</h4>
-          <p>Primary endpoint: 52.0% intensive vs. 55.6% guideline group (OR 0.87, 95% CI 0.75-1.01, p=0.06). Ordinal analysis of mRS showed significant improvement (OR 0.87, 95% CI 0.77-1.00, p=0.04). ARR = 3.6%, RRR = 6.5%, NNT = 28. No increase in serious adverse events (23.3% vs. 23.6%, p=0.83).</p>
+          <p>HbA1c reduction from baseline: Tirzepatide 5mg -2.01%, 10mg -2.24%, 15mg -2.30% vs Semaglutide -1.86%. Treatment differences: 5mg -0.15% (95% CI -0.29 to -0.02, p=0.03), 10mg -0.38% (95% CI -0.51 to -0.24, p<0.001), 15mg -0.44% (95% CI -0.58 to -0.31, p<0.001). Weight loss: Tirzepatide 15mg -11.2 kg vs Semaglutide -5.7 kg, difference -5.5 kg (95% CI -6.7 to -4.2, p<0.001). HbA1c <7%: Tirzepatide 15mg 86% vs Semaglutide 79% (p=0.02). Nausea rates similar across groups (12-18%).</p>
         </div>
 
         <div class="landmark-section">
           <h4>Strengths</h4>
-          <p>Large international sample size, pragmatic design reflecting real-world practice, excellent follow-up (99.6%), pre-specified ordinal analysis, consistent treatment effect across subgroups, safety demonstrated with no excess adverse events.</p>
+          <p>Large sample size, active comparator design, dose-ranging evaluation, robust statistical analysis with multiple endpoints, good completion rates (>85%), international multicenter design enhancing generalizability</p>
         </div>
 
         <div class="landmark-section">
           <h4>Weaknesses / Limitations</h4>
-          <p>Primary endpoint narrowly missed statistical significance (p=0.06), open-label design, modest treatment effect size, predominantly Asian population (88%), relatively small hematomas (median 11 mL), short-term follow-up only.</p>
+          <p>Open-label design introducing potential bias, relatively short 40-week duration, predominantly white population (70%), industry-sponsored, lack of cardiovascular outcome data, higher discontinuation in highest tirzepatide dose group</p>
         </div>
 
         <div class="landmark-section">
           <h4>Practice Impact</h4>
-          <p>Shifted clinical practice toward more aggressive BP management in acute ICH. Influenced 2015 AHA/ASA stroke guidelines to consider SBP target <140 mmHg as reasonable. Changed emergency department and stroke unit protocols for ICH management globally.</p>
+          <p>Established tirzepatide as superior to semaglutide for both glycemic control and weight loss, leading to FDA approval in 2022. Changed T2DM treatment algorithms by providing a more effective option for patients requiring intensive glucose lowering and weight management.</p>
         </div>
 
         <div class="landmark-section">
           <h4>Why It Matters Now</h4>
-          <p>Remains cornerstone evidence for acute ICH BP management. Subsequent meta-analyses and real-world studies have generally supported intensive BP lowering. ATACH-2 trial results created some controversy, but INTERACT2 findings still widely accepted and implemented in current guidelines.</p>
+          <p>Represents the most effective diabetes medication for dual glucose and weight control. Subsequent SURPASS trials confirmed cardiovascular safety. Growing real-world experience supports trial findings. Cost and access remain barriers, but clinical efficacy has established tirzepatide as preferred option for appropriate patients.</p>
         </div>
+        <a href="https://doi.org/10.1056/NEJMoa2107519" target="_blank" rel="noopener" class="statpearls-link" style="font-size:0.8rem;">Read on WikiJournalClub &#8594;</a>
+      </div>
+
+    </section>
+
+    <!-- TAB 3: DISEASE OF THE DAY -->
+    <section id="disease" class="tab-content">
+      <div class="disease-view" id="disease-view-0">
+
+      <div class="disease-header card">
+        <h2>Diabetic Ketoacidosis</h2>
+        <p class="verified-date">Last verified: March 12, 2026</p>
+      </div>
+      <div class="accordion open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Clinical Manifestations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Symptoms</strong></p>
+<ul>
+  <li><strong>Nausea and vomiting</strong> &mdash; frequently accompany the metabolic decompensation<sup>1</sup></li>
+  <li><strong>Polyuria and polydipsia</strong> &mdash; secondary to hyperglycemia and osmotic diuresis<sup>1</sup></li>
+  <li><strong>Abdominal pain</strong> &mdash; often severe and can mimic surgical conditions<sup>1</sup></li>
+  <li><strong>Altered mental status</strong> &mdash; ranging from confusion to coma<sup>1</sup></li>
+  <li><strong>Fruity breath odor</strong> &mdash; due to acetone, a volatile ketone body<sup>1</sup></li>
+  <li><strong>Weight loss</strong> &mdash; from fluid losses and catabolism<sup>1</sup></li>
+</ul>
+<p><strong>Exam Findings</strong></p>
+<ul>
+  <li><strong>Kussmaul respirations</strong> &mdash; deep, labored breathing as compensatory response to acidosis<sup>1</sup></li>
+  <li><strong>Dehydration signs</strong> &mdash; dry mucous membranes, poor skin turgor, hypotension<sup>1</sup></li>
+  <li><strong>Tachycardia</strong> &mdash; compensatory response to volume depletion<sup>1</sup></li>
+  <li><strong>Hypotension</strong> &mdash; may progress to shock in severe cases<sup>1</sup></li>
+  <li><strong>Altered mental status</strong> &mdash; confusion, lethargy, or coma (severity correlates with osmolality)<sup>1</sup></li>
+  <li><strong>Ketotic breath odor</strong> &mdash; characteristic fruity smell<sup>1</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Differential Diagnosis</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Common</strong></p>
+<ul>
+  <li><strong>Hyperglycemic hyperosmolar state (HHS)</strong> &mdash; extreme hyperglycemia without significant ketosis<sup>2</sup></li>
+  <li><strong>Sepsis</strong> &mdash; can precipitate DKA and shares similar presentation<sup>2</sup></li>
+  <li><strong>Pneumonia</strong> &mdash; common precipitant and mimics DKA symptoms<sup>2</sup></li>
+  <li><strong>Urinary tract infection</strong> &mdash; frequent trigger for metabolic decompensation<sup>2</sup></li>
+</ul>
+<p><strong>Less Common</strong></p>
+<ul>
+  <li><strong>Alcoholic ketoacidosis</strong> &mdash; glucose levels rarely &gt;250 mg/dL, β-hydroxybutyrate:acetoacetate ratio up to 8:1<sup>3</sup></li>
+  <li><strong>Starvation ketoacidosis</strong> &mdash; dietary intake &lt;500 kcal/day, normal or low glucose<sup>2</sup></li>
+  <li><strong>Salicylate poisoning</strong> &mdash; mixed acid-base disorder with respiratory alkalosis and metabolic acidosis<sup>4</sup></li>
+  <li><strong>Methanol or ethylene glycol ingestion</strong> &mdash; elevated osmolar gap<sup>4</sup></li>
+</ul>
+<p><strong>Mimics</strong></p>
+<ul>
+  <li><strong>Pancreatitis</strong> &mdash; abdominal pain and can precipitate DKA<sup>2</sup></li>
+  <li><strong>Myocardial infarction</strong> &mdash; can present with metabolic decompensation<sup>2</sup></li>
+  <li><strong>Lactic acidosis</strong> &mdash; high anion gap without ketonemia<sup>4</sup></li>
+  <li><strong>Uremia</strong> &mdash; metabolic acidosis in chronic kidney disease<sup>4</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Diagnostic Tests</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Laboratory Criteria (2024 Consensus)<sup>5</sup></strong></p>
+<ul>
+  <li><strong>Glucose</strong>: &ge;200 mg/dL (11.1 mmol/L) OR prior diabetes history irrespective of glucose<sup>5</sup></li>
+  <li><strong>Ketones</strong>: β-hydroxybutyrate &ge;3.0 mmol/L (venous/capillary) OR urine ketones 2+ or greater<sup>5</sup></li>
+  <li><strong>Metabolic acidosis</strong>: pH &lt;7.3 AND/OR bicarbonate &lt;18 mmol/L<sup>5</sup></li>
+</ul>
+<p><strong>Blood Gas Analysis<sup>1</sup></strong></p>
+<ul>
+  <li><strong>Arterial pH</strong>: &lt;7.3 (severe &lt;7.0, moderate 7.0-7.24, mild 7.25-7.30)<sup>1</sup></li>
+  <li><strong>Bicarbonate</strong>: &lt;18 mEq/L (severe &lt;10, moderate 10-15, mild 15-18)<sup>1</sup></li>
+  <li><strong>Anion gap</strong>: Usually &gt;12 mEq/L (Note: 2024 guidelines removed anion gap as diagnostic criterion)<sup>5</sup></li>
+</ul>
+<p><strong>Additional Testing<sup>1</sup></strong></p>
+<ul>
+  <li><strong>Basic metabolic panel</strong>: assess electrolytes, renal function, glucose<sup>1</sup></li>
+  <li><strong>Serum osmolality</strong>: typically elevated due to hyperglycemia and dehydration<sup>1</sup></li>
+  <li><strong>Complete blood count</strong>: may show leukocytosis even without infection<sup>1</sup></li>
+  <li><strong>Urinalysis</strong>: ketones, glucose, signs of infection<sup>1</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Treatment</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Fluid Resuscitation (2024 Guidelines)<sup>5</sup></strong></p>
+<ul>
+  <li><strong>Initial fluid</strong>: 0.9% NaCl or balanced electrolyte solutions at 15-20 mL/kg/h<sup>5</sup></li>
+  <li><strong>Goal</strong>: Replace 50% of estimated fluid deficit (typically 6L) in first 8-12 hours<sup>5</sup></li>
+  <li><strong>Dextrose addition</strong>: Add when glucose &lt;250 mg/dL to prevent hypoglycemia<sup>5</sup></li>
+  <li>Clinical context: Balanced electrolyte solutions may resolve DKA 5.36 hours faster than 0.9% saline<sup>5</sup></li>
+</ul>
+<p><strong>Insulin Therapy<sup>1,5</sup></strong></p>
+<ul>
+  <li><strong>Initial dose</strong>: Regular insulin IV infusion 0.1 units/kg/hour<sup>1</sup></li>
+  <li><strong>Pediatric dosing</strong>: 0.1 units/kg/hour continuous infusion (no bolus doses)<sup>1</sup></li>
+  <li><strong>Glucose monitoring</strong>: Check every 1-2 hours initially<sup>5</sup></li>
+  <li><strong>Transition to subcutaneous</strong>: Continue IV insulin 1-2 hours after starting subcutaneous insulin<sup>5</sup></li>
+</ul>
+<p><strong>Electrolyte Management<sup>1,5</sup></strong></p>
+<ul>
+  <li><strong>Potassium replacement</strong>: Monitor closely, replace as needed (typically depleted despite normal/high serum levels)<sup>1</sup></li>
+  <li><strong>Phosphate</strong>: Consider replacement if severely low<sup>1</sup></li>
+  <li><strong>Bicarbonate</strong>: Only if pH &lt;6.9 per ADA guidelines (not routinely recommended)<sup>4</sup></li>
+  <li><strong>Monitoring frequency</strong>: Check electrolytes every 2-4 hours until stable<sup>5</sup></li>
+</ul>
+<p><strong>ICU vs Ward Management<sup>1,5</sup></strong></p>
+<ul>
+  <li><strong>ICU indications</strong>: Severe DKA (pH &lt;7.0), altered mental status, hemodynamic instability<sup>1</sup></li>
+  <li><strong>Step-down unit</strong>: Moderate DKA (pH 7.0-7.24) with stable vital signs<sup>1</sup></li>
+  <li><strong>General ward</strong>: Mild DKA (pH 7.25-7.30) in alert, stable patients<sup>1</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Expected Course</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+  <li><strong>Resolution criteria</strong>: Glucose &lt;200 mg/dL, bicarbonate &ge;18 mEq/L, venous pH &gt;7.3<sup>5</sup></li>
+  <li><strong>Time to resolution</strong>: Typically 12-24 hours with appropriate treatment<sup>1</sup></li>
+  <li><strong>Mortality rate</strong>: &gt;5% in elderly patients and those with severe comorbidities<sup>1</sup></li>
+  <li><strong>Prognosis factors</strong>: Age extremes, coma, hypotension, and severe comorbidities worsen prognosis<sup>1</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Follow-up</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <ul>
+  <li><strong>Diabetes education</strong>: Enhanced patient education and improved access to medical care reduce recurrence<sup>1</sup></li>
+  <li><strong>Medication adherence</strong>: Address barriers to insulin therapy compliance<sup>1</sup></li>
+  <li><strong>Sick day management</strong>: Educate on sick day rules and when to seek medical attention<sup>5</sup></li>
+  <li><strong>Regular monitoring</strong>: Establish regular follow-up with endocrinology or primary care<sup>5</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h3>Low-Resource Considerations</h3>
+          <span class="accordion-toggle">+</span>
+        </div>
+        <div class="accordion-body">
+          <div class="accordion-content">
+            <p><strong>Essential Interventions<sup>1</sup></strong></p>
+<ul>
+  <li><strong>Fluid resuscitation</strong>: 0.9% normal saline if balanced solutions unavailable<sup>5</sup></li>
+  <li><strong>Regular insulin</strong>: Can use subcutaneous insulin in milder cases if IV pumps unavailable<sup>1</sup></li>
+  <li><strong>Urine ketones</strong>: Use dipstick testing if serum β-hydroxybutyrate unavailable<sup>1</sup></li>
+  <li><strong>Basic monitoring</strong>: Glucose, electrolytes, and pH at minimum<sup>1</sup></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="guidelines-box">
+        <h4>Society Guidelines Quick Reference</h4>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Hyperglycemic Crises in Adults with Diabetes: A Consensus Report</div>
+            <div class="guideline-meta">American Diabetes Association, European Association for Study of Diabetes, Joint British Diabetes Societies &bull; 2024</div>
+          </div>
+          <a href="https://link.springer.com/article/10.1007/s00125-024-06183-8" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Standards of Care in Diabetes</div>
+            <div class="guideline-meta">American Diabetes Association &bull; 2024</div>
+          </div>
+          <a href="https://professional.diabetes.org/standards-of-care" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+        <div class="guideline-item">
+          <div class="guideline-info">
+            <div class="guideline-name">Management of Diabetic Ketoacidosis in Adults</div>
+            <div class="guideline-meta">Joint British Diabetes Societies for Inpatient Care &bull; 2022</div>
+          </div>
+          <a href="https://pubmed.ncbi.nlm.nih.gov/35174622/" class="guideline-link" target="_blank" rel="noopener">View Guideline &#8594;</a>
+        </div>
+      </div>
+
+      <div class="references">
+        <h4>References</h4>
+        <ol>
+          <li id="ref-1">EL-Mohandes N, Yee G, Bhutta BS, Huecker MR. Adult Diabetic Ketoacidosis. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025.</li>
+          <li id="ref-2">Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycaemic crises in adults with diabetes: a consensus report. Diabetologia. 2024;67(8):1455-1479.</li>
+          <li id="ref-3">Ghimire P, Dhamoon AS. Ketoacidosis. StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2023.</li>
+          <li id="ref-4">Agarwal A, Bansal P, Singla A, Arora A. Anion Gap and Non-Anion Gap Metabolic Acidosis. StatPearls [Internet]. 2025.</li>
+          <li id="ref-5">Rodriguez Alvarez P, San Martin VT, Morey-Vargas OL. Hyperglycemic crises in adults: A look at the 2024 consensus report. Cleve Clin J Med. 2025;92(3):152-158.</li>
+        </ol>
+      </div>
+
+      <div class="statpearls-wrap" style="margin-top:24px;">
+        <a href="https://www.ncbi.nlm.nih.gov/books/NBK560723/" target="_blank" rel="noopener" class="statpearls-link">Read on StatPearls &#8594;</a>
+      </div>
+
       </div>
 
     </section>
@@ -2203,18 +2338,173 @@
     <section id="imageofday" class="tab-content">
 
       <h3 class="section-title" style="margin-top:0;">Image of the Day</h3>
+      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Visual cases from <a href="https://jddonline.com" target="_blank" rel="noopener">JDD Atlas</a> and <a href="https://litfl.com" target="_blank" rel="noopener">LITFL</a> &mdash; test your interpretation skills</p>
 
-      <div class="image-card">
-        <div class="image-card-header">
-          <h4 class="image-card-title">Dermatology Image</h4>
-          <span class="pill pill-specialty" style="font-size:0.65rem;">JDD Atlas</span>
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">Derm Image</span>
+            <span class="pill pill-specialty">Dermatology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-jdd-dermatology-image">&#9734;</button>
+          </div>
         </div>
-        <img src="https://cms.sanovaworks.com/uploads/2022/09/ae597224619b1303cf44e9e4533fec80-small.jpg" alt="Dermatology Image — clinical image 1" class="image-card-img" loading="lazy">
-        <img src="https://cms.sanovaworks.com/uploads/2022/09/187a706b7c3463e00471323061fe3ba8-small.jpg" alt="Dermatology Image — clinical image 2" class="image-card-img" loading="lazy">
-        <img src="https://cms.sanovaworks.com/uploads/2022/09/41614b605479f871ef528b987f8e0a58-small.jpg" alt="Dermatology Image — clinical image 3" class="image-card-img" loading="lazy">
-        <img src="https://cms.sanovaworks.com/uploads/2022/09/552955dd890db18fee990418fcdd928d-small.jpg" alt="Dermatology Image — clinical image 4" class="image-card-img" loading="lazy">
-        <p class="image-card-desc">© 2026 Journal of Drugs in Dermatology. All Rights Reserved. JDD, a peer-reviewed, MEDLINE®/PubMed® indexed journal, offers the dermatology community strong content of utmost quality and relevance on drugs, devices, and methods.</p>
-        <a href="https://jddonline.com/project-atlas/inclusive-derm/drug-reaction-minocycline/" target="_blank" rel="noopener" class="source-link image-card-source">View on JDD Atlas &#8594;</a>
+        <div class="wn-source">JDD Atlas &bull; March 12, 2026</div>
+        <div class="wn-title">Dermatology Image</div>
+        <div class="wn-study-meta">© 2026 Journal of Drugs in Dermatology. All Rights Reserved. JDD, a peer-reviewed, MEDLINE®/PubMed® indexed journal, offers the dermatology community strong content of utmost quality and relevance on drugs, devices, and methods.</div>
+        <img src="https://cms.sanovaworks.com/uploads/2023/10/fc3719631a9c7961c26b2efcada794ad-small.jpg" alt="Dermatology Image — clinical image 1" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/e38505ec1972400384ea5adcab410413-small.jpg" alt="Dermatology Image — clinical image 2" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/3073bfc7cae293da604b8b67db4726e6-small.jpg" alt="Dermatology Image — clinical image 3" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/7835c1f2fe655f5d3761af89f953ec86-small.jpg" alt="Dermatology Image — clinical image 4" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/377adc79dd35a9761c156e105de93770-small.jpg" alt="Dermatology Image — clinical image 5" class="image-card-img" loading="lazy">
+        <img src="https://cms.sanovaworks.com/uploads/2022/09/e59f0f16777da87b2def4bba182d2e67-small.jpg" alt="Dermatology Image — clinical image 6" class="image-card-img" loading="lazy">
+        <div class="wn-bottom-line">
+          <strong>Visual Diagnosis:</strong> Study the images above and consider the clinical description. What is your diagnosis?
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-high">
+            <span class="confidence-dot"></span>
+            High-yield visual
+          </div>
+          <div class="wn-links">
+            <a href="https://jddonline.com/project-atlas/inclusive-derm/granuloma-annulare/" class="source-link" target="_blank" rel="noopener">View on JDD Atlas &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">ECG Case</span>
+            <span class="pill pill-specialty">Cardiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-ecg-027">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 12, 2026</div>
+        <div class="wn-title">ECG of the Day</div>
+        <div class="wn-study-meta">Top 100 TOP 100 ECG Elderly patient feeling generally unwell. PMHx of T2DM, hypertension, IHD, CCF, osteoarthritis. Describe the ECG. Describe and interpret this ECG … are all strongly suggestive of&nbsp; severe hyperkalemia . This patient had a serum K of 9.2 mmol/L! In this elderly patient with multiple medical problems, causes could&nbsp;include renal failure (e.g. due to diuretics, NSAIDs, intercurrent illness) or treatment with ACE-inhibitors, spironalactone or K-supplements. Emergency Physician in Prehospital and Retrieval Medicine in Sydney, Australia. He has a passion for ECG interpretation and medical education | ECG Library | MBBS DDU (Emergency) CCPU. Adult/Paediatric Emergency Medicine Advanced Trainee in Melbourne, Australia. Special interests in diagnostic and procedural ultr</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What is the rate and rhythm?</li>
+          <li>Are there ST-segment or T-wave changes?</li>
+          <li>What is the axis?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="https://litfl.com/ecg-case-027/" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">CXR Case</span>
+            <span class="pill pill-specialty">Radiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-cxr-036">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 12, 2026</div>
+        <div class="wn-title">CXR of the Day</div>
+        <div class="wn-study-meta">Top 100 TOP 150 CXR A 19 year old man is found collapsed at a friends house and brought to ED. His mates say he has been drinking alcohol heavily but deny other drug use. BP 92/53, warm and dilated peripherally, Temp 37.7C, responds to voice. click images to enlarge Describe and interpret this CXR and CT chest CXR Interpretation: There is diffuse air space shadowing in the right mid zone with an area of central lucency and air fluid level. * A left nipple ring is noted The rest of lung parenchyma and pleura are normal CT Interpretation: CT demonstrates a thick walled cavity in the apical segment of the right lower lobe. * There is an air fluid level with some surrounding consolidation The most likely diagnosis is aspiration from reduced conscious level causing a lung abscess and systemic s</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What are the key findings?</li>
+          <li>Is the mediastinum normal?</li>
+          <li>Are there any opacities or effusions?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="https://litfl.com/cxr-case-036/" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">CT Case</span>
+            <span class="pill pill-specialty">Radiology</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-ct-016">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 12, 2026</div>
+        <div class="wn-title">CT of the Day</div>
+        <div class="wn-study-meta">Medical Specialty Radiology A 55-year-old lady presents with an abrupt drop in GCS following a severe occipital headache and vomiting for the preceding 24 hours. Describe and interpret the CT images There is extensive subarachnoid haemorrhage (SAH) throughout the basal cisterns, the occipital horns, the fourth ventricle and the cerebral aqueduct. There is enlargement of the temporal horns of the lateral ventricles (consistent with hydrocephalus). This is a very typical suprasellar distribution of non-traumatic subarachnoid haemorrhage secondary to a ruptured aneurysm, in contrast to acute traumatic SAH which is more commonly seen in the sulci. Most aneurysms are located at the branches of the Circle of Willis. Image 4 demonstrates well the difference between subarachnoid blood and calcifie</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What organ system is primarily affected?</li>
+          <li>Are there any masses, fluid collections, or abnormal enhancements?</li>
+          <li>What is your interpretation?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="https://litfl.com/ct-case-016/" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wn-card">
+        <div class="wn-card-header">
+          <div class="wn-tags">
+            <span class="pill pill-image">Clinical Case</span>
+            <span class="pill pill-specialty">Emergency Medicine</span>
+          </div>
+          <div class="card-actions">
+            <button class="action-btn star" title="Star" data-id="img-clinical-own-the-oxygen">&#9734;</button>
+          </div>
+        </div>
+        <div class="wn-source">LITFL &bull; March 12, 2026</div>
+        <div class="wn-title">Clinical Case of the Day</div>
+        <div class="wn-study-meta">Medical Specialty Resuscitation aka Ruling the Resus Room 008 Weingart SD, Levitan RM. Preoxygenation and Prevention of Desaturation During Emergency Airway Management. Ann Emerg Med. 2012 Mar;59(3):165-75.e1. PMID: 22050948 . I gave a talk on this paper soon after it was epublished last year. Here is the slide show, it&#8217;s an easy question and answer format so that you can get the main messages with a minimum of fuss: I was thinking of uploading a &#8216;voiced over&#8217; version, again because the paper is SO DAMN IMPORTANT , but now I don&#8217;t have too&#8230; Resus Room Reflection Chris is an Intensivist and ECMO specialist at The Alfred ICU, where he is Deputy Director (Education). He is a Clinical Adjunct Associate Professor at Monash University, the Lead for the Clinician Edu</div>
+        <div class="wn-section-label">Key Questions</div>
+        <ul class="wn-bullets">
+          <li>What is the most likely diagnosis?</li>
+          <li>What key findings support your differential?</li>
+          <li>What initial workup would you order?</li>
+        </ul>
+        <div class="wn-bottom-line">
+          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
+        </div>
+        <div class="wn-footer">
+          <div class="confidence confidence-moderate">
+            <span class="confidence-dot"></span>
+            Self-Assessment
+          </div>
+          <div class="wn-links">
+            <a href="https://litfl.com/own-the-oxygen/" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
+          </div>
+        </div>
       </div>
 
       <div class="nejm-reminder-card">
@@ -2233,7 +2523,61 @@
 
     </section>
 
-    <!-- TAB 5: ARCHIVE -->
+    <!-- TAB 5: PODCASTS -->
+    <section id="podcasts" class="tab-content">
+
+      <h3 class="section-title" style="margin-top:0;">Podcasts</h3>
+      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">High-yield internal medicine podcasts for learning on the go</p>
+      <div class="podcast-grid">
+        <div class="podcast-card">
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">C</div>
+            <div class="podcast-card-info">
+              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
+              <div class="podcast-name">Core IM</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Exploring the core topics of internal medicine with deep-dive episodes on diagnosis, management, and clinical reasoning.</div>
+          <div class="podcast-actions"><a href="https://podcasts.apple.com/us/podcast/core-im-podcast/id1240596890" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a> <a href="https://www.coreimpodcast.com" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a></div>
+        </div>
+        <div class="podcast-card">
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">T</div>
+            <div class="podcast-card-info">
+              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
+              <div class="podcast-name">The Curbsiders</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Internal medicine podcast bringing you clinical pearls and practice-changing knowledge through expert interviews.</div>
+          <div class="podcast-actions"><a href="https://podcasts.apple.com/us/podcast/the-curbsiders-internal-medicine-podcast/id1198732014" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a> <a href="https://thecurbsiders.com" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a></div>
+        </div>
+        <div class="podcast-card">
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">T</div>
+            <div class="podcast-card-info">
+              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
+              <div class="podcast-name">The Clinical Problem Solvers</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Tackling clinical reasoning through real cases and schema-based approaches to internal medicine.</div>
+          <div class="podcast-actions"><a href="https://podcasts.apple.com/us/podcast/the-clinical-problem-solvers/id1459685586" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a> <a href="https://clinicalproblemsolving.com" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a></div>
+        </div>
+        <div class="podcast-card">
+          <div class="podcast-card-top">
+            <div class="podcast-artwork podcast-artwork-placeholder">H</div>
+            <div class="podcast-card-info">
+              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
+              <div class="podcast-name">Harrison's PodClass</div>
+            </div>
+          </div>
+          <div class="podcast-ep-summary">Bite-sized internal medicine education from the authority behind Harrison's Principles of Internal Medicine.</div>
+          <div class="podcast-actions"><a href="https://podcasts.apple.com/us/podcast/harrisons-podclass/id1463960076" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- TAB 6: ARCHIVE -->
     <section id="archive" class="tab-content">
 
       <div class="archive-intro">
@@ -2246,9 +2590,13 @@
       <div id="archive-content">
         <p class="archive-empty-msg">No starred items yet. Use the &#9734; button on any card to save it here.</p>
       </div>
-      <div class="archive-actions" style="margin-top:16px; display:none" id="archive-actions">
-        <button class="btn btn-outline btn-sm" id="export-btn" onclick="exportFavorites()">Copy to Clipboard</button>
-        <button class="btn btn-outline btn-sm" onclick="clearAllStarred()" style="margin-left:8px;">&#x2715; Clear All</button>
+      <div class="archive-actions-bar" style="margin-top:16px; display:none" id="archive-actions">
+        <button class="archive-action-btn" id="export-btn" onclick="exportFavorites()">
+          <span class="archive-action-icon">&#x1F4CB;</span> Copy to Clipboard
+        </button>
+        <button class="archive-action-btn archive-action-btn-danger" onclick="clearAllStarred()">
+          <span class="archive-action-icon">&#x2715;</span> Clear All
+        </button>
       </div>
     </section>
 
@@ -2319,15 +2667,24 @@
             if (sourceEl) source = sourceEl.textContent.trim();
             var pills = card.querySelectorAll('.pill');
             if (pills.length > 0) typeLabel = pills[0].textContent.trim();
-            var blEl = card.querySelector('.wn-bottom-line');
-            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').trim();
+            var blEl = card.querySelector('.wn-bottom-line, .bottom-line');
+            if (blEl) bottomLine = blEl.textContent.replace('Bottom Line:', '').replace('Bottom line:', '').trim();
             var linkEl = card.querySelector('.source-link, .statpearls-link');
             if (linkEl) sourceUrl = linkEl.href;
+          }
+          var landmarkSections = [];
+          if (card && card.classList.contains('landmark-card')) {
+            card.querySelectorAll('.landmark-section').forEach(function(sec) {
+              var h = sec.querySelector('h4');
+              var p = sec.querySelector('p');
+              if (h && p) landmarkSections.push({ heading: h.textContent.trim(), text: p.textContent.trim() });
+            });
           }
           starred[id] = {
             id: id, title: title, source: source,
             typeLabel: typeLabel, bottomLine: bottomLine,
             sourceUrl: sourceUrl,
+            landmarkSections: landmarkSections.length > 0 ? landmarkSections : undefined,
             cardType: card ? (card.classList.contains('landmark-card') ? 'landmark' : 'whats_new') : 'unknown',
             starredAt: new Date().toISOString().split('T')[0]
           };
@@ -2355,20 +2712,31 @@
       var html = '';
       ids.forEach(function(id) {
         var item = starred[id];
-        var typeClass = item.cardType === 'landmark' ? 'pill-rct' : 'pill-specialty';
-        html += '<div class="archive-card expanded">';
-        html += '<div class="archive-card-header"><div>';
+        var typeClass = item.cardType === 'landmark' ? 'pill-landmark' : 'pill-saved';
+        html += '<div class="archive-card">';
+        html += '<div class="archive-card-top">';
+        html += '<div class="meta-pills" style="margin-bottom:0;">';
+        html += '<span class="pill ' + typeClass + '">' + (item.cardType === 'landmark' ? 'Landmark' : 'Saved') + '</span>';
+        if (item.typeLabel) html += '<span class="pill pill-specialty">' + item.typeLabel + '</span>';
+        html += '</div>';
+        html += '<button class="action-btn btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button>';
+        html += '</div>';
         html += '<div class="archive-card-title">' + (item.title || id) + '</div>';
-        html += '<div class="archive-card-meta">';
-        if (item.typeLabel) html += '<span class="pill ' + typeClass + '" style="font-size:0.65rem;padding:2px 8px;">' + item.typeLabel + '</span> &bull; ';
-        html += (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div></div>';
-        html += '<button class="btn-remove-fav" data-id="' + id + '" onclick="removeStarred(this.dataset.id)" title="Remove">&#x2715;</button></div>';
+        html += '<div class="archive-card-meta">' + (item.source || '') + ' &bull; Starred ' + (item.starredAt || '') + '</div>';
         if (item.bottomLine) {
-          html += '<div class="archive-card-details"><div class="archive-detail-content">';
-          html += '<p><strong>Bottom Line:</strong> ' + item.bottomLine + '</p>';
-          if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="font-size:0.8rem;">View Source &#8594;</a>';
-          html += '</div></div>';
+          html += '<div class="wn-bottom-line"><strong>Bottom Line:</strong> ' + item.bottomLine + '</div>';
         }
+        if (item.landmarkSections && item.landmarkSections.length > 0) {
+          var showHeadings = ['Clinical Question', 'Key Findings', 'Practice Impact'];
+          html += '<div style="margin-top:10px; font-size:0.85rem; line-height:1.6;">';
+          item.landmarkSections.forEach(function(sec) {
+            if (showHeadings.indexOf(sec.heading) !== -1) {
+              html += '<p style="margin-bottom:6px;"><strong style="color:var(--english-red);">' + sec.heading + ':</strong> ' + sec.text + '</p>';
+            }
+          });
+          html += '</div>';
+        }
+        if (item.sourceUrl) html += '<a href="' + item.sourceUrl + '" target="_blank" rel="noopener" class="source-link" style="display:block; text-align:right;">View Source &#8594;</a>';
         html += '</div>';
       });
       container.innerHTML = html;

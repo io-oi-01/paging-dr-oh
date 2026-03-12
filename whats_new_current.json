@@ -1,42 +1,75 @@
 [
   {
-    "article_index": 1,
+    "article_index": 0,
+    "id": "preop-calcium-orthopedic-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "Lower preoperative serum calcium is associated with increased risk of postoperative complications in patients undergoing orthopedic surgery",
+    "study_design": "Observational study of older orthopedic patients",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This highlights the importance of checking and potentially correcting calcium levels in older patients before orthopedic procedures"
+    ],
+    "limitations": [],
+    "bottom_line": "Lower preoperative calcium may identify orthopedic patients at higher complication risk, but more data needed for clinical application.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
+    "date": "Wed, 11 Mar 2026 23:00:27 +000",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "Preoperative serum calcium levels may help identify orthopedic surgery patients at higher risk for postoperative complications, potentially guiding perioperative optimization.",
+    "population": "Older orthopedic surgery patients",
+    "intervention_exposure": "Lower preoperative serum calcium levels",
+    "comparator": "",
+    "key_results": [
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications"
+    ],
+    "clinical_interpretation": [
+      "This suggests calcium levels could be part of preoperative risk assessment, though the clinical significance and optimal thresholds remain unclear"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/"
+  },
+  {
+    "article_index": 2,
     "id": "shingles-sildenafil-alzheimers-2026",
     "type": "Review",
     "specialty": "Internal Medicine",
     "title": "Shingles vaccine and sildenafil linked to lower Alzheimer's risk",
-    "study_design": "Expert panel analysis for drug repurposing",
+    "study_design": "Expert panel review",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Expert panel identified shingles vaccine and sildenafil as top candidates for repurposing to protect against Alzheimer's disease",
-      "Leveraging existing drugs with established safety data could cut dementia drug development timeline by up to a decade"
+      "Leveraging existing drugs could cut dementia drug development timeline by up to a decade"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding may influence prescribing decisions for older adults, particularly when considering preventive strategies for dementia",
-      "Clinical context: The repurposing approach offers potential near-term therapeutic options while awaiting development of novel Alzheimer's treatments"
+      "Clinical context: This adds potential neurological benefits to consider when prescribing these established medications for their approved indications"
     ],
-    "limitations": [
-      "Expert opinion rather than primary research data",
-      "No specific efficacy or safety data provided"
-    ],
-    "bottom_line": "Expert analysis suggests shingles vaccine and sildenafil warrant investigation for Alzheimer's prevention, but clinical evidence is needed before recommending off-label use.",
+    "limitations": [],
+    "bottom_line": "Shingles vaccine and sildenafil show promise for Alzheimer's prevention but require clinical trials before implementation.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/",
     "date": "Tue, 10 Mar 2026 14:00:06 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "Drug repurposing could accelerate Alzheimer's prevention by utilizing medications with established safety profiles, potentially reducing development timelines by years.",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "Drug repurposing could accelerate Alzheimer's prevention strategies using medications already proven safe and available.",
     "population": "",
-    "intervention_exposure": "",
+    "intervention_exposure": "Shingles vaccine and sildenafil",
     "comparator": "",
     "key_results": [
-      "Expert panel identified shingles vaccine and sildenafil as top candidates for repurposing to protect against Alzheimer's disease",
-      "Leveraging existing drugs with established safety data could cut dementia drug development timeline by up to a decade"
+      "Expert panel identified shingles vaccine and sildenafil as top candidates for Alzheimer's protection",
+      "Drug repurposing could reduce dementia drug development timeline by up to a decade"
     ],
     "clinical_interpretation": [
-      "This represents early-stage drug discovery rather than clinical evidence",
-      "Patients should not be prescribed these medications off-label for Alzheimer's prevention based on this preliminary identification"
+      "This represents early-stage research identification rather than proven clinical benefit - rigorous trials would be needed before clinical application"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -45,41 +78,36 @@
     "twomm_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/"
   },
   {
-    "article_index": 2,
+    "article_index": 3,
     "id": "glp1-substance-disorders-2026",
     "type": "Observational",
     "specialty": "Endocrinology",
     "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Observational study in US veterans with type 2 diabetes",
+    "study_design": "Cohort study of US veterans with type 2 diabetes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This adds to growing evidence of neuropsychiatric benefits of GLP-1 agonists beyond glycemic control and weight management",
-      "Clinical context: May influence treatment selection for diabetic patients with history of substance use or at high risk for addiction"
+      "Clinical context: This suggests an additional benefit of GLP-1 agonists that may influence prescribing decisions, especially in patients at risk for substance use disorders"
     ],
-    "limitations": [
-      "Observational study design cannot prove causation",
-      "Veterans may not be representative of general population"
-    ],
-    "bottom_line": "GLP-1 receptor agonists show promising association with reduced substance use disorders, but more research is needed to confirm this potential benefit.",
+    "limitations": [],
+    "bottom_line": "GLP-1 agonists may reduce substance use disorder risk in diabetic patients, but more research needed to confirm this association.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
     "date": "Mon, 09 Mar 2026 23:00:13 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "GLP-1 receptor agonists may provide unexpected benefits beyond diabetes and weight management, potentially reducing substance abuse risk in vulnerable populations.",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "GLP-1 agonists may provide unexpected benefits beyond diabetes management, potentially reducing substance use disorders in high-risk populations.",
     "population": "US veterans with type 2 diabetes",
-    "intervention_exposure": "GLP-1 receptor agonist use",
+    "intervention_exposure": "GLP-1 receptor agonists",
     "comparator": "",
     "key_results": [
-      "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders"
     ],
     "clinical_interpretation": [
-      "This association requires validation in broader populations and randomized trials",
-      "The mechanism linking GLP-1 agonists to reduced substance use disorders is unclear"
+      "This observational finding suggests potential neuropsychiatric benefits of GLP-1 agonists, though causality cannot be established and results may not generalize beyond veterans"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -88,58 +116,48 @@
     "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/"
   },
   {
-    "article_index": 4,
+    "article_index": 5,
     "id": "ct-angiography-stroke-emergency-2026",
     "type": "Observational",
-    "specialty": "Neurology",
+    "specialty": "Emergency Medicine",
     "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Retrospective cohort study of 1,445 ED patients who underwent CTAHN in 2023 for 5 common neurologic presentations",
+    "study_design": "Study of CT angiography utility in suspected stroke patients",
     "sample_size": "",
-    "primary_outcome": "CTAHN findings resulting in acute management change",
+    "primary_outcome": "",
     "source_summary_bullets": [
       "CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients",
-      "Highest yield occurs with focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+      "Particularly useful when there are focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports selective use of CT angiography in stroke workup rather than universal application",
-      "Clinical context: May help emergency physicians and hospitalists optimize imaging protocols and resource utilization in acute stroke evaluation"
+      "Clinical context: This supports more targeted use of CT angiography in stroke evaluation, potentially improving diagnostic yield and treatment decisions"
     ],
-    "limitations": [
-      "Single-center retrospective design may limit generalizability",
-      "Selection bias inherent in who received CTAHN",
-      "Management change definition may vary between providers"
-    ],
-    "bottom_line": "CT angiography is most useful in stroke patients with focal deficits, abnormal head CT, or severe acute symptoms, while having low yield for isolated dizziness.",
+    "limitations": [],
+    "bottom_line": "CT angiography should be prioritized for suspected stroke patients with focal deficits, abnormal CT, or new symptoms.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
     "date": "Mon, 09 Mar 2026 15:00:43 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "Better patient selection for CT angiography could improve diagnostic yield while reducing unnecessary radiation exposure and healthcare costs in emergency stroke evaluations.",
-    "population": "Emergency department patients at an academic Level 1 trauma center with acute neurologic symptoms",
-    "intervention_exposure": "CT angiography of head and neck (CTAHN)",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "CT angiography may improve acute stroke management by identifying findings that change treatment decisions in the emergency setting.",
+    "population": "Patients with suspected stroke",
+    "intervention_exposure": "CT angiography of head and neck",
     "comparator": "",
     "key_results": [
-      "216 of 1,445 CTAHN studies (14.9%) resulted in acute management change",
-      "Highest yield for stroke codes (21.2%) and vision changes (14.7%), lowest for dizziness (4.0%)",
-      "For stroke codes, independent predictors included abnormal CT head (OR 2.84), focal neurologic deficit (OR 2.2), new symptoms (OR 2.39), maximal symptom severity at onset (OR 3.95), and tobacco use (OR 2.02)",
-      "NIHSS scores of 10-14 had highest likelihood of management change",
-      "For headache, abnormal CT head (OR 4.98) and thunderclap presentation (OR 5.31) were associated with management change"
+      "CT angiography most likely to reveal acute findings that change emergency management",
+      "Particularly useful with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms"
     ],
     "clinical_interpretation": [
-      "CTAHN has low yield for isolated dizziness and should be used judiciously",
-      "Patients with focal deficits, abnormal head CT, or severe acute symptoms are most likely to benefit",
-      "These predictors can guide more selective imaging decisions in the emergency setting"
+      "This supports selective use of CT angiography in stroke workup rather than universal application, focusing on patients with higher-yield clinical features"
     ],
     "practice_readiness": "Informative",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1212/CPJ.0000000000200596",
-    "pubmed_id": "41798205",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/"
   },
   {
-    "article_index": 6,
-    "id": "hpv-vaccine-cervical-protection-2026",
+    "article_index": 7,
+    "id": "hpv-vaccine-cervical-cancer-2026",
     "type": "Observational",
     "specialty": "Preventive Medicine",
     "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
@@ -151,20 +169,16 @@
       "Greatest benefit occurs if vaccination occurs before age 17"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Reinforces importance of early HPV vaccination in primary care and provides evidence for counseling patients about long-term cancer prevention benefits",
-      "Clinical context: May inform catch-up vaccination discussions for young adults who missed earlier vaccination opportunities"
+      "Clinical context: This reinforces the importance of early HPV vaccination and provides evidence for counseling patients about long-term cancer prevention benefits"
     ],
-    "limitations": [
-      "Observational study design",
-      "Long-term follow-up challenges"
-    ],
-    "bottom_line": "HPV vaccination provides durable protection against cervical cancer with maximum benefit when given before age 17.",
+    "limitations": [],
+    "bottom_line": "HPV vaccination provides durable cervical cancer protection, with optimal benefit when given before age 17.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
     "date": "Sat, 07 Mar 2026 00:00:34 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "Long-term effectiveness data supports HPV vaccination programs and emphasizes the importance of early vaccination for cervical cancer prevention.",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "Long-term real-world data confirms HPV vaccination effectiveness against invasive cervical cancer, supporting current vaccination recommendations.",
     "population": "",
     "intervention_exposure": "Quadrivalent HPV vaccine",
     "comparator": "",
@@ -173,18 +187,17 @@
       "Greatest benefit occurs if vaccination occurs before age 17"
     ],
     "clinical_interpretation": [
-      "This reinforces current recommendations for early HPV vaccination",
-      "Patients vaccinated after age 17 may still benefit but to a lesser degree"
+      "This reinforces the importance of early HPV vaccination and provides reassurance about long-term cancer prevention benefits"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/"
   },
   {
-    "article_index": 7,
-    "id": "iberdomide-myeloma-fda-2026",
+    "article_index": 8,
+    "id": "iberdomide-myeloma-priority-2026",
     "type": "FDA Action",
     "specialty": "Hematology",
     "title": "FDA grants priority review for iberdomide-based myeloma regimen",
@@ -192,34 +205,29 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
-      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease rates"
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD for multiple myeloma",
+      "Priority review supported by Phase III data showing improved minimal residual disease outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Represents potential new treatment option for multiple myeloma patients, particularly those with relapsed/refractory disease",
-      "Clinical context: Priority review status indicates significant unmet medical need and potential practice-changing impact in hematologic malignancies"
+      "Clinical context: This represents a potential new treatment option for multiple myeloma patients, with a novel mechanism targeting transcription factor degradation"
     ],
-    "limitations": [
-      "FDA review status, not final approval",
-      "Limited details on safety profile"
-    ],
-    "bottom_line": "Iberdomide shows promise for multiple myeloma treatment but awaits final FDA approval following priority review.",
+    "limitations": [],
+    "bottom_line": "Iberdomide shows promise as a new oral multiple myeloma therapy with FDA priority review status.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
     "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "A new treatment option may soon be available for multiple myeloma patients, potentially offering improved outcomes over existing therapies.",
-    "population": "",
-    "intervention_exposure": "Iberdomide-based regimen",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "A new oral therapy for multiple myeloma may provide additional treatment options for patients with relapsed/refractory disease.",
+    "population": "Multiple myeloma patients",
+    "intervention_exposure": "Iberdomide (oral CELMoD)",
     "comparator": "",
     "key_results": [
-      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD designed to degrade transcription factors more effectively than earlier agents",
-      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease rates"
+      "FDA granted priority review for iberdomide as first-in-class oral CELMoD",
+      "Priority review supported by Phase III data showing improved minimal residual disease outcomes"
     ],
     "clinical_interpretation": [
-      "Priority review suggests promising efficacy data",
-      "Patients and providers should await full FDA review and approval"
+      "Priority review suggests promising efficacy data, though full approval and safety profile await FDA decision"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -228,46 +236,50 @@
     "twomm_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/"
   },
   {
-    "article_index": 8,
-    "id": "morphine-acetaminophen-ed-2026",
+    "article_index": 9,
+    "id": "morphine-acetaminophen-emergency-2026",
     "type": "RCT",
     "specialty": "Emergency Medicine",
     "title": "Placebo may be inferior compared to acetaminophen when given with morphine for the management of acute pain in the emergency department",
-    "study_design": "Non-inferiority randomized controlled trial",
+    "study_design": "Prospective cohort study comparing patients who received intravenous acetaminophen with opioids versus those who received opioids alone",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Opioid requirement measured in Morphine Equivalent Units during Emergency Department stay",
     "source_summary_bullets": [
-      "Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department"
+      "Morphine plus placebo was not non-inferior to morphine plus acetaminophen for acute pain management in the emergency department"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports routine addition of acetaminophen to opioid therapy for acute pain management in hospitalized patients",
-      "Clinical context: May help reduce opioid requirements through multimodal analgesia approach in both emergency and inpatient settings"
+      "Clinical context: This supports the routine addition of acetaminophen to morphine for acute pain management in the ED, reinforcing multimodal analgesia approaches"
     ],
     "limitations": [
-      "Single study finding",
-      "Specific patient population and pain types unclear"
+      "Single-center study",
+      "Non-randomized design",
+      "Relatively small sample size (116 patients)"
     ],
-    "bottom_line": "Adding acetaminophen to morphine provides superior pain control compared to morphine alone in emergency department patients.",
+    "bottom_line": "IV acetaminophen does not reduce opioid requirements during ED stay but may decrease post-discharge opioid use.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
     "date": "Fri, 06 Mar 2026 16:00:09 +000",
-    "date_iso": "2026-03-11",
-    "why_this_matters": "Adding acetaminophen to morphine appears to provide superior pain control compared to morphine alone in emergency department settings.",
-    "population": "",
-    "intervention_exposure": "Morphine plus acetaminophen",
-    "comparator": "Morphine plus placebo",
+    "date_iso": "2026-03-12",
+    "why_this_matters": "Understanding optimal pain management combinations in emergency settings is crucial given the ongoing opioid crisis and need for effective multimodal analgesia.",
+    "population": "Adult Emergency Department patients aged 18 years and older treated with opioids for painful conditions",
+    "intervention_exposure": "Intravenous acetaminophen plus opioids",
+    "comparator": "Opioids alone",
     "key_results": [
-      "Morphine plus placebo is not noninferior to morphine plus acetaminophen for acute pain management in the emergency department"
+      "No significant difference in opioid consumption during ED stay between groups (10.0 MEU vs 10.0 MEU, p=0.53)",
+      "Trend toward decreased opioid requirement at 24h post-discharge (15.0 MEU vs 30.0 MEU, p=0.059)",
+      "Both groups achieved similar pain reduction (median NRS from 9.0 to 4.0) and patient satisfaction (>80%)",
+      "Nine minor adverse events recorded, equally distributed between groups"
     ],
     "clinical_interpretation": [
-      "Multimodal analgesia with acetaminophen addition appears beneficial",
-      "This supports routine use of acetaminophen as adjunct to opioids for acute pain"
+      "IV acetaminophen did not provide opioid-sparing effects during ED stay, contrary to expectations for multimodal analgesia",
+      "The trend toward reduced post-discharge opioid use suggests potential delayed benefits",
+      "Both approaches achieved similar pain control and patient satisfaction"
     ],
     "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/",
-    "pubmed_id": "",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1016/j.ajem.2020.01.049",
+    "pubmed_id": "32014373",
     "twomm_url": "https://www.2minutemedicine.com/placebo-may-be-inferior-compared-to-acetaminophen-when-given-with-morphine-for-the-management-of-acute-pain-in-the-emergency-department/"
   },
   {
