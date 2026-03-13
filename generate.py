@@ -119,6 +119,7 @@ LITFL_ANSWER_BOUNDARIES = [
     r'<h[23][^>]*>[^<]*(ANSWER|INTERPRETATION|CLINICAL PEARLS)[^<]*</h[23]>',
     r'<strong>\s*Q1\.',
     r'Reveal the .* answer',
+    r'<details[^>]*>\s*<summary[^>]*>[^<]*(ANSWER|INTERPRETATION|KEY POINTS|REVEAL)',
 ]
 
 
@@ -752,7 +753,8 @@ def fetch_litfl_case_page(url, category):
     """
     Scrape a LITFL case page for clinical stem and images.
     Anti-spoiler: stops extracting at ANSWER/INTERPRETATION/CLINICAL PEARLS
-    headings, <strong>Q1. markers, or Reveal-the-answer blocks.
+    headings, <strong>Q1. markers, Reveal-the-answer blocks, or
+    <details><summary> answer accordions.
     Returns {"clinical_stem": str, "images": [url, ...], "source_url": str}
     or None on failure.
     """
@@ -761,13 +763,16 @@ def fetch_litfl_case_page(url, category):
         with urllib.request.urlopen(req, timeout=15) as resp:
             html = resp.read().decode("utf-8", errors="replace")
 
-        # Find .entry-content block
-        entry_match = re.search(
-            r'<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>(.*)',
-            html, re.DOTALL | re.IGNORECASE)
-        if not entry_match:
+        # Find the LAST .entry-content block.  LITFL pages often have
+        # 2-3 nested entry-content divs: outer ones hold navigation/search
+        # widgets while the innermost one holds the actual article.
+        entry_matches = list(re.finditer(
+            r'<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>',
+            html, re.IGNORECASE))
+        if not entry_matches:
             return None
-        content = entry_match.group(1)
+        # Use content starting from the LAST entry-content opening tag
+        content = html[entry_matches[-1].end():]
 
         # ── Truncate at answer boundaries (ANTI-SPOILER) ──
         for boundary in LITFL_ANSWER_BOUNDARIES:
@@ -784,8 +789,13 @@ def fetch_litfl_case_page(url, category):
             if post_img_hrs:
                 content = content[:post_img_hrs[0]]
 
-        # ── Extract clinical stem (paragraph text) ──
-        paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', content, re.DOTALL | re.IGNORECASE)
+        # ── Extract clinical stem (paragraph text before first figure/image) ──
+        # The clinical vignette is in the first paragraph(s) before the
+        # diagnostic image.  We stop at the first <figure> or clinical
+        # <img> to avoid picking up breadcrumbs/navigation text.
+        figure_pos = re.search(r'<figure[\s>]', content, re.IGNORECASE)
+        stem_zone = content[:figure_pos.start()] if figure_pos else content[:2000]
+        paragraphs = re.findall(r'<p[^>]*>(.*?)</p>', stem_zone, re.DOTALL | re.IGNORECASE)
         stem_parts = []
         for p_html in paragraphs:
             p_text = re.sub(r'<[^>]+>', ' ', p_html).strip()
@@ -795,13 +805,51 @@ def fetch_litfl_case_page(url, category):
 
         clinical_stem = " ".join(stem_parts)[:800]
 
-        # ── Extract image URLs ──
-        img_matches = re.findall(r'<img\s+[^>]*src="([^"]+)"', content, re.IGNORECASE)
+        # ── Extract image URLs (handle lazy-loading) ──
+        # LITFL uses lazy-loaded images: the real URL lives in
+        # data-orig-file, data-large-file, or data-lazy-src attributes
+        # while src= is often an SVG placeholder.
+        img_tags = re.findall(r'<img\s+[^>]+>', content, re.IGNORECASE)
         images = []
-        for img_url in img_matches:
-            if any(skip in img_url.lower() for skip in
-                   ['avatar', 'logo', 'icon', 'gravatar', 'emoji', 'ads', 'banner',
-                    'widget', 'badge', '1x1', 'pixel']):
+        skip_urls = [
+            'avatar', 'logo', 'icon', 'gravatar', 'emoji', '/ads/',
+            'banner', 'widget', 'badge', '1x1', 'pixel',
+            'google-web-search', 'fastlane', 'litfl-life',
+        ]
+        skip_classes = ['default-logo', 'site-logo', 'avatar', 'emoji']
+        for tag in img_tags:
+            # Skip images with logo/branding CSS classes
+            cls_match = re.search(r'class="([^"]+)"', tag, re.IGNORECASE)
+            if cls_match:
+                cls_val = cls_match.group(1).lower()
+                if any(sk in cls_val for sk in skip_classes):
+                    continue
+            # Skip small images (icons, decorations)
+            w_match = re.search(r'width="(\d+)"', tag, re.IGNORECASE)
+            if w_match and int(w_match.group(1)) < 100:
+                continue
+            # Try data attributes first (real high-res URL)
+            img_url = None
+            for attr in ['data-orig-file', 'data-large-file', 'data-lazy-src']:
+                m = re.search(rf'{attr}="([^"]+)"', tag, re.IGNORECASE)
+                if m:
+                    candidate = m.group(1)
+                    if candidate and not candidate.startswith('data:'):
+                        img_url = candidate
+                        break
+            # Fall back to src= if no data attr found
+            if not img_url:
+                m = re.search(r'src="([^"]+)"', tag, re.IGNORECASE)
+                if m:
+                    candidate = m.group(1)
+                    if not candidate.startswith('data:'):
+                        img_url = candidate
+
+            if not img_url:
+                continue
+
+            # Skip non-clinical images by URL keywords
+            if any(skip in img_url.lower() for skip in skip_urls):
                 continue
             if img_url.startswith("//"):
                 img_url = "https:" + img_url
@@ -825,7 +873,6 @@ def fetch_litfl_case_page(url, category):
         print(f"    WARNING: LITFL {category} page fetch failed "
               f"({type(e).__name__}: {e})")
         return None
-
 
 def generate_disease_content(disease_name, source_url=None, use_web_search=True):
     """
@@ -2102,41 +2149,51 @@ def build_landmark_tab(content):
 # SECTION 7b — PODCASTS
 # ═══════════════════════════════════════════════════════════════════════
 
+# ── Podcast configuration ──────────────────────────────────────────
+# To add a new podcast:
+#   1. Add an entry here with all fields filled in
+#   2. Find the RSS feed URL (check Apple Podcasts or the podcast website)
+#   3. The "pill_tag" appears as a secondary pill next to "PODCAST"
+#   4. "fallback_description" is shown only when the RSS feed is unreachable
 PODCAST_CONFIGS = [
     {
         "id": "core-im",
         "podcast_name": "Core IM",
         "podcast_slug": "core-im",
-        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/core-im-podcast/id1240596890",
+        "pill_tag": "5 Pearls",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/core-im-internal-medicine-podcast/id1297791208",
         "website_url": "https://www.coreimpodcast.com",
-        "rss_feed_url": "https://feeds.captivate.fm/coreim/",
+        "rss_feed_url": "https://feeds.redcircle.com/2c03e755-c428-4b8e-9150-95ef1ed2492b",
         "fallback_description": "Exploring the core topics of internal medicine with deep-dive episodes on diagnosis, management, and clinical reasoning.",
     },
     {
         "id": "curbsiders",
         "podcast_name": "The Curbsiders",
         "podcast_slug": "the-curbsiders",
+        "pill_tag": "Deep Dive",
         "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/the-curbsiders-internal-medicine-podcast/id1198732014",
         "website_url": "https://thecurbsiders.com",
-        "rss_feed_url": "https://feeds.captivate.fm/the-curbsiders/",
+        "rss_feed_url": "https://audioboom.com/channels/5034728.rss",
         "fallback_description": "Internal medicine podcast bringing you clinical pearls and practice-changing knowledge through expert interviews.",
     },
     {
         "id": "clinical-problem-solvers",
         "podcast_name": "The Clinical Problem Solvers",
         "podcast_slug": "clinical-problem-solvers",
-        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/the-clinical-problem-solvers/id1459685586",
+        "pill_tag": "Clinical Reasoning",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/the-clinical-problem-solvers/id1446215559",
         "website_url": "https://clinicalproblemsolving.com",
-        "rss_feed_url": "https://feeds.simplecast.com/1GNx8n0l",
+        "rss_feed_url": "https://clinicalproblemsolving.com/category/episodes/feed/",
         "fallback_description": "Tackling clinical reasoning through real cases and schema-based approaches to internal medicine.",
     },
     {
         "id": "harrisons-podclass",
         "podcast_name": "Harrison's PodClass",
         "podcast_slug": "harrisons-podclass",
-        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/harrisons-podclass/id1463960076",
-        "website_url": "",
-        "rss_feed_url": "https://feeds.simplecast.com/GZGmrP3G",
+        "pill_tag": "Board Review",
+        "apple_podcasts_url": "https://podcasts.apple.com/us/podcast/harrisons-podclass-internal-medicine-cases-and-board-prep/id1453765092",
+        "website_url": "https://www.buzzsprout.com/259885",
+        "rss_feed_url": "https://rss.buzzsprout.com/259885.rss",
         "fallback_description": "Bite-sized internal medicine education from the authority behind Harrison's Principles of Internal Medicine.",
     },
 ]
@@ -2154,6 +2211,7 @@ def fetch_podcast_latest(config):
         "id": config["id"],
         "podcast_name": config["podcast_name"],
         "podcast_slug": config["podcast_slug"],
+        "pill_tag": config.get("pill_tag", ""),
         "apple_podcasts_url": config["apple_podcasts_url"],
         "website_url": config.get("website_url", ""),
         "artwork_url": "",
@@ -2171,8 +2229,11 @@ def fetch_podcast_latest(config):
         return result
 
     try:
-        req = urllib.request.Request(rss_url, headers={"User-Agent": "PagingDrOh/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        req = urllib.request.Request(rss_url, headers={
+            "User-Agent": "Mozilla/5.0 (compatible; PagingDrOh/1.0; +https://io-oi.neocities.org)",
+            "Accept": "application/rss+xml, application/xml, text/xml, */*",
+        })
+        with urllib.request.urlopen(req, timeout=20) as resp:
             raw_xml = resp.read()
         root = ET.fromstring(raw_xml)
     except Exception as e:
@@ -2246,72 +2307,97 @@ def fetch_all_podcasts():
 
 
 def build_podcast_tab(podcasts):
-    """Build the Podcasts tab HTML. Simple card list, mobile-friendly."""
+    """Build the Podcasts tab HTML. Episode-first cards, mobile-friendly.
+
+    Card hierarchy: podcast name -> latest episode title -> date -> description -> links.
+    Falls back gracefully if RSS feed was unreachable.
+    """
     html = '\n      <h3 class="section-title" style="margin-top:0;">Podcasts</h3>\n'
-    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">High-yield internal medicine podcasts for learning on the go</p>\n'
+    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Latest episodes from high-yield internal medicine podcasts</p>\n'
 
     if not podcasts:
-        html += '      <p style="color:var(--gray); font-style:italic;">No podcast data available. Check back tomorrow!</p>\n'
+        html += '      <p style="color:var(--text-muted); font-style:italic;">No podcast data available. Check back tomorrow!</p>\n'
         return html
 
     html += '      <div class="podcast-grid">\n'
 
     for p in podcasts:
-        name = p.get("podcast_name", "Unknown Podcast")
-        artwork = p.get("artwork_url", "")
-        ep_title = p.get("latest_episode_title", "")
-        ep_date = p.get("latest_episode_date", "")
-        ep_summary = p.get("latest_episode_summary", "")
-        apple_url = p.get("apple_podcasts_url", "#")
-        website_url = p.get("website_url", "")
-        ep_url = p.get("latest_episode_url", "")
-        fallback_used = p.get("fallback_used", True)
-        fallback_desc = p.get("fallback_description", "")
-
-        # Artwork or placeholder
-        if artwork:
-            img_html = f'<img src="{artwork}" alt="{name}" class="podcast-artwork" loading="lazy">'
-        else:
-            img_html = f'<div class="podcast-artwork podcast-artwork-placeholder">{name[0]}</div>'
-
-        # Episode info or fallback
-        if ep_title:
-            info_html = f'<div class="podcast-ep-title">{ep_title}</div>'
-            if ep_date:
-                # Format date to be shorter
-                try:
-                    parsed = datetime.strptime(ep_date.strip()[:25], "%a, %d %b %Y %H:%M:%S")
-                    nice_date = parsed.strftime("%b %d, %Y")
-                except Exception:
-                    nice_date = ep_date[:16]
-                info_html += f'<div class="podcast-ep-date">{nice_date}</div>'
-            if ep_summary:
-                info_html += f'<div class="podcast-ep-summary">{ep_summary}</div>'
-        else:
-            # Fallback — just show podcast description
-            info_html = f'<div class="podcast-ep-summary">{fallback_desc}</div>'
-
-        # Buttons
-        buttons_html = f'<a href="{apple_url}" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a>'
-        if ep_url and ep_url != apple_url:
-            buttons_html += f' <a href="{ep_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Show Notes &#8594;</a>'
-        elif website_url:
-            buttons_html += f' <a href="{website_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a>'
-
-        html += f"""        <div class="podcast-card">
-          <div class="podcast-card-top">
-            {img_html}
-            <div class="podcast-card-info">
-              <span class="pill pill-specialty" style="font-size:0.6rem; margin-bottom:4px;">Podcast</span>
-              <div class="podcast-name">{name}</div>
-            </div>
-          </div>
-          {info_html}
-          <div class="podcast-actions">{buttons_html}</div>
-        </div>\n"""
+        html += _build_one_podcast_card(p)
 
     html += '      </div>\n'
     return html
+
+
+def _build_one_podcast_card(p):
+    """Render a single podcast episode card. Shared rendering for all podcasts.
+
+    Keeps podcast name visible but puts latest episode front-and-center.
+    If the RSS feed was unreachable, shows 'Latest episode unavailable' with a
+    link to Apple Podcasts / the podcast website.
+    """
+    name = p.get("podcast_name", "Unknown Podcast")
+    pill_tag = p.get("pill_tag", "")
+    artwork = p.get("artwork_url", "")
+    ep_title = p.get("latest_episode_title", "")
+    ep_date = p.get("latest_episode_date", "")
+    ep_summary = p.get("latest_episode_summary", "")
+    apple_url = p.get("apple_podcasts_url", "#")
+    website_url = p.get("website_url", "")
+    ep_url = p.get("latest_episode_url", "")
+    fallback_desc = p.get("fallback_description", "")
+
+    # -- Pills --
+    pills_html = '<span class="pill pill-podcast">Podcast</span>'
+    if pill_tag:
+        pills_html += f' <span class="pill pill-specialty">{pill_tag}</span>'
+
+    # -- Artwork or letter placeholder --
+    if artwork:
+        img_html = f'<img src="{artwork}" alt="{name}" class="podcast-artwork" loading="lazy">'
+    else:
+        img_html = f'<div class="podcast-artwork podcast-artwork-placeholder">{name[0]}</div>'
+
+    # -- Episode content (or graceful fallback) --
+    if ep_title:
+        nice_date = ""
+        if ep_date:
+            try:
+                parsed = datetime.strptime(ep_date.strip()[:25], "%a, %d %b %Y %H:%M:%S")
+                nice_date = parsed.strftime("%B %d, %Y")
+            except Exception:
+                nice_date = ep_date[:16]
+
+        ep_html = f'<div class="podcast-ep-title">{ep_title}</div>\n'
+        if nice_date:
+            ep_html += f'              <div class="podcast-ep-date">{nice_date}</div>\n'
+        if ep_summary:
+            ep_html += f'          <div class="podcast-ep-summary">{ep_summary}</div>\n'
+    else:
+        # Fallback: feed was unreachable -- keep card visible
+        ep_html = '<div class="podcast-ep-title" style="color:var(--text-muted); font-style:italic;">Latest episode unavailable</div>\n'
+        if fallback_desc:
+            ep_html += f'          <div class="podcast-ep-summary">{fallback_desc}</div>\n'
+
+    # -- Action links --
+    buttons_html = f'<a href="{apple_url}" class="source-link" target="_blank" rel="noopener">Apple Podcasts &#8594;</a>'
+    if ep_url and ep_url != apple_url:
+        buttons_html += f' <a href="{ep_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Show Notes &#8594;</a>'
+    elif website_url:
+        buttons_html += f' <a href="{website_url}" class="source-link" target="_blank" rel="noopener" style="opacity:0.7; font-size:0.78rem;">Website &#8594;</a>'
+
+    return f"""        <div class="podcast-card">
+          <div class="wn-tags" style="margin-bottom:8px;">
+            {pills_html}
+          </div>
+          <div class="podcast-card-top">
+            {img_html}
+            <div class="podcast-card-info">
+              <div class="podcast-name">{name}</div>
+              {ep_html}            </div>
+          </div>
+          <div class="podcast-actions">{buttons_html}</div>
+        </div>\n"""
+
 
 
 def build_archive_tab(_unused=None):
@@ -2392,7 +2478,16 @@ def build_jdd_card(jdd_content):
 
 
 def build_litfl_card(category_key, case_content):
-    """Build a .wn-card for a single LITFL case (ECG/CXR/CT/Clinical)."""
+    """Build a .wn-card for a single LITFL case (ECG/CXR/CT/Clinical).
+
+    Card hierarchy (user spec):
+      1. Title  (e.g. "ECG of the Day")
+      2. Source & date
+      3. Image thumbnail(s)
+      4. Clinical stem / vignette
+      5. Key questions
+      6. Challenge prompt + source link
+    """
     cfg = LITFL_CATEGORIES[category_key]
     label = cfg["label"]
     pill_text = cfg["pill_text"]
@@ -2412,7 +2507,9 @@ def build_litfl_card(category_key, case_content):
         num_str = num_match.group(1) if num_match else "000"
         card_id = f"img-{category_key}-{num_str}"
 
-    html = f"""
+    # ── Build card HTML using list + join (avoids escape issues) ──
+    parts = []
+    parts.append(f'''
       <div class="wn-card">
         <div class="wn-card-header">
           <div class="wn-tags">
@@ -2423,32 +2520,34 @@ def build_litfl_card(category_key, case_content):
             <button class="action-btn star" title="Star" data-id="{card_id}">&#9734;</button>
           </div>
         </div>
-        <div class="wn-source">LITFL &bull; {TODAY_STR}</div>
-        <div class="wn-title">{label}</div>\n"""
+        <div class="wn-title">{label}</div>
+        <div class="wn-source">LITFL &bull; {TODAY_STR}</div>''')
 
-    # Clinical stem in beige context box
+    # ── Images FIRST (before stem) ──
+    if images:
+        for i, img_url in enumerate(images):
+            parts.append(f'        <img src="{img_url}" alt="{label} image {i+1}" class="image-card-img" loading="lazy">')
+    else:
+        parts.append('        <div class="wn-study-meta" style="text-align:center;color:var(--text-muted);">Image not available</div>')
+
+    # ── Clinical stem / vignette ──
     if stem:
-        html += f'        <div class="wn-study-meta">{stem}</div>\n'
+        parts.append(f'        <div class="wn-study-meta">{stem}</div>')
 
-    # Images
-    for i, img_url in enumerate(images):
-        html += (f'        <img src="{img_url}" alt="{label} — clinical image {i+1}" '
-                 f'class="image-card-img" loading="lazy">\n')
-
-    # Key Questions
-    html += '        <div class="wn-section-label">Key Questions</div>\n'
-    html += '        <ul class="wn-bullets">\n'
+    # ── Key Questions ──
+    parts.append('        <div class="wn-section-label">Key Questions</div>')
+    parts.append('        <ul class="wn-bullets">')
     for q in questions:
-        html += f'          <li>{q}</li>\n'
-    html += '        </ul>\n'
+        parts.append(f'          <li>{q}</li>')
+    parts.append('        </ul>')
 
-    # Challenge bottom line
-    html += """        <div class="wn-bottom-line">
-          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.
-        </div>\n"""
+    # ── Challenge bottom line ──
+    parts.append('        <div class="wn-bottom-line">')
+    parts.append('          <strong>Challenge:</strong> Can you identify the diagnosis? Click &ldquo;View on LITFL&rdquo; for the answer.')
+    parts.append('        </div>')
 
-    # Footer
-    html += f"""        <div class="wn-footer">
+    # ── Footer: confidence badge + source link ──
+    parts.append(f'''        <div class="wn-footer">
           <div class="confidence confidence-moderate">
             <span class="confidence-dot"></span>
             Self-Assessment
@@ -2457,10 +2556,9 @@ def build_litfl_card(category_key, case_content):
             <a href="{source_url}" class="source-link" target="_blank" rel="noopener">View on LITFL &#8594;</a>
           </div>
         </div>
-      </div>\n"""
+      </div>''')
 
-    return html
-
+    return chr(10).join(parts) + chr(10)
 
 def build_image_tab(jdd_content, litfl_results=None):
     """
