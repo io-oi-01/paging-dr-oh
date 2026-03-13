@@ -1000,6 +1000,9 @@ Return ONLY valid JSON (no markdown fences, no extra text):
 RSS_FEED_URL   = "https://www.2minutemedicine.com/feed/"
 RSS_FEED_LABEL = "2 Minute Medicine"
 
+MEDSCAPE_FEED_URL   = "https://www.medscape.com/cx/rssfeeds/2700.xml"
+MEDSCAPE_FEED_LABEL = "Medscape"
+
 # Namespaces commonly used in RSS/RDF feeds
 RSS_NAMESPACES = {
     "rss1":  "http://purl.org/rss/1.0/",
@@ -1046,6 +1049,191 @@ def fetch_feed():
     articles = fetch_rss_items(RSS_FEED_LABEL, RSS_FEED_URL, max_items=10)
     print(f"      Got {len(articles)} article(s).")
     return articles
+
+
+def fetch_medscape_feed():
+    """Fetch the Medscape Medical News RSS feed (up to 20 items)."""
+    print(f"    Fetching {MEDSCAPE_FEED_LABEL}...")
+    articles = fetch_rss_items(MEDSCAPE_FEED_LABEL, MEDSCAPE_FEED_URL, max_items=20)
+    print(f"      Got {len(articles)} Medscape article(s).")
+    return articles
+
+
+def filter_medscape_relevance(articles):
+    """Pre-filter Medscape articles by keyword/category relevance scoring.
+
+    Pure Python — no Claude API call. Reduces 20 RSS items to ~10-12 before
+    sending to Claude for curation.
+
+    Scoring tiers:
+      3 pts — high-yield hospitalist / critical care terms
+      2 pts — core IM subspecialties and study types
+      1 pt  — adjacent specialties
+     -5 pts — exclude: irrelevant / consumer health topics
+     +1 pt  — news-type category boost
+
+    Threshold: score >= 2. Returns top 12 sorted by score (descending).
+    """
+    # ── Keyword tiers (matched against title + description + categories) ──
+    HIGH_YIELD = [                                                       # 3 pts
+        'hospitalist', 'critical care', 'intensive care', 'icu',
+        'sepsis', 'heart failure', 'fda approves', 'fda approval',
+        'guideline update', 'practice-changing', 'practice changing',
+        'vte', 'pulmonary embolism', 'dvt', 'aki', 'acute kidney',
+        'copd', 'ards', 'pneumonia', 'atrial fibrillation', 'afib',
+        'acute coronary', 'myocardial infarction', 'mi ',
+        'cardiac arrest', 'shock', 'intubation', 'mechanical ventilation',
+        'vasopressor', 'delirium', 'gi bleeding', 'cirrhosis',
+        'diabetic ketoacidosis', 'dka', 'hyponatremia', 'hyperkalemia',
+    ]
+    MEDIUM = [                                                           # 2 pts
+        'internal medicine', 'emergency medicine', 'cardiology',
+        'pulmonology', 'pulmonary', 'infectious disease',
+        'nephrology', 'gastroenterology', 'endocrinology',
+        'neurology', 'hematology', 'oncology', 'rheumatology',
+        'diabetes', 'hypertension', 'stroke', 'antibiotic',
+        'antimicrobial', 'vaccine', 'clinical trial', 'meta-analysis',
+        'randomized', 'mortality', 'covid', 'influenza', 'rsv',
+        'transplant', 'transfusion', 'thrombosis', 'anticoagul',
+        'statin', 'insulin', 'opioid', 'pain management',
+        'palliative', 'end of life',
+    ]
+    LOW = [                                                              # 1 pt
+        'primary care', 'geriatrics', 'surgery', 'surgical',
+        'psychiatry', 'radiology', 'public health', 'epidemiology',
+        'anesthesiology', 'pediatrics', 'ob-gyn', 'obstetrics',
+    ]
+    EXCLUDE = [                                                          # -5 pts
+        'cosmetic', 'aesthetic', 'wellness', 'veterinary', 'dental',
+        'optometry', 'ophthalmology', 'dermatology', 'medical billing',
+        'career advice', 'medical school', 'residency match',
+        'patient satisfaction', 'medical tourism', 'weight loss supplement',
+        'alternative medicine', 'homeopathy', 'chiropractic',
+    ]
+    NEWS_CATEGORIES = ['news', 'news alert', 'clinical summary']         # +1 pt
+
+    scored = []
+    for article in articles:
+        text = ' '.join([
+            article.get('title', ''),
+            article.get('description', ''),
+            ' '.join(article.get('categories', [])),
+        ]).lower()
+
+        score = 0
+        for kw in HIGH_YIELD:
+            if kw in text:
+                score += 3
+                break  # one hit per tier is enough
+        for kw in MEDIUM:
+            if kw in text:
+                score += 2
+                break
+        for kw in LOW:
+            if kw in text:
+                score += 1
+                break
+        for kw in EXCLUDE:
+            if kw in text:
+                score -= 5
+                break
+        # Category boost
+        cats_lower = [c.lower() for c in article.get('categories', [])]
+        if any(nc in cats_lower for nc in NEWS_CATEGORIES):
+            score += 1
+
+        scored.append((score, article))
+
+    # Filter and sort
+    passing = [(s, a) for s, a in scored if s >= 2]
+    passing.sort(key=lambda x: x[0], reverse=True)
+    result = [a for _, a in passing[:12]]
+    print(f"    Medscape relevance filter: {len(articles)} -> {len(result)} articles (threshold >= 2)")
+    return result
+
+
+def curate_medscape_items(articles, existing_ids):
+    """Send pre-filtered Medscape articles to Claude for curation.
+
+    Single Claude call (no PubMed lookup needed). Claude selects 3-5 items,
+    classifies them, and generates summary + why_it_matters fields.
+
+    Returns list of curated item dicts with card_type='medscape'.
+    """
+    if not articles:
+        return []
+
+    article_summaries = [
+        {"index": i, "title": a["title"], "description": a.get("description", "")[:400],
+         "categories": a.get("categories", []), "date": a["date"][:30], "link": a["link"]}
+        for i, a in enumerate(articles)
+    ]
+
+    prompt = f"""You are a medical news curator for a hospitalist / internal medicine physician.
+
+Below are {len(article_summaries)} recent articles from Medscape Medical News.
+Select the 3-5 MOST important items for a hospitalist, internist, EM, or critical care physician.
+
+SELECTION CRITERIA — prioritize:
+- Practice-changing news: new guidelines, FDA approvals, drug safety alerts
+- High-impact clinical studies reported in Medscape
+- Infectious disease outbreaks, vaccine updates, public health alerts
+- Conference highlights with immediate clinical relevance
+
+Skip any items with these IDs (already covered): {json.dumps(existing_ids[-50:])}
+
+ARTICLE TYPE — classify each as one of:
+- "news" — general medical news
+- "fda-regulatory" — FDA approvals, warnings, safety alerts
+- "guideline" — guideline updates or consensus statements
+- "conference" — conference highlights or presentations
+- "clinical-summary" — clinical reviews or practice updates
+
+For each selected item, return a JSON array:
+[
+  {{
+    "article_index": 0,
+    "id": "ms-short-slug-{TODAY.year}",
+    "article_type": "news",
+    "specialty": "e.g. Cardiology",
+    "title": "Headline exactly as given",
+    "summary": "2-3 sentence summary of the news item. Be factual and concise.",
+    "why_it_matters": "1-2 sentences explaining relevance to hospitalists/IM physicians.",
+    "tags": ["keyword1", "keyword2", "keyword3"]
+  }}
+]
+
+IMPORTANT RULES:
+- IDs MUST start with "ms-" prefix
+- Do NOT fabricate study_design, sample_size, PICO fields, or confidence levels
+- summary should be a prose paragraph, NOT bullet points
+- why_it_matters should focus on how this affects clinical practice
+- tags should be 2-4 relevant clinical keywords
+
+Return ONLY valid JSON (no markdown fences, no extra text)."""
+
+    try:
+        raw = call_claude(prompt, use_search=False, max_tokens=3000)
+        print(f"  DEBUG: Medscape Claude response length: {len(raw)} chars")
+        selected = extract_json_array(raw)
+        print(f"  DEBUG: Parsed {len(selected)} Medscape items from response")
+    except Exception as e:
+        print(f"  WARNING: Medscape curation call failed: {e}")
+        return []
+
+    # Enrich with source metadata from original RSS data
+    items = []
+    for sel in selected:
+        idx = sel.get("article_index")
+        if idx is not None and idx < len(articles):
+            article = articles[idx]
+            sel["source"] = MEDSCAPE_FEED_LABEL
+            sel["source_url"] = article["link"]
+            sel["date"] = article["date"][:30] if article["date"] else TODAY_STR
+            sel["date_iso"] = TODAY_ISO
+            sel["card_type"] = "medscape"
+        items.append(sel)
+    return items
 
 
 def fetch_2mm_article(url):
@@ -1403,81 +1591,109 @@ Return ONLY valid JSON (no markdown fences, no extra text)."""
 
 
 def generate_whats_new(history):
-    """Fetch 2MM RSS → curate → find primary sources → enrich from abstracts."""
+    """Fetch 2MM + Medscape RSS -> curate -> find primary sources -> enrich -> merge.
+
+    Two independent pipelines:
+      1. 2MM: RSS -> Claude curate -> PubMed lookup -> Claude enrich (2 Claude calls)
+      2. Medscape: RSS -> Python relevance filter -> Claude curate (1 Claude call)
+    Results merged and sorted by recency. Medscape failure cannot break 2MM.
+    """
     existing_ids = history.get("whats_new_ids", [])
 
-    # Step 1: Fetch 2 Minute Medicine feed (HTTP only)
+    # ── Pipeline 1: 2 Minute Medicine (unchanged) ──
     print("  Fetching 2 Minute Medicine RSS feed...")
     rss_articles = fetch_feed()
-    print(f"  Total articles fetched: {len(rss_articles)}")
+    print(f"  Total 2MM articles fetched: {len(rss_articles)}")
 
-    if not rss_articles:
-        print("  WARNING: No RSS articles fetched. Skipping curation.")
-        return []
+    twomm_items = []
+    if rss_articles:
+        # Claude call #1 - curate 5-10 best 2MM items
+        print("  Asking Claude to curate 2MM items...")
+        twomm_items = curate_rss_items(rss_articles, existing_ids)
+        print(f"  Claude selected {len(twomm_items)} 2MM item(s).")
 
-    # Step 2: Claude call #1 — curate 5-10 best items
-    print("  Asking Claude to curate the most important items...")
-    items = curate_rss_items(rss_articles, existing_ids)
-    print(f"  Claude selected {len(items)} item(s).")
+        if twomm_items:
+            # PubMed lookup (HTTP only, no API cost)
+            print("  Searching for primary sources (PubMed) - parallel...")
 
-    if not items:
-        return []
-
-    # Step 3: For each curated item, find primary source (HTTP only, no API cost)
-    # Parallelized with 3 workers to respect NCBI's rate limit (≤3 requests/sec)
-    print("  Searching for primary sources (PubMed) — parallel...")
-
-    def _lookup_primary_source(i, item):
-        """Look up a single item's primary source. Thread-safe HTTP calls only."""
-        twomm_url = item.get("source_url", "")
-        title = item.get("title", "")
-        src = {"source_basis": "2MM summary only", "abstract": "", "pmid": "",
-               "pubmed_title": "", "pubmed_authors": "", "pubmed_journal": "",
-               "pubmed_doi": "", "original_source_url": twomm_url}
-        try:
-            clues = fetch_2mm_article(twomm_url) if twomm_url else {}
-            doi = clues.get("doi", "")
-            pmid = clues.get("pmid", "")
-            if not pmid:
-                pmid = search_pubmed(title, doi=doi)
-            if pmid:
-                pubmed_data = fetch_pubmed_abstract(pmid)
-                if pubmed_data.get("abstract"):
-                    src["source_basis"] = "PubMed abstract"
-                    src["abstract"] = pubmed_data["abstract"]
-                    src["pmid"] = pmid
-                    src["pubmed_title"] = pubmed_data.get("title", "")
-                    src["pubmed_authors"] = pubmed_data.get("authors", "")
-                    src["pubmed_journal"] = pubmed_data.get("journal", "")
-                    src["pubmed_doi"] = pubmed_data.get("doi", "")
-                    if pubmed_data.get("doi"):
-                        src["original_source_url"] = f"https://doi.org/{pubmed_data['doi']}"
+            def _lookup_primary_source(i, item):
+                """Look up a single item's primary source. Thread-safe HTTP calls only."""
+                twomm_url = item.get("source_url", "")
+                title = item.get("title", "")
+                src = {"source_basis": "2MM summary only", "abstract": "", "pmid": "",
+                       "pubmed_title": "", "pubmed_authors": "", "pubmed_journal": "",
+                       "pubmed_doi": "", "original_source_url": twomm_url}
+                try:
+                    clues = fetch_2mm_article(twomm_url) if twomm_url else {}
+                    doi = clues.get("doi", "")
+                    pmid = clues.get("pmid", "")
+                    if not pmid:
+                        pmid = search_pubmed(title, doi=doi)
+                    if pmid:
+                        pubmed_data = fetch_pubmed_abstract(pmid)
+                        if pubmed_data.get("abstract"):
+                            src["source_basis"] = "PubMed abstract"
+                            src["abstract"] = pubmed_data["abstract"]
+                            src["pmid"] = pmid
+                            src["pubmed_title"] = pubmed_data.get("title", "")
+                            src["pubmed_authors"] = pubmed_data.get("authors", "")
+                            src["pubmed_journal"] = pubmed_data.get("journal", "")
+                            src["pubmed_doi"] = pubmed_data.get("doi", "")
+                            if pubmed_data.get("doi"):
+                                src["original_source_url"] = f"https://doi.org/{pubmed_data['doi']}"
+                            else:
+                                src["original_source_url"] = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+                            print(f"    [{i+1}] Found PubMed abstract (PMID: {pmid}) - {title[:50]}")
+                        else:
+                            print(f"    [{i+1}] PMID {pmid} found but no abstract - {title[:50]}")
                     else:
-                        src["original_source_url"] = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
-                    print(f"    [{i+1}] Found PubMed abstract (PMID: {pmid}) — {title[:50]}")
-                else:
-                    print(f"    [{i+1}] PMID {pmid} found but no abstract — {title[:50]}")
-            else:
-                print(f"    [{i+1}] No PubMed match — {title[:50]}")
-        except Exception as e:
-            print(f"    [{i+1}] PubMed lookup error: {e}")
-        return i, src
+                        print(f"    [{i+1}] No PubMed match - {title[:50]}")
+                except Exception as e:
+                    print(f"    [{i+1}] PubMed lookup error: {e}")
+                return i, src
 
-    primary_sources = {}
-    with ThreadPoolExecutor(max_workers=3) as pubmed_pool:
-        futures = [pubmed_pool.submit(_lookup_primary_source, i, item) for i, item in enumerate(items)]
-        for future in as_completed(futures):
-            idx, src = future.result()
-            primary_sources[idx] = src
+            primary_sources = {}
+            with ThreadPoolExecutor(max_workers=3) as pubmed_pool:
+                futures = [pubmed_pool.submit(_lookup_primary_source, i, item) for i, item in enumerate(twomm_items)]
+                for future in as_completed(futures):
+                    idx, src = future.result()
+                    primary_sources[idx] = src
 
-    found_count = sum(1 for s in primary_sources.values() if s["source_basis"] != "2MM summary only")
-    print(f"  Primary sources found: {found_count}/{len(items)}")
+            found_count = sum(1 for s in primary_sources.values() if s["source_basis"] != "2MM summary only")
+            print(f"  Primary sources found: {found_count}/{len(twomm_items)}")
 
-    # Step 4: Claude call #2 — enrich items with primary-source material
-    print("  Enriching cards from primary sources...")
-    items = enrich_whats_new(items, primary_sources)
+            # Claude call #2 - enrich 2MM items with primary-source material
+            print("  Enriching 2MM cards from primary sources...")
+            twomm_items = enrich_whats_new(twomm_items, primary_sources)
+    else:
+        print("  WARNING: No 2MM RSS articles fetched. Skipping 2MM curation.")
 
-    return items
+    # ── Pipeline 2: Medscape (independent, failure-isolated) ──
+    medscape_items = []
+    try:
+        print("  Fetching Medscape RSS feed...")
+        ms_articles = fetch_medscape_feed()
+        if ms_articles:
+            # Pure Python relevance filter (no API cost)
+            ms_filtered = filter_medscape_relevance(ms_articles)
+            if ms_filtered:
+                # Claude call #3 - curate Medscape items (single call)
+                print("  Asking Claude to curate Medscape items...")
+                medscape_items = curate_medscape_items(ms_filtered, existing_ids)
+                print(f"  Claude selected {len(medscape_items)} Medscape item(s).")
+        else:
+            print("  WARNING: No Medscape articles fetched.")
+    except Exception as e:
+        print(f"  WARNING: Medscape pipeline failed ({type(e).__name__}: {e})")
+        print("  Continuing with 2MM items only.")
+
+    # ── Merge and sort by recency ──
+    all_items = twomm_items + medscape_items
+    if all_items:
+        all_items = _sort_by_recency(all_items)
+    print(f"  Total What's New items: {len(twomm_items)} 2MM + {len(medscape_items)} Medscape = {len(all_items)}")
+
+    return all_items
 
 
 def dedup_and_merge(new_items, existing_items):
@@ -1620,6 +1836,40 @@ def remove_wn_duplicates(items):
         print(f"  Removed {removed} duplicate(s) from What's New ({len(unique)} items remaining).")
     return unique
 
+
+
+def _sort_by_recency(items):
+    """Sort What's New items by date (newest first).
+
+    Handles both ISO dates (2026-03-12) and RFC-822 dates
+    (Wed, 12 Mar 2026 10:00:00 GMT) from different RSS sources.
+    Items without parseable dates sort to the end.
+    """
+    def _parse_date(item):
+        date_iso = item.get("date_iso", "")
+        if date_iso:
+            try:
+                return datetime.fromisoformat(date_iso.replace("Z", "+00:00"))
+            except (ValueError, TypeError):
+                pass
+        date_str = item.get("date", "")
+        if not date_str:
+            return datetime.min
+        # Try ISO format first
+        try:
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        except (ValueError, TypeError):
+            pass
+        # Try RFC-822 format (from RSS pubDate)
+        for fmt in ["%a, %d %b %Y %H:%M:%S %Z", "%a, %d %b %Y %H:%M:%S %z",
+                     "%d %b %Y %H:%M:%S %Z", "%d %b %Y"]:
+            try:
+                return datetime.strptime(date_str.strip(), fmt)
+            except (ValueError, TypeError):
+                continue
+        return datetime.min
+
+    return sorted(items, key=_parse_date, reverse=True)
 
 def generate_landmark_content(study_info, source_text=None, source_url=None):
     """
@@ -2067,17 +2317,97 @@ def _build_wn_card(item, is_trending=False):
     return html
 
 
+def _build_medscape_card(item):
+    """Build HTML for a single Medscape news card.
+
+    Different schema from 2MM cards: no PICO, no confidence, no study_design.
+    Shows: article_type pill, specialty pill, title, summary paragraph,
+    why_it_matters box, keyword tags, and Medscape source link.
+    """
+    wn_id = item.get("id", "ms-unknown")
+    article_type = item.get("article_type", "news")
+    specialty = item.get("specialty", "")
+    source = item.get("source", "Medscape")
+    date = item.get("date", "")
+    title = item.get("title", "")
+    summary = item.get("summary", "")
+    why_it_matters = item.get("why_it_matters", "")
+    tags = item.get("tags", [])
+    source_url = item.get("source_url", "#")
+
+    # Article type pill class mapping
+    type_pill_map = {
+        "fda-regulatory": "pill-fda",
+        "guideline": "pill-guideline",
+        "news": "pill-medscape-news",
+        "conference": "pill-medscape-conf",
+        "clinical-summary": "pill-medscape-clinical",
+    }
+    type_pill = type_pill_map.get(article_type, "pill-medscape-news")
+
+    # Human-readable article type labels
+    type_labels = {
+        "fda-regulatory": "FDA / Regulatory",
+        "guideline": "Guideline",
+        "news": "News",
+        "conference": "Conference",
+        "clinical-summary": "Clinical Summary",
+    }
+    type_label = type_labels.get(article_type, article_type.replace("-", " ").title())
+
+    parts = []
+    parts.append(f'      <div class="wn-card medscape-card">')
+    parts.append(f'        <div class="wn-card-header">')
+    parts.append(f'          <div class="wn-tags">')
+    parts.append(f'            <span class="pill {type_pill}">{type_label}</span>')
+    if specialty:
+        parts.append(f'            <span class="pill pill-specialty">{specialty}</span>')
+    parts.append(f'          </div>')
+    parts.append(f'          <div class="card-actions">')
+    parts.append(f'            <button class="action-btn star" title="Star this article" data-id="{wn_id}">&#9734;</button>')
+    parts.append(f'          </div>')
+    parts.append(f'        </div>')
+    parts.append(f'        <div class="wn-source"><span class="medscape-source-badge">&#9679; {source}</span> &bull; {date}</div>')
+    parts.append(f'        <div class="wn-title">{title}</div>')
+
+    if summary:
+        parts.append(f'        <div class="medscape-summary">{summary}</div>')
+
+    if why_it_matters:
+        parts.append(f'        <div class="medscape-why-matters"><strong>Why it matters:</strong> {why_it_matters}</div>')
+
+    if tags:
+        tag_chips = ''.join(f'<span class="medscape-tag">{t}</span>' for t in tags[:4])
+        parts.append(f'        <div class="medscape-tags">{tag_chips}</div>')
+
+    parts.append(f'        <div class="wn-footer">')
+    parts.append(f'          <div class="medscape-source-badge">&#9679; Medscape</div>')
+    parts.append(f'          <div class="wn-links">')
+    parts.append(f'            <a href="{source_url}" class="source-link" target="_blank" rel="noopener">Read on Medscape &#8594;</a>')
+    parts.append(f'          </div>')
+    parts.append(f'        </div>')
+    parts.append(f'      </div>')
+
+    return chr(10).join(parts) + chr(10)
+
+
 def build_whatsnew_tab(items):
-    """Build the What's New tab HTML."""
-    html = '\n      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>\n'
-    html += '      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Selected from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener">2 Minute Medicine</a>, enriched from primary sources</p>\n'
+    """Build the What's New tab HTML. Dispatches to source-specific card builders."""
+    parts = []
+    parts.append('')
+    parts.append('      <h3 class="section-title" style="margin-top:0;">Latest Updates (Past 30 Days)</h3>')
+    parts.append('      <p style="color:var(--text-muted,var(--gray)); font-size:0.85rem; margin-bottom:16px;">Selected from <a href="https://www.2minutemedicine.com" target="_blank" rel="noopener">2 Minute Medicine</a> and <a href="https://www.medscape.com" target="_blank" rel="noopener">Medscape</a>, enriched from primary sources</p>')
+    html = chr(10).join(parts) + chr(10)
 
     if not items:
-        html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>\n'
+        html += '      <p style="color:var(--gray); font-style:italic; padding:20px 0;">No updates yet. Check back tomorrow!</p>' + chr(10)
         return html
 
     for item in items:
-        html += _build_wn_card(item, is_trending=False)
+        if item.get("card_type") == "medscape":
+            html += _build_medscape_card(item)
+        else:
+            html += _build_wn_card(item, is_trending=False)
 
     return html
 
