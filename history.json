@@ -46,7 +46,8 @@
     "Hemophagocytic Lymphohistiocytosis",
     "Diabetic Ketoacidosis",
     "Iron Deficiency Anemia",
-    "Cirrhosis and Hepatic Encephalopathy"
+    "Cirrhosis and Hepatic Encephalopathy",
+    "Hyponatremia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -95,7 +96,8 @@
     "partner-2010",
     "surpass2-2021",
     "rocket-af-2011",
-    "atach2-2016"
+    "atach2-2016",
+    "recovery-tocilizumab-2021"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -147,7 +149,8 @@
     "Calciphylaxis",
     "Granuloma Annulare",
     "Atopic Dermatitis",
-    "Scrotal Calcinosis"
+    "Scrotal Calcinosis",
+    "Squamous Cell Carcinoma"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -165,6 +168,10 @@
     "ecg-132",
     "cxr-081",
     "ct-080",
-    "clinical-what-weingart-would-do-ii"
+    "clinical-what-weingart-would-do-ii",
+    "ecg-111",
+    "cxr-073",
+    "ct-014",
+    "clinical-tonsillitis-and-the-bull"
   ]
 }
