@@ -45,7 +45,8 @@
     "Heparin-Induced Thrombocytopenia",
     "Hemophagocytic Lymphohistiocytosis",
     "Diabetic Ketoacidosis",
-    "Iron Deficiency Anemia"
+    "Iron Deficiency Anemia",
+    "Cirrhosis and Hepatic Encephalopathy"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -93,7 +94,8 @@
     "interact2-2013",
     "partner-2010",
     "surpass2-2021",
-    "rocket-af-2011"
+    "rocket-af-2011",
+    "atach2-2016"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -126,7 +128,13 @@
     "morphine-acetaminophen-emergency-2026",
     "shingles-sildenafil-alzheimers-2026",
     "glp1-substance-disorders-2026",
-    "preop-calcium-orthopedic-2026"
+    "preop-calcium-orthopedic-2026",
+    "preop-calcium-orthopedic-complications-2026",
+    "shingles-sildenafil-alzheimers-prevention-2026",
+    "glp1-substance-use-prevention-veterans-2026",
+    "ct-angiography-stroke-emergency-management-acute-2026",
+    "hpv-vaccine-cervical-cancer-protection-durability-2026",
+    "iberdomide-myeloma-fda-priority-review-celmod-2026"
   ],
   "last_run": "2026-03-13",
   "jdd_conditions_shown": [
@@ -138,7 +146,8 @@
     "Drug Reaction: Minocycline",
     "Calciphylaxis",
     "Granuloma Annulare",
-    "Atopic Dermatitis"
+    "Atopic Dermatitis",
+    "Scrotal Calcinosis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -152,6 +161,10 @@
     "ecg-019",
     "cxr-003",
     "ct-041",
-    "clinical-ice-003-leg-skin-rash"
+    "clinical-ice-003-leg-skin-rash",
+    "ecg-132",
+    "cxr-081",
+    "ct-080",
+    "clinical-what-weingart-would-do-ii"
   ]
 }
