@@ -1,35 +1,38 @@
 [
   {
-    "article_index": 0,
+    "article_index": 1,
     "id": "preop-calcium-orthopedic-2026",
     "type": "Observational",
     "specialty": "Internal Medicine",
     "title": "Lower preoperative serum calcium is associated with increased risk of postoperative complications in patients undergoing orthopedic surgery",
-    "study_design": "Observational study of older orthopedic patients",
+    "study_design": "Observational study examining preoperative serum calcium levels and postoperative complications",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This highlights the importance of checking and potentially correcting calcium levels in older patients before orthopedic procedures"
+      "Clinical context: Hospitalists should consider evaluating and correcting hypocalcemia in older patients before orthopedic surgery to potentially reduce complications"
     ],
-    "limitations": [],
-    "bottom_line": "Lower preoperative calcium may identify orthopedic patients at higher complication risk, but more data needed for clinical application.",
+    "limitations": [
+      "Observational design limits causal inference",
+      "Lack of specific population demographics and outcome definitions"
+    ],
+    "bottom_line": "Lower preoperative calcium may increase orthopedic surgery complications, but more data needed to guide clinical practice.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
     "date": "Wed, 11 Mar 2026 23:00:27 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "Preoperative serum calcium levels may help identify orthopedic surgery patients at higher risk for postoperative complications, potentially guiding perioperative optimization.",
-    "population": "Older orthopedic surgery patients",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "Preoperative calcium levels may be a modifiable risk factor for optimizing orthopedic surgical outcomes, especially in elderly patients.",
+    "population": "Older orthopedic patients",
     "intervention_exposure": "Lower preoperative serum calcium levels",
     "comparator": "",
     "key_results": [
       "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications"
     ],
     "clinical_interpretation": [
-      "This suggests calcium levels could be part of preoperative risk assessment, though the clinical significance and optimal thresholds remain unclear"
+      "This suggests preoperative calcium screening and potential correction might be considered in orthopedic surgery planning, though the clinical significance and optimal calcium targets remain unclear"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -38,38 +41,41 @@
     "twomm_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/"
   },
   {
-    "article_index": 2,
+    "article_index": 3,
     "id": "shingles-sildenafil-alzheimers-2026",
     "type": "Review",
     "specialty": "Internal Medicine",
     "title": "Shingles vaccine and sildenafil linked to lower Alzheimer's risk",
-    "study_design": "Expert panel review",
+    "study_design": "Expert panel review for drug repurposing candidates",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Expert panel identified shingles vaccine and sildenafil as top candidates for repurposing to protect against Alzheimer's disease",
-      "Leveraging existing drugs could cut dementia drug development timeline by up to a decade"
+      "Leveraging existing drugs with established safety data could reduce dementia drug development timeline by up to a decade"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This adds potential neurological benefits to consider when prescribing these established medications for their approved indications"
+      "Clinical context: This suggests potential additional benefits of routine shingles vaccination and may inform discussions about sildenafil use in appropriate patients"
     ],
-    "limitations": [],
-    "bottom_line": "Shingles vaccine and sildenafil show promise for Alzheimer's prevention but require clinical trials before implementation.",
+    "limitations": [
+      "Expert opinion rather than clinical trial data",
+      "Mechanism of protection unclear"
+    ],
+    "bottom_line": "Promising drug repurposing candidates identified for Alzheimer's prevention, but clinical trials needed before implementation.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/",
     "date": "Tue, 10 Mar 2026 14:00:06 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "Drug repurposing could accelerate Alzheimer's prevention strategies using medications already proven safe and available.",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "Drug repurposing could accelerate dementia prevention strategies using medications with established safety profiles.",
     "population": "",
     "intervention_exposure": "Shingles vaccine and sildenafil",
     "comparator": "",
     "key_results": [
       "Expert panel identified shingles vaccine and sildenafil as top candidates for Alzheimer's protection",
-      "Drug repurposing could reduce dementia drug development timeline by up to a decade"
+      "Drug repurposing could reduce development timeline by up to a decade"
     ],
     "clinical_interpretation": [
-      "This represents early-stage research identification rather than proven clinical benefit - rigorous trials would be needed before clinical application"
+      "While intriguing, this represents early-stage research identification rather than clinical evidence - patients should not be prescribed these agents specifically for dementia prevention at this time"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -78,36 +84,39 @@
     "twomm_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/"
   },
   {
-    "article_index": 3,
+    "article_index": 4,
     "id": "glp1-substance-disorders-2026",
     "type": "Observational",
     "specialty": "Endocrinology",
     "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Cohort study of US veterans with type 2 diabetes",
+    "study_design": "Observational study of US veterans with type 2 diabetes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+      "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This suggests an additional benefit of GLP-1 agonists that may influence prescribing decisions, especially in patients at risk for substance use disorders"
+      "Clinical context: GLP-1 agonists may provide dual benefits for diabetes management and addiction risk reduction, potentially influencing treatment selection in high-risk patients"
     ],
-    "limitations": [],
-    "bottom_line": "GLP-1 agonists may reduce substance use disorder risk in diabetic patients, but more research needed to confirm this association.",
+    "limitations": [
+      "Observational design in veteran population may not generalize",
+      "Potential confounding by indication"
+    ],
+    "bottom_line": "GLP-1 agonists may reduce substance use disorder risk, but this remains an investigational benefit requiring confirmation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
     "date": "Mon, 09 Mar 2026 23:00:13 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "GLP-1 agonists may provide unexpected benefits beyond diabetes management, potentially reducing substance use disorders in high-risk populations.",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "GLP-1 agonists may provide unexpected benefits beyond diabetes management, potentially addressing substance use disorders.",
     "population": "US veterans with type 2 diabetes",
-    "intervention_exposure": "GLP-1 receptor agonists",
+    "intervention_exposure": "GLP-1 receptor agonist use",
     "comparator": "",
     "key_results": [
-      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders"
+      "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders"
     ],
     "clinical_interpretation": [
-      "This observational finding suggests potential neuropsychiatric benefits of GLP-1 agonists, though causality cannot be established and results may not generalize beyond veterans"
+      "This adds to growing evidence of neuropsychiatric effects of GLP-1 agonists, though the mechanism and clinical application for substance use prevention requires further study"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -116,38 +125,41 @@
     "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/"
   },
   {
-    "article_index": 5,
-    "id": "ct-angiography-stroke-emergency-2026",
+    "article_index": 6,
+    "id": "ct-angiography-stroke-emergency-management-2026",
     "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Study of CT angiography utility in suspected stroke patients",
+    "study_design": "Study evaluating diagnostic yield of CT angiography in suspected stroke patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "CT angiography of head and neck is most likely to reveal acute findings that change emergency management in suspected stroke patients",
-      "Particularly useful when there are focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+      "Highest yield occurs with focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports more targeted use of CT angiography in stroke evaluation, potentially improving diagnostic yield and treatment decisions"
+      "Clinical context: This supports early CT angiography use in hospitalized patients with suspected stroke, particularly those with focal deficits or abnormal initial imaging"
     ],
-    "limitations": [],
-    "bottom_line": "CT angiography should be prioritized for suspected stroke patients with focal deficits, abnormal CT, or new symptoms.",
+    "limitations": [
+      "Definition of 'management-changing' may vary",
+      "Resource utilization and cost-effectiveness not addressed"
+    ],
+    "bottom_line": "CT angiography in suspected stroke has highest yield when patients have focal deficits, abnormal head CT, or new symptoms.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
     "date": "Mon, 09 Mar 2026 15:00:43 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "CT angiography may improve acute stroke management by identifying findings that change treatment decisions in the emergency setting.",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "CT angiography utilization in suspected stroke may be optimized by focusing on patients most likely to have management-changing findings.",
     "population": "Patients with suspected stroke",
     "intervention_exposure": "CT angiography of head and neck",
     "comparator": "",
     "key_results": [
       "CT angiography most likely to reveal acute findings that change emergency management",
-      "Particularly useful with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms"
+      "Highest yield with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms"
     ],
     "clinical_interpretation": [
-      "This supports selective use of CT angiography in stroke workup rather than universal application, focusing on patients with higher-yield clinical features"
+      "This supports a more targeted approach to CTA ordering in suspected stroke, potentially improving efficiency while maintaining diagnostic accuracy"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -156,38 +168,41 @@
     "twomm_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/"
   },
   {
-    "article_index": 7,
+    "article_index": 8,
     "id": "hpv-vaccine-cervical-cancer-2026",
     "type": "Observational",
     "specialty": "Preventive Medicine",
     "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
-    "study_design": "Cohort study",
+    "study_design": "Cohort study evaluating long-term vaccine effectiveness",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Invasive cervical cancer",
     "source_summary_bullets": [
       "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
-      "Greatest benefit occurs if vaccination occurs before age 17"
+      "Greatest benefit occurs when vaccination occurs before age 17"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of early HPV vaccination and provides evidence for counseling patients about long-term cancer prevention benefits"
+      "Clinical context: This reinforces the importance of early HPV vaccination and supports counseling patients and families about the cancer prevention benefits of timely vaccination"
     ],
-    "limitations": [],
-    "bottom_line": "HPV vaccination provides durable cervical cancer protection, with optimal benefit when given before age 17.",
+    "limitations": [
+      "Duration of follow-up not specified",
+      "Real-world effectiveness may vary"
+    ],
+    "bottom_line": "HPV vaccine provides durable protection against cervical cancer with maximum benefit when given before age 17.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
     "date": "Sat, 07 Mar 2026 00:00:34 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "Long-term real-world data confirms HPV vaccination effectiveness against invasive cervical cancer, supporting current vaccination recommendations.",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "Long-term cervical cancer prevention data supports continued HPV vaccination efforts, especially in younger populations.",
     "population": "",
     "intervention_exposure": "Quadrivalent HPV vaccine",
     "comparator": "",
     "key_results": [
       "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
-      "Greatest benefit occurs if vaccination occurs before age 17"
+      "Greatest benefit when vaccination occurs before age 17"
     ],
     "clinical_interpretation": [
-      "This reinforces the importance of early HPV vaccination and provides reassurance about long-term cancer prevention benefits"
+      "This reinforces the importance of early HPV vaccination and supports current recommendations for vaccination before sexual debut"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -196,38 +211,41 @@
     "twomm_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/"
   },
   {
-    "article_index": 8,
-    "id": "iberdomide-myeloma-priority-2026",
+    "article_index": 9,
+    "id": "iberdomide-myeloma-priority-fda-2026",
     "type": "FDA Action",
     "specialty": "Hematology",
     "title": "FDA grants priority review for iberdomide-based myeloma regimen",
-    "study_design": "",
+    "study_design": "FDA regulatory action based on Phase III trial data",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD for multiple myeloma",
-      "Priority review supported by Phase III data showing improved minimal residual disease outcomes"
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD agent",
+      "Priority review supported by Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential new treatment option for multiple myeloma patients, with a novel mechanism targeting transcription factor degradation"
+      "Clinical context: A potential new treatment option for multiple myeloma patients may be available soon, offering improved efficacy over existing therapies"
     ],
-    "limitations": [],
-    "bottom_line": "Iberdomide shows promise as a new oral multiple myeloma therapy with FDA priority review status.",
+    "limitations": [
+      "FDA approval not yet granted",
+      "Full safety and efficacy profile pending complete data review"
+    ],
+    "bottom_line": "Iberdomide shows promise for multiple myeloma treatment but awaits FDA approval following priority review.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/fda-grants-priority-review-for-iberdomide-based-myeloma-regimen/",
     "date": "Fri, 06 Mar 2026 18:00:19 +000",
-    "date_iso": "2026-03-12",
-    "why_this_matters": "A new oral therapy for multiple myeloma may provide additional treatment options for patients with relapsed/refractory disease.",
-    "population": "Multiple myeloma patients",
-    "intervention_exposure": "Iberdomide (oral CELMoD)",
+    "date_iso": "2026-03-13",
+    "why_this_matters": "A new therapeutic option may become available for patients with relapsed/refractory multiple myeloma.",
+    "population": "Patients with multiple myeloma",
+    "intervention_exposure": "Iberdomide-based regimen",
     "comparator": "",
     "key_results": [
-      "FDA granted priority review for iberdomide as first-in-class oral CELMoD",
-      "Priority review supported by Phase III data showing improved minimal residual disease outcomes"
+      "FDA granted priority review for iberdomide, a first-in-class oral CELMoD agent",
+      "Phase III data showing iberdomide combinations significantly improve minimal residual disease outcomes"
     ],
     "clinical_interpretation": [
-      "Priority review suggests promising efficacy data, though full approval and safety profile await FDA decision"
+      "Priority review suggests promising efficacy data, though clinicians should await full FDA approval and prescribing information before clinical use"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",

@@ -44,7 +44,8 @@
     "Atrial Fibrillation",
     "Heparin-Induced Thrombocytopenia",
     "Hemophagocytic Lymphohistiocytosis",
-    "Diabetic Ketoacidosis"
+    "Diabetic Ketoacidosis",
+    "Iron Deficiency Anemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -91,7 +92,8 @@
     "interact2-2013",
     "interact2-2013",
     "partner-2010",
-    "surpass2-2021"
+    "surpass2-2021",
+    "rocket-af-2011"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -126,7 +128,7 @@
     "glp1-substance-disorders-2026",
     "preop-calcium-orthopedic-2026"
   ],
-  "last_run": "2026-03-12",
+  "last_run": "2026-03-13",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -135,7 +137,8 @@
     "Urticaria",
     "Drug Reaction: Minocycline",
     "Calciphylaxis",
-    "Granuloma Annulare"
+    "Granuloma Annulare",
+    "Atopic Dermatitis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -145,6 +148,10 @@
     "ecg-027",
     "cxr-036",
     "ct-016",
-    "clinical-own-the-oxygen"
+    "clinical-own-the-oxygen",
+    "ecg-019",
+    "cxr-003",
+    "ct-041",
+    "clinical-ice-003-leg-skin-rash"
   ]
 }
