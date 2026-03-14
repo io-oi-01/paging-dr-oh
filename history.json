@@ -47,7 +47,8 @@
     "Diabetic Ketoacidosis",
     "Iron Deficiency Anemia",
     "Cirrhosis and Hepatic Encephalopathy",
-    "Hyponatremia"
+    "Hyponatremia",
+    "Acute Gout"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -97,7 +98,8 @@
     "surpass2-2021",
     "rocket-af-2011",
     "atach2-2016",
-    "recovery-tocilizumab-2021"
+    "recovery-tocilizumab-2021",
+    "advance-2008"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -136,9 +138,15 @@
     "glp1-substance-use-prevention-veterans-2026",
     "ct-angiography-stroke-emergency-management-acute-2026",
     "hpv-vaccine-cervical-cancer-protection-durability-2026",
-    "iberdomide-myeloma-fda-priority-review-celmod-2026"
+    "iberdomide-myeloma-fda-priority-review-celmod-2026",
+    "infigratinib-achondroplasia-growth-2026",
+    "hpv-vaccine-cervical-cancer-protection-2026",
+    "ms-glp1-substance-use-disorders-reduced-2026",
+    "ms-ct-angiography-stroke-acute-management-2026",
+    "ms-hpv-vaccine-cervical-cancer-durability-2026",
+    "ms-preop-calcium-orthopedic-surgery-complications-2026"
   ],
-  "last_run": "2026-03-13",
+  "last_run": "2026-03-14",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -150,7 +158,8 @@
     "Granuloma Annulare",
     "Atopic Dermatitis",
     "Scrotal Calcinosis",
-    "Squamous Cell Carcinoma"
+    "Squamous Cell Carcinoma",
+    "Melanoma"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -172,6 +181,10 @@
     "ecg-111",
     "cxr-073",
     "ct-014",
-    "clinical-tonsillitis-and-the-bull"
+    "clinical-tonsillitis-and-the-bull",
+    "ecg-030",
+    "cxr-040",
+    "ct-092",
+    "clinical-horrible-spots-and-pain"
   ]
 }

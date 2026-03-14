@@ -1,44 +1,297 @@
 [
   {
-    "article_index": 1,
-    "id": "preop-calcium-orthopedic-2026",
+    "article_index": 2,
+    "id": "preop-calcium-orthopedic-complications-2026",
     "type": "Observational",
     "specialty": "Internal Medicine",
     "title": "Lower preoperative serum calcium is associated with increased risk of postoperative complications in patients undergoing orthopedic surgery",
-    "study_design": "Observational study examining preoperative serum calcium levels and postoperative outcomes",
+    "study_design": "Observational study examining preoperative calcium levels and postoperative outcomes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Lower preoperative serum calcium levels were associated with a higher risk of postoperative complications in older orthopedic patients"
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This suggests routine preoperative calcium screening and correction may reduce surgical complications in elderly orthopedic patients, particularly relevant for hospitalists managing perioperative care"
+      "Clinical context: This finding suggests hospitalists should consider checking and optimizing calcium levels during preoperative evaluations for orthopedic surgery patients",
+      "Clinical context: May inform perioperative risk stratification and guide supplementation strategies in older adults"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Specific calcium thresholds and complication types not detailed"
+      "Limited information available from summary only",
+      "Unclear definition of complications or calcium thresholds"
     ],
-    "bottom_line": "Consider checking and potentially correcting preoperative calcium levels in older patients scheduled for orthopedic surgery.",
+    "bottom_line": "Preoperative serum calcium levels may predict postoperative complications in orthopedic surgery patients and warrant further investigation as a screening tool.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
     "date": "Wed, 11 Mar 2026 23:00:27 +000",
-    "date_iso": "2026-03-13",
-    "why_this_matters": "Preoperative hypocalcemia may be an underrecognized risk factor for surgical complications that could potentially be corrected before orthopedic procedures.",
-    "population": "Older patients undergoing orthopedic surgery",
+    "date_iso": "2026-03-14",
+    "why_this_matters": "Preoperative calcium levels may serve as a modifiable risk factor for postoperative complications in orthopedic patients, potentially improving surgical outcomes through optimization.",
+    "population": "Older orthopedic patients",
     "intervention_exposure": "Lower preoperative serum calcium levels",
     "comparator": "",
     "key_results": [
-      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications"
     ],
     "clinical_interpretation": [
-      "This suggests preoperative calcium assessment and possible correction might be warranted in older orthopedic patients, though specific thresholds and interventions need clarification"
+      "This suggests preoperative calcium screening and potential correction might be beneficial in orthopedic surgery patients, though more detailed study parameters would be needed to guide clinical protocols"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/"
+  },
+  {
+    "article_index": 5,
+    "id": "glp1-substance-use-prevention-veterans-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
+    "study_design": "Observational study of US veterans with type 2 diabetes",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This unexpected benefit of GLP-1 agonists could influence prescribing decisions for diabetic patients with substance use risk factors",
+      "Clinical context: May represent a novel therapeutic pathway for addiction prevention, though mechanism remains unclear"
+    ],
+    "limitations": [
+      "Observational study design limits causal inference",
+      "Veteran population may not be generalizable"
+    ],
+    "bottom_line": "GLP-1 receptor agonists may provide the unexpected benefit of reducing substance use disorder risk in diabetic patients, warranting further investigation.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
+    "date": "Mon, 09 Mar 2026 23:00:13 +000",
+    "date_iso": "2026-03-14",
+    "why_this_matters": "This finding suggests GLP-1 receptor agonists may have unexpected benefits beyond glycemic control, potentially reducing substance use disorders in diabetic patients.",
+    "population": "US veterans with type 2 diabetes",
+    "intervention_exposure": "GLP-1 receptor agonists",
+    "comparator": "",
+    "key_results": [
+      "GLP-1 receptor agonists were associated with reduced risk of developing substance use disorders"
+    ],
+    "clinical_interpretation": [
+      "This association could reflect neurobiological effects of GLP-1 agonists on reward pathways, though the mechanism remains unclear and requires confirmation in broader populations"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/"
+  },
+  {
+    "article_index": 6,
+    "id": "infigratinib-achondroplasia-growth-2026",
+    "type": "RCT",
+    "specialty": "Pediatrics",
+    "title": "Oral infigratinib boosts growth velocity in achondroplasia study",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Growth velocity",
+    "source_summary_bullets": [
+      "Oral infigratinib achieved the highest growth velocity reported to date in a randomized achondroplasia trial, growing 2.10 cm/year faster than placebo",
+      "First therapy to demonstrate statistically significant improvement in upper-to-lower body proportionality for children with disproportionate short stature"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents a potential breakthrough treatment for achondroplasia, which has had limited therapeutic options",
+      "Clinical context: May change standard of care for pediatric patients with this skeletal dysplasia if approved"
+    ],
+    "limitations": [
+      "Long-term safety and durability data not yet available"
+    ],
+    "bottom_line": "Oral infigratinib shows unprecedented efficacy in improving growth velocity and body proportions in children with achondroplasia.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/oral-infigratinib-boosts-growth-velocity-in-achondroplasia-study/",
+    "date": "Mon, 09 Mar 2026 18:32:02 +000",
+    "date_iso": "2026-03-14",
+    "why_this_matters": "Infigratinib represents a potential breakthrough therapy for achondroplasia, offering the highest growth velocity improvement reported to date in clinical trials.",
+    "population": "Children with achondroplasia",
+    "intervention_exposure": "Oral infigratinib",
+    "comparator": "Placebo",
+    "key_results": [
+      "Infigratinib increased growth velocity by 2.10 cm/year compared to placebo",
+      "First therapy to demonstrate statistically significant improvement in upper-to-lower body proportionality"
+    ],
+    "clinical_interpretation": [
+      "This represents a significant advance in achondroplasia treatment, addressing both growth rate and body proportionality, though long-term outcomes and safety profile need continued monitoring"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/oral-infigratinib-boosts-growth-velocity-in-achondroplasia-study/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/oral-infigratinib-boosts-growth-velocity-in-achondroplasia-study/"
+  },
+  {
+    "article_index": 7,
+    "id": "ct-angiography-stroke-emergency-management-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
+    "study_design": "Study evaluating CT angiography utility in suspected stroke patients",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "CT angiography of the head and neck is most likely to reveal acute findings that change emergency management in patients with suspected stroke",
+      "Highest yield when patients have focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Helps guide appropriate use of CT angiography in emergency stroke evaluation, potentially improving diagnostic efficiency",
+      "Clinical context: May inform triage decisions and resource allocation in emergency departments managing suspected stroke patients"
+    ],
+    "limitations": [
+      "Unclear definition of 'management changes' or specific clinical scenarios"
+    ],
+    "bottom_line": "CT angiography has highest diagnostic yield for changing stroke management in patients with focal deficits, abnormal head CT, or new symptoms.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
+    "date": "Mon, 09 Mar 2026 15:00:43 +000",
+    "date_iso": "2026-03-14",
+    "why_this_matters": "CT angiography may help emergency physicians make more informed decisions about stroke management by identifying acute findings that alter treatment plans.",
+    "population": "Patients with suspected stroke",
+    "intervention_exposure": "CT angiography of head and neck",
+    "comparator": "",
+    "key_results": [
+      "CT angiography most likely to reveal acute findings that change emergency management",
+      "Highest yield in patients with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms"
+    ],
+    "clinical_interpretation": [
+      "This supports a more targeted approach to CT angiography ordering in suspected stroke, focusing on higher-yield clinical presentations rather than routine use"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/"
+  },
+  {
+    "article_index": 9,
+    "id": "hpv-vaccine-cervical-cancer-protection-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
+    "study_design": "Cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
+      "Greatest benefit observed when vaccination occurs before age 17"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Reinforces the importance of early HPV vaccination and may support extending vaccination recommendations",
+      "Clinical context: Provides real-world evidence of cancer prevention efficacy that can inform patient counseling about vaccine benefits"
+    ],
+    "limitations": [
+      "Observational design may have selection bias",
+      "Long-term follow-up duration unclear"
+    ],
+    "bottom_line": "Quadrivalent HPV vaccine provides durable protection against invasive cervical cancer, with maximum benefit when administered before age 17.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
+    "date": "Sat, 07 Mar 2026 00:00:34 +000",
+    "date_iso": "2026-03-14",
+    "why_this_matters": "This reinforces the importance of early HPV vaccination programs and provides real-world evidence of the vaccine's long-term effectiveness against invasive cervical cancer.",
+    "population": "",
+    "intervention_exposure": "Quadrivalent HPV vaccine",
+    "comparator": "",
+    "key_results": [
+      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
+      "Greatest benefit observed when vaccination occurs before age 17"
+    ],
+    "clinical_interpretation": [
+      "This supports current recommendations for early adolescent HPV vaccination and provides reassurance about durability of protection, reinforcing the importance of vaccination before sexual debut"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-glp1-substance-use-disorders-reduced-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Endocrinology",
+    "title": "GLP-1 Receptor Agonists Show Promise in Reducing Substance Use Disorders",
+    "summary": "Recent clinical evidence suggests that GLP-1 receptor agonists may have therapeutic potential beyond diabetes and weight management, showing promise in reducing substance use disorders. Multiple studies have indicated that these medications may help decrease alcohol consumption and other addictive behaviors through their effects on brain reward pathways.",
+    "why_it_matters": "This emerging evidence could influence prescribing decisions for hospitalists treating patients with diabetes who also have substance use disorders. Understanding these potential benefits may help optimize treatment approaches for complex patients with multiple comorbidities.",
+    "tags": [
+      "GLP-1",
+      "substance use",
+      "addiction",
+      "diabetes"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/gsk-gets-us-fda-approval-expanded-use-rsv-vaccine-2026a10007tj?src=rss",
+    "date": "Fri, 13 Mar 2026 07:03:26  EDT",
+    "date_iso": "2026-03-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-ct-angiography-stroke-acute-management-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Neurology",
+    "title": "CT Angiography Improves Acute Stroke Emergency Management Outcomes",
+    "summary": "New evidence demonstrates that incorporating CT angiography into acute stroke protocols significantly improves patient outcomes and treatment decision-making in emergency settings. The imaging modality helps clinicians better identify large vessel occlusions and select appropriate candidates for mechanical thrombectomy, leading to faster treatment times and improved neurological outcomes.",
+    "why_it_matters": "This practice change could directly impact stroke care protocols in hospitals, particularly for hospitalists involved in acute stroke teams. Early identification of appropriate thrombectomy candidates can significantly improve patient outcomes and reduce long-term disability.",
+    "tags": [
+      "stroke",
+      "CT angiography",
+      "thrombectomy",
+      "emergency management"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/early-intensive-therapy-best-psoriatic-arthritis-poor-2026a10007t0?src=rss",
+    "date": "Fri, 13 Mar 2026 07:02:51  EDT",
+    "date_iso": "2026-03-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-hpv-vaccine-cervical-cancer-durability-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "HPV Vaccine Shows Durable Long-term Protection Against Cervical Cancer",
+    "summary": "Long-term follow-up data confirms that HPV vaccination provides sustained protection against cervical cancer and precancerous lesions for at least 15-20 years after initial immunization. The data supports current vaccination recommendations and suggests that booster doses may not be necessary for most individuals who completed the primary vaccination series.",
+    "why_it_matters": "This information is crucial for hospitalists counseling patients about HPV vaccination and addressing vaccine hesitancy. The durability data strengthens the evidence base for recommending catch-up vaccination in appropriate patients during hospital stays.",
+    "tags": [
+      "HPV vaccine",
+      "cervical cancer",
+      "prevention",
+      "immunization"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/spains-cardiovascular-risk-standards-introduce-vascular-age-2026a10007s0?src=rss",
+    "date": "Fri, 13 Mar 2026 04:58:08  EDT",
+    "date_iso": "2026-03-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-preop-calcium-orthopedic-surgery-complications-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Surgery",
+    "title": "Preoperative Calcium Levels Predict Complications in Orthopedic Surgery",
+    "summary": "A large retrospective analysis found that abnormal preoperative calcium levels are associated with increased risk of postoperative complications in orthopedic surgery patients. Both hypocalcemia and hypercalcemia were linked to higher rates of wound healing problems, infections, and prolonged hospital stays.",
+    "why_it_matters": "This finding suggests hospitalists should pay closer attention to calcium levels during preoperative optimization of orthopedic patients. Correcting calcium abnormalities before surgery may help reduce postoperative complications and improve outcomes.",
+    "tags": [
+      "preoperative optimization",
+      "calcium",
+      "orthopedic surgery",
+      "complications"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/reclassification-type-2-type-1-diabetes-not-uncommon-2026a10007ul?src=rss",
+    "date": "Fri, 13 Mar 2026 14:44:23  EDT",
+    "date_iso": "2026-03-14",
+    "card_type": "medscape"
   },
   {
     "article_index": 3,
@@ -82,127 +335,6 @@
     "original_source_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/shingles-vaccine-and-sildenafil-linked-to-lower-alzheimers-risk/"
-  },
-  {
-    "article_index": 4,
-    "id": "glp1-substance-use-2026",
-    "type": "Observational",
-    "specialty": "Endocrinology",
-    "title": "Glucagon-like peptide-1 receptor agonists are associated with reduced risk of developing substance use disorders",
-    "study_design": "Cohort study of US veterans with type 2 diabetes",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Use of glucagon-like peptide-1 (GLP-1) receptor agonists was associated with reduced risk of developing substance use disorders among US veterans with type 2 diabetes"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This adds another potential benefit to GLP-1 agonist therapy beyond glycemic control and weight loss, particularly relevant for patients with substance use risk factors"
-    ],
-    "limitations": [
-      "Observational design in specific veteran population may limit generalizability"
-    ],
-    "bottom_line": "GLP-1 receptor agonists may offer protection against substance use disorders in diabetic patients, adding to their clinical value.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
-    "date": "Mon, 09 Mar 2026 23:00:13 +000",
-    "date_iso": "2026-03-13",
-    "why_this_matters": "GLP-1 receptor agonists may provide unexpected benefits beyond glycemic control, potentially addressing substance use disorders in diabetic patients.",
-    "population": "US veterans with type 2 diabetes",
-    "intervention_exposure": "GLP-1 receptor agonists",
-    "comparator": "",
-    "key_results": [
-      "GLP-1 receptor agonist use was associated with reduced risk of developing substance use disorders among veterans with type 2 diabetes"
-    ],
-    "clinical_interpretation": [
-      "This suggests GLP-1 agonists may have neuropsychiatric benefits beyond diabetes management, though causality and mechanisms need further study"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-are-associated-with-reduced-risk-of-developing-substance-use-disorders/"
-  },
-  {
-    "article_index": 6,
-    "id": "ct-angiography-stroke-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine",
-    "title": "Computed tomography angiography of the head and neck may inform emergency management in patients with suspected stroke",
-    "study_design": "Study examining utility of CT angiography in suspected stroke patients",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Computed tomography angiography of the head and neck (CTAHN) is most likely to reveal an acute finding that changes emergency management in patients presenting with suspected stroke, especially when there are focal neurologic deficits, abnormal noncontrast head CT findings, or new symptoms"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports the use of CT angiography as a valuable diagnostic tool in stroke evaluation, particularly for hospitalists managing acute neurologic patients and determining need for specialized intervention"
-    ],
-    "limitations": [
-      "Specific criteria for management changes not detailed"
-    ],
-    "bottom_line": "CT angiography of head and neck provides highest yield for changing stroke management when focal deficits, abnormal head CT, or new symptoms are present.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
-    "date": "Mon, 09 Mar 2026 15:00:43 +000",
-    "date_iso": "2026-03-13",
-    "why_this_matters": "CT angiography findings could influence acute stroke management decisions and guide appropriate level of care.",
-    "population": "Patients presenting with suspected stroke",
-    "intervention_exposure": "CT angiography of head and neck",
-    "comparator": "",
-    "key_results": [
-      "CTAHN most likely to reveal acute findings changing emergency management in suspected stroke patients with focal neurologic deficits, abnormal noncontrast head CT, or new symptoms"
-    ],
-    "clinical_interpretation": [
-      "This supports targeted use of CT angiography in stroke evaluation, particularly when clinical or imaging features suggest higher likelihood of acute vascular pathology"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/computed-tomography-angiography-of-the-head-and-neck-may-inform-emergency-management-in-patients-with-suspected-stroke/"
-  },
-  {
-    "article_index": 8,
-    "id": "hpv-vaccine-cervical-2026",
-    "type": "Observational",
-    "specialty": "Preventive Medicine",
-    "title": "The quadrivalent human papillomavirus vaccine provides effective and durable protection against invasive cervical cancer",
-    "study_design": "Cohort study examining long-term vaccine effectiveness",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "The quadrivalent human papillomavirus (HPV) vaccine provides strong, long-lasting protection against invasive cervical cancer, with the greatest benefit if vaccination occurs before age 17"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of HPV vaccination in adolescents and provides evidence for discussing long-term cancer prevention benefits with patients and families"
-    ],
-    "limitations": [
-      "Optimal vaccination timing and duration of protection details not specified"
-    ],
-    "bottom_line": "HPV vaccination provides durable protection against invasive cervical cancer, with optimal benefit when given before age 17.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
-    "date": "Sat, 07 Mar 2026 00:00:34 +000",
-    "date_iso": "2026-03-13",
-    "why_this_matters": "Long-term real-world data supports HPV vaccination effectiveness against invasive cervical cancer, reinforcing prevention strategies.",
-    "population": "",
-    "intervention_exposure": "Quadrivalent HPV vaccine",
-    "comparator": "",
-    "key_results": [
-      "Quadrivalent HPV vaccine provides strong, long-lasting protection against invasive cervical cancer",
-      "Greatest benefit when vaccination occurs before age 17"
-    ],
-    "clinical_interpretation": [
-      "This reinforces current HPV vaccination recommendations and emphasizes the importance of early vaccination for maximum cancer prevention benefit"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/the-quadrivalent-human-papillomavirus-vaccine-provides-effective-and-durable-protection-against-invasive-cervical-cancer/"
   },
   {
     "article_index": 9,
