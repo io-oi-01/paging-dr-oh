@@ -48,7 +48,8 @@
     "Iron Deficiency Anemia",
     "Cirrhosis and Hepatic Encephalopathy",
     "Hyponatremia",
-    "Acute Gout"
+    "Acute Gout",
+    "Syncope"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -99,7 +100,8 @@
     "rocket-af-2011",
     "atach2-2016",
     "recovery-tocilizumab-2021",
-    "advance-2008"
+    "advance-2008",
+    "compass-2017"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -144,9 +146,14 @@
     "ms-glp1-substance-use-disorders-reduced-2026",
     "ms-ct-angiography-stroke-acute-management-2026",
     "ms-hpv-vaccine-cervical-cancer-durability-2026",
-    "ms-preop-calcium-orthopedic-surgery-complications-2026"
+    "ms-preop-calcium-orthopedic-surgery-complications-2026",
+    "infigratinib-achondroplasia-2026",
+    "ms-rsv-vaccine-pregnancy-2026",
+    "ms-antibiotic-resistance-carbapenem-2026",
+    "ms-ai-sepsis-detection-2026",
+    "ms-blood-pressure-targets-elderly-2026"
   ],
-  "last_run": "2026-03-14",
+  "last_run": "2026-03-15",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -159,7 +166,8 @@
     "Atopic Dermatitis",
     "Scrotal Calcinosis",
     "Squamous Cell Carcinoma",
-    "Melanoma"
+    "Melanoma",
+    "Mastocytosis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -185,6 +193,10 @@
     "ecg-030",
     "cxr-040",
     "ct-092",
-    "clinical-horrible-spots-and-pain"
+    "clinical-horrible-spots-and-pain",
+    "ecg-042",
+    "cxr-063",
+    "ct-018",
+    "clinical-ice-007-abdominal-pain-investigations"
   ]
 }
