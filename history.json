@@ -49,7 +49,8 @@
     "Cirrhosis and Hepatic Encephalopathy",
     "Hyponatremia",
     "Acute Gout",
-    "Syncope"
+    "Syncope",
+    "Adrenal Crisis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -101,7 +102,8 @@
     "atach2-2016",
     "recovery-tocilizumab-2021",
     "advance-2008",
-    "compass-2017"
+    "compass-2017",
+    "affirm-2002"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -151,9 +153,13 @@
     "ms-rsv-vaccine-pregnancy-2026",
     "ms-antibiotic-resistance-carbapenem-2026",
     "ms-ai-sepsis-detection-2026",
-    "ms-blood-pressure-targets-elderly-2026"
+    "ms-blood-pressure-targets-elderly-2026",
+    "ms-rsv-vaccine-pregnancy-maternal-infant-2026",
+    "ms-antibiotic-resistance-carbapenem-surveillance-2026",
+    "ms-ai-sepsis-detection-early-warning-2026",
+    "ms-blood-pressure-targets-elderly-frail-2026"
   ],
-  "last_run": "2026-03-15",
+  "last_run": "2026-03-16",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -167,7 +173,8 @@
     "Scrotal Calcinosis",
     "Squamous Cell Carcinoma",
     "Melanoma",
-    "Mastocytosis"
+    "Mastocytosis",
+    "Extragenital Lichen Sclerosus"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -197,6 +204,10 @@
     "ecg-042",
     "cxr-063",
     "ct-018",
-    "clinical-ice-007-abdominal-pain-investigations"
+    "clinical-ice-007-abdominal-pain-investigations",
+    "ecg-062",
+    "cxr-032",
+    "ct-089",
+    "clinical-intra-aortic-balloon-pump"
   ]
 }
