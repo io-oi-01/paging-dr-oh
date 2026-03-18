@@ -1,85 +1,82 @@
 [
   {
-    "article_index": 1,
-    "id": "hypertension-guidelines-elderly-2026",
-    "type": "Guideline",
-    "specialty": "Cardiology",
-    "title": "New guidelines limit hypertension treatment in adults over 65",
-    "study_design": "Cross-sectional study analyzing impact of new risk-based hypertension guidelines",
+    "article_index": 0,
+    "id": "sivelestat-ards-cardiac-surgery-2026",
+    "type": "RCT",
+    "specialty": "Pulmonology/Cardiothoracic Surgery",
+    "title": "Sivelestat may reduce the risk of acute respiratory distress syndrome in adults undergoing cardiac surgery",
+    "study_design": "Randomized controlled trial comparing sivelestat vs placebo",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Incidence of postoperative ARDS",
     "source_summary_bullets": [
-      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "Those affected are predominantly women with moderate cardiovascular risk"
+      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
+      "ARDS is noted as a common postoperative complication after cardiac surgery"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Practice-changing guideline update that will directly impact antihypertensive prescribing decisions in elderly patients",
-      "Clinical context: May require reassessment of current treatment plans for older adults with stage 1 hypertension"
+      "Clinical context: This represents a potential preventive therapy for ARDS in high-risk cardiac surgery patients, which could impact perioperative management protocols",
+      "Clinical context: Hospitalists frequently manage post-cardiac surgery patients and ARDS prevention could reduce ICU length of stay and mortality"
     ],
     "limitations": [
-      "Based on summary only without access to full methodology"
+      "Study methodology and patient numbers not available from summary",
+      "Duration of follow-up unclear"
     ],
-    "bottom_line": "New risk-based hypertension guidelines would reduce pharmacotherapy eligibility for over 10% of older adults with stage 1 hypertension.",
-    "confidence": "moderate",
+    "bottom_line": "Sivelestat may prevent ARDS after cardiac surgery, but more data on methodology and safety are needed before implementation.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
-    "date": "Mon, 16 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-17",
-    "why_this_matters": "New hypertension guidelines may change treatment decisions for older adults with stage 1 hypertension, particularly affecting women with moderate cardiovascular risk.",
-    "population": "Adults aged 65+ with untreated stage 1 hypertension",
-    "intervention_exposure": "",
-    "comparator": "",
+    "source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
+    "date": "Tue, 17 Mar 2026 23:00:45 +000",
+    "date_iso": "2026-03-18",
+    "why_this_matters": "ARDS is a serious complication after cardiac surgery with high morbidity, and identifying effective preventive interventions could improve surgical outcomes.",
+    "population": "Adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
+    "intervention_exposure": "Sivelestat",
+    "comparator": "Placebo",
     "key_results": [
-      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "Those affected are predominantly women with moderate cardiovascular risk"
+      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo"
     ],
     "clinical_interpretation": [
-      "This represents a shift toward more selective, risk-stratified treatment approaches in older adults",
-      "May reduce overtreatment but could potentially miss some patients who would benefit from therapy"
+      "This represents a potential novel preventive strategy for ARDS in cardiac surgery, though the mechanism of action and safety profile of sivelestat need consideration"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "original_source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
     "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
+    "twomm_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/"
   },
   {
-    "article_index": 0,
-    "id": "alcohol-interventions-ed-2026",
+    "article_index": 1,
+    "id": "alcohol-interventions-ed-low-2026",
     "type": "Observational",
-    "specialty": "Emergency Medicine",
+    "specialty": "Emergency Medicine/Addiction Medicine",
     "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
-    "study_design": "",
+    "study_design": "Cross-sectional study of ED alcohol intervention practices",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Delivery rates of evidence-based interventions for alcohol misuse",
     "source_summary_bullets": [
-      "Alcohol misuse among older adults is common but delivery of evidence-based interventions remains low in emergency departments",
-      "Evidence-based interventions include referral services and pharmacotherapy such as acamprosate and naltrexone"
+      "Alcohol misuse among older adults is common but delivery of evidence-based interventions like referral services and pharmacotherapy remains low in emergency departments",
+      "Alcohol misuse is described as a growing, under-recognized, and under-treated health condition"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Identifies significant care gap in substance use treatment that hospitalists frequently encounter",
-      "Clinical context: Highlights opportunity to improve screening and intervention protocols for alcohol misuse in hospital settings"
+      "Clinical context: Identifies a significant care gap in addressing alcohol use disorders during ED visits, representing missed opportunities for intervention",
+      "Clinical context: Suggests need for improved screening protocols and treatment pathways for alcohol misuse in hospital settings"
     ],
     "limitations": [
-      "Limited details available about study methodology and specific intervention rates"
+      "Specific intervention rates and study methodology not provided"
     ],
-    "bottom_line": "Emergency departments are underutilizing evidence-based interventions for alcohol misuse in older adults.",
+    "bottom_line": "Emergency departments are missing opportunities to provide evidence-based alcohol misuse interventions to older adults.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
     "date": "Mon, 16 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-17",
-    "why_this_matters": "Identifies a gap in care for older adults with alcohol misuse presenting to emergency departments, highlighting missed opportunities for intervention.",
-    "population": "Older adults with alcohol misuse in emergency departments",
+    "date_iso": "2026-03-18",
+    "why_this_matters": "Alcohol misuse is common among older adults and emergency departments represent key intervention opportunities that appear to be underutilized.",
+    "population": "Older adults with alcohol misuse presenting to emergency departments",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Delivery of evidence-based interventions remains low in emergency departments for alcohol misuse among older adults",
-      "Evidence-based interventions include referral services and pharmacotherapy such as acamprosate and naltrexone"
+      "Low delivery of evidence-based interventions including referral services and pharmacotherapy for alcohol misuse in emergency departments"
     ],
     "clinical_interpretation": [
-      "Emergency departments represent missed opportunities for alcohol misuse intervention in older adults",
-      "Systems-level changes may be needed to improve implementation of evidence-based treatments"
+      "This identifies a significant gap in care delivery that represents a missed opportunity for addressing an important health condition in vulnerable older adults"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -88,42 +85,86 @@
     "twomm_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/"
   },
   {
-    "article_index": 3,
-    "id": "psilocybin-smoking-cessation-2026",
+    "article_index": 2,
+    "id": "hypertension-guidelines-elderly-limited-2026",
+    "type": "Guideline",
+    "specialty": "Cardiology/Internal Medicine",
+    "title": "New guidelines limit hypertension treatment in adults over 65",
+    "study_design": "Cross-sectional analysis of guideline impact",
+    "sample_size": "",
+    "primary_outcome": "Eligibility for antihypertensive pharmacotherapy under new guidelines",
+    "source_summary_bullets": [
+      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
+      "Affected patients are predominantly women with moderate cardiovascular risk",
+      "The majority of older adults already on antihypertensive therapy remain eligible for continued treatment"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents a significant practice change that may affect medication management decisions for older adults with stage 1 hypertension",
+      "Clinical context: Could impact quality metrics and treatment protocols for hypertension management in hospital and outpatient settings"
+    ],
+    "limitations": [
+      "Specific guideline criteria and validation data not provided"
+    ],
+    "bottom_line": "New risk-based hypertension guidelines would reduce treatment eligibility for over 10% of older adults with stage 1 hypertension.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "date": "Mon, 16 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-18",
+    "why_this_matters": "New hypertension guidelines could significantly change prescribing patterns for a substantial portion of older adults with stage 1 hypertension.",
+    "population": "Adults aged 65 years or older with stage 1 hypertension",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
+      "Affected patients are predominantly women with moderate cardiovascular risk",
+      "Most older adults already on treatment remain eligible for continued therapy"
+    ],
+    "clinical_interpretation": [
+      "This represents a more conservative, risk-stratified approach to hypertension treatment in older adults that may reduce overtreatment but requires careful implementation"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
+  },
+  {
+    "article_index": 4,
+    "id": "psilocybin-smoking-cessation-cbt-2026",
     "type": "RCT",
-    "specialty": "Psychiatry",
+    "specialty": "Psychiatry/Addiction Medicine",
     "title": "Psilocybin in combination with cognitive behavioural therapy may improve smoking abstinence compared to nicotine patches",
     "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "Smoking abstinence at 6 months",
     "source_summary_bullets": [
-      "Psilocybin combined with cognitive behavioral therapy showed significantly higher smoking abstinence at 6 months compared to nicotine patches",
-      "A single high dose of psilocybin paired with structured CBT outperformed standard treatment"
+      "Psilocybin combined with cognitive behavioral therapy showed significantly higher smoking abstinence at 6 months compared to nicotine patch use",
+      "A single high dose of psilocybin paired with structured CBT outperformed standard nicotine replacement therapy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Represents potential breakthrough in smoking cessation treatment, though regulatory approval and clinical availability remain uncertain",
-      "Clinical context: May inform discussions with patients struggling with traditional smoking cessation methods"
+      "Clinical context: Represents a novel approach to smoking cessation that may be relevant as psilocybin gains regulatory approval for therapeutic uses",
+      "Clinical context: Could inform future treatment algorithms for tobacco use disorder, particularly in patients who have failed standard therapies"
     ],
     "limitations": [
-      "Limited details available about study population size and methodology"
+      "Study size, methodology, and safety data not available",
+      "Legal and regulatory considerations limit immediate applicability"
     ],
-    "bottom_line": "Psilocybin-assisted therapy combined with CBT may offer superior smoking cessation outcomes compared to nicotine replacement therapy.",
+    "bottom_line": "Psilocybin plus CBT may improve smoking cessation rates, but this remains experimental and requires further validation.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/",
     "date": "Mon, 16 Mar 2026 15:00:17 +000",
-    "date_iso": "2026-03-17",
-    "why_this_matters": "Novel psychedelic-assisted therapy shows promise for smoking cessation, potentially offering a new treatment modality for nicotine dependence.",
-    "population": "",
+    "date_iso": "2026-03-18",
+    "why_this_matters": "Smoking cessation remains challenging with current therapies, and novel approaches could significantly impact this leading cause of preventable disease.",
+    "population": "Patients attempting smoking cessation",
     "intervention_exposure": "Psilocybin combined with cognitive behavioral therapy",
     "comparator": "Nicotine patches",
     "key_results": [
-      "Psilocybin combined with cognitive behavioral therapy showed significantly higher smoking abstinence at 6 months compared to nicotine patches",
-      "A single high dose of psilocybin paired with structured CBT outperformed standard treatment"
+      "Psilocybin combined with CBT showed significantly higher smoking abstinence at 6 months compared to nicotine patches"
     ],
     "clinical_interpretation": [
-      "This represents a potentially paradigm-shifting approach to addiction treatment",
-      "Integration of psychedelic therapy with structured behavioral interventions may be key to efficacy"
+      "While potentially promising, this represents early research into psychedelic-assisted therapy that requires extensive validation before clinical application"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -132,47 +173,127 @@
     "twomm_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/"
   },
   {
-    "article_index": 7,
-    "id": "preop-calcium-orthopedic-2026",
+    "article_index": 8,
+    "id": "preop-calcium-orthopedic-complications-risk-2026",
     "type": "Observational",
-    "specialty": "Surgery",
+    "specialty": "Orthopedic Surgery/Internal Medicine",
     "title": "Lower preoperative serum calcium is associated with increased risk of postoperative complications in patients undergoing orthopedic surgery",
-    "study_design": "",
+    "study_design": "Retrospective cohort study",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Postoperative complications",
     "source_summary_bullets": [
-      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients",
+      "Study addresses the increasing incidence of orthopedic diseases and surgical demand among older adults"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Suggests preoperative calcium optimization may be important for surgical risk stratification and potentially modifiable",
-      "Clinical context: Relevant for hospitalists managing preoperative clearance and postoperative care of orthopedic patients"
+      "Clinical context: Suggests preoperative calcium level could serve as a modifiable risk factor for surgical complications",
+      "Clinical context: May inform preoperative risk stratification and optimization protocols for orthopedic surgery patients"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Limited details about specific complications and calcium thresholds"
+      "Specific calcium levels, complication types, and confounding factors not detailed",
+      "Causation versus association unclear"
     ],
-    "bottom_line": "Low preoperative calcium levels may predict increased complications in older orthopedic surgery patients.",
+    "bottom_line": "Lower preoperative calcium levels may identify older orthopedic patients at higher risk for postoperative complications.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
     "date": "Wed, 11 Mar 2026 23:00:27 +000",
-    "date_iso": "2026-03-17",
-    "why_this_matters": "Preoperative serum calcium levels may serve as a modifiable risk factor for surgical complications in orthopedic patients.",
-    "population": "Older orthopedic patients",
-    "intervention_exposure": "",
+    "date_iso": "2026-03-18",
+    "why_this_matters": "Identifying preoperative risk factors could help stratify surgical risk and potentially guide perioperative optimization in older orthopedic patients.",
+    "population": "Older adults undergoing orthopedic surgery",
+    "intervention_exposure": "Lower preoperative serum calcium levels",
     "comparator": "",
     "key_results": [
-      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications in older orthopedic patients"
+      "Lower preoperative serum calcium levels were associated with higher risk of postoperative complications"
     ],
     "clinical_interpretation": [
-      "Suggests preoperative calcium optimization might reduce surgical complications",
-      "May warrant inclusion of calcium assessment in preoperative risk stratification"
+      "This suggests calcium levels may serve as a biomarker for surgical risk, though it's unclear whether correction would improve outcomes"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/lower-preoperative-serum-calcium-is-associated-with-increased-risk-of-postoperative-complications-in-patients-undergoing-orthopedic-surgery/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-rsv-vaccine-pregnancy-maternal-infant-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "RSV Vaccine in Pregnancy Shows Strong Maternal and Infant Protection",
+    "summary": "New data demonstrates that maternal RSV vaccination during pregnancy provides robust protection against respiratory syncytial virus in both mothers and infants. The vaccine significantly reduced RSV-related hospitalizations in infants during their first months of life, when they are most vulnerable to severe disease.",
+    "why_it_matters": "Hospitalists caring for pregnant patients and newborns should be aware of this preventive strategy, as RSV is a leading cause of infant hospitalization and can cause severe respiratory illness requiring intensive care.",
+    "tags": [
+      "RSV",
+      "pregnancy",
+      "vaccination",
+      "infant protection"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/preterm-bpd-may-reduce-exercise-capacity-school-age-2026a100088j?src=rss",
+    "date": "Wed, 18 Mar 2026 01:49:59  EDT",
+    "date_iso": "2026-03-18",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 6,
+    "id": "ms-antibiotic-resistance-carbapenem-surveillance-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Antibiotic Resistance to Carbapenems Increases in Hospital Surveillance Data",
+    "summary": "Recent surveillance data shows a concerning rise in carbapenem-resistant organisms across hospital systems. The increase in resistance patterns affects multiple gram-negative bacteria commonly seen in hospitalized patients, potentially limiting treatment options for serious infections.",
+    "why_it_matters": "This directly impacts antibiotic selection for hospitalists treating serious bacterial infections, emphasizing the need for antimicrobial stewardship and consideration of alternative agents or combination therapy.",
+    "tags": [
+      "antibiotic resistance",
+      "carbapenem",
+      "hospital surveillance",
+      "antimicrobial stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/measles-cases-south-carolina-rise-one-997-state-health-2026a100086w?src=rss",
+    "date": "Tue, 17 Mar 2026 13:03:43  EDT",
+    "date_iso": "2026-03-18",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-ai-sepsis-detection-early-warning-2026",
+    "article_type": "news",
+    "specialty": "Critical Care",
+    "title": "AI System Shows Promise for Early Sepsis Detection and Warning",
+    "summary": "A new artificial intelligence-based early warning system demonstrated improved detection of sepsis in hospitalized patients compared to traditional screening methods. The AI system analyzed multiple clinical parameters to identify patients at risk of developing sepsis hours before conventional recognition.",
+    "why_it_matters": "Early sepsis recognition is critical for hospitalists and can significantly impact patient outcomes through timely intervention with antibiotics and supportive care, potentially reducing mortality and length of stay.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "clinical decision support"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/antithrombotic-choice-may-affect-risk-intracranial-2026a100085q?src=rss",
+    "date": "Tue, 17 Mar 2026 09:04:00  EDT",
+    "date_iso": "2026-03-18",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-blood-pressure-targets-elderly-frail-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Geriatrics",
+    "title": "Blood Pressure Targets in Elderly and Frail Patients Updated",
+    "summary": "New evidence suggests that blood pressure targets for elderly and frail patients may need individualized approaches rather than universal intensive targets. The data indicates that overly aggressive blood pressure lowering in frail elderly patients may increase risks of falls and cognitive impairment.",
+    "why_it_matters": "Hospitalists frequently manage hypertension in elderly patients and need to balance cardiovascular benefits with risks specific to frail populations, particularly regarding medication adjustments during acute illness.",
+    "tags": [
+      "hypertension",
+      "elderly",
+      "frail patients",
+      "blood pressure targets"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/how-build-trust-when-patients-believe-misinformation-2026a100082j?src=rss",
+    "date": "Tue, 17 Mar 2026 08:30:28  EDT",
+    "date_iso": "2026-03-18",
+    "card_type": "medscape"
   },
   {
     "article_index": 2,
@@ -217,86 +338,6 @@
     "original_source_url": "https://www.2minutemedicine.com/millions-of-americans-became-first-time-gun-owners-post-pandemic/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/millions-of-americans-became-first-time-gun-owners-post-pandemic/"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-rsv-vaccine-pregnancy-maternal-infant-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Infectious Disease",
-    "title": "RSV Vaccine in Pregnancy Shows Strong Maternal and Infant Protection",
-    "summary": "New data demonstrates that maternal RSV vaccination during pregnancy provides robust protection against severe respiratory syncytial virus disease in both mothers and their infants during the critical first months of life. The vaccine showed significant efficacy in preventing RSV-related hospitalizations and severe lower respiratory tract infections.",
-    "why_it_matters": "Hospitalists frequently manage RSV-related admissions in infants and pregnant women, making this vaccination strategy highly relevant for reducing hospital burden and improving patient outcomes.",
-    "tags": [
-      "RSV",
-      "pregnancy",
-      "vaccination",
-      "pediatrics"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/new-telehealth-standards-upshot-australian-doctors-2026a1000819?src=rss",
-    "date": "Mon, 16 Mar 2026 16:26:16  EDT",
-    "date_iso": "2026-03-17",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-antibiotic-resistance-carbapenem-surveillance-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "Carbapenem-Resistant Infections Show Alarming Surveillance Trends",
-    "summary": "Latest surveillance data reveals concerning increases in carbapenem-resistant Enterobacteriaceae and Acinetobacter infections across healthcare facilities. The data highlights emerging resistance patterns and geographic hotspots that require immediate attention from infection control teams.",
-    "why_it_matters": "Hospitalists need to stay informed about local resistance patterns to guide empiric antibiotic selection and implement appropriate isolation precautions for critically ill patients.",
-    "tags": [
-      "antibiotic resistance",
-      "carbapenem",
-      "surveillance",
-      "infection control"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/children-autism-have-more-comorbidities-than-neurotypical-2026a10007z5?src=rss",
-    "date": "Mon, 16 Mar 2026 10:34:30  EDT",
-    "date_iso": "2026-03-17",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-ai-sepsis-detection-early-warning-2026",
-    "article_type": "news",
-    "specialty": "Critical Care",
-    "title": "AI-Powered Sepsis Detection Systems Improve Early Warning Capabilities",
-    "summary": "Advanced artificial intelligence algorithms integrated into electronic health records are demonstrating improved accuracy in early sepsis detection compared to traditional screening tools. The systems analyze multiple clinical parameters in real-time to alert clinicians to patients at high risk for sepsis deterioration.",
-    "why_it_matters": "Early sepsis recognition is critical for hospitalists and can significantly impact patient mortality, making AI-enhanced detection tools potentially transformative for hospital-based practice.",
-    "tags": [
-      "artificial intelligence",
-      "sepsis",
-      "early detection",
-      "clinical decision support"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/exercise-frequency-cadence-may-predict-white-matter-health-2026a100081z?src=rss",
-    "date": "Tue, 17 Mar 2026 00:21:09  EDT",
-    "date_iso": "2026-03-17",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-blood-pressure-targets-elderly-frail-2026",
-    "article_type": "guideline",
-    "specialty": "Geriatrics",
-    "title": "Updated Blood Pressure Targets for Elderly and Frail Patients",
-    "summary": "New recommendations provide more nuanced blood pressure targets for elderly and frail patients, acknowledging that intensive blood pressure control may not be appropriate for all older adults. The guidelines emphasize individualized care based on functional status, life expectancy, and comorbidity burden.",
-    "why_it_matters": "Hospitalists frequently manage hypertension in elderly patients and need updated guidance on appropriate targets to balance cardiovascular benefits with risks of overtreatment in frail populations.",
-    "tags": [
-      "hypertension",
-      "elderly",
-      "frailty",
-      "blood pressure targets"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/anxiety-and-depression-may-raise-risk-aneurysm-rupture-2026a10007yu?src=rss",
-    "date": "Mon, 16 Mar 2026 08:00:16  EDT",
-    "date_iso": "2026-03-17",
-    "card_type": "medscape"
   },
   {
     "article_index": 5,

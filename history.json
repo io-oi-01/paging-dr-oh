@@ -51,7 +51,8 @@
     "Acute Gout",
     "Syncope",
     "Adrenal Crisis",
-    "Infective Endocarditis"
+    "Infective Endocarditis",
+    "Hypercalcemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -105,7 +106,8 @@
     "advance-2008",
     "compass-2017",
     "affirm-2002",
-    "optic-2019"
+    "optic-2019",
+    "escape-2005"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -163,9 +165,14 @@
     "hypertension-guidelines-elderly-2026",
     "alcohol-interventions-ed-2026",
     "psilocybin-smoking-cessation-2026",
-    "gun-ownership-pandemic-2026"
+    "gun-ownership-pandemic-2026",
+    "sivelestat-ards-cardiac-surgery-2026",
+    "alcohol-interventions-ed-low-2026",
+    "hypertension-guidelines-elderly-limited-2026",
+    "psilocybin-smoking-cessation-cbt-2026",
+    "preop-calcium-orthopedic-complications-risk-2026"
   ],
-  "last_run": "2026-03-17",
+  "last_run": "2026-03-18",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -181,7 +188,8 @@
     "Melanoma",
     "Mastocytosis",
     "Extragenital Lichen Sclerosus",
-    "Palmoplantar Keratoderma"
+    "Palmoplantar Keratoderma",
+    "Morphea"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -219,6 +227,10 @@
     "ecg-081",
     "cxr-017",
     "ct-076",
-    "clinical-puzzling-out-the-perc-rule"
+    "clinical-puzzling-out-the-perc-rule",
+    "ecg-126",
+    "cxr-061",
+    "ct-028",
+    "clinical-high-pressure-injection-injury"
   ]
 }
