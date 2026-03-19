@@ -1,5 +1,301 @@
 [
   {
+    "article_index": 1,
+    "id": "tecovirimat-mpox-ineffective-2026",
+    "type": "RCT",
+    "specialty": "Infectious Disease",
+    "title": "Smallpox therapy tecovirimat not efficacious in treating clade II mpox",
+    "study_design": "Phase 3, international, double-blind, randomized, placebo-controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Clinical resolution assessed in time-to-event analysis in participants with active skin or mucosal lesions",
+    "source_summary_bullets": [
+      "Tecovirimat, an antiviral approved for smallpox, did not accelerate clinical resolution of mpox compared to placebo in a phase 3 RCT",
+      "The drug also did not reduce pain levels or increase viral DNA clearance compared to placebo"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This negative trial indicates that tecovirimat should not be routinely used for mpox treatment, despite previous smallpox approval",
+      "Clinical context: Clinicians treating mpox patients should focus on supportive care rather than antiviral therapy with tecovirimat"
+    ],
+    "limitations": [
+      "Limited to clade II mpox, results may not apply to other clades",
+      "Most participants likely had mild disease given high resolution rates in both groups"
+    ],
+    "bottom_line": "Tecovirimat shows no clinical benefit for clade II mpox treatment compared to placebo in this definitive phase 3 trial.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
+    "date": "Wed, 18 Mar 2026 12:00:54 +000",
+    "date_iso": "2026-03-19",
+    "why_this_matters": "Tecovirimat was approved for smallpox under FDA Animal Rule based on animal models, but human efficacy data for mpox was lacking until this trial.",
+    "population": "Adults with laboratory-confirmed clade II mpox (344 participants with confirmed infection, 336 with active skin or mucosal lesions in primary analysis)",
+    "intervention_exposure": "Oral tecovirimat for 14 days",
+    "comparator": "Placebo for 14 days",
+    "key_results": [
+      "By day 29, estimated cumulative incidence of clinical resolution was 83% with tecovirimat vs 84% with placebo",
+      "Competing-risks hazard ratio for clinical resolution was 0.98 (95% CI 0.74-1.31, P=0.89)",
+      "No substantial difference in pain reduction among participants with severe pain (difference 0.1 point, 95% CI -0.8 to 1.0)",
+      "No difference in complete lesion healing (HR 0.97, 95% CI 0.75-1.26) or viral DNA clearance",
+      "Similar adverse events grade 3+ (4% tecovirimat vs 3% placebo)"
+    ],
+    "clinical_interpretation": [
+      "This well-designed trial definitively shows tecovirimat provides no benefit for clade II mpox in humans despite animal model efficacy",
+      "The high resolution rates in both groups suggest most participants had self-limiting disease",
+      "Questions the utility of tecovirimat for routine mpox treatment and highlights limitations of animal rule approvals"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2506495",
+    "pubmed_id": "41740032",
+    "twomm_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/"
+  },
+  {
+    "article_index": 0,
+    "id": "burr-hole-local-anesthesia-delirium-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
+    "study_design": "Comparative study of anesthesia techniques",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Local anesthesia for burr hole craniotomy in chronic subdural hematoma was safe, well-tolerated, and significantly reduced postoperative delirium risk compared to general anesthesia"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports using local anesthesia when feasible for elderly patients with subdural hematomas who are at high risk for postoperative delirium",
+      "Clinical context: Reducing delirium risk could decrease hospital length of stay and improve outcomes in this vulnerable population"
+    ],
+    "limitations": [],
+    "bottom_line": "Local anesthesia for burr hole craniotomy may reduce delirium risk compared to general anesthesia, though more details are needed.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "date": "Wed, 18 Mar 2026 23:00:33 +000",
+    "date_iso": "2026-03-19",
+    "why_this_matters": "Postoperative delirium is a major concern in elderly patients undergoing neurosurgical procedures, and anesthesia choice may be modifiable.",
+    "population": "",
+    "intervention_exposure": "Local anesthesia for burr hole craniotomy",
+    "comparator": "General anesthesia for burr hole craniotomy",
+    "key_results": [
+      "Local anesthesia significantly reduced postoperative delirium risk compared to general anesthesia",
+      "Local anesthesia was safe and well-tolerated for the procedure"
+    ],
+    "clinical_interpretation": [
+      "For appropriate candidates, local anesthesia may be preferable for burr hole procedures in chronic subdural hematoma",
+      "Reduced delirium risk could translate to shorter hospital stays and better functional outcomes"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
+  },
+  {
+    "article_index": 5,
+    "id": "hypertension-guidelines-elderly-limited-2026",
+    "type": "Guideline",
+    "specialty": "Cardiology",
+    "title": "New guidelines limit hypertension treatment in adults over 65",
+    "study_design": "Cross-sectional analysis of guideline impact",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "New risk-based hypertension guidelines would make 11.4% of adults aged 65+ with untreated stage 1 hypertension ineligible for pharmacotherapy",
+      "Those affected are predominantly women with moderate cardiovascular risk"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: These guideline changes reflect a shift toward more individualized, risk-based treatment decisions in elderly patients",
+      "Clinical context: Clinicians should reassess elderly patients with stage 1 hypertension using the new risk stratification approach"
+    ],
+    "limitations": [],
+    "bottom_line": "New risk-based hypertension guidelines would limit treatment eligibility for some older adults with stage 1 hypertension.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "date": "Mon, 16 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-19",
+    "why_this_matters": "New hypertension guidelines could significantly change treatment patterns for older adults with stage 1 hypertension.",
+    "population": "Adults aged 65+ with untreated stage 1 hypertension",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "11.4% of adults aged 65+ with untreated stage 1 hypertension would be ineligible for pharmacotherapy under new risk-based guidelines",
+      "Those affected are predominantly women with moderate cardiovascular risk"
+    ],
+    "clinical_interpretation": [
+      "Risk-based approach may improve precision of hypertension treatment in older adults",
+      "Could reduce potential harm from overtreatment in lower-risk patients, but requires careful risk stratification"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
+  },
+  {
+    "article_index": 4,
+    "id": "alcohol-interventions-ed-low-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
+    "study_design": "Observational study of ED intervention delivery",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Alcohol misuse among older adults is common but delivery of evidence-based interventions like referral services and pharmacotherapy remains low in emergency departments"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This highlights a significant care gap in addressing alcohol misuse during ED visits, representing missed opportunities for intervention",
+      "Clinical context: EDs should implement systematic screening and referral protocols for alcohol misuse, particularly in older adults"
+    ],
+    "limitations": [],
+    "bottom_line": "Emergency departments are missing opportunities to provide evidence-based interventions for alcohol misuse in older adults.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
+    "date": "Mon, 16 Mar 2026 23:00:45 +000",
+    "date_iso": "2026-03-19",
+    "why_this_matters": "Alcohol misuse in older adults is often underrecognized and undertreated, representing a missed opportunity for intervention in emergency settings.",
+    "population": "Older adults with alcohol misuse presenting to emergency departments",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Alcohol misuse among older adults is common in emergency department settings",
+      "Delivery of evidence-based interventions including referral services and pharmacotherapy remains low"
+    ],
+    "clinical_interpretation": [
+      "Emergency departments represent an important but underutilized opportunity for alcohol misuse intervention",
+      "Implementation of screening protocols and staff training may be needed to improve intervention rates"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/"
+  },
+  {
+    "article_index": 7,
+    "id": "psilocybin-smoking-cessation-cbt-2026",
+    "type": "RCT",
+    "specialty": "Psychiatry",
+    "title": "Psilocybin in combination with cognitive behavioural therapy may improve smoking abstinence compared to nicotine patches",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Psilocybin combined with cognitive behavioral therapy resulted in significantly higher smoking abstinence at 6 months compared to nicotine patch",
+      "A single high dose of psilocybin paired with structured CBT outperformed standard nicotine replacement therapy"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: While promising, psilocybin therapy requires specialized training and legal authorization, limiting immediate clinical application",
+      "Clinical context: This supports investigating novel psychedelic-assisted therapies for treatment-resistant substance use disorders"
+    ],
+    "limitations": [],
+    "bottom_line": "Psilocybin plus cognitive behavioral therapy showed superior smoking cessation rates compared to nicotine replacement, though regulatory barriers remain.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/",
+    "date": "Mon, 16 Mar 2026 15:00:17 +000",
+    "date_iso": "2026-03-19",
+    "why_this_matters": "Novel approaches to smoking cessation are needed given limited long-term success rates with current standard therapies.",
+    "population": "",
+    "intervention_exposure": "Psilocybin combined with cognitive behavioral therapy",
+    "comparator": "Nicotine patch",
+    "key_results": [
+      "Psilocybin combined with CBT resulted in significantly higher smoking abstinence at 6 months compared to nicotine patch",
+      "Single high dose of psilocybin paired with structured CBT outperformed standard nicotine replacement therapy"
+    ],
+    "clinical_interpretation": [
+      "This represents a potentially paradigm-shifting approach to addiction treatment",
+      "However, psilocybin remains a controlled substance and would require significant regulatory and practice changes",
+      "The combination of pharmacologic and behavioral intervention appears key to success"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-rsv-vaccine-pregnancy-safety-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "RSV Vaccine During Pregnancy Shows Strong Safety Profile",
+    "summary": "A large safety analysis of RSV vaccination during pregnancy demonstrates reassuring safety data with no increased risk of adverse maternal or neonatal outcomes. The vaccine effectively protects infants through maternal antibody transfer during the first months of life when RSV poses the greatest risk.",
+    "why_it_matters": "Hospitalists managing pregnant patients and caring for infants with respiratory illness should be aware of this preventive strategy that can reduce RSV hospitalizations in vulnerable newborns.",
+    "tags": [
+      "RSV",
+      "pregnancy",
+      "vaccine safety",
+      "maternal immunization"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/depression-predicts-disability-progression-progressive-ms-2026a10007xv?src=rss",
+    "date": "Wed, 18 Mar 2026 08:00:00  EDT",
+    "date_iso": "2026-03-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-carbapenem-resistance-surveillance-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Carbapenem-Resistant Enterobacteriaceae Rates Continue Rising",
+    "summary": "New surveillance data reveals increasing rates of carbapenem-resistant Enterobacteriaceae (CRE) infections across US hospitals, with particular concerns about Klebsiella pneumoniae resistance patterns. The report highlights regional variations and emphasizes the need for enhanced infection control measures and antimicrobial stewardship programs.",
+    "why_it_matters": "Hospitalists must be aware of local resistance patterns to guide empiric antibiotic selection and implement appropriate isolation precautions for suspected CRE infections.",
+    "tags": [
+      "antibiotic resistance",
+      "CRE",
+      "antimicrobial stewardship",
+      "infection control"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/a1c-or-cgm-metrics-which-should-be-gold-standard-2026a10008bm?src=rss",
+    "date": "Wed, 18 Mar 2026 12:29:42  EDT",
+    "date_iso": "2026-03-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-ai-sepsis-early-detection-2026",
+    "article_type": "news",
+    "specialty": "Critical Care",
+    "title": "AI Tool Improves Early Sepsis Detection in Hospital Settings",
+    "summary": "A multicenter study demonstrates that an artificial intelligence-based early warning system significantly improves sepsis detection compared to traditional screening methods. The AI tool reduced time to antibiotic administration and showed potential for decreasing sepsis-related mortality when integrated into electronic health records.",
+    "why_it_matters": "This technology could enhance hospitalists' ability to identify sepsis earlier, potentially improving patient outcomes through faster recognition and treatment initiation.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "clinical decision support"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hormone-therapy-past-age-65-tied-cancer-vascular-events-2026a10008ah?src=rss",
+    "date": "Wed, 18 Mar 2026 08:48:01  EDT",
+    "date_iso": "2026-03-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-blood-pressure-elderly-frail-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Geriatrics",
+    "title": "Blood Pressure Targets Reassessed for Frail Elderly Patients",
+    "summary": "New analysis suggests that intensive blood pressure control may not benefit frail elderly patients and could increase risk of falls and cognitive decline. The study recommends individualized blood pressure targets based on frailty status rather than applying standard guidelines uniformly to all elderly patients.",
+    "why_it_matters": "Hospitalists caring for elderly patients should consider frailty status when making blood pressure management decisions, potentially avoiding overly aggressive treatment in vulnerable populations.",
+    "tags": [
+      "hypertension",
+      "elderly",
+      "frailty",
+      "blood pressure targets"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/priorities-older-patients-cancer-anyone-listening-2026a10008ad?src=rss",
+    "date": "Wed, 18 Mar 2026 08:23:32  EDT",
+    "date_iso": "2026-03-19",
+    "card_type": "medscape"
+  },
+  {
     "article_index": 0,
     "id": "sivelestat-ards-cardiac-surgery-2026",
     "type": "RCT",
@@ -41,136 +337,6 @@
     "original_source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/"
-  },
-  {
-    "article_index": 1,
-    "id": "alcohol-interventions-ed-low-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine/Addiction Medicine",
-    "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
-    "study_design": "Cross-sectional study of ED alcohol intervention practices",
-    "sample_size": "",
-    "primary_outcome": "Delivery rates of evidence-based interventions for alcohol misuse",
-    "source_summary_bullets": [
-      "Alcohol misuse among older adults is common but delivery of evidence-based interventions like referral services and pharmacotherapy remains low in emergency departments",
-      "Alcohol misuse is described as a growing, under-recognized, and under-treated health condition"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Identifies a significant care gap in addressing alcohol use disorders during ED visits, representing missed opportunities for intervention",
-      "Clinical context: Suggests need for improved screening protocols and treatment pathways for alcohol misuse in hospital settings"
-    ],
-    "limitations": [
-      "Specific intervention rates and study methodology not provided"
-    ],
-    "bottom_line": "Emergency departments are missing opportunities to provide evidence-based alcohol misuse interventions to older adults.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
-    "date": "Mon, 16 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-18",
-    "why_this_matters": "Alcohol misuse is common among older adults and emergency departments represent key intervention opportunities that appear to be underutilized.",
-    "population": "Older adults with alcohol misuse presenting to emergency departments",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Low delivery of evidence-based interventions including referral services and pharmacotherapy for alcohol misuse in emergency departments"
-    ],
-    "clinical_interpretation": [
-      "This identifies a significant gap in care delivery that represents a missed opportunity for addressing an important health condition in vulnerable older adults"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/"
-  },
-  {
-    "article_index": 2,
-    "id": "hypertension-guidelines-elderly-limited-2026",
-    "type": "Guideline",
-    "specialty": "Cardiology/Internal Medicine",
-    "title": "New guidelines limit hypertension treatment in adults over 65",
-    "study_design": "Cross-sectional analysis of guideline impact",
-    "sample_size": "",
-    "primary_outcome": "Eligibility for antihypertensive pharmacotherapy under new guidelines",
-    "source_summary_bullets": [
-      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
-      "Affected patients are predominantly women with moderate cardiovascular risk",
-      "The majority of older adults already on antihypertensive therapy remain eligible for continued treatment"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Represents a significant practice change that may affect medication management decisions for older adults with stage 1 hypertension",
-      "Clinical context: Could impact quality metrics and treatment protocols for hypertension management in hospital and outpatient settings"
-    ],
-    "limitations": [
-      "Specific guideline criteria and validation data not provided"
-    ],
-    "bottom_line": "New risk-based hypertension guidelines would reduce treatment eligibility for over 10% of older adults with stage 1 hypertension.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
-    "date": "Mon, 16 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-18",
-    "why_this_matters": "New hypertension guidelines could significantly change prescribing patterns for a substantial portion of older adults with stage 1 hypertension.",
-    "population": "Adults aged 65 years or older with stage 1 hypertension",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "Affected patients are predominantly women with moderate cardiovascular risk",
-      "Most older adults already on treatment remain eligible for continued therapy"
-    ],
-    "clinical_interpretation": [
-      "This represents a more conservative, risk-stratified approach to hypertension treatment in older adults that may reduce overtreatment but requires careful implementation"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
-  },
-  {
-    "article_index": 4,
-    "id": "psilocybin-smoking-cessation-cbt-2026",
-    "type": "RCT",
-    "specialty": "Psychiatry/Addiction Medicine",
-    "title": "Psilocybin in combination with cognitive behavioural therapy may improve smoking abstinence compared to nicotine patches",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "Smoking abstinence at 6 months",
-    "source_summary_bullets": [
-      "Psilocybin combined with cognitive behavioral therapy showed significantly higher smoking abstinence at 6 months compared to nicotine patch use",
-      "A single high dose of psilocybin paired with structured CBT outperformed standard nicotine replacement therapy"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Represents a novel approach to smoking cessation that may be relevant as psilocybin gains regulatory approval for therapeutic uses",
-      "Clinical context: Could inform future treatment algorithms for tobacco use disorder, particularly in patients who have failed standard therapies"
-    ],
-    "limitations": [
-      "Study size, methodology, and safety data not available",
-      "Legal and regulatory considerations limit immediate applicability"
-    ],
-    "bottom_line": "Psilocybin plus CBT may improve smoking cessation rates, but this remains experimental and requires further validation.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/",
-    "date": "Mon, 16 Mar 2026 15:00:17 +000",
-    "date_iso": "2026-03-18",
-    "why_this_matters": "Smoking cessation remains challenging with current therapies, and novel approaches could significantly impact this leading cause of preventable disease.",
-    "population": "Patients attempting smoking cessation",
-    "intervention_exposure": "Psilocybin combined with cognitive behavioral therapy",
-    "comparator": "Nicotine patches",
-    "key_results": [
-      "Psilocybin combined with CBT showed significantly higher smoking abstinence at 6 months compared to nicotine patches"
-    ],
-    "clinical_interpretation": [
-      "While potentially promising, this represents early research into psychedelic-assisted therapy that requires extensive validation before clinical application"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/psilocybin-in-combination-with-cognitive-behavioural-therapy-may-improve-smoking-abstinence-compared-to-nicotine-patches/"
   },
   {
     "article_index": 8,
