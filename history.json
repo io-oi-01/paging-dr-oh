@@ -53,7 +53,8 @@
     "Adrenal Crisis",
     "Infective Endocarditis",
     "Hypercalcemia",
-    "Small Bowel Obstruction"
+    "Small Bowel Obstruction",
+    "Acute Pancreatitis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -109,7 +110,8 @@
     "affirm-2002",
     "optic-2019",
     "escape-2005",
-    "oscar-2013"
+    "oscar-2013",
+    "dapa-ckd-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -178,9 +180,13 @@
     "ms-rsv-vaccine-pregnancy-safety-2026",
     "ms-carbapenem-resistance-surveillance-2026",
     "ms-ai-sepsis-early-detection-2026",
-    "ms-blood-pressure-elderly-frail-2026"
+    "ms-blood-pressure-elderly-frail-2026",
+    "ms-rsv-vaccine-pregnancy-safety-effectiveness",
+    "ms-carbapenem-resistance-surveillance-trends",
+    "ms-ai-sepsis-early-detection-validation",
+    "ms-blood-pressure-targets-elderly-frail-patients"
   ],
-  "last_run": "2026-03-19",
+  "last_run": "2026-03-20",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -198,7 +204,8 @@
     "Extragenital Lichen Sclerosus",
     "Palmoplantar Keratoderma",
     "Morphea",
-    "Post-Radiation Dermatitis"
+    "Post-Radiation Dermatitis",
+    "Radiation Dermatitis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -243,6 +250,10 @@
     "clinical-high-pressure-injection-injury",
     "cxr-091",
     "ct-085",
-    "clinical-eponymictionary"
+    "clinical-eponymictionary",
+    "ecg-077",
+    "cxr-038",
+    "ct-077",
+    "clinical-hemolysis-and-renal-failure-in-a-toddler"
   ]
 }
