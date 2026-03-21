@@ -1,5 +1,217 @@
 [
   {
+    "article_index": 4,
+    "id": "tecovirimat-mpox-ineffective-2026",
+    "type": "RCT",
+    "specialty": "Infectious Disease",
+    "title": "Smallpox therapy tecovirimat not efficacious in treating clade II mpox",
+    "study_design": "Phase 3, international, double-blind, randomized, placebo-controlled trial with 2:1 randomization to tecovirimat or placebo for 14 days",
+    "sample_size": "",
+    "primary_outcome": "Clinical resolution assessed in time-to-event analysis in participants with active skin or mucosal lesions",
+    "source_summary_bullets": [
+      "Tecovirimat, an antiviral approved for smallpox, did not accelerate clinical resolution of mpox compared to placebo",
+      "The drug also did not reduce pain levels or increase viral DNA clearance compared to placebo"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This definitively establishes that tecovirimat is not effective for mpox treatment, contradicting earlier hopes that the smallpox antiviral would be useful",
+      "Clinical context: Clinicians should not rely on tecovirimat for mpox treatment and should focus on supportive care and infection control measures"
+    ],
+    "limitations": [
+      "Limited to clade II mpox, may not apply to other clades",
+      "Most participants likely had self-limiting disease course"
+    ],
+    "bottom_line": "Tecovirimat shows no clinical benefit for clade II mpox treatment and should not be routinely prescribed.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
+    "date": "Wed, 18 Mar 2026 12:00:54 +000",
+    "date_iso": "2026-03-21",
+    "why_this_matters": "Tecovirimat is the only FDA-approved antiviral for poxviruses and was widely used during the 2022 mpox outbreak, making its clinical efficacy crucial for treatment decisions.",
+    "population": "412 adults with laboratory-confirmed clade II mpox (344 confirmed, 336 with active skin/mucosal lesions included in primary analysis)",
+    "intervention_exposure": "Oral tecovirimat for 14 days",
+    "comparator": "Placebo for 14 days",
+    "key_results": [
+      "By day 29, estimated cumulative incidence of clinical resolution was 83% with tecovirimat vs 84% with placebo (competing-risks hazard ratio 0.98, 95% CI 0.74-1.31, P=0.89)",
+      "No substantial between-group differences in pain reduction among participants with severe pain (difference 0.1 point, 95% CI -0.8 to 1.0)",
+      "No difference in complete lesion healing (competing-risks hazard ratio 0.97, 95% CI 0.75-1.26) or viral DNA clearance",
+      "Similar incidence of grade 3+ adverse events (4% tecovirimat vs 3% placebo)"
+    ],
+    "clinical_interpretation": [
+      "This well-designed trial definitively shows tecovirimat provides no clinical benefit for clade II mpox, challenging its routine use",
+      "The lack of efficacy despite animal model success highlights the limitation of the FDA Animal Rule pathway"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2506495",
+    "pubmed_id": "41740032",
+    "twomm_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/"
+  },
+  {
+    "article_index": 6,
+    "id": "sivelestat-ards-cardiac-surgery-2026",
+    "type": "RCT",
+    "specialty": "Pulmonology",
+    "title": "Sivelestat may reduce the risk of acute respiratory distress syndrome in adults undergoing cardiac surgery",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Incidence of postoperative acute respiratory distress syndrome",
+    "source_summary_bullets": [
+      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adult patients undergoing cardiac surgery requiring cardiopulmonary bypass"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: ARDS is a serious complication after cardiac surgery with high morbidity and mortality",
+      "Clinical context: This could represent a new preventive strategy for high-risk cardiac surgery patients, though cost-effectiveness and broader applicability need consideration"
+    ],
+    "limitations": [],
+    "bottom_line": "Sivelestat may prevent ARDS in cardiac surgery patients, but more data needed before routine use.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
+    "date": "Tue, 17 Mar 2026 23:00:45 +000",
+    "date_iso": "2026-03-21",
+    "why_this_matters": "ARDS is a serious complication of cardiac surgery with cardiopulmonary bypass, and sivelestat represents a potential preventive intervention.",
+    "population": "Adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
+    "intervention_exposure": "Sivelestat",
+    "comparator": "Placebo",
+    "key_results": [
+      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo"
+    ],
+    "clinical_interpretation": [
+      "If confirmed, sivelestat could be a valuable preventive strategy for high-risk cardiac surgery patients",
+      "More details needed about patient selection criteria and magnitude of benefit"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/"
+  },
+  {
+    "article_index": 7,
+    "id": "alcohol-interventions-ed-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
+    "study_design": "Observational study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Alcohol misuse among older adults is common but delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in emergency departments"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This highlights a significant gap in care for alcohol use disorders in the ED setting, particularly for older adults",
+      "Clinical context: EDs represent missed opportunities for intervention and referral for alcohol misuse, suggesting need for systematic screening and intervention protocols"
+    ],
+    "limitations": [],
+    "bottom_line": "Emergency departments underutilize evidence-based interventions for alcohol misuse in older adults.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
+    "date": "Mon, 16 Mar 2026 23:00:45 +000",
+    "date_iso": "2026-03-21",
+    "why_this_matters": "Alcohol misuse is common among older adults presenting to emergency departments, representing a missed opportunity for intervention and treatment initiation.",
+    "population": "Older adults with alcohol misuse in emergency departments",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in emergency departments for alcohol misuse"
+    ],
+    "clinical_interpretation": [
+      "This represents a significant gap in care quality and missed opportunities for early intervention",
+      "Emergency departments should develop systematic approaches to identify and treat alcohol misuse"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/"
+  },
+  {
+    "article_index": 8,
+    "id": "hypertension-guidelines-elderly-2026",
+    "type": "Guideline",
+    "specialty": "Cardiology",
+    "title": "New guidelines limit hypertension treatment in adults over 65",
+    "study_design": "Cross-sectional analysis of guideline impact",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension, predominantly women with moderate cardiovascular risk, would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
+      "The majority of older adults already receiving treatment would still be recommended for continued therapy"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: New risk-based approach to hypertension treatment may reduce overtreatment in lower-risk elderly patients while maintaining treatment for higher-risk individuals",
+      "Clinical context: This represents a shift toward more personalized hypertension management in older adults, particularly affecting women with moderate cardiovascular risk"
+    ],
+    "limitations": [],
+    "bottom_line": "New hypertension guidelines would limit treatment in some older adults with stage 1 hypertension, particularly lower-risk women.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "date": "Mon, 16 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-21",
+    "why_this_matters": "New hypertension guidelines could significantly impact treatment decisions for millions of older adults, particularly regarding who should receive pharmacotherapy.",
+    "population": "Adults aged 65 years or older with untreated stage 1 hypertension",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
+      "Those affected are predominantly women with moderate cardiovascular risk",
+      "Majority of older adults already receiving treatment would still be recommended for continued therapy"
+    ],
+    "clinical_interpretation": [
+      "This represents a shift toward more individualized, risk-based treatment decisions rather than universal blood pressure thresholds",
+      "May reduce overtreatment in lower-risk patients while maintaining treatment for those most likely to benefit"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
+  },
+  {
+    "article_index": 1,
+    "id": "neoadjuvant-colon-cancer-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "NeoCol trial: Neoadjuvant chemotherapy does not improve disease-free survival in patients with locally advanced colon cancer",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Three-year disease-free survival",
+    "source_summary_bullets": [
+      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery in locally advanced colon cancer",
+      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This challenges the potential benefit of neoadjuvant therapy in colon cancer, unlike its established role in rectal cancer",
+      "Clinical context: The finding of potential harm in mismatch repair deficient tumors suggests molecular markers should guide treatment decisions"
+    ],
+    "limitations": [],
+    "bottom_line": "Neoadjuvant chemotherapy does not improve outcomes in locally advanced colon cancer and may harm some patient subgroups.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
+    "date": "Fri, 20 Mar 2026 20:00:28 +000",
+    "date_iso": "2026-03-21",
+    "why_this_matters": "Neoadjuvant chemotherapy is increasingly used in various cancers, and this trial provides important data about its role in locally advanced colon cancer.",
+    "population": "Patients with locally advanced colon cancer",
+    "intervention_exposure": "Neoadjuvant capecitabine-oxaliplatin chemotherapy",
+    "comparator": "Upfront surgery",
+    "key_results": [
+      "Neoadjuvant capecitabine-oxaliplatin did not improve three-year disease-free survival compared to upfront surgery",
+      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
+    ],
+    "clinical_interpretation": [
+      "This challenges the assumption that neoadjuvant chemotherapy benefits all colon cancer patients",
+      "The potential harm in mismatch repair-deficient patients warrants particular caution and further investigation"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
+  },
+  {
     "article_index": 1,
     "id": "burr-hole-local-anesthesia-delirium-2026",
     "type": "Observational",
@@ -40,179 +252,6 @@
     "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
-  },
-  {
-    "article_index": 2,
-    "id": "tecovirimat-mpox-ineffective-2026",
-    "type": "RCT",
-    "specialty": "Infectious Disease",
-    "title": "Smallpox therapy tecovirimat not efficacious in treating clade II mpox",
-    "study_design": "Phase 3 randomized placebo-controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Tecovirimat, an antiviral approved for smallpox, did not accelerate clinical resolution of mpox compared to placebo",
-      "The drug also did not reduce pain levels or increase viral DNA clearance compared to placebo"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This negative trial result is important for hospitalists treating mpox patients, indicating that tecovirimat should not be routinely used for clade II mpox infections"
-    ],
-    "limitations": [
-      "Study limited to clade II mpox",
-      "Efficacy in clade I mpox remains unknown"
-    ],
-    "bottom_line": "Tecovirimat showed no clinical benefit over placebo for treating clade II mpox in this randomized trial.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
-    "date": "Wed, 18 Mar 2026 12:00:54 +000",
-    "date_iso": "2026-03-20",
-    "why_this_matters": "Tecovirimat was widely used during the recent mpox outbreak based on smallpox activity, but efficacy data in mpox patients was limited.",
-    "population": "Patients with clade II mpox",
-    "intervention_exposure": "Tecovirimat",
-    "comparator": "Placebo",
-    "key_results": [
-      "Tecovirimat did not accelerate clinical resolution of mpox compared to placebo",
-      "No reduction in pain levels compared to placebo",
-      "No increase in viral DNA clearance compared to placebo"
-    ],
-    "clinical_interpretation": [
-      "These results question the routine use of tecovirimat for mpox treatment, though it may still have a role in severe cases or immunocompromised patients"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/"
-  },
-  {
-    "article_index": 4,
-    "id": "sivelestat-ards-cardiac-surgery-2026",
-    "type": "RCT",
-    "specialty": "Pulmonology/Cardiac Surgery",
-    "title": "Sivelestat may reduce the risk of acute respiratory distress syndrome in adults undergoing cardiac surgery",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adult patients undergoing cardiac surgery requiring cardiopulmonary bypass"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: ARDS is a serious postoperative complication after cardiac surgery, and this represents a potential preventive intervention for high-risk patients",
-      "Clinical context: Hospitalists frequently manage post-cardiac surgery patients and should be aware of this potential ARDS prevention strategy"
-    ],
-    "limitations": [
-      "Single study results need replication",
-      "Long-term outcomes and safety profile unclear"
-    ],
-    "bottom_line": "Sivelestat showed promise in preventing ARDS after cardiac surgery but needs further validation.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
-    "date": "Tue, 17 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-20",
-    "why_this_matters": "ARDS is a serious complication of cardiac surgery with high morbidity and mortality, making prevention strategies clinically valuable.",
-    "population": "Adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
-    "intervention_exposure": "Sivelestat",
-    "comparator": "Placebo",
-    "key_results": [
-      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo"
-    ],
-    "clinical_interpretation": [
-      "Sivelestat may represent a promising prophylactic intervention for ARDS prevention in cardiac surgery, though broader validation is needed"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/"
-  },
-  {
-    "article_index": 5,
-    "id": "alcohol-interventions-ed-low-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine/Internal Medicine",
-    "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
-    "study_design": "Cross-sectional study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Alcohol misuse among older adults is common but delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in the emergency department"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This highlights a significant care gap that hospitalists should address, as alcohol misuse screening and intervention are important quality measures",
-      "Clinical context: Hospitalists should ensure appropriate alcohol use screening and consider pharmacotherapy options like naltrexone and acamprosate for eligible patients"
-    ],
-    "limitations": [
-      "Observational design cannot determine barriers to implementation",
-      "Outcomes of missed intervention opportunities not quantified"
-    ],
-    "bottom_line": "Emergency departments are missing opportunities to provide evidence-based alcohol misuse interventions to older adults.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
-    "date": "Mon, 16 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-20",
-    "why_this_matters": "Alcohol misuse is undertreated in healthcare settings despite effective interventions being available, representing a missed opportunity for patient care.",
-    "population": "Older adults with alcohol misuse presenting to emergency departments",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Alcohol misuse among older adults is common in emergency departments",
-      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low"
-    ],
-    "clinical_interpretation": [
-      "This highlights a significant gap in emergency care that could be addressed through systematic screening protocols and staff education"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/"
-  },
-  {
-    "article_index": 6,
-    "id": "hypertension-guidelines-elderly-2026",
-    "type": "Guideline",
-    "specialty": "Cardiology/Internal Medicine",
-    "title": "New guidelines limit hypertension treatment in adults over 65",
-    "study_design": "Cross-sectional analysis of guideline impact",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
-      "The affected population is predominantly women with moderate cardiovascular risk"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This represents a significant practice change for hospitalists managing elderly hypertensive patients, requiring risk-stratified rather than universal treatment approaches",
-      "Clinical context: Hospitalists should reassess elderly patients' antihypertensive regimens based on individualized cardiovascular risk rather than blood pressure thresholds alone"
-    ],
-    "limitations": [
-      "Impact on long-term cardiovascular outcomes unknown",
-      "Individual risk assessment complexity may vary"
-    ],
-    "bottom_line": "New risk-based hypertension guidelines would reduce treatment eligibility for over 10% of older adults with stage 1 hypertension.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
-    "date": "Mon, 16 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-20",
-    "why_this_matters": "New hypertension guidelines may change treatment eligibility for a significant portion of older adults, affecting cardiovascular risk management strategies.",
-    "population": "Adults aged 65 years or older with untreated stage 1 hypertension",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "The affected population is predominantly women with moderate cardiovascular risk"
-    ],
-    "clinical_interpretation": [
-      "This represents a shift toward more personalized, risk-stratified hypertension management that may reduce medication burden in lower-risk older adults"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
   },
   {
     "article_index": 0,

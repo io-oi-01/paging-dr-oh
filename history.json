@@ -54,7 +54,8 @@
     "Infective Endocarditis",
     "Hypercalcemia",
     "Small Bowel Obstruction",
-    "Acute Pancreatitis"
+    "Acute Pancreatitis",
+    "Hepatorenal Syndrome"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -111,7 +112,8 @@
     "optic-2019",
     "escape-2005",
     "oscar-2013",
-    "dapa-ckd-2020"
+    "dapa-ckd-2020",
+    "cassini-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -184,9 +186,10 @@
     "ms-rsv-vaccine-pregnancy-safety-effectiveness",
     "ms-carbapenem-resistance-surveillance-trends",
     "ms-ai-sepsis-early-detection-validation",
-    "ms-blood-pressure-targets-elderly-frail-patients"
+    "ms-blood-pressure-targets-elderly-frail-patients",
+    "neoadjuvant-colon-cancer-2026"
   ],
-  "last_run": "2026-03-20",
+  "last_run": "2026-03-21",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -205,7 +208,8 @@
     "Palmoplantar Keratoderma",
     "Morphea",
     "Post-Radiation Dermatitis",
-    "Radiation Dermatitis"
+    "Radiation Dermatitis",
+    "Nails: Onychoschizia"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -254,6 +258,10 @@
     "ecg-077",
     "cxr-038",
     "ct-077",
-    "clinical-hemolysis-and-renal-failure-in-a-toddler"
+    "clinical-hemolysis-and-renal-failure-in-a-toddler",
+    "ecg-108",
+    "cxr-066",
+    "ct-091",
+    "clinical-author/sandnsurf"
   ]
 }
