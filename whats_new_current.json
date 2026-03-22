@@ -5,40 +5,41 @@
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Smallpox therapy tecovirimat not efficacious in treating clade II mpox",
-    "study_design": "Phase 3, international, double-blind, randomized, placebo-controlled trial with 2:1 randomization to tecovirimat or placebo for 14 days",
+    "study_design": "Phase 3, international, double-blind, randomized, placebo-controlled trial",
     "sample_size": "",
     "primary_outcome": "Clinical resolution assessed in time-to-event analysis in participants with active skin or mucosal lesions",
     "source_summary_bullets": [
-      "Tecovirimat, an antiviral approved for smallpox, did not accelerate clinical resolution of mpox compared to placebo",
-      "The drug also did not reduce pain levels or increase viral DNA clearance compared to placebo"
+      "Tecovirimat (antiviral approved for smallpox) did not accelerate clinical resolution of mpox compared to placebo",
+      "Tecovirimat also did not reduce pain levels or lead to increased viral DNA clearance compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This definitively establishes that tecovirimat is not effective for mpox treatment, contradicting earlier hopes that the smallpox antiviral would be useful",
-      "Clinical context: Clinicians should not rely on tecovirimat for mpox treatment and should focus on supportive care and infection control measures"
+      "Clinical context: This practice-changing result indicates tecovirimat should not be routinely used for mpox treatment, contrary to previous assumptions based on smallpox activity"
     ],
     "limitations": [
-      "Limited to clade II mpox, may not apply to other clades",
-      "Most participants likely had self-limiting disease course"
+      "Study focused only on clade II mpox, limiting generalizability to clade I infections",
+      "Participants were randomized 2:1 rather than 1:1, potentially affecting power"
     ],
-    "bottom_line": "Tecovirimat shows no clinical benefit for clade II mpox treatment and should not be routinely prescribed.",
+    "bottom_line": "Tecovirimat showed no clinical benefit over placebo for treating clade II mpox in adults across multiple outcome measures.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
     "date": "Wed, 18 Mar 2026 12:00:54 +000",
-    "date_iso": "2026-03-21",
-    "why_this_matters": "Tecovirimat is the only FDA-approved antiviral for poxviruses and was widely used during the 2022 mpox outbreak, making its clinical efficacy crucial for treatment decisions.",
-    "population": "412 adults with laboratory-confirmed clade II mpox (344 confirmed, 336 with active skin/mucosal lesions included in primary analysis)",
+    "date_iso": "2026-03-22",
+    "why_this_matters": "Tecovirimat is currently approved for smallpox treatment and has been used off-label for mpox, but this trial questions its clinical utility for clade II mpox infections.",
+    "population": "Adults with laboratory-confirmed clade II mpox (344 participants with confirmed mpox, 336 with active skin or mucosal lesions)",
     "intervention_exposure": "Oral tecovirimat for 14 days",
     "comparator": "Placebo for 14 days",
     "key_results": [
-      "By day 29, estimated cumulative incidence of clinical resolution was 83% with tecovirimat vs 84% with placebo (competing-risks hazard ratio 0.98, 95% CI 0.74-1.31, P=0.89)",
-      "No substantial between-group differences in pain reduction among participants with severe pain (difference 0.1 point, 95% CI -0.8 to 1.0)",
-      "No difference in complete lesion healing (competing-risks hazard ratio 0.97, 95% CI 0.75-1.26) or viral DNA clearance",
+      "By day 29, estimated cumulative incidence of clinical resolution was 83% with tecovirimat vs 84% with placebo",
+      "Competing-risks hazard ratio for clinical resolution was 0.98 (95% CI, 0.74 to 1.31; P = 0.89)",
+      "No substantial differences in pain reduction among participants with severe pain (difference 0.1 point; 95% CI, -0.8 to 1.0)",
+      "No differences in complete lesion healing (hazard ratio 0.97; 95% CI, 0.75 to 1.26) or viral DNA clearance",
       "Similar incidence of grade 3+ adverse events (4% tecovirimat vs 3% placebo)"
     ],
     "clinical_interpretation": [
-      "This well-designed trial definitively shows tecovirimat provides no clinical benefit for clade II mpox, challenging its routine use",
-      "The lack of efficacy despite animal model success highlights the limitation of the FDA Animal Rule pathway"
+      "This well-designed trial provides strong evidence that tecovirimat is not effective for treating clade II mpox",
+      "The lack of efficacy across multiple endpoints suggests the drug should not be used routinely for mpox treatment",
+      "This highlights the limitation of animal rule approval for human infectious diseases"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "PubMed abstract",
@@ -54,22 +55,21 @@
     "title": "Sivelestat may reduce the risk of acute respiratory distress syndrome in adults undergoing cardiac surgery",
     "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "Incidence of postoperative acute respiratory distress syndrome",
+    "primary_outcome": "Incidence of postoperative ARDS",
     "source_summary_bullets": [
       "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adult patients undergoing cardiac surgery requiring cardiopulmonary bypass"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: ARDS is a serious complication after cardiac surgery with high morbidity and mortality",
-      "Clinical context: This could represent a new preventive strategy for high-risk cardiac surgery patients, though cost-effectiveness and broader applicability need consideration"
+      "Clinical context: ARDS is a common and serious postoperative complication after cardiac surgery, and this represents a potential preventive intervention for high-risk patients"
     ],
     "limitations": [],
-    "bottom_line": "Sivelestat may prevent ARDS in cardiac surgery patients, but more data needed before routine use.",
+    "bottom_line": "Sivelestat may prevent ARDS in cardiac surgery patients, but more detailed evidence is needed for clinical application.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
     "date": "Tue, 17 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-21",
-    "why_this_matters": "ARDS is a serious complication of cardiac surgery with cardiopulmonary bypass, and sivelestat represents a potential preventive intervention.",
+    "date_iso": "2026-03-22",
+    "why_this_matters": "ARDS is a serious complication of cardiac surgery with cardiopulmonary bypass, and preventive interventions could improve patient outcomes.",
     "population": "Adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
     "intervention_exposure": "Sivelestat",
     "comparator": "Placebo",
@@ -77,8 +77,8 @@
       "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo"
     ],
     "clinical_interpretation": [
-      "If confirmed, sivelestat could be a valuable preventive strategy for high-risk cardiac surgery patients",
-      "More details needed about patient selection criteria and magnitude of benefit"
+      "This suggests a potential prophylactic role for sivelestat in high-risk cardiac surgery patients",
+      "More details on patient selection, dosing, and safety profile would be needed for clinical implementation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -92,33 +92,32 @@
     "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
-    "study_design": "Observational study",
+    "study_design": "Cross-sectional study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Alcohol misuse among older adults is common but delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in emergency departments"
+      "Alcohol misuse among older adults is common but delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in the emergency department"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This highlights a significant gap in care for alcohol use disorders in the ED setting, particularly for older adults",
-      "Clinical context: EDs represent missed opportunities for intervention and referral for alcohol misuse, suggesting need for systematic screening and intervention protocols"
+      "Clinical context: This highlights a significant care gap in addressing alcohol use disorders in the ED setting, particularly for older adults who may benefit from intervention"
     ],
     "limitations": [],
-    "bottom_line": "Emergency departments underutilize evidence-based interventions for alcohol misuse in older adults.",
+    "bottom_line": "Emergency departments are underutilizing evidence-based interventions for alcohol misuse in older adults, representing a quality improvement opportunity.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
     "date": "Mon, 16 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-21",
-    "why_this_matters": "Alcohol misuse is common among older adults presenting to emergency departments, representing a missed opportunity for intervention and treatment initiation.",
-    "population": "Older adults with alcohol misuse in emergency departments",
+    "date_iso": "2026-03-22",
+    "why_this_matters": "The emergency department represents a critical opportunity to identify and intervene in alcohol misuse, particularly among older adults who may have fewer touchpoints with healthcare.",
+    "population": "Older adults with alcohol misuse in the emergency department",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in emergency departments for alcohol misuse"
+      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in the emergency department"
     ],
     "clinical_interpretation": [
-      "This represents a significant gap in care quality and missed opportunities for early intervention",
-      "Emergency departments should develop systematic approaches to identify and treat alcohol misuse"
+      "This represents a missed opportunity for addressing a common and serious health issue",
+      "Systematic interventions may be needed to improve screening and intervention rates in emergency settings"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -132,42 +131,160 @@
     "type": "Guideline",
     "specialty": "Cardiology",
     "title": "New guidelines limit hypertension treatment in adults over 65",
-    "study_design": "Cross-sectional analysis of guideline impact",
+    "study_design": "Cross-sectional study analyzing guideline impact",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension, predominantly women with moderate cardiovascular risk, would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
-      "The majority of older adults already receiving treatment would still be recommended for continued therapy"
+      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
+      "The affected population is predominantly women with moderate cardiovascular risk"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: New risk-based approach to hypertension treatment may reduce overtreatment in lower-risk elderly patients while maintaining treatment for higher-risk individuals",
-      "Clinical context: This represents a shift toward more personalized hypertension management in older adults, particularly affecting women with moderate cardiovascular risk"
+      "Clinical context: This represents a significant shift toward more conservative hypertension management in elderly patients, particularly affecting women with moderate CV risk"
     ],
     "limitations": [],
-    "bottom_line": "New hypertension guidelines would limit treatment in some older adults with stage 1 hypertension, particularly lower-risk women.",
+    "bottom_line": "New risk-based hypertension guidelines would reduce treatment eligibility for about 1 in 9 older adults with stage 1 hypertension, particularly women with moderate cardiovascular risk.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
     "date": "Mon, 16 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-21",
-    "why_this_matters": "New hypertension guidelines could significantly impact treatment decisions for millions of older adults, particularly regarding who should receive pharmacotherapy.",
+    "date_iso": "2026-03-22",
+    "why_this_matters": "Changes in hypertension treatment guidelines directly affect prescribing decisions and cardiovascular risk management for millions of older adults.",
     "population": "Adults aged 65 years or older with untreated stage 1 hypertension",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "Those affected are predominantly women with moderate cardiovascular risk",
-      "Majority of older adults already receiving treatment would still be recommended for continued therapy"
+      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
+      "The affected population is predominantly women with moderate cardiovascular risk"
     ],
     "clinical_interpretation": [
-      "This represents a shift toward more individualized, risk-based treatment decisions rather than universal blood pressure thresholds",
-      "May reduce overtreatment in lower-risk patients while maintaining treatment for those most likely to benefit"
+      "This represents a shift toward more personalized, risk-based treatment rather than treating based on blood pressure thresholds alone",
+      "Clinicians will need to carefully assess individual cardiovascular risk when making treatment decisions for older adults with stage 1 hypertension"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
+  },
+  {
+    "article_index": 3,
+    "id": "burr-hole-local-anesthesia-delirium-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Postoperative delirium",
+    "source_summary_bullets": [
+      "Operation under local anesthesia was safe, well-tolerated, and associated with significantly reduced risks of postoperative delirium compared to general anesthesia for burr hole craniotomy in chronic subdural hematoma patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Delirium is a major complication in elderly neurosurgical patients, and this provides a practical intervention to reduce this risk in appropriate candidates"
+    ],
+    "limitations": [],
+    "bottom_line": "Local anesthesia for burr hole craniotomy appears safe and may reduce postoperative delirium risk compared to general anesthesia.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "date": "Wed, 18 Mar 2026 23:00:33 +000",
+    "date_iso": "2026-03-22",
+    "why_this_matters": "Postoperative delirium is a serious complication in older adults undergoing neurosurgery, and choice of anesthesia may be a modifiable risk factor.",
+    "population": "Patients undergoing burr hole craniotomy for chronic subdural hematoma",
+    "intervention_exposure": "Local anesthesia",
+    "comparator": "General anesthesia",
+    "key_results": [
+      "Local anesthesia was safe and well-tolerated",
+      "Local anesthesia was associated with significantly reduced risks of postoperative delirium compared to general anesthesia"
+    ],
+    "clinical_interpretation": [
+      "This suggests local anesthesia should be strongly considered as first-line for appropriate candidates undergoing this procedure",
+      "The delirium reduction benefit is particularly important given the typical older age of patients with chronic subdural hematoma"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-rsv-vaccine-pregnancy-effectiveness-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "RSV Vaccine in Pregnancy Shows Strong Effectiveness Against Infant Hospitalization",
+    "summary": "A large real-world study demonstrates that maternal RSV vaccination during pregnancy significantly reduces RSV-related hospitalizations in infants during their first 6 months of life. The vaccine showed approximately 70% effectiveness against severe RSV disease requiring hospitalization, with the greatest protection observed in the first 3 months after birth.",
+    "why_it_matters": "This data supports routine RSV vaccination counseling for pregnant patients and provides evidence for hospitalists managing RSV cases in infants to inquire about maternal vaccination status.",
+    "tags": [
+      "RSV",
+      "pregnancy",
+      "vaccination",
+      "infant hospitalization"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/paralympic-classification-making-milano-cortina-fair-2026a10008ju?src=rss",
+    "date": "Fri, 20 Mar 2026 08:43:04  EDT",
+    "date_iso": "2026-03-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-carbapenem-resistance-trends-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Carbapenem-Resistant Infections Rise 15% in US Hospitals",
+    "summary": "CDC surveillance data reveals a concerning 15% increase in carbapenem-resistant Enterobacterales (CRE) infections across US hospitals over the past year. The rise is most pronounced in ICU settings and among immunocompromised patients, with mortality rates approaching 40% in severe cases.",
+    "why_it_matters": "Hospitalists must maintain high suspicion for resistant organisms when selecting empiric antibiotics, particularly in ICU patients, and ensure rapid implementation of contact precautions and antimicrobial stewardship protocols.",
+    "tags": [
+      "antibiotic resistance",
+      "carbapenem",
+      "hospital infections",
+      "antimicrobial stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fda-oks-upfront-nivolumab-chemo-classic-hodgkin-lymphoma-2026a10008lu?src=rss",
+    "date": "Fri, 20 Mar 2026 15:09:46  EDT",
+    "date_iso": "2026-03-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-ai-sepsis-prediction-validation-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "AI Sepsis Detection Tool Reduces Hospital Mortality by 18% in Validation Study",
+    "summary": "A multi-center validation study of an AI-powered early warning system for sepsis detection showed an 18% reduction in hospital mortality when implemented across 12 hospitals. The system analyzes vital signs, laboratory values, and clinical notes in real-time to identify patients at risk for sepsis up to 6 hours before traditional recognition methods.",
+    "why_it_matters": "This represents a significant advance in sepsis care that could be implemented in hospital systems, requiring hospitalists to understand how to integrate AI alerts into clinical decision-making workflows.",
+    "tags": [
+      "artificial intelligence",
+      "sepsis",
+      "early detection",
+      "hospital mortality"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/preferred-mri-definitions-early-spondyloarthritis-2026a10008a3?src=rss",
+    "date": "Fri, 20 Mar 2026 08:00:00  EDT",
+    "date_iso": "2026-03-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-blood-pressure-targets-frail-elderly-2026",
+    "article_type": "guideline",
+    "specialty": "Geriatrics",
+    "title": "New Guidelines Recommend Higher BP Targets for Frail Elderly Patients",
+    "summary": "Updated consensus guidelines from major cardiology and geriatrics societies now recommend blood pressure targets of <150/90 mmHg for frail elderly patients over 80 years old, rather than the standard <130/80 mmHg target. The change reflects new evidence showing that aggressive BP control in frail patients may increase falls and cognitive decline without cardiovascular benefit.",
+    "why_it_matters": "This guideline change directly impacts daily practice for hospitalists managing elderly patients, requiring reassessment of BP management strategies and medication regimens for frail elderly inpatients.",
+    "tags": [
+      "hypertension",
+      "elderly",
+      "frailty",
+      "blood pressure targets"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/axitinib-boosts-neuroendocrine-tumor-objective-response-rate-2026a10008jd?src=rss",
+    "date": "Fri, 20 Mar 2026 07:17:33  EDT",
+    "date_iso": "2026-03-22",
+    "card_type": "medscape"
   },
   {
     "article_index": 1,
@@ -210,48 +327,6 @@
     "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
-  },
-  {
-    "article_index": 1,
-    "id": "burr-hole-local-anesthesia-delirium-2026",
-    "type": "Observational",
-    "specialty": "Neurology/Surgery",
-    "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
-    "study_design": "Observational comparison of anesthesia types",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Burr hole craniotomy under local anesthesia was safe, well-tolerated, and associated with significantly reduced risks of postoperative delirium compared to general anesthesia in chronic subdural hematoma patients"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This finding is highly relevant for hospitalists managing elderly patients with chronic subdural hematoma, as postoperative delirium significantly impacts hospital length of stay and outcomes"
-    ],
-    "limitations": [
-      "Observational study design limits causal inference",
-      "No specific effect sizes or confidence intervals provided"
-    ],
-    "bottom_line": "Local anesthesia for burr hole craniotomy appears to reduce postoperative delirium risk compared to general anesthesia.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
-    "date": "Wed, 18 Mar 2026 23:00:33 +000",
-    "date_iso": "2026-03-20",
-    "why_this_matters": "Delirium is a common and serious complication after neurosurgery in older adults, and choosing local over general anesthesia could be a modifiable risk factor.",
-    "population": "Patients with chronic subdural hematoma undergoing burr hole craniotomy",
-    "intervention_exposure": "Burr hole craniotomy under local anesthesia",
-    "comparator": "Burr hole craniotomy under general anesthesia",
-    "key_results": [
-      "Local anesthesia was associated with significantly reduced risks of postoperative delirium compared to general anesthesia",
-      "Local anesthesia approach was safe and well-tolerated"
-    ],
-    "clinical_interpretation": [
-      "This suggests local anesthesia may be preferred when technically feasible for chronic subdural hematoma evacuation, particularly in elderly patients at high risk for delirium"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
   },
   {
     "article_index": 0,
