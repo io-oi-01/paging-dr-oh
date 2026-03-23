@@ -56,7 +56,8 @@
     "Small Bowel Obstruction",
     "Acute Pancreatitis",
     "Hepatorenal Syndrome",
-    "Cellulitis and Skin Soft Tissue Infections"
+    "Cellulitis and Skin Soft Tissue Infections",
+    "Hypoglycemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -115,7 +116,8 @@
     "oscar-2013",
     "dapa-ckd-2020",
     "cassini-2019",
-    "recovery-dexa-2021"
+    "recovery-dexa-2021",
+    "horizons-ami-2008"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -193,9 +195,14 @@
     "ms-rsv-vaccine-pregnancy-effectiveness-2026",
     "ms-carbapenem-resistance-trends-2026",
     "ms-ai-sepsis-prediction-validation-2026",
-    "ms-blood-pressure-targets-frail-elderly-2026"
+    "ms-blood-pressure-targets-frail-elderly-2026",
+    "subdural-local-anesthesia-delirium-2026",
+    "ms-tecovirimat-mpox-treatment-2026",
+    "ms-sivelestat-ards-cardiac-surgery-2026",
+    "ms-burr-hole-local-anesthesia-delirium-2026",
+    "ms-neoadjuvant-colon-cancer-guidelines-2026"
   ],
-  "last_run": "2026-03-22",
+  "last_run": "2026-03-23",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -216,7 +223,8 @@
     "Post-Radiation Dermatitis",
     "Radiation Dermatitis",
     "Nails: Onychoschizia",
-    "Erythema Ab Igne"
+    "Erythema Ab Igne",
+    "Mucous Cyst"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -273,6 +281,10 @@
     "ecg-055",
     "cxr-002",
     "ct-031",
-    "clinical-trauma-pelvic-fractures-ii"
+    "clinical-trauma-pelvic-fractures-ii",
+    "ecg-067",
+    "cxr-065",
+    "ct-019",
+    "clinical-author-analytics-2"
   ]
 }

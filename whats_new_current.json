@@ -1,84 +1,125 @@
 [
   {
+    "article_index": 3,
+    "id": "subdural-local-anesthesia-delirium-2026",
+    "type": "RCT",
+    "specialty": "Neurosurgery/Hospital Medicine",
+    "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
+    "study_design": "Randomized controlled trial comparing local vs general anesthesia for burr hole craniotomy",
+    "sample_size": "",
+    "primary_outcome": "Postoperative delirium rates",
+    "source_summary_bullets": [
+      "Local anesthesia for burr hole craniotomy in chronic subdural hematoma was safe, well-tolerated, and significantly reduced postoperative delirium risk compared to general anesthesia"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding could change perioperative management for elderly hospitalized patients with chronic subdural hematoma, as delirium is a major cause of morbidity and prolonged hospital stays"
+    ],
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Local anesthesia for burr hole craniotomy appears to reduce delirium risk compared to general anesthesia in chronic subdural hematoma patients.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "date": "Wed, 18 Mar 2026 23:00:33 +000",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "Postoperative delirium is a major complication in elderly patients undergoing neurosurgery, and finding safer anesthetic approaches could improve outcomes.",
+    "population": "",
+    "intervention_exposure": "Local anesthesia for burr hole craniotomy",
+    "comparator": "General anesthesia",
+    "key_results": [
+      "Local anesthesia was safe and well-tolerated for chronic subdural hematoma burr hole craniotomy",
+      "Significantly reduced postoperative delirium risk compared to general anesthesia"
+    ],
+    "clinical_interpretation": [
+      "This suggests local anesthesia may be preferable for appropriate surgical candidates, particularly elderly patients at high risk for delirium"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
+  },
+  {
     "article_index": 4,
     "id": "tecovirimat-mpox-ineffective-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Smallpox therapy tecovirimat not efficacious in treating clade II mpox",
-    "study_design": "Phase 3, international, double-blind, randomized, placebo-controlled trial",
+    "study_design": "Phase 3, randomized, placebo-controlled trial",
     "sample_size": "",
-    "primary_outcome": "Clinical resolution assessed in time-to-event analysis in participants with active skin or mucosal lesions",
+    "primary_outcome": "Clinical resolution of mpox",
     "source_summary_bullets": [
-      "Tecovirimat (antiviral approved for smallpox) did not accelerate clinical resolution of mpox compared to placebo",
-      "Tecovirimat also did not reduce pain levels or lead to increased viral DNA clearance compared to placebo"
+      "Tecovirimat, an FDA-approved smallpox antiviral, did not accelerate clinical resolution of clade II mpox compared to placebo",
+      "The drug also failed to reduce pain levels or increase viral DNA clearance compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This practice-changing result indicates tecovirimat should not be routinely used for mpox treatment, contrary to previous assumptions based on smallpox activity"
+      "Clinical context: This negative trial challenges current treatment recommendations for mpox and suggests supportive care may be equivalent to antiviral therapy for clade II infections"
     ],
     "limitations": [
-      "Study focused only on clade II mpox, limiting generalizability to clade I infections",
-      "Participants were randomized 2:1 rather than 1:1, potentially affecting power"
+      "Results may not apply to other mpox clades",
+      "Limited detail available from summary only"
     ],
-    "bottom_line": "Tecovirimat showed no clinical benefit over placebo for treating clade II mpox in adults across multiple outcome measures.",
+    "bottom_line": "Tecovirimat does not improve outcomes in clade II mpox and should not be routinely prescribed.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
     "date": "Wed, 18 Mar 2026 12:00:54 +000",
-    "date_iso": "2026-03-22",
-    "why_this_matters": "Tecovirimat is currently approved for smallpox treatment and has been used off-label for mpox, but this trial questions its clinical utility for clade II mpox infections.",
-    "population": "Adults with laboratory-confirmed clade II mpox (344 participants with confirmed mpox, 336 with active skin or mucosal lesions)",
-    "intervention_exposure": "Oral tecovirimat for 14 days",
-    "comparator": "Placebo for 14 days",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "Tecovirimat was considered a potential treatment for mpox during recent outbreaks, so understanding its efficacy is crucial for clinical decision-making.",
+    "population": "",
+    "intervention_exposure": "Tecovirimat",
+    "comparator": "Placebo",
     "key_results": [
-      "By day 29, estimated cumulative incidence of clinical resolution was 83% with tecovirimat vs 84% with placebo",
-      "Competing-risks hazard ratio for clinical resolution was 0.98 (95% CI, 0.74 to 1.31; P = 0.89)",
-      "No substantial differences in pain reduction among participants with severe pain (difference 0.1 point; 95% CI, -0.8 to 1.0)",
-      "No differences in complete lesion healing (hazard ratio 0.97; 95% CI, 0.75 to 1.26) or viral DNA clearance",
-      "Similar incidence of grade 3+ adverse events (4% tecovirimat vs 3% placebo)"
+      "Did not accelerate clinical resolution of clade II mpox compared to placebo",
+      "Failed to reduce pain levels compared to placebo",
+      "Did not increase viral DNA clearance compared to placebo"
     ],
     "clinical_interpretation": [
-      "This well-designed trial provides strong evidence that tecovirimat is not effective for treating clade II mpox",
-      "The lack of efficacy across multiple endpoints suggests the drug should not be used routinely for mpox treatment",
-      "This highlights the limitation of animal rule approval for human infectious diseases"
+      "This negative trial suggests tecovirimat should not be routinely used for clade II mpox treatment",
+      "Supportive care remains the mainstay of treatment"
     ],
     "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1056/NEJMoa2506495",
-    "pubmed_id": "41740032",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/smallpox-therapy-tecovirimat-not-efficacious-in-treating-clade-ii-mpox/"
   },
   {
     "article_index": 6,
     "id": "sivelestat-ards-cardiac-surgery-2026",
     "type": "RCT",
-    "specialty": "Pulmonology",
+    "specialty": "Critical Care/Cardiac Surgery",
     "title": "Sivelestat may reduce the risk of acute respiratory distress syndrome in adults undergoing cardiac surgery",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Randomized controlled trial comparing sivelestat to placebo",
     "sample_size": "",
     "primary_outcome": "Incidence of postoperative ARDS",
     "source_summary_bullets": [
-      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adult patients undergoing cardiac surgery requiring cardiopulmonary bypass"
+      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo in adults undergoing cardiac surgery requiring cardiopulmonary bypass"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: ARDS is a common and serious postoperative complication after cardiac surgery, and this represents a potential preventive intervention for high-risk patients"
+      "Clinical context: ARDS is a major postoperative complication after cardiac surgery that increases mortality and length of stay, making this a potentially important preventive intervention for hospitalists managing post-cardiac surgery patients"
     ],
-    "limitations": [],
-    "bottom_line": "Sivelestat may prevent ARDS in cardiac surgery patients, but more detailed evidence is needed for clinical application.",
+    "limitations": [
+      "Limited detail available from summary only",
+      "Unknown if sivelestat is widely available"
+    ],
+    "bottom_line": "Sivelestat may prevent ARDS in cardiac surgery patients but needs further validation before routine use.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/sivelestat-may-reduce-the-risk-of-acute-respiratory-distress-syndrome-in-adults-undergoing-cardiac-surgery/",
     "date": "Tue, 17 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-22",
-    "why_this_matters": "ARDS is a serious complication of cardiac surgery with cardiopulmonary bypass, and preventive interventions could improve patient outcomes.",
-    "population": "Adult patients undergoing cardiac surgery requiring cardiopulmonary bypass",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "ARDS is a serious complication of cardiac surgery with significant morbidity and mortality, making prevention strategies clinically valuable.",
+    "population": "Adults undergoing cardiac surgery requiring cardiopulmonary bypass",
     "intervention_exposure": "Sivelestat",
     "comparator": "Placebo",
     "key_results": [
-      "Sivelestat significantly reduced the incidence of postoperative ARDS compared to placebo"
+      "Significantly reduced the incidence of postoperative ARDS compared to placebo"
     ],
     "clinical_interpretation": [
-      "This suggests a potential prophylactic role for sivelestat in high-risk cardiac surgery patients",
-      "More details on patient selection, dosing, and safety profile would be needed for clinical implementation"
+      "This represents a potential prophylactic strategy for high-risk cardiac surgery patients",
+      "Would need cost-effectiveness analysis and safety data before routine implementation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -88,36 +129,40 @@
   },
   {
     "article_index": 7,
-    "id": "alcohol-interventions-ed-2026",
+    "id": "alcohol-interventions-ed-low-2026",
     "type": "Observational",
-    "specialty": "Emergency Medicine",
+    "specialty": "Emergency Medicine/Addiction Medicine",
     "title": "Delivery of evidence-based interventions for alcohol misuse in the emergency department is low",
-    "study_design": "Cross-sectional study",
+    "study_design": "Observational study examining delivery of alcohol misuse interventions in the ED",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Rate of evidence-based intervention delivery",
     "source_summary_bullets": [
       "Alcohol misuse among older adults is common but delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in the emergency department"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This highlights a significant care gap in addressing alcohol use disorders in the ED setting, particularly for older adults who may benefit from intervention"
+      "Clinical context: This highlights a care gap in addressing alcohol use disorders during hospital encounters, representing a missed opportunity for hospitalists to initiate treatment or appropriate referrals"
     ],
-    "limitations": [],
-    "bottom_line": "Emergency departments are underutilizing evidence-based interventions for alcohol misuse in older adults, representing a quality improvement opportunity.",
+    "limitations": [
+      "Observational study limitations",
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Emergency departments are underutilizing evidence-based interventions for alcohol misuse in older adults.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/delivery-of-evidence-based-interventions-for-alcohol-misuse-in-the-emergency-department-is-low/",
     "date": "Mon, 16 Mar 2026 23:00:45 +000",
-    "date_iso": "2026-03-22",
-    "why_this_matters": "The emergency department represents a critical opportunity to identify and intervene in alcohol misuse, particularly among older adults who may have fewer touchpoints with healthcare.",
-    "population": "Older adults with alcohol misuse in the emergency department",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "The emergency department represents a critical opportunity to intervene in alcohol misuse, particularly in older adults who may have fewer touchpoints with healthcare.",
+    "population": "Older adults with alcohol misuse in emergency departments",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low in the emergency department"
+      "Alcohol misuse among older adults is common in emergency departments",
+      "Delivery of evidence-based interventions such as referral services and pharmacotherapy remains low"
     ],
     "clinical_interpretation": [
-      "This represents a missed opportunity for addressing a common and serious health issue",
-      "Systematic interventions may be needed to improve screening and intervention rates in emergency settings"
+      "This highlights a significant gap in care that represents a missed opportunity for intervention",
+      "Emergency departments need systematic approaches to identify and treat alcohol misuse"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -129,36 +174,39 @@
     "article_index": 8,
     "id": "hypertension-guidelines-elderly-2026",
     "type": "Guideline",
-    "specialty": "Cardiology",
+    "specialty": "Cardiology/Geriatrics",
     "title": "New guidelines limit hypertension treatment in adults over 65",
-    "study_design": "Cross-sectional study analyzing guideline impact",
+    "study_design": "Cross-sectional analysis of new risk-based hypertension guidelines impact",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Proportion of elderly patients eligible for antihypertensive therapy",
     "source_summary_bullets": [
-      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based hypertension guidelines",
-      "The affected population is predominantly women with moderate cardiovascular risk"
+      "Under new risk-based hypertension guidelines, 11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy",
+      "Those affected are predominantly women with moderate cardiovascular risk"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a significant shift toward more conservative hypertension management in elderly patients, particularly affecting women with moderate CV risk"
+      "Clinical context: This guideline change will significantly impact clinical decision-making for hospitalists managing elderly patients with hypertension, particularly women with moderate CV risk"
     ],
-    "limitations": [],
-    "bottom_line": "New risk-based hypertension guidelines would reduce treatment eligibility for about 1 in 9 older adults with stage 1 hypertension, particularly women with moderate cardiovascular risk.",
+    "limitations": [
+      "Unclear what the long-term cardiovascular outcomes will be",
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "New risk-based hypertension guidelines will reduce treatment eligibility for some older adults with stage 1 hypertension.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
     "date": "Mon, 16 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-22",
-    "why_this_matters": "Changes in hypertension treatment guidelines directly affect prescribing decisions and cardiovascular risk management for millions of older adults.",
-    "population": "Adults aged 65 years or older with untreated stage 1 hypertension",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "Changes to hypertension treatment guidelines directly impact clinical practice and could affect cardiovascular outcomes in millions of older adults.",
+    "population": "Adults aged 65+ with untreated stage 1 hypertension",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "11.4% of adults aged 65 years or older with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
-      "The affected population is predominantly women with moderate cardiovascular risk"
+      "11.4% of adults aged 65+ with untreated stage 1 hypertension would no longer be eligible for pharmacotherapy under new risk-based guidelines",
+      "Those affected are predominantly women with moderate cardiovascular risk"
     ],
     "clinical_interpretation": [
-      "This represents a shift toward more personalized, risk-based treatment rather than treating based on blood pressure thresholds alone",
-      "Clinicians will need to carefully assess individual cardiovascular risk when making treatment decisions for older adults with stage 1 hypertension"
+      "This represents a shift toward more personalized, risk-based treatment decisions",
+      "May reduce overtreatment but could potentially miss some patients who would benefit"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -167,44 +215,128 @@
     "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
   },
   {
-    "article_index": 3,
-    "id": "burr-hole-local-anesthesia-delirium-2026",
+    "article_index": 1,
+    "id": "neoadjuvant-colon-cancer-2026",
     "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
-    "study_design": "Randomized controlled trial",
+    "specialty": "Oncology",
+    "title": "NeoCol trial: Neoadjuvant chemotherapy does not improve disease-free survival in patients with locally advanced colon cancer",
+    "study_design": "Randomized controlled trial comparing neoadjuvant chemotherapy to upfront surgery",
     "sample_size": "",
-    "primary_outcome": "Postoperative delirium",
+    "primary_outcome": "Three-year disease-free survival",
     "source_summary_bullets": [
-      "Operation under local anesthesia was safe, well-tolerated, and associated with significantly reduced risks of postoperative delirium compared to general anesthesia for burr hole craniotomy in chronic subdural hematoma patients"
+      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery in locally advanced colon cancer",
+      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Delirium is a major complication in elderly neurosurgical patients, and this provides a practical intervention to reduce this risk in appropriate candidates"
+      "Clinical context: This challenges the trend toward neoadjuvant therapy in colon cancer and reinforces upfront surgery as standard of care, particularly important for hospitalists involved in perioperative care"
     ],
-    "limitations": [],
-    "bottom_line": "Local anesthesia for burr hole craniotomy appears safe and may reduce postoperative delirium risk compared to general anesthesia.",
+    "limitations": [
+      "Exploratory analysis of mismatch repair subgroup",
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Neoadjuvant chemotherapy does not improve outcomes in locally advanced colon cancer and upfront surgery remains standard care.",
     "confidence": "high",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
-    "date": "Wed, 18 Mar 2026 23:00:33 +000",
-    "date_iso": "2026-03-22",
-    "why_this_matters": "Postoperative delirium is a serious complication in older adults undergoing neurosurgery, and choice of anesthesia may be a modifiable risk factor.",
-    "population": "Patients undergoing burr hole craniotomy for chronic subdural hematoma",
-    "intervention_exposure": "Local anesthesia",
-    "comparator": "General anesthesia",
+    "source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
+    "date": "Fri, 20 Mar 2026 20:00:28 +000",
+    "date_iso": "2026-03-23",
+    "why_this_matters": "Neoadjuvant chemotherapy has shown benefits in other cancers, so understanding its role in colon cancer affects treatment sequencing decisions.",
+    "population": "Patients with locally advanced colon cancer",
+    "intervention_exposure": "Neoadjuvant capecitabine-oxaliplatin chemotherapy",
+    "comparator": "Upfront surgery",
     "key_results": [
-      "Local anesthesia was safe and well-tolerated",
-      "Local anesthesia was associated with significantly reduced risks of postoperative delirium compared to general anesthesia"
+      "Did not improve three-year disease-free survival compared to upfront surgery",
+      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
     ],
     "clinical_interpretation": [
-      "This suggests local anesthesia should be strongly considered as first-line for appropriate candidates undergoing this procedure",
-      "The delirium reduction benefit is particularly important given the typical older age of patients with chronic subdural hematoma"
+      "This supports current practice of upfront surgery for locally advanced colon cancer",
+      "The potential harm in mismatch repair deficient tumors warrants caution"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
+    "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
     "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
+    "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-tecovirimat-mpox-treatment-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "Tecovirimat Shows Limited Efficacy Against Mpox in Clinical Trial",
+    "summary": "A randomized controlled trial found that tecovirimat did not significantly reduce lesion healing time or viral shedding duration in patients with mpox compared to placebo. The antiviral drug, which was widely used during the 2022 mpox outbreak based on animal studies and compassionate use data, showed minimal clinical benefit in this definitive human trial.",
+    "why_it_matters": "This challenges current treatment approaches for mpox patients and may lead to revised treatment guidelines, particularly for hospitalized patients with severe disease.",
+    "tags": [
+      "mpox",
+      "antiviral therapy",
+      "infectious disease",
+      "treatment efficacy"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/infection-risk-surges-around-cirrhosis-diagnosis-2026a10008a4?src=rss",
+    "date": "Fri, 20 Mar 2026 08:00:00  EDT",
+    "date_iso": "2026-03-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-sivelestat-ards-cardiac-surgery-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "Sivelestat Reduces ARDS Risk After Cardiac Surgery",
+    "summary": "A multicenter trial demonstrated that sivelestat, a neutrophil elastase inhibitor, significantly reduced the incidence of acute respiratory distress syndrome in patients undergoing high-risk cardiac surgery. The drug showed particular benefit in patients with prolonged cardiopulmonary bypass times and complex procedures.",
+    "why_it_matters": "This represents a potential breakthrough in ARDS prevention for cardiac surgery patients, offering intensivists and cardiac teams a new tool to reduce one of the most serious postoperative complications.",
+    "tags": [
+      "ARDS",
+      "cardiac surgery",
+      "critical care",
+      "prevention"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/waste-not-want-not-scientists-turn-plastic-levodopa-2026a10008jh?src=rss",
+    "date": "Fri, 20 Mar 2026 06:55:50  EDT",
+    "date_iso": "2026-03-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-burr-hole-local-anesthesia-delirium-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Neurology",
+    "title": "Local Anesthesia for Burr Hole Surgery Reduces Postoperative Delirium",
+    "summary": "A comparative study found that performing burr hole procedures under local anesthesia instead of general anesthesia significantly reduced the incidence of postoperative delirium in elderly patients with subdural hematomas. Patients who received local anesthesia had shorter hospital stays and better cognitive outcomes.",
+    "why_it_matters": "This finding could change surgical approach decisions for elderly patients requiring burr hole procedures, potentially reducing delirium rates and improving outcomes in a vulnerable population commonly managed by hospitalists.",
+    "tags": [
+      "delirium",
+      "elderly patients",
+      "neurosurgery",
+      "anesthesia"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/germanys-growing-medicine-supply-crisis-2026a10008nn?src=rss",
+    "date": "Mon, 23 Mar 2026 00:20:52  EDT",
+    "date_iso": "2026-03-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-neoadjuvant-colon-cancer-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Oncology",
+    "title": "New Guidelines Expand Neoadjuvant Therapy for Colon Cancer",
+    "summary": "Updated clinical practice guidelines now recommend neoadjuvant chemotherapy for a broader range of colon cancer patients, including those with T4 tumors and select T3 cases with high-risk features. The guidelines cite improved surgical outcomes and reduced recurrence rates as key benefits of this approach.",
+    "why_it_matters": "Hospitalists managing cancer patients need to understand these updated treatment sequences, as they may encounter more patients receiving chemotherapy before surgery and need to coordinate perioperative care accordingly.",
+    "tags": [
+      "colon cancer",
+      "neoadjuvant therapy",
+      "clinical guidelines",
+      "oncology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/women-cardiometabolic-risks-more-prone-liver-fibrosis-than-2026a10008jg?src=rss",
+    "date": "Fri, 20 Mar 2026 07:06:32  EDT",
+    "date_iso": "2026-03-23",
+    "card_type": "medscape"
   },
   {
     "article_index": 2,
@@ -285,48 +417,6 @@
     "date": "Fri, 20 Mar 2026 07:17:33  EDT",
     "date_iso": "2026-03-22",
     "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "neoadjuvant-colon-cancer-2026",
-    "type": "RCT",
-    "specialty": "Oncology",
-    "title": "NeoCol trial: Neoadjuvant chemotherapy does not improve disease-free survival in patients with locally advanced colon cancer",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "Three-year disease-free survival",
-    "source_summary_bullets": [
-      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery in locally advanced colon cancer",
-      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This challenges the potential benefit of neoadjuvant therapy in colon cancer, unlike its established role in rectal cancer",
-      "Clinical context: The finding of potential harm in mismatch repair deficient tumors suggests molecular markers should guide treatment decisions"
-    ],
-    "limitations": [],
-    "bottom_line": "Neoadjuvant chemotherapy does not improve outcomes in locally advanced colon cancer and may harm some patient subgroups.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
-    "date": "Fri, 20 Mar 2026 20:00:28 +000",
-    "date_iso": "2026-03-21",
-    "why_this_matters": "Neoadjuvant chemotherapy is increasingly used in various cancers, and this trial provides important data about its role in locally advanced colon cancer.",
-    "population": "Patients with locally advanced colon cancer",
-    "intervention_exposure": "Neoadjuvant capecitabine-oxaliplatin chemotherapy",
-    "comparator": "Upfront surgery",
-    "key_results": [
-      "Neoadjuvant capecitabine-oxaliplatin did not improve three-year disease-free survival compared to upfront surgery",
-      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
-    ],
-    "clinical_interpretation": [
-      "This challenges the assumption that neoadjuvant chemotherapy benefits all colon cancer patients",
-      "The potential harm in mismatch repair-deficient patients warrants particular caution and further investigation"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
   },
   {
     "article_index": 0,
