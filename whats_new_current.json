@@ -1,44 +1,295 @@
 [
   {
-    "article_index": 3,
-    "id": "subdural-local-anesthesia-delirium-2026",
+    "article_index": 4,
+    "id": "apixaban-rivaroxaban-vte-bleeding-2026",
     "type": "RCT",
-    "specialty": "Neurosurgery/Hospital Medicine",
+    "specialty": "Hematology/Thrombosis",
+    "title": "Apixaban reduces bleeding risk versus rivaroxaban in acute venous thromboembolism",
+    "study_design": "Randomized controlled trial comparing apixaban vs rivaroxaban in acute VTE",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Apixaban was associated with substantially lower risk of clinically relevant bleeding compared with rivaroxaban in patients with acute VTE",
+      "Rates of recurrent VTE and death were similar between groups, suggesting comparable efficacy"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This head-to-head DOAC comparison provides direct evidence for anticoagulant selection in acute VTE treatment",
+      "Clinical context: Similar efficacy with reduced bleeding risk supports apixaban as preferred choice when bleeding risk is a concern"
+    ],
+    "limitations": [],
+    "bottom_line": "Apixaban appears to reduce bleeding risk compared to rivaroxaban in acute VTE with similar efficacy, but more details are needed to inform practice changes.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/",
+    "date": "Mon, 23 Mar 2026 10:00:37 +000",
+    "date_iso": "2026-03-24",
+    "why_this_matters": "Direct oral anticoagulants have different bleeding profiles, and selecting the safest option for VTE treatment could reduce hemorrhagic complications while maintaining efficacy.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Apixaban was associated with substantially lower risk of clinically relevant bleeding compared with rivaroxaban",
+      "Rates of recurrent VTE and death were similar between groups"
+    ],
+    "clinical_interpretation": [
+      "This suggests apixaban may be preferable to rivaroxaban for acute VTE treatment when bleeding risk is a primary concern, though the magnitude of benefit and statistical significance are unclear from this summary"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/"
+  },
+  {
+    "article_index": 2,
+    "id": "nephrolithiasis-prevention-interventions-2026",
+    "type": "Review",
+    "specialty": "Nephrology",
+    "title": "Dietary changes and pharmacologic interventions may prevent recurrent nephrolithiasis",
+    "study_design": "Systematic review of interventions for kidney stone recurrence prevention",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Low-strength evidence suggests increased fluid intake, dietary modification (normal-to-high calcium, low protein, low sodium), and pharmacologic therapies may reduce kidney stone recurrence",
+      "Effective pharmacologic interventions include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence-based guidance for counseling patients with recurrent nephrolithiasis on lifestyle and medical interventions",
+      "Clinical context: Low evidence strength highlights need for individualized approach based on stone composition and patient factors"
+    ],
+    "limitations": [
+      "Evidence quality described as low-strength"
+    ],
+    "bottom_line": "Current prevention strategies for recurrent kidney stones have low-quality evidence but include dietary changes and targeted medications based on stone composition.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/",
+    "date": "Mon, 23 Mar 2026 21:00:51 +000",
+    "date_iso": "2026-03-24",
+    "why_this_matters": "Kidney stones are common and recurrent, making effective prevention strategies important for reducing patient morbidity and healthcare costs.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Low-strength evidence suggests increased fluid intake and dietary modification (normal-to-high calcium, low protein, low sodium) may reduce stone recurrence",
+      "Effective pharmacologic interventions include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
+    ],
+    "clinical_interpretation": [
+      "The evidence base for stone prevention remains limited, but the interventions described are generally safe and align with current practice patterns for high-risk patients"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/"
+  },
+  {
+    "article_index": 1,
+    "id": "pegfilgrastim-timing-bone-pain-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "Delaying pegfilgrastim administration reduces bone pain in breast cancer patients",
+    "study_design": "Phase III double-blind placebo-controlled randomized clinical trial at 17 sites with 510 patients",
+    "sample_size": "",
+    "primary_outcome": "Area under the curve (AUC) for pain for days 1 through 5",
+    "source_summary_bullets": [
+      "Administering pegfilgrastim 72 hours after chemotherapy reduced bone pain compared with 24- or 48-hour dosing in women with stage I-III breast cancer",
+      "Patients in the 72-hour group were less likely to experience bone pain and required rescue analgesics less frequently"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Simple timing change can significantly improve quality of life for cancer patients receiving pegfilgrastim",
+      "Clinical context: May reduce need for pain medications and associated side effects while maintaining neutropenia prevention"
+    ],
+    "limitations": [
+      "Risk factors could not be identified to predict incidence, severity, or ability to prevent pegfilgrastim-induced bone pain"
+    ],
+    "bottom_line": "Prophylactic naproxen 500 mg twice daily significantly reduces pegfilgrastim-induced bone pain and should be considered for all patients receiving this medication.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
+    "date": "Mon, 23 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-24",
+    "why_this_matters": "Pegfilgrastim-induced bone pain can lead to treatment discontinuation and suboptimal chemotherapy dosing in cancer patients.",
+    "population": "Patients receiving pegfilgrastim; mean age 55.6 years, 86% female, 68% breast cancer, 10% lung cancer",
+    "intervention_exposure": "Naproxen 500 mg twice daily starting on day of pegfilgrastim administration",
+    "comparator": "Placebo",
+    "key_results": [
+      "Mean AUC for pain was 7.71 for placebo vs 6.04 for naproxen group (P = 0.037)",
+      "Naproxen reduced maximum pain from 3.40 to 2.59 (P = 0.005)",
+      "Pain incidence reduced from 71.3% to 61.1% (P = 0.020)",
+      "Pain duration reduced from 2.40 to 1.92 days (P = 0.009)",
+      "Severe pain reduced from 27.0% to 19.2% (P = 0.048)"
+    ],
+    "clinical_interpretation": [
+      "This provides strong evidence for prophylactic naproxen use in patients receiving pegfilgrastim, with clinically meaningful reductions in both pain severity and incidence"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1200/JCO.2011.37.8364",
+    "pubmed_id": "22508813",
+    "twomm_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/"
+  },
+  {
+    "article_index": 9,
+    "id": "subdural-hematoma-local-anesthesia-delirium-2026",
+    "type": "RCT",
+    "specialty": "Neurosurgery",
     "title": "Burr hole craniotomy for chronic subdural hematoma under local anesthesia may reduce risks of postoperative delirium compared to general anesthesia",
     "study_design": "Randomized controlled trial comparing local vs general anesthesia for burr hole craniotomy",
     "sample_size": "",
-    "primary_outcome": "Postoperative delirium rates",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Local anesthesia for burr hole craniotomy in chronic subdural hematoma was safe, well-tolerated, and significantly reduced postoperative delirium risk compared to general anesthesia"
+      "Operation under local anesthesia was safe, well-tolerated, and associated with significantly reduced risks of postoperative delirium compared to general anesthesia",
+      "Study focused on patients with chronic subdural hematoma requiring burr hole craniotomy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding could change perioperative management for elderly hospitalized patients with chronic subdural hematoma, as delirium is a major cause of morbidity and prolonged hospital stays"
+      "Clinical context: Delirium prevention is crucial in elderly patients who commonly present with chronic subdural hematomas",
+      "Clinical context: Local anesthesia approach may reduce hospital length of stay and complications in appropriate candidates"
     ],
-    "limitations": [
-      "Limited detail available from summary only"
-    ],
-    "bottom_line": "Local anesthesia for burr hole craniotomy appears to reduce delirium risk compared to general anesthesia in chronic subdural hematoma patients.",
+    "limitations": [],
+    "bottom_line": "Local anesthesia for chronic subdural hematoma evacuation appears to reduce delirium risk compared to general anesthesia while maintaining safety.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
     "date": "Wed, 18 Mar 2026 23:00:33 +000",
-    "date_iso": "2026-03-23",
-    "why_this_matters": "Postoperative delirium is a major complication in elderly patients undergoing neurosurgery, and finding safer anesthetic approaches could improve outcomes.",
+    "date_iso": "2026-03-24",
+    "why_this_matters": "Postoperative delirium is a serious complication in elderly patients undergoing neurosurgical procedures, and anesthetic choice may influence this risk.",
     "population": "",
-    "intervention_exposure": "Local anesthesia for burr hole craniotomy",
-    "comparator": "General anesthesia",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "Local anesthesia was safe and well-tolerated for chronic subdural hematoma burr hole craniotomy",
-      "Significantly reduced postoperative delirium risk compared to general anesthesia"
+      "Local anesthesia was associated with significantly reduced risks of postoperative delirium compared to general anesthesia",
+      "Operation under local anesthesia was safe and well-tolerated"
     ],
     "clinical_interpretation": [
-      "This suggests local anesthesia may be preferable for appropriate surgical candidates, particularly elderly patients at high risk for delirium"
+      "Local anesthesia for burr hole craniotomy may be particularly beneficial in elderly patients at high risk for delirium, though patient selection and feasibility considerations are important"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/burr-hole-craniotomy-for-chronic-subdural-hematoma-under-local-anesthesia-may-reduce-risks-of-postoperative-delirium-compared-to-general-anesthesia/"
+  },
+  {
+    "article_index": 7,
+    "id": "neoadjuvant-colon-cancer-neocol-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "NeoCol trial: Neoadjuvant chemotherapy does not improve disease-free survival in patients with locally advanced colon cancer",
+    "study_design": "Randomized controlled trial comparing neoadjuvant chemotherapy vs upfront surgery",
+    "sample_size": "",
+    "primary_outcome": "Three-year disease-free survival",
+    "source_summary_bullets": [
+      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery in locally advanced colon cancer",
+      "Exploratory subgroup analysis revealed that neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Challenges the potential benefit of neoadjuvant approach in colon cancer, unlike established benefits in rectal cancer",
+      "Clinical context: Potential harm in mismatch repair deficient tumors requires careful patient selection if neoadjuvant therapy considered"
+    ],
+    "limitations": [],
+    "bottom_line": "Neoadjuvant chemotherapy should not be routinely used in locally advanced colon cancer based on lack of efficacy and potential harm in certain subgroups.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
+    "date": "Fri, 20 Mar 2026 20:00:28 +000",
+    "date_iso": "2026-03-24",
+    "why_this_matters": "Neoadjuvant chemotherapy strategies in colon cancer could potentially improve outcomes, but this approach differs from established rectal cancer protocols.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery",
+      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
+    ],
+    "clinical_interpretation": [
+      "This trial does not support routine use of neoadjuvant chemotherapy in locally advanced colon cancer, and suggests potential harm in mismatch repair deficient tumors where immunotherapy might be more appropriate"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-covid-cardiovascular-risks-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Cardiology",
+    "title": "COVID-19 Linked to Increased Risk of Heart Attack and Stroke for Years",
+    "summary": "New research indicates that COVID-19 infection significantly increases the risk of cardiovascular events including heart attack and stroke for up to three years post-infection. The study found doubled rates of major adverse cardiovascular events, with risks persisting even in patients who had mild initial COVID-19 symptoms.",
+    "why_it_matters": "Hospitalists and internists should maintain heightened cardiovascular surveillance in COVID-19 survivors and consider more aggressive cardiovascular risk factor modification in this population.",
+    "tags": [
+      "COVID-19",
+      "cardiovascular",
+      "myocardial infarction",
+      "stroke"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/scotland-introduces-newborn-screening-sma-2026a10008pc?src=rss",
+    "date": "Mon, 23 Mar 2026 09:47:51  EDT",
+    "date_iso": "2026-03-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-fda-approves-alzheimers-drug-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Neurology",
+    "title": "FDA Approves New Alzheimer's Drug Despite Mixed Trial Results",
+    "summary": "The FDA has granted approval for a new Alzheimer's disease treatment, marking the third amyloid-targeting therapy approved in recent years. The approval comes despite controversy over the drug's clinical benefits and concerns about potential serious side effects including brain swelling.",
+    "why_it_matters": "Hospitalists may encounter patients on this new therapy and should be aware of potential serious adverse effects that could lead to hospitalization, particularly neurological complications.",
+    "tags": [
+      "Alzheimer's",
+      "FDA approval",
+      "amyloid",
+      "dementia"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/premature-menopause-tied-greater-lifetime-risk-coronary-2026a10008pw?src=rss",
+    "date": "Mon, 23 Mar 2026 07:34:43  EDT",
+    "date_iso": "2026-03-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-antibiotic-resistance-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Rising Antibiotic-Resistant Infections in Hospitals",
+    "summary": "The CDC has issued a health advisory regarding a significant increase in carbapenem-resistant Enterobacterales infections in healthcare facilities nationwide. The alert emphasizes immediate implementation of enhanced infection control measures and antimicrobial stewardship protocols.",
+    "why_it_matters": "This directly impacts hospitalists who manage infectious complications and must implement appropriate isolation precautions and antimicrobial selection strategies to prevent healthcare-associated transmission.",
+    "tags": [
+      "antibiotic resistance",
+      "CDC alert",
+      "carbapenem",
+      "infection control"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hiv-status-affects-pregnancy-related-cardiac-changes-2026a10008pq?src=rss",
+    "date": "Mon, 23 Mar 2026 07:23:25  EDT",
+    "date_iso": "2026-03-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-sepsis-ai-tool-validation-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "AI-Powered Sepsis Detection Tool Shows Promise in Large Hospital Study",
+    "summary": "A multi-center validation study of an artificial intelligence-based sepsis early warning system demonstrated improved detection rates and reduced time to treatment initiation. The AI tool integrated electronic health record data to identify sepsis risk up to 6 hours earlier than traditional methods.",
+    "why_it_matters": "Early sepsis detection remains critical for hospitalists and emergency physicians, and AI-assisted tools may soon become standard practice for improving patient outcomes and reducing sepsis mortality.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "clinical decision support"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/can-exercise-ease-chemobrain-during-chemotherapy-2026a10008pl?src=rss",
+    "date": "Mon, 23 Mar 2026 06:51:03  EDT",
+    "date_iso": "2026-03-24",
+    "card_type": "medscape"
   },
   {
     "article_index": 4,
@@ -213,50 +464,6 @@
     "original_source_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/new-guidelines-limit-hypertension-treatment-in-adults-over-65/"
-  },
-  {
-    "article_index": 1,
-    "id": "neoadjuvant-colon-cancer-2026",
-    "type": "RCT",
-    "specialty": "Oncology",
-    "title": "NeoCol trial: Neoadjuvant chemotherapy does not improve disease-free survival in patients with locally advanced colon cancer",
-    "study_design": "Randomized controlled trial comparing neoadjuvant chemotherapy to upfront surgery",
-    "sample_size": "",
-    "primary_outcome": "Three-year disease-free survival",
-    "source_summary_bullets": [
-      "Neoadjuvant capecitabine-oxaliplatin chemotherapy did not improve three-year disease-free survival compared to upfront surgery in locally advanced colon cancer",
-      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This challenges the trend toward neoadjuvant therapy in colon cancer and reinforces upfront surgery as standard of care, particularly important for hospitalists involved in perioperative care"
-    ],
-    "limitations": [
-      "Exploratory analysis of mismatch repair subgroup",
-      "Limited detail available from summary only"
-    ],
-    "bottom_line": "Neoadjuvant chemotherapy does not improve outcomes in locally advanced colon cancer and upfront surgery remains standard care.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
-    "date": "Fri, 20 Mar 2026 20:00:28 +000",
-    "date_iso": "2026-03-23",
-    "why_this_matters": "Neoadjuvant chemotherapy has shown benefits in other cancers, so understanding its role in colon cancer affects treatment sequencing decisions.",
-    "population": "Patients with locally advanced colon cancer",
-    "intervention_exposure": "Neoadjuvant capecitabine-oxaliplatin chemotherapy",
-    "comparator": "Upfront surgery",
-    "key_results": [
-      "Did not improve three-year disease-free survival compared to upfront surgery",
-      "Exploratory analysis suggested neoadjuvant chemotherapy may reduce overall survival in patients with deficient mismatch repair"
-    ],
-    "clinical_interpretation": [
-      "This supports current practice of upfront surgery for locally advanced colon cancer",
-      "The potential harm in mismatch repair deficient tumors warrants caution"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/neocol-trial-neoadjuvant-chemotherapy-does-not-improve-disease-free-survival-in-patients-with-locally-advanced-colon-cancer/"
   },
   {
     "article_index": 1,
