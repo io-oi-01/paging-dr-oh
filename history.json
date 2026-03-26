@@ -59,7 +59,8 @@
     "Cellulitis and Skin Soft Tissue Infections",
     "Hypoglycemia",
     "Urinary Tract Infection and Pyelonephritis",
-    "Acute Coronary Syndromes"
+    "Acute Coronary Syndromes",
+    "Disseminated Intravascular Coagulation"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -121,7 +122,8 @@
     "recovery-dexa-2021",
     "horizons-ami-2008",
     "canvas-2017",
-    "art-2017"
+    "art-2017",
+    "allhat-2002"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -218,9 +220,11 @@
     "pegfilgrastim-timing-bone-pain-delay-2026",
     "nephrolithiasis-prevention-review-2026",
     "apixaban-rivaroxaban-bleeding-comparison-2026",
-    "neocol-neoadjuvant-colon-cancer-2026"
+    "neocol-neoadjuvant-colon-cancer-2026",
+    "finerenone-type1-diabetes-ckd-2026",
+    "ich-bp-control-functional-recovery-2026"
   ],
-  "last_run": "2026-03-25",
+  "last_run": "2026-03-26",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -244,7 +248,8 @@
     "Erythema Ab Igne",
     "Mucous Cyst",
     "Dissecting Cellulitis",
-    "Keratosis Lichenoides Chronica"
+    "Keratosis Lichenoides Chronica",
+    "Allergic Contact Dermatitis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -313,6 +318,10 @@
     "ecg-079",
     "cxr-075",
     "ct-025",
-    "clinical-necrotic-arachnidism"
+    "clinical-necrotic-arachnidism",
+    "ecg-095",
+    "cxr-034",
+    "ct-083",
+    "clinical-chloroquine-poisoning"
   ]
 }

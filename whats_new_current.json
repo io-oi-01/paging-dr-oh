@@ -1,41 +1,84 @@
 [
   {
-    "article_index": 0,
-    "id": "ich-bp-control-outcomes-2026",
+    "article_index": 2,
+    "id": "finerenone-type1-diabetes-ckd-2026",
+    "type": "RCT",
+    "specialty": "Endocrinology/Nephrology",
+    "title": "Finerenone improves albuminuria in adults with type 1 diabetes and chronic kidney disease",
+    "study_design": "Phase 3 randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Urinary albumin-to-creatinine ratio",
+    "source_summary_bullets": [
+      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo in patients with type 1 diabetes and chronic kidney disease",
+      "The drug had a favorable safety profile but was associated with higher rates of hyperkalemia"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This extends finerenone's proven benefits from type 2 to type 1 diabetes, potentially offering a new therapeutic option for diabetic nephropathy in T1D patients",
+      "Clinical context: Hyperkalemia risk requires careful monitoring and may limit use in patients with advanced CKD or those on ACE inhibitors/ARBs"
+    ],
+    "limitations": [
+      "Study details not available from summary only"
+    ],
+    "bottom_line": "Finerenone shows promise for reducing albuminuria in type 1 diabetes patients with chronic kidney disease but requires careful monitoring for hyperkalemia.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
+    "date": "Wed, 25 Mar 2026 10:00:10 +000",
+    "date_iso": "2026-03-26",
+    "why_this_matters": "Provides evidence for a new therapeutic option for adults with type 1 diabetes and chronic kidney disease, a population with limited treatment choices for slowing kidney disease progression.",
+    "population": "Adults with type 1 diabetes and chronic kidney disease",
+    "intervention_exposure": "Finerenone",
+    "comparator": "Placebo",
+    "key_results": [
+      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo",
+      "Higher rates of hyperkalemia were observed with finerenone"
+    ],
+    "clinical_interpretation": [
+      "This suggests finerenone may offer kidney protection in type 1 diabetes, similar to its proven benefits in type 2 diabetes, though hyperkalemia monitoring would be essential"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/"
+  },
+  {
+    "article_index": 3,
+    "id": "ich-bp-control-functional-recovery-2026",
     "type": "Observational",
-    "specialty": "Neurology",
+    "specialty": "Neurology/Emergency Medicine",
     "title": "Early control of systolic blood pressure following intracerebral hemorrhage may improve functional recovery",
-    "study_design": "Observational study examining blood pressure control patterns in first 24 hours after ICH",
+    "study_design": "Observational study analyzing blood pressure patterns in first 24 hours after ICH",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
-      "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours after intracerebral hemorrhage was associated with better 90-day functional outcomes",
-      "Patients with persistently severe hypertension had the highest risk of poor outcomes"
+      "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours after intracerebral hemorrhage was associated with the best 90-day functional outcomes",
+      "Patients with persistently severe hypertension had the highest risk of poor outcome"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence for aggressive early BP management in ICH patients, which is directly relevant to hospitalist management of stroke patients",
-      "Clinical context: Supports individualized rather than one-size-fits-all BP targets in acute stroke care"
+      "Clinical context: This supports individualized rather than one-size-fits-all blood pressure management in ICH, emphasizing stability over aggressive reduction",
+      "Clinical context: May influence emergency department and ICU protocols for acute ICH blood pressure management"
     ],
     "limitations": [
-      "Observational study design limits causal inference",
-      "Specific blood pressure targets not defined"
+      "Observational design limits causal inference",
+      "Study details not available from summary only"
     ],
-    "bottom_line": "Early, controlled blood pressure management in the first 24 hours after ICH may improve functional recovery compared to allowing persistent severe hypertension.",
+    "bottom_line": "Early control of systolic blood pressure appears beneficial for functional recovery after intracerebral hemorrhage.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/",
     "date": "Tue, 24 Mar 2026 23:00:03 +000",
-    "date_iso": "2026-03-25",
-    "why_this_matters": "Blood pressure management in the acute phase of intracerebral hemorrhage is critical for patient outcomes, but optimal targets remain debated.",
-    "population": "",
+    "date_iso": "2026-03-26",
+    "why_this_matters": "Provides guidance on optimal blood pressure management in the critical first 24 hours after intracerebral hemorrhage, potentially improving patient outcomes.",
+    "population": "Patients with intracerebral hemorrhage",
     "intervention_exposure": "Lower, stable systolic blood pressure range during first 24 hours",
     "comparator": "Persistently severe hypertension",
     "key_results": [
-      "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours after intracerebral hemorrhage was associated with better 90-day functional outcomes",
-      "Patients with persistently severe hypertension had the highest risk of poor outcomes"
+      "Lower, stable systolic blood pressure in first 24 hours was associated with best 90-day functional outcomes",
+      "Persistently severe hypertension was associated with highest risk of poor outcome"
     ],
     "clinical_interpretation": [
-      "This supports early but controlled blood pressure reduction in ICH patients, avoiding both severe hypertension and potentially harmful rapid drops"
+      "This supports early, controlled blood pressure management in intracerebral hemorrhage, though optimal target ranges and methods need further clarification"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -44,59 +87,12 @@
     "twomm_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/"
   },
   {
-    "article_index": 3,
-    "id": "pegfilgrastim-timing-bone-pain-delay-2026",
-    "type": "RCT",
-    "specialty": "Oncology",
-    "title": "Delaying pegfilgrastim administration reduces bone pain in breast cancer patients",
-    "study_design": "Phase III double-blind placebo-controlled randomized clinical trial",
-    "sample_size": "",
-    "primary_outcome": "Area under the curve (AUC) for pain for days 1 through 5",
-    "source_summary_bullets": [
-      "Administering pegfilgrastim 72 hours after chemotherapy reduced bone pain compared with 24- or 48-hour dosing in women with stage I-III breast cancer",
-      "Patients in the 72-hour group were less likely to experience bone pain and required rescue analgesics less frequently"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Practical dosing guidance for hospitalists managing cancer patients receiving pegfilgrastim support",
-      "Clinical context: May reduce symptom burden and analgesic requirements without compromising neutropenia prevention"
-    ],
-    "limitations": [
-      "Peak pain occurred at day 3 for both groups",
-      "Risk factors for pegfilgrastim-induced bone pain could not be identified"
-    ],
-    "bottom_line": "Prophylactic naproxen 500 mg twice daily effectively reduces the incidence and severity of pegfilgrastim-induced bone pain.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
-    "date": "Mon, 23 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-25",
-    "why_this_matters": "Pegfilgrastim-induced bone pain is a common side effect that can lead to treatment discontinuation and suboptimal chemotherapy dosing.",
-    "population": "510 patients at 17 sites, mean age 55.6 years, 86% female, 68% breast cancer, 10% lung cancer",
-    "intervention_exposure": "Naproxen 500 mg twice daily starting on day of pegfilgrastim administration",
-    "comparator": "Placebo",
-    "key_results": [
-      "Mean AUC for pain was 7.71 for placebo vs 6.04 for naproxen group (P = 0.037)",
-      "Naproxen reduced maximum pain from 3.40 to 2.59 (P = 0.005)",
-      "Pain incidence reduced from 71.3% to 61.1% (P = 0.020)",
-      "Pain duration reduced from 2.40 to 1.92 days (P = 0.009)",
-      "Severe pain (>5/10) reduced from 27.0% to 19.2% (P = 0.048)"
-    ],
-    "clinical_interpretation": [
-      "Prophylactic naproxen provides clinically meaningful reduction in pegfilgrastim-induced bone pain with statistical significance across multiple pain measures"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1200/JCO.2011.37.8364",
-    "pubmed_id": "22508813",
-    "twomm_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/"
-  },
-  {
-    "article_index": 4,
-    "id": "nephrolithiasis-prevention-review-2026",
+    "article_index": 7,
+    "id": "nephrolithiasis-prevention-interventions-2026",
     "type": "Review",
-    "specialty": "Nephrology",
+    "specialty": "Nephrology/Internal Medicine",
     "title": "Dietary changes and pharmacologic interventions may prevent recurrent nephrolithiasis",
-    "study_design": "Systematic review of interventions for kidney stone recurrence prevention",
+    "study_design": "Systematic review",
     "sample_size": "",
     "primary_outcome": "Kidney stone recurrence",
     "source_summary_bullets": [
@@ -104,25 +100,25 @@
       "Effective pharmacologic options include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence-based guidance for hospitalists counseling patients on stone recurrence prevention",
-      "Clinical context: Supports both dietary counseling and pharmacologic intervention as valid prevention strategies"
+      "Clinical context: Provides evidence-based guidance for preventing recurrent nephrolithiasis, a common condition in internal medicine practice",
+      "Clinical context: The counterintuitive finding that normal-to-high calcium intake reduces stones can guide patient counseling"
     ],
     "limitations": [
-      "Low-strength evidence base"
+      "Low-strength evidence limits confidence in recommendations"
     ],
-    "bottom_line": "Multiple dietary and pharmacologic interventions show promise for preventing recurrent nephrolithiasis, though evidence quality is limited.",
+    "bottom_line": "Multiple dietary and pharmacologic interventions show promise for preventing recurrent kidney stones, though evidence quality is limited.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/",
     "date": "Mon, 23 Mar 2026 21:00:51 +000",
-    "date_iso": "2026-03-25",
-    "why_this_matters": "Kidney stone recurrence is common and preventable interventions can significantly impact patient quality of life and healthcare costs.",
-    "population": "",
+    "date_iso": "2026-03-26",
+    "why_this_matters": "Provides evidence-based guidance for preventing kidney stone recurrence, a common clinical problem affecting quality of life and healthcare costs.",
+    "population": "Patients with nephrolithiasis at risk for recurrence",
     "intervention_exposure": "Dietary modifications and pharmacologic therapies",
     "comparator": "",
     "key_results": [
-      "Low-strength evidence suggests increased fluid intake, dietary modification (normal-to-high calcium, low protein, low sodium), and pharmacologic therapies may reduce kidney stone recurrence",
-      "Effective pharmacologic options include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
+      "Increased fluid intake, normal-to-high calcium diet, low protein, and low sodium may reduce recurrence",
+      "Effective medications include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
     ],
     "clinical_interpretation": [
       "Despite low-quality evidence, these interventions are generally safe and align with physiologic principles of stone prevention"
@@ -134,12 +130,12 @@
     "twomm_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/"
   },
   {
-    "article_index": 6,
-    "id": "apixaban-rivaroxaban-bleeding-comparison-2026",
+    "article_index": 9,
+    "id": "apixaban-rivaroxaban-vte-bleeding-2026",
     "type": "RCT",
-    "specialty": "Hematology",
+    "specialty": "Hematology/Internal Medicine",
     "title": "Apixaban reduces bleeding risk versus rivaroxaban in acute venous thromboembolism",
-    "study_design": "Randomized controlled trial comparing apixaban vs rivaroxaban in acute VTE",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "Clinically relevant bleeding",
     "source_summary_bullets": [
@@ -147,32 +143,77 @@
       "Rates of recurrent venous thromboembolism and death were similar between groups"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Important head-to-head comparison informing DOAC selection for VTE treatment in hospitalized patients",
-      "Clinical context: May favor apixaban selection in patients at higher bleeding risk while maintaining equivalent efficacy"
+      "Clinical context: This head-to-head comparison provides important safety data for DOAC selection in VTE treatment, with apixaban showing superior bleeding profile",
+      "Clinical context: May influence anticoagulant choice in hospitalized patients with VTE, particularly those at higher bleeding risk"
     ],
-    "limitations": [],
-    "bottom_line": "Apixaban may offer superior bleeding safety compared to rivaroxaban for acute VTE treatment with similar efficacy.",
+    "limitations": [
+      "Study details not available from summary only"
+    ],
+    "bottom_line": "Apixaban appears safer than rivaroxaban for bleeding risk in acute VTE treatment with similar efficacy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/",
     "date": "Mon, 23 Mar 2026 10:00:37 +000",
-    "date_iso": "2026-03-25",
-    "why_this_matters": "Direct oral anticoagulants have different bleeding profiles, and comparative safety data can guide clinical decision-making for VTE treatment.",
-    "population": "",
+    "date_iso": "2026-03-26",
+    "why_this_matters": "Directly compares two commonly used DOACs for acute VTE treatment, providing guidance on anticoagulant selection based on bleeding risk.",
+    "population": "Patients with acute venous thromboembolism",
     "intervention_exposure": "Apixaban",
     "comparator": "Rivaroxaban",
     "key_results": [
-      "Apixaban was associated with substantially lower risk of clinically relevant bleeding compared with rivaroxaban in patients with acute venous thromboembolism",
-      "Rates of recurrent venous thromboembolism and death were similar between groups"
+      "Apixaban associated with substantially lower risk of clinically relevant bleeding compared to rivaroxaban",
+      "Similar rates of recurrent VTE and death between groups"
     ],
     "clinical_interpretation": [
-      "This supports apixaban as potentially safer choice when bleeding risk is a primary concern, given similar efficacy"
+      "This suggests apixaban may be preferable for patients at higher bleeding risk, while maintaining equivalent efficacy for VTE treatment"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/"
+  },
+  {
+    "article_index": 6,
+    "id": "pegfilgrastim-timing-bone-pain-2026",
+    "type": "RCT",
+    "specialty": "Oncology/Hematology",
+    "title": "Delaying pegfilgrastim administration reduces bone pain in breast cancer patients",
+    "study_design": "Randomized controlled trial comparing different pegfilgrastim timing",
+    "sample_size": "",
+    "primary_outcome": "Bone pain incidence",
+    "source_summary_bullets": [
+      "Administering pegfilgrastim 72 hours after chemotherapy reduced bone pain compared with 24- or 48-hour dosing in women with stage I–III breast cancer",
+      "Patients in the 72-hour group were less likely to experience bone pain and required rescue analgesics less frequently"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This simple timing modification can significantly improve quality of life for cancer patients receiving pegfilgrastim support",
+      "Clinical context: May need to verify that delayed administration doesn't compromise neutropenia protection, though this appears to be maintained"
+    ],
+    "limitations": [
+      "Study details not available from summary only"
+    ],
+    "bottom_line": "Delaying pegfilgrastim to 72 hours after chemotherapy reduces bone pain while maintaining effectiveness in breast cancer patients.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
+    "date": "Mon, 23 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-26",
+    "why_this_matters": "Addresses a common and distressing side effect of pegfilgrastim that affects quality of life during breast cancer treatment.",
+    "population": "Women with stage I-III breast cancer receiving chemotherapy",
+    "intervention_exposure": "Pegfilgrastim administered 72 hours after chemotherapy",
+    "comparator": "Pegfilgrastim at 24 or 48 hours after chemotherapy",
+    "key_results": [
+      "72-hour dosing reduced bone pain compared to 24- or 48-hour dosing",
+      "Patients in 72-hour group less likely to experience bone pain and required fewer rescue analgesics"
+    ],
+    "clinical_interpretation": [
+      "This simple timing adjustment could significantly improve patient comfort during chemotherapy without compromising neutropenia prevention"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/"
   },
   {
     "article_index": 9,
