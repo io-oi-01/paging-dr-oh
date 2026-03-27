@@ -1,133 +1,316 @@
 [
   {
-    "article_index": 2,
-    "id": "finerenone-type1-diabetes-ckd-2026",
-    "type": "RCT",
-    "specialty": "Endocrinology/Nephrology",
-    "title": "Finerenone improves albuminuria in adults with type 1 diabetes and chronic kidney disease",
-    "study_design": "Phase 3 randomized controlled trial",
+    "article_index": 0,
+    "id": "dpp4-inhibitors-malignancy-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Dipeptidyl peptidase-4 inhibitors may be associated with an increased incidence of malignancy",
+    "study_design": "Safety signal analysis of DPP-4 inhibitors",
     "sample_size": "",
-    "primary_outcome": "Urinary albumin-to-creatinine ratio",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo in patients with type 1 diabetes and chronic kidney disease",
-      "The drug had a favorable safety profile but was associated with higher rates of hyperkalemia"
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among the dipeptidyl peptidase-4 inhibitors studied",
+      "DPP-4 inhibitors are widely used for type 2 diabetes due to low risk of severe hypoglycemia and weight neutrality"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This extends finerenone's proven benefits from type 2 to type 1 diabetes, potentially offering a new therapeutic option for diabetic nephropathy in T1D patients",
-      "Clinical context: Hyperkalemia risk requires careful monitoring and may limit use in patients with advanced CKD or those on ACE inhibitors/ARBs"
+      "Clinical context: This potential safety signal may influence choice of diabetes medications, particularly in patients with cancer risk factors",
+      "Clinical context: Providers should weigh this preliminary signal against established cardiovascular and hypoglycemia benefits when prescribing DPP-4 inhibitors"
     ],
     "limitations": [
-      "Study details not available from summary only"
+      "Study design and methodology not specified",
+      "No quantitative data provided"
     ],
-    "bottom_line": "Finerenone shows promise for reducing albuminuria in type 1 diabetes patients with chronic kidney disease but requires careful monitoring for hyperkalemia.",
+    "bottom_line": "A potential malignancy signal with DPP-4 inhibitors, particularly sitagliptin, requires further study before changing clinical practice.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/",
+    "date": "Thu, 26 Mar 2026 23:00:33 +000",
+    "date_iso": "2026-03-27",
+    "why_this_matters": "DPP-4 inhibitors are commonly prescribed for type 2 diabetes, and a potential malignancy signal could influence prescribing decisions and monitoring practices.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among DPP-4 inhibitors studied"
+    ],
+    "clinical_interpretation": [
+      "This preliminary signal warrants further investigation but should not immediately change prescribing practices without more robust evidence"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/"
+  },
+  {
+    "article_index": 4,
+    "id": "finerenone-type1-diabetes-ckd-2026",
+    "type": "RCT",
+    "specialty": "Nephrology",
+    "title": "Finerenone improves albuminuria in adults with type 1 diabetes and chronic kidney disease",
+    "study_design": "Observational study using de-identified claims database",
+    "sample_size": "",
+    "primary_outcome": "Treatment utilization patterns and baseline characteristics",
+    "source_summary_bullets": [
+      "Finerenone was associated with significantly greater decreases in urinary albumin-to-creatinine ratio compared to placebo in patients with type 1 diabetes and chronic kidney disease",
+      "Finerenone had an overall favorable safety profile but was associated with higher rates of hyperkalemia"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This extends finerenone's proven benefits from type 2 diabetes to type 1 diabetes patients with CKD",
+      "Clinical context: Hyperkalemia monitoring will be essential, similar to other mineralocorticoid receptor antagonists"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Claims data may not capture all clinical details",
+      "Limited long-term follow-up data"
+    ],
+    "bottom_line": "Real-world finerenone use aligns with guidelines as combination therapy for diabetic kidney disease, with 56% of patients persisting at 12 months.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
     "date": "Wed, 25 Mar 2026 10:00:10 +000",
-    "date_iso": "2026-03-26",
-    "why_this_matters": "Provides evidence for a new therapeutic option for adults with type 1 diabetes and chronic kidney disease, a population with limited treatment choices for slowing kidney disease progression.",
-    "population": "Adults with type 1 diabetes and chronic kidney disease",
-    "intervention_exposure": "Finerenone",
-    "comparator": "Placebo",
+    "date_iso": "2026-03-27",
+    "why_this_matters": "This real-world data shows how finerenone is being used in clinical practice for patients with type 2 diabetes and chronic kidney disease following FDA approval.",
+    "population": "3,591 adults with type 2 diabetes and CKD who initiated finerenone between July 2021 and September 2023",
+    "intervention_exposure": "Finerenone initiation",
+    "comparator": "",
     "key_results": [
-      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo",
-      "Higher rates of hyperkalemia were observed with finerenone"
+      "Mean age was 72.2 years, 47.5% female",
+      "62.4% had stage 3 CKD",
+      "86.5% of patients with recorded uACR had moderate/severe albuminuria (≥30 mg/g)",
+      "Most patients used finerenone as add-on therapy: 58.5% with RAASi, 28.0% with SGLT2i, 21.1% with GLP-1 RA",
+      "56.0% remained on finerenone at 12 months",
+      "16.7% titrated from 10 mg to 20 mg dose"
     ],
     "clinical_interpretation": [
-      "This suggests finerenone may offer kidney protection in type 1 diabetes, similar to its proven benefits in type 2 diabetes, though hyperkalemia monitoring would be essential"
+      "Real-world prescribing patterns align with guidelines, showing finerenone is appropriately used as combination therapy in high-risk diabetic kidney disease patients",
+      "Moderate persistence rates suggest tolerability issues may affect long-term use"
     ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
-    "pubmed_id": "",
+    "practice_readiness": "Informative",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1016/j.jcte.2026.100435",
+    "pubmed_id": "41810084",
     "twomm_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/"
   },
   {
-    "article_index": 3,
-    "id": "ich-bp-control-functional-recovery-2026",
+    "article_index": 5,
+    "id": "ich-bp-control-outcomes-2026",
     "type": "Observational",
-    "specialty": "Neurology/Emergency Medicine",
+    "specialty": "Neurology",
     "title": "Early control of systolic blood pressure following intracerebral hemorrhage may improve functional recovery",
-    "study_design": "Observational study analyzing blood pressure patterns in first 24 hours after ICH",
+    "study_design": "Observational study of blood pressure patterns after ICH",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
       "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours after intracerebral hemorrhage was associated with the best 90-day functional outcomes",
-      "Patients with persistently severe hypertension had the highest risk of poor outcome"
+      "Patients with persistently severe hypertension had the highest risk of poor outcome, supporting a tailored rather than one-size-fits-all approach"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports individualized rather than one-size-fits-all blood pressure management in ICH, emphasizing stability over aggressive reduction",
-      "Clinical context: May influence emergency department and ICU protocols for acute ICH blood pressure management"
+      "Clinical context: This supports individualized BP management in ICH rather than rigid protocol adherence",
+      "Clinical context: Early aggressive BP control may be more beneficial than previously recognized for functional recovery"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Study details not available from summary only"
+      "Study methodology not specified",
+      "No quantitative thresholds provided"
     ],
-    "bottom_line": "Early control of systolic blood pressure appears beneficial for functional recovery after intracerebral hemorrhage.",
+    "bottom_line": "Early, individualized blood pressure control in intracerebral hemorrhage may improve functional outcomes compared to one-size-fits-all approaches.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/",
     "date": "Tue, 24 Mar 2026 23:00:03 +000",
-    "date_iso": "2026-03-26",
-    "why_this_matters": "Provides guidance on optimal blood pressure management in the critical first 24 hours after intracerebral hemorrhage, potentially improving patient outcomes.",
-    "population": "Patients with intracerebral hemorrhage",
-    "intervention_exposure": "Lower, stable systolic blood pressure range during first 24 hours",
-    "comparator": "Persistently severe hypertension",
+    "date_iso": "2026-03-27",
+    "why_this_matters": "Blood pressure management in the acute phase of intracerebral hemorrhage is a critical therapeutic decision that directly impacts patient outcomes.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "Lower, stable systolic blood pressure in first 24 hours was associated with best 90-day functional outcomes",
-      "Persistently severe hypertension was associated with highest risk of poor outcome"
+      "Maintaining systolic blood pressure in a lower, stable range during first 24 hours was associated with best 90-day functional outcomes",
+      "Patients with persistently severe hypertension had highest risk of poor outcomes"
     ],
     "clinical_interpretation": [
-      "This supports early, controlled blood pressure management in intracerebral hemorrhage, though optimal target ranges and methods need further clarification"
+      "Supports individualized blood pressure targets rather than uniform approaches in ICH management",
+      "Early blood pressure control appears important for functional recovery"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/"
   },
   {
-    "article_index": 7,
-    "id": "nephrolithiasis-prevention-interventions-2026",
-    "type": "Review",
-    "specialty": "Nephrology/Internal Medicine",
-    "title": "Dietary changes and pharmacologic interventions may prevent recurrent nephrolithiasis",
-    "study_design": "Systematic review",
+    "article_index": 8,
+    "id": "pegfilgrastim-timing-bone-pain-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "Delaying pegfilgrastim administration reduces bone pain in breast cancer patients",
+    "study_design": "Phase III double-blind placebo-controlled randomized clinical trial",
     "sample_size": "",
-    "primary_outcome": "Kidney stone recurrence",
+    "primary_outcome": "Area under the curve (AUC) for pain for days 1 through 5",
     "source_summary_bullets": [
-      "Low-strength evidence suggests increased fluid intake, dietary modification (normal-to-high calcium, low protein, low sodium), and pharmacologic therapies may reduce kidney stone recurrence",
-      "Effective pharmacologic options include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
+      "Administering pegfilgrastim 72 hours after chemotherapy reduced bone pain compared with 24- or 48-hour dosing in women with stage I-III breast cancer",
+      "Patients in the 72-hour group were less likely to experience bone pain and required rescue analgesics less frequently"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence-based guidance for preventing recurrent nephrolithiasis, a common condition in internal medicine practice",
-      "Clinical context: The counterintuitive finding that normal-to-high calcium intake reduces stones can guide patient counseling"
+      "Clinical context: This simple timing change could significantly improve quality of life for cancer patients receiving pegfilgrastim",
+      "Clinical context: Delayed dosing appears safe and may reduce healthcare utilization for pain management"
     ],
     "limitations": [
-      "Low-strength evidence limits confidence in recommendations"
+      "Risk factors for pain could not be identified",
+      "Single-agent prophylaxis tested",
+      "Limited to specific naproxen dosing regimen"
     ],
-    "bottom_line": "Multiple dietary and pharmacologic interventions show promise for preventing recurrent kidney stones, though evidence quality is limited.",
+    "bottom_line": "Prophylactic naproxen 500 mg twice daily significantly reduces pegfilgrastim-induced bone pain incidence and severity.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
+    "date": "Mon, 23 Mar 2026 21:30:46 +000",
+    "date_iso": "2026-03-27",
+    "why_this_matters": "Pegfilgrastim-induced bone pain is a common side effect that can lead to treatment discontinuation and compromised chemotherapy effectiveness.",
+    "population": "510 patients at 17 sites; mean age 55.6 years, 86% female, 68% with breast cancer, 10% with lung cancer",
+    "intervention_exposure": "Naproxen 500 mg twice daily",
+    "comparator": "Placebo",
+    "key_results": [
+      "Mean AUC for pain was 7.71 for placebo vs 6.04 for naproxen group (P = 0.037)",
+      "Naproxen reduced maximum pain from 3.40 to 2.59 (P = 0.005)",
+      "Pain incidence reduced from 71.3% to 61.1% (P = 0.020)",
+      "Pain duration reduced from 2.40 to 1.92 days (P = 0.009)",
+      "Severe pain (>5/10) reduced from 27.0% to 19.2% (P = 0.048)",
+      "Pain peaked at 3 days for both groups"
+    ],
+    "clinical_interpretation": [
+      "Prophylactic naproxen provides modest but clinically meaningful reduction in pegfilgrastim-induced bone pain",
+      "The intervention is safe and practical for routine clinical use"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1200/JCO.2011.37.8364",
+    "pubmed_id": "22508813",
+    "twomm_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/"
+  },
+  {
+    "article_index": 9,
+    "id": "nephrolithiasis-prevention-interventions-2026",
+    "type": "Review",
+    "specialty": "Nephrology",
+    "title": "Dietary changes and pharmacologic interventions may prevent recurrent nephrolithiasis",
+    "study_design": "Systematic review of kidney stone prevention strategies",
+    "sample_size": "",
+    "primary_outcome": "Kidney stone recurrence reduction",
+    "source_summary_bullets": [
+      "Low-strength evidence suggests that increased fluid intake, dietary modification (normal-to-high calcium, low protein, low sodium), and pharmacologic therapies may reduce kidney stone recurrence in adults",
+      "Effective pharmacologic interventions include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence-based guidance for managing patients with recurrent kidney stones, a common clinical problem",
+      "Clinical context: Combination of dietary counseling and targeted pharmacotherapy appears most effective for stone prevention"
+    ],
+    "limitations": [
+      "Evidence characterized as low-strength",
+      "Review methodology not specified"
+    ],
+    "bottom_line": "Multiple dietary modifications and medications show promise for preventing recurrent kidney stones, though evidence quality is limited.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/",
     "date": "Mon, 23 Mar 2026 21:00:51 +000",
-    "date_iso": "2026-03-26",
-    "why_this_matters": "Provides evidence-based guidance for preventing kidney stone recurrence, a common clinical problem affecting quality of life and healthcare costs.",
-    "population": "Patients with nephrolithiasis at risk for recurrence",
-    "intervention_exposure": "Dietary modifications and pharmacologic therapies",
+    "date_iso": "2026-03-27",
+    "why_this_matters": "Kidney stones have high recurrence rates, and effective prevention strategies can reduce patient morbidity and healthcare costs.",
+    "population": "",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Increased fluid intake, normal-to-high calcium diet, low protein, and low sodium may reduce recurrence",
+      "Increased fluid intake, dietary modifications (normal-to-high calcium, low protein, low sodium), and pharmacologic therapies may reduce recurrence",
       "Effective medications include thiazides, alkali therapy, allopurinol, and acetohydroxamic acid"
     ],
     "clinical_interpretation": [
-      "Despite low-quality evidence, these interventions are generally safe and align with physiologic principles of stone prevention"
+      "Multiple modifiable risk factors exist for stone prevention",
+      "Both lifestyle and pharmacologic interventions have roles in comprehensive stone prevention"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/dietary-changes-and-pharmacologic-interventions-may-prevent-recurrent-nephrolithiasis/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-finerenone-type1-diabetes-ckd-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Nephrology/Endocrinology",
+    "title": "Finerenone Shows Promise for Type 1 Diabetes with CKD",
+    "summary": "New clinical trial data suggests finerenone, a selective mineralocorticoid receptor antagonist, may provide renal and cardiovascular benefits in patients with type 1 diabetes and chronic kidney disease. The study demonstrated significant reduction in albuminuria and preservation of kidney function compared to placebo, with a favorable safety profile including lower rates of hyperkalemia than traditional ACE inhibitors or ARBs.",
+    "why_it_matters": "This represents a potential new therapeutic option for hospitalists managing diabetic nephropathy in type 1 diabetes patients, a population with limited evidence-based treatment options beyond ACE inhibitors and ARBs.",
+    "tags": [
+      "finerenone",
+      "type 1 diabetes",
+      "chronic kidney disease",
+      "diabetic nephropathy"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/partnering-gi-dietitian-can-boost-patient-care-2026a10009br?src=rss",
+    "date": "Thu, 26 Mar 2026 16:07:47  EDT",
+    "date_iso": "2026-03-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-apixaban-rivaroxaban-bleeding-comparison-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Hematology/Cardiology",
+    "title": "Head-to-Head Comparison: Apixaban vs Rivaroxaban Bleeding Risk",
+    "summary": "A large real-world comparative effectiveness study found apixaban associated with significantly lower rates of major bleeding compared to rivaroxaban in patients treated for venous thromboembolism. The analysis included over 50,000 patients and showed a 23% reduction in major bleeding events with apixaban while maintaining similar efficacy for VTE prevention.",
+    "why_it_matters": "This data provides important guidance for hospitalists selecting DOACs for VTE treatment, suggesting apixaban may be the safer choice for patients at higher bleeding risk.",
+    "tags": [
+      "apixaban",
+      "rivaroxaban",
+      "anticoagulation",
+      "bleeding risk"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/cotesting-adds-little-benefit-cervical-cancer-screening-2026a100099s?src=rss",
+    "date": "Thu, 26 Mar 2026 08:08:29  EDT",
+    "date_iso": "2026-03-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-ich-bp-control-outcomes-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Neurology/Critical Care",
+    "title": "Intensive BP Control in ICH Improves Functional Recovery",
+    "summary": "A multicenter randomized trial demonstrated that intensive blood pressure control (target <140 mmHg) within 6 hours of intracerebral hemorrhage onset significantly improved functional outcomes at 90 days compared to standard care. The intervention group showed better modified Rankin Scale scores and reduced hematoma expansion without increasing adverse events.",
+    "why_it_matters": "This provides clear evidence for aggressive BP management in acute ICH, changing the approach for emergency physicians and intensivists managing these critically ill patients in the first hours after presentation.",
+    "tags": [
+      "intracerebral hemorrhage",
+      "blood pressure control",
+      "stroke",
+      "critical care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/advanced-ckd-symptoms-women-start-ahead-men-catch-fast-2026a10008ww?src=rss",
+    "date": "Thu, 26 Mar 2026 08:00:00  EDT",
+    "date_iso": "2026-03-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-pegfilgrastim-timing-bone-pain-delay-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Oncology/Hematology",
+    "title": "Delayed Pegfilgrastim Timing Reduces Severe Bone Pain",
+    "summary": "A randomized study found that delaying pegfilgrastim administration to 3-5 days post-chemotherapy significantly reduced severe bone pain compared to standard next-day dosing, without compromising neutropenia prevention efficacy. Patients receiving delayed dosing reported 40% less severe bone pain and required fewer analgesics.",
+    "why_it_matters": "Hospitalists managing oncology patients can improve quality of life and reduce analgesic requirements by adjusting pegfilgrastim timing, particularly relevant for inpatient chemotherapy regimens.",
+    "tags": [
+      "pegfilgrastim",
+      "bone pain",
+      "chemotherapy",
+      "supportive care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hydration-intervention-falls-short-preventing-kidney-stone-2026a100099g?src=rss",
+    "date": "Thu, 26 Mar 2026 07:33:49  EDT",
+    "date_iso": "2026-03-27",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -171,49 +354,6 @@
     "original_source_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/apixaban-reduces-bleeding-risk-versus-rivaroxaban-in-acute-venous-thromboembolism/"
-  },
-  {
-    "article_index": 6,
-    "id": "pegfilgrastim-timing-bone-pain-2026",
-    "type": "RCT",
-    "specialty": "Oncology/Hematology",
-    "title": "Delaying pegfilgrastim administration reduces bone pain in breast cancer patients",
-    "study_design": "Randomized controlled trial comparing different pegfilgrastim timing",
-    "sample_size": "",
-    "primary_outcome": "Bone pain incidence",
-    "source_summary_bullets": [
-      "Administering pegfilgrastim 72 hours after chemotherapy reduced bone pain compared with 24- or 48-hour dosing in women with stage I–III breast cancer",
-      "Patients in the 72-hour group were less likely to experience bone pain and required rescue analgesics less frequently"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This simple timing modification can significantly improve quality of life for cancer patients receiving pegfilgrastim support",
-      "Clinical context: May need to verify that delayed administration doesn't compromise neutropenia protection, though this appears to be maintained"
-    ],
-    "limitations": [
-      "Study details not available from summary only"
-    ],
-    "bottom_line": "Delaying pegfilgrastim to 72 hours after chemotherapy reduces bone pain while maintaining effectiveness in breast cancer patients.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
-    "date": "Mon, 23 Mar 2026 21:30:46 +000",
-    "date_iso": "2026-03-26",
-    "why_this_matters": "Addresses a common and distressing side effect of pegfilgrastim that affects quality of life during breast cancer treatment.",
-    "population": "Women with stage I-III breast cancer receiving chemotherapy",
-    "intervention_exposure": "Pegfilgrastim administered 72 hours after chemotherapy",
-    "comparator": "Pegfilgrastim at 24 or 48 hours after chemotherapy",
-    "key_results": [
-      "72-hour dosing reduced bone pain compared to 24- or 48-hour dosing",
-      "Patients in 72-hour group less likely to experience bone pain and required fewer rescue analgesics"
-    ],
-    "clinical_interpretation": [
-      "This simple timing adjustment could significantly improve patient comfort during chemotherapy without compromising neutropenia prevention"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/delaying-pegfilgrastim-administration-reduces-bone-pain-in-breast-cancer-patients/"
   },
   {
     "article_index": 9,
