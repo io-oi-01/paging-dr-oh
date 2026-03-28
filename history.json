@@ -61,7 +61,8 @@
     "Urinary Tract Infection and Pyelonephritis",
     "Acute Coronary Syndromes",
     "Disseminated Intravascular Coagulation",
-    "Alcohol Withdrawal Syndrome"
+    "Alcohol Withdrawal Syndrome",
+    "Myasthenia Gravis Crisis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -125,7 +126,8 @@
     "canvas-2017",
     "art-2017",
     "allhat-2002",
-    "inbuild-2019"
+    "inbuild-2019",
+    "impact-2018"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -229,9 +231,15 @@
     "ms-finerenone-type1-diabetes-ckd-2026",
     "ms-apixaban-rivaroxaban-bleeding-comparison-2026",
     "ms-ich-bp-control-outcomes-2026",
-    "ms-pegfilgrastim-timing-bone-pain-delay-2026"
+    "ms-pegfilgrastim-timing-bone-pain-delay-2026",
+    "maternal-prothrombin-time-neonatal-sepsis-2026",
+    "acsm-resistance-training-guidelines-2026",
+    "ms-fda-warning-cardiac-devices-2026",
+    "ms-new-sepsis-guidelines-2026",
+    "ms-covid-variant-hospitalizations-2026",
+    "ms-diabetes-medication-shortage-2026"
   ],
-  "last_run": "2026-03-27",
+  "last_run": "2026-03-28",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -257,7 +265,8 @@
     "Dissecting Cellulitis",
     "Keratosis Lichenoides Chronica",
     "Allergic Contact Dermatitis",
-    "Erythema Dyschromicum Perstans"
+    "Erythema Dyschromicum Perstans",
+    "Drug Reaction: Fixed"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -334,6 +343,10 @@
     "ecg-112",
     "cxr-018",
     "ct-078",
-    "clinical-out-of-sight"
+    "clinical-out-of-sight",
+    "ecg-119",
+    "cxr-048",
+    "ct-011",
+    "clinical-hyperammoniacal-encephalopathy"
   ]
 }
