@@ -62,7 +62,8 @@
     "Acute Coronary Syndromes",
     "Disseminated Intravascular Coagulation",
     "Alcohol Withdrawal Syndrome",
-    "Myasthenia Gravis Crisis"
+    "Myasthenia Gravis Crisis",
+    "Malignant Spinal Cord Compression"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -127,7 +128,8 @@
     "art-2017",
     "allhat-2002",
     "inbuild-2019",
-    "impact-2018"
+    "impact-2018",
+    "orchid-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -237,9 +239,16 @@
     "ms-fda-warning-cardiac-devices-2026",
     "ms-new-sepsis-guidelines-2026",
     "ms-covid-variant-hospitalizations-2026",
-    "ms-diabetes-medication-shortage-2026"
+    "ms-diabetes-medication-shortage-2026",
+    "dpp4-inhibitors-malignancy-risk-2026",
+    "ich-bp-control-functional-outcomes-2026",
+    "maternal-prothrombin-neonatal-sepsis-2026",
+    "ms-cdc-bird-flu-human-case-2026",
+    "ms-fda-ozempic-counterfeit-warning-2026",
+    "ms-stroke-guidelines-update-2026",
+    "ms-pneumonia-treatment-duration-study-2026"
   ],
-  "last_run": "2026-03-28",
+  "last_run": "2026-03-29",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -266,7 +275,8 @@
     "Keratosis Lichenoides Chronica",
     "Allergic Contact Dermatitis",
     "Erythema Dyschromicum Perstans",
-    "Drug Reaction: Fixed"
+    "Drug Reaction: Fixed",
+    "Eosinophilic Cellulitis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -347,6 +357,10 @@
     "ecg-119",
     "cxr-048",
     "ct-011",
-    "clinical-hyperammoniacal-encephalopathy"
+    "clinical-hyperammoniacal-encephalopathy",
+    "ecg-015",
+    "cxr-023",
+    "ct-054",
+    "clinical-humongous-hiv-extravaganza"
   ]
 }
