@@ -5,31 +5,38 @@
     "type": "Observational",
     "specialty": "Endocrinology",
     "title": "Dipeptidyl peptidase-4 inhibitors may be associated with an increased incidence of malignancy",
-    "study_design": "Safety analysis of DPP-4 inhibitors examining malignancy risk",
+    "study_design": "Safety signal analysis of DPP-4 inhibitors",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among the dipeptidyl peptidase-4 inhibitors studied"
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among the dipeptidyl peptidase-4 inhibitors studied",
+      "DPP-4 inhibitors may be associated with increased incidence of malignancy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This safety signal may influence choice of diabetes medications, particularly in patients with cancer risk factors or history"
+      "Clinical context: This finding may influence medication selection for type 2 diabetes, particularly in patients with cancer risk factors or history",
+      "Clinical context: Consider discussing cancer risk when prescribing DPP-4 inhibitors, especially sitagliptin"
     ],
-    "limitations": [],
-    "bottom_line": "DPP-4 inhibitors, especially sitagliptin, may be associated with increased malignancy risk, requiring further investigation.",
+    "limitations": [
+      "Observational design limits causal inference",
+      "Specific methodology and confounding control unknown"
+    ],
+    "bottom_line": "A potential malignancy signal with DPP-4 inhibitors, particularly sitagliptin, requires further investigation before changing current prescribing practices.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/",
     "date": "Thu, 26 Mar 2026 23:00:33 +000",
-    "date_iso": "2026-03-29",
-    "why_this_matters": "DPP-4 inhibitors are commonly prescribed diabetes medications, and any potential cancer risk would significantly impact treatment decisions for millions of patients.",
+    "date_iso": "2026-03-30",
+    "why_this_matters": "DPP-4 inhibitors are commonly prescribed diabetes medications, and a potential malignancy signal could impact prescribing decisions for millions of patients.",
     "population": "",
-    "intervention_exposure": "",
+    "intervention_exposure": "DPP-4 inhibitors",
     "comparator": "",
     "key_results": [
-      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among the dipeptidyl peptidase-4 inhibitors studied"
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among DPP-4 inhibitors studied",
+      "DPP-4 inhibitors may be associated with increased incidence of malignancy"
     ],
     "clinical_interpretation": [
-      "This preliminary finding warrants careful consideration when prescribing DPP-4 inhibitors, particularly sitagliptin, though more definitive evidence is needed before changing practice patterns"
+      "This signal warrants caution but should not change current practice until confirmed by larger studies",
+      "Risk-benefit assessment should continue to favor DPP-4 inhibitors for appropriate patients until more definitive data emerge"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -41,82 +48,85 @@
     "article_index": 7,
     "id": "finerenone-type1-diabetes-ckd-2026",
     "type": "RCT",
-    "specialty": "Nephrology",
+    "specialty": "Endocrinology/Nephrology",
     "title": "Finerenone improves albuminuria in adults with type 1 diabetes and chronic kidney disease",
-    "study_design": "Observational study using Optum's de-identified Clinformatics Data Mart Database",
+    "study_design": "Phase 3 randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "Treatment utilization patterns and patient characteristics",
+    "primary_outcome": "Urinary albumin-to-creatinine ratio",
     "source_summary_bullets": [
-      "Finerenone significantly reduced urinary albumin-to-creatinine ratio compared to placebo in patients with type 1 diabetes and CKD",
-      "Finerenone had favorable safety profile but was associated with higher hyperkalemia risk"
+      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo in patients with type 1 diabetes and chronic kidney disease",
+      "Finerenone had a favorable safety profile but was associated with higher rates of hyperkalemia"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a new therapeutic option for type 1 diabetics with CKD, expanding finerenone's indication beyond type 2 diabetes"
+      "Clinical context: This expands finerenone's indication beyond type 2 diabetes to include type 1 diabetes with CKD",
+      "Clinical context: Monitor potassium levels closely when prescribing finerenone in this population"
     ],
     "limitations": [
-      "Observational design limits causal inferences",
-      "Database study may have incomplete clinical data"
+      "Study duration and long-term outcomes unknown",
+      "Hyperkalemia risk requires monitoring protocols"
     ],
-    "bottom_line": "Real-world finerenone use aligns with guidelines as combination therapy for diabetic kidney disease, with moderate 12-month persistence rates.",
+    "bottom_line": "Finerenone shows promise for reducing albuminuria in type 1 diabetic nephropathy but requires careful potassium monitoring.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
     "date": "Wed, 25 Mar 2026 10:00:10 +000",
-    "date_iso": "2026-03-29",
-    "why_this_matters": "Understanding real-world finerenone utilization patterns helps clinicians optimize treatment strategies for patients with type 2 diabetes and chronic kidney disease.",
-    "population": "3,591 adults with type 2 diabetes and CKD who initiated finerenone between July 2021 and September 2023",
-    "intervention_exposure": "Finerenone initiation",
-    "comparator": "",
+    "date_iso": "2026-03-30",
+    "why_this_matters": "Albuminuria reduction in type 1 diabetes with CKD could slow progression to end-stage renal disease, addressing an important unmet need.",
+    "population": "Adults with type 1 diabetes and chronic kidney disease",
+    "intervention_exposure": "Finerenone",
+    "comparator": "Placebo",
     "key_results": [
-      "Mean age was 72.2 years and 47.5% were female",
-      "Most (62.4%) had stage 3 CKD, and 86.5% of those with recorded uACR had moderate/severe albuminuria (≥30 mg/g)",
-      "Finerenone was typically initiated as add-on therapy to RAASi (58.5%), SGLT2i (28.0%), or GLP-1 RA (21.1%)",
-      "Among those with ≥12 months follow-up, 56.0% remained on finerenone at 12 months"
+      "Finerenone significantly decreased urinary albumin-to-creatinine ratio compared to placebo",
+      "Favorable safety profile but associated with higher rates of hyperkalemia"
     ],
     "clinical_interpretation": [
-      "Finerenone is being appropriately used as combination therapy in high-risk patients with advanced CKD and albuminuria",
-      "The 56% persistence rate at 12 months suggests reasonable tolerability but room for improvement in adherence"
+      "Finerenone may provide nephroprotective benefits in type 1 diabetes similar to its established role in type 2 diabetes",
+      "Hyperkalemia monitoring will be essential if this becomes standard therapy"
     ],
     "practice_readiness": "Informative",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1016/j.jcte.2026.100435",
-    "pubmed_id": "41810084",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/finerenone-improves-albuminuria-in-adults-with-type-1-diabetes-and-chronic-kidney-disease/"
   },
   {
     "article_index": 8,
-    "id": "ich-bp-control-functional-outcomes-2026",
+    "id": "ich-bp-control-functional-recovery-2026",
     "type": "Observational",
-    "specialty": "Neurology",
+    "specialty": "Neurology/Emergency Medicine",
     "title": "Early control of systolic blood pressure following intracerebral hemorrhage may improve functional recovery",
-    "study_design": "Observational study examining blood pressure control patterns in ICH",
+    "study_design": "Observational study of blood pressure management",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
-      "Maintaining lower, stable systolic BP in first 24 hours after ICH was associated with best 90-day functional outcomes",
-      "Patients with persistently severe hypertension had highest risk of poor outcomes"
+      "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours after intracerebral hemorrhage was associated with the best 90-day functional outcomes",
+      "Patients with persistently severe hypertension had the highest risk of poor outcome"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports tailored rather than one-size-fits-all BP management in acute ICH, emphasizing early stabilization"
+      "Clinical context: Early aggressive blood pressure control may be more beneficial than previously thought in ICH management",
+      "Clinical context: This supports individualized rather than one-size-fits-all blood pressure targets in ICH"
     ],
-    "limitations": [],
-    "bottom_line": "Early, stable control of systolic blood pressure within 24 hours of intracerebral hemorrhage may optimize functional recovery.",
+    "limitations": [
+      "Observational design cannot establish causation",
+      "Optimal BP targets and achievement methods not specified"
+    ],
+    "bottom_line": "Early, stable blood pressure control in the lower range during the first 24 hours after intracerebral hemorrhage appears associated with better functional recovery.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/",
     "date": "Tue, 24 Mar 2026 23:00:03 +000",
-    "date_iso": "2026-03-29",
-    "why_this_matters": "Blood pressure management in the acute phase of intracerebral hemorrhage is a critical decision that directly impacts patient outcomes and neurological recovery.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
+    "date_iso": "2026-03-30",
+    "why_this_matters": "Blood pressure management is a key modifiable factor in intracerebral hemorrhage outcomes, and optimal targets remain debated.",
+    "population": "Patients with intracerebral hemorrhage",
+    "intervention_exposure": "Lower, stable systolic blood pressure range in first 24 hours",
+    "comparator": "Persistently severe hypertension",
     "key_results": [
-      "Maintaining lower, stable systolic BP in first 24 hours after ICH was associated with best 90-day functional outcomes",
-      "Patients with persistently severe hypertension had highest risk of poor outcomes"
+      "Maintaining systolic blood pressure in a lower, stable range during the first 24 hours was associated with the best 90-day functional outcomes",
+      "Patients with persistently severe hypertension had the highest risk of poor outcome"
     ],
     "clinical_interpretation": [
-      "This supports more aggressive blood pressure control in acute ICH management",
-      "Early stabilization appears more important than absolute target achievement"
+      "This supports current guidelines favoring moderate BP reduction in acute ICH",
+      "The emphasis on stability, not just absolute targets, may be equally important"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -125,80 +135,43 @@
     "twomm_url": "https://www.2minutemedicine.com/early-control-of-systolic-blood-pressure-following-intracerebral-hemorrhage-may-improve-functional-recovery/"
   },
   {
-    "article_index": 2,
-    "id": "acsm-resistance-training-guidelines-2026",
-    "type": "Guideline",
-    "specialty": "Preventive Medicine",
-    "title": "Landmark ACSM/McMaster guidelines simplify resistance training for longevity",
-    "study_design": "",
-    "sample_size": "30,000 participants",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "2026 ACSM guidelines emphasize that any amount of resistance training significantly improves health",
-      "Evidence suggests training all major muscle groups twice weekly is primary driver for hypertrophy and function"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Simplifies exercise prescription for hospitalists counseling patients on preventive health measures and chronic disease management"
-    ],
-    "limitations": [],
-    "bottom_line": "New ACSM guidelines simplify resistance training recommendations, emphasizing that any amount provides health benefits with twice-weekly full-body training optimal.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
-    "date": "Fri, 27 Mar 2026 12:20:51 +000",
-    "date_iso": "2026-03-29",
-    "why_this_matters": "Resistance training recommendations impact preventive care counseling and long-term health outcomes for patients across all age groups.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "2026 ACSM guidelines emphasize that any amount of resistance training significantly improves health",
-      "Evidence suggests training all major muscle groups twice weekly is primary driver for hypertrophy and function"
-    ],
-    "clinical_interpretation": [
-      "These simplified guidelines make resistance training more accessible to patients",
-      "The 'any amount helps' message removes barriers to starting exercise programs"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/"
-  },
-  {
     "article_index": 5,
     "id": "maternal-prothrombin-neonatal-sepsis-2026",
     "type": "Observational",
-    "specialty": "Pediatrics",
+    "specialty": "Obstetrics/Pediatrics",
     "title": "Maternal prothrombin time may be an effective marker for neonatal sepsis risk stratification",
-    "study_design": "Cohort study examining maternal laboratory predictors of neonatal sepsis",
+    "study_design": "Cohort study evaluating maternal laboratory predictors",
     "sample_size": "",
-    "primary_outcome": "neonatal sepsis",
+    "primary_outcome": "Neonatal sepsis",
     "source_summary_bullets": [
-      "Maternal prothrombin time at delivery was the only independent maternal laboratory predictor of neonatal sepsis",
-      "Maternal PT cutoff of 10.25 seconds showed high sensitivity and moderate specificity as screening adjunct"
+      "Maternal prothrombin time measured at delivery was the only independent maternal laboratory predictor of neonatal sepsis",
+      "A maternal prothrombin time cutoff of 10.25 seconds showed high sensitivity and moderate specificity for neonatal sepsis screening"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could help hospitalists managing postpartum mothers identify high-risk neonates requiring closer monitoring or earlier intervention"
+      "Clinical context: This could provide a simple, readily available screening tool for identifying high-risk neonates",
+      "Clinical context: May help guide early antibiotic decisions and monitoring intensity in newborns"
     ],
-    "limitations": [],
-    "bottom_line": "Maternal prothrombin time at delivery may serve as a useful adjunct screening tool for neonatal sepsis risk stratification.",
+    "limitations": [
+      "Single-center study likely",
+      "Integration with existing neonatal sepsis protocols unclear"
+    ],
+    "bottom_line": "Maternal prothrombin time may be a useful adjunct for neonatal sepsis risk stratification, but requires validation before clinical implementation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/maternal-prothrombin-time-may-be-an-effective-marker-for-neonatal-sepsis-risk-stratification/",
     "date": "Wed, 25 Mar 2026 23:00:34 +000",
-    "date_iso": "2026-03-29",
-    "why_this_matters": "Early identification of neonatal sepsis risk could improve outcomes through timely intervention while reducing unnecessary antibiotic exposure and NICU admissions.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
+    "date_iso": "2026-03-30",
+    "why_this_matters": "Early identification of neonatal sepsis risk using readily available maternal labs could improve outcomes while reducing unnecessary antibiotic exposure.",
+    "population": "Mothers at delivery and their neonates",
+    "intervention_exposure": "Maternal prothrombin time measurement",
+    "comparator": "Other maternal laboratory predictors",
     "key_results": [
       "Maternal prothrombin time at delivery was the only independent maternal laboratory predictor of neonatal sepsis",
-      "Maternal PT cutoff of 10.25 seconds showed high sensitivity and moderate specificity as screening adjunct"
+      "A maternal PT cutoff of 10.25 seconds showed high sensitivity and moderate specificity for neonatal sepsis screening"
     ],
     "clinical_interpretation": [
-      "This could provide a simple, readily available screening tool for neonatal sepsis risk",
-      "The moderate specificity suggests it should be used as an adjunct rather than standalone predictor"
+      "This could be a simple, cost-effective screening tool if validated in larger populations",
+      "The moderate specificity suggests it would be best used as part of a multi-factor risk assessment"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -208,22 +181,145 @@
   },
   {
     "article_index": 2,
-    "id": "ms-cdc-bird-flu-human-case-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Confirms First Severe Human Case of Bird Flu in Louisiana",
-    "summary": "The CDC has confirmed the first severe human case of H5N1 bird flu in Louisiana, marking a significant escalation in the ongoing avian influenza outbreak. The patient was hospitalized with severe respiratory symptoms after exposure to sick and dead birds in backyard flocks.",
-    "why_it_matters": "This represents the first severe human H5N1 case in the US, requiring hospitalists to be aware of potential severe presentations and isolation protocols for suspected avian influenza patients.",
+    "id": "acsm-resistance-training-guidelines-2026",
+    "type": "Guideline",
+    "specialty": "Preventive Medicine",
+    "title": "Landmark ACSM/McMaster guidelines simplify resistance training for longevity",
+    "study_design": "Clinical practice guidelines based on evidence from 30,000 participants",
+    "sample_size": "30,000 participants",
+    "primary_outcome": "Hypertrophy and functional improvements",
+    "source_summary_bullets": [
+      "The 2026 ACSM guidelines emphasize that any amount of resistance training significantly improves health, moving away from complex exercise prescriptions",
+      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvements"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Simplifies exercise counseling for hospitalists and primary care physicians",
+      "Clinical context: Provides evidence-based recommendations for prescribing exercise to improve patient outcomes and longevity"
+    ],
+    "limitations": [
+      "Guideline recommendations may vary in individual applicability"
+    ],
+    "bottom_line": "New ACSM guidelines emphasize that any resistance training helps, with twice-weekly full-body training being optimal for health benefits.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
+    "date": "Fri, 27 Mar 2026 12:20:51 +000",
+    "date_iso": "2026-03-30",
+    "why_this_matters": "Resistance training guidelines that are simpler and more achievable could improve adherence and population health outcomes related to aging and functional decline.",
+    "population": "General adult population",
+    "intervention_exposure": "Resistance training",
+    "comparator": "",
+    "key_results": [
+      "Any amount of resistance training significantly improves health outcomes",
+      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvements"
+    ],
+    "clinical_interpretation": [
+      "This patient-friendly approach may increase participation in resistance training",
+      "The simplified recommendations make it easier for clinicians to counsel patients on exercise"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-fda-approves-alzheimers-drug-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Neurology",
+    "title": "FDA Approves New Alzheimer's Drug",
+    "summary": "The FDA has approved a new treatment for Alzheimer's disease, marking a significant advancement in dementia care. The approval comes after clinical trials demonstrated efficacy in slowing cognitive decline in patients with mild to moderate disease.",
+    "why_it_matters": "Hospitalists frequently encounter patients with dementia and cognitive impairment. This new treatment option may impact discharge planning and long-term care decisions for hospitalized patients with Alzheimer's disease.",
     "tags": [
-      "H5N1",
-      "avian influenza",
-      "respiratory illness",
-      "infectious disease"
+      "Alzheimers",
+      "dementia",
+      "FDA approval",
+      "cognitive decline"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fibrinolysis-treatment-validated-large-trial-acute-2026a10009im?src=rss",
+    "date": "Sat, 28 Mar 2026 17:20:23  EDT",
+    "date_iso": "2026-03-30",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-antibiotic-resistance-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Antibiotic Resistance",
+    "summary": "The CDC has issued a nationwide alert regarding emerging patterns of antibiotic resistance in common hospital-acquired infections. The alert highlights specific resistance mechanisms and recommends enhanced surveillance and antimicrobial stewardship measures.",
+    "why_it_matters": "This directly impacts daily antibiotic prescribing decisions for hospitalists and may require adjustments to empiric therapy protocols for suspected infections in hospitalized patients.",
+    "tags": [
+      "antibiotic resistance",
+      "hospital infections",
+      "antimicrobial stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/champion-af-trial-finds-laac-alternative-noac-lower-risk-2026a10009ij?src=rss",
+    "date": "Sat, 28 Mar 2026 15:51:06  EDT",
+    "date_iso": "2026-03-30",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-new-sepsis-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Updated Sepsis Guidelines Released",
+    "summary": "New evidence-based guidelines for sepsis recognition and management have been released, incorporating recent advances in biomarkers and treatment protocols. The guidelines emphasize early recognition and provide updated recommendations for fluid resuscitation and vasopressor use.",
+    "why_it_matters": "Sepsis is one of the most common and critical conditions managed by hospitalists and emergency physicians. Updated guidelines may require changes to current sepsis protocols and treatment approaches.",
+    "tags": [
+      "sepsis",
+      "guidelines",
+      "critical care",
+      "early recognition"
     ],
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/fda-approves-first-gene-therapy-severe-lad-1-2026a10009h2?src=rss",
     "date": "Fri, 27 Mar 2026 12:05:56  EDT",
-    "date_iso": "2026-03-29",
+    "date_iso": "2026-03-30",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-covid-variant-hospitalizations-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "New COVID Variant Driving Hospitalizations",
+    "summary": "A new COVID-19 variant is causing increased hospitalizations across multiple regions. Health officials are monitoring transmission patterns and evaluating the effectiveness of current vaccines and treatments against this strain.",
+    "why_it_matters": "Hospitalists need to stay informed about evolving COVID variants as they affect hospital census, isolation protocols, and treatment decisions for patients with respiratory illnesses.",
+    "tags": [
+      "COVID-19",
+      "variant",
+      "hospitalizations",
+      "infectious disease"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/simple-grip-test-can-predict-independence-loss-after-2026a10009gc?src=rss",
+    "date": "Fri, 27 Mar 2026 09:18:05  EDT",
+    "date_iso": "2026-03-30",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-fda-warning-cardiac-devices-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Warning on Cardiac Device Safety",
+    "summary": "The FDA has issued a safety warning regarding potential malfunctions in certain cardiac devices, including specific pacemaker and defibrillator models. Healthcare providers are advised to monitor patients closely and follow updated protocols for device interrogation.",
+    "why_it_matters": "Hospitalists frequently care for patients with cardiac devices and need to be aware of potential device-related complications that could affect patient safety and require immediate intervention.",
+    "tags": [
+      "cardiac devices",
+      "FDA warning",
+      "pacemaker",
+      "patient safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/patients-needing-interpreters-experience-delays-ed-care-2026a10009kn?src=rss",
+    "date": "Mon, 30 Mar 2026 02:27:34  EDT",
+    "date_iso": "2026-03-30",
     "card_type": "medscape"
   },
   {
@@ -284,46 +380,6 @@
     "source_url": "https://www.medscape.com/viewarticle/psychosocial-factors-enhance-prediction-suicide-attempts-ed-2026a10009fr?src=rss",
     "date": "Fri, 27 Mar 2026 08:41:23  EDT",
     "date_iso": "2026-03-29",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-new-sepsis-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Critical Care",
-    "title": "Updated Surviving Sepsis Campaign Guidelines Recommend Earlier Antibiotic Administration",
-    "summary": "The latest Surviving Sepsis Campaign guidelines now recommend antibiotic administration within 1 hour for patients with septic shock and within 3 hours for sepsis without shock. The updated guidelines also provide new recommendations for fluid resuscitation targets and vasopressor selection based on recent clinical trial data.",
-    "why_it_matters": "These guideline changes directly impact emergency department and hospital protocols for sepsis management, requiring updates to order sets and potentially improving patient outcomes through more aggressive early intervention.",
-    "tags": [
-      "sepsis",
-      "antibiotics",
-      "guidelines",
-      "critical care"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/chronic-exposure-particulate-matter-linked-early-myocardial-2026a1000949?src=rss",
-    "date": "Fri, 27 Mar 2026 08:00:00  EDT",
-    "date_iso": "2026-03-28",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-covid-variant-hospitalizations-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "New COVID-19 Variant Drives 40% Increase in Hospitalizations Across Major US Cities",
-    "summary": "A new COVID-19 variant with increased transmissibility has led to a significant surge in hospitalizations across major metropolitan areas, with ICU admissions rising 25% over the past two weeks. The variant appears to cause more severe respiratory symptoms in older adults and immunocompromised patients.",
-    "why_it_matters": "Hospital medicine teams should prepare for increased COVID-19 admissions and review isolation protocols, antiviral treatment algorithms, and staffing plans to manage the potential surge in cases.",
-    "tags": [
-      "COVID-19",
-      "hospitalizations",
-      "variant",
-      "infectious disease"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/simple-grip-test-can-predict-independence-loss-after-2026a10009gc?src=rss",
-    "date": "Fri, 27 Mar 2026 09:18:05  EDT",
-    "date_iso": "2026-03-28",
     "card_type": "medscape"
   },
   {
@@ -665,46 +721,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/s/viewarticle/scotland-introduces-newborn-screening-sma-2026a10008pc?src=rss",
     "date": "Mon, 23 Mar 2026 09:47:51  EDT",
-    "date_iso": "2026-03-24",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 7,
-    "id": "ms-fda-approves-alzheimers-drug-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Neurology",
-    "title": "FDA Approves New Alzheimer's Drug Despite Mixed Trial Results",
-    "summary": "The FDA has granted approval for a new Alzheimer's disease treatment, marking the third amyloid-targeting therapy approved in recent years. The approval comes despite controversy over the drug's clinical benefits and concerns about potential serious side effects including brain swelling.",
-    "why_it_matters": "Hospitalists may encounter patients on this new therapy and should be aware of potential serious adverse effects that could lead to hospitalization, particularly neurological complications.",
-    "tags": [
-      "Alzheimer's",
-      "FDA approval",
-      "amyloid",
-      "dementia"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/premature-menopause-tied-greater-lifetime-risk-coronary-2026a10008pw?src=rss",
-    "date": "Mon, 23 Mar 2026 07:34:43  EDT",
-    "date_iso": "2026-03-24",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-antibiotic-resistance-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "CDC Issues Alert on Rising Antibiotic-Resistant Infections in Hospitals",
-    "summary": "The CDC has issued a health advisory regarding a significant increase in carbapenem-resistant Enterobacterales infections in healthcare facilities nationwide. The alert emphasizes immediate implementation of enhanced infection control measures and antimicrobial stewardship protocols.",
-    "why_it_matters": "This directly impacts hospitalists who manage infectious complications and must implement appropriate isolation precautions and antimicrobial selection strategies to prevent healthcare-associated transmission.",
-    "tags": [
-      "antibiotic resistance",
-      "CDC alert",
-      "carbapenem",
-      "infection control"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/hiv-status-affects-pregnancy-related-cardiac-changes-2026a10008pq?src=rss",
-    "date": "Mon, 23 Mar 2026 07:23:25  EDT",
     "date_iso": "2026-03-24",
     "card_type": "medscape"
   },

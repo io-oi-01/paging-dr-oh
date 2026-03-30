@@ -63,7 +63,8 @@
     "Disseminated Intravascular Coagulation",
     "Alcohol Withdrawal Syndrome",
     "Myasthenia Gravis Crisis",
-    "Malignant Spinal Cord Compression"
+    "Malignant Spinal Cord Compression",
+    "Acute Cholecystitis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -129,7 +130,8 @@
     "allhat-2002",
     "inbuild-2019",
     "impact-2018",
-    "orchid-2020"
+    "orchid-2020",
+    "plus-2022"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -248,7 +250,7 @@
     "ms-stroke-guidelines-update-2026",
     "ms-pneumonia-treatment-duration-study-2026"
   ],
-  "last_run": "2026-03-29",
+  "last_run": "2026-03-30",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -276,7 +278,8 @@
     "Allergic Contact Dermatitis",
     "Erythema Dyschromicum Perstans",
     "Drug Reaction: Fixed",
-    "Eosinophilic Cellulitis"
+    "Eosinophilic Cellulitis",
+    "Erythroderma"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -361,6 +364,10 @@
     "ecg-015",
     "cxr-023",
     "ct-054",
-    "clinical-humongous-hiv-extravaganza"
+    "clinical-humongous-hiv-extravaganza",
+    "ecg-051",
+    "cxr-069",
+    "ct-067",
+    "clinical-clinical-cases/pulmonary-puzzler"
   ]
 }
