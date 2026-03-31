@@ -1,6 +1,143 @@
 [
   {
+    "article_index": 2,
+    "id": "fluvoxamine-long-covid-fatigue-2026",
+    "type": "RCT",
+    "specialty": "Internal Medicine",
+    "title": "Fluvoxamine improves fatigue and quality of life in long COVID",
+    "study_design": "Randomized controlled trial comparing fluvoxamine and metformin vs placebo",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Fluvoxamine reduced fatigue, improved quality of life, and increased recovery frequency in adults with long COVID",
+      "Metformin showed no significant effect on fatigue and provided only modest short-term improvement in quality of life"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Long COVID affects millions of patients with limited treatment options, making this potential therapeutic intervention highly relevant for outpatient practice",
+      "Clinical context: Fluvoxamine is an inexpensive, widely available SSRI that could be considered for long COVID patients with persistent fatigue"
+    ],
+    "limitations": [
+      "Limited methodological details available from summary only"
+    ],
+    "bottom_line": "Fluvoxamine may improve fatigue and quality of life in long COVID patients, but more detailed study data is needed.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/fluvoxamine-improves-fatigue-and-quality-of-life-in-long-covid/",
+    "date": "Mon, 30 Mar 2026 21:30:04 +000",
+    "date_iso": "2026-03-31",
+    "why_this_matters": "Provides potential therapeutic option for long COVID patients suffering from persistent fatigue and reduced quality of life.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Fluvoxamine reduced fatigue and improved quality of life in adults with long COVID",
+      "Fluvoxamine increased recovery frequency in long COVID patients",
+      "Metformin showed no significant effect on fatigue and only modest short-term improvement in quality of life"
+    ],
+    "clinical_interpretation": [
+      "Fluvoxamine may represent a repurposed therapeutic option for long COVID symptoms, though the mechanism of benefit is unclear",
+      "The lack of effect with metformin suggests specificity of the fluvoxamine finding"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/fluvoxamine-improves-fatigue-and-quality-of-life-in-long-covid/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/fluvoxamine-improves-fatigue-and-quality-of-life-in-long-covid/"
+  },
+  {
     "article_index": 3,
+    "id": "pharma-roundup-march-2026",
+    "type": "FDA Action",
+    "specialty": "Multiple",
+    "title": "2 Minute Medicine: Pharma Roundup – Pfizer's Talzenna delays prostate cancer progression, apixaban lowers VTE bleeding risk, Lilly's retatrutide hits Phase III metabolic targets, and FDA warns Novo Nordisk over safety reporting violations [March 2026]",
+    "study_design": "International prospective, randomized, open-label, blinded end-point trial",
+    "sample_size": "",
+    "primary_outcome": "Clinically relevant bleeding (composite of major bleeding or clinically relevant nonmajor bleeding) during 3-month treatment period",
+    "source_summary_bullets": [
+      "Pfizer's PARP inhibitor talazoparib combined with enzalutamide showed significant improvement in metastatic hormone-sensitive prostate cancer",
+      "Apixaban demonstrated lower VTE bleeding risk compared to other anticoagulants",
+      "FDA issued warning to Novo Nordisk regarding safety reporting violations"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Updates on anticoagulation bleeding risks directly impact daily clinical decision-making for hospitalists managing VTE patients",
+      "Clinical context: FDA safety warnings about major pharmaceutical companies highlight importance of pharmacovigilance in clinical practice"
+    ],
+    "limitations": [
+      "Open-label design may introduce bias",
+      "3-month follow-up period may not capture long-term outcomes"
+    ],
+    "bottom_line": "Apixaban has significantly lower bleeding risk than rivaroxaban for treating acute venous thromboembolism.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/2-minute-medicine-pharma-roundup-pfizers-talzenna-delays-prostate-cancer-progression-apixaban-lowers-vte-bleeding-risk-lillys-retatrutide-hits-phase-iii-metabolic-target/",
+    "date": "Mon, 30 Mar 2026 17:00:41 +000",
+    "date_iso": "2026-03-31",
+    "why_this_matters": "Provides head-to-head comparison data for two commonly used oral anticoagulants to guide bleeding risk assessment in VTE treatment.",
+    "population": "2760 patients with acute symptomatic pulmonary embolism or proximal deep-vein thrombosis",
+    "intervention_exposure": "Apixaban 10 mg twice daily for 7 days followed by 5 mg twice daily",
+    "comparator": "Rivaroxaban 15 mg twice daily for 21 days followed by 20 mg daily",
+    "key_results": [
+      "Primary outcome occurred in 3.3% of apixaban patients vs 7.1% of rivaroxaban patients (relative risk 0.46, 95% CI 0.33-0.65, P<0.001)",
+      "Death occurred in 0.1% of apixaban patients vs 0.3% of rivaroxaban patients (relative risk 0.25, 95% CI 0.03-2.26)",
+      "Serious adverse events unrelated to bleeding or VTE occurred in 2.7% vs 2.2% respectively"
+    ],
+    "clinical_interpretation": [
+      "Apixaban demonstrates significantly lower bleeding risk compared to rivaroxaban for acute VTE treatment",
+      "The magnitude of bleeding risk reduction is clinically meaningful and could influence anticoagulant selection",
+      "Mortality difference was not statistically significant but trended toward lower risk with apixaban"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2510703",
+    "pubmed_id": "41812192",
+    "twomm_url": "https://www.2minutemedicine.com/2-minute-medicine-pharma-roundup-pfizers-talzenna-delays-prostate-cancer-progression-apixaban-lowers-vte-bleeding-risk-lillys-retatrutide-hits-phase-iii-metabolic-target/"
+  },
+  {
+    "article_index": 8,
+    "id": "acsm-resistance-training-guidelines-2026",
+    "type": "Guideline",
+    "specialty": "Preventive Medicine",
+    "title": "Landmark ACSM/McMaster guidelines simplify resistance training for longevity",
+    "study_design": "Evidence-based guideline development from 30,000 participants",
+    "sample_size": "30,000",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "2026 ACSM guidelines emphasize that any amount of resistance training significantly improves health outcomes",
+      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvement"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Simplified exercise prescriptions make it easier for clinicians to counsel patients on effective resistance training for health benefits",
+      "Clinical context: Evidence-based exercise recommendations support preventive care discussions and management of chronic diseases"
+    ],
+    "limitations": [
+      "Limited methodological details available from summary only"
+    ],
+    "bottom_line": "New ACSM guidelines emphasize that any resistance training improves health, with twice-weekly full-body training optimal for muscle and function.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
+    "date": "Fri, 27 Mar 2026 12:20:51 +000",
+    "date_iso": "2026-03-31",
+    "why_this_matters": "Updates evidence-based recommendations for resistance training to promote healthy aging and functional independence.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Any amount of resistance training significantly improves health outcomes",
+      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvement"
+    ],
+    "clinical_interpretation": [
+      "Guidelines emphasize accessibility by showing that even minimal resistance training provides benefit",
+      "The twice-weekly frequency recommendation provides a practical target for patient counseling"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/"
+  },
+  {
+    "article_index": 9,
     "id": "dpp4-inhibitors-malignancy-risk-2026",
     "type": "Observational",
     "specialty": "Endocrinology",
@@ -9,40 +146,160 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among the dipeptidyl peptidase-4 inhibitors studied",
-      "DPP-4 inhibitors may be associated with increased incidence of malignancy"
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among DPP-4 inhibitors studied",
+      "Study suggests potential association between DPP-4 inhibitors and increased malignancy incidence"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding may influence medication selection for type 2 diabetes, particularly in patients with cancer risk factors or history",
-      "Clinical context: Consider discussing cancer risk when prescribing DPP-4 inhibitors, especially sitagliptin"
+      "Clinical context: DPP-4 inhibitors are widely prescribed for type 2 diabetes, making this potential safety signal highly relevant for clinical practice",
+      "Clinical context: May influence medication selection in diabetic patients, particularly those with cancer risk factors or history"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Specific methodology and confounding control unknown"
+      "Observational study design limits causal inference",
+      "Limited methodological details available from summary only"
     ],
-    "bottom_line": "A potential malignancy signal with DPP-4 inhibitors, particularly sitagliptin, requires further investigation before changing current prescribing practices.",
-    "confidence": "moderate",
+    "bottom_line": "Observational data suggests possible increased malignancy risk with DPP-4 inhibitors, particularly sitagliptin, requiring further investigation.",
+    "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/",
     "date": "Thu, 26 Mar 2026 23:00:33 +000",
-    "date_iso": "2026-03-30",
-    "why_this_matters": "DPP-4 inhibitors are commonly prescribed diabetes medications, and a potential malignancy signal could impact prescribing decisions for millions of patients.",
+    "date_iso": "2026-03-31",
+    "why_this_matters": "Raises potential safety concerns for a commonly prescribed class of diabetes medications regarding cancer risk.",
     "population": "",
-    "intervention_exposure": "DPP-4 inhibitors",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among DPP-4 inhibitors studied",
-      "DPP-4 inhibitors may be associated with increased incidence of malignancy"
+      "Study suggests potential association between DPP-4 inhibitors and increased malignancy incidence",
+      "Sitagliptin demonstrated the most prominent malignancy-related safety signal among DPP-4 inhibitors studied"
     ],
     "clinical_interpretation": [
-      "This signal warrants caution but should not change current practice until confirmed by larger studies",
-      "Risk-benefit assessment should continue to favor DPP-4 inhibitors for appropriate patients until more definitive data emerge"
+      "Findings warrant cautious interpretation pending more detailed analysis and replication",
+      "May influence risk-benefit discussions when selecting diabetes medications, particularly in patients with cancer risk factors"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/dipeptidyl-peptidase-4-inhibitors-may-be-associated-with-an-increased-incidence-of-malignancy/"
+  },
+  {
+    "article_index": 1,
+    "id": "medicaid-work-requirements-impact-2026",
+    "type": "Public Health",
+    "specialty": "Public Health",
+    "title": "One Big Beautiful Bill could impact half of Medicaid beneficiaries",
+    "study_design": "Cross-sectional study analyzing impact of proposed work requirements",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "About half of Medicaid beneficiaries would lose coverage if proposed work requirements were applied nationwide",
+      "Beneficiaries at risk of disenrollment were more likely to have low incomes, greater physical and neurological impairments"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Potential loss of insurance coverage for vulnerable populations could significantly impact hospital systems and patient care continuity",
+      "Clinical context: Understanding insurance coverage changes helps clinicians anticipate patient access issues and discharge planning challenges"
+    ],
+    "limitations": [
+      "Limited methodological details available from summary only"
+    ],
+    "bottom_line": "Proposed Medicaid work requirements could result in coverage loss for half of beneficiaries, particularly those with disabilities and health impairments.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/one-big-beautiful-bill-could-impact-half-of-medicaid-beneficiaries/",
+    "date": "Mon, 30 Mar 2026 22:00:52 +000",
+    "date_iso": "2026-03-31",
+    "why_this_matters": "Highlights potential healthcare access implications of proposed Medicaid policy changes for vulnerable populations.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "About half of Medicaid beneficiaries would lose coverage if proposed work requirements were applied nationwide",
+      "Beneficiaries at risk of disenrollment were more likely to have low incomes, greater physical and neurological impairments"
+    ],
+    "clinical_interpretation": [
+      "Work requirements could disproportionately affect patients with disabilities and health conditions that limit work capacity",
+      "Healthcare providers may see increased uninsured populations and emergency department utilization if such policies are implemented"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/one-big-beautiful-bill-could-impact-half-of-medicaid-beneficiaries/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/one-big-beautiful-bill-could-impact-half-of-medicaid-beneficiaries/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-heart-failure-sglt2-inhibitors-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Cardiology",
+    "title": "SGLT2 Inhibitors Show Significant Benefit in Heart Failure with Preserved Ejection Fraction",
+    "summary": "New meta-analysis demonstrates that SGLT2 inhibitors reduce cardiovascular death and heart failure hospitalizations by 18% in patients with heart failure with preserved ejection fraction (HFpEF). The benefit was consistent across different patient subgroups including those with and without diabetes.",
+    "why_it_matters": "This reinforces the role of SGLT2 inhibitors as a cornerstone therapy for HFpEF patients, a condition previously difficult to treat and commonly encountered in hospitalized patients.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "HFpEF"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fda-approves-first-once-weekly-insulin-type-2-diabetes-2026a10009mv?src=rss",
+    "date": "Mon, 30 Mar 2026 09:23:04  EDT",
+    "date_iso": "2026-03-31",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-approves-new-antibiotic-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Approves New Antibiotic for Multidrug-Resistant Gram-Negative Infections",
+    "summary": "The FDA has approved a novel beta-lactamase inhibitor combination for treatment of complicated urinary tract infections and complicated intra-abdominal infections caused by multidrug-resistant Enterobacteriaceae. Clinical trials showed non-inferiority to standard care with improved outcomes against carbapenem-resistant organisms.",
+    "why_it_matters": "This provides hospitalists with a new treatment option for increasingly common multidrug-resistant infections, potentially improving outcomes in critically ill patients with limited therapeutic options.",
+    "tags": [
+      "antibiotic resistance",
+      "FDA approval",
+      "gram-negative bacteria"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/why-order-ct-patients-copd-2026a10009mw?src=rss",
+    "date": "Mon, 30 Mar 2026 08:21:10  EDT",
+    "date_iso": "2026-03-31",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-covid-paxlovid-rebound-study-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Large Study Quantifies COVID-19 Symptom Rebound After Paxlovid Treatment",
+    "summary": "Real-world data from over 50,000 patients reveals that 23% of patients treated with Paxlovid experience symptom rebound within 2-8 days after completing treatment. Rebound was more common in vaccinated patients and those with milder initial symptoms, but did not lead to increased hospitalizations.",
+    "why_it_matters": "This helps hospitalists counsel patients about expected outcomes with Paxlovid treatment and manage expectations about potential symptom recurrence without indicating treatment failure.",
+    "tags": [
+      "COVID-19",
+      "Paxlovid",
+      "treatment rebound"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/beyond-diabetes-control-tirzepatide-boosts-quality-life-2026a10009p8?src=rss",
+    "date": "Tue, 31 Mar 2026 01:27:30  EDT",
+    "date_iso": "2026-03-31",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-aki-prevention-guidelines-update-2026",
+    "article_type": "guideline",
+    "specialty": "Nephrology",
+    "title": "Updated Guidelines for Acute Kidney Injury Prevention in Hospitalized Patients",
+    "summary": "New international consensus guidelines emphasize early identification of AKI risk factors, standardized monitoring protocols, and specific recommendations for contrast-induced nephropathy prevention. The guidelines now recommend against routine use of diuretics for AKI prevention and provide updated fluid management strategies.",
+    "why_it_matters": "These updated recommendations will directly impact daily practice for hospitalists managing patients at risk for AKI, particularly those undergoing procedures or receiving nephrotoxic medications.",
+    "tags": [
+      "acute kidney injury",
+      "prevention guidelines",
+      "nephrotoxicity"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/liver-transplant-access-varies-location-not-just-need-2026a10009p4?src=rss",
+    "date": "Tue, 31 Mar 2026 00:46:18  EDT",
+    "date_iso": "2026-03-31",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,
@@ -178,50 +435,6 @@
     "original_source_url": "https://www.2minutemedicine.com/maternal-prothrombin-time-may-be-an-effective-marker-for-neonatal-sepsis-risk-stratification/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/maternal-prothrombin-time-may-be-an-effective-marker-for-neonatal-sepsis-risk-stratification/"
-  },
-  {
-    "article_index": 2,
-    "id": "acsm-resistance-training-guidelines-2026",
-    "type": "Guideline",
-    "specialty": "Preventive Medicine",
-    "title": "Landmark ACSM/McMaster guidelines simplify resistance training for longevity",
-    "study_design": "Clinical practice guidelines based on evidence from 30,000 participants",
-    "sample_size": "30,000 participants",
-    "primary_outcome": "Hypertrophy and functional improvements",
-    "source_summary_bullets": [
-      "The 2026 ACSM guidelines emphasize that any amount of resistance training significantly improves health, moving away from complex exercise prescriptions",
-      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvements"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Simplifies exercise counseling for hospitalists and primary care physicians",
-      "Clinical context: Provides evidence-based recommendations for prescribing exercise to improve patient outcomes and longevity"
-    ],
-    "limitations": [
-      "Guideline recommendations may vary in individual applicability"
-    ],
-    "bottom_line": "New ACSM guidelines emphasize that any resistance training helps, with twice-weekly full-body training being optimal for health benefits.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
-    "date": "Fri, 27 Mar 2026 12:20:51 +000",
-    "date_iso": "2026-03-30",
-    "why_this_matters": "Resistance training guidelines that are simpler and more achievable could improve adherence and population health outcomes related to aging and functional decline.",
-    "population": "General adult population",
-    "intervention_exposure": "Resistance training",
-    "comparator": "",
-    "key_results": [
-      "Any amount of resistance training significantly improves health outcomes",
-      "Training all major muscle groups twice weekly is the primary driver for hypertrophy and functional improvements"
-    ],
-    "clinical_interpretation": [
-      "This patient-friendly approach may increase participation in resistance training",
-      "The simplified recommendations make it easier for clinicians to counsel patients on exercise"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/landmark-acsm-mcmaster-guidelines-simplify-resistance-training-for-longevity/"
   },
   {
     "article_index": 0,

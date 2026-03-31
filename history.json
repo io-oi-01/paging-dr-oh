@@ -64,7 +64,8 @@
     "Alcohol Withdrawal Syndrome",
     "Myasthenia Gravis Crisis",
     "Malignant Spinal Cord Compression",
-    "Acute Cholecystitis"
+    "Acute Cholecystitis",
+    "Venous Thromboembolism"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -131,7 +132,8 @@
     "inbuild-2019",
     "impact-2018",
     "orchid-2020",
-    "plus-2022"
+    "plus-2022",
+    "emperor-reduced-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -248,9 +250,16 @@
     "ms-cdc-bird-flu-human-case-2026",
     "ms-fda-ozempic-counterfeit-warning-2026",
     "ms-stroke-guidelines-update-2026",
-    "ms-pneumonia-treatment-duration-study-2026"
+    "ms-pneumonia-treatment-duration-study-2026",
+    "fluvoxamine-long-covid-fatigue-2026",
+    "pharma-roundup-march-2026",
+    "medicaid-work-requirements-impact-2026",
+    "ms-heart-failure-sglt2-inhibitors-2026",
+    "ms-fda-approves-new-antibiotic-2026",
+    "ms-covid-paxlovid-rebound-study-2026",
+    "ms-aki-prevention-guidelines-update-2026"
   ],
-  "last_run": "2026-03-30",
+  "last_run": "2026-03-31",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -279,7 +288,8 @@
     "Erythema Dyschromicum Perstans",
     "Drug Reaction: Fixed",
     "Eosinophilic Cellulitis",
-    "Erythroderma"
+    "Erythroderma",
+    "Seborrheic Dermatitis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -368,6 +378,10 @@
     "ecg-051",
     "cxr-069",
     "ct-067",
-    "clinical-clinical-cases/pulmonary-puzzler"
+    "clinical-clinical-cases/pulmonary-puzzler",
+    "ecg-084",
+    "cxr-045",
+    "ct-051",
+    "clinical-ballistically-potent-vertigo"
   ]
 }
