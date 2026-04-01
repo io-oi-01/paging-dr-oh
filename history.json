@@ -65,7 +65,8 @@
     "Myasthenia Gravis Crisis",
     "Malignant Spinal Cord Compression",
     "Acute Cholecystitis",
-    "Venous Thromboembolism"
+    "Venous Thromboembolism",
+    "Acute Ischemic Stroke"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -133,7 +134,8 @@
     "impact-2018",
     "orchid-2020",
     "plus-2022",
-    "emperor-reduced-2020"
+    "emperor-reduced-2020",
+    "chance-2013"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -257,9 +259,13 @@
     "ms-heart-failure-sglt2-inhibitors-2026",
     "ms-fda-approves-new-antibiotic-2026",
     "ms-covid-paxlovid-rebound-study-2026",
-    "ms-aki-prevention-guidelines-update-2026"
+    "ms-aki-prevention-guidelines-update-2026",
+    "ms-heart-failure-device-therapy-2026",
+    "ms-antibiotic-stewardship-update-2026",
+    "ms-acute-kidney-injury-biomarkers-2026",
+    "ms-fda-sodium-glucose-safety-alert-2026"
   ],
-  "last_run": "2026-03-31",
+  "last_run": "2026-04-01",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -289,7 +295,8 @@
     "Drug Reaction: Fixed",
     "Eosinophilic Cellulitis",
     "Erythroderma",
-    "Seborrheic Dermatitis"
+    "Seborrheic Dermatitis",
+    "Nevi: Epidermal"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -382,6 +389,10 @@
     "ecg-084",
     "cxr-045",
     "ct-051",
-    "clinical-ballistically-potent-vertigo"
+    "clinical-ballistically-potent-vertigo",
+    "ecg-078",
+    "cxr-027",
+    "ct-052",
+    "clinical-does-roc-rock-does-sux-suck"
   ]
 }
