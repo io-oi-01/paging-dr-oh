@@ -1,5 +1,85 @@
 [
   {
+    "article_index": 0,
+    "id": "ms-new-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "Updated Heart Failure Guidelines Emphasize Early SGLT2 Inhibitor Use",
+    "summary": "New American Heart Association guidelines recommend initiating SGLT2 inhibitors within 30 days of heart failure diagnosis, regardless of diabetes status. The guidelines also expand indications for combination therapy with ACE inhibitors, beta-blockers, and mineralocorticoid receptor antagonists in hospitalized patients.",
+    "why_it_matters": "Hospitalists managing acute heart failure will need to consider earlier initiation of SGLT2 inhibitors during admission, potentially improving outcomes and reducing readmissions.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "guidelines",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/novel-medication-improves-motor-symptoms-early-and-advanced-2026a10009xd?src=rss",
+    "date": "Wed, 1 Apr 2026 08:05:25  EDT",
+    "date_iso": "2026-04-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-blood-pressure-medication-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Internal Medicine",
+    "title": "FDA Issues Class I Recall for Contaminated Amlodipine Tablets",
+    "summary": "The FDA announced a voluntary Class I recall of amlodipine besylate tablets due to potential contamination with carcinogenic impurities. The recall affects multiple generic manufacturers and lot numbers distributed nationwide over the past six months.",
+    "why_it_matters": "Hospitalists should verify current amlodipine prescriptions and may need to switch patients to alternative calcium channel blockers or adjust antihypertensive regimens during admission.",
+    "tags": [
+      "FDA recall",
+      "amlodipine",
+      "hypertension",
+      "patient safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/higher-continuity-care-gps-may-improve-hypertension-2026a10009mn?src=rss",
+    "date": "Wed, 1 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-antibiotic-resistance-surveillance-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Surge in Carbapenem-Resistant Enterobacteriaceae Infections",
+    "summary": "New CDC surveillance data shows a 40% increase in carbapenem-resistant Enterobacteriaceae infections in hospitalized patients over the past year. The highest rates are reported in intensive care units and among patients with prolonged hospital stays or recent antibiotic exposure.",
+    "why_it_matters": "Hospitalists should heighten surveillance for CRE infections and consider empiric coverage in high-risk patients, while reinforcing antibiotic stewardship practices to prevent further resistance development.",
+    "tags": [
+      "antibiotic resistance",
+      "CRE",
+      "infection control",
+      "CDC surveillance"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/depression-higher-migraine-patients-deprived-areas-2026a10009o1?src=rss",
+    "date": "Wed, 1 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-ai-sepsis-detection-validation-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "Large-Scale Validation Study Confirms AI Tool Reduces Sepsis Mortality",
+    "summary": "A multicenter validation study of 50,000 patients demonstrated that an AI-powered sepsis detection system reduced in-hospital mortality by 18% and decreased time to antibiotic administration by 1.2 hours. The system showed consistent performance across different hospital systems and patient populations.",
+    "why_it_matters": "This validation data supports broader implementation of AI sepsis detection tools in hospital systems, potentially improving early recognition and treatment of sepsis in hospitalized patients.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "clinical decision support",
+      "mortality reduction"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/wireless-monitoring-saves-time-may-save-lives-2026a1000a03?src=rss",
+    "date": "Thu, 2 Apr 2026 02:47:32  EDT",
+    "date_iso": "2026-04-02",
+    "card_type": "medscape"
+  },
+  {
     "article_index": 2,
     "id": "medicaid-work-requirements-impact-2026",
     "type": "Public Health",
