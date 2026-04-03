@@ -67,7 +67,8 @@
     "Acute Cholecystitis",
     "Venous Thromboembolism",
     "Acute Ischemic Stroke",
-    "Hospital-Acquired Pneumonia"
+    "Hospital-Acquired Pneumonia",
+    "Status Epilepticus"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -137,7 +138,8 @@
     "plus-2022",
     "emperor-reduced-2020",
     "chance-2013",
-    "eolia-2018"
+    "eolia-2018",
+    "solidarity-2021"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -269,9 +271,13 @@
     "ms-new-heart-failure-guidelines-2026",
     "ms-fda-blood-pressure-medication-recall-2026",
     "ms-antibiotic-resistance-surveillance-2026",
-    "ms-ai-sepsis-detection-validation-2026"
+    "ms-ai-sepsis-detection-validation-2026",
+    "apixaban-rivaroxaban-cobrra-2026",
+    "fluvoxamine-long-covid-rct-2026",
+    "ketorolac-cesarean-opioid-2026",
+    "medicaid-work-requirements-2026"
   ],
-  "last_run": "2026-04-02",
+  "last_run": "2026-04-03",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -303,7 +309,8 @@
     "Erythroderma",
     "Seborrheic Dermatitis",
     "Nevi: Epidermal",
-    "Leukocytoclastic Vasculitis"
+    "Leukocytoclastic Vasculitis",
+    "Actinic Keratosis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -404,6 +411,10 @@
     "ecg-063",
     "cxr-005",
     "ct-013",
-    "clinical-a-really-tricky-abg"
+    "clinical-a-really-tricky-abg",
+    "ecg-133",
+    "cxr-087",
+    "ct-023",
+    "clinical-frothing-mad"
   ]
 }
