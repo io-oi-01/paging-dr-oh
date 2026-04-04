@@ -1,51 +1,299 @@
 [
   {
-    "article_index": 2,
-    "id": "apixaban-rivaroxaban-cobrra-2026",
+    "article_index": 1,
+    "id": "prednisone-hydrocortisone-adrenal-insufficiency-2026",
     "type": "RCT",
-    "specialty": "Cardiology/Hematology",
-    "title": "Apixaban outperforms rivaroxaban in venous thromboembolism bleeding risk",
-    "study_design": "International prospective, randomized, open-label, blinded end-point trial with 1:1 randomization",
+    "specialty": "Endocrinology",
+    "title": "Prednisone may have bone and cardiovascular benefits compared to hydrocortisone therapy in adrenal insufficiency",
+    "study_design": "Randomized controlled trial comparing prednisolone vs hydrocortisone therapy",
     "sample_size": "",
-    "primary_outcome": "Clinically relevant bleeding (composite of major bleeding or clinically relevant nonmajor bleeding) during 3-month treatment period",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "In the COBRRA trial, apixaban was associated with substantially less clinically relevant bleeding than rivaroxaban in patients with acute venous thromboembolism",
-      "The lower bleeding risk did not compromise efficacy, as recurrent VTE rates were nearly identical between the two anticoagulants"
+      "Prednisolone therapy was well tolerated and may have better bone and cardiovascular outcomes compared to hydrocortisone in adult patients with adrenal insufficiency",
+      "Prednisolone posed lower medication burden compared to hydrocortisone therapy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This head-to-head comparison provides direct evidence for choosing apixaban over rivaroxaban for VTE treatment in hospitalized patients",
-      "Clinical context: Results support preferential use of apixaban when bleeding risk is a primary concern in anticoagulation decisions"
+      "Clinical context: This evidence-based comparison could inform treatment decisions for hospitalized patients with adrenal insufficiency, potentially allowing for simplified dosing regimens with prednisolone",
+      "Clinical context: Better cardiovascular and bone outcomes with prednisolone may be particularly relevant for patients with multiple comorbidities commonly seen in hospital settings"
     ],
     "limitations": [
-      "Open-label design may introduce bias",
-      "Different dosing schedules between drugs may affect comparison",
-      "Recurrent VTE rates not explicitly reported in abstract"
+      "Study details including sample size, duration, and outcome measurements not specified"
     ],
-    "bottom_line": "Apixaban significantly reduces bleeding risk compared to rivaroxaban in acute VTE treatment with similar efficacy.",
+    "bottom_line": "Prednisolone may offer bone and cardiovascular advantages over hydrocortisone in adrenal insufficiency, but more detailed data is needed.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/",
+    "date": "Fri, 03 Apr 2026 15:00:08 +000",
+    "date_iso": "2026-04-04",
+    "why_this_matters": "Choice of glucocorticoid replacement therapy in adrenal insufficiency may impact long-term bone health and cardiovascular outcomes beyond just symptom control.",
+    "population": "Adult patients with adrenal insufficiency",
+    "intervention_exposure": "Prednisolone therapy",
+    "comparator": "Hydrocortisone therapy",
+    "key_results": [
+      "Prednisolone was well tolerated with potential better bone and cardiovascular outcomes",
+      "Prednisolone had lower medication burden compared to hydrocortisone"
+    ],
+    "clinical_interpretation": [
+      "This suggests prednisolone may be preferable to hydrocortisone for replacement therapy, though the magnitude of benefit and patient selection criteria remain unclear from this summary"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/"
+  },
+  {
+    "article_index": 2,
+    "id": "retatrutide-phase3-diabetes-weight-2026",
+    "type": "RCT",
+    "specialty": "Endocrinology",
+    "title": "Lilly's retatrutide achieves significant weight loss and A1C reduction in Phase 3 trial",
+    "study_design": "Phase 3 randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Retatrutide met all major Phase 3 endpoints with substantial reductions in both A1C and body weight in patients with type 2 diabetes",
+      "The triple-agonist mechanism targets GIP, GLP-1, and glucagon receptors and may represent the next evolution in metabolic therapy"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: If approved, this triple-agonist could provide a new treatment option for hospitalized patients with type 2 diabetes and obesity, potentially offering superior glycemic control and weight management",
+      "Clinical context: The dual benefits on diabetes and weight could be particularly valuable for managing complex metabolic patients in hospital and outpatient settings"
+    ],
+    "limitations": [
+      "Specific efficacy data, safety profile, and comparison groups not detailed"
+    ],
+    "bottom_line": "Retatrutide shows promising Phase 3 results for both glucose control and weight loss in type 2 diabetes.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/lillys-retatrutide-achieves-significant-weight-loss-and-a1c-reduction-in-phase-3-trial/",
+    "date": "Fri, 03 Apr 2026 14:29:04 +000",
+    "date_iso": "2026-04-04",
+    "why_this_matters": "A new triple-receptor agonist could provide superior glycemic control and weight loss compared to current GLP-1 therapies for type 2 diabetes.",
+    "population": "Patients with type 2 diabetes",
+    "intervention_exposure": "Retatrutide (triple GIP/GLP-1/glucagon receptor agonist)",
+    "comparator": "",
+    "key_results": [
+      "Met all major Phase 3 endpoints",
+      "Achieved substantial reductions in both A1C and body weight"
+    ],
+    "clinical_interpretation": [
+      "This represents potential advancement in diabetes therapy with dual metabolic benefits, though safety data and comparative effectiveness versus existing agents needs evaluation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/lillys-retatrutide-achieves-significant-weight-loss-and-a1c-reduction-in-phase-3-trial/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/lillys-retatrutide-achieves-significant-weight-loss-and-a1c-reduction-in-phase-3-trial/"
+  },
+  {
+    "article_index": 3,
+    "id": "early-aortic-valve-replacement-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "Early surgical valve replacement offers survival benefit in asymptomatic, very severe aortic stenosis",
+    "study_design": "Randomized controlled trial with 10-year follow-up",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Early surgical valve replacement reduced the risk of operative mortality and cardiovascular death compared to conservative care in asymptomatic, very severe aortic stenosis over a ten-year period"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This practice-changing evidence supports earlier intervention in asymptomatic severe aortic stenosis, potentially altering current watchful waiting approaches",
+      "Clinical context: Important for hospitalists managing patients with incidental findings of severe aortic stenosis and for coordinating appropriate cardiology referrals"
+    ],
+    "limitations": [
+      "Patient selection criteria and definition of 'very severe' not specified",
+      "Long-term follow-up data details not provided"
+    ],
+    "bottom_line": "Early surgical intervention may improve survival in carefully selected patients with asymptomatic, very severe aortic stenosis.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/",
+    "date": "Fri, 03 Apr 2026 11:00:38 +000",
+    "date_iso": "2026-04-04",
+    "why_this_matters": "Management of asymptomatic severe aortic stenosis remains controversial, with debate over timing of intervention versus watchful waiting.",
+    "population": "Patients with asymptomatic, very severe aortic stenosis",
+    "intervention_exposure": "Early surgical valve replacement",
+    "comparator": "Conservative care",
+    "key_results": [
+      "Reduced risk of operative mortality and cardiovascular death over ten-year period compared to conservative care"
+    ],
+    "clinical_interpretation": [
+      "This supports earlier intervention in selected asymptomatic patients with very severe disease, potentially changing current guidelines that typically recommend waiting for symptoms"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/"
+  },
+  {
+    "article_index": 6,
+    "id": "apixaban-rivaroxaban-cobrra-bleeding-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "Apixaban outperforms rivaroxaban in venous thromboembolism bleeding risk",
+    "study_design": "Randomized controlled trial (COBRRA trial)",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Apixaban was associated with substantially less clinically relevant bleeding than rivaroxaban in patients with acute venous thromboembolism",
+      "The lower bleeding risk did not compromise efficacy, as recurrent VTE rates were nearly identical between groups"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This head-to-head comparison provides evidence to guide DOAC selection for VTE treatment, favoring apixaban for patients at higher bleeding risk",
+      "Clinical context: Particularly relevant for hospitalists managing acute VTE where bleeding risk stratification is crucial for anticoagulant selection"
+    ],
+    "limitations": [
+      "Magnitude of bleeding risk reduction not quantified",
+      "Study methodology and patient characteristics not detailed"
+    ],
+    "bottom_line": "Apixaban appears to have lower bleeding risk than rivaroxaban for VTE treatment while maintaining similar efficacy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/apixaban-outperforms-rivaroxaban-in-venous-thromboembolism-bleeding-risk/",
     "date": "Thu, 02 Apr 2026 14:29:03 +000",
-    "date_iso": "2026-04-03",
-    "why_this_matters": "This head-to-head comparison provides direct evidence for choosing between two commonly prescribed DOACs for VTE treatment, with significant bleeding risk differences.",
-    "population": "2760 patients with acute symptomatic pulmonary embolism or proximal deep-vein thrombosis",
-    "intervention_exposure": "Apixaban 10 mg twice daily for 7 days followed by 5 mg twice daily for 3 months",
-    "comparator": "Rivaroxaban 15 mg twice daily for 21 days followed by 20 mg daily for 3 months",
+    "date_iso": "2026-04-04",
+    "why_this_matters": "Direct comparison of bleeding risk between commonly used DOACs can inform anticoagulant selection for venous thromboembolism treatment.",
+    "population": "Patients with acute venous thromboembolism",
+    "intervention_exposure": "Apixaban",
+    "comparator": "Rivaroxaban",
     "key_results": [
-      "Primary outcome occurred in 44/1345 patients (3.3%) with apixaban vs 96/1355 patients (7.1%) with rivaroxaban (RR 0.46, 95% CI 0.33-0.65, P<0.001)",
-      "Death from any cause: 1 patient (0.1%) with apixaban vs 4 patients (0.3%) with rivaroxaban (RR 0.25, 95% CI 0.03-2.26)",
-      "Serious adverse events unrelated to bleeding or VTE: 36 patients (2.7%) with apixaban vs 30 patients (2.2%) with rivaroxaban"
+      "Apixaban associated with substantially less clinically relevant bleeding than rivaroxaban",
+      "Recurrent VTE rates were nearly identical between groups"
     ],
     "clinical_interpretation": [
-      "Apixaban demonstrates a clinically meaningful 54% relative risk reduction in bleeding compared to rivaroxaban",
-      "The absolute risk difference of 3.8% means approximately 26 patients would need to be treated with apixaban instead of rivaroxaban to prevent one clinically relevant bleeding event",
-      "This evidence supports preferring apixaban for acute VTE treatment when bleeding risk is a concern"
+      "This supports apixaban as potentially safer choice for VTE treatment when bleeding risk is a concern, without compromising efficacy"
     ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1056/NEJMoa2510703",
-    "pubmed_id": "41812192",
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/apixaban-outperforms-rivaroxaban-in-venous-thromboembolism-bleeding-risk/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/apixaban-outperforms-rivaroxaban-in-venous-thromboembolism-bleeding-risk/"
+  },
+  {
+    "article_index": 0,
+    "id": "multidisciplinary-falls-prevention-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "A multidisciplinary home-based intervention may reduce risk of falls after stroke",
+    "study_design": "Randomized controlled trial of tailored, multidisciplinary home-based program",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "The tailored, multidisciplinary home-based program significantly reduced the rate of falls after stroke by about one-third",
+      "The intervention also improved mobility, balance, self-efficacy, and community participation"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence for structured discharge planning and post-acute care coordination for stroke patients to prevent falls",
+      "Clinical context: Relevant for hospitalists planning transitions of care and could inform quality improvement initiatives for stroke patients"
+    ],
+    "limitations": [
+      "Components of the multidisciplinary intervention not specified",
+      "Study duration and patient selection criteria unclear"
+    ],
+    "bottom_line": "A multidisciplinary home-based intervention can significantly reduce falls and improve function after stroke.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
+    "date": "Fri, 03 Apr 2026 23:00:31 +000",
+    "date_iso": "2026-04-04",
+    "why_this_matters": "Post-stroke falls are a major cause of morbidity and mortality, and effective prevention strategies are clinically valuable.",
+    "population": "Patients after stroke",
+    "intervention_exposure": "Tailored, multidisciplinary home-based program",
+    "comparator": "",
+    "key_results": [
+      "Significantly reduced rate of falls by approximately one-third",
+      "Improved mobility, balance, self-efficacy, and community participation"
+    ],
+    "clinical_interpretation": [
+      "This demonstrates that structured, home-based rehabilitation can meaningfully reduce fall risk while improving functional outcomes in stroke survivors"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-heart-failure-medication-shortage-2026",
+    "article_type": "news",
+    "specialty": "Cardiology",
+    "title": "Critical Heart Failure Medication Faces National Shortage",
+    "summary": "A nationwide shortage of furosemide injection has been reported by the FDA, affecting hospitals across the country. The shortage is attributed to manufacturing delays at multiple facilities and is expected to last through the second quarter of 2026.",
+    "why_it_matters": "Hospitalists will need to consider alternative diuretic strategies for acute heart failure management and may need to switch patients to oral formulations earlier than usual.",
+    "tags": [
+      "heart failure",
+      "drug shortage",
+      "diuretics",
+      "furosemide"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/prior-bariatric-surgery-lowers-postop-risk-over-glp-1s-2026a1000a98?src=rss",
+    "date": "Fri, 3 Apr 2026 09:29:27  EDT",
+    "date_iso": "2026-04-04",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-vancomycin-dosing-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Infectious Disease",
+    "title": "Updated Vancomycin Dosing Guidelines Released by IDSA",
+    "summary": "The Infectious Diseases Society of America has released updated guidelines for vancomycin dosing, emphasizing AUC-guided dosing over trough-based monitoring. The new recommendations include specific protocols for critically ill patients and those with renal impairment.",
+    "why_it_matters": "These guidelines will require hospitalists to modify their approach to vancomycin monitoring and may necessitate collaboration with pharmacy services for AUC calculations.",
+    "tags": [
+      "vancomycin",
+      "antibiotic dosing",
+      "IDSA guidelines",
+      "pharmacokinetics"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/transcatheter-valve-valve-offers-safe-option-bioprosthetic-2026a1000a85?src=rss",
+    "date": "Fri, 3 Apr 2026 07:59:00  EDT",
+    "date_iso": "2026-04-04",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-covid-ba6-variant-surge-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "New COVID-19 Variant BA.6 Drives Spring Hospitalization Surge",
+    "summary": "The CDC reports a 40% increase in COVID-19 hospitalizations over the past month, primarily driven by the new BA.6 variant. Early data suggests the variant may partially evade immunity from previous infections and vaccinations, though severe outcomes remain lower than previous waves.",
+    "why_it_matters": "Hospitalists should prepare for increased COVID-19 admissions and consider updated isolation protocols, while remaining vigilant for breakthrough infections in vaccinated patients.",
+    "tags": [
+      "COVID-19",
+      "BA.6 variant",
+      "hospitalizations",
+      "infection control"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/another-pregnancy-can-worsen-insulin-sensitivity-over-time-2026a1000a8f?src=rss",
+    "date": "Fri, 3 Apr 2026 08:24:55  EDT",
+    "date_iso": "2026-04-04",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-contrast-nephropathy-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Nephrology",
+    "title": "FDA Issues Safety Alert for Contrast-Induced Nephropathy Risk",
+    "summary": "The FDA has issued a safety communication regarding increased reports of contrast-induced nephropathy with certain gadolinium-based contrast agents. The alert recommends enhanced screening for kidney function and consideration of alternative imaging in high-risk patients.",
+    "why_it_matters": "Hospitalists ordering contrast studies will need to reassess risk-benefit ratios and implement stricter pre-procedural kidney function screening protocols.",
+    "tags": [
+      "contrast nephropathy",
+      "FDA alert",
+      "gadolinium",
+      "kidney safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ibd-high-mental-health-toll-newly-diagnosed-patients-2026a1000a82?src=rss",
+    "date": "Fri, 3 Apr 2026 07:41:09  EDT",
+    "date_iso": "2026-04-04",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
