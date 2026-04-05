@@ -69,7 +69,8 @@
     "Acute Ischemic Stroke",
     "Hospital-Acquired Pneumonia",
     "Status Epilepticus",
-    "Lower GI Bleeding"
+    "Lower GI Bleeding",
+    "Hyperkalemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -141,7 +142,8 @@
     "chance-2013",
     "eolia-2018",
     "solidarity-2021",
-    "vadt-2009"
+    "vadt-2009",
+    "prevent-vte-2023"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -286,9 +288,13 @@
     "ms-heart-failure-medication-shortage-2026",
     "ms-vancomycin-dosing-guidelines-2026",
     "ms-covid-ba6-variant-surge-2026",
-    "ms-fda-contrast-nephropathy-alert-2026"
+    "ms-fda-contrast-nephropathy-alert-2026",
+    "ms-fda-generic-drug-safety-2026",
+    "ms-sepsis-biomarker-validation-2026",
+    "ms-hospital-acquired-infection-guidelines-2026",
+    "ms-insulin-dosing-algorithm-study-2026"
   ],
-  "last_run": "2026-04-04",
+  "last_run": "2026-04-05",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -322,7 +328,8 @@
     "Nevi: Epidermal",
     "Leukocytoclastic Vasculitis",
     "Actinic Keratosis",
-    "Prurigo Nodularis"
+    "Prurigo Nodularis",
+    "PUVA Lentigo"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -431,6 +438,10 @@
     "ecg-129",
     "cxr-080",
     "ct-064",
-    "clinical-not-just-pneumonia"
+    "clinical-not-just-pneumonia",
+    "ecg-043",
+    "cxr-067",
+    "ct-050",
+    "clinical-strychnine-poisoning"
   ]
 }
