@@ -70,7 +70,8 @@
     "Hospital-Acquired Pneumonia",
     "Status Epilepticus",
     "Lower GI Bleeding",
-    "Hyperkalemia"
+    "Hyperkalemia",
+    "Hypertensive Emergency"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -143,7 +144,8 @@
     "eolia-2018",
     "solidarity-2021",
     "vadt-2009",
-    "prevent-vte-2023"
+    "prevent-vte-2023",
+    "empulse-2022"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -292,9 +294,14 @@
     "ms-fda-generic-drug-safety-2026",
     "ms-sepsis-biomarker-validation-2026",
     "ms-hospital-acquired-infection-guidelines-2026",
-    "ms-insulin-dosing-algorithm-study-2026"
+    "ms-insulin-dosing-algorithm-study-2026",
+    "prednisone-vs-hydrocortisone-ai-2026",
+    "retatrutide-phase3-t2dm-2026",
+    "early-avr-asymptomatic-as-2026",
+    "apixaban-rivaroxaban-cobrra-vte-2026",
+    "multidisciplinary-falls-stroke-2026"
   ],
-  "last_run": "2026-04-05",
+  "last_run": "2026-04-06",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -329,7 +336,8 @@
     "Leukocytoclastic Vasculitis",
     "Actinic Keratosis",
     "Prurigo Nodularis",
-    "PUVA Lentigo"
+    "PUVA Lentigo",
+    "Vitiligo"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -442,6 +450,10 @@
     "ecg-043",
     "cxr-067",
     "ct-050",
-    "clinical-strychnine-poisoning"
+    "clinical-strychnine-poisoning",
+    "ecg-022",
+    "cxr-084",
+    "ct-069",
+    "clinical-clinical-cases/ecg-exigency"
   ]
 }
