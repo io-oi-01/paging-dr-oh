@@ -1,43 +1,126 @@
 [
   {
-    "article_index": 1,
-    "id": "prednisone-vs-hydrocortisone-ai-2026",
-    "type": "RCT",
-    "specialty": "Endocrinology",
-    "title": "Prednisone may have bone and cardiovascular benefits compared to hydrocortisone therapy in adrenal insufficiency",
-    "study_design": "Randomized controlled trial comparing prednisone vs hydrocortisone in adrenal insufficiency",
+    "article_index": 2,
+    "id": "thiazide-hyponatremia-age-sex-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "The risk of thiazide-associated hyponatremia may be greatest in older women",
+    "study_design": "Age and sex-stratified analysis of thiazide-associated hyponatremia risk",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Prednisolone therapy was well tolerated and may have better bone and cardiovascular outcomes compared to hydrocortisone in adult patients with adrenal insufficiency",
-      "Prednisone posed lower medication burden compared to hydrocortisone therapy"
+      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 years or older",
+      "In younger adults the excess absolute risk appears small, whereas in older women the risk is large enough to justify considering alternatives"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This could change standard practice for adrenal insufficiency management, as hydrocortisone is currently preferred due to its shorter half-life",
-      "Clinical context: The potential for improved bone health and cardiovascular outcomes with prednisone may outweigh traditional concerns about longer-acting steroids"
+      "Clinical context: This provides important age and sex-specific guidance for thiazide prescribing, particularly relevant for hospitalists managing hypertension in elderly female patients",
+      "Clinical context: May influence antihypertensive choice in older women where hyponatremia risk could outweigh benefits"
     ],
     "limitations": [
-      "Specific study methodology and duration unknown",
-      "Statistical significance and effect sizes not provided"
+      "Limited methodological details available from summary"
     ],
-    "bottom_line": "Prednisolone may offer advantages over hydrocortisone in adrenal insufficiency management, but more detailed study data is needed before changing practice.",
+    "bottom_line": "Thiazide-associated hyponatremia risk is highest in women over 80, warranting consideration of alternative antihypertensives in this population.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/",
+    "date": "Mon, 06 Apr 2026 15:00:42 +000",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "Hyponatremia is a serious adverse effect of thiazide diuretics that may be more predictable based on patient demographics, potentially guiding medication selection in vulnerable populations.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Thiazide-associated hyponatremia risk is highly age and sex-dependent with greatest excess risk in older adults, especially women aged 80 years or older",
+      "In younger adults the excess absolute risk appears small, whereas in older women the risk is large enough to justify considering alternatives"
+    ],
+    "clinical_interpretation": [
+      "This suggests a risk-stratified approach to thiazide prescribing may be warranted, with particular caution in elderly women who may benefit from alternative antihypertensive agents"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/"
+  },
+  {
+    "article_index": 3,
+    "id": "fda-novo-nordisk-warning-2026",
+    "type": "FDA Action",
+    "specialty": "Endocrinology",
+    "title": "FDA warns Novo Nordisk over safety reporting violations",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA issued warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
+      "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Given widespread use of GLP-1 agonists in hospitalized patients with diabetes and obesity, this highlights potential gaps in safety monitoring",
+      "Clinical context: Physicians should remain vigilant for adverse events with Novo Nordisk products and report through FDA MedWatch"
+    ],
+    "limitations": [
+      "Regulatory action summary with limited clinical detail"
+    ],
+    "bottom_line": "FDA cited Novo Nordisk for safety reporting violations that could compromise surveillance of GLP-1 receptor agonist adverse events.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/",
+    "date": "Mon, 06 Apr 2026 14:29:06 +000",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "FDA safety reporting violations by major pharmaceutical companies can compromise post-marketing surveillance systems that detect adverse events in widely-used medications.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "FDA issued warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
+      "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
+    ],
+    "clinical_interpretation": [
+      "This highlights the importance of robust post-marketing surveillance systems and may indicate potential gaps in our current knowledge of GLP-1 agonist safety profiles"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/"
+  },
+  {
+    "article_index": 7,
+    "id": "prednisone-hydrocortisone-adrenal-2026",
+    "type": "RCT",
+    "specialty": "Endocrinology",
+    "title": "Prednisone may have bone and cardiovascular benefits compared to hydrocortisone therapy in adrenal insufficiency",
+    "study_design": "Randomized controlled trial comparing prednisolone vs hydrocortisone",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Prednisolone therapy is well tolerated and may have better bone and cardiovascular outcomes compared to hydrocortisone",
+      "Prednisolone poses lower medication burden compared to hydrocortisone therapy in adult patients with adrenal insufficiency"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This challenges traditional preference for hydrocortisone in adrenal insufficiency management and may influence treatment choices",
+      "Clinical context: Important for hospitalists managing patients with adrenal insufficiency, particularly regarding steroid choice for long-term therapy"
+    ],
+    "limitations": [
+      "Limited methodological details available from summary"
+    ],
+    "bottom_line": "Prednisolone may offer bone and cardiovascular advantages over hydrocortisone in adrenal insufficiency replacement therapy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/",
     "date": "Fri, 03 Apr 2026 15:00:08 +000",
-    "date_iso": "2026-04-06",
-    "why_this_matters": "This challenges the standard hydrocortisone replacement therapy for adrenal insufficiency by suggesting prednisolone may offer better bone and cardiovascular outcomes with reduced medication burden.",
-    "population": "Adult patients with adrenal insufficiency",
-    "intervention_exposure": "Prednisolone therapy",
-    "comparator": "Hydrocortisone therapy",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "Choice of glucocorticoid replacement therapy in adrenal insufficiency may impact long-term bone health and cardiovascular outcomes, areas of significant concern in this population.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "Prednisolone was well tolerated",
-      "Better bone and cardiovascular outcomes compared to hydrocortisone",
-      "Lower medication burden compared to hydrocortisone"
+      "Prednisolone therapy may have better bone and cardiovascular outcomes compared to hydrocortisone",
+      "Prednisolone poses lower medication burden compared to hydrocortisone therapy in adult patients with adrenal insufficiency"
     ],
     "clinical_interpretation": [
-      "This could represent a meaningful shift in adrenal insufficiency management if bone and cardiovascular benefits are confirmed",
-      "The reduced dosing frequency of prednisolone may improve patient adherence"
+      "If confirmed in larger studies, this could influence standard of care for glucocorticoid replacement, potentially favoring prednisolone for improved long-term outcomes and patient convenience"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -46,8 +129,8 @@
     "twomm_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/"
   },
   {
-    "article_index": 2,
-    "id": "retatrutide-phase3-t2dm-2026",
+    "article_index": 8,
+    "id": "retatrutide-phase3-diabetes-2026",
     "type": "RCT",
     "specialty": "Endocrinology",
     "title": "Lilly's retatrutide achieves significant weight loss and A1C reduction in Phase 3 trial",
@@ -56,33 +139,31 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "Retatrutide met all major Phase 3 endpoints, delivering substantial reductions in both A1C and body weight in patients with type 2 diabetes",
-      "The triple-agonist targets GIP, GLP-1, and glucagon receptors and may represent the next evolution in metabolic therapy"
+      "The triple-agonist mechanism targeting GIP, GLP-1, and glucagon receptors may represent the next evolution in metabolic therapy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential advance beyond current GLP-1 agonists for diabetes and obesity management",
-      "Clinical context: Triple-receptor agonism could offer superior glycemic control and weight loss compared to existing options"
+      "Clinical context: This represents a potential new therapeutic option for hospitalists managing patients with type 2 diabetes and obesity",
+      "Clinical context: Triple-agonist approach may offer superior efficacy compared to current GLP-1 therapies for metabolic management"
     ],
     "limitations": [
-      "Specific efficacy data and adverse events not detailed",
-      "Comparison group not specified"
+      "Phase 3 trial results summary without detailed efficacy or safety data"
     ],
-    "bottom_line": "Retatrutide shows promising Phase 3 results for diabetes management, but detailed efficacy and safety data are needed before clinical implementation.",
-    "confidence": "moderate",
+    "bottom_line": "Retatrutide's triple-agonist mechanism showed promising Phase 3 results for both diabetes control and weight loss.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/lillys-retatrutide-achieves-significant-weight-loss-and-a1c-reduction-in-phase-3-trial/",
     "date": "Fri, 03 Apr 2026 14:29:04 +000",
-    "date_iso": "2026-04-06",
-    "why_this_matters": "A new triple-agonist medication shows promise for superior glycemic control and weight loss in type 2 diabetes, potentially advancing beyond current GLP-1 therapies.",
-    "population": "Patients with type 2 diabetes",
-    "intervention_exposure": "Retatrutide (triple-agonist targeting GIP, GLP-1, and glucagon receptors)",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "Triple-agonist medications represent a potential advancement in diabetes and obesity treatment, offering enhanced efficacy through multiple receptor pathways.",
+    "population": "",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Met all major Phase 3 endpoints",
-      "Substantial reductions in both A1C and body weight"
+      "Retatrutide met all major Phase 3 endpoints, delivering substantial reductions in both A1C and body weight in patients with type 2 diabetes",
+      "The triple-agonist mechanism targeting GIP, GLP-1, and glucagon receptors may represent the next evolution in metabolic therapy"
     ],
     "clinical_interpretation": [
-      "This triple-agonist mechanism may represent the next generation of diabetes medications",
-      "The dual benefits on glycemic control and weight loss could be particularly valuable for obese diabetic patients"
+      "This represents a promising advancement in metabolic therapy that could provide superior glycemic and weight control compared to current dual-agonist therapies, pending full safety and efficacy data"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -91,50 +172,94 @@
     "twomm_url": "https://www.2minutemedicine.com/lillys-retatrutide-achieves-significant-weight-loss-and-a1c-reduction-in-phase-3-trial/"
   },
   {
-    "article_index": 3,
+    "article_index": 9,
     "id": "early-avr-asymptomatic-as-2026",
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "Early surgical valve replacement offers survival benefit in asymptomatic, very severe aortic stenosis",
-    "study_design": "Randomized controlled trial with 10-year follow-up",
+    "study_design": "Randomized controlled trial with 10-year follow-up comparing early surgery versus conservative care in asymptomatic patients",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Composite of operative mortality or death from cardiovascular causes during 10-year follow-up",
     "source_summary_bullets": [
       "Over a ten-year period, early surgical valve replacement reduced the risk of operative mortality and cardiovascular death compared to conservative care in asymptomatic, very severe aortic stenosis",
       "Early surgical valve replacement demonstrated survival benefit in this patient population"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges current guidelines that typically recommend waiting for symptoms or left ventricular dysfunction in severe aortic stenosis",
-      "Clinical context: Earlier intervention may prevent irreversible cardiac damage and improve long-term outcomes"
+      "Clinical context: This may change management approach for asymptomatic severe aortic stenosis patients, moving from watchful waiting to earlier intervention",
+      "Clinical context: Important for hospitalists evaluating patients with severe aortic stenosis and making cardiothoracic surgery referral decisions"
     ],
     "limitations": [
-      "Patient selection criteria not specified",
-      "Surgical risk stratification unknown"
+      "Single-center study",
+      "Relatively small sample size",
+      "Surgical techniques and patient selection may limit generalizability"
     ],
-    "bottom_line": "Early surgical valve replacement appears to provide survival benefit over conservative management in asymptomatic, very severe aortic stenosis.",
+    "bottom_line": "Early surgical valve replacement significantly reduces 10-year cardiovascular mortality in asymptomatic very severe aortic stenosis compared to conservative management.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/",
     "date": "Fri, 03 Apr 2026 11:00:38 +000",
-    "date_iso": "2026-04-06",
-    "why_this_matters": "This evidence could change the timing of intervention in asymptomatic severe aortic stenosis, moving from a 'wait and see' approach to earlier surgical intervention.",
-    "population": "Patients with asymptomatic, very severe aortic stenosis",
-    "intervention_exposure": "Early surgical valve replacement",
-    "comparator": "Conservative care",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "This addresses a longstanding clinical dilemma about timing of valve replacement in asymptomatic severe aortic stenosis, with potential to change practice guidelines.",
+    "population": "145 asymptomatic patients with very severe aortic stenosis (aortic-valve area ≤0.75 cm² with peak aortic jet velocity ≥4.5 m/s)",
+    "intervention_exposure": "Early surgical valve replacement (n=73)",
+    "comparator": "Conservative care (n=72)",
     "key_results": [
-      "Over ten years, early surgery reduced operative mortality risk",
-      "Reduced cardiovascular death compared to conservative care",
-      "Demonstrated survival benefit"
+      "Primary endpoint occurred in 2/73 (3%) early surgery vs 17/72 (24%) conservative care (HR 0.10, 95% CI 0.02-0.43, P=0.002)",
+      "At 10 years, cumulative incidence of operative mortality or cardiovascular death was 1% early surgery vs 19% conservative care",
+      "All-cause mortality: 11/73 (15%) early surgery vs 23/72 (32%) conservative care (HR 0.42, 95% CI 0.21-0.86)"
     ],
     "clinical_interpretation": [
-      "This supports a paradigm shift toward earlier intervention in asymptomatic severe AS",
-      "The ten-year timeframe suggests durable benefit from early surgery"
+      "This provides compelling evidence for early intervention in asymptomatic very severe aortic stenosis, with substantial long-term survival benefit that challenges current watchful waiting approaches"
     ],
     "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/",
-    "pubmed_id": "",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2511920",
+    "pubmed_id": "41880613",
     "twomm_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/"
+  },
+  {
+    "article_index": 0,
+    "id": "cn-105-delirium-prevention-2026",
+    "type": "RCT",
+    "specialty": "Surgery",
+    "title": "Apolipoprotein E mimetic peptide CN-105 may be safe and feasible for delirium prevention in older surgical patients",
+    "study_design": "Safety and feasibility study in older patients undergoing noncardiac or nonintracranial surgery",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Apolipoprotein E Mimetic Peptide CN-105 was found to be safe and feasible among older patients with noncardiac or nonintracranial surgery",
+      "APOE gene ε4 allele is linked with neuroinflammation and is a potential risk factor for postoperative delirium"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Postoperative delirium is a major concern for hospitalists managing elderly surgical patients, and this represents a potential preventive intervention",
+      "Clinical context: If proven effective in larger trials, this could become an important tool in perioperative care for high-risk elderly patients"
+    ],
+    "limitations": [
+      "Safety and feasibility study without efficacy data",
+      "Limited methodological details available"
+    ],
+    "bottom_line": "CN-105 appears safe for delirium prevention in older surgical patients, but efficacy studies are needed before clinical use.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
+    "date": "Mon, 06 Apr 2026 23:00:18 +000",
+    "date_iso": "2026-04-07",
+    "why_this_matters": "Postoperative delirium is a major complication in older surgical patients with limited prevention strategies, making novel therapeutic approaches clinically valuable.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Apolipoprotein E Mimetic Peptide CN-105 was found to be safe and feasible among older patients with noncardiac or nonintracranial surgery",
+      "APOE gene ε4 allele is linked with neuroinflammation and is a potential risk factor for postoperative delirium"
+    ],
+    "clinical_interpretation": [
+      "While promising as a novel approach to delirium prevention, efficacy data are needed before clinical implementation; the APOE ε4 connection suggests potential for personalized prevention strategies"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/"
   },
   {
     "article_index": 6,
