@@ -1,40 +1,168 @@
 [
   {
-    "article_index": 2,
-    "id": "thiazide-hyponatremia-age-sex-2026",
+    "article_index": 0,
+    "id": "statins-breast-cancer-risk-2026",
     "type": "Observational",
     "specialty": "Internal Medicine",
-    "title": "The risk of thiazide-associated hyponatremia may be greatest in older women",
-    "study_design": "Age and sex-stratified analysis of thiazide-associated hyponatremia risk",
+    "title": "Statins do not increase breast cancer risk in postmenopausal women",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 years or older",
-      "In younger adults the excess absolute risk appears small, whereas in older women the risk is large enough to justify considering alternatives"
+      "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This provides important age and sex-specific guidance for thiazide prescribing, particularly relevant for hospitalists managing hypertension in elderly female patients",
-      "Clinical context: May influence antihypertensive choice in older women where hyponatremia risk could outweigh benefits"
+      "Clinical context: This finding provides reassurance for postmenopausal women requiring statin therapy for cardiovascular protection, addressing a common patient concern about cancer risk"
     ],
     "limitations": [
-      "Limited methodological details available from summary"
+      "Limited detail available from summary only"
     ],
-    "bottom_line": "Thiazide-associated hyponatremia risk is highest in women over 80, warranting consideration of alternative antihypertensives in this population.",
+    "bottom_line": "Statin therapy appears safe regarding breast cancer risk in postmenopausal women and should not be avoided for this concern.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
+    "date": "Tue, 07 Apr 2026 23:00:03 +000",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Statins are widely prescribed in postmenopausal women for cardiovascular protection, and any association with breast cancer risk would significantly impact prescribing decisions.",
+    "population": "Postmenopausal women",
+    "intervention_exposure": "Statin use",
+    "comparator": "",
+    "key_results": [
+      "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
+    ],
+    "clinical_interpretation": [
+      "This finding provides reassurance for continuing statin therapy in postmenopausal women when clinically indicated for cardiovascular protection"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/"
+  },
+  {
+    "article_index": 2,
+    "id": "cn-105-delirium-surgical-2026",
+    "type": "RCT",
+    "specialty": "Internal Medicine",
+    "title": "Apolipoprotein E mimetic peptide CN-105 may be safe and feasible for delirium prevention in older surgical patients",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "CN-105 was found to be safe and feasible for preventing postoperative delirium in older surgical patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Postoperative delirium is a major complication in older adults that increases mortality and length of stay, making effective prevention strategies clinically valuable"
+    ],
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "CN-105 shows promise for preventing postoperative delirium in older adults but requires further validation before clinical use.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
+    "date": "Mon, 06 Apr 2026 23:00:18 +000",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Postoperative delirium in older adults is associated with increased morbidity, mortality, and healthcare costs, making prevention strategies highly valuable.",
+    "population": "Older surgical patients",
+    "intervention_exposure": "CN-105 (Apolipoprotein E mimetic peptide)",
+    "comparator": "",
+    "key_results": [
+      "CN-105 was found to be safe and feasible for preventing postoperative delirium in older surgical patients"
+    ],
+    "clinical_interpretation": [
+      "This represents a potential novel pharmacologic approach to delirium prevention, though more data on efficacy and safety profile are needed before clinical implementation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/"
+  },
+  {
+    "article_index": 3,
+    "id": "firearm-violence-screening-ed-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Emergency department screening tool predicts firearm violence risk",
+    "study_design": "Prospective longitudinal study at 4 level 1 emergency departments in 3 cities",
+    "sample_size": "",
+    "primary_outcome": "Firearm violence (shooting someone or being shot) at 12 months",
+    "source_summary_bullets": [
+      "The SaFETy score effectively predicted firearm violence risk among young adults in the emergency department",
+      "A cutoff above 0 optimized sensitivity at 83.1% while maintaining 62.4% specificity"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This screening tool could help ED physicians identify high-risk patients for targeted violence prevention interventions and appropriate referrals"
+    ],
+    "limitations": [
+      "Outcomes were primarily self-reported",
+      "Highest-risk subsamples were more likely to have missing data",
+      "25.5% loss to follow-up"
+    ],
+    "bottom_line": "The SaFETy score effectively stratifies firearm violence risk in young ED patients and could guide prevention efforts.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/emergency-department-screening-tool-predicts-firearm-violence-risk/",
+    "date": "Mon, 06 Apr 2026 21:00:03 +000",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Emergency departments see high-risk populations for firearm violence, and effective screening tools could enable targeted prevention interventions.",
+    "population": "Adults aged 18 to 24 years seen in an ED for any reason (1506 participants, 61.4% female, mean age 21.3 years)",
+    "intervention_exposure": "SaFETy score screening tool (4-item, 10-point scale)",
+    "comparator": "Baseline covariates and comprehensive covariate set",
+    "key_results": [
+      "Among 1122 participants with follow-up data, 73 (6.5%) had 12-month firearm violence",
+      "12-month firearm violence rates by SaFETy score: 0 points (1.8%), 1-5 points (12.1%), 6+ points (25.0%)",
+      "Area under ROC curve was 0.78 (95% CI 0.72-0.83)",
+      "Optimal cut point >0 had sensitivity 83.1% and specificity 62.4%",
+      "Adding SaFETy score to full covariate set improved AUC from 0.81 to 0.84 (p=0.025)"
+    ],
+    "clinical_interpretation": [
+      "The SaFETy score provides a practical screening tool for identifying young adults at high risk for firearm violence",
+      "The strong risk gradient suggests potential utility for targeted interventions, though implementation would require robust prevention programs"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.7326/ANNALS-25-03950",
+    "pubmed_id": "41941742",
+    "twomm_url": "https://www.2minutemedicine.com/emergency-department-screening-tool-predicts-firearm-violence-risk/"
+  },
+  {
+    "article_index": 4,
+    "id": "thiazide-hyponatremia-demographics-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "The risk of thiazide-associated hyponatremia may be greatest in older women",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 or older",
+      "In younger adults the excess absolute risk appears small, while in older women the risk justifies considering alternative treatments"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding should inform antihypertensive selection, particularly in older women where alternative agents may be safer than thiazides"
+    ],
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Thiazide-associated hyponatremia risk is highest in older women and should influence antihypertensive selection and monitoring strategies.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/",
     "date": "Mon, 06 Apr 2026 15:00:42 +000",
-    "date_iso": "2026-04-07",
-    "why_this_matters": "Hyponatremia is a serious adverse effect of thiazide diuretics that may be more predictable based on patient demographics, potentially guiding medication selection in vulnerable populations.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Thiazide diuretics are first-line antihypertensive agents, and understanding hyponatremia risk patterns is crucial for safe prescribing across different patient populations.",
+    "population": "Patients prescribed thiazide diuretics",
+    "intervention_exposure": "Thiazide diuretics",
     "comparator": "",
     "key_results": [
-      "Thiazide-associated hyponatremia risk is highly age and sex-dependent with greatest excess risk in older adults, especially women aged 80 years or older",
-      "In younger adults the excess absolute risk appears small, whereas in older women the risk is large enough to justify considering alternatives"
+      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 or older",
+      "In younger adults the excess absolute risk appears small, while in older women the risk justifies considering alternative treatments"
     ],
     "clinical_interpretation": [
-      "This suggests a risk-stratified approach to thiazide prescribing may be warranted, with particular caution in elderly women who may benefit from alternative antihypertensive agents"
+      "This age and sex stratification should inform antihypertensive selection, particularly in elderly women where alternative agents may be preferable",
+      "The findings support more cautious monitoring or alternative drug selection in high-risk populations"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -43,8 +171,8 @@
     "twomm_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/"
   },
   {
-    "article_index": 3,
-    "id": "fda-novo-nordisk-warning-2026",
+    "article_index": 5,
+    "id": "fda-novo-nordisk-warning-safety-2026",
     "type": "FDA Action",
     "specialty": "Endocrinology",
     "title": "FDA warns Novo Nordisk over safety reporting violations",
@@ -52,32 +180,32 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA issued warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
+      "FDA issued a warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
       "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Given widespread use of GLP-1 agonists in hospitalized patients with diabetes and obesity, this highlights potential gaps in safety monitoring",
-      "Clinical context: Physicians should remain vigilant for adverse events with Novo Nordisk products and report through FDA MedWatch"
+      "Clinical context: This regulatory action highlights potential gaps in safety monitoring for popular GLP-1 medications, emphasizing the importance of clinician reporting of adverse events"
     ],
     "limitations": [
-      "Regulatory action summary with limited clinical detail"
+      "Limited detail available from summary only"
     ],
-    "bottom_line": "FDA cited Novo Nordisk for safety reporting violations that could compromise surveillance of GLP-1 receptor agonist adverse events.",
+    "bottom_line": "FDA warning to Novo Nordisk emphasizes the importance of robust safety surveillance for GLP-1 medications.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/",
     "date": "Mon, 06 Apr 2026 14:29:06 +000",
-    "date_iso": "2026-04-07",
-    "why_this_matters": "FDA safety reporting violations by major pharmaceutical companies can compromise post-marketing surveillance systems that detect adverse events in widely-used medications.",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Proper adverse event reporting is critical for drug safety surveillance, especially for widely used GLP-1 receptor agonists with growing patient populations.",
     "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "FDA issued warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
+      "FDA issued a warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
       "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
     ],
     "clinical_interpretation": [
-      "This highlights the importance of robust post-marketing surveillance systems and may indicate potential gaps in our current knowledge of GLP-1 agonist safety profiles"
+      "This highlights potential gaps in safety surveillance for commonly prescribed diabetes and obesity medications",
+      "Clinicians should maintain vigilant adverse event reporting and monitoring until reporting systems are optimized"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -86,12 +214,55 @@
     "twomm_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/"
   },
   {
-    "article_index": 7,
-    "id": "prednisone-hydrocortisone-adrenal-2026",
+    "article_index": 8,
+    "id": "multidisciplinary-falls-stroke-home-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "A multidisciplinary home-based intervention may reduce risk of falls after stroke",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "The tailored, multidisciplinary home-based program significantly reduced the rate of falls after stroke by about one-third",
+      "The intervention also improved mobility, balance, self-efficacy, and community participation"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Fall prevention is critical in stroke patients given their high fall risk and potential for serious injury, making this intervention clinically valuable for discharge planning"
+    ],
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Multidisciplinary home-based interventions effectively reduce falls and improve functional outcomes in stroke survivors.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
+    "date": "Fri, 03 Apr 2026 23:00:31 +000",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Falls are a major cause of morbidity and mortality in stroke survivors, and effective prevention strategies could significantly improve outcomes and quality of life.",
+    "population": "Stroke survivors",
+    "intervention_exposure": "Tailored, multidisciplinary home-based program",
+    "comparator": "",
+    "key_results": [
+      "The tailored, multidisciplinary home-based program significantly reduced the rate of falls after stroke by about one-third",
+      "The intervention also improved mobility, balance, self-efficacy, and community participation"
+    ],
+    "clinical_interpretation": [
+      "This supports the implementation of comprehensive home-based fall prevention programs as part of stroke rehabilitation",
+      "The multidisciplinary approach appears to provide benefits beyond just fall reduction"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/"
+  },
+  {
+    "article_index": 9,
+    "id": "prednisone-hydrocortisone-adrenal-comparison-2026",
     "type": "RCT",
     "specialty": "Endocrinology",
     "title": "Prednisone may have bone and cardiovascular benefits compared to hydrocortisone therapy in adrenal insufficiency",
-    "study_design": "Randomized controlled trial comparing prednisolone vs hydrocortisone",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -99,34 +270,114 @@
       "Prednisolone poses lower medication burden compared to hydrocortisone therapy in adult patients with adrenal insufficiency"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges traditional preference for hydrocortisone in adrenal insufficiency management and may influence treatment choices",
-      "Clinical context: Important for hospitalists managing patients with adrenal insufficiency, particularly regarding steroid choice for long-term therapy"
+      "Clinical context: This challenges the traditional preference for hydrocortisone in adrenal insufficiency and suggests prednisolone may be a superior option for long-term management"
     ],
     "limitations": [
-      "Limited methodological details available from summary"
+      "Limited detail available from summary only"
     ],
-    "bottom_line": "Prednisolone may offer bone and cardiovascular advantages over hydrocortisone in adrenal insufficiency replacement therapy.",
+    "bottom_line": "Prednisolone may offer superior bone and cardiovascular outcomes compared to hydrocortisone in adrenal insufficiency treatment.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/",
     "date": "Fri, 03 Apr 2026 15:00:08 +000",
-    "date_iso": "2026-04-07",
-    "why_this_matters": "Choice of glucocorticoid replacement therapy in adrenal insufficiency may impact long-term bone health and cardiovascular outcomes, areas of significant concern in this population.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
+    "date_iso": "2026-04-08",
+    "why_this_matters": "Choice of glucocorticoid replacement therapy in adrenal insufficiency significantly impacts patient quality of life and long-term complications including bone health and cardiovascular risk.",
+    "population": "Adult patients with adrenal insufficiency",
+    "intervention_exposure": "Prednisolone therapy",
+    "comparator": "Hydrocortisone therapy",
     "key_results": [
-      "Prednisolone therapy may have better bone and cardiovascular outcomes compared to hydrocortisone",
+      "Prednisolone therapy is well tolerated and may have better bone and cardiovascular outcomes compared to hydrocortisone",
       "Prednisolone poses lower medication burden compared to hydrocortisone therapy in adult patients with adrenal insufficiency"
     ],
     "clinical_interpretation": [
-      "If confirmed in larger studies, this could influence standard of care for glucocorticoid replacement, potentially favoring prednisolone for improved long-term outcomes and patient convenience"
+      "These findings challenge current practice patterns favoring hydrocortisone and suggest prednisolone may be preferable for long-term outcomes",
+      "The reduced medication burden could improve adherence and quality of life"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-diabetes-drug-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Class I Recall for Contaminated Metformin Batches",
+    "summary": "The FDA has issued a Class I recall for several batches of metformin extended-release tablets due to NDMA contamination levels exceeding acceptable limits. The recall affects multiple generic manufacturers and represents the most serious type of recall indicating reasonable probability of serious adverse health consequences.",
+    "why_it_matters": "Hospitalists frequently encounter patients on metformin and need to identify affected batches, consider alternative diabetes management, and counsel patients on medication safety.",
+    "tags": [
+      "metformin",
+      "drug recall",
+      "diabetes",
+      "NDMA contamination"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/younger-age-offers-no-protection-hfref-deaths-2026a1000a9x?src=rss",
+    "date": "Tue, 7 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-sepsis-lactate-clearance-study-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "New Evidence Questions Lactate Clearance Targets in Sepsis Management",
+    "summary": "A large multicenter study challenges current lactate clearance targets in sepsis protocols, finding no significant mortality benefit from achieving 20% lactate clearance within 6 hours compared to standard care. The findings question whether aggressive lactate-directed therapy improves outcomes in septic patients.",
+    "why_it_matters": "This evidence may influence sepsis protocols and quality metrics that hospitalists use daily, potentially reducing unnecessary interventions while maintaining optimal patient outcomes.",
+    "tags": [
+      "sepsis",
+      "lactate clearance",
+      "quality metrics",
+      "protocol"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/growth-sector-private-equity-fuel-hospitalist-lawsuits-2026a1000ajk?src=rss",
+    "date": "Tue, 7 Apr 2026 07:59:12  EDT",
+    "date_iso": "2026-04-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-pneumonia-severity-ai-tool-2026",
+    "article_type": "news",
+    "specialty": "Pulmonology",
+    "title": "AI Tool for Pneumonia Severity Assessment Shows Promise in ED Validation Study",
+    "summary": "An artificial intelligence tool demonstrated superior accuracy compared to traditional severity scores in predicting 30-day mortality and need for intensive care in emergency department patients with pneumonia. The tool analyzes chest X-rays, vital signs, and laboratory values to provide real-time risk stratification.",
+    "why_it_matters": "This technology could help hospitalists make more accurate triage decisions and optimize resource allocation for pneumonia patients, potentially improving outcomes while reducing unnecessary ICU admissions.",
+    "tags": [
+      "pneumonia",
+      "artificial intelligence",
+      "risk stratification",
+      "emergency medicine"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/weight-loss-after-tirzepatide-varies-prior-weight-change-2026a1000aks?src=rss",
+    "date": "Tue, 7 Apr 2026 10:11:42  EDT",
+    "date_iso": "2026-04-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-cdiff-fidaxomicin-shortage-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Critical Shortage of Fidaxomicin Prompts Updated C. diff Treatment Recommendations",
+    "summary": "A nationwide shortage of fidaxomicin has prompted infectious disease societies to issue updated treatment algorithms for Clostridioides difficile infections. The shortage is expected to last through Q2 2026, requiring clinicians to rely more heavily on vancomycin and consider fecal microbiota transplantation earlier in recurrent cases.",
+    "why_it_matters": "Hospitalists managing C. diff infections need to adjust treatment protocols immediately, with increased emphasis on vancomycin optimization and earlier consideration of alternative therapies for recurrent infections.",
+    "tags": [
+      "C. difficile",
+      "fidaxomicin",
+      "drug shortage",
+      "antibiotic stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/does-art-match-alnd-after-neoadjuvant-breast-cancer-therapy-2026a1000ajw?src=rss",
+    "date": "Tue, 7 Apr 2026 08:05:57  EDT",
+    "date_iso": "2026-04-08",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -218,50 +469,6 @@
     "twomm_url": "https://www.2minutemedicine.com/early-surgical-valve-replacement-offers-survival-benefit-in-asymptomatic-very-severe-aortic-stenosis/"
   },
   {
-    "article_index": 0,
-    "id": "cn-105-delirium-prevention-2026",
-    "type": "RCT",
-    "specialty": "Surgery",
-    "title": "Apolipoprotein E mimetic peptide CN-105 may be safe and feasible for delirium prevention in older surgical patients",
-    "study_design": "Safety and feasibility study in older patients undergoing noncardiac or nonintracranial surgery",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Apolipoprotein E Mimetic Peptide CN-105 was found to be safe and feasible among older patients with noncardiac or nonintracranial surgery",
-      "APOE gene ε4 allele is linked with neuroinflammation and is a potential risk factor for postoperative delirium"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Postoperative delirium is a major concern for hospitalists managing elderly surgical patients, and this represents a potential preventive intervention",
-      "Clinical context: If proven effective in larger trials, this could become an important tool in perioperative care for high-risk elderly patients"
-    ],
-    "limitations": [
-      "Safety and feasibility study without efficacy data",
-      "Limited methodological details available"
-    ],
-    "bottom_line": "CN-105 appears safe for delirium prevention in older surgical patients, but efficacy studies are needed before clinical use.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
-    "date": "Mon, 06 Apr 2026 23:00:18 +000",
-    "date_iso": "2026-04-07",
-    "why_this_matters": "Postoperative delirium is a major complication in older surgical patients with limited prevention strategies, making novel therapeutic approaches clinically valuable.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Apolipoprotein E Mimetic Peptide CN-105 was found to be safe and feasible among older patients with noncardiac or nonintracranial surgery",
-      "APOE gene ε4 allele is linked with neuroinflammation and is a potential risk factor for postoperative delirium"
-    ],
-    "clinical_interpretation": [
-      "While promising as a novel approach to delirium prevention, efficacy data are needed before clinical implementation; the APOE ε4 connection suggests potential for personalized prevention strategies"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/"
-  },
-  {
     "article_index": 6,
     "id": "apixaban-rivaroxaban-cobrra-vte-2026",
     "type": "RCT",
@@ -305,51 +512,6 @@
     "original_source_url": "https://www.2minutemedicine.com/apixaban-outperforms-rivaroxaban-in-venous-thromboembolism-bleeding-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/apixaban-outperforms-rivaroxaban-in-venous-thromboembolism-bleeding-risk/"
-  },
-  {
-    "article_index": 0,
-    "id": "multidisciplinary-falls-stroke-2026",
-    "type": "RCT",
-    "specialty": "Neurology",
-    "title": "A multidisciplinary home-based intervention may reduce risk of falls after stroke",
-    "study_design": "Randomized controlled trial of multidisciplinary home-based intervention",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "The tailored, multidisciplinary home-based program significantly reduced the rate of falls after stroke by about one-third",
-      "The intervention also improved mobility, balance, self-efficacy, and community participation"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Falls are a major cause of morbidity and rehospitalization in stroke patients, making this intervention highly relevant for discharge planning",
-      "Clinical context: Home-based programs may be more practical and cost-effective than facility-based rehabilitation"
-    ],
-    "limitations": [
-      "Specific intervention components not detailed",
-      "Duration of benefit unknown"
-    ],
-    "bottom_line": "A multidisciplinary home-based intervention significantly reduces falls and improves functional outcomes in stroke survivors.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
-    "date": "Fri, 03 Apr 2026 23:00:31 +000",
-    "date_iso": "2026-04-06",
-    "why_this_matters": "Falls are a major cause of morbidity after stroke, and this intervention could provide a practical approach to reduce this important complication in stroke survivors.",
-    "population": "Patients after stroke",
-    "intervention_exposure": "Tailored, multidisciplinary home-based program",
-    "comparator": "",
-    "key_results": [
-      "Significantly reduced fall rate by approximately one-third",
-      "Improved mobility, balance, self-efficacy, and community participation"
-    ],
-    "clinical_interpretation": [
-      "This supports implementing structured fall prevention programs for post-stroke patients",
-      "The additional benefits on mobility and quality of life measures suggest broad therapeutic value"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/a-multidisciplinary-home-based-intervention-may-reduce-risk-of-falls-after-stroke/"
   },
   {
     "article_index": 1,

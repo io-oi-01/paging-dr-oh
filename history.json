@@ -72,7 +72,8 @@
     "Lower GI Bleeding",
     "Hyperkalemia",
     "Hypertensive Emergency",
-    "COPD Exacerbation"
+    "COPD Exacerbation",
+    "Cardiac Tamponade"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -147,7 +148,8 @@
     "vadt-2009",
     "prevent-vte-2023",
     "empulse-2022",
-    "ttm-2013"
+    "ttm-2013",
+    "shift-2010"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -306,9 +308,20 @@
     "fda-novo-nordisk-warning-2026",
     "prednisone-hydrocortisone-adrenal-2026",
     "retatrutide-phase3-diabetes-2026",
-    "cn-105-delirium-prevention-2026"
+    "cn-105-delirium-prevention-2026",
+    "statins-breast-cancer-risk-2026",
+    "cn-105-delirium-surgical-2026",
+    "firearm-violence-screening-ed-2026",
+    "thiazide-hyponatremia-demographics-2026",
+    "fda-novo-nordisk-warning-safety-2026",
+    "multidisciplinary-falls-stroke-home-2026",
+    "prednisone-hydrocortisone-adrenal-comparison-2026",
+    "ms-fda-diabetes-drug-recall-2026",
+    "ms-sepsis-lactate-clearance-study-2026",
+    "ms-pneumonia-severity-ai-tool-2026",
+    "ms-cdiff-fidaxomicin-shortage-2026"
   ],
-  "last_run": "2026-04-07",
+  "last_run": "2026-04-08",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -345,7 +358,8 @@
     "Prurigo Nodularis",
     "PUVA Lentigo",
     "Vitiligo",
-    "Chondrodermatitis"
+    "Chondrodermatitis",
+    "Lichen Planus"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -466,6 +480,10 @@
     "ecg-069",
     "cxr-041",
     "ct-081",
-    "clinical-verdant-waste"
+    "clinical-verdant-waste",
+    "ecg-048",
+    "cxr-042",
+    "ct-060",
+    "clinical-snakebite-envenoming-challenge"
   ]
 }
