@@ -73,7 +73,8 @@
     "Hyperkalemia",
     "Hypertensive Emergency",
     "COPD Exacerbation",
-    "Cardiac Tamponade"
+    "Cardiac Tamponade",
+    "Delirium"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -149,7 +150,8 @@
     "prevent-vte-2023",
     "empulse-2022",
     "ttm-2013",
-    "shift-2010"
+    "shift-2010",
+    "villanueva-2013"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -319,9 +321,16 @@
     "ms-fda-diabetes-drug-recall-2026",
     "ms-sepsis-lactate-clearance-study-2026",
     "ms-pneumonia-severity-ai-tool-2026",
-    "ms-cdiff-fidaxomicin-shortage-2026"
+    "ms-cdiff-fidaxomicin-shortage-2026",
+    "statins-breast-cancer-postmenopausal-2026",
+    "cn-105-delirium-prevention-surgical-2026",
+    "thiazide-hyponatremia-age-sex-risk-2026",
+    "ms-respiratory-syncytial-virus-outbreak-2026",
+    "ms-fda-metformin-contamination-recall-2026",
+    "ms-pneumonia-antibiotic-resistance-guidelines-2026",
+    "ms-stroke-thrombolysis-extended-window-2026"
   ],
-  "last_run": "2026-04-08",
+  "last_run": "2026-04-09",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -359,7 +368,8 @@
     "PUVA Lentigo",
     "Vitiligo",
     "Chondrodermatitis",
-    "Lichen Planus"
+    "Lichen Planus",
+    "Sarcoidosis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -484,6 +494,10 @@
     "ecg-048",
     "cxr-042",
     "ct-060",
-    "clinical-snakebite-envenoming-challenge"
+    "clinical-snakebite-envenoming-challenge",
+    "ecg-060",
+    "cxr-068",
+    "ct-005",
+    "clinical-no-radial-pulse"
   ]
 }

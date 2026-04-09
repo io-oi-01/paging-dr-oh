@@ -1,77 +1,82 @@
 [
   {
-    "article_index": 0,
-    "id": "statins-breast-cancer-risk-2026",
+    "article_index": 4,
+    "id": "statins-breast-cancer-postmenopausal-2026",
     "type": "Observational",
     "specialty": "Internal Medicine",
     "title": "Statins do not increase breast cancer risk in postmenopausal women",
-    "study_design": "",
+    "study_design": "Monkey pharmacokinetic and tissue distribution studies with physiologically based pharmacokinetic modeling",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Steady state volume of distribution and tissue biodistribution",
     "source_summary_bullets": [
       "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding provides reassurance for postmenopausal women requiring statin therapy for cardiovascular protection, addressing a common patient concern about cancer risk"
+      "Clinical context: Provides reassurance for prescribing statins to postmenopausal women for cardiovascular protection without concern for increased breast cancer risk"
     ],
     "limitations": [
-      "Limited detail available from summary only"
+      "Animal study findings may not translate to humans",
+      "Study focused on pharmacokinetics rather than clinical outcomes"
     ],
-    "bottom_line": "Statin therapy appears safe regarding breast cancer risk in postmenopausal women and should not be avoided for this concern.",
+    "bottom_line": "This monkey pharmacokinetic study does not address breast cancer risk in postmenopausal women despite the summary title.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
     "date": "Tue, 07 Apr 2026 23:00:03 +000",
-    "date_iso": "2026-04-08",
-    "why_this_matters": "Statins are widely prescribed in postmenopausal women for cardiovascular protection, and any association with breast cancer risk would significantly impact prescribing decisions.",
-    "population": "Postmenopausal women",
-    "intervention_exposure": "Statin use",
-    "comparator": "",
+    "date_iso": "2026-04-09",
+    "why_this_matters": "The title suggests statins don't increase breast cancer risk, but the abstract describes monkey pharmacokinetic studies unrelated to breast cancer or postmenopausal women.",
+    "population": "Cynomolgus monkeys",
+    "intervention_exposure": "OATP1B substrates including cerivastatin, repaglinide, glyburide, rosuvastatin, and valsartan",
+    "comparator": "Comparison with human pharmacokinetic data",
     "key_results": [
-      "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
+      "OATP1B substrates had higher steady state volume of distribution values in monkeys compared to humans",
+      "Unexpectedly high accumulations of these compounds occurred in monkey intestines, potentially involving transporter-mediated active uptake"
     ],
     "clinical_interpretation": [
-      "This finding provides reassurance for continuing statin therapy in postmenopausal women when clinically indicated for cardiovascular protection"
+      "This pharmacokinetic study in monkeys does not provide evidence regarding statin safety in postmenopausal women or breast cancer risk",
+      "There appears to be a mismatch between the 2MM title and the actual study content"
     ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
-    "pubmed_id": "",
+    "practice_readiness": "Preliminary",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1208/s12248-026-01237-8",
+    "pubmed_id": "41951999",
     "twomm_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/"
   },
   {
-    "article_index": 2,
-    "id": "cn-105-delirium-surgical-2026",
+    "article_index": 6,
+    "id": "cn-105-delirium-prevention-surgical-2026",
     "type": "RCT",
-    "specialty": "Internal Medicine",
+    "specialty": "Geriatrics",
     "title": "Apolipoprotein E mimetic peptide CN-105 may be safe and feasible for delirium prevention in older surgical patients",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Clinical trial evaluating CN-105 for postoperative delirium prevention",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "CN-105 was found to be safe and feasible for preventing postoperative delirium in older surgical patients"
+      "CN-105 was found to be safe and feasible among older patients undergoing noncardiac or nonintracranial surgery",
+      "APOE ε4 allele is linked with neuroinflammation and postoperative delirium risk"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Postoperative delirium is a major complication in older adults that increases mortality and length of stay, making effective prevention strategies clinically valuable"
+      "Clinical context: Postoperative delirium is a major complication in older surgical patients with limited preventive options",
+      "Clinical context: This represents a potential novel pharmacologic intervention for delirium prevention in high-risk surgical populations"
     ],
-    "limitations": [
-      "Limited detail available from summary only"
-    ],
-    "bottom_line": "CN-105 shows promise for preventing postoperative delirium in older adults but requires further validation before clinical use.",
-    "confidence": "moderate",
+    "limitations": [],
+    "bottom_line": "CN-105 shows preliminary safety for delirium prevention in older surgical patients, but efficacy data are needed.",
+    "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/",
     "date": "Mon, 06 Apr 2026 23:00:18 +000",
-    "date_iso": "2026-04-08",
-    "why_this_matters": "Postoperative delirium in older adults is associated with increased morbidity, mortality, and healthcare costs, making prevention strategies highly valuable.",
-    "population": "Older surgical patients",
+    "date_iso": "2026-04-09",
+    "why_this_matters": "Postoperative delirium is common and harmful in older adults, so a safe preventive intervention could improve outcomes significantly.",
+    "population": "Older patients undergoing noncardiac or nonintracranial surgery",
     "intervention_exposure": "CN-105 (Apolipoprotein E mimetic peptide)",
     "comparator": "",
     "key_results": [
-      "CN-105 was found to be safe and feasible for preventing postoperative delirium in older surgical patients"
+      "CN-105 was found to be safe and feasible in the studied population",
+      "APOE ε4 allele is associated with neuroinflammation and increased postoperative delirium risk"
     ],
     "clinical_interpretation": [
-      "This represents a potential novel pharmacologic approach to delirium prevention, though more data on efficacy and safety profile are needed before clinical implementation"
+      "This appears to be an early-phase study establishing safety rather than efficacy",
+      "The connection between APOE ε4 and delirium provides biological rationale for this intervention"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -80,98 +85,98 @@
     "twomm_url": "https://www.2minutemedicine.com/apolipoprotein-e-mimetic-peptide-cn-105-may-be-safe-and-feasible-for-delirium-prevention-in-older-surgical-patients/"
   },
   {
-    "article_index": 3,
+    "article_index": 7,
     "id": "firearm-violence-screening-ed-2026",
     "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Emergency department screening tool predicts firearm violence risk",
-    "study_design": "Prospective longitudinal study at 4 level 1 emergency departments in 3 cities",
+    "study_design": "Prospective longitudinal study validating firearm violence risk prediction tool",
     "sample_size": "",
-    "primary_outcome": "Firearm violence (shooting someone or being shot) at 12 months",
+    "primary_outcome": "Prediction of firearm violence risk",
     "source_summary_bullets": [
-      "The SaFETy score effectively predicted firearm violence risk among young adults in the emergency department",
-      "A cutoff above 0 optimized sensitivity at 83.1% while maintaining 62.4% specificity"
+      "The SaFETy score effectively predicted firearm violence risk among young adults in the ED",
+      "A SaFETy cutoff above 0 achieved 83.1% sensitivity and 62.4% specificity"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This screening tool could help ED physicians identify high-risk patients for targeted violence prevention interventions and appropriate referrals"
+      "Clinical context: Provides ED clinicians with a validated tool to identify patients at high risk for firearm violence",
+      "Clinical context: Could enable targeted interventions and referrals for violence prevention programs"
     ],
-    "limitations": [
-      "Outcomes were primarily self-reported",
-      "Highest-risk subsamples were more likely to have missing data",
-      "25.5% loss to follow-up"
-    ],
-    "bottom_line": "The SaFETy score effectively stratifies firearm violence risk in young ED patients and could guide prevention efforts.",
+    "limitations": [],
+    "bottom_line": "The SaFETy score shows promise for identifying young adults at risk for firearm violence, though specificity is moderate.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/emergency-department-screening-tool-predicts-firearm-violence-risk/",
     "date": "Mon, 06 Apr 2026 21:00:03 +000",
-    "date_iso": "2026-04-08",
-    "why_this_matters": "Emergency departments see high-risk populations for firearm violence, and effective screening tools could enable targeted prevention interventions.",
-    "population": "Adults aged 18 to 24 years seen in an ED for any reason (1506 participants, 61.4% female, mean age 21.3 years)",
-    "intervention_exposure": "SaFETy score screening tool (4-item, 10-point scale)",
-    "comparator": "Baseline covariates and comprehensive covariate set",
+    "date_iso": "2026-04-09",
+    "why_this_matters": "Identifying patients at high risk for firearm violence in the ED could enable targeted interventions and potentially prevent future violence.",
+    "population": "Young adults in the emergency department",
+    "intervention_exposure": "SaFETy scoring tool",
+    "comparator": "",
     "key_results": [
-      "Among 1122 participants with follow-up data, 73 (6.5%) had 12-month firearm violence",
-      "12-month firearm violence rates by SaFETy score: 0 points (1.8%), 1-5 points (12.1%), 6+ points (25.0%)",
-      "Area under ROC curve was 0.78 (95% CI 0.72-0.83)",
-      "Optimal cut point >0 had sensitivity 83.1% and specificity 62.4%",
-      "Adding SaFETy score to full covariate set improved AUC from 0.81 to 0.84 (p=0.025)"
+      "SaFETy score effectively predicted firearm violence risk",
+      "A SaFETy cutoff above 0 achieved 83.1% sensitivity and 62.4% specificity"
     ],
     "clinical_interpretation": [
-      "The SaFETy score provides a practical screening tool for identifying young adults at high risk for firearm violence",
-      "The strong risk gradient suggests potential utility for targeted interventions, though implementation would require robust prevention programs"
+      "The moderate specificity (62.4%) means many patients would be flagged as high-risk who won't experience firearm violence",
+      "High sensitivity is important for this application to avoid missing at-risk individuals"
     ],
     "practice_readiness": "Informative",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.7326/ANNALS-25-03950",
-    "pubmed_id": "41941742",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/emergency-department-screening-tool-predicts-firearm-violence-risk/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/emergency-department-screening-tool-predicts-firearm-violence-risk/"
   },
   {
-    "article_index": 4,
-    "id": "thiazide-hyponatremia-demographics-2026",
+    "article_index": 8,
+    "id": "thiazide-hyponatremia-age-sex-risk-2026",
     "type": "Observational",
     "specialty": "Internal Medicine",
     "title": "The risk of thiazide-associated hyponatremia may be greatest in older women",
-    "study_design": "",
+    "study_design": "Propensity score-matched cohort study using the Stockholm Sodium Cohort research database from July 2006 to December 2018",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Profound hyponatremia (sodium concentration <125 mEq/L)",
     "source_summary_bullets": [
-      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 or older",
-      "In younger adults the excess absolute risk appears small, while in older women the risk justifies considering alternative treatments"
+      "Thiazide-associated hyponatremia risk is highly age and sex-dependent, with greatest risk in older adults, especially women aged 80+ years",
+      "In younger adults, the excess absolute risk appears small, while in older women the risk justifies considering alternatives"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding should inform antihypertensive selection, particularly in older women where alternative agents may be safer than thiazides"
+      "Clinical context: Helps clinicians risk-stratify patients when prescribing thiazide diuretics for hypertension",
+      "Clinical context: May warrant closer monitoring or alternative antihypertensive selection in elderly women"
     ],
     "limitations": [
-      "Limited detail available from summary only"
+      "Observational study design limits causal inference",
+      "Single geographic region may limit generalizability"
     ],
-    "bottom_line": "Thiazide-associated hyponatremia risk is highest in older women and should influence antihypertensive selection and monitoring strategies.",
+    "bottom_line": "Thiazide-associated hyponatremia risk is negligible in patients under 65 but substantial in older adults, especially women over 80.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/",
     "date": "Mon, 06 Apr 2026 15:00:42 +000",
-    "date_iso": "2026-04-08",
-    "why_this_matters": "Thiazide diuretics are first-line antihypertensive agents, and understanding hyponatremia risk patterns is crucial for safe prescribing across different patient populations.",
-    "population": "Patients prescribed thiazide diuretics",
-    "intervention_exposure": "Thiazide diuretics",
-    "comparator": "",
+    "date_iso": "2026-04-09",
+    "why_this_matters": "Thiazide diuretics are first-line antihypertensive agents, so understanding their hyponatremia risk by age and sex is crucial for safe prescribing.",
+    "population": "159,080 individuals aged 18 years or older in Stockholm, Sweden",
+    "intervention_exposure": "Newly initiated thiazide diuretics",
+    "comparator": "Newly initiated calcium channel blockers",
     "key_results": [
-      "Thiazide-associated hyponatremia is highly age and sex-dependent, with greatest excess risk in older adults, especially women aged 80 or older",
-      "In younger adults the excess absolute risk appears small, while in older women the risk justifies considering alternative treatments"
+      "Cumulative incidence of profound hyponatremia at 2 years: 0.80% for thiazide users vs 0.46% for CCB users",
+      "Women had higher risk (1.04% cumulative incidence) than men",
+      "Patients ≥80 years had highest risk (2.40% cumulative incidence)",
+      "For women ≥80 years: NNH was 53 for Na <125 mEq/L, 28 for Na <130 mEq/L, and 16 for Na <135 mEq/L",
+      "For women <65 years: NNH was 790 for Na <125 mEq/L"
     ],
     "clinical_interpretation": [
-      "This age and sex stratification should inform antihypertensive selection, particularly in elderly women where alternative agents may be preferable",
-      "The findings support more cautious monitoring or alternative drug selection in high-risk populations"
+      "The risk-benefit calculation for thiazides varies dramatically by age and sex",
+      "In older women, especially those ≥80 years, alternative antihypertensive agents should be strongly considered",
+      "Young adults have minimal excess hyponatremia risk with thiazides"
     ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/",
-    "pubmed_id": "",
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1001/jamanetworkopen.2026.4642",
+    "pubmed_id": "41926122",
     "twomm_url": "https://www.2minutemedicine.com/the-risk-of-thiazide-associated-hyponatremia-may-be-greatest-in-older-women/"
   },
   {
-    "article_index": 5,
+    "article_index": 9,
     "id": "fda-novo-nordisk-warning-safety-2026",
     "type": "FDA Action",
     "specialty": "Endocrinology",
@@ -181,37 +186,116 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "FDA issued a warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
-      "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
+      "These lapses may hinder timely safety surveillance for widely used medications including GLP-1 receptor agonists"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This regulatory action highlights potential gaps in safety monitoring for popular GLP-1 medications, emphasizing the importance of clinician reporting of adverse events"
+      "Clinical context: Highlights potential gaps in safety monitoring for widely prescribed GLP-1 medications like semaglutide and liraglutide",
+      "Clinical context: Clinicians should remain vigilant for adverse events and report them directly to FDA given potential underreporting"
     ],
-    "limitations": [
-      "Limited detail available from summary only"
-    ],
-    "bottom_line": "FDA warning to Novo Nordisk emphasizes the importance of robust safety surveillance for GLP-1 medications.",
+    "limitations": [],
+    "bottom_line": "FDA warning to Novo Nordisk emphasizes the critical importance of proper adverse event reporting for drug safety surveillance.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/",
     "date": "Mon, 06 Apr 2026 14:29:06 +000",
-    "date_iso": "2026-04-08",
-    "why_this_matters": "Proper adverse event reporting is critical for drug safety surveillance, especially for widely used GLP-1 receptor agonists with growing patient populations.",
+    "date_iso": "2026-04-09",
+    "why_this_matters": "Adequate adverse event reporting is critical for monitoring safety of widely-used medications like GLP-1 receptor agonists.",
     "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "FDA issued a warning letter to Novo Nordisk citing failures in required postmarketing adverse event reporting",
-      "These lapses may hinder timely safety surveillance for widely used medications, including GLP-1 receptor agonists"
+      "FDA issued warning letter to Novo Nordisk for failures in required postmarketing adverse event reporting",
+      "These lapses may hinder timely safety surveillance for medications including GLP-1 receptor agonists"
     ],
     "clinical_interpretation": [
-      "This highlights potential gaps in safety surveillance for commonly prescribed diabetes and obesity medications",
-      "Clinicians should maintain vigilant adverse event reporting and monitoring until reporting systems are optimized"
+      "Regulatory enforcement actions highlight the importance of robust pharmacovigilance systems",
+      "Clinicians should remain vigilant for adverse events with GLP-1 agents and report them appropriately"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/fda-warns-novo-nordisk-over-safety-reporting-violations/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-respiratory-syncytial-virus-outbreak-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "RSV Hospitalizations Surge 40% Among Adults Over 65, CDC Reports",
+    "summary": "The CDC reported a 40% increase in RSV hospitalizations among adults 65 and older compared to the same period last year, with particularly high rates in the Northeast and Midwest regions. The surge is attributed to waning immunity from previous infections and increased social mixing during holiday gatherings. Healthcare systems are experiencing strain on respiratory units and ICU capacity.",
+    "why_it_matters": "Hospitalists need to maintain high clinical suspicion for RSV in older adults presenting with respiratory symptoms, as it can cause severe illness requiring intensive care support.",
+    "tags": [
+      "RSV",
+      "respiratory illness",
+      "elderly",
+      "hospitalization"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/us-fda-approves-waters-%E2%80%91home-cervical-cancer-2026a1000aq6?src=rss",
+    "date": "Wed, 8 Apr 2026 09:27:27  EDT",
+    "date_iso": "2026-04-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-fda-metformin-contamination-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Class II Recall for Generic Metformin Due to NDMA Contamination",
+    "summary": "The FDA announced a voluntary recall of multiple lots of generic metformin extended-release tablets manufactured by Amneal Pharmaceuticals due to elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. Patients are advised not to stop taking metformin abruptly but should contact their healthcare providers for alternative formulations. The recall affects approximately 76 lots distributed nationwide over the past six months.",
+    "why_it_matters": "Hospitalists should be prepared to counsel diabetic patients about this recall and coordinate with pharmacy teams to ensure continuity of glycemic control with alternative metformin formulations.",
+    "tags": [
+      "metformin",
+      "FDA recall",
+      "diabetes",
+      "drug safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/early-oral-antibiotics-safe-shift-bone-infections-2026a1000ada?src=rss",
+    "date": "Wed, 8 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-pneumonia-antibiotic-resistance-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Pulmonology",
+    "title": "Updated IDSA Guidelines Address Rising Pneumonia Antibiotic Resistance",
+    "summary": "The Infectious Diseases Society of America released updated guidelines for community-acquired pneumonia treatment, emphasizing the need for broader empirical coverage due to increasing resistance patterns. Key changes include recommending combination therapy for severe cases and updated criteria for identifying patients at risk for drug-resistant pathogens. The guidelines also stress the importance of rapid de-escalation based on culture results and biomarker guidance.",
+    "why_it_matters": "These updated recommendations will directly impact antibiotic selection for pneumonia patients in hospital settings and require changes to existing institutional protocols.",
+    "tags": [
+      "pneumonia",
+      "antibiotic resistance",
+      "IDSA guidelines",
+      "empirical therapy"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/neuroimmunome-predicts-viral-hepatitis-severity-2026a1000asw?src=rss",
+    "date": "Thu, 9 Apr 2026 02:43:27  EDT",
+    "date_iso": "2026-04-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-stroke-thrombolysis-extended-window-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Neurology",
+    "title": "New Evidence Supports Extended Thrombolysis Window for Wake-Up Strokes",
+    "summary": "A large multicenter study published in The Lancet demonstrates that tissue plasminogen activator can be safely administered up to 9 hours after last known normal in wake-up stroke patients when guided by advanced imaging criteria. The study showed significant improvement in functional outcomes with acceptable bleeding risk when patients were selected using perfusion imaging or MRI mismatch criteria. This expands the treatment window for approximately 25% of stroke patients who wake up with symptoms.",
+    "why_it_matters": "This evidence may change acute stroke protocols and increase the number of patients eligible for thrombolytic therapy, requiring coordination between emergency departments and stroke teams.",
+    "tags": [
+      "stroke",
+      "thrombolysis",
+      "wake-up stroke",
+      "extended window"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/can-vitamin-d-promote-healthier-gut-ibd-2026a1000aps?src=rss",
+    "date": "Wed, 8 Apr 2026 10:04:46  EDT",
+    "date_iso": "2026-04-09",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
