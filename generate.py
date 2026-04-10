@@ -3241,6 +3241,46 @@ def pick_disease(history):
     return random.choice(candidates)
 
 
+def pick_random_uncommon_disease(history, exclude=None):
+    """Pick a disease for the Randomize button, leaning toward less-common entries.
+
+    Heuristic (no metadata required):
+      - DISEASES repeats items by frequency (x3 very common, x2 common, x1 less common).
+      - "Uncommon pool" = diseases that appear exactly once in DISEASES.
+      - Skip recently shown (last 30) and anything in `exclude` (today's primary pick).
+      - Skip obviously thin/empty entries (< 8 chars) just as a safety net.
+      - If the uncommon pool has fewer than 5 viable candidates, fall back to pick_disease().
+    """
+    recent = set(history.get("diseases_shown", [])[-30:])
+    exclude_set = set([exclude]) if exclude else set()
+
+    # Build frequency map from the master list
+    freq = {}
+    for d in DISEASES:
+        freq[d] = freq.get(d, 0) + 1
+
+    # Uncommon pool = frequency == 1, not recently shown, not today's primary pick,
+    # and not a thin/empty entry
+    uncommon = [d for d, c in freq.items()
+                if c == 1
+                and d not in recent
+                and d not in exclude_set
+                and len(d.strip()) >= 8]
+
+    # Fall back to normal pool if the uncommon pool is too thin
+    if len(uncommon) < 5:
+        print(f"  Uncommon pool too small ({len(uncommon)}) - falling back to normal pool")
+        fallback = pick_disease(history)
+        # Don't return the same disease as today's primary pick
+        tries = 0
+        while fallback in exclude_set and tries < 5:
+            fallback = pick_disease(history)
+            tries += 1
+        return fallback
+
+    return random.choice(uncommon)
+
+
 def pick_landmark_study(studies, history):
     """Pick a landmark study not recently shown."""
     recent_ids = history.get("landmark_studies_shown", [])[-60:]
@@ -3445,12 +3485,28 @@ def main():
 
     print(f"  Found {len(new_items)} new item(s).")
 
-    # ── Phase 3: Disease of the Day (single Claude API call) ──
-    print(f"\nGenerating disease content: {disease_name}...")
+    # ── Phase 3: Disease of the Day (primary + randomized uncommon pick) ──
+    print("\nGenerating disease content: " + disease_name + "...")
     disease_content = generate_disease_content(disease_name, use_web_search=web_search_available)
     disease_pool = [disease_content]
     disease_pool_names = [disease_name]
     print(f"  Done: {disease_name}")
+
+    # Second card for the Randomize button — leans toward less-common diseases.
+    # Cost: one extra Claude API call per day. Failure is non-fatal.
+    random_disease_name = pick_random_uncommon_disease(history, exclude=disease_name)
+    if random_disease_name and random_disease_name != disease_name:
+        print("\nGenerating randomize-pool disease: " + random_disease_name + "...")
+        try:
+            random_disease_content = generate_disease_content(
+                random_disease_name, use_web_search=web_search_available
+            )
+            disease_pool.append(random_disease_content)
+            disease_pool_names.append(random_disease_name)
+            print(f"  Done: {random_disease_name}")
+        except Exception as e:
+            print(f"  WARNING: Randomize-pool disease generation failed ({type(e).__name__}: {e})")
+            print("  Continuing with primary disease only.")
 
     # ── Phase 4: Collect HTTP results + generate landmark ──
     # WikiJournalClub fetch should be done by now (started in Phase 1)
