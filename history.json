@@ -76,7 +76,8 @@
     "Cardiac Tamponade",
     "Delirium",
     "Guillain-Barre Syndrome",
-    "Upper GI Bleeding"
+    "Upper GI Bleeding",
+    "Acute Respiratory Failure"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -155,7 +156,8 @@
     "shift-2010",
     "villanueva-2013",
     "mariner-2018",
-    "select-cv-2023"
+    "select-cv-2023",
+    "andromeda-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -384,7 +386,8 @@
     "Lichen Planus",
     "Sarcoidosis",
     "Bullous Pemphigold",
-    "Syringomas"
+    "Syringomas",
+    "Androgenic Alopecia"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -521,6 +524,10 @@
     "ecg-059",
     "cxr-024",
     "ct-044",
-    "clinical-roman-breastplate"
+    "clinical-roman-breastplate",
+    "ecg-001",
+    "cxr-085",
+    "ct-071",
+    "clinical-rapid-descent"
   ]
 }

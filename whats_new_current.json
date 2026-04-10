@@ -10,29 +10,30 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement in patients with chronic primary immune thrombocytopenia",
-      "Mezagitimab was associated with greater platelet response than placebo"
+      "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: ITP is a common hematologic disorder managed by hospitalists, and current treatment options include steroids, IVIG, and splenectomy with varying efficacy",
-      "Clinical context: A well-tolerated subcutaneous therapy could provide an important outpatient treatment option for patients with refractory or chronic ITP"
+      "Clinical context: Provides a potential new treatment option for patients with refractory immune thrombocytopenia who may not respond adequately to current therapies like corticosteroids, TPO agonists, or splenectomy"
     ],
-    "limitations": [],
-    "bottom_line": "Mezagitimab shows promise as a new treatment for chronic immune thrombocytopenia but requires more comprehensive evaluation.",
+    "limitations": [
+      "Limited methodological details available from summary"
+    ],
+    "bottom_line": "Mezagitimab shows promise as a new treatment for chronic immune thrombocytopenia but requires further validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Immune thrombocytopenia can cause severe bleeding complications, and new treatment options like mezagitimab could provide alternatives for patients who fail standard therapies.",
-    "population": "Patients with chronic primary immune thrombocytopenia",
+    "why_this_matters": "Mezagitimab represents a potential new treatment option for chronic immune thrombocytopenia, a condition with limited therapeutic alternatives.",
+    "population": "patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
-    "comparator": "Placebo",
+    "comparator": "placebo",
     "key_results": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement",
-      "Mezagitimab was associated with greater platelet response than placebo"
+      "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation": [
-      "This represents a potential new therapeutic option for chronic immune thrombocytopenia, though more detailed efficacy and safety data would be needed before clinical adoption"
+      "This preliminary data suggests mezagitimab may offer a new therapeutic approach for chronic ITP patients, though more detailed efficacy and safety data are needed"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -50,30 +51,31 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Patients with longstanding uncontrolled hypertension who underwent multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Patients receiving team-based care also demonstrated improved outcomes"
+      "Patients with longstanding uncontrolled hypertension who received multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Team-based care demonstrated improved outcomes in blood pressure management"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Hypertension management is a core responsibility for hospitalists and internists, particularly in underserved populations with poor BP control",
-      "Clinical context: Team-based approaches may be particularly relevant for hospital discharge planning and outpatient care coordination"
+      "Clinical context: Supports implementation of multidisciplinary approaches for managing resistant hypertension, particularly in underserved populations where traditional approaches may be insufficient"
     ],
-    "limitations": [],
-    "bottom_line": "Intensive multifaceted management appears effective for improving blood pressure control in low-income patients with resistant hypertension.",
+    "limitations": [
+      "Limited details on specific intervention components and sustainability"
+    ],
+    "bottom_line": "Intensive team-based interventions can significantly improve blood pressure control in underserved populations with refractory hypertension.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Uncontrolled hypertension in low-income populations represents a major health disparity issue with significant cardiovascular consequences that could benefit from intensive management approaches.",
-    "population": "Low-income patients with longstanding uncontrolled hypertension",
-    "intervention_exposure": "Multimodal intervention with team-based care",
-    "comparator": "Usual care",
+    "why_this_matters": "Uncontrolled hypertension remains a major cardiovascular risk factor, particularly in underserved populations with limited healthcare access.",
+    "population": "low-income patients with longstanding uncontrolled hypertension",
+    "intervention_exposure": "multimodal intervention with team-based care",
+    "comparator": "usual care",
     "key_results": [
-      "Patients undergoing multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Team-based care demonstrated improved outcomes"
+      "Patients receiving multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Team-based care demonstrated improved outcomes in blood pressure management"
     ],
     "clinical_interpretation": [
-      "Intensive, team-based approaches may be particularly valuable for addressing hypertension in underserved populations, though implementation barriers and cost-effectiveness need consideration"
+      "This supports the value of intensive, team-based approaches for managing hypertension in high-risk populations, though implementation challenges remain"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -87,38 +89,38 @@
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Next-generation yellow fever vaccine shows comparable efficacy to standard vaccine",
-    "study_design": "Preclinical development and animal model testing of a next-generation live-attenuated yellow fever vaccine candidate",
+    "study_design": "Preclinical study comparing next-generation live-attenuated yellow fever vaccine candidate with standard vaccines",
     "sample_size": "",
-    "primary_outcome": "Neurovirulence, neurotropism, viscerotropism, and immunogenicity in animal models",
+    "primary_outcome": "Safety profile including neurovirulence, neurotropism, viscerotropism, and immunogenicity",
     "source_summary_bullets": [
-      "A next-generation live-attenuated yellow fever vaccine demonstrated noninferior immunogenicity compared to the standard vaccine, with nearly universal seroconversion by one month",
-      "Safety profiles were similar between groups, with no vaccine-related serious adverse events"
+      "Next-generation live-attenuated yellow fever vaccine demonstrated noninferior immunogenicity compared to standard vaccine with nearly universal seroconversion by one month",
+      "Safety profiles were similar between groups with no vaccine-related serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Yellow fever vaccination is required for travel to endemic areas and hospitalists often provide pre-travel counseling and vaccinations",
-      "Clinical context: A new vaccine option could address supply shortages and potentially improve safety profile for high-risk patients"
+      "Clinical context: May provide an alternative yellow fever vaccine option with potentially improved manufacturing or storage characteristics, important for travel medicine and outbreak preparedness"
     ],
     "limitations": [
-      "Preclinical study only - no human data",
+      "Preclinical data only, human trials needed",
       "Limited to animal model assessments"
     ],
-    "bottom_line": "A next-generation yellow fever vaccine shows promising preclinical safety and efficacy profiles but requires human clinical trials for validation.",
+    "bottom_line": "A next-generation yellow fever vaccine shows promising preclinical safety and efficacy data but requires human clinical validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
     "date": "Wed, 08 Apr 2026 21:00:04 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Yellow fever remains a significant threat in endemic regions, and improved vaccines could reduce the rare but serious adverse events associated with current vaccines.",
-    "population": "Animal models (mice, hamsters, A129 mice)",
-    "intervention_exposure": "vYF-247 vaccine candidate derived from YF-VAX lineage",
-    "comparator": "Standard Stamaril and YF-VAX vaccines",
+    "why_this_matters": "Development of safer yellow fever vaccines could reduce rare but serious adverse events while maintaining protection in endemic regions and travelers.",
+    "population": "Animal models (mice, hamsters)",
+    "intervention_exposure": "vYF-247 next-generation yellow fever vaccine candidate",
+    "comparator": "Stamaril and YF-VAX standard vaccines",
     "key_results": [
-      "vYF-247 was less neurovirulent in mice than Stamaril and YF-VAX irrespective of production stage",
-      "Attenuation profile similar to YF-VAX in A129 mice for neurotropism and viscerotropism",
-      "vYF-247 was immunogenic in hamsters and protected against lethal challenge with hamster-adapted Jimenez P10 YF virus strain"
+      "vYF-247 was less neurovirulent in mice than both Stamaril and YF-VAX",
+      "Attenuation profile similar to YF-VAX in A129 mice lacking type-I IFN receptors",
+      "vYF-247 provided robust immunogenicity and protection against lethal challenge in hamsters",
+      "Vaccine candidate had only two amino acid changes from parent strain"
     ],
     "clinical_interpretation": [
-      "The preclinical data suggests vYF-247 may maintain efficacy while potentially reducing severe adverse events, but human clinical trials are needed to confirm safety and immunogenicity"
+      "This preclinical data suggests vYF-247 may offer improved safety while maintaining efficacy, but human clinical trials are essential to validate these findings"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "PubMed abstract",
@@ -132,43 +134,40 @@
     "type": "RCT",
     "specialty": "Oncology",
     "title": "Atezolizumab may improve disease-free survival in mismatch repair deficiency locally advanced colon cancer",
-    "study_design": "Phase 3 randomized controlled trial with 1:1 randomization",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "Disease-free survival",
+    "primary_outcome": "",
     "source_summary_bullets": [
       "In patients with resected stage III mismatch repair-deficient colon cancer, adjuvant atezolizumab plus standard chemotherapy improved disease-free survival compared to chemotherapy alone",
       "The combination regimen was associated with higher rates of adverse events, though consistent with known profiles"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Hospitalists frequently manage complications from cancer treatments and need to understand emerging therapies that may affect patient presentations",
-      "Clinical context: Immunotherapy combinations are increasingly used in oncology and may cause unique toxicities requiring hospitalist management"
+      "Clinical context: Represents a potential practice-changing approach for adjuvant treatment of MMR-deficient colon cancer, as immunotherapy has shown particular efficacy in this molecularly defined subset"
     ],
     "limitations": [
-      "Higher adverse event rate with combination therapy",
-      "Study limited to mismatch repair-deficient tumors only"
+      "Limited details on magnitude of benefit and specific adverse events"
     ],
-    "bottom_line": "Adding atezolizumab to standard chemotherapy significantly improves disease-free survival in stage III mismatch repair-deficient colon cancer and should be considered standard of care for this population.",
+    "bottom_line": "Atezolizumab plus chemotherapy may improve outcomes in resected MMR-deficient colon cancer but with increased toxicity.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
     "date": "Wed, 08 Apr 2026 10:00:54 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Stage III colon cancer with mismatch repair deficiency represents a subset that may particularly benefit from immunotherapy, potentially changing standard adjuvant treatment approaches.",
-    "population": "Patients with resected stage III mismatch repair-deficient colon cancer (n=712, median age 64 years, 55.1% women, 53.9% with T4, N2, or both tumors)",
-    "intervention_exposure": "Adjuvant atezolizumab plus mFOLFOX6 for 6 months, with atezolizumab continued as monotherapy for total 12 months",
-    "comparator": "mFOLFOX6 alone for 6 months",
+    "why_this_matters": "Mismatch repair deficient colon cancers represent a subset that may benefit from immunotherapy approaches in the adjuvant setting.",
+    "population": "patients with resected stage III mismatch repair-deficient colon cancer",
+    "intervention_exposure": "adjuvant atezolizumab plus standard chemotherapy",
+    "comparator": "chemotherapy alone",
     "key_results": [
-      "At median follow-up of 40.9 months, 3-year disease-free survival was 86.3% (95% CI, 81.8-89.8) in atezolizumab-mFOLFOX6 group vs 76.2% (95% CI, 70.9-80.6) in mFOLFOX6 group",
-      "Hazard ratio for disease recurrence or death was 0.50 (95% CI, 0.35-0.73; P<0.001)",
-      "Grade 3-4 adverse events occurred in 84.1% with combination vs 71.9% with mFOLFOX6 alone"
+      "Adjuvant atezolizumab plus standard chemotherapy improved disease-free survival compared to chemotherapy alone",
+      "The combination regimen was associated with higher rates of adverse events, though consistent with known profiles"
     ],
     "clinical_interpretation": [
-      "This represents a significant advance in adjuvant therapy for stage III dMMR colon cancer, with a clinically meaningful improvement in disease-free survival that likely justifies the increased toxicity in this specific population"
+      "This suggests checkpoint inhibitors may have a role in adjuvant treatment of MMR-deficient colon cancer, though the risk-benefit ratio needs careful consideration given increased toxicity"
     ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1056/NEJMoa2507874",
-    "pubmed_id": "41880612",
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/"
   },
   {
@@ -184,25 +183,26 @@
       "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Statins are commonly prescribed by internists for cardiovascular risk reduction, and safety concerns can affect patient adherence",
-      "Clinical context: This addresses a common patient concern and supports continued statin use for appropriate cardiovascular indications without breast cancer worry"
+      "Clinical context: Provides reassurance for clinicians prescribing statins to postmenopausal women for cardiovascular protection, addressing a potential safety concern that may have influenced prescribing decisions"
     ],
-    "limitations": [],
-    "bottom_line": "Statin use does not increase breast cancer risk in postmenopausal women, supporting their continued use for cardiovascular protection.",
+    "limitations": [
+      "Limited methodological details available from summary"
+    ],
+    "bottom_line": "Statin use appears safe regarding breast cancer risk in postmenopausal women, supporting their continued use for cardiovascular protection.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
     "date": "Tue, 07 Apr 2026 23:00:03 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Concerns about cancer risk may lead to inappropriate discontinuation of statins in postmenopausal women who could benefit from their cardiovascular protective effects.",
-    "population": "Postmenopausal women",
-    "intervention_exposure": "Statin use",
+    "why_this_matters": "Clarifying cancer risks associated with statins is important given their widespread use for cardiovascular protection in postmenopausal women.",
+    "population": "postmenopausal women",
+    "intervention_exposure": "statin use",
     "comparator": "",
     "key_results": [
       "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation": [
-      "This finding should reassure clinicians and patients that breast cancer risk should not be a concern when prescribing statins to postmenopausal women for cardiovascular risk reduction"
+      "This reassuring finding supports continued appropriate statin use in postmenopausal women for cardiovascular protection without concern for increased breast cancer risk"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
