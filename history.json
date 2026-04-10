@@ -74,7 +74,8 @@
     "Hypertensive Emergency",
     "COPD Exacerbation",
     "Cardiac Tamponade",
-    "Delirium"
+    "Delirium",
+    "Guillain-Barre Syndrome"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -151,7 +152,8 @@
     "empulse-2022",
     "ttm-2013",
     "shift-2010",
-    "villanueva-2013"
+    "villanueva-2013",
+    "mariner-2018"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -328,9 +330,14 @@
     "ms-respiratory-syncytial-virus-outbreak-2026",
     "ms-fda-metformin-contamination-recall-2026",
     "ms-pneumonia-antibiotic-resistance-guidelines-2026",
-    "ms-stroke-thrombolysis-extended-window-2026"
+    "ms-stroke-thrombolysis-extended-window-2026",
+    "mezagitimab-itp-phase2-2026",
+    "impacts-bp-multifaceted-management-2026",
+    "atezolizumab-colon-cancer-adjuvant-2026",
+    "statins-breast-cancer-safety-2026",
+    "yellow-fever-vaccine-next-gen-2026"
   ],
-  "last_run": "2026-04-09",
+  "last_run": "2026-04-10",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -369,7 +376,8 @@
     "Vitiligo",
     "Chondrodermatitis",
     "Lichen Planus",
-    "Sarcoidosis"
+    "Sarcoidosis",
+    "Bullous Pemphigold"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -498,6 +506,10 @@
     "ecg-060",
     "cxr-068",
     "ct-005",
-    "clinical-no-radial-pulse"
+    "clinical-no-radial-pulse",
+    "ecg-064",
+    "cxr-055",
+    "ct-061",
+    "clinical-tetraology-of-fallot-and-bt-shunts"
   ]
 }
