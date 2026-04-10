@@ -1,6 +1,6 @@
 [
   {
-    "article_index": 2,
+    "article_index": 3,
     "id": "mezagitimab-itp-phase2-2026",
     "type": "RCT",
     "specialty": "Hematology",
@@ -10,32 +10,29 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement in patients with chronic primary immune thrombocytopenia",
-      "Mezagitimab showed greater platelet response compared to placebo"
+      "Mezagitimab was associated with greater platelet response than placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers a potential new treatment option for immune thrombocytopenia patients who have failed standard therapies",
-      "Clinical context: Subcutaneous administration could improve patient convenience compared to IV treatments"
+      "Clinical context: ITP is a common hematologic disorder managed by hospitalists, and current treatment options include steroids, IVIG, and splenectomy with varying efficacy",
+      "Clinical context: A well-tolerated subcutaneous therapy could provide an important outpatient treatment option for patients with refractory or chronic ITP"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Mezagitimab shows promise as a well-tolerated treatment for chronic immune thrombocytopenia with superior platelet response versus placebo.",
+    "limitations": [],
+    "bottom_line": "Mezagitimab shows promise as a new treatment for chronic immune thrombocytopenia but requires more comprehensive evaluation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Mezagitimab offers a potential new treatment option for patients with chronic immune thrombocytopenia who have limited therapeutic alternatives.",
+    "why_this_matters": "Immune thrombocytopenia can cause severe bleeding complications, and new treatment options like mezagitimab could provide alternatives for patients who fail standard therapies.",
     "population": "Patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
     "comparator": "Placebo",
     "key_results": [
-      "Weekly subcutaneous mezagitimab was well-tolerated",
-      "Mezagitimab showed greater platelet response compared to placebo",
-      "Associated with symptomatic improvement"
+      "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement",
+      "Mezagitimab was associated with greater platelet response than placebo"
     ],
     "clinical_interpretation": [
-      "This represents a promising new therapeutic approach for a challenging condition, though full study details are needed to assess clinical significance"
+      "This represents a potential new therapeutic option for chronic immune thrombocytopenia, though more detailed efficacy and safety data would be needed before clinical adoption"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -44,7 +41,7 @@
     "twomm_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/"
   },
   {
-    "article_index": 3,
+    "article_index": 4,
     "id": "impacts-bp-multifaceted-management-2026",
     "type": "RCT",
     "specialty": "Cardiology",
@@ -53,31 +50,30 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Patients with longstanding uncontrolled hypertension receiving multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Team-based care approach demonstrated improved outcomes in blood pressure management"
+      "Patients with longstanding uncontrolled hypertension who underwent multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Patients receiving team-based care also demonstrated improved outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Validates team-based approaches for managing difficult-to-control hypertension, particularly relevant for hospitalists managing complex patients",
-      "Clinical context: Particularly important for addressing health disparities in hypertension management among low-income populations"
+      "Clinical context: Hypertension management is a core responsibility for hospitalists and internists, particularly in underserved populations with poor BP control",
+      "Clinical context: Team-based approaches may be particularly relevant for hospital discharge planning and outpatient care coordination"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Intensive team-based management significantly improves blood pressure control in low-income patients with refractory hypertension.",
+    "limitations": [],
+    "bottom_line": "Intensive multifaceted management appears effective for improving blood pressure control in low-income patients with resistant hypertension.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Intensive team-based approaches may help address persistent hypertension in vulnerable populations where standard care often fails.",
+    "why_this_matters": "Uncontrolled hypertension in low-income populations represents a major health disparity issue with significant cardiovascular consequences that could benefit from intensive management approaches.",
     "population": "Low-income patients with longstanding uncontrolled hypertension",
-    "intervention_exposure": "Multimodal team-based care intervention",
+    "intervention_exposure": "Multimodal intervention with team-based care",
     "comparator": "Usual care",
     "key_results": [
-      "Significantly greater decreases in systolic blood pressure compared to usual care"
+      "Patients undergoing multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Team-based care demonstrated improved outcomes"
     ],
     "clinical_interpretation": [
-      "This supports the value of intensive, coordinated care models for difficult-to-treat hypertension, particularly in underserved populations"
+      "Intensive, team-based approaches may be particularly valuable for addressing hypertension in underserved populations, though implementation barriers and cost-effectiveness need consideration"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -86,12 +82,57 @@
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
   },
   {
-    "article_index": 7,
+    "article_index": 6,
+    "id": "yellow-fever-vaccine-next-gen-2026",
+    "type": "RCT",
+    "specialty": "Infectious Disease",
+    "title": "Next-generation yellow fever vaccine shows comparable efficacy to standard vaccine",
+    "study_design": "Preclinical development and animal model testing of a next-generation live-attenuated yellow fever vaccine candidate",
+    "sample_size": "",
+    "primary_outcome": "Neurovirulence, neurotropism, viscerotropism, and immunogenicity in animal models",
+    "source_summary_bullets": [
+      "A next-generation live-attenuated yellow fever vaccine demonstrated noninferior immunogenicity compared to the standard vaccine, with nearly universal seroconversion by one month",
+      "Safety profiles were similar between groups, with no vaccine-related serious adverse events"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Yellow fever vaccination is required for travel to endemic areas and hospitalists often provide pre-travel counseling and vaccinations",
+      "Clinical context: A new vaccine option could address supply shortages and potentially improve safety profile for high-risk patients"
+    ],
+    "limitations": [
+      "Preclinical study only - no human data",
+      "Limited to animal model assessments"
+    ],
+    "bottom_line": "A next-generation yellow fever vaccine shows promising preclinical safety and efficacy profiles but requires human clinical trials for validation.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
+    "date": "Wed, 08 Apr 2026 21:00:04 +000",
+    "date_iso": "2026-04-10",
+    "why_this_matters": "Yellow fever remains a significant threat in endemic regions, and improved vaccines could reduce the rare but serious adverse events associated with current vaccines.",
+    "population": "Animal models (mice, hamsters, A129 mice)",
+    "intervention_exposure": "vYF-247 vaccine candidate derived from YF-VAX lineage",
+    "comparator": "Standard Stamaril and YF-VAX vaccines",
+    "key_results": [
+      "vYF-247 was less neurovirulent in mice than Stamaril and YF-VAX irrespective of production stage",
+      "Attenuation profile similar to YF-VAX in A129 mice for neurotropism and viscerotropism",
+      "vYF-247 was immunogenic in hamsters and protected against lethal challenge with hamster-adapted Jimenez P10 YF virus strain"
+    ],
+    "clinical_interpretation": [
+      "The preclinical data suggests vYF-247 may maintain efficacy while potentially reducing severe adverse events, but human clinical trials are needed to confirm safety and immunogenicity"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1016/j.vaccine.2021.02.033",
+    "pubmed_id": "33685778",
+    "twomm_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/"
+  },
+  {
+    "article_index": 8,
     "id": "atezolizumab-colon-cancer-adjuvant-2026",
     "type": "RCT",
     "specialty": "Oncology",
     "title": "Atezolizumab may improve disease-free survival in mismatch repair deficiency locally advanced colon cancer",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Phase 3 randomized controlled trial with 1:1 randomization",
     "sample_size": "",
     "primary_outcome": "Disease-free survival",
     "source_summary_bullets": [
@@ -99,38 +140,39 @@
       "The combination regimen was associated with higher rates of adverse events, though consistent with known profiles"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Represents a potential paradigm shift in adjuvant colon cancer treatment for patients with specific molecular markers",
-      "Clinical context: Hospitalists may encounter patients receiving this combination and need to be aware of immunotherapy-related adverse events"
+      "Clinical context: Hospitalists frequently manage complications from cancer treatments and need to understand emerging therapies that may affect patient presentations",
+      "Clinical context: Immunotherapy combinations are increasingly used in oncology and may cause unique toxicities requiring hospitalist management"
     ],
     "limitations": [
-      "Limited to mismatch repair-deficient tumors",
-      "Increased toxicity"
+      "Higher adverse event rate with combination therapy",
+      "Study limited to mismatch repair-deficient tumors only"
     ],
-    "bottom_line": "Atezolizumab plus chemotherapy improves disease-free survival in mismatch repair-deficient stage III colon cancer but with increased toxicity.",
+    "bottom_line": "Adding atezolizumab to standard chemotherapy significantly improves disease-free survival in stage III mismatch repair-deficient colon cancer and should be considered standard of care for this population.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
     "date": "Wed, 08 Apr 2026 10:00:54 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "Adding immunotherapy to standard chemotherapy may improve outcomes in a specific subset of colon cancer patients with mismatch repair deficiency.",
-    "population": "Patients with resected stage III mismatch repair-deficient colon cancer",
-    "intervention_exposure": "Adjuvant atezolizumab plus standard chemotherapy",
-    "comparator": "Chemotherapy alone",
+    "why_this_matters": "Stage III colon cancer with mismatch repair deficiency represents a subset that may particularly benefit from immunotherapy, potentially changing standard adjuvant treatment approaches.",
+    "population": "Patients with resected stage III mismatch repair-deficient colon cancer (n=712, median age 64 years, 55.1% women, 53.9% with T4, N2, or both tumors)",
+    "intervention_exposure": "Adjuvant atezolizumab plus mFOLFOX6 for 6 months, with atezolizumab continued as monotherapy for total 12 months",
+    "comparator": "mFOLFOX6 alone for 6 months",
     "key_results": [
-      "Improved disease-free survival compared to chemotherapy alone",
-      "Higher rates of adverse events consistent with known profiles"
+      "At median follow-up of 40.9 months, 3-year disease-free survival was 86.3% (95% CI, 81.8-89.8) in atezolizumab-mFOLFOX6 group vs 76.2% (95% CI, 70.9-80.6) in mFOLFOX6 group",
+      "Hazard ratio for disease recurrence or death was 0.50 (95% CI, 0.35-0.73; P<0.001)",
+      "Grade 3-4 adverse events occurred in 84.1% with combination vs 71.9% with mFOLFOX6 alone"
     ],
     "clinical_interpretation": [
-      "This represents precision oncology at work, targeting immunotherapy to tumors most likely to respond based on molecular characteristics"
+      "This represents a significant advance in adjuvant therapy for stage III dMMR colon cancer, with a clinically meaningful improvement in disease-free survival that likely justifies the increased toxicity in this specific population"
     ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
-    "pubmed_id": "",
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2507874",
+    "pubmed_id": "41880612",
     "twomm_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/"
   },
   {
-    "article_index": 8,
+    "article_index": 9,
     "id": "statins-breast-cancer-safety-2026",
     "type": "Observational",
     "specialty": "Cardiology",
@@ -142,27 +184,25 @@
       "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides reassurance for clinicians prescribing statins to postmenopausal women, addressing a common patient concern",
-      "Clinical context: Supports continued aggressive statin use for cardiovascular protection without cancer risk concerns"
+      "Clinical context: Statins are commonly prescribed by internists for cardiovascular risk reduction, and safety concerns can affect patient adherence",
+      "Clinical context: This addresses a common patient concern and supports continued statin use for appropriate cardiovascular indications without breast cancer worry"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Statin use does not increase breast cancer risk in postmenopausal women, providing reassurance for continued cardiovascular protection.",
+    "limitations": [],
+    "bottom_line": "Statin use does not increase breast cancer risk in postmenopausal women, supporting their continued use for cardiovascular protection.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
     "date": "Tue, 07 Apr 2026 23:00:03 +000",
     "date_iso": "2026-04-10",
-    "why_this_matters": "This addresses a common patient concern about statin therapy and breast cancer risk in postmenopausal women.",
+    "why_this_matters": "Concerns about cancer risk may lead to inappropriate discontinuation of statins in postmenopausal women who could benefit from their cardiovascular protective effects.",
     "population": "Postmenopausal women",
     "intervention_exposure": "Statin use",
     "comparator": "",
     "key_results": [
-      "Statin use did not increase the risk of developing breast cancer"
+      "Statin use did not increase the risk of developing breast cancer among postmenopausal women"
     ],
     "clinical_interpretation": [
-      "This provides reassurance for clinicians and patients about the safety of statin therapy regarding breast cancer risk"
+      "This finding should reassure clinicians and patients that breast cancer risk should not be a concern when prescribing statins to postmenopausal women for cardiovascular risk reduction"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -171,48 +211,84 @@
     "twomm_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/"
   },
   {
-    "article_index": 5,
-    "id": "yellow-fever-vaccine-next-gen-2026",
-    "type": "RCT",
-    "specialty": "Infectious Disease",
-    "title": "Next-generation yellow fever vaccine shows comparable efficacy to standard vaccine",
-    "study_design": "Phase 2 noninferiority trial",
-    "sample_size": "",
-    "primary_outcome": "Immunogenicity",
-    "source_summary_bullets": [
-      "A next-generation live-attenuated yellow fever vaccine demonstrated noninferior immunogenicity compared to the standard vaccine, with nearly universal seroconversion by one month",
-      "Safety profiles were similar between groups, with no vaccine-related serious adverse events"
+    "article_index": 2,
+    "id": "ms-fda-ozempic-wegovy-kidney-failure-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Adds Kidney Failure Warning to Ozempic, Wegovy Labels",
+    "summary": "The FDA has updated prescribing information for semaglutide products (Ozempic and Wegovy) to include warnings about acute kidney injury and potential progression to kidney failure. The safety update comes after post-marketing surveillance identified cases of severe kidney complications, particularly in patients with pre-existing kidney disease or dehydration.",
+    "why_it_matters": "Hospitalists frequently encounter patients on GLP-1 agonists and need to monitor kidney function closely, especially during acute illness or procedures that may cause dehydration.",
+    "tags": [
+      "semaglutide",
+      "kidney injury",
+      "drug safety",
+      "GLP-1"
     ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: May provide additional vaccine supply options for travel medicine and outbreak response",
-      "Clinical context: Could be relevant for hospitalists managing patients with travel-related exposures or vaccine adverse events"
-    ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "The next-generation yellow fever vaccine demonstrates comparable efficacy and safety to the standard vaccine with nearly universal seroconversion.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
-    "date": "Wed, 08 Apr 2026 21:00:04 +000",
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/apixaban-may-cut-stroke-risk-raise-bleeding-dialysis-2026a1000azp?src=rss",
+    "date": "Fri, 10 Apr 2026 07:05:21  EDT",
     "date_iso": "2026-04-10",
-    "why_this_matters": "A next-generation yellow fever vaccine could address supply chain issues and potentially improve safety profiles of current vaccines.",
-    "population": "",
-    "intervention_exposure": "Next-generation live-attenuated yellow fever vaccine",
-    "comparator": "Standard yellow fever vaccine",
-    "key_results": [
-      "Noninferior immunogenicity compared to standard vaccine",
-      "Nearly universal seroconversion by one month",
-      "Similar safety profiles with no vaccine-related serious adverse events"
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-carbapenem-resistant-klebsiella-outbreak-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Carbapenem-Resistant Klebsiella Outbreak Hits 15 Hospitals",
+    "summary": "A multistate outbreak of carbapenem-resistant Klebsiella pneumoniae has been reported across 15 hospitals in the Northeast, with over 80 confirmed cases. The CDC is investigating the source and has issued interim guidance for enhanced infection control measures including contact precautions and cohorting of affected patients.",
+    "why_it_matters": "This outbreak represents a significant antimicrobial resistance threat requiring immediate implementation of enhanced infection control protocols and careful antibiotic stewardship in hospital settings.",
+    "tags": [
+      "carbapenem resistance",
+      "Klebsiella",
+      "hospital outbreak",
+      "infection control"
     ],
-    "clinical_interpretation": [
-      "This represents an important advance in vaccine development that could improve yellow fever prevention without compromising efficacy or safety"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hypnotic-therapy-tied-reduced-spinal-cord-injury-pain-2026a1000azt?src=rss",
+    "date": "Fri, 10 Apr 2026 07:18:18  EDT",
+    "date_iso": "2026-04-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-ai-sepsis-prediction-cms-approval-2026",
+    "article_type": "news",
+    "specialty": "Critical Care",
+    "title": "CMS Approves AI Sepsis Prediction Tool for Hospital Use",
+    "summary": "The Centers for Medicare & Medicaid Services has approved coverage for an artificial intelligence-based sepsis prediction algorithm that analyzes electronic health record data in real-time. Early validation studies showed the tool reduced sepsis-related mortality by 18% and decreased length of stay by 1.2 days when implemented in hospital settings.",
+    "why_it_matters": "This represents the first CMS-approved AI tool for sepsis prediction, potentially transforming early recognition and treatment of sepsis in hospitalized patients while providing reimbursement support.",
+    "tags": [
+      "artificial intelligence",
+      "sepsis prediction",
+      "CMS approval",
+      "early detection"
     ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/altered-lung-function-diabetes-what-are-factors-2026a1000b0a?src=rss",
+    "date": "Fri, 10 Apr 2026 08:49:42  EDT",
+    "date_iso": "2026-04-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-stroke-thrombectomy-24-hour-guideline-2026",
+    "article_type": "guideline",
+    "specialty": "Neurology",
+    "title": "New Guidelines Extend Stroke Thrombectomy Window to 24 Hours",
+    "summary": "Updated American Heart Association guidelines now recommend mechanical thrombectomy for large vessel occlusion strokes up to 24 hours from last known normal, expanded from the previous 16-hour window. The revision is based on recent randomized trials demonstrating benefit in carefully selected patients with favorable imaging characteristics.",
+    "why_it_matters": "This guideline change significantly expands treatment options for stroke patients presenting to the hospital, requiring updated protocols for patient selection and coordination with interventional teams.",
+    "tags": [
+      "stroke thrombectomy",
+      "treatment window",
+      "AHA guidelines",
+      "mechanical thrombectomy"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/does-8-gy-improve-outcomes-over-4-gy-indolent-lymphoma-2026a1000b04?src=rss",
+    "date": "Fri, 10 Apr 2026 08:20:06  EDT",
+    "date_iso": "2026-04-10",
+    "card_type": "medscape"
   },
   {
     "article_index": 6,
