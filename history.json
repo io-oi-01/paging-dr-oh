@@ -77,7 +77,8 @@
     "Delirium",
     "Guillain-Barre Syndrome",
     "Upper GI Bleeding",
-    "Acute Respiratory Failure"
+    "Acute Respiratory Failure",
+    "Hyponatremia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -157,7 +158,8 @@
     "villanueva-2013",
     "mariner-2018",
     "select-cv-2023",
-    "andromeda-2019"
+    "andromeda-2019",
+    "process-2014"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -343,9 +345,10 @@
     "ms-fda-ozempic-wegovy-kidney-failure-2026",
     "ms-carbapenem-resistant-klebsiella-outbreak-2026",
     "ms-ai-sepsis-prediction-cms-approval-2026",
-    "ms-stroke-thrombectomy-24-hour-guideline-2026"
+    "ms-stroke-thrombectomy-24-hour-guideline-2026",
+    "telemedicine-rotator-cuff-2026"
   ],
-  "last_run": "2026-04-10",
+  "last_run": "2026-04-11",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -387,7 +390,8 @@
     "Sarcoidosis",
     "Bullous Pemphigold",
     "Syringomas",
-    "Androgenic Alopecia"
+    "Androgenic Alopecia",
+    "Erythema Multiforme"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -528,6 +532,10 @@
     "ecg-001",
     "cxr-085",
     "ct-071",
-    "clinical-rapid-descent"
+    "clinical-rapid-descent",
+    "ecg-031",
+    "cxr-053",
+    "ct-034",
+    "clinical-valproate-still-big-trouble"
   ]
 }

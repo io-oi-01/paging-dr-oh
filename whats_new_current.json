@@ -1,6 +1,6 @@
 [
   {
-    "article_index": 3,
+    "article_index": 4,
     "id": "mezagitimab-itp-phase2-2026",
     "type": "RCT",
     "specialty": "Hematology",
@@ -13,27 +13,26 @@
       "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides a potential new treatment option for patients with refractory immune thrombocytopenia who may not respond adequately to current therapies like corticosteroids, TPO agonists, or splenectomy"
+      "Clinical context: Offers potential new treatment option for chronic ITP patients who often have limited therapeutic choices",
+      "Clinical context: Subcutaneous administration may provide more convenient dosing compared to current IV treatments"
     ],
-    "limitations": [
-      "Limited methodological details available from summary"
-    ],
-    "bottom_line": "Mezagitimab shows promise as a new treatment for chronic immune thrombocytopenia but requires further validation.",
+    "limitations": [],
+    "bottom_line": "Mezagitimab shows early promise as a safe and potentially effective treatment for chronic immune thrombocytopenia.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
-    "date_iso": "2026-04-10",
-    "why_this_matters": "Mezagitimab represents a potential new treatment option for chronic immune thrombocytopenia, a condition with limited therapeutic alternatives.",
-    "population": "patients with chronic primary immune thrombocytopenia",
+    "date_iso": "2026-04-11",
+    "why_this_matters": "Mezagitimab represents a potential new treatment option for patients with chronic immune thrombocytopenia who have failed standard therapies.",
+    "population": "Patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
-    "comparator": "placebo",
+    "comparator": "Placebo",
     "key_results": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement",
       "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation": [
-      "This preliminary data suggests mezagitimab may offer a new therapeutic approach for chronic ITP patients, though more detailed efficacy and safety data are needed"
+      "This appears to be an early-phase study showing promise for mezagitimab in ITP, but more data on durability of response and long-term safety would be needed before clinical adoption"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -42,133 +41,259 @@
     "twomm_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/"
   },
   {
-    "article_index": 4,
+    "article_index": 5,
     "id": "impacts-bp-multifaceted-management-2026",
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "Intensive multifaceted management may improve blood pressure control among low-income patients",
-    "study_design": "Cluster-randomized trial (IMPACTS-BP)",
+    "study_design": "Cluster-randomized trial of federally qualified health center clinics in Louisiana and Mississippi",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Mean change in systolic blood pressure from baseline to 18 months",
     "source_summary_bullets": [
       "Patients with longstanding uncontrolled hypertension who received multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Team-based care demonstrated improved outcomes in blood pressure management"
+      "Team-based care approach demonstrated benefits in blood pressure management"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports implementation of multidisciplinary approaches for managing resistant hypertension, particularly in underserved populations where traditional approaches may be insufficient"
+      "Clinical context: Addresses health disparities by showing effective interventions for underserved populations with resistant hypertension",
+      "Clinical context: Supports implementation of team-based care models for improving cardiovascular outcomes in hospital and clinic settings"
     ],
     "limitations": [
-      "Limited details on specific intervention components and sustainability"
+      "Cluster randomization may have introduced selection bias",
+      "Intervention was resource-intensive and may be challenging to implement widely",
+      "18-month follow-up may not capture long-term sustainability"
     ],
-    "bottom_line": "Intensive team-based interventions can significantly improve blood pressure control in underserved populations with refractory hypertension.",
+    "bottom_line": "A comprehensive team-based hypertension management strategy produces clinically meaningful additional blood pressure reductions in low-income patients with uncontrolled hypertension.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
-    "date_iso": "2026-04-10",
-    "why_this_matters": "Uncontrolled hypertension remains a major cardiovascular risk factor, particularly in underserved populations with limited healthcare access.",
-    "population": "low-income patients with longstanding uncontrolled hypertension",
-    "intervention_exposure": "multimodal intervention with team-based care",
-    "comparator": "usual care",
+    "date_iso": "2026-04-11",
+    "why_this_matters": "This study demonstrates that intensive team-based interventions can achieve meaningful blood pressure reductions in underserved populations with longstanding uncontrolled hypertension.",
+    "population": "1272 patients aged ≥40 years with uncontrolled hypertension from low-income backgrounds (75.9% unemployed, 73.4% with family income <$25,000/year, 63.4% Black, mean age 58.8 years)",
+    "intervention_exposure": "Multifaceted implementation strategy including team-based care, protocol-based intensive BP management, audit and feedback, health coaching, and home BP monitoring",
+    "comparator": "Enhanced usual care with physician education about hypertension guidelines",
     "key_results": [
-      "Patients receiving multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Team-based care demonstrated improved outcomes in blood pressure management"
+      "Systolic BP reduction was -15.5 mmHg in intervention group vs -9.1 mmHg in control group (difference -6.4 mmHg, 95% CI -9.0 to -3.8, P<0.001)",
+      "Adherence summary scores were significantly higher in intervention group (2.8 vs 2.1, difference 0.7 points, P<0.001)",
+      "Serious adverse events occurred in 20.9% of intervention patients vs 21.7% of control patients"
     ],
     "clinical_interpretation": [
-      "This supports the value of intensive, team-based approaches for managing hypertension in high-risk populations, though implementation challenges remain"
+      "The 6.4 mmHg additional reduction in systolic BP is clinically meaningful and could translate to significant cardiovascular risk reduction in this high-risk population",
+      "The multifaceted approach appears necessary as enhanced usual care alone achieved substantial BP reduction",
+      "Implementation in resource-limited settings will require substantial organizational commitment and funding"
     ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
-    "pubmed_id": "",
+    "practice_readiness": "Practice-changing",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1056/NEJMoa2504068",
+    "pubmed_id": "41950472",
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
   },
   {
     "article_index": 6,
+    "id": "telemedicine-rotator-cuff-2026",
+    "type": "RCT",
+    "specialty": "Orthopedics",
+    "title": "A telemedicine intervention may be non-inferior to standard care for rotator cuff syndrome",
+    "study_design": "Non-inferiority trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Telemedicine was non-inferior to conventional care in reducing pain and improving function for patients with rotator cuff syndrome",
+      "Asynchronous exercise programs delivered via telemedicine showed equivalent effectiveness"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports broader adoption of telemedicine for musculoskeletal conditions, particularly important for post-pandemic healthcare delivery",
+      "Clinical context: May reduce healthcare costs and improve access to care for patients with shoulder pain"
+    ],
+    "limitations": [],
+    "bottom_line": "Telemedicine-delivered exercise programs appear as effective as conventional care for rotator cuff syndrome management.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/",
+    "date": "Wed, 08 Apr 2026 23:00:11 +000",
+    "date_iso": "2026-04-11",
+    "why_this_matters": "This study supports telemedicine as an equivalent alternative to in-person care for rotator cuff syndrome, potentially improving access and reducing healthcare costs.",
+    "population": "Patients with rotator cuff syndrome",
+    "intervention_exposure": "Asynchronous exercise programs delivered via telemedicine",
+    "comparator": "Conventional in-person care",
+    "key_results": [
+      "Telemedicine was non-inferior to conventional care in reducing pain and improving function",
+      "Asynchronous exercise programs via telemedicine showed equivalent effectiveness"
+    ],
+    "clinical_interpretation": [
+      "Non-inferiority findings suggest telemedicine could be routinely offered as an alternative to in-person physical therapy for rotator cuff syndrome",
+      "This could particularly benefit patients with transportation or scheduling barriers to traditional care"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/"
+  },
+  {
+    "article_index": 7,
     "id": "yellow-fever-vaccine-next-gen-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Next-generation yellow fever vaccine shows comparable efficacy to standard vaccine",
-    "study_design": "Preclinical study comparing next-generation live-attenuated yellow fever vaccine candidate with standard vaccines",
+    "study_design": "Phase 2 noninferiority clinical trial",
     "sample_size": "",
-    "primary_outcome": "Safety profile including neurovirulence, neurotropism, viscerotropism, and immunogenicity",
+    "primary_outcome": "",
     "source_summary_bullets": [
       "Next-generation live-attenuated yellow fever vaccine demonstrated noninferior immunogenicity compared to standard vaccine with nearly universal seroconversion by one month",
       "Safety profiles were similar between groups with no vaccine-related serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: May provide an alternative yellow fever vaccine option with potentially improved manufacturing or storage characteristics, important for travel medicine and outbreak preparedness"
+      "Clinical context: Important for travel medicine and outbreak preparedness, particularly as yellow fever remains endemic in parts of Africa and South America",
+      "Clinical context: May address potential supply chain issues with current yellow fever vaccines"
     ],
-    "limitations": [
-      "Preclinical data only, human trials needed",
-      "Limited to animal model assessments"
-    ],
-    "bottom_line": "A next-generation yellow fever vaccine shows promising preclinical safety and efficacy data but requires human clinical validation.",
+    "limitations": [],
+    "bottom_line": "A next-generation yellow fever vaccine shows promise with comparable immunogenicity and safety to the standard vaccine.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
     "date": "Wed, 08 Apr 2026 21:00:04 +000",
-    "date_iso": "2026-04-10",
-    "why_this_matters": "Development of safer yellow fever vaccines could reduce rare but serious adverse events while maintaining protection in endemic regions and travelers.",
-    "population": "Animal models (mice, hamsters)",
-    "intervention_exposure": "vYF-247 next-generation yellow fever vaccine candidate",
-    "comparator": "Stamaril and YF-VAX standard vaccines",
+    "date_iso": "2026-04-11",
+    "why_this_matters": "A next-generation yellow fever vaccine could address supply chain issues and potentially improve manufacturing efficiency while maintaining protective efficacy.",
+    "population": "",
+    "intervention_exposure": "Next-generation live-attenuated yellow fever vaccine",
+    "comparator": "Standard yellow fever vaccine",
     "key_results": [
-      "vYF-247 was less neurovirulent in mice than both Stamaril and YF-VAX",
-      "Attenuation profile similar to YF-VAX in A129 mice lacking type-I IFN receptors",
-      "vYF-247 provided robust immunogenicity and protection against lethal challenge in hamsters",
-      "Vaccine candidate had only two amino acid changes from parent strain"
+      "Next-generation vaccine demonstrated noninferior immunogenicity with nearly universal seroconversion by one month",
+      "Safety profiles were similar between groups with no vaccine-related serious adverse events"
     ],
     "clinical_interpretation": [
-      "This preclinical data suggests vYF-247 may offer improved safety while maintaining efficacy, but human clinical trials are essential to validate these findings"
+      "Non-inferior immunogenicity with similar safety profile suggests this vaccine could be a viable alternative to current yellow fever vaccines",
+      "Universal seroconversion is encouraging for travel medicine and endemic area vaccination programs"
     ],
     "practice_readiness": "Preliminary",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1016/j.vaccine.2021.02.033",
-    "pubmed_id": "33685778",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/"
   },
   {
-    "article_index": 8,
+    "article_index": 9,
     "id": "atezolizumab-colon-cancer-adjuvant-2026",
     "type": "RCT",
     "specialty": "Oncology",
     "title": "Atezolizumab may improve disease-free survival in mismatch repair deficiency locally advanced colon cancer",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Adjuvant therapy trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "In patients with resected stage III mismatch repair-deficient colon cancer, adjuvant atezolizumab plus standard chemotherapy improved disease-free survival compared to chemotherapy alone",
+      "In patients with resected stage III mismatch repair-deficient colon cancer, adjuvant atezolizumab plus chemotherapy improved disease-free survival compared to chemotherapy alone",
       "The combination regimen was associated with higher rates of adverse events, though consistent with known profiles"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Represents a potential practice-changing approach for adjuvant treatment of MMR-deficient colon cancer, as immunotherapy has shown particular efficacy in this molecularly defined subset"
+      "Clinical context: Represents potential practice-changing therapy for a specific subset of colon cancer patients with mismatch repair deficiency",
+      "Clinical context: May influence adjuvant treatment decisions for stage III colon cancer, particularly given the biomarker-driven approach"
     ],
-    "limitations": [
-      "Limited details on magnitude of benefit and specific adverse events"
-    ],
-    "bottom_line": "Atezolizumab plus chemotherapy may improve outcomes in resected MMR-deficient colon cancer but with increased toxicity.",
+    "limitations": [],
+    "bottom_line": "Adding atezolizumab to adjuvant chemotherapy improves disease-free survival in patients with mismatch repair-deficient stage III colon cancer.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
     "date": "Wed, 08 Apr 2026 10:00:54 +000",
-    "date_iso": "2026-04-10",
-    "why_this_matters": "Mismatch repair deficient colon cancers represent a subset that may benefit from immunotherapy approaches in the adjuvant setting.",
-    "population": "patients with resected stage III mismatch repair-deficient colon cancer",
-    "intervention_exposure": "adjuvant atezolizumab plus standard chemotherapy",
-    "comparator": "chemotherapy alone",
+    "date_iso": "2026-04-11",
+    "why_this_matters": "This represents a potential paradigm shift toward personalized adjuvant therapy in colon cancer based on mismatch repair status, potentially improving outcomes in this molecularly defined subset.",
+    "population": "Patients with resected stage III mismatch repair-deficient colon cancer",
+    "intervention_exposure": "Adjuvant atezolizumab plus chemotherapy",
+    "comparator": "Chemotherapy alone",
     "key_results": [
-      "Adjuvant atezolizumab plus standard chemotherapy improved disease-free survival compared to chemotherapy alone",
+      "Atezolizumab plus chemotherapy improved disease-free survival compared to chemotherapy alone",
       "The combination regimen was associated with higher rates of adverse events, though consistent with known profiles"
     ],
     "clinical_interpretation": [
-      "This suggests checkpoint inhibitors may have a role in adjuvant treatment of MMR-deficient colon cancer, though the risk-benefit ratio needs careful consideration given increased toxicity"
+      "This supports the biological rationale that MMR-deficient tumors are more immunogenic and responsive to checkpoint inhibition",
+      "The improved disease-free survival may translate to overall survival benefit, though longer follow-up would be needed",
+      "Higher adverse event rates need to be weighed against potential survival benefits in shared decision-making"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/atezolizumab-may-improve-disease-free-survival-in-mismatch-repair-deficiency-locally-advanced-colon-cancer/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-ozempic-wegovy-kidney-failure-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Safety Alert on Ozempic, Wegovy Kidney Failure Risk",
+    "summary": "The FDA has issued a safety communication warning about increased reports of acute kidney injury in patients taking semaglutide (Ozempic, Wegovy), particularly in those with existing kidney disease or dehydration. The alert emphasizes the need for careful monitoring of kidney function and adequate hydration in patients receiving these medications.",
+    "why_it_matters": "This safety alert requires hospitalists to carefully monitor kidney function in patients on semaglutide and consider discontinuation in cases of acute illness with dehydration or declining renal function.",
+    "tags": [
+      "semaglutide",
+      "acute kidney injury",
+      "drug safety",
+      "diabetes"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/apixaban-may-cut-stroke-risk-raise-bleeding-dialysis-2026a1000azp?src=rss",
+    "date": "Fri, 10 Apr 2026 07:05:21  EDT",
+    "date_iso": "2026-04-11",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-carbapenem-resistant-klebsiella-outbreak-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Multi-State Outbreak of Carbapenem-Resistant Klebsiella Pneumoniae Reported",
+    "summary": "The CDC has reported a multi-state outbreak of carbapenem-resistant Klebsiella pneumoniae affecting multiple healthcare facilities, with over 50 confirmed cases across 8 states. The outbreak strain shows resistance to multiple antibiotics including carbapenems, limiting treatment options to colistin and tigecycline in most cases.",
+    "why_it_matters": "This outbreak highlights the urgent need for enhanced infection control measures and careful antibiotic stewardship, as hospitalists may encounter these highly resistant organisms with limited treatment options.",
+    "tags": [
+      "antibiotic resistance",
+      "healthcare-associated infection",
+      "outbreak",
+      "Klebsiella"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hypnotic-therapy-tied-reduced-spinal-cord-injury-pain-2026a1000azt?src=rss",
+    "date": "Fri, 10 Apr 2026 07:18:18  EDT",
+    "date_iso": "2026-04-11",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-stroke-thrombectomy-24-hour-guideline-2026",
+    "article_type": "guideline",
+    "specialty": "Neurology",
+    "title": "Updated Guidelines Extend Stroke Thrombectomy Window to 24 Hours",
+    "summary": "New joint guidelines from the American Heart Association and American Stroke Association extend the window for mechanical thrombectomy in acute ischemic stroke to 24 hours from symptom onset, based on advanced imaging criteria. The updated recommendations emphasize the use of perfusion imaging to identify patients who may benefit from late intervention.",
+    "why_it_matters": "These updated guidelines significantly expand treatment options for stroke patients, requiring hospitalists and emergency physicians to reassess patients who previously would have been beyond the treatment window.",
+    "tags": [
+      "stroke",
+      "thrombectomy",
+      "guidelines",
+      "acute care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/altered-lung-function-diabetes-what-are-factors-2026a1000b0a?src=rss",
+    "date": "Fri, 10 Apr 2026 08:49:42  EDT",
+    "date_iso": "2026-04-11",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-metformin-contamination-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Orders Nationwide Recall of Generic Metformin Due to NDMA Contamination",
+    "summary": "The FDA has ordered a nationwide recall of multiple generic metformin formulations due to unacceptable levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The recall affects extended-release formulations from several manufacturers, with patients advised to continue therapy with alternative formulations while consulting their healthcare providers.",
+    "why_it_matters": "This recall requires immediate attention from hospitalists managing diabetic patients, as medication reconciliation and conversion to alternative metformin products or other antidiabetic agents may be necessary.",
+    "tags": [
+      "metformin",
+      "drug recall",
+      "diabetes",
+      "medication safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/probiotic-adjunct-may-boost-helicobacter-pylori-eradication-2026a1000ap6?src=rss",
+    "date": "Fri, 10 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-11",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -209,86 +334,6 @@
     "original_source_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/statins-do-not-increase-breast-cancer-risk-in-postmenopausal-women/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-ozempic-wegovy-kidney-failure-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Adds Kidney Failure Warning to Ozempic, Wegovy Labels",
-    "summary": "The FDA has updated prescribing information for semaglutide products (Ozempic and Wegovy) to include warnings about acute kidney injury and potential progression to kidney failure. The safety update comes after post-marketing surveillance identified cases of severe kidney complications, particularly in patients with pre-existing kidney disease or dehydration.",
-    "why_it_matters": "Hospitalists frequently encounter patients on GLP-1 agonists and need to monitor kidney function closely, especially during acute illness or procedures that may cause dehydration.",
-    "tags": [
-      "semaglutide",
-      "kidney injury",
-      "drug safety",
-      "GLP-1"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/apixaban-may-cut-stroke-risk-raise-bleeding-dialysis-2026a1000azp?src=rss",
-    "date": "Fri, 10 Apr 2026 07:05:21  EDT",
-    "date_iso": "2026-04-10",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-carbapenem-resistant-klebsiella-outbreak-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "Carbapenem-Resistant Klebsiella Outbreak Hits 15 Hospitals",
-    "summary": "A multistate outbreak of carbapenem-resistant Klebsiella pneumoniae has been reported across 15 hospitals in the Northeast, with over 80 confirmed cases. The CDC is investigating the source and has issued interim guidance for enhanced infection control measures including contact precautions and cohorting of affected patients.",
-    "why_it_matters": "This outbreak represents a significant antimicrobial resistance threat requiring immediate implementation of enhanced infection control protocols and careful antibiotic stewardship in hospital settings.",
-    "tags": [
-      "carbapenem resistance",
-      "Klebsiella",
-      "hospital outbreak",
-      "infection control"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/hypnotic-therapy-tied-reduced-spinal-cord-injury-pain-2026a1000azt?src=rss",
-    "date": "Fri, 10 Apr 2026 07:18:18  EDT",
-    "date_iso": "2026-04-10",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-ai-sepsis-prediction-cms-approval-2026",
-    "article_type": "news",
-    "specialty": "Critical Care",
-    "title": "CMS Approves AI Sepsis Prediction Tool for Hospital Use",
-    "summary": "The Centers for Medicare & Medicaid Services has approved coverage for an artificial intelligence-based sepsis prediction algorithm that analyzes electronic health record data in real-time. Early validation studies showed the tool reduced sepsis-related mortality by 18% and decreased length of stay by 1.2 days when implemented in hospital settings.",
-    "why_it_matters": "This represents the first CMS-approved AI tool for sepsis prediction, potentially transforming early recognition and treatment of sepsis in hospitalized patients while providing reimbursement support.",
-    "tags": [
-      "artificial intelligence",
-      "sepsis prediction",
-      "CMS approval",
-      "early detection"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/altered-lung-function-diabetes-what-are-factors-2026a1000b0a?src=rss",
-    "date": "Fri, 10 Apr 2026 08:49:42  EDT",
-    "date_iso": "2026-04-10",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
-    "id": "ms-stroke-thrombectomy-24-hour-guideline-2026",
-    "article_type": "guideline",
-    "specialty": "Neurology",
-    "title": "New Guidelines Extend Stroke Thrombectomy Window to 24 Hours",
-    "summary": "Updated American Heart Association guidelines now recommend mechanical thrombectomy for large vessel occlusion strokes up to 24 hours from last known normal, expanded from the previous 16-hour window. The revision is based on recent randomized trials demonstrating benefit in carefully selected patients with favorable imaging characteristics.",
-    "why_it_matters": "This guideline change significantly expands treatment options for stroke patients presenting to the hospital, requiring updated protocols for patient selection and coordination with interventional teams.",
-    "tags": [
-      "stroke thrombectomy",
-      "treatment window",
-      "AHA guidelines",
-      "mechanical thrombectomy"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/does-8-gy-improve-outcomes-over-4-gy-indolent-lymphoma-2026a1000b04?src=rss",
-    "date": "Fri, 10 Apr 2026 08:20:06  EDT",
-    "date_iso": "2026-04-10",
-    "card_type": "medscape"
   },
   {
     "article_index": 6,
@@ -482,26 +527,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/s/viewarticle/us-fda-approves-waters-%E2%80%91home-cervical-cancer-2026a1000aq6?src=rss",
     "date": "Wed, 8 Apr 2026 09:27:27  EDT",
-    "date_iso": "2026-04-09",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-fda-metformin-contamination-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Issues Class II Recall for Generic Metformin Due to NDMA Contamination",
-    "summary": "The FDA announced a voluntary recall of multiple lots of generic metformin extended-release tablets manufactured by Amneal Pharmaceuticals due to elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. Patients are advised not to stop taking metformin abruptly but should contact their healthcare providers for alternative formulations. The recall affects approximately 76 lots distributed nationwide over the past six months.",
-    "why_it_matters": "Hospitalists should be prepared to counsel diabetic patients about this recall and coordinate with pharmacy teams to ensure continuity of glycemic control with alternative metformin formulations.",
-    "tags": [
-      "metformin",
-      "FDA recall",
-      "diabetes",
-      "drug safety"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/early-oral-antibiotics-safe-shift-bone-infections-2026a1000ada?src=rss",
-    "date": "Wed, 8 Apr 2026 08:00:00  EDT",
     "date_iso": "2026-04-09",
     "card_type": "medscape"
   },
