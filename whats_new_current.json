@@ -10,29 +10,31 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement in patients with chronic primary immune thrombocytopenia",
-      "Mezagitimab showed greater platelet response compared to placebo"
+      "Mezagitimab demonstrated greater platelet response compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers potential new treatment option for chronic ITP patients who often have limited therapeutic choices",
-      "Clinical context: Subcutaneous administration may provide more convenient dosing compared to current IV treatments"
+      "Clinical context: Provides a potential new treatment option for ITP patients who have failed standard therapies like corticosteroids and splenectomy",
+      "Clinical context: Subcutaneous weekly dosing may offer convenience advantage over current IV treatments"
     ],
-    "limitations": [],
-    "bottom_line": "Mezagitimab shows early promise as a safe and potentially effective treatment for chronic immune thrombocytopenia.",
+    "limitations": [
+      "Limited details available on study methodology and specific outcome measures"
+    ],
+    "bottom_line": "Mezagitimab shows promise as a well-tolerated treatment for chronic immune thrombocytopenia with superior platelet response versus placebo.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
-    "date_iso": "2026-04-11",
-    "why_this_matters": "Mezagitimab represents a potential new treatment option for patients with chronic immune thrombocytopenia who have failed standard therapies.",
+    "date_iso": "2026-04-12",
+    "why_this_matters": "Mezagitimab offers a potential new treatment option for patients with chronic immune thrombocytopenia who have failed standard therapies.",
     "population": "Patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
     "comparator": "Placebo",
     "key_results": [
       "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement",
-      "Mezagitimab showed greater platelet response compared to placebo"
+      "Mezagitimab demonstrated greater platelet response compared to placebo"
     ],
     "clinical_interpretation": [
-      "This appears to be an early-phase study showing promise for mezagitimab in ITP, but more data on durability of response and long-term safety would be needed before clinical adoption"
+      "This represents a promising therapeutic option for a challenging condition, though more detailed efficacy and safety data would be valuable for clinical decision-making"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -46,46 +48,41 @@
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "Intensive multifaceted management may improve blood pressure control among low-income patients",
-    "study_design": "Cluster-randomized trial of federally qualified health center clinics in Louisiana and Mississippi",
+    "study_design": "Cluster-randomized trial (IMPACTS-BP)",
     "sample_size": "",
-    "primary_outcome": "Mean change in systolic blood pressure from baseline to 18 months",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Patients with longstanding uncontrolled hypertension who received multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Team-based care approach demonstrated benefits in blood pressure management"
+      "Patients with longstanding uncontrolled hypertension receiving multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Team-based care approach demonstrated superior blood pressure control outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Addresses health disparities by showing effective interventions for underserved populations with resistant hypertension",
-      "Clinical context: Supports implementation of team-based care models for improving cardiovascular outcomes in hospital and clinic settings"
+      "Clinical context: Addresses the challenge of medication adherence and BP control in underserved populations through systematic team-based interventions",
+      "Clinical context: May inform hospital discharge planning and outpatient management strategies for hypertensive patients"
     ],
     "limitations": [
-      "Cluster randomization may have introduced selection bias",
-      "Intervention was resource-intensive and may be challenging to implement widely",
-      "18-month follow-up may not capture long-term sustainability"
+      "Resource-intensive intervention may be difficult to implement broadly"
     ],
-    "bottom_line": "A comprehensive team-based hypertension management strategy produces clinically meaningful additional blood pressure reductions in low-income patients with uncontrolled hypertension.",
+    "bottom_line": "Intensive team-based interventions significantly improve blood pressure control in low-income patients with resistant hypertension compared to usual care.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
-    "date_iso": "2026-04-11",
-    "why_this_matters": "This study demonstrates that intensive team-based interventions can achieve meaningful blood pressure reductions in underserved populations with longstanding uncontrolled hypertension.",
-    "population": "1272 patients aged ≥40 years with uncontrolled hypertension from low-income backgrounds (75.9% unemployed, 73.4% with family income <$25,000/year, 63.4% Black, mean age 58.8 years)",
-    "intervention_exposure": "Multifaceted implementation strategy including team-based care, protocol-based intensive BP management, audit and feedback, health coaching, and home BP monitoring",
-    "comparator": "Enhanced usual care with physician education about hypertension guidelines",
+    "date_iso": "2026-04-12",
+    "why_this_matters": "Team-based intensive interventions may offer a solution for managing resistant hypertension in underserved populations where standard approaches often fail.",
+    "population": "Low-income patients with longstanding uncontrolled hypertension",
+    "intervention_exposure": "Multimodal team-based care intervention",
+    "comparator": "Usual care",
     "key_results": [
-      "Systolic BP reduction was -15.5 mmHg in intervention group vs -9.1 mmHg in control group (difference -6.4 mmHg, 95% CI -9.0 to -3.8, P<0.001)",
-      "Adherence summary scores were significantly higher in intervention group (2.8 vs 2.1, difference 0.7 points, P<0.001)",
-      "Serious adverse events occurred in 20.9% of intervention patients vs 21.7% of control patients"
+      "Patients receiving multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
+      "Team-based care approach demonstrated superior blood pressure control outcomes"
     ],
     "clinical_interpretation": [
-      "The 6.4 mmHg additional reduction in systolic BP is clinically meaningful and could translate to significant cardiovascular risk reduction in this high-risk population",
-      "The multifaceted approach appears necessary as enhanced usual care alone achieved substantial BP reduction",
-      "Implementation in resource-limited settings will require substantial organizational commitment and funding"
+      "This supports the value of comprehensive, team-based approaches for difficult-to-control hypertension, particularly in socioeconomically disadvantaged populations who often have worse outcomes"
     ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1056/NEJMoa2504068",
-    "pubmed_id": "41950472",
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
+    "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
   },
   {
@@ -99,30 +96,31 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "Telemedicine was non-inferior to conventional care in reducing pain and improving function for patients with rotator cuff syndrome",
-      "Asynchronous exercise programs delivered via telemedicine showed equivalent effectiveness"
+      "Asynchronous exercise programs delivered via telemedicine effectively managed shoulder pain and function"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports broader adoption of telemedicine for musculoskeletal conditions, particularly important for post-pandemic healthcare delivery",
-      "Clinical context: May reduce healthcare costs and improve access to care for patients with shoulder pain"
+      "Clinical context: Supports broader adoption of telemedicine for musculoskeletal conditions, potentially reducing referral burden and improving access to care",
+      "Clinical context: May be particularly valuable for hospitalists managing post-discharge shoulder pain or for patients with limited mobility"
     ],
-    "limitations": [],
-    "bottom_line": "Telemedicine-delivered exercise programs appear as effective as conventional care for rotator cuff syndrome management.",
+    "limitations": [
+      "Non-inferiority design limits assessment of potential superiority of either approach"
+    ],
+    "bottom_line": "Telemedicine-delivered exercise programs are non-inferior to conventional care for managing rotator cuff syndrome pain and function.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/",
     "date": "Wed, 08 Apr 2026 23:00:11 +000",
-    "date_iso": "2026-04-11",
-    "why_this_matters": "This study supports telemedicine as an equivalent alternative to in-person care for rotator cuff syndrome, potentially improving access and reducing healthcare costs.",
+    "date_iso": "2026-04-12",
+    "why_this_matters": "Telemedicine approaches for rotator cuff syndrome could improve access to care and reduce healthcare costs while maintaining clinical effectiveness.",
     "population": "Patients with rotator cuff syndrome",
     "intervention_exposure": "Asynchronous exercise programs delivered via telemedicine",
-    "comparator": "Conventional in-person care",
+    "comparator": "Conventional care",
     "key_results": [
       "Telemedicine was non-inferior to conventional care in reducing pain and improving function",
-      "Asynchronous exercise programs via telemedicine showed equivalent effectiveness"
+      "Asynchronous exercise programs effectively managed shoulder pain and function"
     ],
     "clinical_interpretation": [
-      "Non-inferiority findings suggest telemedicine could be routinely offered as an alternative to in-person physical therapy for rotator cuff syndrome",
-      "This could particularly benefit patients with transportation or scheduling barriers to traditional care"
+      "This supports telemedicine as a viable alternative for managing rotator cuff syndrome, which could be particularly valuable for patients with access barriers or during periods when in-person care is limited"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -136,7 +134,7 @@
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Next-generation yellow fever vaccine shows comparable efficacy to standard vaccine",
-    "study_design": "Phase 2 noninferiority clinical trial",
+    "study_design": "Phase 2 noninferiority trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -144,17 +142,19 @@
       "Safety profiles were similar between groups with no vaccine-related serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Important for travel medicine and outbreak preparedness, particularly as yellow fever remains endemic in parts of Africa and South America",
-      "Clinical context: May address potential supply chain issues with current yellow fever vaccines"
+      "Clinical context: Important for travel medicine and infectious disease prevention, especially given periodic shortages of current yellow fever vaccines",
+      "Clinical context: May provide improved supply chain stability for international travelers requiring yellow fever vaccination"
     ],
-    "limitations": [],
-    "bottom_line": "A next-generation yellow fever vaccine shows promise with comparable immunogenicity and safety to the standard vaccine.",
+    "limitations": [
+      "Long-term safety and efficacy data not yet available"
+    ],
+    "bottom_line": "Next-generation yellow fever vaccine shows comparable immunogenicity and safety to the standard vaccine with nearly universal seroconversion.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
     "date": "Wed, 08 Apr 2026 21:00:04 +000",
-    "date_iso": "2026-04-11",
-    "why_this_matters": "A next-generation yellow fever vaccine could address supply chain issues and potentially improve manufacturing efficiency while maintaining protective efficacy.",
+    "date_iso": "2026-04-12",
+    "why_this_matters": "A next-generation yellow fever vaccine could provide improved manufacturing capabilities and supply chain resilience for this critical travel and endemic disease vaccine.",
     "population": "",
     "intervention_exposure": "Next-generation live-attenuated yellow fever vaccine",
     "comparator": "Standard yellow fever vaccine",
@@ -163,14 +163,57 @@
       "Safety profiles were similar between groups with no vaccine-related serious adverse events"
     ],
     "clinical_interpretation": [
-      "Non-inferior immunogenicity with similar safety profile suggests this vaccine could be a viable alternative to current yellow fever vaccines",
-      "Universal seroconversion is encouraging for travel medicine and endemic area vaccination programs"
+      "This provides reassurance that newer vaccine formulations can maintain the excellent efficacy profile of the current yellow fever vaccine while potentially offering manufacturing advantages"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/next-generation-yellow-fever-vaccine-shows-comparable-efficacy-to-standard-vaccine/"
+  },
+  {
+    "article_index": 8,
+    "id": "amazon-health-ai-assistant-2026",
+    "type": "Public Health",
+    "specialty": "Digital Health",
+    "title": "Amazon Health Services expands generative artificial intelligence assistant to all United States customers",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Amazon expanded its generative AI assistant to all US users, enabling integration with electronic health information for personalized guidance",
+      "Platform uses multi-agent architecture to improve safety and accuracy while supporting medication management"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents growing integration of AI into patient self-management and medication adherence, potentially impacting how patients interact with healthcare between visits",
+      "Clinical context: May influence patient expectations and information seeking behavior when interacting with healthcare providers"
+    ],
+    "limitations": [
+      "No clinical outcomes data available",
+      "Potential privacy and accuracy concerns with AI-driven health guidance"
+    ],
+    "bottom_line": "Amazon's expansion of AI health assistants to all US customers marks a significant step in consumer health technology, though clinical benefits remain unproven.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/amazon-health-services-expands-generative-artificial-intelligence-assistant-to-all-united-states-customers/",
+    "date": "Wed, 08 Apr 2026 12:00:14 +000",
+    "date_iso": "2026-04-12",
+    "why_this_matters": "Integration of AI assistants with health records represents a significant shift in how patients may access and manage their healthcare information.",
+    "population": "All US Amazon Health Services customers",
+    "intervention_exposure": "Generative AI assistant with electronic health information integration",
+    "comparator": "",
+    "key_results": [
+      "AI assistant expanded to all US users with electronic health information integration for personalized guidance",
+      "Platform uses multi-agent architecture to improve safety and accuracy while supporting medication management"
+    ],
+    "clinical_interpretation": [
+      "This represents a major expansion of consumer health AI tools, though the clinical impact and safety of AI-driven health guidance remain to be established through rigorous evaluation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/amazon-health-services-expands-generative-artificial-intelligence-assistant-to-all-united-states-customers/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/amazon-health-services-expands-generative-artificial-intelligence-assistant-to-all-united-states-customers/"
   },
   {
     "article_index": 9,
