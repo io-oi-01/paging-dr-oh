@@ -79,7 +79,8 @@
     "Upper GI Bleeding",
     "Acute Respiratory Failure",
     "Hyponatremia",
-    "Asthma Exacerbation"
+    "Asthma Exacerbation",
+    "Sarcoidosis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -161,7 +162,8 @@
     "select-cv-2023",
     "andromeda-2019",
     "process-2014",
-    "transformhf-2022"
+    "transformhf-2022",
+    "inpulsis-2014"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -351,7 +353,7 @@
     "telemedicine-rotator-cuff-2026",
     "amazon-health-ai-assistant-2026"
   ],
-  "last_run": "2026-04-12",
+  "last_run": "2026-04-13",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -395,7 +397,8 @@
     "Syringomas",
     "Androgenic Alopecia",
     "Erythema Multiforme",
-    "Pyoderma Gangrenosum"
+    "Pyoderma Gangrenosum",
+    "Acne Keloidalis Nuchae"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -544,6 +547,10 @@
     "ecg-120",
     "cxr-035",
     "ct-065",
-    "clinical-broken-open"
+    "clinical-broken-open",
+    "ecg-092",
+    "cxr-081",
+    "ct-092",
+    "clinical-alprazoslammed"
   ]
 }
