@@ -80,7 +80,8 @@
     "Acute Respiratory Failure",
     "Hyponatremia",
     "Asthma Exacerbation",
-    "Sarcoidosis"
+    "Sarcoidosis",
+    "Thrombotic Thrombocytopenic Purpura"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -163,7 +164,8 @@
     "andromeda-2019",
     "process-2014",
     "transformhf-2022",
-    "inpulsis-2014"
+    "inpulsis-2014",
+    "point-2018"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -351,9 +353,17 @@
     "ms-ai-sepsis-prediction-cms-approval-2026",
     "ms-stroke-thrombectomy-24-hour-guideline-2026",
     "telemedicine-rotator-cuff-2026",
-    "amazon-health-ai-assistant-2026"
+    "amazon-health-ai-assistant-2026",
+    "renal-pocus-nephrolithiasis-2026",
+    "shorter-antibiotics-cap-2026",
+    "mezagitimab-itp-2026",
+    "multifaceted-bp-management-2026",
+    "ms-fda-sglt2-heart-failure-indication-2026",
+    "ms-cdc-mpox-outbreak-alert-2026",
+    "ms-acs-chest-pain-guideline-update-2026",
+    "ms-fda-warfarin-drug-interaction-warning-2026"
   ],
-  "last_run": "2026-04-13",
+  "last_run": "2026-04-14",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -398,7 +408,8 @@
     "Androgenic Alopecia",
     "Erythema Multiforme",
     "Pyoderma Gangrenosum",
-    "Acne Keloidalis Nuchae"
+    "Acne Keloidalis Nuchae",
+    "Retiform Purpura"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -551,6 +562,10 @@
     "ecg-092",
     "cxr-081",
     "ct-092",
-    "clinical-alprazoslammed"
+    "clinical-alprazoslammed",
+    "ecg-106",
+    "cxr-056",
+    "ct-016",
+    "clinical-total-tb-extravaganza"
   ]
 }

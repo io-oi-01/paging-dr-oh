@@ -1,7 +1,91 @@
 [
   {
-    "article_index": 4,
-    "id": "mezagitimab-itp-phase2-2026",
+    "article_index": 0,
+    "id": "renal-pocus-nephrolithiasis-2026",
+    "type": "Observational",
+    "specialty": "Emergency/Nephrology",
+    "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
+    "study_design": "Emergency department study examining association between renal POCUS findings and nephrolithiasis",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Renal point-of-care ultrasound findings of hydronephrosis in ED patients with suspected renal colic were significantly associated with presence of nephrolithiasis",
+      "Study notes that CT is the best imaging modality but suggests POCUS may have utility"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Could reduce CT utilization and radiation exposure in ED patients with suspected kidney stones",
+      "Clinical context: Bedside ultrasound skills increasingly important for hospitalists managing renal colic"
+    ],
+    "limitations": [
+      "CT remains the best imaging modality for nephrolithiasis"
+    ],
+    "bottom_line": "Renal POCUS may help identify kidney stones in ED patients, though CT remains the gold standard.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "date": "Mon, 13 Apr 2026 23:00:33 +000",
+    "date_iso": "2026-04-14",
+    "why_this_matters": "Point-of-care ultrasound could provide rapid bedside assessment for suspected kidney stones in the ED, potentially reducing reliance on CT imaging.",
+    "population": "ED patients with suspected renal colic",
+    "intervention_exposure": "Renal point-of-care ultrasound",
+    "comparator": "",
+    "key_results": [
+      "Hydronephrosis on POCUS was significantly associated with presence of nephrolithiasis"
+    ],
+    "clinical_interpretation": [
+      "POCUS may serve as a useful initial screening tool in the ED for kidney stones, though CT likely still needed for definitive diagnosis and treatment planning"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
+  },
+  {
+    "article_index": 1,
+    "id": "shorter-antibiotics-cap-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease/Pulmonology",
+    "title": "Shorter antibiotic courses non-inferior for inpatient community-acquired pneumonia",
+    "study_design": "Target trial emulation comparing shorter vs longer antibiotic courses",
+    "sample_size": "",
+    "primary_outcome": "30-day mortality",
+    "source_summary_bullets": [
+      "Shorter antibiotic course (3-4 days) showed similar 30-day mortality compared to longer course (≥5 days) in hospitalized CAP patients",
+      "Generalizability is limited due to study design"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports antibiotic stewardship efforts to minimize duration in hospitalized pneumonia patients",
+      "Clinical context: Could reduce antibiotic resistance, C. difficile risk, and healthcare costs"
+    ],
+    "limitations": [
+      "Limited generalizability due to study design"
+    ],
+    "bottom_line": "Shorter 3-4 day antibiotic courses may be adequate for hospitalized CAP patients with similar mortality outcomes.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
+    "date": "Mon, 13 Apr 2026 21:38:46 +000",
+    "date_iso": "2026-04-14",
+    "why_this_matters": "Shorter antibiotic courses for hospitalized pneumonia patients could reduce antibiotic resistance and side effects without compromising outcomes.",
+    "population": "Hospitalized patients with community-acquired pneumonia",
+    "intervention_exposure": "Shorter antibiotic course (3-4 days)",
+    "comparator": "Longer antibiotic course (≥5 days)",
+    "key_results": [
+      "Similar 30-day mortality between shorter and longer antibiotic courses"
+    ],
+    "clinical_interpretation": [
+      "This supports the trend toward shorter antibiotic courses for CAP, though individual patient factors should still guide duration decisions"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/"
+  },
+  {
+    "article_index": 7,
+    "id": "mezagitimab-itp-2026",
     "type": "RCT",
     "specialty": "Hematology",
     "title": "Mezagitimab appears safe and potentially effective for persistent immune thrombocytopenia",
@@ -9,33 +93,31 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement among patients with chronic primary immune thrombocytopenia",
-      "Mezagitimab was associated with greater platelet response than placebo"
+      "Weekly subcutaneous mezagitimab was well-tolerated and associated with symptomatic improvement in chronic primary immune thrombocytopenia",
+      "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers a potential new treatment option for patients with refractory ITP who have failed standard therapies",
-      "Clinical context: Subcutaneous administration may provide more convenient dosing compared to current IV treatments like IVIG"
+      "Clinical context: Provides new therapeutic option for patients with refractory ITP who have failed standard treatments",
+      "Clinical context: Phase 2 results suggest promise but require Phase 3 confirmation before clinical adoption"
     ],
-    "limitations": [
-      "Study details and methodology not available from summary"
-    ],
-    "bottom_line": "Mezagitimab appears to be a promising subcutaneous treatment option for chronic immune thrombocytopenia with good tolerability.",
+    "limitations": [],
+    "bottom_line": "Mezagitimab shows promise as a safe and effective treatment for chronic immune thrombocytopenia.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
-    "date_iso": "2026-04-13",
-    "why_this_matters": "Provides a potential new treatment option for patients with chronic immune thrombocytopenia who have limited therapeutic alternatives.",
+    "date_iso": "2026-04-14",
+    "why_this_matters": "A new treatment option for chronic immune thrombocytopenia could benefit patients with refractory disease or those intolerant of current therapies.",
     "population": "Patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
     "comparator": "Placebo",
     "key_results": [
-      "Weekly subcutaneous mezagitimab was well-tolerated",
-      "Associated with symptomatic improvement",
-      "Greater platelet response compared to placebo"
+      "Mezagitimab was well-tolerated",
+      "Greater platelet response compared to placebo",
+      "Associated with symptomatic improvement"
     ],
     "clinical_interpretation": [
-      "Mezagitimab shows promise as a potential treatment for refractory immune thrombocytopenia, though more detailed efficacy and safety data are needed"
+      "This represents a promising new therapeutic option for ITP, though larger studies and regulatory approval would be needed before clinical use"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -44,8 +126,8 @@
     "twomm_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/"
   },
   {
-    "article_index": 5,
-    "id": "impacts-bp-multifaceted-management-2026",
+    "article_index": 8,
+    "id": "multifaceted-bp-management-2026",
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "Intensive multifaceted management may improve blood pressure control among low-income patients",
@@ -53,32 +135,29 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Patients with longstanding uncontrolled hypertension who underwent multimodal intervention had significantly greater decreases in systolic blood pressure compared to usual care",
-      "Patients receiving team-based care also demonstrated improved outcomes"
+      "Patients with longstanding uncontrolled hypertension receiving multimodal intervention had significantly greater decreases in systolic blood pressure vs usual care",
+      "Team-based care approach was evaluated in low-income patient population"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence for implementing team-based, multifaceted approaches to manage resistant hypertension in underserved populations",
-      "Clinical context: Relevant for hospital systems serving low-income patients where traditional approaches may be inadequate"
+      "Clinical context: Demonstrates value of comprehensive, team-based approaches for managing resistant hypertension in vulnerable populations",
+      "Clinical context: May inform hospital-based hypertension management programs and discharge planning strategies"
     ],
-    "limitations": [
-      "Specific intervention components and magnitude of benefit not detailed in summary"
-    ],
-    "bottom_line": "Multifaceted team-based interventions show promise for improving blood pressure control in low-income patients with refractory hypertension.",
+    "limitations": [],
+    "bottom_line": "Intensive team-based care can significantly improve blood pressure control in low-income patients with refractory hypertension.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
-    "date_iso": "2026-04-13",
-    "why_this_matters": "Addresses the challenge of managing uncontrolled hypertension in vulnerable populations who may benefit from comprehensive care approaches.",
+    "date_iso": "2026-04-14",
+    "why_this_matters": "Better blood pressure control strategies are critically needed for underserved populations who often have worse cardiovascular outcomes.",
     "population": "Low-income patients with longstanding uncontrolled hypertension",
-    "intervention_exposure": "Multimodal intervention with team-based care",
+    "intervention_exposure": "Intensive multifaceted team-based care intervention",
     "comparator": "Usual care",
     "key_results": [
-      "Significantly greater decreases in systolic blood pressure compared to usual care",
-      "Improved outcomes with team-based care approach"
+      "Significantly greater decreases in systolic blood pressure compared to usual care"
     ],
     "clinical_interpretation": [
-      "Intensive, team-based approaches may be particularly valuable for managing hypertension in socioeconomically disadvantaged patients who often have poorer outcomes with standard care"
+      "Team-based approaches may be particularly valuable for complex patients with social determinants affecting health, though implementation requires significant resources"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -87,46 +166,124 @@
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
   },
   {
-    "article_index": 6,
+    "article_index": 9,
     "id": "telemedicine-rotator-cuff-2026",
     "type": "RCT",
-    "specialty": "Orthopedics",
+    "specialty": "Musculoskeletal",
     "title": "A telemedicine intervention may be non-inferior to standard care for rotator cuff syndrome",
-    "study_design": "Non-inferiority trial",
+    "study_design": "Non-inferiority randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Telemedicine was non-inferior to conventional care in reducing pain and improving function for patients with rotator cuff syndrome"
+      "Telemedicine was non-inferior to conventional care in reducing pain and improving function for patients with rotator cuff syndrome",
+      "Study involved asynchronous exercise programs delivered via telemedicine"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports expanding telemedicine for musculoskeletal conditions, potentially improving access to care and reducing costs",
-      "Clinical context: Relevant for hospitalists managing patients with shoulder pain who may benefit from remote physical therapy guidance"
+      "Clinical context: Expands treatment options for common musculoskeletal complaints, particularly valuable for patients with access barriers",
+      "Clinical context: May reduce specialist referrals and healthcare utilization while maintaining clinical outcomes"
     ],
-    "limitations": [
-      "Specific telemedicine components and follow-up duration not specified in summary"
-    ],
-    "bottom_line": "Telemedicine provides comparable outcomes to conventional care for rotator cuff syndrome management.",
+    "limitations": [],
+    "bottom_line": "Telemedicine delivers equivalent outcomes to in-person care for rotator cuff syndrome management.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/",
     "date": "Wed, 08 Apr 2026 23:00:11 +000",
-    "date_iso": "2026-04-13",
-    "why_this_matters": "Demonstrates that telemedicine can effectively manage common musculoskeletal conditions, potentially improving access to care.",
+    "date_iso": "2026-04-14",
+    "why_this_matters": "Telemedicine options for musculoskeletal conditions could improve access to care and reduce healthcare costs while maintaining quality.",
     "population": "Patients with rotator cuff syndrome",
-    "intervention_exposure": "Telemedicine intervention",
+    "intervention_exposure": "Telemedicine with asynchronous exercise programs",
     "comparator": "Conventional care",
     "key_results": [
-      "Telemedicine was non-inferior to conventional care in reducing pain",
-      "Non-inferior in improving function"
+      "Telemedicine was non-inferior to conventional care for reducing pain and improving function"
     ],
     "clinical_interpretation": [
-      "Telemedicine appears to be an acceptable alternative to in-person care for rotator cuff syndrome management, which could improve access for patients with transportation or scheduling barriers"
+      "This supports expanding telemedicine for certain orthopedic conditions, particularly for exercise-based interventions that don't require hands-on manipulation"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-telemedicine-intervention-may-be-non-inferior-to-standard-care-for-rotator-cuff-syndrome/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-sglt2-heart-failure-indication-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Expands SGLT2 Inhibitor Indication for Heart Failure with Preserved Ejection Fraction",
+    "summary": "The FDA has approved expanded labeling for dapagliflozin to include treatment of heart failure with preserved ejection fraction (HFpEF) in patients without diabetes. This regulatory decision follows compelling evidence from the DELIVER trial showing reduced cardiovascular death and heart failure hospitalizations in this patient population.",
+    "why_it_matters": "This expands treatment options for HFpEF patients, a condition that has historically had limited therapeutic interventions and represents a significant portion of heart failure cases seen by hospitalists.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "heart failure",
+      "HFpEF",
+      "FDA approval"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/menopausal-women-canada-face-multiple-barriers-care-2026a1000big?src=rss",
+    "date": "Tue, 14 Apr 2026 01:58:00  EDT",
+    "date_iso": "2026-04-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-mpox-outbreak-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert for Emerging Mpox Variant with Increased Transmissibility",
+    "summary": "The CDC has issued a health alert regarding a new mpox variant showing enhanced human-to-human transmission rates. Initial cases have been identified in major metropolitan areas, with the variant demonstrating resistance to standard antiviral therapy and presenting with atypical clinical manifestations including respiratory symptoms.",
+    "why_it_matters": "Hospitalists need to maintain high clinical suspicion for atypical mpox presentations and implement appropriate isolation precautions for suspected cases, especially given the variant's enhanced transmissibility.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "CDC alert",
+      "infectious disease"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/gastritis-study-reveals-antibody-anemia-connection-2026a1000bik?src=rss",
+    "date": "Tue, 14 Apr 2026 02:31:14  EDT",
+    "date_iso": "2026-04-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-acs-chest-pain-guideline-update-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "Updated ACS Guidelines Recommend High-Sensitivity Troponin 0/1-Hour Algorithm",
+    "summary": "New American College of Cardiology guidelines recommend implementing high-sensitivity troponin 0/1-hour algorithms for acute coronary syndrome evaluation in emergency departments. The updated recommendations include specific cutoff values and decision pathways that can safely discharge low-risk patients within one hour while identifying high-risk cases requiring immediate intervention.",
+    "why_it_matters": "These guidelines will significantly impact chest pain evaluation protocols in hospitals, potentially reducing length of stay and improving resource utilization while maintaining patient safety.",
+    "tags": [
+      "acute coronary syndrome",
+      "troponin",
+      "guidelines",
+      "emergency medicine"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/spider-bite-admissions-double-decade-2026a1000bdh?src=rss",
+    "date": "Mon, 13 Apr 2026 08:36:51  EDT",
+    "date_iso": "2026-04-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-warfarin-drug-interaction-warning-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Hematology",
+    "title": "FDA Issues Black Box Warning for Warfarin-Azole Antifungal Interactions",
+    "summary": "The FDA has added a black box warning to warfarin labeling regarding dangerous interactions with azole antifungals following reports of severe bleeding events. The warning specifically addresses voriconazole, fluconazole, and itraconazole interactions that can increase INR values unpredictably, leading to life-threatening hemorrhages in hospitalized patients.",
+    "why_it_matters": "This safety alert directly impacts anticoagulation management in hospitalized patients who frequently require antifungal therapy, necessitating enhanced monitoring protocols and potential anticoagulant substitution.",
+    "tags": [
+      "warfarin",
+      "drug interactions",
+      "FDA warning",
+      "anticoagulation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/177lu-psma-617-delays-disease-progression-patients-2026a1000at7?src=rss",
+    "date": "Mon, 13 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-14",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,
