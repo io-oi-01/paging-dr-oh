@@ -1,81 +1,39 @@
 [
   {
-    "article_index": 0,
-    "id": "renal-pocus-nephrolithiasis-2026",
-    "type": "Observational",
-    "specialty": "Emergency/Nephrology",
-    "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
-    "study_design": "Emergency department study examining association between renal POCUS findings and nephrolithiasis",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis in ED patients with suspected renal colic were significantly associated with presence of nephrolithiasis",
-      "Study notes that CT is the best imaging modality but suggests POCUS may have utility"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Could reduce CT utilization and radiation exposure in ED patients with suspected kidney stones",
-      "Clinical context: Bedside ultrasound skills increasingly important for hospitalists managing renal colic"
-    ],
-    "limitations": [
-      "CT remains the best imaging modality for nephrolithiasis"
-    ],
-    "bottom_line": "Renal POCUS may help identify kidney stones in ED patients, though CT remains the gold standard.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
-    "date": "Mon, 13 Apr 2026 23:00:33 +000",
-    "date_iso": "2026-04-14",
-    "why_this_matters": "Point-of-care ultrasound could provide rapid bedside assessment for suspected kidney stones in the ED, potentially reducing reliance on CT imaging.",
-    "population": "ED patients with suspected renal colic",
-    "intervention_exposure": "Renal point-of-care ultrasound",
-    "comparator": "",
-    "key_results": [
-      "Hydronephrosis on POCUS was significantly associated with presence of nephrolithiasis"
-    ],
-    "clinical_interpretation": [
-      "POCUS may serve as a useful initial screening tool in the ED for kidney stones, though CT likely still needed for definitive diagnosis and treatment planning"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
-  },
-  {
-    "article_index": 1,
-    "id": "shorter-antibiotics-cap-2026",
+    "article_index": 2,
+    "id": "shorter-antibiotics-cap-hospitalist-2026",
     "type": "Observational",
     "specialty": "Infectious Disease/Pulmonology",
     "title": "Shorter antibiotic courses non-inferior for inpatient community-acquired pneumonia",
     "study_design": "Target trial emulation comparing shorter vs longer antibiotic courses",
     "sample_size": "",
-    "primary_outcome": "30-day mortality",
+    "primary_outcome": "30-day all-cause mortality",
     "source_summary_bullets": [
-      "Shorter antibiotic course (3-4 days) showed similar 30-day mortality compared to longer course (≥5 days) in hospitalized CAP patients",
+      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer course (≥5 days) in hospitalized CAP patients",
       "Generalizability is limited due to study design"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports antibiotic stewardship efforts to minimize duration in hospitalized pneumonia patients",
-      "Clinical context: Could reduce antibiotic resistance, C. difficile risk, and healthcare costs"
+      "Clinical context: This supports shorter antibiotic durations for hospitalized CAP patients, potentially reducing antibiotic resistance and adverse effects",
+      "Clinical context: Could change standard practice if validated in prospective RCTs, as most hospitalists currently use 5-7 day courses"
     ],
     "limitations": [
-      "Limited generalizability due to study design"
+      "Limited generalizability due to observational study design"
     ],
-    "bottom_line": "Shorter 3-4 day antibiotic courses may be adequate for hospitalized CAP patients with similar mortality outcomes.",
+    "bottom_line": "Shorter antibiotic courses may be non-inferior for hospitalized CAP patients, but more robust evidence is needed before widespread implementation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
     "date": "Mon, 13 Apr 2026 21:38:46 +000",
-    "date_iso": "2026-04-14",
-    "why_this_matters": "Shorter antibiotic courses for hospitalized pneumonia patients could reduce antibiotic resistance and side effects without compromising outcomes.",
+    "date_iso": "2026-04-15",
+    "why_this_matters": "Shorter antibiotic courses for hospitalized CAP patients could reduce antimicrobial resistance and adverse effects while maintaining clinical efficacy.",
     "population": "Hospitalized patients with community-acquired pneumonia",
     "intervention_exposure": "Shorter antibiotic course (3-4 days)",
     "comparator": "Longer antibiotic course (≥5 days)",
     "key_results": [
-      "Similar 30-day mortality between shorter and longer antibiotic courses"
+      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer course (≥5 days)"
     ],
     "clinical_interpretation": [
-      "This supports the trend toward shorter antibiotic courses for CAP, though individual patient factors should still guide duration decisions"
+      "This supports the trend toward shorter antibiotic durations for CAP, but randomized controlled trials would provide stronger evidence for changing practice guidelines"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -84,8 +42,49 @@
     "twomm_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/"
   },
   {
-    "article_index": 7,
-    "id": "mezagitimab-itp-2026",
+    "article_index": 1,
+    "id": "renal-pocus-nephrolithiasis-hospitalist-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine/Nephrology",
+    "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
+    "study_design": "Study of renal POCUS findings in ED patients with suspected renal colic",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Could reduce CT utilization and radiation exposure in patients with suspected kidney stones",
+      "Clinical context: Useful for hospitalists managing patients with acute flank pain, especially when CT is not immediately available"
+    ],
+    "limitations": [
+      "Observational design limits causal inference"
+    ],
+    "bottom_line": "Renal POCUS showing hydronephrosis may help identify nephrolithiasis in ED patients with suspected renal colic.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "date": "Mon, 13 Apr 2026 23:00:33 +000",
+    "date_iso": "2026-04-15",
+    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and expedite diagnosis in patients with suspected kidney stones.",
+    "population": "Emergency department patients with suspected renal colic",
+    "intervention_exposure": "Renal point-of-care ultrasound",
+    "comparator": "",
+    "key_results": [
+      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis"
+    ],
+    "clinical_interpretation": [
+      "POCUS may serve as a useful screening tool for nephrolithiasis, particularly in settings where CT availability is limited or radiation exposure is a concern"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
+  },
+  {
+    "article_index": 8,
+    "id": "mezagitimab-itp-hospitalist-2026",
     "type": "RCT",
     "specialty": "Hematology",
     "title": "Mezagitimab appears safe and potentially effective for persistent immune thrombocytopenia",
@@ -97,27 +96,26 @@
       "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides new therapeutic option for patients with refractory ITP who have failed standard treatments",
-      "Clinical context: Phase 2 results suggest promise but require Phase 3 confirmation before clinical adoption"
+      "Clinical context: Provides new treatment option for chronic ITP patients who often have limited therapeutic choices",
+      "Clinical context: Could reduce need for corticosteroids and splenectomy in refractory ITP cases"
     ],
     "limitations": [],
-    "bottom_line": "Mezagitimab shows promise as a safe and effective treatment for chronic immune thrombocytopenia.",
+    "bottom_line": "Mezagitimab shows promise as a safe and effective treatment for persistent immune thrombocytopenia but requires further validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/",
     "date": "Thu, 09 Apr 2026 12:00:04 +000",
-    "date_iso": "2026-04-14",
-    "why_this_matters": "A new treatment option for chronic immune thrombocytopenia could benefit patients with refractory disease or those intolerant of current therapies.",
+    "date_iso": "2026-04-15",
+    "why_this_matters": "New treatment options are needed for patients with persistent immune thrombocytopenia who fail standard therapies.",
     "population": "Patients with chronic primary immune thrombocytopenia",
     "intervention_exposure": "Weekly subcutaneous mezagitimab",
     "comparator": "Placebo",
     "key_results": [
-      "Mezagitimab was well-tolerated",
-      "Greater platelet response compared to placebo",
-      "Associated with symptomatic improvement"
+      "Mezagitimab was well-tolerated and associated with symptomatic improvement",
+      "Mezagitimab showed greater platelet response compared to placebo"
     ],
     "clinical_interpretation": [
-      "This represents a promising new therapeutic option for ITP, though larger studies and regulatory approval would be needed before clinical use"
+      "This represents a potential new therapeutic option for refractory immune thrombocytopenia, though larger studies and regulatory approval would be needed"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -126,44 +124,165 @@
     "twomm_url": "https://www.2minutemedicine.com/mezagitimab-appears-safe-and-potentially-effective-for-persistent-immune-thrombocytopenia/"
   },
   {
-    "article_index": 8,
-    "id": "multifaceted-bp-management-2026",
+    "article_index": 9,
+    "id": "intensive-bp-management-low-income-2026",
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "Intensive multifaceted management may improve blood pressure control among low-income patients",
     "study_design": "Cluster-randomized trial (IMPACTS-BP)",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Systolic blood pressure reduction",
     "source_summary_bullets": [
-      "Patients with longstanding uncontrolled hypertension receiving multimodal intervention had significantly greater decreases in systolic blood pressure vs usual care",
-      "Team-based care approach was evaluated in low-income patient population"
+      "Patients with uncontrolled hypertension receiving multimodal intervention had significantly greater decreases in systolic blood pressure vs usual care",
+      "Team-based care approach was used in the intervention group"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Demonstrates value of comprehensive, team-based approaches for managing resistant hypertension in vulnerable populations",
-      "Clinical context: May inform hospital-based hypertension management programs and discharge planning strategies"
+      "Clinical context: Addresses health disparities in hypertension management among underserved populations",
+      "Clinical context: Supports team-based approaches for managing resistant hypertension in hospital and clinic settings"
     ],
     "limitations": [],
-    "bottom_line": "Intensive team-based care can significantly improve blood pressure control in low-income patients with refractory hypertension.",
+    "bottom_line": "Intensive multifaceted management with team-based care significantly improves blood pressure control in low-income patients with uncontrolled hypertension.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "date": "Thu, 09 Apr 2026 10:00:24 +000",
-    "date_iso": "2026-04-14",
-    "why_this_matters": "Better blood pressure control strategies are critically needed for underserved populations who often have worse cardiovascular outcomes.",
-    "population": "Low-income patients with longstanding uncontrolled hypertension",
-    "intervention_exposure": "Intensive multifaceted team-based care intervention",
+    "date_iso": "2026-04-15",
+    "why_this_matters": "Hypertension disproportionately affects low-income populations who often have worse blood pressure control and cardiovascular outcomes.",
+    "population": "Low-income patients with uncontrolled hypertension",
+    "intervention_exposure": "Multimodal team-based care intervention",
     "comparator": "Usual care",
     "key_results": [
-      "Significantly greater decreases in systolic blood pressure compared to usual care"
+      "Patients receiving multimodal intervention had significantly greater decreases in systolic blood pressure vs usual care"
     ],
     "clinical_interpretation": [
-      "Team-based approaches may be particularly valuable for complex patients with social determinants affecting health, though implementation requires significant resources"
+      "This supports the value of comprehensive, team-based approaches to hypertension management in underserved populations, which could help address health disparities"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
+  },
+  {
+    "article_index": 5,
+    "id": "ai-therapy-chatbot-ethics-2026",
+    "type": "Public Health",
+    "specialty": "Psychiatry/Digital Health",
+    "title": "Brown University study warns of systemic ethical risks in artificial intelligence therapy chatbots",
+    "study_design": "Ethical analysis study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Study identified multiple ethical risks in AI therapy chatbots including deceptive empathy and biased responses",
+      "Findings highlight need for stronger regulatory oversight as AI tools become more integrated into mental health care"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Important for hospitalists using or considering AI tools for patient communication and mental health screening",
+      "Clinical context: Raises awareness about potential risks of AI-assisted mental health interventions in hospital settings"
+    ],
+    "limitations": [],
+    "bottom_line": "AI therapy chatbots pose significant ethical risks including deceptive empathy and bias, warranting stronger regulatory oversight before widespread clinical integration.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
+    "date": "Fri, 10 Apr 2026 15:58:58 +000",
+    "date_iso": "2026-04-15",
+    "why_this_matters": "As AI therapy chatbots become more prevalent in healthcare, understanding their ethical risks is crucial for patient safety and appropriate regulation.",
+    "population": "",
+    "intervention_exposure": "AI therapy chatbots",
+    "comparator": "",
+    "key_results": [
+      "Multiple ethical risks identified including deceptive empathy and biased responses",
+      "Findings highlight need for stronger regulatory oversight"
+    ],
+    "clinical_interpretation": [
+      "This raises important concerns about the current state of AI mental health tools and suggests clinicians should exercise caution when recommending such platforms to patients"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-blood-pressure-medication-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Recalls Popular Blood Pressure Medication Due to Cancer-Causing Impurity",
+    "summary": "The FDA has issued a Class I recall for multiple lots of a widely prescribed ACE inhibitor after detecting elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The recall affects over 2 million prescriptions dispensed in the past six months across major pharmacy chains.",
+    "why_it_matters": "Hospitalists must immediately identify patients taking the recalled medication and arrange alternative antihypertensive therapy, while monitoring for potential withdrawal hypertension in admitted patients.",
+    "tags": [
+      "FDA recall",
+      "hypertension",
+      "ACE inhibitor",
+      "drug safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/some-low-grade-serous-ovarian-cancer-may-not-need-2026a1000bqe?src=rss",
+    "date": "Wed, 15 Apr 2026 01:53:19  EDT",
+    "date_iso": "2026-04-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-legionella-outbreak-healthcare-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Legionella Outbreak Linked to Healthcare Facility Water Systems",
+    "summary": "The CDC has reported a multi-state outbreak of Legionnaires' disease affecting 47 patients, with 12 deaths linked to contaminated water systems in healthcare facilities. The outbreak has prompted emergency water system testing protocols and enhanced infection control measures at hospitals nationwide.",
+    "why_it_matters": "Healthcare facilities must immediately implement enhanced water safety protocols and maintain high clinical suspicion for healthcare-associated Legionnaires' disease in hospitalized patients with pneumonia.",
+    "tags": [
+      "Legionella",
+      "healthcare-associated infection",
+      "outbreak",
+      "pneumonia"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/schistosomiasis-four-things-you-may-not-know-2026a1000bos?src=rss",
+    "date": "Tue, 14 Apr 2026 14:27:29  EDT",
+    "date_iso": "2026-04-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-ai-clinical-deterioration-prediction-2026",
+    "article_type": "news",
+    "specialty": "Hospital Medicine",
+    "title": "AI System Reduces Hospital Deaths by 20% Through Early Warning of Patient Deterioration",
+    "summary": "A large-scale implementation study involving 50,000 patients across 12 hospitals demonstrated that an AI-powered early warning system reduced in-hospital mortality by 20% and decreased ICU transfers by 35%. The system analyzes vital signs, lab values, and nursing assessments to predict clinical deterioration 6-12 hours earlier than traditional methods.",
+    "why_it_matters": "This validated AI tool represents a significant advancement in preventing clinical deterioration and could become standard of care for inpatient monitoring, requiring hospitalists to integrate AI alerts into clinical decision-making.",
+    "tags": [
+      "artificial intelligence",
+      "early warning system",
+      "clinical deterioration",
+      "patient safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ai-and-medical-errors-who-takes-blame-now-2026a1000bld?src=rss",
+    "date": "Tue, 14 Apr 2026 08:42:25  EDT",
+    "date_iso": "2026-04-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-new-sepsis-treatment-guideline-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Updated Sepsis Guidelines Recommend Earlier Vasopressor Initiation and Modified Fluid Strategy",
+    "summary": "New international sepsis guidelines recommend initiating vasopressors within 1 hour of septic shock recognition rather than after fluid resuscitation, and advocate for restrictive fluid strategies after initial resuscitation. The guidelines also endorse point-of-care lactate monitoring and updated antibiotic stewardship protocols.",
+    "why_it_matters": "These guideline changes require immediate modification of sepsis protocols and staff training, as earlier vasopressor use and fluid restriction represent significant departures from current practice patterns.",
+    "tags": [
+      "sepsis",
+      "vasopressors",
+      "fluid resuscitation",
+      "clinical guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ai-chatbots-vary-widely-fake-medical-references-2026a1000bmr?src=rss",
+    "date": "Tue, 14 Apr 2026 12:48:40  EDT",
+    "date_iso": "2026-04-15",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -1497,26 +1616,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/novel-medication-improves-motor-symptoms-early-and-advanced-2026a10009xd?src=rss",
     "date": "Wed, 1 Apr 2026 08:05:25  EDT",
-    "date_iso": "2026-04-02",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-fda-blood-pressure-medication-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Internal Medicine",
-    "title": "FDA Issues Class I Recall for Contaminated Amlodipine Tablets",
-    "summary": "The FDA announced a voluntary Class I recall of amlodipine besylate tablets due to potential contamination with carcinogenic impurities. The recall affects multiple generic manufacturers and lot numbers distributed nationwide over the past six months.",
-    "why_it_matters": "Hospitalists should verify current amlodipine prescriptions and may need to switch patients to alternative calcium channel blockers or adjust antihypertensive regimens during admission.",
-    "tags": [
-      "FDA recall",
-      "amlodipine",
-      "hypertension",
-      "patient safety"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/higher-continuity-care-gps-may-improve-hypertension-2026a10009mn?src=rss",
-    "date": "Wed, 1 Apr 2026 08:00:00  EDT",
     "date_iso": "2026-04-02",
     "card_type": "medscape"
   },
