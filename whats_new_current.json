@@ -1,39 +1,80 @@
 [
   {
-    "article_index": 2,
-    "id": "shorter-antibiotics-cap-hospitalist-2026",
+    "article_index": 3,
+    "id": "renal-pocus-nephrolithiasis-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine/Nephrology",
+    "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
+    "study_design": "Observational study of adult patients in the emergency department with suspected renal colic",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Renal point-of-care ultrasound (rPOCUS) findings of hydronephrosis were significantly associated with the presence of nephrolithiasis in emergency department patients with suspected renal colic"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports using bedside ultrasound as a radiation-free first-line imaging tool for suspected kidney stones, potentially reducing CT scan utilization in the ED"
+    ],
+    "limitations": [
+      "Observational study design",
+      "Limited details on diagnostic accuracy metrics"
+    ],
+    "bottom_line": "Renal ultrasound shows promise for detecting kidney stones in the ED, but needs validation studies before widespread adoption.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "date": "Mon, 13 Apr 2026 23:00:33 +000",
+    "date_iso": "2026-04-16",
+    "why_this_matters": "Point-of-care ultrasound could help emergency physicians rapidly identify kidney stones without CT scans, potentially reducing radiation exposure and healthcare costs.",
+    "population": "Emergency department patients with suspected renal colic",
+    "intervention_exposure": "Renal point-of-care ultrasound (rPOCUS)",
+    "comparator": "",
+    "key_results": [
+      "rPOCUS findings of hydronephrosis were significantly associated with the presence of nephrolithiasis"
+    ],
+    "clinical_interpretation": [
+      "This suggests rPOCUS may be a useful screening tool for nephrolithiasis, but more data on sensitivity, specificity, and comparison to standard imaging is needed before changing practice"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
+  },
+  {
+    "article_index": 4,
+    "id": "shorter-antibiotics-cap-2026",
     "type": "Observational",
     "specialty": "Infectious Disease/Pulmonology",
     "title": "Shorter antibiotic courses non-inferior for inpatient community-acquired pneumonia",
-    "study_design": "Target trial emulation comparing shorter vs longer antibiotic courses",
+    "study_design": "Target trial emulation comparing antibiotic duration in hospitalized CAP patients",
     "sample_size": "",
     "primary_outcome": "30-day all-cause mortality",
     "source_summary_bullets": [
-      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer course (≥5 days) in hospitalized CAP patients",
+      "Shorter antibiotic course (3-4 days) showed similar 30-day all-cause mortality compared to longer courses (5+ days) in hospitalized community-acquired pneumonia patients",
       "Generalizability is limited due to study design"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports shorter antibiotic durations for hospitalized CAP patients, potentially reducing antibiotic resistance and adverse effects",
-      "Clinical context: Could change standard practice if validated in prospective RCTs, as most hospitalists currently use 5-7 day courses"
+      "Clinical context: This supports antibiotic stewardship efforts by suggesting shorter courses may be adequate for hospitalized CAP, potentially reducing resistance and side effects"
     ],
     "limitations": [
-      "Limited generalizability due to observational study design"
+      "Observational study design",
+      "Limited generalizability as noted by authors"
     ],
-    "bottom_line": "Shorter antibiotic courses may be non-inferior for hospitalized CAP patients, but more robust evidence is needed before widespread implementation.",
+    "bottom_line": "Shorter antibiotic courses appear safe for hospitalized CAP patients, supporting antimicrobial stewardship efforts.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
     "date": "Mon, 13 Apr 2026 21:38:46 +000",
-    "date_iso": "2026-04-15",
-    "why_this_matters": "Shorter antibiotic courses for hospitalized CAP patients could reduce antimicrobial resistance and adverse effects while maintaining clinical efficacy.",
-    "population": "Hospitalized patients with community-acquired pneumonia",
+    "date_iso": "2026-04-16",
+    "why_this_matters": "Shorter antibiotic courses could reduce antimicrobial resistance and medication-related adverse events while maintaining treatment effectiveness for hospitalized pneumonia patients.",
+    "population": "Hospitalized community-acquired pneumonia patients",
     "intervention_exposure": "Shorter antibiotic course (3-4 days)",
-    "comparator": "Longer antibiotic course (≥5 days)",
+    "comparator": "Longer courses (5+ days)",
     "key_results": [
-      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer course (≥5 days)"
+      "Similar 30-day all-cause mortality between shorter and longer antibiotic courses"
     ],
     "clinical_interpretation": [
-      "This supports the trend toward shorter antibiotic durations for CAP, but randomized controlled trials would provide stronger evidence for changing practice guidelines"
+      "This supports antibiotic stewardship efforts and suggests we may be able to safely shorten CAP treatment duration, though RCT data would be more convincing"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -42,45 +83,202 @@
     "twomm_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/"
   },
   {
-    "article_index": 1,
-    "id": "renal-pocus-nephrolithiasis-hospitalist-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine/Nephrology",
-    "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
-    "study_design": "Study of renal POCUS findings in ED patients with suspected renal colic",
+    "article_index": 0,
+    "id": "simvastatin-paclitaxel-sclc-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "Simvastatin (Zocor) in combination with paclitaxel (Taxol) may provide treatment benefit compared to paclitaxel alone for small cell lung cancer",
+    "study_design": "Randomized controlled trial comparing simvastatin plus paclitaxel versus paclitaxel alone",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic"
+      "Simvastatin combined with paclitaxel was well tolerated and associated with significantly reduced disease progression compared to paclitaxel alone as second-line treatment for small cell lung cancer"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could reduce CT utilization and radiation exposure in patients with suspected kidney stones",
-      "Clinical context: Useful for hospitalists managing patients with acute flank pain, especially when CT is not immediately available"
+      "Clinical context: This suggests repurposing a common statin may enhance cancer treatment, though oncology subspecialty consultation would guide implementation in practice"
     ],
-    "limitations": [
-      "Observational design limits causal inference"
-    ],
-    "bottom_line": "Renal POCUS showing hydronephrosis may help identify nephrolithiasis in ED patients with suspected renal colic.",
-    "confidence": "moderate",
+    "limitations": [],
+    "bottom_line": "Adding simvastatin to paclitaxel shows promise for small cell lung cancer but needs larger studies before routine use.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
-    "date": "Mon, 13 Apr 2026 23:00:33 +000",
-    "date_iso": "2026-04-15",
-    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and expedite diagnosis in patients with suspected kidney stones.",
-    "population": "Emergency department patients with suspected renal colic",
-    "intervention_exposure": "Renal point-of-care ultrasound",
-    "comparator": "",
+    "source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
+    "date": "Wed, 15 Apr 2026 23:00:18 +000",
+    "date_iso": "2026-04-16",
+    "why_this_matters": "Small cell lung cancer has limited treatment options, so adding an inexpensive, well-tolerated medication like simvastatin could improve outcomes for these patients.",
+    "population": "Small cell lung cancer patients receiving second-line treatment",
+    "intervention_exposure": "Simvastatin combined with paclitaxel",
+    "comparator": "Paclitaxel alone",
     "key_results": [
-      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis"
+      "Combination was well tolerated",
+      "Significantly reduced disease progression compared to paclitaxel alone"
     ],
     "clinical_interpretation": [
-      "POCUS may serve as a useful screening tool for nephrolithiasis, particularly in settings where CT availability is limited or radiation exposure is a concern"
+      "This is encouraging for a difficult-to-treat cancer, though we need more details on survival outcomes and the magnitude of benefit before considering routine use"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/"
+  },
+  {
+    "article_index": 1,
+    "id": "prednisolone-kawasaki-disease-2026",
+    "type": "RCT",
+    "specialty": "Cardiology/Pediatrics",
+    "title": "Adjunctive prednisolone does not reduce coronary artery lesions in Kawasaki disease",
+    "study_design": "Randomized controlled trial in children with newly diagnosed Kawasaki disease",
+    "sample_size": "",
+    "primary_outcome": "Coronary artery lesions at one month",
+    "source_summary_bullets": [
+      "Adjunctive prednisolone did not reduce coronary artery lesions at one month compared to standard therapy alone in children with Kawasaki disease",
+      "Prednisolone was associated with reduced rescue therapy use and shortened hospital stays"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This challenges the routine use of steroids in Kawasaki disease, suggesting standard IVIG and aspirin remain the primary treatment approach"
+    ],
+    "limitations": [],
+    "bottom_line": "Steroids don't prevent coronary complications in Kawasaki disease but may reduce hospital length of stay.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/",
+    "date": "Wed, 15 Apr 2026 22:00:20 +000",
+    "date_iso": "2026-04-16",
+    "why_this_matters": "Kawasaki disease can cause serious coronary complications, so understanding whether steroids improve outcomes beyond standard therapy is clinically important.",
+    "population": "Children with Kawasaki disease",
+    "intervention_exposure": "Adjunctive prednisolone plus standard therapy",
+    "comparator": "Standard therapy alone",
+    "key_results": [
+      "No reduction in coronary artery lesions at one month with prednisolone",
+      "Prednisolone associated with reduced rescue therapy use and shortened hospital stays"
+    ],
+    "clinical_interpretation": [
+      "While prednisolone didn't improve the primary outcome, the reduced need for rescue therapy and shorter stays suggest some clinical benefit, though not enough to change standard practice"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
+    "original_source_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/",
     "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
+    "twomm_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/"
+  },
+  {
+    "article_index": 7,
+    "id": "ai-therapy-chatbot-ethics-2026",
+    "type": "Review",
+    "specialty": "Psychiatry/Digital Health",
+    "title": "Brown University study warns of systemic ethical risks in artificial intelligence therapy chatbots",
+    "study_design": "Ethical analysis study of AI therapy chatbots",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Multiple ethical risks were identified in AI therapy chatbots, including deceptive empathy and biased responses",
+      "Findings highlight the need for stronger regulatory oversight as AI tools become more integrated into mental healthcare"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: As hospitals and clinics increasingly adopt AI tools for patient interactions, understanding these ethical limitations is crucial for safe implementation and patient protection"
+    ],
+    "limitations": [],
+    "bottom_line": "AI therapy chatbots pose significant ethical risks that require stronger regulatory oversight before widespread clinical use.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
+    "date": "Fri, 10 Apr 2026 15:58:58 +000",
+    "date_iso": "2026-04-16",
+    "why_this_matters": "As AI chatbots become more common in healthcare, understanding their ethical risks is crucial for patient safety and appropriate clinical implementation.",
+    "population": "",
+    "intervention_exposure": "AI therapy chatbots",
+    "comparator": "",
+    "key_results": [
+      "Multiple ethical risks identified including deceptive empathy and biased responses"
+    ],
+    "clinical_interpretation": [
+      "This highlights the need for caution when implementing AI mental health tools and emphasizes that human oversight remains essential in psychiatric care"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-blood-pressure-medication-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Recalls Popular Blood Pressure Medication Over Cancer Risk",
+    "summary": "The FDA has issued a voluntary recall of several lots of a widely-prescribed ACE inhibitor due to elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The contamination was discovered during routine testing at manufacturing facilities, and patients are advised to continue taking their medication while consulting with healthcare providers about alternatives.",
+    "why_it_matters": "This recall affects a commonly prescribed antihypertensive medication that hospitalists frequently encounter and prescribe, requiring immediate review of affected patients and consideration of alternative therapy options.",
+    "tags": [
+      "ACE inhibitor",
+      "drug recall",
+      "hypertension",
+      "NDMA contamination"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/pollution-poverty-may-age-brain-much-alzheimers-disease-2026a1000bs1?src=rss",
+    "date": "Wed, 15 Apr 2026 07:22:57  EDT",
+    "date_iso": "2026-04-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-cdc-antibiotic-resistance-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Rising Carbapenem-Resistant Enterobacteriaceae in Hospitals",
+    "summary": "The CDC has released a health advisory warning of increased carbapenem-resistant Enterobacteriaceae (CRE) infections in healthcare facilities across multiple states. The alert emphasizes enhanced infection control measures, antimicrobial stewardship, and early identification protocols to prevent further spread of these multidrug-resistant organisms.",
+    "why_it_matters": "Hospital-based physicians need to be aware of this emerging resistance pattern to implement appropriate isolation precautions and consider alternative antimicrobial strategies for suspected CRE infections.",
+    "tags": [
+      "antibiotic resistance",
+      "CRE",
+      "infection control",
+      "antimicrobial stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/early-tislelizumab-may-boost-progression-free-survival-2026a1000bur?src=rss",
+    "date": "Thu, 16 Apr 2026 02:13:41  EDT",
+    "date_iso": "2026-04-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-heart-failure-guideline-update-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "Updated Heart Failure Guidelines Recommend Earlier SGLT2 Inhibitor Use",
+    "summary": "New clinical practice guidelines from the American Heart Association recommend initiating SGLT2 inhibitors earlier in heart failure with reduced ejection fraction (HFrEF) management, regardless of diabetes status. The guidelines also provide updated recommendations for combination therapy sequencing and monitoring parameters based on recent clinical trial evidence.",
+    "why_it_matters": "These guideline changes directly impact inpatient heart failure management and discharge planning, requiring hospitalists to consider SGLT2 inhibitors as part of standard quadruple therapy for appropriate patients.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "clinical guidelines",
+      "HFrEF"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ai-mammography-flags-cardiovascular-risk-2026a1000bst?src=rss",
+    "date": "Wed, 15 Apr 2026 09:03:33  EDT",
+    "date_iso": "2026-04-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-sepsis-biomarker-fda-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Approves Rapid Sepsis Biomarker Test for Emergency Use",
+    "summary": "The FDA has granted approval for a point-of-care biomarker test that can identify sepsis within 30 minutes using a combination of novel inflammatory markers. The test demonstrated 94% sensitivity and 89% specificity in clinical trials and is designed to complement existing clinical assessment tools for earlier sepsis recognition and treatment initiation.",
+    "why_it_matters": "This rapid diagnostic tool could significantly improve early sepsis detection in emergency departments and medical wards, potentially leading to faster antibiotic administration and better patient outcomes.",
+    "tags": [
+      "sepsis",
+      "biomarkers",
+      "point-of-care testing",
+      "early diagnosis"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/novo-nordisk-weight-loss-drug-shows-liver-benefits-mouse-2026a1000bsw?src=rss",
+    "date": "Wed, 15 Apr 2026 07:28:41  EDT",
+    "date_iso": "2026-04-16",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -162,67 +360,6 @@
     "original_source_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/intensive-multifaceted-management-may-improve-blood-pressure-control-among-low-income-patients/"
-  },
-  {
-    "article_index": 5,
-    "id": "ai-therapy-chatbot-ethics-2026",
-    "type": "Public Health",
-    "specialty": "Psychiatry/Digital Health",
-    "title": "Brown University study warns of systemic ethical risks in artificial intelligence therapy chatbots",
-    "study_design": "Ethical analysis study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Study identified multiple ethical risks in AI therapy chatbots including deceptive empathy and biased responses",
-      "Findings highlight need for stronger regulatory oversight as AI tools become more integrated into mental health care"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Important for hospitalists using or considering AI tools for patient communication and mental health screening",
-      "Clinical context: Raises awareness about potential risks of AI-assisted mental health interventions in hospital settings"
-    ],
-    "limitations": [],
-    "bottom_line": "AI therapy chatbots pose significant ethical risks including deceptive empathy and bias, warranting stronger regulatory oversight before widespread clinical integration.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
-    "date": "Fri, 10 Apr 2026 15:58:58 +000",
-    "date_iso": "2026-04-15",
-    "why_this_matters": "As AI therapy chatbots become more prevalent in healthcare, understanding their ethical risks is crucial for patient safety and appropriate regulation.",
-    "population": "",
-    "intervention_exposure": "AI therapy chatbots",
-    "comparator": "",
-    "key_results": [
-      "Multiple ethical risks identified including deceptive empathy and biased responses",
-      "Findings highlight need for stronger regulatory oversight"
-    ],
-    "clinical_interpretation": [
-      "This raises important concerns about the current state of AI mental health tools and suggests clinicians should exercise caution when recommending such platforms to patients"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/brown-university-study-warns-of-systemic-ethical-risks-in-artificial-intelligence-therapy-chatbots/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-blood-pressure-medication-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Cardiology",
-    "title": "FDA Recalls Popular Blood Pressure Medication Due to Cancer-Causing Impurity",
-    "summary": "The FDA has issued a Class I recall for multiple lots of a widely prescribed ACE inhibitor after detecting elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The recall affects over 2 million prescriptions dispensed in the past six months across major pharmacy chains.",
-    "why_it_matters": "Hospitalists must immediately identify patients taking the recalled medication and arrange alternative antihypertensive therapy, while monitoring for potential withdrawal hypertension in admitted patients.",
-    "tags": [
-      "FDA recall",
-      "hypertension",
-      "ACE inhibitor",
-      "drug safety"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/some-low-grade-serous-ovarian-cancer-may-not-need-2026a1000bqe?src=rss",
-    "date": "Wed, 15 Apr 2026 01:53:19  EDT",
-    "date_iso": "2026-04-15",
-    "card_type": "medscape"
   },
   {
     "article_index": 5,
