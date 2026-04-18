@@ -84,7 +84,8 @@
     "Thrombotic Thrombocytopenic Purpura",
     "Acute Decompensated Heart Failure",
     "Hypercalcemia",
-    "Sepsis and Septic Shock"
+    "Sepsis and Septic Shock",
+    "Diabetic Ketoacidosis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -171,7 +172,8 @@
     "point-2018",
     "partner3-2019",
     "proseva-2013",
-    "valiant-2003"
+    "valiant-2003",
+    "surmount1-2022"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -382,9 +384,14 @@
     "ms-heart-failure-guideline-update-2026",
     "ms-sepsis-biomarker-fda-approval-2026",
     "hfnc-cardiac-surgery-2026",
-    "prednisolone-kawasaki-2026"
+    "prednisolone-kawasaki-2026",
+    "shorter-antibiotics-cap-inpatient-2026",
+    "renal-pocus-nephrolithiasis-ed-2026",
+    "hfnc-cardiac-surgery-outcomes-2026",
+    "simvastatin-paclitaxel-sclc-combination-2026",
+    "prednisolone-kawasaki-coronary-2026"
   ],
-  "last_run": "2026-04-17",
+  "last_run": "2026-04-18",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -433,7 +440,8 @@
     "Retiform Purpura",
     "Basal Cell Carcinoma",
     "Favre-Racouchot Syndrome",
-    "Seborrheic Keratosis + Dermatosis Papulosa Nigra"
+    "Seborrheic Keratosis + Dermatosis Papulosa Nigra",
+    "Pityriasis Lichenoides et Varioliformis"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -602,6 +610,10 @@
     "ecg-016",
     "cxr-060",
     "ct-022",
-    "clinical-pneumonia-gone-bad"
+    "clinical-pneumonia-gone-bad",
+    "ecg-006",
+    "cxr-015",
+    "ct-088",
+    "clinical-dealing-with-d-dimer-debacles"
   ]
 }

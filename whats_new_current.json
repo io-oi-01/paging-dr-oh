@@ -1,157 +1,78 @@
 [
   {
-    "article_index": 0,
-    "id": "hfnc-cardiac-surgery-2026",
-    "type": "RCT",
-    "specialty": "Cardiology",
-    "title": "High-flow nasal oxygen therapy may not be superior to standard oxygen therapy after cardiac surgery",
-    "study_design": "RCT comparing high-flow nasal oxygen therapy vs standard oxygen therapy post-extubation",
+    "article_index": 7,
+    "id": "shorter-antibiotics-cap-inpatient-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "Shorter antibiotic courses non-inferior for inpatient community-acquired pneumonia",
+    "study_design": "Target trial emulation",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "30-day all-cause mortality",
     "source_summary_bullets": [
-      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy in patients with elevated risk of pulmonary complications undergoing cardiac surgery"
+      "A shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer courses (5+ days) in hospitalized CAP patients",
+      "Generalizability is limited due to study design"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges the routine use of HFNC post-cardiac surgery, potentially saving costs and resources without compromising outcomes"
-    ],
-    "limitations": [],
-    "bottom_line": "High-flow nasal oxygen may not offer advantages over standard oxygen therapy after cardiac surgery in high-risk patients.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
-    "date": "Thu, 16 Apr 2026 23:00:45 +000",
-    "date_iso": "2026-04-17",
-    "why_this_matters": "Post-cardiac surgery patients often receive high-flow nasal oxygen to prevent pulmonary complications, but this study questions whether the additional cost and complexity provides benefit over standard oxygen therapy.",
-    "population": "Patients with elevated risk of pulmonary complications undergoing cardiac surgery",
-    "intervention_exposure": "High-flow nasal oxygen therapy following extubation",
-    "comparator": "Standard oxygen therapy",
-    "key_results": [
-      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy"
-    ],
-    "clinical_interpretation": [
-      "This challenges the routine use of high-flow nasal oxygen in post-cardiac surgery patients, suggesting standard oxygen may be sufficient for most patients"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/"
-  },
-  {
-    "article_index": 2,
-    "id": "simvastatin-paclitaxel-sclc-2026",
-    "type": "RCT",
-    "specialty": "Oncology",
-    "title": "Simvastatin (Zocor) in combination with paclitaxel (Taxol) may provide treatment benefit compared to paclitaxel alone for small cell lung cancer",
-    "study_design": "RCT comparing simvastatin plus paclitaxel vs paclitaxel alone as second-line SCLC treatment",
-    "sample_size": "",
-    "primary_outcome": "Disease progression",
-    "source_summary_bullets": [
-      "Simvastatin plus paclitaxel was well tolerated and significantly reduced disease progression compared to paclitaxel alone as second-line treatment for small cell lung cancer"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Repurposing a common statin for oncology could provide a cost-effective treatment option for SCLC patients with limited therapeutic options"
-    ],
-    "limitations": [],
-    "bottom_line": "Adding simvastatin to paclitaxel may improve outcomes in second-line small cell lung cancer treatment.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
-    "date": "Wed, 15 Apr 2026 23:00:18 +000",
-    "date_iso": "2026-04-17",
-    "why_this_matters": "Small cell lung cancer has limited second-line treatment options, and repurposing an inexpensive, widely available statin could provide a new therapeutic approach.",
-    "population": "Patients with small cell lung cancer receiving second-line treatment",
-    "intervention_exposure": "Simvastatin plus paclitaxel",
-    "comparator": "Paclitaxel alone",
-    "key_results": [
-      "Simvastatin plus paclitaxel was well tolerated and significantly reduced disease progression compared to paclitaxel alone"
-    ],
-    "clinical_interpretation": [
-      "This represents a potentially promising and cost-effective addition to second-line SCLC treatment, though larger confirmatory trials would be needed"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/"
-  },
-  {
-    "article_index": 3,
-    "id": "prednisolone-kawasaki-2026",
-    "type": "RCT",
-    "specialty": "Cardiology",
-    "title": "Adjunctive prednisolone does not reduce coronary artery lesions in Kawasaki disease",
-    "study_design": "Multicenter, open-label, randomized, controlled trial with 1:1 randomization",
-    "sample_size": "",
-    "primary_outcome": "Occurrence of coronary-artery lesions at 1 month after illness onset",
-    "source_summary_bullets": [
-      "Adjunctive prednisolone did not reduce coronary artery lesions compared to standard therapy alone at one month in children with Kawasaki disease",
-      "Prednisolone was associated with reduced rescue therapy use and shortened hospital stays"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This clarifies that steroids should not be routinely added to standard IVIG therapy for Kawasaki disease coronary protection"
+      "Clinical context: Supports shorter antibiotic duration for hospitalized CAP patients, potentially reducing antibiotic resistance and adverse effects",
+      "Clinical context: Aligns with antimicrobial stewardship goals while maintaining safety outcomes"
     ],
     "limitations": [
-      "Open-label design",
-      "Single geographic region (China)",
-      "Baseline coronary lesions present in 27.3% of participants"
+      "Generalizability is limited due to study design"
     ],
-    "bottom_line": "Adjunctive prednisolone does not prevent coronary artery lesions in Kawasaki disease but may reduce symptom severity.",
-    "confidence": "high",
+    "bottom_line": "Shorter antibiotic courses may be safe for hospitalized CAP patients, but more robust evidence is needed.",
+    "confidence": "moderate",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/",
-    "date": "Wed, 15 Apr 2026 22:00:20 +000",
-    "date_iso": "2026-04-17",
-    "why_this_matters": "Kawasaki disease can cause life-threatening coronary artery complications, and this large trial definitively addresses whether adding steroids to standard treatment improves outcomes.",
-    "population": "3,208 participants with newly diagnosed Kawasaki disease in China",
-    "intervention_exposure": "Prednisolone plus standard treatment",
-    "comparator": "Standard treatment alone",
+    "source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
+    "date": "Mon, 13 Apr 2026 21:38:46 +000",
+    "date_iso": "2026-04-18",
+    "why_this_matters": "Shorter antibiotic courses for hospitalized CAP patients could reduce resistance, side effects, and costs while maintaining safety.",
+    "population": "Hospitalized patients with community-acquired pneumonia",
+    "intervention_exposure": "Shorter antibiotic course (3-4 days)",
+    "comparator": "Longer antibiotic courses (5+ days)",
     "key_results": [
-      "Coronary-artery lesions at 1 month: 16.0% with prednisolone vs 13.8% with standard treatment (adjusted risk difference 1.1 percentage points, 95% CI -1.0 to 3.4, P=0.31)",
-      "Rescue therapy needed in 4.6% vs 10.1% respectively",
-      "Median fever duration 8.4 vs 13.2 hours",
-      "At 3 months, coronary lesions 12.6% vs 10.5%"
+      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer courses (5+ days)"
     ],
     "clinical_interpretation": [
-      "This large, well-designed trial shows prednisolone does not reduce the primary endpoint of coronary lesions, though it may provide symptomatic benefits with shorter fever duration and less rescue therapy use"
+      "This observational data supports considering shorter antibiotic courses for CAP, but stronger evidence from randomized trials is needed before changing practice"
     ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1056/NEJMoa2511478",
-    "pubmed_id": "41985133",
-    "twomm_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/"
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/"
   },
   {
-    "article_index": 5,
-    "id": "renal-pocus-nephrolithiasis-2026",
+    "article_index": 6,
+    "id": "renal-pocus-nephrolithiasis-ed-2026",
     "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Renal point-of-care ultrasound may be effective at identifying patients with nephrolithiasis",
-    "study_design": "Observational study of renal POCUS findings in ED patients with suspected renal colic",
+    "study_design": "Diagnostic accuracy study in emergency department patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis in adult ED patients with suspected renal colic were significantly associated with nephrolithiasis"
+      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: POCUS could reduce CT imaging and radiation exposure in suspected kidney stone cases, especially valuable for hospitalists managing renal colic"
+      "Clinical context: Could reduce CT utilization and radiation exposure in suspected kidney stone cases",
+      "Clinical context: Valuable bedside tool for hospitalists and emergency physicians managing acute flank pain"
     ],
     "limitations": [],
-    "bottom_line": "Point-of-care renal ultrasound showing hydronephrosis may effectively identify patients with kidney stones.",
+    "bottom_line": "Renal POCUS showing hydronephrosis may help identify nephrolithiasis in ED patients with suspected renal colic.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/",
     "date": "Mon, 13 Apr 2026 23:00:33 +000",
-    "date_iso": "2026-04-17",
-    "why_this_matters": "Point-of-care ultrasound for suspected kidney stones could reduce radiation exposure from CT scans and speed diagnosis in the emergency department.",
-    "population": "Adult emergency department patients with suspected renal colic",
+    "date_iso": "2026-04-18",
+    "why_this_matters": "Point-of-care renal ultrasound could help emergency physicians rapidly diagnose nephrolithiasis without CT imaging.",
+    "population": "Emergency department patients with suspected renal colic",
     "intervention_exposure": "Renal point-of-care ultrasound",
     "comparator": "",
     "key_results": [
-      "Hydronephrosis findings on renal point-of-care ultrasound were significantly associated with nephrolithiasis"
+      "Renal POCUS findings of hydronephrosis were significantly associated with presence of nephrolithiasis"
     ],
     "clinical_interpretation": [
-      "This supports using bedside ultrasound as an initial diagnostic tool for suspected kidney stones, potentially reducing CT utilization"
+      "POCUS may be a useful initial diagnostic tool for suspected kidney stones, though sensitivity and specificity data would be helpful"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -160,45 +81,123 @@
     "twomm_url": "https://www.2minutemedicine.com/renal-point-of-care-ultrasound-may-be-effective-at-identifying-patients-with-nephrolithiasis/"
   },
   {
-    "article_index": 6,
-    "id": "shorter-antibiotics-cap-2026",
-    "type": "Observational",
-    "specialty": "Infectious Disease",
-    "title": "Shorter antibiotic courses non-inferior for inpatient community-acquired pneumonia",
-    "study_design": "Target trial emulation comparing shorter vs longer antibiotic courses",
+    "article_index": 1,
+    "id": "hfnc-cardiac-surgery-outcomes-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "High-flow nasal oxygen therapy may not be superior to standard oxygen therapy after cardiac surgery",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "30-day all-cause mortality",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Shorter antibiotic course (3-4 days) demonstrated similar 30-day all-cause mortality compared to longer course (5+ days) in hospitalized CAP patients",
-      "Generalizability is limited due to study design"
+      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy in cardiac surgery patients at elevated risk for pulmonary complications"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports shorter antibiotic durations for hospitalized pneumonia patients, potentially reducing antibiotic resistance and side effects"
+      "Clinical context: Questions routine use of expensive HFNC in post-cardiac surgery patients when standard oxygen may be equally effective",
+      "Clinical context: Important for resource allocation and post-operative care protocols in cardiac surgery patients"
     ],
-    "limitations": [
-      "Limited generalizability due to study design"
-    ],
-    "bottom_line": "Shorter antibiotic courses (3-4 days) appear non-inferior to longer courses for hospitalized community-acquired pneumonia.",
-    "confidence": "moderate",
+    "limitations": [],
+    "bottom_line": "Routine high-flow nasal oxygen may not be necessary after cardiac surgery in high-risk patients.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
-    "date": "Mon, 13 Apr 2026 21:38:46 +000",
-    "date_iso": "2026-04-17",
-    "why_this_matters": "Antibiotic stewardship is crucial for reducing resistance, and shorter courses for pneumonia could significantly impact prescribing practices while maintaining patient safety.",
-    "population": "Hospitalized patients with community-acquired pneumonia",
-    "intervention_exposure": "Shorter antibiotic course (3-4 days)",
-    "comparator": "Longer antibiotic course (5+ days)",
+    "source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
+    "date": "Thu, 16 Apr 2026 23:00:45 +000",
+    "date_iso": "2026-04-18",
+    "why_this_matters": "High-flow nasal oxygen is increasingly used post-cardiac surgery, but this questions whether routine use is beneficial.",
+    "population": "Cardiac surgery patients at elevated risk for pulmonary complications",
+    "intervention_exposure": "High-flow nasal oxygen therapy following extubation",
+    "comparator": "Standard oxygen therapy",
     "key_results": [
-      "Shorter antibiotic course demonstrated similar 30-day all-cause mortality compared to longer course"
+      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy"
     ],
     "clinical_interpretation": [
-      "This supports antibiotic stewardship efforts by suggesting shorter courses may be adequate for hospitalized CAP patients, though the observational design limits definitive conclusions"
+      "This challenges the routine use of high-flow oxygen post-cardiac surgery and suggests standard oxygen may be adequate for most patients"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/"
+  },
+  {
+    "article_index": 3,
+    "id": "simvastatin-paclitaxel-sclc-combination-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "Simvastatin (Zocor) in combination with paclitaxel (Taxol) may provide treatment benefit compared to paclitaxel alone for small cell lung cancer",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Simvastatin plus paclitaxel was well-tolerated and associated with significantly reduced disease progression compared to paclitaxel alone as second-line SCLC treatment"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Potential novel combination therapy using readily available statin for difficult-to-treat SCLC patients",
+      "Clinical context: Could represent cost-effective treatment option given simvastatin's generic availability and established safety profile"
+    ],
+    "limitations": [],
+    "bottom_line": "Adding simvastatin to paclitaxel may improve outcomes in second-line SCLC treatment, pending larger trials.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
+    "date": "Wed, 15 Apr 2026 23:00:18 +000",
+    "date_iso": "2026-04-18",
+    "why_this_matters": "Small cell lung cancer has limited treatment options, and repurposing statins could offer a new therapeutic approach.",
+    "population": "Patients with small cell lung cancer receiving second-line treatment",
+    "intervention_exposure": "Simvastatin plus paclitaxel",
+    "comparator": "Paclitaxel alone",
+    "key_results": [
+      "Simvastatin plus paclitaxel was well-tolerated and associated with significantly reduced disease progression compared to paclitaxel alone"
+    ],
+    "clinical_interpretation": [
+      "This suggests statins may have anti-cancer properties in SCLC, but larger studies are needed before clinical adoption"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/",
+    "original_source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
     "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/shorter-antibiotic-courses-non-inferior-for-inpatient-community-acquired-pneumonia/"
+    "twomm_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/"
+  },
+  {
+    "article_index": 4,
+    "id": "prednisolone-kawasaki-coronary-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "Adjunctive prednisolone does not reduce coronary artery lesions in Kawasaki disease",
+    "study_design": "Randomized controlled trial in children with newly diagnosed Kawasaki disease",
+    "sample_size": "",
+    "primary_outcome": "Coronary artery lesions at one month",
+    "source_summary_bullets": [
+      "Adjunctive prednisolone did not reduce coronary artery lesions compared to standard therapy alone at one month",
+      "Prednisolone was associated with reduced rescue therapy use and shortened hospital stays"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Does not support routine corticosteroid use in Kawasaki disease despite potential secondary benefits",
+      "Clinical context: Important negative result for pediatric and adult physicians managing this systemic vasculitis"
+    ],
+    "limitations": [],
+    "bottom_line": "Adjunctive prednisolone in Kawasaki disease doesn't prevent coronary lesions but may reduce rescue therapy needs and hospital length of stay.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/",
+    "date": "Wed, 15 Apr 2026 22:00:20 +000",
+    "date_iso": "2026-04-18",
+    "why_this_matters": "Kawasaki disease can cause serious coronary complications, so optimizing treatment to prevent arterial damage is crucial.",
+    "population": "Patients with Kawasaki disease",
+    "intervention_exposure": "Standard therapy plus adjunctive prednisolone",
+    "comparator": "Standard therapy alone",
+    "key_results": [
+      "Adjunctive prednisolone did not reduce coronary artery lesions compared to standard therapy alone at one month",
+      "Prednisolone was associated with reduced rescue therapy use and shortened hospital stays"
+    ],
+    "clinical_interpretation": [
+      "While prednisolone doesn't prevent the primary concern of coronary lesions, the secondary benefits of reduced rescue therapy and shorter stays may still have clinical value"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/adjunctive-prednisolone-does-not-reduce-coronary-artery-lesions-in-kawasaki-disease/"
   },
   {
     "article_index": 9,
