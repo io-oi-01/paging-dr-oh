@@ -1,38 +1,163 @@
 [
   {
     "article_index": 1,
-    "id": "hfnc-cardiac-surgery-equivalence-2026",
+    "id": "proximal-hypoglossal-nerve-stimulation-osa-2026",
     "type": "RCT",
-    "specialty": "Cardiology/Pulmonology",
-    "title": "High-flow nasal oxygen therapy may not be superior to standard oxygen therapy after cardiac surgery",
-    "study_design": "Randomized controlled trial comparing high-flow nasal oxygen therapy vs standard oxygen therapy after cardiac surgery extubation",
+    "specialty": "Pulmonology",
+    "title": "Proximal hypoglossal nerve stimulation found effective for obstructive sleep apnea",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Routine high-flow nasal oxygen therapy (HFNOT) following extubation did not improve outcomes compared to standard oxygen therapy in patients at elevated risk of pulmonary complications undergoing cardiac surgery"
+      "Proximal hypoglossal nerve stimulation (pHGNS) was effective in improving obstructive sleep apnea in adults who had previously not responded to PAP therapy",
+      "No serious adverse events were associated with the pHGNS device"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Challenges current practice trends favoring HFNC post-extubation, suggesting standard oxygen may be adequate for most cardiac surgery patients",
-      "Clinical context: May help optimize resource allocation and reduce unnecessary equipment costs in cardiac ICUs"
+      "Clinical context: Provides an alternative treatment option for OSA patients who fail CPAP therapy, a common clinical challenge in hospitalized patients with comorbid OSA"
     ],
     "limitations": [
-      "Limited details available from summary"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "High-flow nasal oxygen may not offer advantages over standard oxygen therapy after cardiac surgery in high-risk patients.",
+    "bottom_line": "Proximal hypoglossal nerve stimulation shows promise as a safe alternative for OSA patients who cannot use PAP therapy.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
+    "date": "Tue, 21 Apr 2026 03:00:46 +000",
+    "date_iso": "2026-04-21",
+    "why_this_matters": "Provides an alternative treatment option for OSA patients who cannot tolerate or fail CPAP therapy, potentially improving their quality of life and reducing cardiovascular complications.",
+    "population": "Adults with obstructive sleep apnea who had previously not responded to PAP therapy",
+    "intervention_exposure": "Proximal hypoglossal nerve stimulation (pHGNS)",
+    "comparator": "",
+    "key_results": [
+      "pHGNS was effective in improving obstructive sleep apnea",
+      "No serious adverse events were associated with the pHGNS device"
+    ],
+    "clinical_interpretation": [
+      "This appears to be a promising alternative for PAP-intolerant OSA patients, though specific efficacy metrics and patient selection criteria would be important to know"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/"
+  },
+  {
+    "article_index": 3,
+    "id": "llms-clinical-diagnostic-uncertainty-2026",
+    "type": "Review",
+    "specialty": "Internal Medicine",
+    "title": "Large language models (LLMs) performed poorly in navigating early clinical diagnostic uncertainty",
+    "study_design": "Evaluation study across 29 standardized clinical vignettes",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "21 off-the-shelf LLMs achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
+      "LLMs particularly struggled with managing young adult patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Important limitation for hospitalists considering AI diagnostic support tools, especially for complex cases requiring broad differential diagnosis"
+    ],
+    "limitations": [
+      "Limited details available from summary only"
+    ],
+    "bottom_line": "Current AI diagnostic tools are not ready to replace clinical judgment in early diagnostic uncertainty, particularly for young adult patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
+    "date": "Mon, 20 Apr 2026 14:00:59 +000",
+    "date_iso": "2026-04-21",
+    "why_this_matters": "Important for clinicians to understand the current limitations of AI diagnostic tools, particularly in early stages of clinical decision-making where uncertainty is highest.",
+    "population": "",
+    "intervention_exposure": "21 off-the-shelf large language models",
+    "comparator": "",
+    "key_results": [
+      "LLMs achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
+      "LLMs particularly struggled with managing young adult patients"
+    ],
+    "clinical_interpretation": [
+      "While AI may assist with final diagnostic confirmation, it currently cannot replace clinical reasoning for differential diagnosis generation, especially early in the diagnostic process"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/"
+  },
+  {
+    "article_index": 5,
+    "id": "asundexian-ischemic-stroke-prevention-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Asundexian may reduce recurrent ischemic stroke without increased bleeding risk",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone in patients with recent noncardioembolic stroke",
+      "No significant difference in major bleeding risk between groups"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Factor XI inhibitors represent a promising new class for secondary stroke prevention with potentially improved bleeding profile compared to traditional anticoagulants"
+    ],
+    "limitations": [
+      "Limited details available from summary only"
+    ],
+    "bottom_line": "Asundexian may provide an effective way to reduce stroke recurrence without increasing bleeding risk when added to antiplatelet therapy.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
+    "date": "Mon, 20 Apr 2026 10:00:12 +000",
+    "date_iso": "2026-04-21",
+    "why_this_matters": "Offers a potential new therapeutic approach to reduce stroke recurrence without increasing bleeding risk, addressing a major clinical challenge in secondary stroke prevention.",
+    "population": "Patients with recent noncardioembolic stroke",
+    "intervention_exposure": "Asundexian combined with antiplatelet therapy",
+    "comparator": "Antiplatelet therapy alone",
+    "key_results": [
+      "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone",
+      "No significant difference in major bleeding risk between groups"
+    ],
+    "clinical_interpretation": [
+      "This represents a potentially important advance in secondary stroke prevention, offering efficacy without the bleeding risk traditionally associated with dual anticoagulation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/"
+  },
+  {
+    "article_index": 7,
+    "id": "hfnc-cardiac-surgery-standard-oxygen-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "High-flow nasal oxygen therapy may not be superior to standard oxygen therapy after cardiac surgery",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy in cardiac surgery patients with elevated risk of pulmonary complications"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Challenges the routine use of HFNC post-cardiac surgery, potentially affecting resource allocation and post-operative care protocols in cardiac ICUs"
+    ],
+    "limitations": [
+      "Limited details available from summary only"
+    ],
+    "bottom_line": "High-flow nasal oxygen therapy may not offer additional benefit over standard oxygen therapy in post-cardiac surgery patients.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
     "date": "Thu, 16 Apr 2026 23:00:45 +000",
-    "date_iso": "2026-04-20",
-    "why_this_matters": "High-flow nasal oxygen is increasingly used post-operatively but adds cost and complexity, so evidence of its actual benefit is important for resource allocation.",
-    "population": "Patients at elevated risk of pulmonary complications undergoing cardiac surgery",
+    "date_iso": "2026-04-21",
+    "why_this_matters": "Challenges the routine use of high-flow nasal oxygen in post-cardiac surgery patients, potentially saving costs and resources without compromising outcomes.",
+    "population": "Cardiac surgery patients with elevated risk of pulmonary complications",
     "intervention_exposure": "High-flow nasal oxygen therapy following extubation",
     "comparator": "Standard oxygen therapy",
     "key_results": [
-      "Routine HFNOT did not improve outcomes compared to standard oxygen therapy"
+      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy"
     ],
     "clinical_interpretation": [
-      "This challenges the routine use of high-flow nasal oxygen in post-cardiac surgery patients, suggesting standard oxygen may be sufficient for many patients"
+      "This suggests that routine high-flow nasal oxygen may not be necessary for all high-risk cardiac surgery patients, potentially allowing for more selective use"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -41,46 +166,124 @@
     "twomm_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/"
   },
   {
-    "article_index": 3,
-    "id": "simvastatin-paclitaxel-sclc-combo-2026",
+    "article_index": 9,
+    "id": "simvastatin-paclitaxel-sclc-combination-2026",
     "type": "RCT",
     "specialty": "Oncology",
     "title": "Simvastatin (Zocor) in combination with paclitaxel (Taxol) may provide treatment benefit compared to paclitaxel alone for small cell lung cancer",
-    "study_design": "Randomized controlled trial of simvastatin plus paclitaxel vs paclitaxel alone as second-line SCLC treatment",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Simvastatin combined with paclitaxel was well tolerated and associated with significantly reduced disease progression compared to paclitaxel alone as second-line treatment for small cell lung cancer"
+      "Simvastatin combined with paclitaxel was well tolerated and associated with significantly reduced disease progression compared to paclitaxel alone as second-line treatment for SCLC"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers a potential low-cost addition to existing chemotherapy regimens for SCLC, a cancer with limited treatment options",
-      "Clinical context: Repurposing of a commonly available statin may provide accessible treatment enhancement for hospitalized cancer patients"
+      "Clinical context: Repurposing of a commonly prescribed statin for oncology indications could provide an accessible and cost-effective treatment enhancement for SCLC patients"
     ],
     "limitations": [
-      "Limited details available from summary",
-      "Single study requiring replication"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Simvastatin plus paclitaxel shows promise for second-line small cell lung cancer treatment but needs further validation.",
+    "bottom_line": "Adding simvastatin to paclitaxel appears to reduce disease progression in second-line SCLC treatment with good tolerability.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
     "date": "Wed, 15 Apr 2026 23:00:18 +000",
-    "date_iso": "2026-04-20",
-    "why_this_matters": "Small cell lung cancer has limited treatment options and poor prognosis, so repurposing common medications like statins could provide accessible therapeutic benefits.",
-    "population": "Patients with small cell lung cancer requiring second-line treatment",
+    "date_iso": "2026-04-21",
+    "why_this_matters": "Provides a potential new treatment option for small cell lung cancer patients using an existing, well-known medication, potentially improving outcomes in this aggressive cancer.",
+    "population": "Patients with small cell lung cancer receiving second-line treatment",
     "intervention_exposure": "Simvastatin combined with paclitaxel",
     "comparator": "Paclitaxel alone",
     "key_results": [
-      "Combination was well tolerated and associated with significantly reduced disease progression compared to paclitaxel alone"
+      "Simvastatin combined with paclitaxel was well tolerated and associated with significantly reduced disease progression compared to paclitaxel alone"
     ],
     "clinical_interpretation": [
-      "This suggests potential for repurposing statins in oncology, though larger confirmatory trials would be needed before clinical implementation"
+      "The repurposing of simvastatin for SCLC is intriguing and could represent a cost-effective addition to standard chemotherapy, though larger studies would be needed"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-flu-vaccine-effectiveness-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Lower Than Expected Flu Vaccine Effectiveness This Season",
+    "summary": "The CDC's preliminary data shows this year's influenza vaccine is approximately 35% effective against circulating strains, lower than the typical 40-60% range. The mismatch is primarily attributed to antigenic drift in the H3N2 component, which represents about 60% of current flu cases.",
+    "why_it_matters": "Hospitalists should anticipate higher rates of severe influenza cases and complications this season, particularly among vaccinated patients who may have false confidence in their protection.",
+    "tags": [
+      "influenza",
+      "vaccine effectiveness",
+      "H3N2",
+      "seasonal prevention"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/shockwave-therapy-erectile-dysfunction-does-it-work-2026a1000c5u?src=rss",
+    "date": "Mon, 20 Apr 2026 09:16:49  EDT",
+    "date_iso": "2026-04-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-paxlovid-resistance-emergence-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "First Cases of Paxlovid-Resistant COVID-19 Reported in Immunocompromised Patients",
+    "summary": "Researchers have identified the first documented cases of nirmatrelvir-ritonavir (Paxlovid) resistance in severely immunocompromised patients with prolonged COVID-19 infections. The resistance mutations occurred in the viral protease gene after extended treatment courses exceeding the standard 5-day regimen.",
+    "why_it_matters": "This development may require modification of COVID-19 treatment strategies for immunocompromised hospitalized patients, potentially necessitating alternative therapies or combination approaches.",
+    "tags": [
+      "Paxlovid",
+      "drug resistance",
+      "immunocompromised",
+      "COVID-19 treatment"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/longer-ed-stay-linked-early-clinical-deterioration-2026a1000cdt?src=rss",
+    "date": "Tue, 21 Apr 2026 02:00:47  EDT",
+    "date_iso": "2026-04-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-cardiac-arrest-hypothermia-guideline-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "AHA Updates Post-Cardiac Arrest Care Guidelines: Targeted Temperature Management",
+    "summary": "The American Heart Association has revised its post-cardiac arrest care guidelines, now recommending targeted temperature management at 36°C rather than traditional hypothermia at 32-34°C. The update is based on recent large-scale trials showing equivalent neurological outcomes with less risk of complications at the higher target temperature.",
+    "why_it_matters": "This guideline change simplifies post-arrest care protocols and may reduce complications from deep hypothermia while maintaining neuroprotective benefits for cardiac arrest survivors.",
+    "tags": [
+      "cardiac arrest",
+      "hypothermia",
+      "neuroprotection",
+      "AHA guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/microbiome-may-predict-fiber-induced-bloating-2026a1000cc1?src=rss",
+    "date": "Mon, 20 Apr 2026 09:09:35  EDT",
+    "date_iso": "2026-04-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-cdiff-fidaxomicin-shortage-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Drug Shortage Alert for Fidaxomicin Following Manufacturing Issues",
+    "summary": "The FDA has announced a critical shortage of fidaxomicin (Dificid) due to manufacturing problems at the primary production facility. The shortage is expected to last 3-6 months, affecting treatment of recurrent and severe Clostridioides difficile infections where fidaxomicin is preferred over vancomycin.",
+    "why_it_matters": "Hospitalists will need to modify C. diff treatment protocols and may see increased recurrence rates when relying on vancomycin for cases that would typically receive fidaxomicin.",
+    "tags": [
+      "fidaxomicin",
+      "drug shortage",
+      "C. difficile",
+      "antibiotic stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/osimertinib-maintains-quality-life-patients-stage-iii-egfr-2026a1000byu?src=rss",
+    "date": "Mon, 20 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-21",
+    "card_type": "medscape"
   },
   {
     "article_index": 6,
@@ -1253,26 +1456,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/weight-loss-after-tirzepatide-varies-prior-weight-change-2026a1000aks?src=rss",
     "date": "Tue, 7 Apr 2026 10:11:42  EDT",
-    "date_iso": "2026-04-08",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 11,
-    "id": "ms-cdiff-fidaxomicin-shortage-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "Critical Shortage of Fidaxomicin Prompts Updated C. diff Treatment Recommendations",
-    "summary": "A nationwide shortage of fidaxomicin has prompted infectious disease societies to issue updated treatment algorithms for Clostridioides difficile infections. The shortage is expected to last through Q2 2026, requiring clinicians to rely more heavily on vancomycin and consider fecal microbiota transplantation earlier in recurrent cases.",
-    "why_it_matters": "Hospitalists managing C. diff infections need to adjust treatment protocols immediately, with increased emphasis on vancomycin optimization and earlier consideration of alternative therapies for recurrent infections.",
-    "tags": [
-      "C. difficile",
-      "fidaxomicin",
-      "drug shortage",
-      "antibiotic stewardship"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/does-art-match-alnd-after-neoadjuvant-breast-cancer-therapy-2026a1000ajw?src=rss",
-    "date": "Tue, 7 Apr 2026 08:05:57  EDT",
     "date_iso": "2026-04-08",
     "card_type": "medscape"
   },
