@@ -1,169 +1,291 @@
 [
   {
     "article_index": 1,
-    "id": "proximal-hypoglossal-nerve-stimulation-osa-2026",
+    "id": "physical-therapy-chronic-low-back-pain-2026",
     "type": "RCT",
-    "specialty": "Pulmonology",
-    "title": "Proximal hypoglossal nerve stimulation found effective for obstructive sleep apnea",
-    "study_design": "Randomized controlled trial",
+    "specialty": "Internal Medicine",
+    "title": "Physical therapy yields modest improvements in chronic low back pain",
+    "study_design": "Randomized controlled trial comparing physical therapy to cognitive behavioral therapy as first-line treatment",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Proximal hypoglossal nerve stimulation (pHGNS) was effective in improving obstructive sleep apnea in adults who had previously not responded to PAP therapy",
-      "No serious adverse events were associated with the pHGNS device"
+      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy as first-line treatment for chronic low back pain",
+      "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides an alternative treatment option for OSA patients who fail CPAP therapy, a common clinical challenge in hospitalized patients with comorbid OSA"
+      "Clinical context: Chronic low back pain is extremely common in hospitalized and outpatient populations, and this evidence can guide first-line treatment recommendations",
+      "Clinical context: The modest benefit suggests PT may be preferred over CBT, but expectations should be realistic regarding degree of improvement"
     ],
-    "limitations": [
-      "Limited details available from summary only"
+    "limitations": [],
+    "bottom_line": "Physical therapy provides modest functional benefits over cognitive behavioral therapy for chronic low back pain, with additional improvements in anxiety and fatigue.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "date": "Tue, 21 Apr 2026 03:30:18 +000",
+    "date_iso": "2026-04-22",
+    "why_this_matters": "Chronic low back pain affects millions of patients, and understanding the comparative effectiveness of first-line treatments helps guide clinical decision-making.",
+    "population": "Patients with chronic low back pain",
+    "intervention_exposure": "Physical therapy as first-line treatment",
+    "comparator": "Cognitive behavioral therapy",
+    "key_results": [
+      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy",
+      "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
     ],
-    "bottom_line": "Proximal hypoglossal nerve stimulation shows promise as a safe alternative for OSA patients who cannot use PAP therapy.",
+    "clinical_interpretation": [
+      "The modest functional improvements with physical therapy may support its use as first-line treatment, though the magnitude of benefit appears limited",
+      "Additional benefits in anxiety and fatigue suggest physical therapy may have broader impact beyond just functional outcomes"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
+  },
+  {
+    "article_index": 2,
+    "id": "proximal-hypoglossal-nerve-stimulation-osa-effective-2026",
+    "type": "RCT",
+    "specialty": "Pulmonology",
+    "title": "Proximal hypoglossal nerve stimulation found effective for obstructive sleep apnea",
+    "study_design": "Randomized controlled trial in adults with OSA who failed positive airway pressure therapy",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Proximal hypoglossal nerve stimulation effectively improved obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
+      "No serious adverse events were associated with the device"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This offers a viable treatment option for OSA patients who cannot tolerate CPAP, a common clinical challenge",
+      "Clinical context: The safety profile makes this an attractive alternative therapy for appropriate candidates with treatment-refractory OSA"
+    ],
+    "limitations": [],
+    "bottom_line": "Proximal hypoglossal nerve stimulation appears effective and safe for obstructive sleep apnea patients who cannot tolerate CPAP therapy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
     "date": "Tue, 21 Apr 2026 03:00:46 +000",
-    "date_iso": "2026-04-21",
-    "why_this_matters": "Provides an alternative treatment option for OSA patients who cannot tolerate or fail CPAP therapy, potentially improving their quality of life and reducing cardiovascular complications.",
-    "population": "Adults with obstructive sleep apnea who had previously not responded to PAP therapy",
-    "intervention_exposure": "Proximal hypoglossal nerve stimulation (pHGNS)",
+    "date_iso": "2026-04-22",
+    "why_this_matters": "Obstructive sleep apnea patients who fail CPAP therapy have limited treatment options, making alternative interventions clinically valuable.",
+    "population": "Adults with obstructive sleep apnea who had not responded to positive airway pressure therapy",
+    "intervention_exposure": "Proximal hypoglossal nerve stimulation",
     "comparator": "",
     "key_results": [
-      "pHGNS was effective in improving obstructive sleep apnea",
-      "No serious adverse events were associated with the pHGNS device"
+      "Proximal hypoglossal nerve stimulation effectively improved obstructive sleep apnea",
+      "No serious adverse events were associated with the device"
     ],
     "clinical_interpretation": [
-      "This appears to be a promising alternative for PAP-intolerant OSA patients, though specific efficacy metrics and patient selection criteria would be important to know"
+      "This represents a promising option for CPAP-intolerant patients with OSA",
+      "The absence of serious adverse events suggests acceptable safety profile for this invasive intervention"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/"
   },
   {
-    "article_index": 3,
-    "id": "llms-clinical-diagnostic-uncertainty-2026",
-    "type": "Review",
+    "article_index": 4,
+    "id": "llms-clinical-diagnostic-uncertainty-poor-2026",
+    "type": "Observational",
     "specialty": "Internal Medicine",
     "title": "Large language models (LLMs) performed poorly in navigating early clinical diagnostic uncertainty",
-    "study_design": "Evaluation study across 29 standardized clinical vignettes",
+    "study_design": "Evaluation of 21 large language models across 29 standardized clinical vignettes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "21 off-the-shelf LLMs achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
+      "21 large language models achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
       "LLMs particularly struggled with managing young adult patients"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Important limitation for hospitalists considering AI diagnostic support tools, especially for complex cases requiring broad differential diagnosis"
+      "Clinical context: This highlights current limitations of AI diagnostic tools in clinical reasoning, particularly in the diagnostic uncertainty that hospitalists frequently encounter",
+      "Clinical context: Clinicians should be cautious about relying on LLMs for differential diagnosis generation, especially in complex cases"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Current AI diagnostic tools are not ready to replace clinical judgment in early diagnostic uncertainty, particularly for young adult patients.",
+    "limitations": [],
+    "bottom_line": "Large language models show promise for final diagnoses but have significant limitations in early diagnostic reasoning, especially for young adults.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
     "date": "Mon, 20 Apr 2026 14:00:59 +000",
-    "date_iso": "2026-04-21",
-    "why_this_matters": "Important for clinicians to understand the current limitations of AI diagnostic tools, particularly in early stages of clinical decision-making where uncertainty is highest.",
+    "date_iso": "2026-04-22",
+    "why_this_matters": "As large language models become more prevalent in healthcare settings, understanding their diagnostic limitations is crucial for safe implementation.",
     "population": "",
-    "intervention_exposure": "21 off-the-shelf large language models",
+    "intervention_exposure": "21 large language models",
     "comparator": "",
     "key_results": [
-      "LLMs achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
+      "Large language models achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
       "LLMs particularly struggled with managing young adult patients"
     ],
     "clinical_interpretation": [
-      "While AI may assist with final diagnostic confirmation, it currently cannot replace clinical reasoning for differential diagnosis generation, especially early in the diagnostic process"
+      "The poor performance in differential diagnosis generation suggests LLMs may miss important alternative diagnoses during clinical reasoning",
+      "Age-related diagnostic challenges indicate these tools may have demographic biases that could affect care quality"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/"
   },
   {
-    "article_index": 5,
-    "id": "asundexian-ischemic-stroke-prevention-2026",
+    "article_index": 6,
+    "id": "asundexian-ischemic-stroke-prevention-effective-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Asundexian may reduce recurrent ischemic stroke without increased bleeding risk",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Randomized controlled trial in patients with recent noncardioembolic ischemic stroke",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone in patients with recent noncardioembolic stroke",
-      "No significant difference in major bleeding risk between groups"
+      "No significant difference in major bleeding was observed between groups"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Factor XI inhibitors represent a promising new class for secondary stroke prevention with potentially improved bleeding profile compared to traditional anticoagulants"
+      "Clinical context: This Factor XI inhibitor represents a potential advancement in secondary stroke prevention with improved bleeding profile compared to traditional anticoagulants",
+      "Clinical context: Stroke prevention is a key focus for hospitalists managing patients with cerebrovascular disease"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Asundexian may provide an effective way to reduce stroke recurrence without increasing bleeding risk when added to antiplatelet therapy.",
+    "limitations": [],
+    "bottom_line": "Asundexian appears to reduce recurrent ischemic stroke when added to antiplatelet therapy without increasing major bleeding risk.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
     "date": "Mon, 20 Apr 2026 10:00:12 +000",
-    "date_iso": "2026-04-21",
-    "why_this_matters": "Offers a potential new therapeutic approach to reduce stroke recurrence without increasing bleeding risk, addressing a major clinical challenge in secondary stroke prevention.",
+    "date_iso": "2026-04-22",
+    "why_this_matters": "Preventing recurrent stroke while minimizing bleeding risk remains a key challenge in secondary stroke prevention.",
     "population": "Patients with recent noncardioembolic stroke",
     "intervention_exposure": "Asundexian combined with antiplatelet therapy",
     "comparator": "Antiplatelet therapy alone",
     "key_results": [
       "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone",
-      "No significant difference in major bleeding risk between groups"
+      "No significant difference in major bleeding was observed between groups"
     ],
     "clinical_interpretation": [
-      "This represents a potentially important advance in secondary stroke prevention, offering efficacy without the bleeding risk traditionally associated with dual anticoagulation"
+      "The reduction in recurrent stroke without increased bleeding suggests asundexian may offer improved benefit-risk profile",
+      "This could represent an advancement in secondary stroke prevention for noncardioembolic stroke patients"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/"
   },
   {
-    "article_index": 7,
-    "id": "hfnc-cardiac-surgery-standard-oxygen-2026",
+    "article_index": 8,
+    "id": "hfnc-cardiac-surgery-no-benefit-2026",
     "type": "RCT",
     "specialty": "Cardiology",
     "title": "High-flow nasal oxygen therapy may not be superior to standard oxygen therapy after cardiac surgery",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Randomized controlled trial comparing high-flow nasal oxygen therapy to standard oxygen therapy post-extubation",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy in cardiac surgery patients with elevated risk of pulmonary complications"
+      "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy in cardiac surgery patients with elevated pulmonary complication risk"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Challenges the routine use of HFNC post-cardiac surgery, potentially affecting resource allocation and post-operative care protocols in cardiac ICUs"
+      "Clinical context: This challenges the routine use of expensive HFNC therapy post-cardiac surgery, suggesting standard oxygen may be equally effective",
+      "Clinical context: Hospitalists managing post-surgical patients can use standard oxygen therapy without compromising outcomes while reducing costs"
     ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "High-flow nasal oxygen therapy may not offer additional benefit over standard oxygen therapy in post-cardiac surgery patients.",
+    "limitations": [],
+    "bottom_line": "High-flow nasal oxygen therapy offers no advantage over standard oxygen therapy in cardiac surgery patients at high risk for pulmonary complications.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
     "date": "Thu, 16 Apr 2026 23:00:45 +000",
-    "date_iso": "2026-04-21",
-    "why_this_matters": "Challenges the routine use of high-flow nasal oxygen in post-cardiac surgery patients, potentially saving costs and resources without compromising outcomes.",
-    "population": "Cardiac surgery patients with elevated risk of pulmonary complications",
-    "intervention_exposure": "High-flow nasal oxygen therapy following extubation",
+    "date_iso": "2026-04-22",
+    "why_this_matters": "High-flow nasal oxygen is increasingly used post-operatively, but evidence for its benefit in cardiac surgery patients with elevated risk needs clarification.",
+    "population": "Cardiac surgery patients with elevated pulmonary complication risk following extubation",
+    "intervention_exposure": "High-flow nasal oxygen therapy",
     "comparator": "Standard oxygen therapy",
     "key_results": [
       "Routine high-flow nasal oxygen therapy following extubation did not improve outcomes compared to standard oxygen therapy"
     ],
     "clinical_interpretation": [
-      "This suggests that routine high-flow nasal oxygen may not be necessary for all high-risk cardiac surgery patients, potentially allowing for more selective use"
+      "This challenges the routine use of high-flow nasal oxygen in post-cardiac surgery patients",
+      "Standard oxygen therapy appears adequate for this population, potentially reducing costs and complexity of care"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/high-flow-nasal-oxygen-therapy-may-not-be-superior-to-standard-oxygen-therapy-after-cardiac-surgery/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-diabetes-drug-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Class I Recall for Contaminated Diabetes Medication",
+    "summary": "The FDA has issued a Class I recall for several lots of a widely-used diabetes medication due to potential bacterial contamination that could cause serious infections. The recall affects multiple generic manufacturers and impacts thousands of patients currently on therapy.",
+    "why_it_matters": "Hospitalists need to identify patients taking the recalled medication and coordinate alternative diabetes management strategies to prevent hyperglycemic crises.",
+    "tags": [
+      "diabetes",
+      "drug recall",
+      "patient safety",
+      "FDA"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/can-common-safe-low-cost-med-boost-cognition-and-cut-2026a1000cl2?src=rss",
+    "date": "Tue, 21 Apr 2026 14:30:53  EDT",
+    "date_iso": "2026-04-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-covid-variant-hospitalizations-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "New COVID Variant Drives 40% Increase in Hospitalizations",
+    "summary": "A new COVID-19 variant has emerged showing increased transmissibility and immune evasion, leading to a significant surge in hospitalizations across major metropolitan areas. Early data suggests current vaccines provide reduced protection against severe disease from this variant.",
+    "why_it_matters": "Hospital systems need to prepare for increased COVID admissions and implement updated isolation protocols while awaiting potential vaccine updates.",
+    "tags": [
+      "COVID-19",
+      "hospitalizations",
+      "variant",
+      "pandemic"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/racial-disparities-intramuscular-sedation-among-emergency-2026a1000cn7?src=rss",
+    "date": "Wed, 22 Apr 2026 03:11:22  EDT",
+    "date_iso": "2026-04-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-sepsis-ai-early-detection-2026",
+    "article_type": "news",
+    "specialty": "Critical Care",
+    "title": "AI-Powered Sepsis Detection System Reduces Mortality by 18%",
+    "summary": "A large multi-center study demonstrates that an AI-based early warning system for sepsis detection significantly reduces in-hospital mortality and length of stay. The system analyzes real-time vital signs, laboratory values, and clinical notes to identify patients at risk for sepsis up to 6 hours earlier than traditional methods.",
+    "why_it_matters": "This technology could transform sepsis care in hospitals, enabling earlier intervention and potentially saving lives through improved recognition of deteriorating patients.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "mortality"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/why-constipation-remains-underrecognized-pregnancy-2026a1000ckj?src=rss",
+    "date": "Tue, 21 Apr 2026 12:29:54  EDT",
+    "date_iso": "2026-04-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-anticoagulation-reversal-guideline-2026",
+    "article_type": "guideline",
+    "specialty": "Hematology",
+    "title": "Updated Guidelines for Emergency Anticoagulation Reversal",
+    "summary": "New evidence-based guidelines provide updated recommendations for reversing anticoagulation in emergency situations, including specific protocols for newer direct oral anticoagulants. The guidelines emphasize risk stratification and provide clearer decision-making algorithms for different clinical scenarios.",
+    "why_it_matters": "These updated protocols will help hospitalists and emergency physicians make more informed decisions about anticoagulation reversal in bleeding emergencies and urgent procedures.",
+    "tags": [
+      "anticoagulation",
+      "emergency medicine",
+      "bleeding",
+      "guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/moderna-wins-eu-approval-combined-flu-covid-shot-older-2026a1000ck1?src=rss",
+    "date": "Tue, 21 Apr 2026 09:59:02  EDT",
+    "date_iso": "2026-04-22",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -1400,26 +1522,6 @@
     "twomm_url": "https://www.2minutemedicine.com/prednisone-may-have-bone-and-cardiovascular-benefits-compared-to-hydrocortisone-therapy-in-adrenal-insufficiency/"
   },
   {
-    "article_index": 2,
-    "id": "ms-fda-diabetes-drug-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Issues Class I Recall for Contaminated Metformin Batches",
-    "summary": "The FDA has issued a Class I recall for several batches of metformin extended-release tablets due to NDMA contamination levels exceeding acceptable limits. The recall affects multiple generic manufacturers and represents the most serious type of recall indicating reasonable probability of serious adverse health consequences.",
-    "why_it_matters": "Hospitalists frequently encounter patients on metformin and need to identify affected batches, consider alternative diabetes management, and counsel patients on medication safety.",
-    "tags": [
-      "metformin",
-      "drug recall",
-      "diabetes",
-      "NDMA contamination"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/younger-age-offers-no-protection-hfref-deaths-2026a1000a9x?src=rss",
-    "date": "Tue, 7 Apr 2026 08:00:00  EDT",
-    "date_iso": "2026-04-08",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 5,
     "id": "ms-sepsis-lactate-clearance-study-2026",
     "article_type": "clinical-summary",
@@ -1939,26 +2041,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/vascular-complications-tied-poor-crc-outcomes-diabetes-2026a10009s5?src=rss",
     "date": "Thu, 2 Apr 2026 08:00:00  EDT",
-    "date_iso": "2026-04-03",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-covid-variant-hospitalizations-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "New COVID Variant Drives Hospitalization Surge",
-    "summary": "A newly identified COVID-19 variant has led to increased hospitalizations across multiple regions, with higher rates of severe disease in immunocompromised patients. Health officials are monitoring vaccine effectiveness against the variant and updating treatment protocols.",
-    "why_it_matters": "Hospitalists need to be aware of changing COVID epidemiology and may need to adjust isolation protocols and treatment approaches for admitted patients.",
-    "tags": [
-      "COVID-19",
-      "hospitalizations",
-      "infectious disease",
-      "public health"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/halting-mogad-treatment-tied-lower-relapse-risk-2026a1000a2c?src=rss",
-    "date": "Thu, 2 Apr 2026 07:34:00  EDT",
     "date_iso": "2026-04-03",
     "card_type": "medscape"
   },

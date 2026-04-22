@@ -88,7 +88,8 @@
     "Diabetic Ketoacidosis",
     "Tumor Lysis Syndrome",
     "Acute Liver Failure",
-    "Osteomyelitis"
+    "Osteomyelitis",
+    "Urinary Tract Infection and Pyelonephritis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -179,7 +180,8 @@
     "surmount1-2022",
     "rivers-2001",
     "mr-clean-2015",
-    "peged-2014"
+    "peged-2014",
+    "hope-2000"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -414,9 +416,16 @@
     "hfnc-cardiac-surgery-standard-oxygen-2026",
     "ms-flu-vaccine-effectiveness-2026",
     "ms-paxlovid-resistance-emergence-2026",
-    "ms-cardiac-arrest-hypothermia-guideline-2026"
+    "ms-cardiac-arrest-hypothermia-guideline-2026",
+    "physical-therapy-chronic-low-back-pain-2026",
+    "proximal-hypoglossal-nerve-stimulation-osa-effective-2026",
+    "llms-clinical-diagnostic-uncertainty-poor-2026",
+    "asundexian-ischemic-stroke-prevention-effective-2026",
+    "hfnc-cardiac-surgery-no-benefit-2026",
+    "ms-sepsis-ai-early-detection-2026",
+    "ms-anticoagulation-reversal-guideline-2026"
   ],
-  "last_run": "2026-04-21",
+  "last_run": "2026-04-22",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -469,7 +478,8 @@
     "Pityriasis Lichenoides et Varioliformis",
     "Molluscum",
     "Lichen Simplex Chronicus",
-    "Lichen Striatus"
+    "Lichen Striatus",
+    "Nevi: Halo"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -654,6 +664,10 @@
     "ecg-076",
     "cxr-030",
     "ct-043",
-    "clinical-pupils-and-prostitutes"
+    "clinical-pupils-and-prostitutes",
+    "ecg-115",
+    "cxr-022",
+    "ct-032",
+    "clinical-alarmingly-high-pressures"
   ]
 }
