@@ -1,11 +1,11 @@
 [
   {
-    "article_index": 1,
+    "article_index": 4,
     "id": "physical-therapy-chronic-low-back-pain-2026",
     "type": "RCT",
     "specialty": "Internal Medicine",
     "title": "Physical therapy yields modest improvements in chronic low back pain",
-    "study_design": "Randomized controlled trial comparing physical therapy to cognitive behavioral therapy as first-line treatment",
+    "study_design": "Randomized controlled trial comparing physical therapy versus cognitive behavioral therapy as first-line treatment",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -13,27 +13,29 @@
       "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Chronic low back pain is extremely common in hospitalized and outpatient populations, and this evidence can guide first-line treatment recommendations",
-      "Clinical context: The modest benefit suggests PT may be preferred over CBT, but expectations should be realistic regarding degree of improvement"
+      "Clinical context: Provides evidence-based guidance for treating one of the most common conditions seen in primary care and hospital medicine",
+      "Clinical context: Supports physical therapy as an effective non-pharmacologic approach, potentially reducing opioid dependence"
     ],
-    "limitations": [],
-    "bottom_line": "Physical therapy provides modest functional benefits over cognitive behavioral therapy for chronic low back pain, with additional improvements in anxiety and fatigue.",
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Physical therapy provides modest functional improvements over cognitive behavioral therapy for chronic low back pain patients.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
     "date": "Tue, 21 Apr 2026 03:30:18 +000",
-    "date_iso": "2026-04-22",
-    "why_this_matters": "Chronic low back pain affects millions of patients, and understanding the comparative effectiveness of first-line treatments helps guide clinical decision-making.",
-    "population": "Patients with chronic low back pain",
-    "intervention_exposure": "Physical therapy as first-line treatment",
-    "comparator": "Cognitive behavioral therapy",
+    "date_iso": "2026-04-23",
+    "why_this_matters": "Chronic low back pain affects millions of patients, and comparing effectiveness of physical therapy versus cognitive behavioral therapy helps guide first-line treatment decisions.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy",
+      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy as first-line treatment",
       "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
     ],
     "clinical_interpretation": [
-      "The modest functional improvements with physical therapy may support its use as first-line treatment, though the magnitude of benefit appears limited",
-      "Additional benefits in anxiety and fatigue suggest physical therapy may have broader impact beyond just functional outcomes"
+      "Physical therapy appears to offer modest functional benefits over CBT for chronic low back pain, with additional improvements in psychological symptoms",
+      "The modest nature of improvements suggests both approaches may have complementary roles"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -42,40 +44,42 @@
     "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
   },
   {
-    "article_index": 2,
-    "id": "proximal-hypoglossal-nerve-stimulation-osa-effective-2026",
+    "article_index": 5,
+    "id": "proximal-hypoglossal-nerve-stimulation-osa-2026",
     "type": "RCT",
     "specialty": "Pulmonology",
     "title": "Proximal hypoglossal nerve stimulation found effective for obstructive sleep apnea",
-    "study_design": "Randomized controlled trial in adults with OSA who failed positive airway pressure therapy",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Proximal hypoglossal nerve stimulation effectively improved obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
+      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
       "No serious adverse events were associated with the device"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This offers a viable treatment option for OSA patients who cannot tolerate CPAP, a common clinical challenge",
-      "Clinical context: The safety profile makes this an attractive alternative therapy for appropriate candidates with treatment-refractory OSA"
+      "Clinical context: Offers a viable treatment option for OSA patients who cannot tolerate CPAP therapy, a common clinical challenge",
+      "Clinical context: Important for hospitalists managing patients with OSA-related complications and treatment failures"
     ],
-    "limitations": [],
-    "bottom_line": "Proximal hypoglossal nerve stimulation appears effective and safe for obstructive sleep apnea patients who cannot tolerate CPAP therapy.",
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Hypoglossal nerve stimulation appears effective and safe for OSA patients who cannot tolerate CPAP therapy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
     "date": "Tue, 21 Apr 2026 03:00:46 +000",
-    "date_iso": "2026-04-22",
-    "why_this_matters": "Obstructive sleep apnea patients who fail CPAP therapy have limited treatment options, making alternative interventions clinically valuable.",
-    "population": "Adults with obstructive sleep apnea who had not responded to positive airway pressure therapy",
-    "intervention_exposure": "Proximal hypoglossal nerve stimulation",
+    "date_iso": "2026-04-23",
+    "why_this_matters": "Obstructive sleep apnea patients who fail CPAP therapy need alternative treatments, and hypoglossal nerve stimulation offers a potential surgical solution.",
+    "population": "",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Proximal hypoglossal nerve stimulation effectively improved obstructive sleep apnea",
+      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
       "No serious adverse events were associated with the device"
     ],
     "clinical_interpretation": [
-      "This represents a promising option for CPAP-intolerant patients with OSA",
-      "The absence of serious adverse events suggests acceptable safety profile for this invasive intervention"
+      "This provides evidence for hypoglossal nerve stimulation as a viable option for CPAP-intolerant patients",
+      "The safety profile appears favorable, though long-term data would be valuable"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -84,12 +88,12 @@
     "twomm_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/"
   },
   {
-    "article_index": 4,
-    "id": "llms-clinical-diagnostic-uncertainty-poor-2026",
-    "type": "Observational",
+    "article_index": 7,
+    "id": "llms-clinical-diagnostic-uncertainty-2026",
+    "type": "Review",
     "specialty": "Internal Medicine",
     "title": "Large language models (LLMs) performed poorly in navigating early clinical diagnostic uncertainty",
-    "study_design": "Evaluation of 21 large language models across 29 standardized clinical vignettes",
+    "study_design": "Evaluation of 21 off-the-shelf LLMs across 29 standardized clinical vignettes",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -97,75 +101,123 @@
       "LLMs particularly struggled with managing young adult patients"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This highlights current limitations of AI diagnostic tools in clinical reasoning, particularly in the diagnostic uncertainty that hospitalists frequently encounter",
-      "Clinical context: Clinicians should be cautious about relying on LLMs for differential diagnosis generation, especially in complex cases"
+      "Clinical context: Important for clinicians considering AI assistance in diagnostic reasoning, highlighting current limitations in early diagnostic phases",
+      "Clinical context: Emphasizes that LLMs may not be reliable for complex differential diagnosis generation, a core skill in internal medicine"
     ],
-    "limitations": [],
-    "bottom_line": "Large language models show promise for final diagnoses but have significant limitations in early diagnostic reasoning, especially for young adults.",
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Large language models excel at final diagnoses but struggle with differential diagnosis generation, especially in young adults.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
     "date": "Mon, 20 Apr 2026 14:00:59 +000",
-    "date_iso": "2026-04-22",
-    "why_this_matters": "As large language models become more prevalent in healthcare settings, understanding their diagnostic limitations is crucial for safe implementation.",
+    "date_iso": "2026-04-23",
+    "why_this_matters": "Understanding the limitations of AI diagnostic tools is crucial as they become more prevalent in clinical practice.",
     "population": "",
-    "intervention_exposure": "21 large language models",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Large language models achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
+      "21 large language models achieved high accuracy on final diagnoses but performed poorly in generating differential diagnoses",
       "LLMs particularly struggled with managing young adult patients"
     ],
     "clinical_interpretation": [
-      "The poor performance in differential diagnosis generation suggests LLMs may miss important alternative diagnoses during clinical reasoning",
-      "Age-related diagnostic challenges indicate these tools may have demographic biases that could affect care quality"
+      "LLMs may be useful for diagnostic confirmation but cannot replace clinical reasoning in differential diagnosis generation",
+      "The poor performance in young adults suggests age-related diagnostic challenges that require human expertise"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/large-language-models-llms-performed-poorly-in-navigating-early-clinical-diagnostic-uncertainty/"
   },
   {
-    "article_index": 6,
-    "id": "asundexian-ischemic-stroke-prevention-effective-2026",
+    "article_index": 9,
+    "id": "asundexian-ischemic-stroke-prevention-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Asundexian may reduce recurrent ischemic stroke without increased bleeding risk",
-    "study_design": "Randomized controlled trial in patients with recent noncardioembolic ischemic stroke",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone in patients with recent noncardioembolic stroke",
-      "No significant difference in major bleeding was observed between groups"
+      "No significant difference in major bleeding risk was observed"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This Factor XI inhibitor represents a potential advancement in secondary stroke prevention with improved bleeding profile compared to traditional anticoagulants",
-      "Clinical context: Stroke prevention is a key focus for hospitalists managing patients with cerebrovascular disease"
+      "Clinical context: Potentially practice-changing for secondary stroke prevention, offering improved efficacy without increased bleeding risk",
+      "Clinical context: Important for hospitalists managing stroke patients and considering discharge anticoagulation strategies"
     ],
-    "limitations": [],
-    "bottom_line": "Asundexian appears to reduce recurrent ischemic stroke when added to antiplatelet therapy without increasing major bleeding risk.",
+    "limitations": [
+      "Limited detail available from summary only"
+    ],
+    "bottom_line": "Asundexian shows promise for reducing recurrent stroke without increased bleeding risk when added to antiplatelet therapy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
     "date": "Mon, 20 Apr 2026 10:00:12 +000",
-    "date_iso": "2026-04-22",
-    "why_this_matters": "Preventing recurrent stroke while minimizing bleeding risk remains a key challenge in secondary stroke prevention.",
-    "population": "Patients with recent noncardioembolic stroke",
-    "intervention_exposure": "Asundexian combined with antiplatelet therapy",
-    "comparator": "Antiplatelet therapy alone",
+    "date_iso": "2026-04-23",
+    "why_this_matters": "Recurrent stroke prevention is critical, and new anticoagulant options that don't increase bleeding risk could significantly improve patient outcomes.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone",
-      "No significant difference in major bleeding was observed between groups"
+      "Asundexian combined with antiplatelet therapy reduced recurrent ischemic stroke compared to antiplatelet therapy alone in patients with recent noncardioembolic stroke",
+      "No significant difference in major bleeding risk was observed"
     ],
     "clinical_interpretation": [
-      "The reduction in recurrent stroke without increased bleeding suggests asundexian may offer improved benefit-risk profile",
-      "This could represent an advancement in secondary stroke prevention for noncardioembolic stroke patients"
+      "Asundexian may offer stroke reduction benefits without the typical bleeding risk associated with traditional anticoagulants",
+      "This could be particularly valuable for patients at high bleeding risk who need enhanced stroke prevention"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/"
+  },
+  {
+    "article_index": 0,
+    "id": "ultra-processed-foods-childhood-bmi-2026",
+    "type": "Observational",
+    "specialty": "Preventive Medicine",
+    "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
+    "study_design": "17-year prospective cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
+      "The association was strongest in children with highest genetic susceptibility to elevated BMI"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Reinforces dietary counseling recommendations for obesity prevention, particularly relevant for primary care and family medicine",
+      "Clinical context: Supports early intervention strategies and genetic risk-based counseling for weight management"
+    ],
+    "limitations": [
+      "Observational design limits causal inference"
+    ],
+    "bottom_line": "Childhood consumption of ultra-processed foods is associated with higher adult BMI, especially in genetically susceptible individuals.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
+    "date": "Wed, 22 Apr 2026 23:00:24 +000",
+    "date_iso": "2026-04-23",
+    "why_this_matters": "Understanding the long-term impact of childhood diet on adult obesity helps inform pediatric nutrition counseling and public health policy.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
+      "The association was strongest in children with highest genetic susceptibility to elevated BMI"
+    ],
+    "clinical_interpretation": [
+      "This reinforces the importance of limiting ultra-processed foods in childhood for long-term weight management",
+      "Children with family history of obesity may be particularly vulnerable and need more intensive dietary guidance"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
   },
   {
     "article_index": 8,

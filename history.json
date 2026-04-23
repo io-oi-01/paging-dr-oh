@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Hypertensive Emergency",
     "Osteomyelitis",
     "Rhabdomyolysis",
     "Sepsis and Septic Shock",
@@ -89,7 +88,8 @@
     "Tumor Lysis Syndrome",
     "Acute Liver Failure",
     "Osteomyelitis",
-    "Urinary Tract Infection and Pyelonephritis"
+    "Urinary Tract Infection and Pyelonephritis",
+    "Community-Acquired Pneumonia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -181,7 +181,8 @@
     "rivers-2001",
     "mr-clean-2015",
     "peged-2014",
-    "hope-2000"
+    "hope-2000",
+    "pegasus-2015"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -423,9 +424,10 @@
     "asundexian-ischemic-stroke-prevention-effective-2026",
     "hfnc-cardiac-surgery-no-benefit-2026",
     "ms-sepsis-ai-early-detection-2026",
-    "ms-anticoagulation-reversal-guideline-2026"
+    "ms-anticoagulation-reversal-guideline-2026",
+    "ultra-processed-foods-childhood-bmi-2026"
   ],
-  "last_run": "2026-04-22",
+  "last_run": "2026-04-23",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -479,7 +481,8 @@
     "Molluscum",
     "Lichen Simplex Chronicus",
     "Lichen Striatus",
-    "Nevi: Halo"
+    "Nevi: Halo",
+    "Nevi: Intradermal"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -668,6 +671,10 @@
     "ecg-115",
     "cxr-022",
     "ct-032",
-    "clinical-alarmingly-high-pressures"
+    "clinical-alarmingly-high-pressures",
+    "ecg-008",
+    "cxr-021",
+    "ct-033",
+    "clinical-hemolysis-and-renal-failure-in-a-toddler"
   ]
 }
