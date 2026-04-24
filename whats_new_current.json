@@ -1,41 +1,175 @@
 [
   {
-    "article_index": 4,
-    "id": "physical-therapy-chronic-low-back-pain-2026",
-    "type": "RCT",
-    "specialty": "Internal Medicine",
-    "title": "Physical therapy yields modest improvements in chronic low back pain",
-    "study_design": "Randomized controlled trial comparing physical therapy versus cognitive behavioral therapy as first-line treatment",
+    "article_index": 0,
+    "id": "serum-proteins-masld-prognosis-2026",
+    "type": "Observational",
+    "specialty": "Gastroenterology",
+    "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
+    "study_design": "Molecular signature analysis of circulating and hepatic proteins",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy as first-line treatment for chronic low back pain",
-      "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
+      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence-based guidance for treating one of the most common conditions seen in primary care and hospital medicine",
-      "Clinical context: Supports physical therapy as an effective non-pharmacologic approach, potentially reducing opioid dependence"
+      "Clinical context: Could provide non-invasive biomarkers for MASLD staging and prognosis, potentially reducing need for liver biopsies",
+      "Clinical context: May help hospitalists better risk-stratify patients with fatty liver disease and guide referral timing"
     ],
     "limitations": [
-      "Limited detail available from summary only"
+      "Study design and methodology unclear from summary",
+      "No statistical significance or effect sizes provided"
     ],
-    "bottom_line": "Physical therapy provides modest functional improvements over cognitive behavioral therapy for chronic low back pain patients.",
-    "confidence": "high",
+    "bottom_line": "Serum proteins including gelsolin and lumican may serve as biomarkers for MASLD progression but require validation.",
+    "confidence": "moderate",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
-    "date": "Tue, 21 Apr 2026 03:30:18 +000",
-    "date_iso": "2026-04-23",
-    "why_this_matters": "Chronic low back pain affects millions of patients, and comparing effectiveness of physical therapy versus cognitive behavioral therapy helps guide first-line treatment decisions.",
+    "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
+    "date": "Thu, 23 Apr 2026 23:00:07 +000",
+    "date_iso": "2026-04-24",
+    "why_this_matters": "Identifying serum biomarkers could enable non-invasive monitoring of MASLD progression, reducing need for repeated liver biopsies.",
     "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Physical therapy showed modest improvement in function compared to cognitive behavioral therapy as first-line treatment",
-      "Patients treated with physical therapy reported greater improvements in anxiety and fatigue"
+      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
     ],
     "clinical_interpretation": [
-      "Physical therapy appears to offer modest functional benefits over CBT for chronic low back pain, with additional improvements in psychological symptoms",
-      "The modest nature of improvements suggests both approaches may have complementary roles"
+      "Potential biomarkers like gelsolin and lumican may eventually help stage MASLD severity, but validation studies needed before clinical application"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/"
+  },
+  {
+    "article_index": 1,
+    "id": "small-bites-fascial-closure-hernia-2026",
+    "type": "RCT",
+    "specialty": "Surgery",
+    "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
+    "study_design": "Long-term follow-up of randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
+      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Hospitalists should be aware of this technique when consulting surgery, as it may reduce post-operative complications",
+      "Clinical context: May influence long-term follow-up recommendations for patients after abdominal surgery"
+    ],
+    "limitations": [
+      "Long-term follow-up duration unclear",
+      "Specific patient population and surgical procedures not specified"
+    ],
+    "bottom_line": "Small-bites fascial closure should be preferred over large-bites technique to reduce incisional hernia risk after midline laparotomy.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
+    "date": "Thu, 23 Apr 2026 13:30:40 +000",
+    "date_iso": "2026-04-24",
+    "why_this_matters": "Incisional hernias are common complications after midline laparotomy that cause significant morbidity and healthcare costs.",
+    "population": "",
+    "intervention_exposure": "Small-bites fascial closure technique",
+    "comparator": "Traditional large-bites technique",
+    "key_results": [
+      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
+      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
+    ],
+    "clinical_interpretation": [
+      "Small-bites technique appears superior for preventing incisional hernias and should be considered standard practice for fascial closure",
+      "Even when hernias do occur with small-bites technique, they appear less clinically significant"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/"
+  },
+  {
+    "article_index": 5,
+    "id": "pelvic-floor-training-postpartum-incontinence-2026",
+    "type": "RCT",
+    "specialty": "Obstetrics",
+    "title": "Pelvic floor muscle training may reduce postpartum stress urinary incontinence",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence-based intervention for hospitalists counseling postpartum patients about incontinence prevention",
+      "Clinical context: May reduce need for later urogynecologic interventions and improve quality of life for new mothers"
+    ],
+    "limitations": [
+      "Control group not specified",
+      "No quantitative results provided",
+      "Short follow-up period"
+    ],
+    "bottom_line": "Pelvic floor muscle training may reduce early postpartum stress urinary incontinence and should be considered for routine recommendation.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "date": "Wed, 22 Apr 2026 15:00:53 +000",
+    "date_iso": "2026-04-24",
+    "why_this_matters": "Postpartum stress urinary incontinence significantly impacts quality of life and a simple intervention could provide meaningful benefit.",
+    "population": "",
+    "intervention_exposure": "Pelvic floor muscle training",
+    "comparator": "",
+    "key_results": [
+      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation": [
+      "Pelvic floor muscle training appears beneficial for preventing early postpartum incontinence, though longer-term effects unknown",
+      "Intervention is low-risk and could be routinely recommended"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
+  },
+  {
+    "article_index": 7,
+    "id": "physical-therapy-chronic-back-pain-2026",
+    "type": "RCT",
+    "specialty": "Rheumatology",
+    "title": "Physical therapy yields modest improvements in chronic low back pain",
+    "study_design": "Randomized controlled trial comparing physical therapy to cognitive behavioral therapy",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
+      "Patients treated with PT reported greater improvements in anxiety, fatigue compared to CBT"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports PT as first-line therapy for chronic low back pain in hospitalized or outpatient settings",
+      "Clinical context: May help reduce opioid prescribing by providing evidence-based non-pharmacologic treatment option"
+    ],
+    "limitations": [
+      "Improvements described as 'modest' suggesting limited clinical significance",
+      "No quantitative outcomes provided"
+    ],
+    "bottom_line": "Physical therapy shows modest advantages over cognitive behavioral therapy as first-line treatment for chronic low back pain.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "date": "Tue, 21 Apr 2026 03:30:18 +000",
+    "date_iso": "2026-04-24",
+    "why_this_matters": "Chronic low back pain affects millions and choosing between first-line non-pharmacological treatments impacts patient outcomes.",
+    "population": "",
+    "intervention_exposure": "Physical therapy",
+    "comparator": "Cognitive behavioral therapy",
+    "key_results": [
+      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
+      "Patients treated with PT reported greater improvements in anxiety, fatigue compared to CBT"
+    ],
+    "clinical_interpretation": [
+      "PT may have slight advantage over CBT for functional outcomes in chronic low back pain, but both appear viable first-line options",
+      "PT's additional benefits for anxiety and fatigue may influence treatment selection for some patients"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -44,8 +178,8 @@
     "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
   },
   {
-    "article_index": 5,
-    "id": "proximal-hypoglossal-nerve-stimulation-osa-2026",
+    "article_index": 8,
+    "id": "hypoglossal-nerve-stimulation-osa-2026",
     "type": "RCT",
     "specialty": "Pulmonology",
     "title": "Proximal hypoglossal nerve stimulation found effective for obstructive sleep apnea",
@@ -53,39 +187,121 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
-      "No serious adverse events were associated with the device"
+      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had previously not responded to positive airway pressure therapy",
+      "No serious adverse events were associated with the pHGNS device"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers a viable treatment option for OSA patients who cannot tolerate CPAP therapy, a common clinical challenge",
-      "Clinical context: Important for hospitalists managing patients with OSA-related complications and treatment failures"
+      "Clinical context: Provides alternative treatment option for OSA patients who cannot tolerate CPAP therapy",
+      "Clinical context: May reduce cardiovascular complications associated with untreated sleep apnea in hospitalized patients"
     ],
     "limitations": [
-      "Limited detail available from summary only"
+      "Control group not specified",
+      "No quantitative efficacy measures provided",
+      "Long-term safety data unclear"
     ],
-    "bottom_line": "Hypoglossal nerve stimulation appears effective and safe for OSA patients who cannot tolerate CPAP therapy.",
+    "bottom_line": "Proximal hypoglossal nerve stimulation offers an effective and safe treatment option for OSA patients who cannot tolerate CPAP therapy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
     "date": "Tue, 21 Apr 2026 03:00:46 +000",
-    "date_iso": "2026-04-23",
-    "why_this_matters": "Obstructive sleep apnea patients who fail CPAP therapy need alternative treatments, and hypoglossal nerve stimulation offers a potential surgical solution.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-04-24",
+    "why_this_matters": "OSA patients who fail CPAP therapy have limited treatment options, making effective alternatives clinically valuable.",
+    "population": "Adults with obstructive sleep apnea who had previously not responded to positive airway pressure therapy",
+    "intervention_exposure": "Proximal hypoglossal nerve stimulation",
     "comparator": "",
     "key_results": [
-      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had not responded to positive airway pressure therapy",
-      "No serious adverse events were associated with the device"
+      "Proximal hypoglossal nerve stimulation was effective in improving obstructive sleep apnea in adults who had previously not responded to positive airway pressure therapy",
+      "No serious adverse events were associated with the pHGNS device"
     ],
     "clinical_interpretation": [
-      "This provides evidence for hypoglossal nerve stimulation as a viable option for CPAP-intolerant patients",
-      "The safety profile appears favorable, though long-term data would be valuable"
+      "pHGNS appears to be a viable alternative for CPAP-intolerant OSA patients with acceptable safety profile",
+      "This expands treatment options for a challenging patient population"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/proximal-hypoglossal-nerve-stimulation-found-effective-for-obstructive-sleep-apnea/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-rsv-vaccine-pregnancy-recommendation-2026",
+    "article_type": "guideline",
+    "specialty": "Obstetrics/Infectious Disease",
+    "title": "CDC Updates RSV Vaccine Recommendations for Pregnant Women",
+    "summary": "The CDC has issued updated recommendations for RSV vaccination during pregnancy, now recommending routine immunization between 32-36 weeks gestation for all pregnant women during RSV season. The updated guidance aims to provide passive immunity to newborns through maternal antibodies, reducing severe RSV disease in the first months of life.",
+    "why_it_matters": "Hospitalists managing pregnant patients and caring for infants with respiratory illness should be aware of these updated vaccination recommendations to counsel patients appropriately and understand changing epidemiology of RSV in newborns.",
+    "tags": [
+      "RSV",
+      "pregnancy",
+      "vaccination",
+      "CDC guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/new-models-accuracy-varies-definition-sepsis-2026a1000d0d?src=rss",
+    "date": "Fri, 24 Apr 2026 02:00:49  EDT",
+    "date_iso": "2026-04-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-diabetes-sglt2-heart-failure-expanded-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology/Endocrinology",
+    "title": "FDA Expands SGLT2 Inhibitor Indications for Heart Failure Prevention",
+    "summary": "The FDA has expanded the indication for empagliflozin to include prevention of heart failure hospitalization in patients with type 2 diabetes and additional cardiovascular risk factors, even without established heart failure. This approval is based on large cardiovascular outcomes trials demonstrating significant reduction in heart failure events across diverse patient populations.",
+    "why_it_matters": "This expanded indication provides hospitalists with clearer guidance on SGLT2 inhibitor use for heart failure prevention in diabetic patients, potentially reducing future hospitalizations and improving discharge planning strategies.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "heart failure",
+      "diabetes",
+      "FDA approval"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/daraxonrasib-combo-shows-promise-first-line-mpdac-2026a1000d0k?src=rss",
+    "date": "Fri, 24 Apr 2026 02:50:52  EDT",
+    "date_iso": "2026-04-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-antibiotic-stewardship-cms-requirements-2026",
+    "article_type": "guideline",
+    "specialty": "Infectious Disease",
+    "title": "CMS Announces New Antibiotic Stewardship Requirements for Hospitals",
+    "summary": "CMS has released new mandatory antibiotic stewardship requirements for all hospitals participating in Medicare and Medicaid programs, effective immediately. The requirements include mandatory infectious disease consultation for certain conditions, real-time antibiotic monitoring systems, and specific documentation standards for antibiotic duration and de-escalation decisions.",
+    "why_it_matters": "These new CMS requirements will directly impact how hospitalists prescribe and monitor antibiotics, requiring enhanced documentation and potentially mandatory ID consultation for complex cases, affecting daily workflow and compliance obligations.",
+    "tags": [
+      "antibiotic stewardship",
+      "CMS",
+      "infectious disease",
+      "hospital requirements"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/colorectal-cancer-predicted-keep-rising-younger-adults-2026a1000cy5?src=rss",
+    "date": "Thu, 23 Apr 2026 13:01:20  EDT",
+    "date_iso": "2026-04-24",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-blood-pressure-medication-shortage-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Issues Alert on Critical Blood Pressure Medication Shortages",
+    "summary": "The FDA has issued an urgent alert regarding nationwide shortages of several commonly prescribed blood pressure medications, including generic versions of lisinopril, amlodipine, and metoprolol. The shortages are attributed to manufacturing disruptions and increased demand, with some medications expected to remain in short supply for several months.",
+    "why_it_matters": "Hospitalists will need to be prepared with alternative antihypertensive regimens and may need to modify discharge medications, requiring familiarity with substitute medications and dose conversions to ensure continuity of care.",
+    "tags": [
+      "drug shortage",
+      "antihypertensives",
+      "FDA alert",
+      "medication management"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/white-house-announce-drug-pricing-deal-regeneron-2026a1000cyb?src=rss",
+    "date": "Thu, 23 Apr 2026 12:00:08  EDT",
+    "date_iso": "2026-04-24",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,

@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Osteomyelitis",
     "Rhabdomyolysis",
     "Sepsis and Septic Shock",
     "ARDS",
@@ -89,7 +88,8 @@
     "Acute Liver Failure",
     "Osteomyelitis",
     "Urinary Tract Infection and Pyelonephritis",
-    "Community-Acquired Pneumonia"
+    "Community-Acquired Pneumonia",
+    "Clostridioides difficile Infection"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -182,7 +182,8 @@
     "mr-clean-2015",
     "peged-2014",
     "hope-2000",
-    "pegasus-2015"
+    "pegasus-2015",
+    "oral-surveillance-2022"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -425,9 +426,18 @@
     "hfnc-cardiac-surgery-no-benefit-2026",
     "ms-sepsis-ai-early-detection-2026",
     "ms-anticoagulation-reversal-guideline-2026",
-    "ultra-processed-foods-childhood-bmi-2026"
+    "ultra-processed-foods-childhood-bmi-2026",
+    "serum-proteins-masld-prognosis-2026",
+    "small-bites-fascial-closure-hernia-2026",
+    "pelvic-floor-training-postpartum-incontinence-2026",
+    "physical-therapy-chronic-back-pain-2026",
+    "hypoglossal-nerve-stimulation-osa-2026",
+    "ms-rsv-vaccine-pregnancy-recommendation-2026",
+    "ms-diabetes-sglt2-heart-failure-expanded-2026",
+    "ms-antibiotic-stewardship-cms-requirements-2026",
+    "ms-blood-pressure-medication-shortage-alert-2026"
   ],
-  "last_run": "2026-04-23",
+  "last_run": "2026-04-24",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -482,7 +492,8 @@
     "Lichen Simplex Chronicus",
     "Lichen Striatus",
     "Nevi: Halo",
-    "Nevi: Intradermal"
+    "Nevi: Intradermal",
+    "Chemotherapy Induced Hyperpigmentation"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -675,6 +686,10 @@
     "ecg-008",
     "cxr-021",
     "ct-033",
-    "clinical-hemolysis-and-renal-failure-in-a-toddler"
+    "clinical-hemolysis-and-renal-failure-in-a-toddler",
+    "ecg-124",
+    "cxr-040",
+    "ct-008",
+    "clinical-subungual-haematoma-trephination"
   ]
 }
