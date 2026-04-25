@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Rhabdomyolysis",
     "Sepsis and Septic Shock",
     "ARDS",
     "Hyponatremia",
@@ -89,7 +88,8 @@
     "Osteomyelitis",
     "Urinary Tract Infection and Pyelonephritis",
     "Community-Acquired Pneumonia",
-    "Clostridioides difficile Infection"
+    "Clostridioides difficile Infection",
+    "Cirrhosis and Hepatic Encephalopathy"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -183,7 +183,8 @@
     "peged-2014",
     "hope-2000",
     "pegasus-2015",
-    "oral-surveillance-2022"
+    "oral-surveillance-2022",
+    "galactic-hf-2021"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -435,9 +436,10 @@
     "ms-rsv-vaccine-pregnancy-recommendation-2026",
     "ms-diabetes-sglt2-heart-failure-expanded-2026",
     "ms-antibiotic-stewardship-cms-requirements-2026",
-    "ms-blood-pressure-medication-shortage-alert-2026"
+    "ms-blood-pressure-medication-shortage-alert-2026",
+    "tenecteplase-elderly-stroke-outcomes-2026"
   ],
-  "last_run": "2026-04-24",
+  "last_run": "2026-04-25",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -493,7 +495,8 @@
     "Lichen Striatus",
     "Nevi: Halo",
     "Nevi: Intradermal",
-    "Chemotherapy Induced Hyperpigmentation"
+    "Chemotherapy Induced Hyperpigmentation",
+    "Pyogenic Granuloma"
   ],
   "litfl_cases_shown": [
     "ecg-109",
@@ -690,6 +693,10 @@
     "ecg-124",
     "cxr-040",
     "ct-008",
-    "clinical-subungual-haematoma-trephination"
+    "clinical-subungual-haematoma-trephination",
+    "ecg-087",
+    "cxr-020",
+    "ct-056",
+    "clinical-befuddling-pupillary-asymmetry"
   ]
 }

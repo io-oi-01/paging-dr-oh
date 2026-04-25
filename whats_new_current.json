@@ -1,11 +1,56 @@
 [
   {
     "article_index": 0,
+    "id": "tenecteplase-elderly-stroke-outcomes-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Tenecteplase (TNKase) may worsen functional outcomes in older patients with minor ischemic stroke",
+    "study_design": "Subgroup analysis of patients older than 80 years with minor ischemic stroke treated with tenecteplase",
+    "sample_size": "",
+    "primary_outcome": "90-day functional outcomes",
+    "source_summary_bullets": [
+      "Tenecteplase improved early recanalization and short-term neurologic recovery but did not improve and may worsen 90-day functional outcomes in patients older than 80 years with minor ischemic stroke",
+      "In this older subgroup, tenecteplase was associated with more serious adverse events"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This challenges current thrombolytic practices and suggests age-specific considerations are needed when treating minor stroke in elderly patients",
+      "Clinical context: Hospitalists should exercise caution when considering thrombolytics in elderly patients with minor stroke symptoms"
+    ],
+    "limitations": [
+      "Limited to 2MM summary - specific study methodology and sample size unknown"
+    ],
+    "bottom_line": "Tenecteplase may cause net harm in patients over 80 with minor ischemic stroke despite improving early recanalization.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
+    "date": "Fri, 24 Apr 2026 23:00:10 +000",
+    "date_iso": "2026-04-25",
+    "why_this_matters": "This challenges the use of tenecteplase in elderly patients with minor strokes, suggesting potential harm in a vulnerable population.",
+    "population": "Patients older than 80 years with minor ischemic stroke",
+    "intervention_exposure": "Tenecteplase (TNKase)",
+    "comparator": "",
+    "key_results": [
+      "Tenecteplase improved early recanalization and short-term neurologic recovery",
+      "No improvement and possible worsening of 90-day functional outcomes in patients >80 years",
+      "Associated with more serious adverse events in this older subgroup"
+    ],
+    "clinical_interpretation": [
+      "Age-specific considerations may be critical when selecting thrombolytic therapy for minor strokes",
+      "The risk-benefit profile of tenecteplase appears unfavorable in octogenarians despite early technical success"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/"
+  },
+  {
+    "article_index": 2,
     "id": "serum-proteins-masld-prognosis-2026",
     "type": "Observational",
     "specialty": "Gastroenterology",
     "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
-    "study_design": "Molecular signature analysis of circulating and hepatic proteins",
+    "study_design": "Study analyzing circulating and hepatic molecular signatures in MASLD progression",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -13,29 +58,30 @@
       "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could provide non-invasive biomarkers for MASLD staging and prognosis, potentially reducing need for liver biopsies",
-      "Clinical context: May help hospitalists better risk-stratify patients with fatty liver disease and guide referral timing"
+      "Clinical context: These biomarkers could help hospitalists risk-stratify MASLD patients and monitor disease progression without invasive procedures",
+      "Clinical context: May reduce need for liver biopsies in select patients with fatty liver disease"
     ],
     "limitations": [
-      "Study design and methodology unclear from summary",
-      "No statistical significance or effect sizes provided"
+      "Observational design limits causal inference",
+      "Clinical validation and cut-off values not established"
     ],
-    "bottom_line": "Serum proteins including gelsolin and lumican may serve as biomarkers for MASLD progression but require validation.",
+    "bottom_line": "Serum proteins like gelsolin and lumican may serve as biomarkers for MASLD progression but require validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
     "date": "Thu, 23 Apr 2026 23:00:07 +000",
-    "date_iso": "2026-04-24",
-    "why_this_matters": "Identifying serum biomarkers could enable non-invasive monitoring of MASLD progression, reducing need for repeated liver biopsies.",
-    "population": "",
+    "date_iso": "2026-04-25",
+    "why_this_matters": "Serum biomarkers could provide non-invasive monitoring tools for MASLD progression, potentially improving patient management.",
+    "population": "Patients with metabolic dysfunction-associated steatotic liver disease",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
+      "Distinct circulating and hepatic molecular signatures track MASLD progression",
+      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis"
     ],
     "clinical_interpretation": [
-      "Potential biomarkers like gelsolin and lumican may eventually help stage MASLD severity, but validation studies needed before clinical application"
+      "These biomarkers could potentially reduce need for liver biopsies in MASLD monitoring",
+      "Validation studies are needed before clinical implementation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -44,49 +90,140 @@
     "twomm_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/"
   },
   {
-    "article_index": 1,
+    "article_index": 3,
     "id": "small-bites-fascial-closure-hernia-2026",
     "type": "RCT",
     "specialty": "Surgery",
     "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
-    "study_design": "Long-term follow-up of randomized controlled trial",
+    "study_design": "Long-term follow-up comparing small-bites versus large-bites fascial closure technique",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Long-term incidence of incisional hernias",
     "source_summary_bullets": [
-      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
+      "Small-bites fascial closure technique reduced the long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
       "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Hospitalists should be aware of this technique when consulting surgery, as it may reduce post-operative complications",
-      "Clinical context: May influence long-term follow-up recommendations for patients after abdominal surgery"
+      "Clinical context: This surgical technique improvement could significantly reduce post-operative complications that hospitalists frequently manage",
+      "Clinical context: May reduce readmissions and long-term morbidity from incisional hernias"
     ],
     "limitations": [
-      "Long-term follow-up duration unclear",
-      "Specific patient population and surgical procedures not specified"
+      "Long-term follow-up may have selection bias",
+      "Surgeon experience and technique standardization not specified"
     ],
-    "bottom_line": "Small-bites fascial closure should be preferred over large-bites technique to reduce incisional hernia risk after midline laparotomy.",
+    "bottom_line": "Small-bites fascial closure technique should be considered standard practice for midline laparotomy to reduce hernia risk.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "date": "Thu, 23 Apr 2026 13:30:40 +000",
-    "date_iso": "2026-04-24",
-    "why_this_matters": "Incisional hernias are common complications after midline laparotomy that cause significant morbidity and healthcare costs.",
-    "population": "",
+    "date_iso": "2026-04-25",
+    "why_this_matters": "Surgical technique modification could significantly reduce long-term hernia complications, a major source of patient morbidity and healthcare costs.",
+    "population": "Patients undergoing elective midline laparotomy",
     "intervention_exposure": "Small-bites fascial closure technique",
     "comparator": "Traditional large-bites technique",
     "key_results": [
-      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
-      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
+      "Small-bites technique reduced long-term incisional hernia incidence",
+      "Hernias in small-bites group were smaller and progressed more slowly",
+      "Hernia repair rates were similar between groups"
     ],
     "clinical_interpretation": [
-      "Small-bites technique appears superior for preventing incisional hernias and should be considered standard practice for fascial closure",
-      "Even when hernias do occur with small-bites technique, they appear less clinically significant"
+      "This represents a simple technical modification that could improve patient outcomes",
+      "The similar repair rates suggest detection bias or that smaller hernias may still require intervention"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/"
+  },
+  {
+    "article_index": 5,
+    "id": "ultra-processed-foods-childhood-bmi-2026",
+    "type": "Observational",
+    "specialty": "Pediatrics",
+    "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
+    "study_design": "17-year prospective cohort study",
+    "sample_size": "",
+    "primary_outcome": "Body mass index in young adulthood",
+    "source_summary_bullets": [
+      "Greater childhood intake of ultra-processed foods was associated with higher body mass index in young adulthood",
+      "The association was most evident in children with the highest genetic susceptibility to elevated body mass index"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence for early dietary counseling to prevent long-term obesity and metabolic complications",
+      "Clinical context: Supports population health initiatives targeting ultra-processed food consumption in children"
+    ],
+    "limitations": [
+      "Observational design cannot establish causation",
+      "Dietary recall and measurement methods not specified"
+    ],
+    "bottom_line": "Childhood ultra-processed food consumption is associated with higher adult BMI, especially in genetically susceptible individuals.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
+    "date": "Wed, 22 Apr 2026 23:00:24 +000",
+    "date_iso": "2026-04-25",
+    "why_this_matters": "This strengthens evidence for early nutritional interventions and highlights genetic-environmental interactions in obesity development.",
+    "population": "Children followed into young adulthood",
+    "intervention_exposure": "Ultra-processed food intake in childhood",
+    "comparator": "",
+    "key_results": [
+      "Greater childhood ultra-processed food intake associated with higher adult BMI",
+      "Association strongest in children with highest genetic susceptibility to elevated BMI"
+    ],
+    "clinical_interpretation": [
+      "Supports focusing obesity prevention efforts on reducing ultra-processed foods in childhood",
+      "Genetic risk assessment might help identify children who would benefit most from dietary interventions"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
+  },
+  {
+    "article_index": 9,
+    "id": "physical-therapy-chronic-low-back-pain-2026",
+    "type": "RCT",
+    "specialty": "Rheumatology",
+    "title": "Physical therapy yields modest improvements in chronic low back pain",
+    "study_design": "Randomized controlled trial comparing physical therapy versus cognitive behavioral therapy",
+    "sample_size": "",
+    "primary_outcome": "Functional improvement",
+    "source_summary_bullets": [
+      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
+      "Patients treated with physical therapy reported greater improvements in anxiety, fatigue compared to CBT"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence-based guidance for first-line chronic low back pain management in primary care and hospital settings",
+      "Clinical context: Both interventions appear effective, allowing for patient preference and resource availability in treatment selection"
+    ],
+    "limitations": [
+      "Modest effect size may limit clinical significance",
+      "Treatment duration and standardization protocols not specified"
+    ],
+    "bottom_line": "Physical therapy provides modest functional benefits over CBT for chronic low back pain and may better address associated anxiety and fatigue.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "date": "Tue, 21 Apr 2026 03:30:18 +000",
+    "date_iso": "2026-04-25",
+    "why_this_matters": "This provides comparative effectiveness data for two common first-line treatments for chronic low back pain, informing treatment selection.",
+    "population": "Patients with chronic low back pain",
+    "intervention_exposure": "Physical therapy",
+    "comparator": "Cognitive behavioral therapy (CBT)",
+    "key_results": [
+      "Physical therapy showed modest improvement in function compared to CBT",
+      "Physical therapy patients reported greater improvements in anxiety and fatigue compared to CBT"
+    ],
+    "clinical_interpretation": [
+      "Both treatments appear effective with physical therapy having slight advantages in multiple domains",
+      "Patient preference and access considerations should guide treatment selection given modest differences"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
   },
   {
     "article_index": 5,
@@ -131,51 +268,6 @@
     "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
-  },
-  {
-    "article_index": 7,
-    "id": "physical-therapy-chronic-back-pain-2026",
-    "type": "RCT",
-    "specialty": "Rheumatology",
-    "title": "Physical therapy yields modest improvements in chronic low back pain",
-    "study_design": "Randomized controlled trial comparing physical therapy to cognitive behavioral therapy",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
-      "Patients treated with PT reported greater improvements in anxiety, fatigue compared to CBT"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Supports PT as first-line therapy for chronic low back pain in hospitalized or outpatient settings",
-      "Clinical context: May help reduce opioid prescribing by providing evidence-based non-pharmacologic treatment option"
-    ],
-    "limitations": [
-      "Improvements described as 'modest' suggesting limited clinical significance",
-      "No quantitative outcomes provided"
-    ],
-    "bottom_line": "Physical therapy shows modest advantages over cognitive behavioral therapy as first-line treatment for chronic low back pain.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
-    "date": "Tue, 21 Apr 2026 03:30:18 +000",
-    "date_iso": "2026-04-24",
-    "why_this_matters": "Chronic low back pain affects millions and choosing between first-line non-pharmacological treatments impacts patient outcomes.",
-    "population": "",
-    "intervention_exposure": "Physical therapy",
-    "comparator": "Cognitive behavioral therapy",
-    "key_results": [
-      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
-      "Patients treated with PT reported greater improvements in anxiety, fatigue compared to CBT"
-    ],
-    "clinical_interpretation": [
-      "PT may have slight advantage over CBT for functional outcomes in chronic low back pain, but both appear viable first-line options",
-      "PT's additional benefits for anxiety and fatigue may influence treatment selection for some patients"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
   },
   {
     "article_index": 8,
@@ -390,50 +482,6 @@
     "original_source_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/asundexian-may-reduce-recurrent-ischemic-stroke-without-increased-bleeding-risk/"
-  },
-  {
-    "article_index": 0,
-    "id": "ultra-processed-foods-childhood-bmi-2026",
-    "type": "Observational",
-    "specialty": "Preventive Medicine",
-    "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
-    "study_design": "17-year prospective cohort study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
-      "The association was strongest in children with highest genetic susceptibility to elevated BMI"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Reinforces dietary counseling recommendations for obesity prevention, particularly relevant for primary care and family medicine",
-      "Clinical context: Supports early intervention strategies and genetic risk-based counseling for weight management"
-    ],
-    "limitations": [
-      "Observational design limits causal inference"
-    ],
-    "bottom_line": "Childhood consumption of ultra-processed foods is associated with higher adult BMI, especially in genetically susceptible individuals.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
-    "date": "Wed, 22 Apr 2026 23:00:24 +000",
-    "date_iso": "2026-04-23",
-    "why_this_matters": "Understanding the long-term impact of childhood diet on adult obesity helps inform pediatric nutrition counseling and public health policy.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
-      "The association was strongest in children with highest genetic susceptibility to elevated BMI"
-    ],
-    "clinical_interpretation": [
-      "This reinforces the importance of limiting ultra-processed foods in childhood for long-term weight management",
-      "Children with family history of obesity may be particularly vulnerable and need more intensive dietary guidance"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
   },
   {
     "article_index": 8,
