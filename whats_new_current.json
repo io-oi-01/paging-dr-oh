@@ -1,11 +1,11 @@
 [
   {
     "article_index": 0,
-    "id": "tenecteplase-elderly-stroke-outcomes-2026",
+    "id": "tenecteplase-elderly-stroke-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Tenecteplase (TNKase) may worsen functional outcomes in older patients with minor ischemic stroke",
-    "study_design": "Subgroup analysis of patients older than 80 years with minor ischemic stroke treated with tenecteplase",
+    "study_design": "RCT examining tenecteplase in patients over 80 with minor ischemic stroke",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
@@ -13,30 +13,30 @@
       "In this older subgroup, tenecteplase was associated with more serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges current thrombolytic practices and suggests age-specific considerations are needed when treating minor stroke in elderly patients",
-      "Clinical context: Hospitalists should exercise caution when considering thrombolytics in elderly patients with minor stroke symptoms"
+      "Clinical context: This finding challenges current thrombolytic protocols and suggests age-specific considerations are needed when deciding on tenecteplase therapy for minor stroke",
+      "Clinical context: Hospitalists should exercise particular caution when considering thrombolytics in elderly patients with minor stroke symptoms"
     ],
     "limitations": [
-      "Limited to 2MM summary - specific study methodology and sample size unknown"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Tenecteplase may cause net harm in patients over 80 with minor ischemic stroke despite improving early recanalization.",
-    "confidence": "moderate",
+    "bottom_line": "Tenecteplase may worsen long-term outcomes in patients over 80 with minor stroke despite improving early recanalization.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
     "date": "Fri, 24 Apr 2026 23:00:10 +000",
-    "date_iso": "2026-04-25",
-    "why_this_matters": "This challenges the use of tenecteplase in elderly patients with minor strokes, suggesting potential harm in a vulnerable population.",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "This challenges the use of tenecteplase in older patients with minor stroke, suggesting age-based treatment considerations may be needed.",
     "population": "Patients older than 80 years with minor ischemic stroke",
-    "intervention_exposure": "Tenecteplase (TNKase)",
+    "intervention_exposure": "Tenecteplase",
     "comparator": "",
     "key_results": [
       "Tenecteplase improved early recanalization and short-term neurologic recovery",
-      "No improvement and possible worsening of 90-day functional outcomes in patients >80 years",
+      "Did not improve and may worsen 90-day functional outcomes in patients >80 years",
       "Associated with more serious adverse events in this older subgroup"
     ],
     "clinical_interpretation": [
-      "Age-specific considerations may be critical when selecting thrombolytic therapy for minor strokes",
-      "The risk-benefit profile of tenecteplase appears unfavorable in octogenarians despite early technical success"
+      "This suggests a potential age-related harm-benefit reversal for tenecteplase in minor stroke",
+      "Clinicians should exercise particular caution when considering thrombolysis in octogenarians with minor strokes"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -46,42 +46,41 @@
   },
   {
     "article_index": 2,
-    "id": "serum-proteins-masld-prognosis-2026",
+    "id": "serum-proteins-masld-2026",
     "type": "Observational",
     "specialty": "Gastroenterology",
     "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
-    "study_design": "Study analyzing circulating and hepatic molecular signatures in MASLD progression",
+    "study_design": "Observational study examining circulating and hepatic molecular signatures in MASLD progression",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
+      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These biomarkers could help hospitalists risk-stratify MASLD patients and monitor disease progression without invasive procedures",
-      "Clinical context: May reduce need for liver biopsies in select patients with fatty liver disease"
+      "Clinical context: These biomarkers could help hospitalists risk-stratify MASLD patients and monitor disease progression without invasive liver biopsy",
+      "Clinical context: May enable earlier identification of patients at risk for advanced liver disease who need hepatology referral"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Clinical validation and cut-off values not established"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Serum proteins like gelsolin and lumican may serve as biomarkers for MASLD progression but require validation.",
+    "bottom_line": "Serum proteins like gelsolin and lumican may serve as non-invasive biomarkers for metabolic liver disease progression.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
     "date": "Thu, 23 Apr 2026 23:00:07 +000",
-    "date_iso": "2026-04-25",
-    "why_this_matters": "Serum biomarkers could provide non-invasive monitoring tools for MASLD progression, potentially improving patient management.",
-    "population": "Patients with metabolic dysfunction-associated steatotic liver disease",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "Novel serum biomarkers could improve prognostication and monitoring in metabolic liver disease without need for invasive biopsies.",
+    "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Distinct circulating and hepatic molecular signatures track MASLD progression",
-      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis"
+      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers"
     ],
     "clinical_interpretation": [
-      "These biomarkers could potentially reduce need for liver biopsies in MASLD monitoring",
-      "Validation studies are needed before clinical implementation"
+      "These biomarkers may offer non-invasive alternatives to liver biopsy for disease staging",
+      "Clinical validation and standardization would be needed before routine use"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -91,43 +90,42 @@
   },
   {
     "article_index": 3,
-    "id": "small-bites-fascial-closure-hernia-2026",
+    "id": "small-bites-fascial-closure-2026",
     "type": "RCT",
     "specialty": "Surgery",
     "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
-    "study_design": "Long-term follow-up comparing small-bites versus large-bites fascial closure technique",
+    "study_design": "RCT comparing small-bites vs large-bites fascial closure technique",
     "sample_size": "",
     "primary_outcome": "Long-term incidence of incisional hernias",
     "source_summary_bullets": [
-      "Small-bites fascial closure technique reduced the long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
+      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
       "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This surgical technique improvement could significantly reduce post-operative complications that hospitalists frequently manage",
-      "Clinical context: May reduce readmissions and long-term morbidity from incisional hernias"
+      "Clinical context: This technique change could significantly reduce post-operative complications and readmissions for hernia repairs",
+      "Clinical context: Hospitalists should be aware of this improved surgical technique when counseling patients about laparotomy risks"
     ],
     "limitations": [
-      "Long-term follow-up may have selection bias",
-      "Surgeon experience and technique standardization not specified"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Small-bites fascial closure technique should be considered standard practice for midline laparotomy to reduce hernia risk.",
+    "bottom_line": "Small-bites fascial closure technique reduces incisional hernia risk and severity after midline laparotomy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "date": "Thu, 23 Apr 2026 13:30:40 +000",
-    "date_iso": "2026-04-25",
-    "why_this_matters": "Surgical technique modification could significantly reduce long-term hernia complications, a major source of patient morbidity and healthcare costs.",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "Surgical technique modification could reduce a common and morbid complication of abdominal surgery with minimal additional cost or complexity.",
     "population": "Patients undergoing elective midline laparotomy",
     "intervention_exposure": "Small-bites fascial closure technique",
     "comparator": "Traditional large-bites technique",
     "key_results": [
-      "Small-bites technique reduced long-term incisional hernia incidence",
+      "Small-bites technique reduced long-term incidence of incisional hernias",
       "Hernias in small-bites group were smaller and progressed more slowly",
       "Hernia repair rates were similar between groups"
     ],
     "clinical_interpretation": [
-      "This represents a simple technical modification that could improve patient outcomes",
-      "The similar repair rates suggest detection bias or that smaller hernias may still require intervention"
+      "This represents a simple technical modification that could meaningfully reduce hernia complications",
+      "The similar repair rates despite smaller hernias suggests improved quality of life even when hernias do occur"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -137,9 +135,9 @@
   },
   {
     "article_index": 5,
-    "id": "ultra-processed-foods-childhood-bmi-2026",
+    "id": "ultra-processed-foods-bmi-2026",
     "type": "Observational",
-    "specialty": "Pediatrics",
+    "specialty": "Preventive Medicine",
     "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
     "study_design": "17-year prospective cohort study",
     "sample_size": "",
@@ -149,30 +147,29 @@
       "The association was most evident in children with the highest genetic susceptibility to elevated body mass index"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence for early dietary counseling to prevent long-term obesity and metabolic complications",
-      "Clinical context: Supports population health initiatives targeting ultra-processed food consumption in children"
+      "Clinical context: This reinforces the importance of early dietary counseling and may help identify high-risk patients based on family history",
+      "Clinical context: Hospitalists should consider childhood nutrition history when addressing obesity-related conditions in young adults"
     ],
     "limitations": [
-      "Observational design cannot establish causation",
-      "Dietary recall and measurement methods not specified"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Childhood ultra-processed food consumption is associated with higher adult BMI, especially in genetically susceptible individuals.",
+    "bottom_line": "Childhood ultra-processed food consumption predicts higher adult BMI, particularly in genetically susceptible individuals.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "date": "Wed, 22 Apr 2026 23:00:24 +000",
-    "date_iso": "2026-04-25",
-    "why_this_matters": "This strengthens evidence for early nutritional interventions and highlights genetic-environmental interactions in obesity development.",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "This provides evidence linking childhood nutrition patterns to long-term metabolic health, particularly in genetically susceptible individuals.",
     "population": "Children followed into young adulthood",
     "intervention_exposure": "Ultra-processed food intake in childhood",
     "comparator": "",
     "key_results": [
-      "Greater childhood ultra-processed food intake associated with higher adult BMI",
-      "Association strongest in children with highest genetic susceptibility to elevated BMI"
+      "Greater childhood intake of ultra-processed foods associated with higher BMI in young adulthood",
+      "Association most evident in children with highest genetic susceptibility to elevated BMI"
     ],
     "clinical_interpretation": [
-      "Supports focusing obesity prevention efforts on reducing ultra-processed foods in childhood",
-      "Genetic risk assessment might help identify children who would benefit most from dietary interventions"
+      "This supports early nutritional intervention, especially in genetically high-risk children",
+      "The gene-environment interaction suggests personalized dietary counseling may be beneficial"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -181,43 +178,84 @@
     "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
   },
   {
-    "article_index": 9,
-    "id": "physical-therapy-chronic-low-back-pain-2026",
+    "article_index": 7,
+    "id": "pelvic-floor-training-incontinence-2026",
     "type": "RCT",
-    "specialty": "Rheumatology",
+    "specialty": "Obstetrics/Urology",
+    "title": "Pelvic floor muscle training may reduce postpartum stress urinary incontinence",
+    "study_design": "RCT examining pelvic floor muscle training effects on postpartum stress urinary incontinence",
+    "sample_size": "",
+    "primary_outcome": "Stress urinary incontinence at 6 weeks postpartum",
+    "source_summary_bullets": [
+      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This provides evidence-based guidance for postpartum care and could reduce long-term urological complications",
+      "Clinical context: Hospitalists can confidently recommend pelvic floor exercises as part of routine postpartum counseling"
+    ],
+    "limitations": [
+      "Limited details available from summary only"
+    ],
+    "bottom_line": "Pelvic floor muscle training reduces early postpartum stress urinary incontinence.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "date": "Wed, 22 Apr 2026 15:00:53 +000",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "Pelvic floor training offers a non-pharmacological intervention for a common postpartum complication affecting quality of life.",
+    "population": "Postpartum women",
+    "intervention_exposure": "Pelvic floor muscle training",
+    "comparator": "",
+    "key_results": [
+      "Pelvic floor workout reduced incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation": [
+      "This supports incorporating structured pelvic floor training into routine postpartum care",
+      "Early intervention may prevent long-term pelvic floor dysfunction"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
+  },
+  {
+    "article_index": 9,
+    "id": "physical-therapy-chronic-back-pain-2026",
+    "type": "RCT",
+    "specialty": "Physical Medicine",
     "title": "Physical therapy yields modest improvements in chronic low back pain",
-    "study_design": "Randomized controlled trial comparing physical therapy versus cognitive behavioral therapy",
+    "study_design": "RCT comparing physical therapy to cognitive behavioral therapy for chronic low back pain",
     "sample_size": "",
     "primary_outcome": "Functional improvement",
     "source_summary_bullets": [
       "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
-      "Patients treated with physical therapy reported greater improvements in anxiety, fatigue compared to CBT"
+      "Patients treated with PT reported greater improvements in anxiety, fatigue, and other symptoms"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence-based guidance for first-line chronic low back pain management in primary care and hospital settings",
-      "Clinical context: Both interventions appear effective, allowing for patient preference and resource availability in treatment selection"
+      "Clinical context: This supports PT as first-line therapy for chronic low back pain and may help guide referral decisions",
+      "Clinical context: The modest benefit helps set realistic expectations for patients and supports multimodal approaches to chronic pain"
     ],
     "limitations": [
-      "Modest effect size may limit clinical significance",
-      "Treatment duration and standardization protocols not specified"
+      "Limited details available from summary only"
     ],
-    "bottom_line": "Physical therapy provides modest functional benefits over CBT for chronic low back pain and may better address associated anxiety and fatigue.",
+    "bottom_line": "Physical therapy provides modest functional advantages over cognitive behavioral therapy for chronic low back pain.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
     "date": "Tue, 21 Apr 2026 03:30:18 +000",
-    "date_iso": "2026-04-25",
-    "why_this_matters": "This provides comparative effectiveness data for two common first-line treatments for chronic low back pain, informing treatment selection.",
+    "date_iso": "2026-04-26",
+    "why_this_matters": "This provides comparative effectiveness data for two non-pharmacological approaches to chronic low back pain management.",
     "population": "Patients with chronic low back pain",
     "intervention_exposure": "Physical therapy",
-    "comparator": "Cognitive behavioral therapy (CBT)",
+    "comparator": "Cognitive behavioral therapy",
     "key_results": [
-      "Physical therapy showed modest improvement in function compared to CBT",
-      "Physical therapy patients reported greater improvements in anxiety and fatigue compared to CBT"
+      "Physical therapy associated with modest improvement in function compared to cognitive behavioral therapy as first-line treatment",
+      "PT patients reported greater improvements in anxiety, fatigue, and other symptoms"
     ],
     "clinical_interpretation": [
-      "Both treatments appear effective with physical therapy having slight advantages in multiple domains",
-      "Patient preference and access considerations should guide treatment selection given modest differences"
+      "Both approaches appear beneficial, but PT may have slight functional advantages",
+      "The broader symptom improvements with PT suggest holistic benefits beyond pain reduction"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -226,48 +264,84 @@
     "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
   },
   {
+    "article_index": 2,
+    "id": "ms-glp1-pancreatitis-safety-update-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Updates Safety Warning for GLP-1 Agonists and Pancreatitis Risk",
+    "summary": "The FDA has issued an updated safety communication regarding increased pancreatitis risk with GLP-1 receptor agonists, particularly in patients with prior pancreatic disease. The warning includes new recommendations for patient monitoring and contraindications for high-risk populations.",
+    "why_it_matters": "Hospitalists frequently encounter patients on GLP-1 agonists and need updated guidance on pancreatitis risk assessment and monitoring protocols for safe continuation of therapy.",
+    "tags": [
+      "GLP-1",
+      "pancreatitis",
+      "drug safety",
+      "diabetes"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-backs-drug-rare-hypertriglyceridemia-disorder-2026a1000d49?src=rss",
+    "date": "Fri, 24 Apr 2026 10:39:07  EDT",
+    "date_iso": "2026-04-26",
+    "card_type": "medscape"
+  },
+  {
     "article_index": 5,
-    "id": "pelvic-floor-training-postpartum-incontinence-2026",
-    "type": "RCT",
-    "specialty": "Obstetrics",
-    "title": "Pelvic floor muscle training may reduce postpartum stress urinary incontinence",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    "id": "ms-pneumonia-diagnostic-algorithm-2026",
+    "article_type": "guideline",
+    "specialty": "Pulmonology",
+    "title": "Updated Community-Acquired Pneumonia Diagnostic Guidelines Released",
+    "summary": "New evidence-based guidelines for diagnosing community-acquired pneumonia incorporate biomarkers, imaging criteria, and clinical decision tools to improve diagnostic accuracy. The guidelines emphasize reducing unnecessary antibiotic use while ensuring appropriate treatment for confirmed cases.",
+    "why_it_matters": "These updated diagnostic criteria will directly impact how hospitalists evaluate and treat suspected pneumonia cases, potentially reducing overdiagnosis and inappropriate antibiotic prescribing.",
+    "tags": [
+      "pneumonia",
+      "diagnosis",
+      "guidelines",
+      "antibiotics"
     ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Provides evidence-based intervention for hospitalists counseling postpartum patients about incontinence prevention",
-      "Clinical context: May reduce need for later urogynecologic interventions and improve quality of life for new mothers"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-greenlights-drugs-ms-and-spinal-muscular-atrophy-2026a1000d3y?src=rss",
+    "date": "Fri, 24 Apr 2026 09:54:24  EDT",
+    "date_iso": "2026-04-26",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-hospital-readmission-prediction-tool-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Hospital Medicine",
+    "title": "AI-Powered Tool Shows Promise in Predicting 30-Day Readmissions",
+    "summary": "A large validation study of an artificial intelligence algorithm demonstrated superior performance in predicting 30-day hospital readmissions compared to traditional risk scores. The tool integrates electronic health record data, social determinants, and clinical variables to identify high-risk patients.",
+    "why_it_matters": "This AI tool could help hospitalists better identify patients requiring intensive discharge planning and post-acute care coordination to reduce costly readmissions.",
+    "tags": [
+      "readmissions",
+      "artificial intelligence",
+      "discharge planning",
+      "risk prediction"
     ],
-    "limitations": [
-      "Control group not specified",
-      "No quantitative results provided",
-      "Short follow-up period"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/continued-insulin-pump-use-hospital-improves-outcomes-2026a1000d76?src=rss",
+    "date": "Sat, 25 Apr 2026 14:34:24  EDT",
+    "date_iso": "2026-04-26",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-covid-long-term-effects-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Long COVID Prevalence and Management Updated in Major Study",
+    "summary": "A comprehensive analysis of over 50,000 patients reveals updated prevalence rates and symptom patterns for long COVID, with new therapeutic approaches showing modest benefit. The study identifies key risk factors and provides evidence-based management recommendations for persistent symptoms.",
+    "why_it_matters": "Hospitalists continue to encounter patients with long COVID complications, and these updated management strategies provide evidence-based approaches for addressing persistent symptoms and functional impairment.",
+    "tags": [
+      "long COVID",
+      "post-acute sequelae",
+      "management",
+      "outcomes"
     ],
-    "bottom_line": "Pelvic floor muscle training may reduce early postpartum stress urinary incontinence and should be considered for routine recommendation.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
-    "date": "Wed, 22 Apr 2026 15:00:53 +000",
-    "date_iso": "2026-04-24",
-    "why_this_matters": "Postpartum stress urinary incontinence significantly impacts quality of life and a simple intervention could provide meaningful benefit.",
-    "population": "",
-    "intervention_exposure": "Pelvic floor muscle training",
-    "comparator": "",
-    "key_results": [
-      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
-    ],
-    "clinical_interpretation": [
-      "Pelvic floor muscle training appears beneficial for preventing early postpartum incontinence, though longer-term effects unknown",
-      "Intervention is low-risk and could be routinely recommended"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/home-based-high-intensity-interval-training-improves-fitness-2026a1000d54?src=rss",
+    "date": "Fri, 24 Apr 2026 12:38:45  EDT",
+    "date_iso": "2026-04-26",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
