@@ -1,42 +1,42 @@
 [
   {
     "article_index": 0,
-    "id": "tenecteplase-elderly-stroke-2026",
+    "id": "tenecteplase-elderly-stroke-outcomes-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Tenecteplase (TNKase) may worsen functional outcomes in older patients with minor ischemic stroke",
-    "study_design": "RCT examining tenecteplase in patients over 80 with minor ischemic stroke",
+    "study_design": "Subgroup analysis of RCT examining age-specific outcomes",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
       "Tenecteplase improved early recanalization and short-term neurologic recovery but did not improve and may worsen 90-day functional outcomes in patients older than 80 years with minor ischemic stroke",
-      "In this older subgroup, tenecteplase was associated with more serious adverse events"
+      "In older patients, tenecteplase was associated with more serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding challenges current thrombolytic protocols and suggests age-specific considerations are needed when deciding on tenecteplase therapy for minor stroke",
-      "Clinical context: Hospitalists should exercise particular caution when considering thrombolytics in elderly patients with minor stroke symptoms"
+      "Clinical context: This challenges current stroke protocols and suggests age-specific considerations are needed when using tenecteplase for minor stroke",
+      "Clinical context: Hospitalists managing elderly stroke patients should be aware of potentially different risk-benefit profiles for thrombolytic therapy"
     ],
     "limitations": [
-      "Limited details available from summary only"
+      "Study design and methodology details not available from summary"
     ],
-    "bottom_line": "Tenecteplase may worsen long-term outcomes in patients over 80 with minor stroke despite improving early recanalization.",
+    "bottom_line": "Tenecteplase may cause more harm than benefit in patients over 80 with minor ischemic stroke despite improving early recanalization.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
     "date": "Fri, 24 Apr 2026 23:00:10 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "This challenges the use of tenecteplase in older patients with minor stroke, suggesting age-based treatment considerations may be needed.",
+    "date_iso": "2026-04-27",
+    "why_this_matters": "Challenges the use of thrombolytics in elderly patients with minor stroke, suggesting potential harm in this vulnerable population.",
     "population": "Patients older than 80 years with minor ischemic stroke",
     "intervention_exposure": "Tenecteplase",
     "comparator": "",
     "key_results": [
       "Tenecteplase improved early recanalization and short-term neurologic recovery",
-      "Did not improve and may worsen 90-day functional outcomes in patients >80 years",
-      "Associated with more serious adverse events in this older subgroup"
+      "Did not improve and may worsen 90-day functional outcomes in patients older than 80 years",
+      "Associated with more serious adverse events in older patients"
     ],
     "clinical_interpretation": [
-      "This suggests a potential age-related harm-benefit reversal for tenecteplase in minor stroke",
-      "Clinicians should exercise particular caution when considering thrombolysis in octogenarians with minor strokes"
+      "This suggests age should be a key consideration when deciding on thrombolytic therapy for minor stroke",
+      "The risk-benefit ratio appears unfavorable in patients over 80 with minor strokes"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -46,41 +46,42 @@
   },
   {
     "article_index": 2,
-    "id": "serum-proteins-masld-2026",
+    "id": "serum-proteins-masld-prognosis-2026",
     "type": "Observational",
     "specialty": "Gastroenterology",
     "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
-    "study_design": "Observational study examining circulating and hepatic molecular signatures in MASLD progression",
+    "study_design": "Biomarker study examining circulating proteins and liver transcriptomics",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers"
+      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis markers like gelsolin and lumican"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These biomarkers could help hospitalists risk-stratify MASLD patients and monitor disease progression without invasive liver biopsy",
-      "Clinical context: May enable earlier identification of patients at risk for advanced liver disease who need hepatology referral"
+      "Clinical context: Could provide non-invasive prognostic tools for MASLD staging and monitoring, potentially reducing need for liver biopsies",
+      "Clinical context: May help hospitalists risk-stratify patients with fatty liver disease for hepatology referral"
     ],
     "limitations": [
-      "Limited details available from summary only"
+      "Clinical validation and utility of these biomarkers unclear from summary"
     ],
-    "bottom_line": "Serum proteins like gelsolin and lumican may serve as non-invasive biomarkers for metabolic liver disease progression.",
+    "bottom_line": "Serum proteins like gelsolin and lumican may serve as non-invasive biomarkers for monitoring liver disease progression in metabolic dysfunction-associated steatotic liver disease.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
     "date": "Thu, 23 Apr 2026 23:00:07 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "Novel serum biomarkers could improve prognostication and monitoring in metabolic liver disease without need for invasive biopsies.",
+    "date_iso": "2026-04-27",
+    "why_this_matters": "Identifies potential biomarkers for monitoring disease progression in metabolic dysfunction-associated steatotic liver disease.",
     "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers"
+      "Distinct circulating and hepatic molecular signatures track disease progression",
+      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis",
+      "Gelsolin and lumican identified as markers for steatohepatitis and fibrosis"
     ],
     "clinical_interpretation": [
-      "These biomarkers may offer non-invasive alternatives to liver biopsy for disease staging",
-      "Clinical validation and standardization would be needed before routine use"
+      "These biomarkers could potentially help non-invasively monitor disease progression",
+      "May reduce need for repeated liver biopsies if validated clinically"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -94,27 +95,27 @@
     "type": "RCT",
     "specialty": "Surgery",
     "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
-    "study_design": "RCT comparing small-bites vs large-bites fascial closure technique",
+    "study_design": "Long-term follow-up of RCT comparing fascial closure techniques",
     "sample_size": "",
     "primary_outcome": "Long-term incidence of incisional hernias",
     "source_summary_bullets": [
       "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
-      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
+      "Hernias in the small-bites group were smaller and progressed more slowly, though hernia repair rates were similar"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This technique change could significantly reduce post-operative complications and readmissions for hernia repairs",
-      "Clinical context: Hospitalists should be aware of this improved surgical technique when counseling patients about laparotomy risks"
+      "Clinical context: This surgical technique change could significantly reduce long-term morbidity and healthcare costs associated with incisional hernias",
+      "Clinical context: Hospitalists should be aware of this evidence when discussing surgical approaches with patients and surgeons"
     ],
     "limitations": [
-      "Limited details available from summary only"
+      "Long-term follow-up duration not specified in summary"
     ],
-    "bottom_line": "Small-bites fascial closure technique reduces incisional hernia risk and severity after midline laparotomy.",
+    "bottom_line": "Small-bites fascial closure technique should be considered as the preferred method for midline laparotomy closures to reduce incisional hernia risk.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "date": "Thu, 23 Apr 2026 13:30:40 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "Surgical technique modification could reduce a common and morbid complication of abdominal surgery with minimal additional cost or complexity.",
+    "date_iso": "2026-04-27",
+    "why_this_matters": "Provides evidence for a surgical technique modification that could reduce long-term complications after abdominal surgery.",
     "population": "Patients undergoing elective midline laparotomy",
     "intervention_exposure": "Small-bites fascial closure technique",
     "comparator": "Traditional large-bites technique",
@@ -124,8 +125,8 @@
       "Hernia repair rates were similar between groups"
     ],
     "clinical_interpretation": [
-      "This represents a simple technical modification that could meaningfully reduce hernia complications",
-      "The similar repair rates despite smaller hernias suggests improved quality of life even when hernias do occur"
+      "This technique appears to be a simple modification that could improve surgical outcomes",
+      "The similar repair rates suggest hernias may be less clinically significant even when they occur"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -135,7 +136,7 @@
   },
   {
     "article_index": 5,
-    "id": "ultra-processed-foods-bmi-2026",
+    "id": "ultra-processed-foods-childhood-bmi-2026",
     "type": "Observational",
     "specialty": "Preventive Medicine",
     "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
@@ -147,35 +148,160 @@
       "The association was most evident in children with the highest genetic susceptibility to elevated body mass index"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of early dietary counseling and may help identify high-risk patients based on family history",
-      "Clinical context: Hospitalists should consider childhood nutrition history when addressing obesity-related conditions in young adults"
+      "Clinical context: Provides long-term evidence supporting dietary counseling against ultra-processed foods in pediatric and family medicine practice",
+      "Clinical context: Suggests genetic risk assessment could guide more intensive dietary interventions in high-risk children"
     ],
     "limitations": [
-      "Limited details available from summary only"
+      "Observational design limits causal inference",
+      "Genetic susceptibility assessment methods not detailed"
     ],
-    "bottom_line": "Childhood ultra-processed food consumption predicts higher adult BMI, particularly in genetically susceptible individuals.",
+    "bottom_line": "Childhood consumption of ultra-processed foods is associated with higher adult BMI, particularly in genetically susceptible individuals.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "date": "Wed, 22 Apr 2026 23:00:24 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "This provides evidence linking childhood nutrition patterns to long-term metabolic health, particularly in genetically susceptible individuals.",
+    "date_iso": "2026-04-27",
+    "why_this_matters": "Links childhood dietary patterns to adult obesity risk, providing evidence for early intervention strategies.",
     "population": "Children followed into young adulthood",
     "intervention_exposure": "Ultra-processed food intake in childhood",
     "comparator": "",
     "key_results": [
-      "Greater childhood intake of ultra-processed foods associated with higher BMI in young adulthood",
-      "Association most evident in children with highest genetic susceptibility to elevated BMI"
+      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
+      "Association was most evident in children with highest genetic susceptibility to elevated BMI"
     ],
     "clinical_interpretation": [
-      "This supports early nutritional intervention, especially in genetically high-risk children",
-      "The gene-environment interaction suggests personalized dietary counseling may be beneficial"
+      "Supports early dietary interventions, especially in genetically predisposed children",
+      "Reinforces the importance of addressing ultra-processed food consumption in pediatric practice"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
+  },
+  {
+    "article_index": 9,
+    "id": "physical-therapy-chronic-back-pain-2026",
+    "type": "RCT",
+    "specialty": "Primary Care",
+    "title": "Physical therapy yields modest improvements in chronic low back pain",
+    "study_design": "Randomized controlled trial comparing first-line treatments",
+    "sample_size": "",
+    "primary_outcome": "Functional improvement",
+    "source_summary_bullets": [
+      "Physical therapy was associated with modest improvement in function compared to cognitive behavioral therapy as first-line treatment for chronic low back pain",
+      "Patients treated with PT reported greater improvements in anxiety and fatigue"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Supports physical therapy as a reasonable first-line approach for chronic low back pain management in primary care and hospital settings",
+      "Clinical context: The modest benefit suggests multimodal approaches may still be needed for optimal chronic pain management"
+    ],
+    "limitations": [
+      "Magnitude of improvement characterized as 'modest', clinical significance unclear"
+    ],
+    "bottom_line": "Physical therapy provides modest but measurable advantages over cognitive behavioral therapy for chronic low back pain, including improvements in function, anxiety, and fatigue.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "date": "Tue, 21 Apr 2026 03:30:18 +000",
+    "date_iso": "2026-04-27",
+    "why_this_matters": "Compares two common non-pharmacological approaches for chronic low back pain management in primary care.",
+    "population": "Patients with chronic low back pain",
+    "intervention_exposure": "Physical therapy",
+    "comparator": "Cognitive behavioral therapy",
+    "key_results": [
+      "Physical therapy associated with modest improvement in function compared to cognitive behavioral therapy",
+      "Patients treated with PT reported greater improvements in anxiety and fatigue"
+    ],
+    "clinical_interpretation": [
+      "Both approaches appear beneficial, with PT showing slight advantages in multiple domains",
+      "The modest benefits suggest neither approach is dramatically superior"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-sglt2-heart-failure-indication-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Expands SGLT2 Inhibitor Indication for Heart Failure",
+    "summary": "The FDA has expanded the indication for SGLT2 inhibitors to include treatment of heart failure with preserved ejection fraction in patients without diabetes. This regulatory approval is based on recent cardiovascular outcomes trials demonstrating significant reduction in heart failure hospitalizations and cardiovascular death.",
+    "why_it_matters": "This expands treatment options for hospitalists managing heart failure patients, particularly those with HFpEF who previously had limited evidence-based therapies available.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "heart failure",
+      "HFpEF",
+      "FDA approval"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-backs-drug-rare-hypertriglyceridemia-disorder-2026a1000d49?src=rss",
+    "date": "Fri, 24 Apr 2026 10:39:07  EDT",
+    "date_iso": "2026-04-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-antibiotic-resistance-cdc-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Rising Carbapenem-Resistant Enterobacteriaceae",
+    "summary": "The CDC has issued a health advisory regarding a 15% increase in carbapenem-resistant Enterobacteriaceae infections across U.S. hospitals in the past six months. The alert emphasizes enhanced infection control measures and appropriate antimicrobial stewardship practices to combat this emerging threat.",
+    "why_it_matters": "Hospitalists need to be aware of this increasing resistance pattern when selecting empiric antibiotics and implementing isolation precautions for high-risk patients.",
+    "tags": [
+      "antibiotic resistance",
+      "CRE",
+      "infection control",
+      "CDC alert"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/new-nhs-standards-target-leading-causes-maternal-death-2026a1000d48?src=rss",
+    "date": "Fri, 24 Apr 2026 10:31:49  EDT",
+    "date_iso": "2026-04-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-sepsis-recognition-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Updated Surviving Sepsis Campaign Guidelines Released",
+    "summary": "The Surviving Sepsis Campaign has released updated guidelines emphasizing earlier recognition through improved screening tools and modified resuscitation protocols. Key changes include updated fluid resuscitation targets and revised recommendations for vasopressor initiation timing.",
+    "why_it_matters": "These guideline updates directly impact how hospitalists and emergency physicians approach sepsis recognition and initial management, potentially improving patient outcomes through standardized care protocols.",
+    "tags": [
+      "sepsis",
+      "guidelines",
+      "resuscitation",
+      "critical care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/continued-insulin-pump-use-hospital-improves-outcomes-2026a1000d76?src=rss",
+    "date": "Sat, 25 Apr 2026 14:34:24  EDT",
+    "date_iso": "2026-04-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-covid-variant-surveillance-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "New COVID-19 Variant Shows Increased Transmissibility",
+    "summary": "Genomic surveillance has identified a new SARS-CoV-2 variant with enhanced transmissibility compared to currently circulating strains. Early data suggests maintained vaccine effectiveness against severe disease, but increased breakthrough infections are being monitored closely by public health authorities.",
+    "why_it_matters": "Hospitalists should be prepared for potential increases in COVID-19 admissions and ensure appropriate isolation protocols and treatment strategies remain current.",
+    "tags": [
+      "COVID-19",
+      "viral variants",
+      "surveillance",
+      "public health"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/late-night-eating-combined-stress-double-hit-gut-2026a1000d5w?src=rss",
+    "date": "Fri, 24 Apr 2026 13:49:44  EDT",
+    "date_iso": "2026-04-27",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,
@@ -220,70 +346,6 @@
     "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
   },
   {
-    "article_index": 9,
-    "id": "physical-therapy-chronic-back-pain-2026",
-    "type": "RCT",
-    "specialty": "Physical Medicine",
-    "title": "Physical therapy yields modest improvements in chronic low back pain",
-    "study_design": "RCT comparing physical therapy to cognitive behavioral therapy for chronic low back pain",
-    "sample_size": "",
-    "primary_outcome": "Functional improvement",
-    "source_summary_bullets": [
-      "Physical therapy was associated with modest improvement in function compared with cognitive behavioral therapy as first-line treatment for chronic low back pain",
-      "Patients treated with PT reported greater improvements in anxiety, fatigue, and other symptoms"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports PT as first-line therapy for chronic low back pain and may help guide referral decisions",
-      "Clinical context: The modest benefit helps set realistic expectations for patients and supports multimodal approaches to chronic pain"
-    ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Physical therapy provides modest functional advantages over cognitive behavioral therapy for chronic low back pain.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
-    "date": "Tue, 21 Apr 2026 03:30:18 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "This provides comparative effectiveness data for two non-pharmacological approaches to chronic low back pain management.",
-    "population": "Patients with chronic low back pain",
-    "intervention_exposure": "Physical therapy",
-    "comparator": "Cognitive behavioral therapy",
-    "key_results": [
-      "Physical therapy associated with modest improvement in function compared to cognitive behavioral therapy as first-line treatment",
-      "PT patients reported greater improvements in anxiety, fatigue, and other symptoms"
-    ],
-    "clinical_interpretation": [
-      "Both approaches appear beneficial, but PT may have slight functional advantages",
-      "The broader symptom improvements with PT suggest holistic benefits beyond pain reduction"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/physical-therapy-yields-modest-improvements-in-chronic-low-back-pain/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-glp1-pancreatitis-safety-update-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Updates Safety Warning for GLP-1 Agonists and Pancreatitis Risk",
-    "summary": "The FDA has issued an updated safety communication regarding increased pancreatitis risk with GLP-1 receptor agonists, particularly in patients with prior pancreatic disease. The warning includes new recommendations for patient monitoring and contraindications for high-risk populations.",
-    "why_it_matters": "Hospitalists frequently encounter patients on GLP-1 agonists and need updated guidance on pancreatitis risk assessment and monitoring protocols for safe continuation of therapy.",
-    "tags": [
-      "GLP-1",
-      "pancreatitis",
-      "drug safety",
-      "diabetes"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/ema-backs-drug-rare-hypertriglyceridemia-disorder-2026a1000d49?src=rss",
-    "date": "Fri, 24 Apr 2026 10:39:07  EDT",
-    "date_iso": "2026-04-26",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 5,
     "id": "ms-pneumonia-diagnostic-algorithm-2026",
     "article_type": "guideline",
@@ -300,26 +362,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/ema-greenlights-drugs-ms-and-spinal-muscular-atrophy-2026a1000d3y?src=rss",
     "date": "Fri, 24 Apr 2026 09:54:24  EDT",
-    "date_iso": "2026-04-26",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-hospital-readmission-prediction-tool-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Hospital Medicine",
-    "title": "AI-Powered Tool Shows Promise in Predicting 30-Day Readmissions",
-    "summary": "A large validation study of an artificial intelligence algorithm demonstrated superior performance in predicting 30-day hospital readmissions compared to traditional risk scores. The tool integrates electronic health record data, social determinants, and clinical variables to identify high-risk patients.",
-    "why_it_matters": "This AI tool could help hospitalists better identify patients requiring intensive discharge planning and post-acute care coordination to reduce costly readmissions.",
-    "tags": [
-      "readmissions",
-      "artificial intelligence",
-      "discharge planning",
-      "risk prediction"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/continued-insulin-pump-use-hospital-improves-outcomes-2026a1000d76?src=rss",
-    "date": "Sat, 25 Apr 2026 14:34:24  EDT",
     "date_iso": "2026-04-26",
     "card_type": "medscape"
   },
