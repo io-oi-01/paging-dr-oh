@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Hyponatremia",
     "Acute Pancreatitis",
     "Acute Kidney Injury",
     "Hypercalcemia",
@@ -89,7 +88,8 @@
     "Clostridioides difficile Infection",
     "Cirrhosis and Hepatic Encephalopathy",
     "Acute Kidney Injury",
-    "Hyperosmolar Hyperglycemic State"
+    "Hyperosmolar Hyperglycemic State",
+    "Heparin-Induced Thrombocytopenia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -186,7 +186,8 @@
     "oral-surveillance-2022",
     "galactic-hf-2021",
     "balance-2024",
-    "gusto-1993"
+    "gusto-1993",
+    "dawn-2018"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -452,9 +453,12 @@
     "ms-sglt2-heart-failure-indication-2026",
     "ms-antibiotic-resistance-cdc-alert-2026",
     "ms-sepsis-recognition-guidelines-2026",
-    "ms-covid-variant-surveillance-2026"
+    "ms-covid-variant-surveillance-2026",
+    "ms-warfarin-bleeding-risk-calculator-2026",
+    "ms-ards-prone-positioning-guidelines-2026",
+    "ms-monkeypox-outbreak-healthcare-workers-2026"
   ],
-  "last_run": "2026-04-27",
+  "last_run": "2026-04-28",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -513,13 +517,10 @@
     "Chemotherapy Induced Hyperpigmentation",
     "Pyogenic Granuloma",
     "Furunculosis",
-    "Post-Inflammatory Hyperpigmentation"
+    "Post-Inflammatory Hyperpigmentation",
+    "Acanthosis Nigricans"
   ],
   "litfl_cases_shown": [
-    "clinical-own-the-oxygen",
-    "ecg-019",
-    "cxr-003",
-    "ct-041",
     "clinical-ice-003-leg-skin-rash",
     "ecg-132",
     "cxr-081",
@@ -715,6 +716,10 @@
     "ecg-119",
     "cxr-075",
     "ct-087",
-    "clinical-the-half-moon-nail"
+    "clinical-the-half-moon-nail",
+    "ecg-079",
+    "cxr-001",
+    "ct-072",
+    "clinical-bloody-diarrhoea"
   ]
 }

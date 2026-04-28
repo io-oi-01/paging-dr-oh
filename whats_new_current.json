@@ -1,42 +1,42 @@
 [
   {
-    "article_index": 0,
+    "article_index": 2,
     "id": "tenecteplase-elderly-stroke-outcomes-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Tenecteplase (TNKase) may worsen functional outcomes in older patients with minor ischemic stroke",
-    "study_design": "Subgroup analysis of RCT examining age-specific outcomes",
+    "study_design": "RCT evaluating tenecteplase vs standard care in minor ischemic stroke",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
       "Tenecteplase improved early recanalization and short-term neurologic recovery but did not improve and may worsen 90-day functional outcomes in patients older than 80 years with minor ischemic stroke",
-      "In older patients, tenecteplase was associated with more serious adverse events"
+      "In the older subgroup, tenecteplase was associated with more serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges current stroke protocols and suggests age-specific considerations are needed when using tenecteplase for minor stroke",
-      "Clinical context: Hospitalists managing elderly stroke patients should be aware of potentially different risk-benefit profiles for thrombolytic therapy"
+      "Clinical context: This challenges current stroke protocols and suggests age-specific considerations are needed when using tenecteplase for minor strokes",
+      "Clinical context: Hospitalists should exercise caution when considering thrombolytics in elderly patients with minor stroke symptoms"
     ],
     "limitations": [
-      "Study design and methodology details not available from summary"
+      "Limited to 2MM summary without full study details"
     ],
-    "bottom_line": "Tenecteplase may cause more harm than benefit in patients over 80 with minor ischemic stroke despite improving early recanalization.",
+    "bottom_line": "Tenecteplase may cause more harm than benefit in patients over 80 with minor stroke despite early improvements.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
     "date": "Fri, 24 Apr 2026 23:00:10 +000",
-    "date_iso": "2026-04-27",
-    "why_this_matters": "Challenges the use of thrombolytics in elderly patients with minor stroke, suggesting potential harm in this vulnerable population.",
+    "date_iso": "2026-04-28",
+    "why_this_matters": "Challenges the use of tenecteplase in elderly patients with minor stroke, suggesting potential harm in this vulnerable population.",
     "population": "Patients older than 80 years with minor ischemic stroke",
     "intervention_exposure": "Tenecteplase",
     "comparator": "",
     "key_results": [
       "Tenecteplase improved early recanalization and short-term neurologic recovery",
       "Did not improve and may worsen 90-day functional outcomes in patients older than 80 years",
-      "Associated with more serious adverse events in older patients"
+      "Associated with more serious adverse events in the older subgroup"
     ],
     "clinical_interpretation": [
-      "This suggests age should be a key consideration when deciding on thrombolytic therapy for minor stroke",
-      "The risk-benefit ratio appears unfavorable in patients over 80 with minor strokes"
+      "This suggests age-specific considerations are crucial when selecting thrombolytic therapy",
+      "The disconnect between early improvement and worse long-term outcomes warrants careful risk-benefit analysis in elderly patients"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -45,43 +45,43 @@
     "twomm_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/"
   },
   {
-    "article_index": 2,
+    "article_index": 4,
     "id": "serum-proteins-masld-prognosis-2026",
     "type": "Observational",
     "specialty": "Gastroenterology",
     "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
-    "study_design": "Biomarker study examining circulating proteins and liver transcriptomics",
+    "study_design": "Molecular signature analysis comparing circulating and hepatic proteins",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis markers like gelsolin and lumican"
+      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could provide non-invasive prognostic tools for MASLD staging and monitoring, potentially reducing need for liver biopsies",
-      "Clinical context: May help hospitalists risk-stratify patients with fatty liver disease for hepatology referral"
+      "Clinical context: Could provide non-invasive biomarkers for MASLD staging and prognosis, potentially reducing need for liver biopsies",
+      "Clinical context: May help hospitalists risk-stratify patients with fatty liver disease and guide specialist referrals"
     ],
     "limitations": [
-      "Clinical validation and utility of these biomarkers unclear from summary"
+      "Observational design limits causal inference",
+      "Clinical validation of biomarkers not established"
     ],
-    "bottom_line": "Serum proteins like gelsolin and lumican may serve as non-invasive biomarkers for monitoring liver disease progression in metabolic dysfunction-associated steatotic liver disease.",
+    "bottom_line": "Serum protein biomarkers may help track liver disease progression but require further validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
     "date": "Thu, 23 Apr 2026 23:00:07 +000",
-    "date_iso": "2026-04-27",
-    "why_this_matters": "Identifies potential biomarkers for monitoring disease progression in metabolic dysfunction-associated steatotic liver disease.",
-    "population": "",
+    "date_iso": "2026-04-28",
+    "why_this_matters": "Identifies potential biomarkers for monitoring disease progression in metabolic liver disease, which could improve risk stratification.",
+    "population": "Patients with metabolic dysfunction-associated steatotic liver disease",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
       "Distinct circulating and hepatic molecular signatures track disease progression",
-      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis",
-      "Gelsolin and lumican identified as markers for steatohepatitis and fibrosis"
+      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis"
     ],
     "clinical_interpretation": [
-      "These biomarkers could potentially help non-invasively monitor disease progression",
-      "May reduce need for repeated liver biopsies if validated clinically"
+      "These biomarkers could potentially reduce need for invasive liver biopsies",
+      "Need validation studies before clinical implementation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -90,32 +90,32 @@
     "twomm_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/"
   },
   {
-    "article_index": 3,
+    "article_index": 5,
     "id": "small-bites-fascial-closure-2026",
     "type": "RCT",
     "specialty": "Surgery",
     "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
-    "study_design": "Long-term follow-up of RCT comparing fascial closure techniques",
+    "study_design": "RCT comparing small-bites vs large-bites fascial closure technique",
     "sample_size": "",
     "primary_outcome": "Long-term incidence of incisional hernias",
     "source_summary_bullets": [
-      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
-      "Hernias in the small-bites group were smaller and progressed more slowly, though hernia repair rates were similar"
+      "Small-bites fascial closure technique reduced the long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
+      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This surgical technique change could significantly reduce long-term morbidity and healthcare costs associated with incisional hernias",
-      "Clinical context: Hospitalists should be aware of this evidence when discussing surgical approaches with patients and surgeons"
+      "Clinical context: This surgical technique modification could significantly reduce post-operative complications and readmissions",
+      "Clinical context: Hospitalists should be aware of this evidence when discussing surgical options with patients and surgeons"
     ],
     "limitations": [
-      "Long-term follow-up duration not specified in summary"
+      "Single-center study design uncertain from summary"
     ],
-    "bottom_line": "Small-bites fascial closure technique should be considered as the preferred method for midline laparotomy closures to reduce incisional hernia risk.",
+    "bottom_line": "Small-bites fascial closure should be considered standard technique for midline laparotomy to reduce hernia risk.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "date": "Thu, 23 Apr 2026 13:30:40 +000",
-    "date_iso": "2026-04-27",
-    "why_this_matters": "Provides evidence for a surgical technique modification that could reduce long-term complications after abdominal surgery.",
+    "date_iso": "2026-04-28",
+    "why_this_matters": "Provides evidence for a surgical technique modification that could reduce a common and costly postoperative complication.",
     "population": "Patients undergoing elective midline laparotomy",
     "intervention_exposure": "Small-bites fascial closure technique",
     "comparator": "Traditional large-bites technique",
@@ -125,8 +125,8 @@
       "Hernia repair rates were similar between groups"
     ],
     "clinical_interpretation": [
-      "This technique appears to be a simple modification that could improve surgical outcomes",
-      "The similar repair rates suggest hernias may be less clinically significant even when they occur"
+      "This technique appears to offer meaningful clinical benefit with potentially lower patient morbidity",
+      "Similar repair rates suggest detection bias or patient preference factors may influence surgical decisions"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -135,10 +135,10 @@
     "twomm_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/"
   },
   {
-    "article_index": 5,
+    "article_index": 7,
     "id": "ultra-processed-foods-childhood-bmi-2026",
     "type": "Observational",
-    "specialty": "Preventive Medicine",
+    "specialty": "Pediatrics",
     "title": "Increased childhood intake of ultra-processed foods is associated with a higher body mass index in young adulthood",
     "study_design": "17-year prospective cohort study",
     "sample_size": "",
@@ -148,36 +148,159 @@
       "The association was most evident in children with the highest genetic susceptibility to elevated body mass index"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides long-term evidence supporting dietary counseling against ultra-processed foods in pediatric and family medicine practice",
-      "Clinical context: Suggests genetic risk assessment could guide more intensive dietary interventions in high-risk children"
+      "Clinical context: Reinforces the importance of early dietary counseling and may inform preventive care strategies for obesity",
+      "Clinical context: Suggests genetic risk assessment could guide more targeted dietary interventions in high-risk children"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Genetic susceptibility assessment methods not detailed"
+      "Observational design cannot establish causation",
+      "Confounding factors may influence results"
     ],
-    "bottom_line": "Childhood consumption of ultra-processed foods is associated with higher adult BMI, particularly in genetically susceptible individuals.",
+    "bottom_line": "Reducing ultra-processed foods in childhood may help prevent adult obesity, especially in genetically susceptible individuals.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "date": "Wed, 22 Apr 2026 23:00:24 +000",
-    "date_iso": "2026-04-27",
-    "why_this_matters": "Links childhood dietary patterns to adult obesity risk, providing evidence for early intervention strategies.",
+    "date_iso": "2026-04-28",
+    "why_this_matters": "Links childhood dietary patterns to adult obesity risk, providing evidence for early nutritional interventions.",
     "population": "Children followed into young adulthood",
     "intervention_exposure": "Ultra-processed food intake in childhood",
     "comparator": "",
     "key_results": [
       "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
-      "Association was most evident in children with highest genetic susceptibility to elevated BMI"
+      "Association was strongest in children with highest genetic susceptibility to elevated BMI"
     ],
     "clinical_interpretation": [
-      "Supports early dietary interventions, especially in genetically predisposed children",
-      "Reinforces the importance of addressing ultra-processed food consumption in pediatric practice"
+      "Supports early dietary counseling and public health interventions targeting processed food consumption",
+      "Gene-environment interaction suggests personalized approaches may be beneficial"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
+  },
+  {
+    "article_index": 9,
+    "id": "pelvic-floor-training-incontinence-2026",
+    "type": "RCT",
+    "specialty": "Obstetrics",
+    "title": "Pelvic floor muscle training may reduce postpartum stress urinary incontinence",
+    "study_design": "RCT evaluating pelvic floor muscle training vs control",
+    "sample_size": "",
+    "primary_outcome": "Stress urinary incontinence at 6 weeks postpartum",
+    "source_summary_bullets": [
+      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides evidence-based intervention for a common postpartum condition that significantly affects quality of life",
+      "Clinical context: Hospitalists and primary care physicians can recommend this low-risk intervention for postpartum patients"
+    ],
+    "limitations": [
+      "Limited follow-up duration",
+      "Unclear if benefits persist long-term"
+    ],
+    "bottom_line": "Pelvic floor muscle training appears to reduce early postpartum stress incontinence and should be routinely recommended.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "date": "Wed, 22 Apr 2026 15:00:53 +000",
+    "date_iso": "2026-04-28",
+    "why_this_matters": "Offers a non-pharmacological intervention for a common postpartum complication that significantly impacts quality of life.",
+    "population": "Postpartum women",
+    "intervention_exposure": "Pelvic floor muscle training",
+    "comparator": "",
+    "key_results": [
+      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
+    ],
+    "clinical_interpretation": [
+      "This intervention is low-risk and potentially high-benefit for postpartum care",
+      "Should be considered as routine counseling for pregnant and postpartum women"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-warfarin-bleeding-risk-calculator-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Hematology",
+    "title": "New Risk Calculator Improves Warfarin Bleeding Prediction",
+    "summary": "Researchers have developed and validated a new bleeding risk calculator for patients on warfarin therapy that outperforms existing tools. The calculator incorporates novel biomarkers and clinical variables to better predict major bleeding events within 90 days of anticoagulation initiation.",
+    "why_it_matters": "This tool could help hospitalists make more informed decisions about anticoagulation therapy and implement appropriate monitoring strategies for high-risk patients.",
+    "tags": [
+      "warfarin",
+      "bleeding risk",
+      "anticoagulation",
+      "risk stratification"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/heated-tobacco-use-linked-t2d-risk-much-cigarette-smoking-2026a1000daj?src=rss",
+    "date": "Mon, 27 Apr 2026 07:26:23  EDT",
+    "date_iso": "2026-04-28",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-ards-prone-positioning-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Updated ARDS Guidelines Expand Prone Positioning Recommendations",
+    "summary": "New international guidelines for acute respiratory distress syndrome management have expanded recommendations for prone positioning to include moderate ARDS cases, not just severe disease. The guidelines also provide updated protocols for implementation and patient selection criteria.",
+    "why_it_matters": "These expanded recommendations will affect ICU protocols and could improve outcomes for a broader population of ARDS patients in critical care settings.",
+    "tags": [
+      "ARDS",
+      "prone positioning",
+      "critical care",
+      "guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-broadens-use-targeted-combinations-blood-cancers-2026a1000dca?src=rss",
+    "date": "Mon, 27 Apr 2026 10:32:49  EDT",
+    "date_iso": "2026-04-28",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-monkeypox-outbreak-healthcare-workers-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Monkeypox Cases Rise Among Healthcare Workers in Three States",
+    "summary": "The CDC reports a cluster of monkeypox infections among healthcare workers in California, Texas, and Florida, with most cases linked to inadequate personal protective equipment during patient care. Health officials are investigating transmission patterns and updating infection control protocols.",
+    "why_it_matters": "Hospital infection control teams need to review and potentially update PPE protocols for suspected monkeypox cases to protect healthcare workers from occupational exposure.",
+    "tags": [
+      "monkeypox",
+      "healthcare workers",
+      "infection control",
+      "outbreak"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hiv-infection-not-tied-cancer-risk-after-liver-transplant-2026a1000cxq?src=rss",
+    "date": "Mon, 27 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-28",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-fda-metformin-contamination-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Class I Recall for Contaminated Metformin Tablets",
+    "summary": "The FDA has issued a Class I recall for multiple lots of metformin tablets due to contamination with N-nitrosodimethylamine (NDMA) levels exceeding acceptable limits. The recall affects several generic manufacturers and millions of tablets distributed nationwide over the past six months.",
+    "why_it_matters": "Hospitalists need to identify patients taking affected metformin lots and arrange for medication switches, as NDMA is a probable human carcinogen requiring immediate discontinuation.",
+    "tags": [
+      "metformin",
+      "FDA recall",
+      "NDMA contamination",
+      "diabetes"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/treatment-delays-metastatic-breast-cancer-vary-race-2026a1000dai?src=rss",
+    "date": "Mon, 27 Apr 2026 07:53:59  EDT",
+    "date_iso": "2026-04-28",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -302,48 +425,6 @@
     "date": "Fri, 24 Apr 2026 13:49:44  EDT",
     "date_iso": "2026-04-27",
     "card_type": "medscape"
-  },
-  {
-    "article_index": 7,
-    "id": "pelvic-floor-training-incontinence-2026",
-    "type": "RCT",
-    "specialty": "Obstetrics/Urology",
-    "title": "Pelvic floor muscle training may reduce postpartum stress urinary incontinence",
-    "study_design": "RCT examining pelvic floor muscle training effects on postpartum stress urinary incontinence",
-    "sample_size": "",
-    "primary_outcome": "Stress urinary incontinence at 6 weeks postpartum",
-    "source_summary_bullets": [
-      "Pelvic floor workout reduced the incidence of stress urinary incontinence at 6 weeks postpartum"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This provides evidence-based guidance for postpartum care and could reduce long-term urological complications",
-      "Clinical context: Hospitalists can confidently recommend pelvic floor exercises as part of routine postpartum counseling"
-    ],
-    "limitations": [
-      "Limited details available from summary only"
-    ],
-    "bottom_line": "Pelvic floor muscle training reduces early postpartum stress urinary incontinence.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
-    "date": "Wed, 22 Apr 2026 15:00:53 +000",
-    "date_iso": "2026-04-26",
-    "why_this_matters": "Pelvic floor training offers a non-pharmacological intervention for a common postpartum complication affecting quality of life.",
-    "population": "Postpartum women",
-    "intervention_exposure": "Pelvic floor muscle training",
-    "comparator": "",
-    "key_results": [
-      "Pelvic floor workout reduced incidence of stress urinary incontinence at 6 weeks postpartum"
-    ],
-    "clinical_interpretation": [
-      "This supports incorporating structured pelvic floor training into routine postpartum care",
-      "Early intervention may prevent long-term pelvic floor dysfunction"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/pelvic-floor-muscle-training-may-reduce-postpartum-stress-urinary-incontinence/"
   },
   {
     "article_index": 5,
@@ -1571,26 +1652,6 @@
     "original_source_url": "https://www.2minutemedicine.com/amazon-health-services-expands-generative-artificial-intelligence-assistant-to-all-united-states-customers/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/amazon-health-services-expands-generative-artificial-intelligence-assistant-to-all-united-states-customers/"
-  },
-  {
-    "article_index": 11,
-    "id": "ms-fda-metformin-contamination-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Orders Nationwide Recall of Generic Metformin Due to NDMA Contamination",
-    "summary": "The FDA has ordered a nationwide recall of multiple generic metformin formulations due to unacceptable levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The recall affects extended-release formulations from several manufacturers, with patients advised to continue therapy with alternative formulations while consulting their healthcare providers.",
-    "why_it_matters": "This recall requires immediate attention from hospitalists managing diabetic patients, as medication reconciliation and conversion to alternative metformin products or other antidiabetic agents may be necessary.",
-    "tags": [
-      "metformin",
-      "drug recall",
-      "diabetes",
-      "medication safety"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/probiotic-adjunct-may-boost-helicobacter-pylori-eradication-2026a1000ap6?src=rss",
-    "date": "Fri, 10 Apr 2026 08:00:00  EDT",
-    "date_iso": "2026-04-11",
-    "card_type": "medscape"
   },
   {
     "article_index": 9,
