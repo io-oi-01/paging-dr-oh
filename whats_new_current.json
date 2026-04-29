@@ -1,42 +1,123 @@
 [
   {
-    "article_index": 2,
-    "id": "tenecteplase-elderly-stroke-outcomes-2026",
+    "article_index": 0,
+    "id": "polycythemia-heart-failure-mortality-2026",
+    "type": "Observational",
+    "specialty": "Cardiology",
+    "title": "Polycythemia is not associated with increased mortality in heart failure",
+    "study_design": "Observational study examining mortality outcomes in heart failure patients with polycythemia",
+    "sample_size": "",
+    "primary_outcome": "Mortality (in-hospital, short-term, and long-term)",
+    "source_summary_bullets": [
+      "Polycythemia was not associated with increased in-hospital, short-term, or long-term mortality in heart failure patients",
+      "Study provides evidence level 2 (Good) regarding mortality outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Challenges common assumptions about polycythemia risk in heart failure patients, potentially reducing unnecessary interventions",
+      "Clinical context: May inform risk stratification and management decisions for heart failure patients with elevated hematocrit"
+    ],
+    "limitations": [
+      "Observational study design limits causal inference"
+    ],
+    "bottom_line": "Polycythemia does not appear to increase mortality risk in heart failure patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/",
+    "date": "Tue, 28 Apr 2026 23:00:52 +000",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Clarifies whether polycythemia should influence risk stratification or treatment decisions in heart failure patients.",
+    "population": "Heart failure patients",
+    "intervention_exposure": "Polycythemia",
+    "comparator": "",
+    "key_results": [
+      "Polycythemia was not associated with increased in-hospital, short-term, or long-term mortality in heart failure patients"
+    ],
+    "clinical_interpretation": [
+      "Polycythemia may not warrant additional concern for mortality risk in heart failure patients, though other clinical outcomes should still be considered"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/"
+  },
+  {
+    "article_index": 1,
+    "id": "mouth-taping-respiratory-warning-2026",
+    "type": "Public Health",
+    "specialty": "Pulmonology",
+    "title": "The American Lung Association issues respiratory warning over viral \"mouth taping\" fad",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "American Lung Association issued urgent alert about mouth taping posing severe asphyxiation risks",
+      "Clinical reviews show mouth taping offers only modest benefits for small subset of snorers with no significant sleep apnea relief"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Important safety alert for hospitalists encountering patients using this viral trend",
+      "Clinical context: Provides evidence-based guidance to counsel patients away from potentially dangerous self-treatment"
+    ],
+    "limitations": [],
+    "bottom_line": "Mouth taping poses serious asphyxiation risks with minimal benefits and should be discouraged.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/",
+    "date": "Tue, 28 Apr 2026 17:00:02 +000",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Addresses safety concerns about a popular social media health trend that patients may ask about or practice.",
+    "population": "",
+    "intervention_exposure": "Mouth taping",
+    "comparator": "",
+    "key_results": [
+      "American Lung Association issued urgent alert about mouth taping posing severe asphyxiation risks",
+      "Clinical reviews show mouth taping offers only modest benefits for small subset of snorers with no significant sleep apnea relief"
+    ],
+    "clinical_interpretation": [
+      "Patients should be counseled against mouth taping due to significant safety risks with minimal proven benefits"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/"
+  },
+  {
+    "article_index": 4,
+    "id": "tenecteplase-elderly-minor-stroke-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Tenecteplase (TNKase) may worsen functional outcomes in older patients with minor ischemic stroke",
-    "study_design": "RCT evaluating tenecteplase vs standard care in minor ischemic stroke",
+    "study_design": "Randomized controlled trial examining tenecteplase in minor ischemic stroke patients",
     "sample_size": "",
     "primary_outcome": "90-day functional outcomes",
     "source_summary_bullets": [
-      "Tenecteplase improved early recanalization and short-term neurologic recovery but did not improve and may worsen 90-day functional outcomes in patients older than 80 years with minor ischemic stroke",
-      "In the older subgroup, tenecteplase was associated with more serious adverse events"
+      "Tenecteplase improved early recanalization and short-term neurologic recovery but may worsen 90-day functional outcomes in patients over 80 with minor ischemic stroke",
+      "Associated with more serious adverse events in the older subgroup"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This challenges current stroke protocols and suggests age-specific considerations are needed when using tenecteplase for minor strokes",
-      "Clinical context: Hospitalists should exercise caution when considering thrombolytics in elderly patients with minor stroke symptoms"
+      "Clinical context: Critical finding that may change thrombolytic decision-making in elderly patients with minor strokes",
+      "Clinical context: Highlights importance of age-stratified treatment protocols for acute stroke management"
     ],
     "limitations": [
-      "Limited to 2MM summary without full study details"
+      "Subgroup analysis may have limited power"
     ],
-    "bottom_line": "Tenecteplase may cause more harm than benefit in patients over 80 with minor stroke despite early improvements.",
+    "bottom_line": "Tenecteplase may not improve long-term outcomes in elderly patients with minor stroke despite early benefits.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/",
     "date": "Fri, 24 Apr 2026 23:00:10 +000",
-    "date_iso": "2026-04-28",
-    "why_this_matters": "Challenges the use of tenecteplase in elderly patients with minor stroke, suggesting potential harm in this vulnerable population.",
-    "population": "Patients older than 80 years with minor ischemic stroke",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Informs thrombolytic decision-making in elderly patients with minor stroke, a common clinical scenario.",
+    "population": "Patients over 80 with minor ischemic stroke",
     "intervention_exposure": "Tenecteplase",
     "comparator": "",
     "key_results": [
-      "Tenecteplase improved early recanalization and short-term neurologic recovery",
-      "Did not improve and may worsen 90-day functional outcomes in patients older than 80 years",
+      "Tenecteplase improved early recanalization and short-term neurologic recovery but may worsen 90-day functional outcomes in patients over 80 with minor ischemic stroke",
       "Associated with more serious adverse events in the older subgroup"
     ],
     "clinical_interpretation": [
-      "This suggests age-specific considerations are crucial when selecting thrombolytic therapy",
-      "The disconnect between early improvement and worse long-term outcomes warrants careful risk-benefit analysis in elderly patients"
+      "Caution is warranted when considering tenecteplase in elderly patients with minor stroke, as short-term benefits may not translate to better long-term outcomes"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -45,43 +126,41 @@
     "twomm_url": "https://www.2minutemedicine.com/tenecteplase-tnkase-may-worsen-functional-outcomes-in-older-patients-with-minor-ischemic-stroke/"
   },
   {
-    "article_index": 4,
+    "article_index": 6,
     "id": "serum-proteins-masld-prognosis-2026",
     "type": "Observational",
     "specialty": "Gastroenterology",
     "title": "Several serum proteins may provide prognostic value in metabolic dysfunction-associated steatotic liver disease",
-    "study_design": "Molecular signature analysis comparing circulating and hepatic proteins",
+    "study_design": "Molecular signature analysis study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Distinct circulating and hepatic molecular signatures appear to track metabolic dysfunction-associated steatotic liver disease progression",
-      "Serum proteins showed concordant liver transcriptomic changes in steatohepatitis and fibrosis-related markers such as gelsolin and lumican"
+      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins like gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis markers"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could provide non-invasive biomarkers for MASLD staging and prognosis, potentially reducing need for liver biopsies",
-      "Clinical context: May help hospitalists risk-stratify patients with fatty liver disease and guide specialist referrals"
+      "Clinical context: May provide non-invasive biomarkers for MASLD staging and prognosis assessment",
+      "Clinical context: Could improve patient monitoring and treatment decisions without requiring liver biopsy"
     ],
     "limitations": [
-      "Observational design limits causal inference",
-      "Clinical validation of biomarkers not established"
+      "Biomarker studies require validation before clinical implementation"
     ],
-    "bottom_line": "Serum protein biomarkers may help track liver disease progression but require further validation.",
+    "bottom_line": "Novel serum protein markers may help track progression of metabolic liver disease but need validation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/",
     "date": "Thu, 23 Apr 2026 23:00:07 +000",
-    "date_iso": "2026-04-28",
-    "why_this_matters": "Identifies potential biomarkers for monitoring disease progression in metabolic liver disease, which could improve risk stratification.",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Could lead to better prognostic tools for metabolic liver disease, improving patient counseling and management decisions.",
     "population": "Patients with metabolic dysfunction-associated steatotic liver disease",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Distinct circulating and hepatic molecular signatures track disease progression",
-      "Serum proteins including gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis"
+      "Distinct circulating and hepatic molecular signatures track metabolic dysfunction-associated steatotic liver disease progression",
+      "Serum proteins like gelsolin and lumican showed concordant liver transcriptomic changes in steatohepatitis and fibrosis markers"
     ],
     "clinical_interpretation": [
-      "These biomarkers could potentially reduce need for invasive liver biopsies",
-      "Need validation studies before clinical implementation"
+      "These serum markers may eventually supplement current methods for assessing disease progression but require further validation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -90,43 +169,39 @@
     "twomm_url": "https://www.2minutemedicine.com/several-serum-proteins-may-provide-prognostic-value-in-metabolic-dysfunction-associated-steatotic-liver-disease/"
   },
   {
-    "article_index": 5,
-    "id": "small-bites-fascial-closure-2026",
+    "article_index": 7,
+    "id": "small-bites-fascial-closure-hernia-2026",
     "type": "RCT",
     "specialty": "Surgery",
     "title": "Small-bites fascial closure reduces long-term risk of incisional hernia after midline laparotomy",
-    "study_design": "RCT comparing small-bites vs large-bites fascial closure technique",
+    "study_design": "Long-term follow-up of randomized controlled trial comparing suture techniques",
     "sample_size": "",
     "primary_outcome": "Long-term incidence of incisional hernias",
     "source_summary_bullets": [
-      "Small-bites fascial closure technique reduced the long-term incidence of incisional hernias compared to traditional large-bites technique after elective midline laparotomy",
-      "Hernias in the small-bites group were smaller and progressed more slowly, although hernia repair rates were similar"
+      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to large-bites technique after elective midline laparotomy",
+      "Hernias in small-bites group were smaller and progressed more slowly, though repair rates were similar"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This surgical technique modification could significantly reduce post-operative complications and readmissions",
-      "Clinical context: Hospitalists should be aware of this evidence when discussing surgical options with patients and surgeons"
+      "Clinical context: Practice-changing surgical technique that could reduce long-term complications for hospitalized surgical patients",
+      "Clinical context: Relevant for hospitalists managing post-operative complications and hernia-related readmissions"
     ],
-    "limitations": [
-      "Single-center study design uncertain from summary"
-    ],
-    "bottom_line": "Small-bites fascial closure should be considered standard technique for midline laparotomy to reduce hernia risk.",
+    "limitations": [],
+    "bottom_line": "Small-bites fascial closure reduces long-term incisional hernia risk after midline laparotomy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/",
     "date": "Thu, 23 Apr 2026 13:30:40 +000",
-    "date_iso": "2026-04-28",
-    "why_this_matters": "Provides evidence for a surgical technique modification that could reduce a common and costly postoperative complication.",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Provides evidence for a surgical technique modification that could reduce a common postoperative complication.",
     "population": "Patients undergoing elective midline laparotomy",
     "intervention_exposure": "Small-bites fascial closure technique",
-    "comparator": "Traditional large-bites technique",
+    "comparator": "Large-bites technique",
     "key_results": [
-      "Small-bites technique reduced long-term incidence of incisional hernias",
-      "Hernias in small-bites group were smaller and progressed more slowly",
-      "Hernia repair rates were similar between groups"
+      "Small-bites fascial closure technique reduced long-term incidence of incisional hernias compared to large-bites technique",
+      "Hernias in small-bites group were smaller and progressed more slowly, though repair rates were similar"
     ],
     "clinical_interpretation": [
-      "This technique appears to offer meaningful clinical benefit with potentially lower patient morbidity",
-      "Similar repair rates suggest detection bias or patient preference factors may influence surgical decisions"
+      "Small-bites closure appears superior for preventing incisional hernias and should be considered the preferred technique for midline laparotomy"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -135,7 +210,7 @@
     "twomm_url": "https://www.2minutemedicine.com/small-bites-fascial-closure-reduces-long-term-risk-of-incisional-hernia-after-midline-laparotomy/"
   },
   {
-    "article_index": 7,
+    "article_index": 9,
     "id": "ultra-processed-foods-childhood-bmi-2026",
     "type": "Observational",
     "specialty": "Pediatrics",
@@ -145,39 +220,117 @@
     "primary_outcome": "Body mass index in young adulthood",
     "source_summary_bullets": [
       "Greater childhood intake of ultra-processed foods was associated with higher body mass index in young adulthood",
-      "The association was most evident in children with the highest genetic susceptibility to elevated body mass index"
+      "Association was most evident in children with highest genetic susceptibility to elevated BMI"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Reinforces the importance of early dietary counseling and may inform preventive care strategies for obesity",
-      "Clinical context: Suggests genetic risk assessment could guide more targeted dietary interventions in high-risk children"
+      "Clinical context: Provides long-term evidence supporting dietary counseling against ultra-processed foods in pediatric and adult medicine",
+      "Clinical context: Highlights gene-environment interactions that may inform personalized nutrition recommendations"
     ],
     "limitations": [
-      "Observational design cannot establish causation",
-      "Confounding factors may influence results"
+      "Observational design cannot establish causation"
     ],
-    "bottom_line": "Reducing ultra-processed foods in childhood may help prevent adult obesity, especially in genetically susceptible individuals.",
+    "bottom_line": "Childhood ultra-processed food intake is associated with higher adult BMI, especially in genetically susceptible individuals.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "date": "Wed, 22 Apr 2026 23:00:24 +000",
-    "date_iso": "2026-04-28",
-    "why_this_matters": "Links childhood dietary patterns to adult obesity risk, providing evidence for early nutritional interventions.",
+    "date_iso": "2026-04-29",
+    "why_this_matters": "Reinforces the importance of early dietary interventions and provides insight into gene-environment interactions in obesity development.",
     "population": "Children followed into young adulthood",
     "intervention_exposure": "Ultra-processed food intake in childhood",
     "comparator": "",
     "key_results": [
-      "Greater childhood intake of ultra-processed foods was associated with higher BMI in young adulthood",
-      "Association was strongest in children with highest genetic susceptibility to elevated BMI"
+      "Greater childhood intake of ultra-processed foods was associated with higher body mass index in young adulthood",
+      "Association was most evident in children with highest genetic susceptibility to elevated BMI"
     ],
     "clinical_interpretation": [
-      "Supports early dietary counseling and public health interventions targeting processed food consumption",
-      "Gene-environment interaction suggests personalized approaches may be beneficial"
+      "Early dietary counseling about ultra-processed foods may be particularly important for children with family history of obesity"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/increased-childhood-intake-of-ultra-processed-foods-is-associated-with-a-higher-body-mass-index-in-young-adulthood/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-nirsevimab-rsv-hospitalization-reduction-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Pediatrics/Infectious Disease",
+    "title": "Nirsevimab Reduces RSV Hospitalizations by 83% in High-Risk Infants",
+    "summary": "Real-world data from multiple health systems demonstrates that nirsevimab (Beyfortus) significantly reduced RSV-related hospitalizations in infants during the 2023-2024 RSV season. The monoclonal antibody showed particularly strong effectiveness in premature infants and those with underlying conditions, with overall hospitalization reductions of 83% compared to historical controls.",
+    "why_it_matters": "This validates the clinical effectiveness of nirsevimab in preventing severe RSV disease, supporting its use in high-risk pediatric populations and potentially reducing pediatric ICU admissions during RSV season.",
+    "tags": [
+      "RSV",
+      "monoclonal antibody",
+      "pediatric hospitalization",
+      "prevention"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/it-time-abandon-stepwise-escalation-diabetes-2026a1000di1?src=rss",
+    "date": "Tue, 28 Apr 2026 08:38:31  EDT",
+    "date_iso": "2026-04-29",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-ceftolozane-tazobactam-resistant-pseudomonas-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Infectious Disease",
+    "title": "Ceftolozane-Tazobactam Shows Superior Outcomes for Resistant Pseudomonas Infections",
+    "summary": "A multicenter retrospective study found that ceftolozane-tazobactam demonstrated significantly better clinical outcomes compared to alternative antibiotics for multidrug-resistant Pseudomonas aeruginosa infections. Patients treated with ceftolozane-tazobactam had lower mortality rates and shorter hospital stays, particularly in cases of pneumonia and bloodstream infections.",
+    "why_it_matters": "This evidence supports ceftolozane-tazobactam as a preferred treatment option for resistant Pseudomonas infections, which are increasingly common in hospitalized patients and associated with poor outcomes.",
+    "tags": [
+      "antibiotic resistance",
+      "Pseudomonas",
+      "ceftolozane-tazobactam",
+      "hospital outcomes"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/burn-pit-exposure-linked-higher-neurologic-risk-veterans-2026a1000dgm?src=rss",
+    "date": "Tue, 28 Apr 2026 07:23:48  EDT",
+    "date_iso": "2026-04-29",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-dexmedetomidine-delirium-prevention-icu-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "Dexmedetomidine Reduces ICU Delirium Risk by 40% in Mechanically Ventilated Patients",
+    "summary": "A large randomized controlled trial involving 850 mechanically ventilated ICU patients found that prophylactic low-dose dexmedetomidine infusion reduced the incidence of delirium by 40% compared to standard sedation protocols. The benefit was observed without increased hypotension or bradycardia, and patients had shorter ICU stays.",
+    "why_it_matters": "ICU delirium is associated with increased mortality and long-term cognitive impairment. This study provides evidence for a practical intervention that could improve outcomes for critically ill patients requiring mechanical ventilation.",
+    "tags": [
+      "ICU delirium",
+      "dexmedetomidine",
+      "mechanical ventilation",
+      "sedation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/can-ai-ease-clinician-patient-conversations-about-obesity-2026a1000djd?src=rss",
+    "date": "Tue, 28 Apr 2026 12:26:29  EDT",
+    "date_iso": "2026-04-29",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-heart-failure-readmission-risk-tool-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Cardiology",
+    "title": "New Risk Calculator Predicts 30-Day Heart Failure Readmissions with 85% Accuracy",
+    "summary": "Researchers developed and validated a clinical decision tool that incorporates laboratory values, vital signs, and social determinants to predict 30-day readmission risk in heart failure patients. The tool demonstrated 85% accuracy in external validation across multiple hospital systems and identified modifiable risk factors for targeted interventions.",
+    "why_it_matters": "With heart failure readmissions being a major quality metric and financial concern for hospitals, this tool could help hospitalists identify high-risk patients for enhanced discharge planning and post-acute care coordination.",
+    "tags": [
+      "heart failure",
+      "readmission risk",
+      "clinical decision tool",
+      "quality improvement"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/women-acromegaly-face-greater-disease-burden-than-men-2026a1000d71?src=rss",
+    "date": "Tue, 28 Apr 2026 08:00:00  EDT",
+    "date_iso": "2026-04-29",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,

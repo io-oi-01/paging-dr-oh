@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Acute Pancreatitis",
     "Acute Kidney Injury",
     "Hypercalcemia",
     "Diabetic Ketoacidosis",
@@ -89,7 +88,8 @@
     "Cirrhosis and Hepatic Encephalopathy",
     "Acute Kidney Injury",
     "Hyperosmolar Hyperglycemic State",
-    "Heparin-Induced Thrombocytopenia"
+    "Heparin-Induced Thrombocytopenia",
+    "Bacterial Meningitis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -187,7 +187,8 @@
     "galactic-hf-2021",
     "balance-2024",
     "gusto-1993",
-    "dawn-2018"
+    "dawn-2018",
+    "cibis2-1999"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -456,9 +457,16 @@
     "ms-covid-variant-surveillance-2026",
     "ms-warfarin-bleeding-risk-calculator-2026",
     "ms-ards-prone-positioning-guidelines-2026",
-    "ms-monkeypox-outbreak-healthcare-workers-2026"
+    "ms-monkeypox-outbreak-healthcare-workers-2026",
+    "polycythemia-heart-failure-mortality-2026",
+    "mouth-taping-respiratory-warning-2026",
+    "tenecteplase-elderly-minor-stroke-2026",
+    "ms-nirsevimab-rsv-hospitalization-reduction-2026",
+    "ms-ceftolozane-tazobactam-resistant-pseudomonas-2026",
+    "ms-dexmedetomidine-delirium-prevention-icu-2026",
+    "ms-heart-failure-readmission-risk-tool-2026"
   ],
-  "last_run": "2026-04-28",
+  "last_run": "2026-04-29",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -518,13 +526,10 @@
     "Pyogenic Granuloma",
     "Furunculosis",
     "Post-Inflammatory Hyperpigmentation",
-    "Acanthosis Nigricans"
+    "Acanthosis Nigricans",
+    "Steroid Acneiform Eruption"
   ],
   "litfl_cases_shown": [
-    "clinical-ice-003-leg-skin-rash",
-    "ecg-132",
-    "cxr-081",
-    "ct-080",
     "clinical-what-weingart-would-do-ii",
     "ecg-111",
     "cxr-073",
@@ -720,6 +725,10 @@
     "ecg-079",
     "cxr-001",
     "ct-072",
-    "clinical-bloody-diarrhoea"
+    "clinical-bloody-diarrhoea",
+    "ecg-055",
+    "cxr-016",
+    "ct-027",
+    "clinical-ice-007-abdominal-pain-investigations"
   ]
 }
