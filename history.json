@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Hypercalcemia",
     "Diabetic Ketoacidosis",
     "Systemic Lupus Erythematosus Flare",
     "Urinary Tract Infection and Pyelonephritis",
@@ -89,7 +88,8 @@
     "Hyperosmolar Hyperglycemic State",
     "Heparin-Induced Thrombocytopenia",
     "Bacterial Meningitis",
-    "Pulmonary Hypertension"
+    "Pulmonary Hypertension",
+    "Hypoglycemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -189,7 +189,8 @@
     "gusto-1993",
     "dawn-2018",
     "cibis2-1999",
-    "calm-2017"
+    "calm-2017",
+    "ischemia-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -472,7 +473,7 @@
     "ms-anticoagulation-reversal-updated-guidelines-2026",
     "ms-pneumonia-diagnostic-algorithm-validation-2026"
   ],
-  "last_run": "2026-04-30",
+  "last_run": "2026-05-01",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -534,13 +535,10 @@
     "Post-Inflammatory Hyperpigmentation",
     "Acanthosis Nigricans",
     "Steroid Acneiform Eruption",
-    "Merkel Cell"
+    "Merkel Cell",
+    "Lichen Planus Pigmentosus"
   ],
   "litfl_cases_shown": [
-    "clinical-tonsillitis-and-the-bull",
-    "ecg-030",
-    "cxr-040",
-    "ct-092",
     "clinical-horrible-spots-and-pain",
     "ecg-042",
     "cxr-063",
@@ -736,6 +734,10 @@
     "ecg-103",
     "cxr-070",
     "ct-070",
-    "clinical-otd"
+    "clinical-otd",
+    "ecg-125",
+    "cxr-069",
+    "ct-036",
+    "clinical-ice-005-collapse-ecg"
   ]
 }
