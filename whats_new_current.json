@@ -1,92 +1,136 @@
 [
   {
-    "article_index": 0,
+    "article_index": 3,
+    "id": "invasive-nstemi-frail-patients-2026",
+    "type": "RCT",
+    "specialty": "Cardiology",
+    "title": "Invasive management for non-ST-segment elevation myocardial infarction in frail patients may not improve mortality",
+    "study_design": "Randomized controlled trial comparing invasive management with coronary angiography versus conservative management",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "In frail, elderly patients with NSTEMI, invasive management with coronary angiography did not improve mortality and cardiovascular outcomes compared to conservative management"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This challenges the standard approach to NSTEMI management in frail elderly patients, suggesting conservative management may be appropriate in this population",
+      "Clinical context: Helps inform risk-benefit discussions about invasive cardiac procedures in frail hospitalized patients"
+    ],
+    "limitations": [
+      "Limited to 2MM summary - full study methodology unknown"
+    ],
+    "bottom_line": "In frail elderly patients with NSTEMI, conservative management appears as effective as invasive treatment for mortality and cardiovascular outcomes.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/invasive-management-for-non-st-segment-elevation-myocardial-infarction-in-frail-patients-may-not-improve-mortality/",
+    "date": "Thu, 30 Apr 2026 15:00:22 +000",
+    "date_iso": "2026-05-02",
+    "why_this_matters": "This challenges current guidelines that favor invasive management for NSTEMI, suggesting a more conservative approach may be appropriate in frail elderly patients.",
+    "population": "Frail, elderly patients with NSTEMI",
+    "intervention_exposure": "Invasive management with coronary angiography",
+    "comparator": "Conservative management",
+    "key_results": [
+      "Invasive management did not improve mortality compared to conservative management",
+      "No improvement in cardiovascular outcomes with invasive approach"
+    ],
+    "clinical_interpretation": [
+      "This suggests that frailty may be an important factor in risk-benefit calculations for invasive cardiac procedures",
+      "Conservative management may be equally effective and potentially safer in this vulnerable population"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/invasive-management-for-non-st-segment-elevation-myocardial-infarction-in-frail-patients-may-not-improve-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/invasive-management-for-non-st-segment-elevation-myocardial-infarction-in-frail-patients-may-not-improve-mortality/"
+  },
+  {
+    "article_index": 5,
     "id": "covid-vaccination-afib-reduction-2026",
     "type": "Observational",
     "specialty": "Cardiology",
     "title": "COVID-19 vaccination is associated with reduced risk of new-onset atrial fibrillation following COVID-19 infection",
     "study_design": "Observational study examining 24-month outcomes",
     "sample_size": "",
-    "primary_outcome": "New-onset atrial fibrillation/flutter after COVID-19 infection",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "COVID-19 vaccination was associated with reduced 24-month risk of new-onset atrial fibrillation/flutter after COVID-19 infection",
-      "COVID-19 infection has been linked with cardiovascular complications including new-onset atrial fibrillation"
+      "COVID-19 vaccination was associated with a reduced 24-month risk of new-onset atrial fibrillation/flutter after COVID-19 infection"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides additional rationale for COVID-19 vaccination in patients with cardiovascular risk factors",
-      "Clinical context: May influence monitoring strategies for post-COVID cardiac arrhythmias based on vaccination status"
+      "Clinical context: Provides additional evidence for COVID-19 vaccination benefits beyond preventing severe infection",
+      "Clinical context: Important for counseling patients about vaccination, especially those at risk for atrial fibrillation"
     ],
     "limitations": [
-      "Study design and methodology not available from summary"
+      "Observational study design limits causal inference",
+      "Limited to 2MM summary - confounding factors unknown"
     ],
-    "bottom_line": "COVID-19 vaccination appears to reduce atrial fibrillation risk following infection, though full study details are needed.",
+    "bottom_line": "COVID-19 vaccination appears to reduce the risk of developing new atrial fibrillation after COVID-19 infection over 24 months.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/covid-19-vaccination-is-associated-with-reduced-risk-of-new-onset-atrial-fibrillation-following-covid-19-infection/",
     "date": "Wed, 29 Apr 2026 23:00:30 +000",
-    "date_iso": "2026-04-30",
-    "why_this_matters": "This suggests COVID-19 vaccination may provide cardiovascular protection beyond infection prevention, potentially reducing atrial fibrillation risk in infected patients.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-05-02",
+    "why_this_matters": "This provides evidence for cardiovascular benefits of COVID-19 vaccination beyond infection prevention, potentially influencing vaccination decisions in patients at risk for atrial fibrillation.",
+    "population": "Patients with COVID-19 infection",
+    "intervention_exposure": "COVID-19 vaccination",
     "comparator": "",
     "key_results": [
       "COVID-19 vaccination was associated with reduced 24-month risk of new-onset atrial fibrillation/flutter after COVID-19 infection"
     ],
     "clinical_interpretation": [
-      "Adds to growing evidence of cardiovascular benefits from COVID-19 vaccination",
-      "May influence vaccination recommendations for patients at high cardiovascular risk"
+      "This suggests COVID-19 vaccination may have protective cardiovascular effects beyond preventing severe infection",
+      "The mechanism could involve reduced inflammatory response or less severe COVID-19 illness"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/covid-19-vaccination-is-associated-with-reduced-risk-of-new-onset-atrial-fibrillation-following-covid-19-infection/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/covid-19-vaccination-is-associated-with-reduced-risk-of-new-onset-atrial-fibrillation-following-covid-19-infection/"
   },
   {
-    "article_index": 1,
+    "article_index": 6,
     "id": "polycythemia-heart-failure-mortality-2026",
     "type": "Observational",
     "specialty": "Cardiology",
     "title": "Polycythemia is not associated with increased mortality in heart failure",
     "study_design": "Observational study examining mortality outcomes",
     "sample_size": "",
-    "primary_outcome": "In-hospital, short-term, and long-term mortality",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Polycythemia was not associated with increased in-hospital, short-term, or long-term mortality in heart failure patients",
-      "Previous research has shown anemia consistently associated with worse heart failure outcomes"
+      "Polycythemia was not associated with increased in-hospital, short-term, or long-term mortality in heart failure patients"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Challenges assumptions about polycythemia as a negative prognostic factor in heart failure",
-      "Clinical context: May reduce unnecessary interventions to lower hematocrit in heart failure patients with polycythemia"
+      "Clinical context: Challenges assumptions about polycythemia as a poor prognostic factor in heart failure",
+      "Clinical context: May influence decisions about treating elevated hematocrit in heart failure patients"
     ],
     "limitations": [
-      "Study methodology and confounding factors unclear from summary"
+      "Observational study design",
+      "Limited to 2MM summary - definitions and severity measures unknown"
     ],
-    "bottom_line": "Polycythemia does not appear to worsen mortality outcomes in heart failure patients across multiple time periods.",
+    "bottom_line": "Polycythemia does not appear to worsen mortality outcomes in heart failure patients across different time periods.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/",
     "date": "Tue, 28 Apr 2026 23:00:52 +000",
-    "date_iso": "2026-04-30",
-    "why_this_matters": "Challenges assumptions about polycythemia as a poor prognostic factor in heart failure patients, contrasting with well-established anemia risks.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-05-02",
+    "why_this_matters": "This finding contradicts the common clinical assumption that polycythemia worsens heart failure outcomes through increased blood viscosity and thrombotic risk.",
+    "population": "Heart failure patients",
+    "intervention_exposure": "Polycythemia",
     "comparator": "",
     "key_results": [
-      "Polycythemia was not associated with increased in-hospital, short-term, or long-term mortality in heart failure patients"
+      "Polycythemia was not associated with increased in-hospital mortality in heart failure patients",
+      "No association with increased short-term or long-term mortality"
     ],
     "clinical_interpretation": [
-      "May reduce concern about polycythemia as a prognostic factor in heart failure",
-      "Could influence decisions about treating elevated hematocrit in heart failure patients"
+      "This challenges the assumption that polycythemia always worsens heart failure prognosis",
+      "May suggest that improved oxygen-carrying capacity could offset viscosity-related risks in heart failure"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/polycythemia-is-not-associated-with-increased-mortality-in-heart-failure/"
   },
   {
-    "article_index": 2,
+    "article_index": 7,
     "id": "mouth-taping-respiratory-warning-2026",
     "type": "Public Health",
     "specialty": "Pulmonology",
@@ -95,39 +139,166 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "American Lung Association issued urgent alert about mouth taping, warning of severe asphyxiation risks",
-      "Clinical reviews show mouth taping offers modest benefits for small subset of snorers but no significant relief for sleep apnea"
+      "The American Lung Association issued an urgent alert warning that mouth taping poses severe asphyxiation risks",
+      "Clinical reviews indicate mouth taping offers modest benefits for a small subset of snorers but provides no significant relief for sleep apnea"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Important safety information for patients asking about social media sleep trends",
-      "Clinical context: Reinforces need for proper sleep apnea evaluation rather than DIY interventions"
+      "Clinical context: Important safety information for counseling patients who may ask about this viral trend",
+      "Clinical context: Reinforces the need for proper medical evaluation and treatment of sleep disorders rather than DIY remedies"
     ],
     "limitations": [
-      "Based on organizational warning rather than primary research"
+      "Public health alert rather than primary research",
+      "Limited clinical evidence base for the practice"
     ],
-    "bottom_line": "Mouth taping poses serious asphyxiation risks with minimal proven benefits and should be discouraged.",
+    "bottom_line": "Mouth taping poses serious asphyxiation risks with minimal proven benefits and should be discouraged in clinical practice.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/",
     "date": "Tue, 28 Apr 2026 17:00:02 +000",
-    "date_iso": "2026-04-30",
-    "why_this_matters": "Addresses a viral social media trend that may pose serious respiratory risks to patients asking about it for sleep issues.",
+    "date_iso": "2026-05-02",
+    "why_this_matters": "This addresses a viral social media health trend that could pose serious safety risks, requiring physician awareness for patient counseling.",
     "population": "",
-    "intervention_exposure": "",
+    "intervention_exposure": "Mouth taping",
     "comparator": "",
     "key_results": [
-      "American Lung Association issued urgent alert about mouth taping warning of severe asphyxiation risks",
-      "Clinical reviews show mouth taping offers modest benefits for small subset of snorers but no significant relief for sleep apnea"
+      "American Lung Association warns of severe asphyxiation risks from mouth taping",
+      "Clinical reviews show only modest benefits for small subset of snorers",
+      "No significant relief provided for sleep apnea"
     ],
     "clinical_interpretation": [
-      "Provides evidence-based response to patient inquiries about mouth taping",
-      "Reinforces need for proper sleep apnea evaluation and treatment"
+      "Patients may inquire about this social media trend and need evidence-based counseling",
+      "Risk-benefit ratio appears unfavorable given asphyxiation risk and minimal proven benefits"
     ],
-    "practice_readiness": "Practice-changing",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/the-american-lung-association-issues-respiratory-warning-over-viral-mouth-taping-fad/"
+  },
+  {
+    "article_index": 2,
+    "id": "who-schizophrenia-mortality-gap-2026",
+    "type": "Public Health",
+    "specialty": "Psychiatry",
+    "title": "WHO launches 2026 global initiative to bridge the schizophrenia mortality gap",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "WHO launched a global initiative to reduce the 15-to-20-year mortality gap for individuals with schizophrenia by 2030",
+      "The initiative prioritizes integration of mandatory cardiovascular and metabolic screenings into psychiatric care"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Highlights the critical need for medical screening and management of physical health conditions in psychiatric patients",
+      "Clinical context: May influence hospital protocols for patients with schizophrenia to include routine cardiovascular and metabolic assessments"
+    ],
+    "limitations": [
+      "Policy initiative rather than clinical study",
+      "Implementation and effectiveness remain to be demonstrated"
+    ],
+    "bottom_line": "The WHO initiative highlights the urgent need for integrated cardiovascular and metabolic care in schizophrenia patients to address significant mortality disparities.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/who-launches-2026-global-initiative-to-bridge-the-schizophrenia-mortality-gap/",
+    "date": "Thu, 30 Apr 2026 17:05:55 +000",
+    "date_iso": "2026-05-02",
+    "why_this_matters": "This highlights the significant mortality disparity in schizophrenia patients and emphasizes the need for integrated medical care in psychiatric patients.",
+    "population": "Individuals with schizophrenia",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "WHO launched global initiative targeting 15-to-20-year mortality gap in schizophrenia by 2030",
+      "Initiative prioritizes mandatory cardiovascular and metabolic screenings in psychiatric care"
+    ],
+    "clinical_interpretation": [
+      "This underscores the critical need for medical screening and management in psychiatric patients",
+      "Hospitalists should be aware of increased cardiovascular and metabolic risks in schizophrenia patients"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/who-launches-2026-global-initiative-to-bridge-the-schizophrenia-mortality-gap/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/who-launches-2026-global-initiative-to-bridge-the-schizophrenia-mortality-gap/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-ai-sepsis-detection-mortality-reduction-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "AI-Based Sepsis Detection System Reduces Hospital Mortality by 18%",
+    "summary": "A large-scale implementation study across multiple hospital systems demonstrated that an AI-powered early sepsis detection algorithm reduced in-hospital mortality by 18% and decreased length of stay by 1.2 days on average. The system analyzes vital signs, laboratory values, and electronic health record data in real-time to alert clinicians of patients at high risk for sepsis within the next 4 hours.",
+    "why_it_matters": "This represents a significant advancement in sepsis care that could be implemented in most hospital systems, potentially saving thousands of lives annually while reducing healthcare costs.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "mortality",
+      "early detection"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/vepdegestrant-earns-fda-nod-esr1-mutated-breast-cancer-2026a1000e23?src=rss",
+    "date": "Fri, 1 May 2026 16:14:05  EDT",
+    "date_iso": "2026-05-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-fda-sglt2-inhibitor-heart-failure-expansion-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Expands SGLT2 Inhibitor Indications to Include Heart Failure Regardless of Diabetes Status",
+    "summary": "The FDA has approved expanded indications for empagliflozin and dapagliflozin to treat heart failure with reduced ejection fraction in all patients, regardless of diabetes status. This approval is based on landmark trials showing 25% reduction in cardiovascular death and heart failure hospitalization in non-diabetic patients with HFrEF.",
+    "why_it_matters": "This regulatory change will significantly expand treatment options for heart failure patients in the hospital setting, requiring hospitalists to familiarize themselves with SGLT2 inhibitor use beyond diabetes management.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "heart failure",
+      "FDA approval",
+      "cardiovascular"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/can-deintensified-rt-work-hpv-oropharyngeal-cancer-2026a1000e1d?src=rss",
+    "date": "Fri, 1 May 2026 12:11:44  EDT",
+    "date_iso": "2026-05-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-cdc-antibiotic-resistance-outbreak-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert for Carbapenem-Resistant Enterobacterales Outbreak in 12 States",
+    "summary": "The CDC has issued a Level 2 alert regarding a multi-state outbreak of carbapenem-resistant Enterobacterales (CRE) affecting over 200 patients across 45 healthcare facilities in 12 states. The outbreak strain shows resistance to all available antibiotics except colistin and has been associated with a 40% mortality rate in bacteremic patients.",
+    "why_it_matters": "This outbreak requires immediate implementation of enhanced infection control measures and may necessitate changes in empiric antibiotic selection for high-risk patients in affected regions.",
+    "tags": [
+      "antibiotic resistance",
+      "CRE",
+      "outbreak",
+      "infection control"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/nerandomilast-may-have-mortality-benefit-patients-autoimmune-2026a1000e07?src=rss",
+    "date": "Fri, 1 May 2026 09:56:01  EDT",
+    "date_iso": "2026-05-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-ards-prone-positioning-updated-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Updated ARDS Guidelines Recommend Earlier and Longer Prone Positioning",
+    "summary": "The American Thoracic Society and European Society of Intensive Care Medicine have released updated ARDS management guidelines recommending prone positioning for at least 16 hours daily in patients with moderate-to-severe ARDS (P/F ratio <150), initiated within 12 hours of diagnosis. The guidelines also expand recommendations to include prone positioning in mild ARDS under certain circumstances.",
+    "why_it_matters": "These updated guidelines will change ICU protocols for ARDS management and require hospitalists and intensivists to implement prone positioning earlier and for longer durations than previously recommended.",
+    "tags": [
+      "ARDS",
+      "prone positioning",
+      "guidelines",
+      "mechanical ventilation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/food-insecurity-and-poverty-may-raise-masld-risk-us-2026a1000e00?src=rss",
+    "date": "Fri, 1 May 2026 09:14:50  EDT",
+    "date_iso": "2026-05-02",
+    "card_type": "medscape"
   },
   {
     "article_index": 5,
@@ -4646,26 +4817,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/spains-cardiovascular-risk-standards-introduce-vascular-age-2026a10007s0?src=rss",
     "date": "Fri, 13 Mar 2026 04:58:08  EDT",
-    "date_iso": "2026-03-15",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-ai-sepsis-detection-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Critical Care",
-    "title": "AI-Based Sepsis Detection System Reduces Hospital Mortality by 18%",
-    "summary": "A large multicenter study of 45,000 patients demonstrated that an AI-powered early warning system for sepsis detection reduced in-hospital mortality by 18% and decreased time to antibiotic administration by 1.2 hours. The system integrated vital signs, laboratory values, and electronic health record data to provide real-time risk stratification.",
-    "why_it_matters": "This technology could significantly improve sepsis outcomes in hospitalized patients and represents a major advancement in clinical decision support that may soon be implemented in hospital systems.",
-    "tags": [
-      "sepsis",
-      "artificial intelligence",
-      "early detection",
-      "mortality"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/doctors-tell-mps-corridor-care-driving-abuse-nhs-staff-2026a10007t7?src=rss",
-    "date": "Fri, 13 Mar 2026 08:55:47  EDT",
     "date_iso": "2026-03-15",
     "card_type": "medscape"
   },

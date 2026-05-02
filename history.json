@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Diabetic Ketoacidosis",
     "Systemic Lupus Erythematosus Flare",
     "Urinary Tract Infection and Pyelonephritis",
     "Acute Liver Failure",
@@ -89,7 +88,8 @@
     "Heparin-Induced Thrombocytopenia",
     "Bacterial Meningitis",
     "Pulmonary Hypertension",
-    "Hypoglycemia"
+    "Hypoglycemia",
+    "Takotsubo Cardiomyopathy"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -190,7 +190,8 @@
     "dawn-2018",
     "cibis2-1999",
     "calm-2017",
-    "ischemia-2020"
+    "ischemia-2020",
+    "clots3-2013"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -471,9 +472,15 @@
     "ms-heart-failure-sglt2-expanded-indication-2026",
     "ms-sepsis-early-detection-ai-tool-2026",
     "ms-anticoagulation-reversal-updated-guidelines-2026",
-    "ms-pneumonia-diagnostic-algorithm-validation-2026"
+    "ms-pneumonia-diagnostic-algorithm-validation-2026",
+    "invasive-nstemi-frail-patients-2026",
+    "who-schizophrenia-mortality-gap-2026",
+    "ms-ai-sepsis-detection-mortality-reduction-2026",
+    "ms-fda-sglt2-inhibitor-heart-failure-expansion-2026",
+    "ms-cdc-antibiotic-resistance-outbreak-alert-2026",
+    "ms-ards-prone-positioning-updated-guidelines-2026"
   ],
-  "last_run": "2026-05-01",
+  "last_run": "2026-05-02",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -536,12 +543,10 @@
     "Acanthosis Nigricans",
     "Steroid Acneiform Eruption",
     "Merkel Cell",
-    "Lichen Planus Pigmentosus"
+    "Lichen Planus Pigmentosus",
+    "Benign Familial Pemphigus"
   ],
   "litfl_cases_shown": [
-    "clinical-horrible-spots-and-pain",
-    "ecg-042",
-    "cxr-063",
     "ct-018",
     "clinical-ice-007-abdominal-pain-investigations",
     "ecg-062",
@@ -738,6 +743,9 @@
     "ecg-125",
     "cxr-069",
     "ct-036",
-    "clinical-ice-005-collapse-ecg"
+    "clinical-ice-005-collapse-ecg",
+    "cxr-061",
+    "ct-049",
+    "clinical-warfarin-deliberate-self-poisoning"
   ]
 }
