@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Systemic Lupus Erythematosus Flare",
     "Urinary Tract Infection and Pyelonephritis",
     "Acute Liver Failure",
     "Venous Thromboembolism",
@@ -89,7 +88,8 @@
     "Bacterial Meningitis",
     "Pulmonary Hypertension",
     "Hypoglycemia",
-    "Takotsubo Cardiomyopathy"
+    "Takotsubo Cardiomyopathy",
+    "Venous Thromboembolism"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -191,7 +191,8 @@
     "cibis2-1999",
     "calm-2017",
     "ischemia-2020",
-    "clots3-2013"
+    "clots3-2013",
+    "atlas-2012"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -478,9 +479,18 @@
     "ms-ai-sepsis-detection-mortality-reduction-2026",
     "ms-fda-sglt2-inhibitor-heart-failure-expansion-2026",
     "ms-cdc-antibiotic-resistance-outbreak-alert-2026",
-    "ms-ards-prone-positioning-updated-guidelines-2026"
+    "ms-ards-prone-positioning-updated-guidelines-2026",
+    "invasive-nstemi-frail-patients-mortality-2026",
+    "covid-vaccination-afib-reduction-hospitalist-2026",
+    "polycythemia-heart-failure-mortality-outcomes-2026",
+    "who-schizophrenia-mortality-gap-initiative-2026",
+    "mouth-taping-respiratory-warning-ala-2026",
+    "napping-mortality-older-adults-2026",
+    "ms-cardiac-arrest-hypothermia-guidelines-2026",
+    "ms-fda-ozempic-shortage-update-2026",
+    "ms-covid-jn1-variant-surveillance-2026"
   ],
-  "last_run": "2026-05-02",
+  "last_run": "2026-05-03",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -544,13 +554,10 @@
     "Steroid Acneiform Eruption",
     "Merkel Cell",
     "Lichen Planus Pigmentosus",
-    "Benign Familial Pemphigus"
+    "Benign Familial Pemphigus",
+    "Acute Generalized Exanthematous Pustulosis"
   ],
   "litfl_cases_shown": [
-    "ct-018",
-    "clinical-ice-007-abdominal-pain-investigations",
-    "ecg-062",
-    "cxr-032",
     "ct-089",
     "clinical-intra-aortic-balloon-pump",
     "ecg-081",
@@ -746,6 +753,10 @@
     "clinical-ice-005-collapse-ecg",
     "cxr-061",
     "ct-049",
-    "clinical-warfarin-deliberate-self-poisoning"
+    "clinical-warfarin-deliberate-self-poisoning",
+    "ecg-074",
+    "cxr-058",
+    "ct-059",
+    "clinical-ice-010-skin-rash-and-fever"
   ]
 }
