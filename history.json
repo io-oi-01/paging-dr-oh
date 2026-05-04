@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Urinary Tract Infection and Pyelonephritis",
     "Acute Liver Failure",
     "Venous Thromboembolism",
     "Cirrhosis and Hepatic Encephalopathy",
@@ -89,7 +88,8 @@
     "Pulmonary Hypertension",
     "Hypoglycemia",
     "Takotsubo Cardiomyopathy",
-    "Venous Thromboembolism"
+    "Venous Thromboembolism",
+    "Rhabdomyolysis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -192,7 +192,8 @@
     "calm-2017",
     "ischemia-2020",
     "clots3-2013",
-    "atlas-2012"
+    "atlas-2012",
+    "proact-2018"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -488,9 +489,15 @@
     "napping-mortality-older-adults-2026",
     "ms-cardiac-arrest-hypothermia-guidelines-2026",
     "ms-fda-ozempic-shortage-update-2026",
-    "ms-covid-jn1-variant-surveillance-2026"
+    "ms-covid-jn1-variant-surveillance-2026",
+    "covid-vaccination-afib-2026",
+    "ms-heart-failure-empagliflozin-outcomes-2026",
+    "ms-sepsis-biomarker-procalcitonin-2026",
+    "ms-covid-variant-ba6-hospitalization-2026",
+    "ms-fda-warfarin-reversal-agent-approval-2026",
+    "ms-ventilator-weaning-protocol-2026"
   ],
-  "last_run": "2026-05-03",
+  "last_run": "2026-05-04",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -555,13 +562,10 @@
     "Merkel Cell",
     "Lichen Planus Pigmentosus",
     "Benign Familial Pemphigus",
-    "Acute Generalized Exanthematous Pustulosis"
+    "Acute Generalized Exanthematous Pustulosis",
+    "Acne"
   ],
   "litfl_cases_shown": [
-    "ct-089",
-    "clinical-intra-aortic-balloon-pump",
-    "ecg-081",
-    "cxr-017",
     "ct-076",
     "clinical-puzzling-out-the-perc-rule",
     "ecg-126",
@@ -757,6 +761,10 @@
     "ecg-074",
     "cxr-058",
     "ct-059",
-    "clinical-ice-010-skin-rash-and-fever"
+    "clinical-ice-010-skin-rash-and-fever",
+    "ecg-121",
+    "cxr-014",
+    "ct-066",
+    "clinical-lionfish-envenoming"
   ]
 }
