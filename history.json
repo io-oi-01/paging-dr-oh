@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Acute Liver Failure",
     "Venous Thromboembolism",
     "Cirrhosis and Hepatic Encephalopathy",
     "Clostridioides difficile Infection",
@@ -89,7 +88,8 @@
     "Hypoglycemia",
     "Takotsubo Cardiomyopathy",
     "Venous Thromboembolism",
-    "Rhabdomyolysis"
+    "Rhabdomyolysis",
+    "Lower GI Bleeding"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -193,7 +193,8 @@
     "ischemia-2020",
     "clots3-2013",
     "atlas-2012",
-    "proact-2018"
+    "proact-2018",
+    "restart-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -495,9 +496,15 @@
     "ms-sepsis-biomarker-procalcitonin-2026",
     "ms-covid-variant-ba6-hospitalization-2026",
     "ms-fda-warfarin-reversal-agent-approval-2026",
-    "ms-ventilator-weaning-protocol-2026"
+    "ms-ventilator-weaning-protocol-2026",
+    "low-volume-peg-bowel-prep-hospitalized-2026",
+    "alcohol-use-disorder-pharmacotherapy-veterans-2026",
+    "pharma-roundup-may-2026",
+    "minidock-tb-molecular-test-2026",
+    "nirmatrelvir-ritonavir-vaccinated-covid-2026",
+    "triple-antihypertensive-ich-prevention-2026"
   ],
-  "last_run": "2026-05-04",
+  "last_run": "2026-05-05",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -563,13 +570,10 @@
     "Lichen Planus Pigmentosus",
     "Benign Familial Pemphigus",
     "Acute Generalized Exanthematous Pustulosis",
-    "Acne"
+    "Acne",
+    "Drug Reaction with Eosinophilia and Systemic Symptoms"
   ],
   "litfl_cases_shown": [
-    "ct-076",
-    "clinical-puzzling-out-the-perc-rule",
-    "ecg-126",
-    "cxr-061",
     "ct-028",
     "clinical-high-pressure-injection-injury",
     "cxr-091",
@@ -765,6 +769,10 @@
     "ecg-121",
     "cxr-014",
     "ct-066",
-    "clinical-lionfish-envenoming"
+    "clinical-lionfish-envenoming",
+    "ecg-089",
+    "cxr-076",
+    "ct-024",
+    "clinical-debakey-dissection"
   ]
 }
