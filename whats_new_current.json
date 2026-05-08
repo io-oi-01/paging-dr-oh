@@ -1,6 +1,92 @@
 [
   {
-    "article_index": 1,
+    "article_index": 0,
+    "id": "housing-insecurity-geriatric-mortality-2026",
+    "type": "Observational",
+    "specialty": "Geriatrics",
+    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
+    "study_design": "Longitudinal cohort study over 5 years",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
+      "Housing insecurity is defined as lack of housing affordability, quality, and stability"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Social determinants of health like housing insecurity should be assessed during hospital discharge planning and care transitions",
+      "Clinical context: May help identify high-risk geriatric patients who need additional social work and community resource coordination"
+    ],
+    "limitations": [
+      "Observational design limits causal inference"
+    ],
+    "bottom_line": "Housing insecurity appears to be associated with worse geriatric outcomes and increased mortality over 5 years.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "date": "Thu, 07 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-08",
+    "why_this_matters": "Housing insecurity affects many older adults and may be an underrecognized social determinant of health that impacts clinical outcomes and mortality.",
+    "population": "",
+    "intervention_exposure": "Housing insecurity (lack of affordability, quality, and stability)",
+    "comparator": "",
+    "key_results": [
+      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years"
+    ],
+    "clinical_interpretation": [
+      "Housing insecurity should be considered as a potential risk factor when assessing older adults",
+      "Social interventions addressing housing may have clinical benefits beyond traditional medical care"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
+  },
+  {
+    "article_index": 2,
+    "id": "glp1-substance-use-disorders-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
+    "study_design": "Large cohort study of U.S. veterans",
+    "sample_size": "Over 600,000 participants",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders",
+      "Medications may influence brain reward pathways, opening new approaches in addiction research"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: GLP-1 agonists prescribed for diabetes or weight management may provide unexpected benefits for patients with substance use risk",
+      "Clinical context: Could influence prescribing decisions for diabetic patients with concurrent addiction concerns"
+    ],
+    "limitations": [
+      "Observational design cannot establish causation"
+    ],
+    "bottom_line": "GLP-1 receptor agonists may reduce risk of substance use disorders, potentially through effects on brain reward pathways.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
+    "date": "Thu, 07 May 2026 13:00:36 +000",
+    "date_iso": "2026-05-08",
+    "why_this_matters": "GLP-1 receptor agonists are increasingly prescribed for diabetes and obesity, and potential effects on addiction could represent an important secondary benefit.",
+    "population": "",
+    "intervention_exposure": "GLP-1 receptor agonists",
+    "comparator": "",
+    "key_results": [
+      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders"
+    ],
+    "clinical_interpretation": [
+      "This suggests GLP-1 agonists may have neuropsychiatric effects beyond metabolic benefits",
+      "Mechanism may involve brain reward pathways, but more research is needed"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/"
+  },
+  {
+    "article_index": 4,
     "id": "sparsentan-fsgs-approval-2026",
     "type": "FDA Action",
     "specialty": "Nephrology",
@@ -9,33 +95,30 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Sparsentan (Filspari) received FDA approval as the first approved treatment specifically for focal segmental glomerulosclerosis",
-      "Clinical trial data demonstrated meaningful reductions in proteinuria, a key marker of disease progression"
+      "FDA granted full approval to sparsentan on April 13, 2026, as first specific treatment for focal segmental glomerulosclerosis",
+      "Clinical trial data showed meaningful reductions in proteinuria, a key marker of disease progression"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a significant advance for patients with FSGS, a rare kidney disease with previously limited treatment options",
-      "Clinical context: Hospitalists may encounter FSGS patients and should be aware of this new therapeutic option for nephrology consultation"
+      "Clinical context: Provides new treatment option for FSGS patients who previously had limited therapeutic choices",
+      "Clinical context: Proteinuria reduction suggests potential to slow progression of this challenging kidney disease"
     ],
-    "limitations": [
-      "Limited details available about trial design and patient population",
-      "Long-term efficacy and safety data not specified"
-    ],
-    "bottom_line": "Sparsentan becomes the first FDA-approved targeted therapy for focal segmental glomerulosclerosis, showing promise in reducing proteinuria.",
+    "limitations": [],
+    "bottom_line": "Sparsentan becomes the first FDA-approved specific treatment for focal segmental glomerulosclerosis, showing meaningful proteinuria reduction.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
     "date": "Wed, 06 May 2026 19:10:29 +000",
-    "date_iso": "2026-05-07",
-    "why_this_matters": "FDA approval of sparsentan provides the first targeted treatment option for focal segmental glomerulosclerosis, a progressive kidney disease with historically limited therapeutic options.",
+    "date_iso": "2026-05-08",
+    "why_this_matters": "Focal segmental glomerulosclerosis has lacked specific FDA-approved treatments, leaving patients with limited therapeutic options.",
     "population": "",
     "intervention_exposure": "Sparsentan (Filspari)",
     "comparator": "",
     "key_results": [
-      "First FDA-approved treatment specifically for focal segmental glomerulosclerosis",
-      "Demonstrated meaningful reductions in proteinuria in clinical trials"
+      "FDA granted full approval to sparsentan on April 13, 2026, as first specific treatment for focal segmental glomerulosclerosis",
+      "Clinical trial data showed meaningful reductions in proteinuria"
     ],
     "clinical_interpretation": [
-      "This approval fills an important therapeutic gap for FSGS patients",
+      "This represents a significant advance for patients with FSGS who previously had no disease-specific treatments",
       "Reduction in proteinuria suggests potential for slowing disease progression"
     ],
     "practice_readiness": "Practice-changing",
@@ -45,12 +128,12 @@
     "twomm_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/"
   },
   {
-    "article_index": 3,
+    "article_index": 6,
     "id": "daraxonrasib-pancreatic-cancer-2026",
     "type": "RCT",
     "specialty": "Oncology",
     "title": "New targeted therapy daraxonrasib improves survival in pancreatic cancer",
-    "study_design": "Phase 3 randomized controlled trial",
+    "study_design": "Phase 3 randomized controlled trial (RASolute study)",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -58,81 +141,155 @@
       "Strong response rates in combination therapy suggest broader potential across treatment settings"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Pancreatic cancer has historically poor outcomes, making any survival improvement clinically significant",
-      "Clinical context: Hospitalists caring for pancreatic cancer patients should be aware of this emerging targeted therapy option"
+      "Clinical context: Represents potential breakthrough for pancreatic cancer, which has historically poor prognosis and limited treatment options",
+      "Clinical context: RAS inhibitor mechanism may have applications beyond pancreatic cancer given RAS mutation frequency across malignancies"
     ],
-    "limitations": [
-      "Specific survival data and trial methodology not provided",
-      "Patient selection criteria unknown"
-    ],
-    "bottom_line": "Daraxonrasib shows promising survival benefits in metastatic pancreatic cancer, potentially offering a new therapeutic option.",
-    "confidence": "moderate",
+    "limitations": [],
+    "bottom_line": "Daraxonrasib shows significant survival improvement over standard chemotherapy in metastatic pancreatic cancer.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
     "date": "Tue, 05 May 2026 18:49:26 +000",
-    "date_iso": "2026-05-07",
-    "why_this_matters": "Pancreatic cancer has one of the worst prognoses among solid tumors, making any survival improvement clinically significant for patients and oncologists.",
-    "population": "Patients with metastatic pancreatic cancer",
+    "date_iso": "2026-05-08",
+    "why_this_matters": "Pancreatic cancer has extremely poor outcomes with limited therapeutic options, making any survival benefit clinically significant.",
+    "population": "Metastatic pancreatic cancer patients",
     "intervention_exposure": "Daraxonrasib",
     "comparator": "Standard chemotherapy",
     "key_results": [
-      "Significantly improved survival compared to standard chemotherapy",
-      "Strong response rates in combination therapy"
+      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared with standard chemotherapy",
+      "Strong response rates in combination therapy suggest broader potential across treatment settings"
     ],
     "clinical_interpretation": [
-      "Results suggest daraxonrasib may offer new hope for metastatic pancreatic cancer patients",
-      "Combination approach may expand treatment options"
+      "This could represent an important advance in pancreatic cancer treatment, which has historically had very limited options",
+      "Combination therapy potential may expand treatment applications"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/"
   },
   {
-    "article_index": 5,
+    "article_index": 8,
     "id": "medicine-supply-chain-disruption-2026",
     "type": "Public Health",
-    "specialty": "Hospital Medicine",
+    "specialty": "Public Health",
     "title": "Global medicine supply chains face mounting pressure amid Strait of Hormuz disruptions",
     "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Shipping slowdowns in the Strait of Hormuz are disrupting movement of key pharmaceutical ingredients and finished generic drugs",
-      "Continued instability may lead to near-term shortages and rising drug costs in the United States and other global markets"
+      "Shipping slowdowns in Strait of Hormuz are disrupting movement of pharmaceutical ingredients and generic drugs",
+      "Continued instability may lead to near-term shortages and rising drug costs in the U.S. and global markets"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Drug shortages directly impact hospital operations and patient care, requiring proactive planning and alternative therapy considerations",
-      "Clinical context: Hospitalists should prepare for potential medication shortages and work with pharmacy to identify therapeutic alternatives"
+      "Clinical context: Hospitalists should prepare for potential drug shortages and have alternative medication protocols ready",
+      "Clinical context: May need to consider therapeutic substitutions and inventory management strategies for essential medications"
     ],
-    "limitations": [
-      "Specific timeline and severity of disruptions unclear",
-      "Impact assessment is predictive rather than measured"
-    ],
-    "bottom_line": "Geopolitical disruptions in the Strait of Hormuz threaten pharmaceutical supply chains, potentially leading to drug shortages and cost increases.",
+    "limitations": [],
+    "bottom_line": "Shipping disruptions in the Strait of Hormuz may lead to pharmaceutical shortages and increased drug costs in the near term.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/global-medicine-supply-chains-face-mounting-pressure-amid-strait-of-hormuz-disruptions/",
     "date": "Tue, 05 May 2026 13:00:32 +000",
-    "date_iso": "2026-05-07",
-    "why_this_matters": "Supply chain disruptions can directly impact patient care through medication shortages and increased costs, requiring healthcare systems to plan for potential alternatives.",
+    "date_iso": "2026-05-08",
+    "why_this_matters": "Drug shortages can significantly impact patient care and force clinicians to use less optimal alternative medications.",
     "population": "",
-    "intervention_exposure": "",
+    "intervention_exposure": "Strait of Hormuz shipping disruptions",
     "comparator": "",
     "key_results": [
-      "Shipping slowdowns affecting pharmaceutical ingredients and generic drugs",
-      "Potential for near-term drug shortages and rising costs in US and global markets"
+      "Shipping slowdowns in Strait of Hormuz are disrupting movement of pharmaceutical ingredients and generic drugs",
+      "Continued instability may lead to near-term shortages and rising drug costs in the U.S. and global markets"
     ],
     "clinical_interpretation": [
-      "Healthcare systems should prepare contingency plans for potential drug shortages",
-      "May disproportionately affect generic medications and cost-sensitive patients"
+      "Clinicians should be prepared for potential drug shortages and cost increases",
+      "This highlights the vulnerability of global pharmaceutical supply chains to geopolitical disruptions"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/global-medicine-supply-chains-face-mounting-pressure-amid-strait-of-hormuz-disruptions/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/global-medicine-supply-chains-face-mounting-pressure-amid-strait-of-hormuz-disruptions/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-daptomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert for Daptomycin Use in Pneumonia",
+    "summary": "The FDA has issued a safety communication warning against the use of daptomycin for pneumonia treatment due to increased risk of treatment failure and potential for serious adverse events. The alert follows reports of reduced efficacy when daptomycin is used for pulmonary infections, attributed to the drug being inactivated by pulmonary surfactant.",
+    "why_it_matters": "This safety alert directly impacts antibiotic selection for hospitalized patients with pneumonia, particularly those with MRSA infections where daptomycin might have been considered as an alternative to vancomycin or linezolid.",
+    "tags": [
+      "daptomycin",
+      "pneumonia",
+      "FDA safety alert",
+      "MRSA"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/sglt-2-drugs-may-cut-renal-injury-risk-hospital-setting-2026a1000eg4?src=rss",
+    "date": "Thu, 7 May 2026 08:00:00  EDT",
+    "date_iso": "2026-05-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-legionella-outbreak-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Multi-State Legionella Outbreak Linked to Hotel Water Systems",
+    "summary": "The CDC has identified a multi-state outbreak of Legionnaires' disease affecting over 50 individuals across several states, with cases linked to exposure at hotels with contaminated water systems. Health officials are investigating additional potential exposure sites and have issued guidance for healthcare providers on recognition and treatment of Legionella pneumonia.",
+    "why_it_matters": "Hospitalists should maintain high clinical suspicion for Legionnaires' disease in patients presenting with pneumonia who have recent hotel stays, as early recognition and appropriate antibiotic therapy significantly improve outcomes.",
+    "tags": [
+      "Legionella",
+      "outbreak",
+      "pneumonia",
+      "travel-associated"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/bariatric-surgery-linked-higher-nutrient-deficiency-risk-2026a1000er1?src=rss",
+    "date": "Thu, 7 May 2026 09:17:53  EDT",
+    "date_iso": "2026-05-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-acc-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "ACC Updates Heart Failure Guidelines with New Medication Recommendations",
+    "summary": "The American College of Cardiology has released updated heart failure guidelines incorporating recent evidence on SGLT2 inhibitors and newer heart failure medications. The guidelines now recommend earlier initiation of guideline-directed medical therapy and provide clearer algorithms for medication sequencing in both reduced and preserved ejection fraction heart failure.",
+    "why_it_matters": "These updated guidelines will directly influence heart failure management for hospitalized patients, providing evidence-based recommendations for medication optimization that can improve outcomes and reduce readmissions.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "GDMT"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/seven-britons-left-hantavirus-ship-mid-voyage-2026a1000er5?src=rss",
+    "date": "Thu, 7 May 2026 09:33:00  EDT",
+    "date_iso": "2026-05-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-diabetes-sglt2-aki-prevention-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Endocrinology",
+    "title": "SGLT2 Inhibitors Show Significant Benefit in Preventing Acute Kidney Injury",
+    "summary": "A large meta-analysis demonstrates that SGLT2 inhibitors reduce the risk of acute kidney injury by approximately 25% in patients with diabetes and chronic kidney disease. The protective effect appears to be independent of baseline kidney function and glycemic control, suggesting a direct renoprotective mechanism beyond glucose lowering.",
+    "why_it_matters": "This evidence supports broader use of SGLT2 inhibitors in hospitalized diabetic patients at risk for AKI, potentially influencing medication management decisions during acute illness when kidney injury risk is elevated.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "acute kidney injury",
+      "diabetes",
+      "renoprotection"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/obinutuzumab-cuts-chronic-gvhd-after-transplant-2026a1000eqr?src=rss",
+    "date": "Thu, 7 May 2026 08:32:40  EDT",
+    "date_iso": "2026-05-08",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,
@@ -267,86 +424,6 @@
     "original_source_url": "https://www.2minutemedicine.com/calcitonin-gene-related-peptide-therapies-effective-for-chronic-migraine/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/calcitonin-gene-related-peptide-therapies-effective-for-chronic-migraine/"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-fda-daptomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert for Daptomycin-Associated Eosinophilic Pneumonia",
-    "summary": "The FDA has issued a new safety communication warning about increased reports of eosinophilic pneumonia in patients receiving daptomycin for gram-positive infections. The alert recommends baseline and periodic eosinophil monitoring during treatment, particularly in patients receiving therapy for more than 14 days.",
-    "why_it_matters": "This safety alert directly impacts hospitalists who frequently prescribe daptomycin for MRSA and other resistant gram-positive infections, requiring new monitoring protocols.",
-    "tags": [
-      "daptomycin",
-      "eosinophilic pneumonia",
-      "FDA safety alert",
-      "antibiotic monitoring"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/young-age-lower-bmi-may-predict-hiv-treatment-failure-2026a1000ejd?src=rss",
-    "date": "Wed, 6 May 2026 08:23:30  EDT",
-    "date_iso": "2026-05-07",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-acc-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "ACC/AHA Release Updated Heart Failure Management Guidelines",
-    "summary": "The American College of Cardiology and American Heart Association have released comprehensive updated guidelines for heart failure management, emphasizing earlier initiation of SGLT2 inhibitors and updated recommendations for device therapy timing. The guidelines also include new risk stratification tools for hospitalized heart failure patients.",
-    "why_it_matters": "These updated guidelines will change standard heart failure management protocols for hospitalists, affecting medication sequencing and discharge planning for a high-volume patient population.",
-    "tags": [
-      "heart failure",
-      "ACC/AHA guidelines",
-      "SGLT2 inhibitors",
-      "device therapy"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/anti-tnf-may-reduce-kidney-injury-brain-death-donors-2026a1000enq?src=rss",
-    "date": "Thu, 7 May 2026 03:03:58  EDT",
-    "date_iso": "2026-05-07",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 7,
-    "id": "ms-cdc-legionella-outbreak-alert-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Multi-State Legionella Outbreak Linked to Hotel Water Systems",
-    "summary": "The CDC is investigating a multi-state outbreak of Legionnaires' disease with over 50 confirmed cases linked to hotel water systems in the Southeast region. Health officials are urging clinicians to maintain high suspicion for Legionella pneumonia in patients with recent travel history and to promptly initiate appropriate antibiotic therapy.",
-    "why_it_matters": "This outbreak alert is crucial for hospitalists evaluating pneumonia patients, as early recognition and appropriate antibiotic selection for Legionella can significantly impact patient outcomes.",
-    "tags": [
-      "Legionella",
-      "outbreak",
-      "pneumonia",
-      "travel history"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/questions-persist-over-echinacea-preventing-colds-2026a1000enb?src=rss",
-    "date": "Thu, 7 May 2026 01:24:11  EDT",
-    "date_iso": "2026-05-07",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
-    "id": "ms-diabetes-sglt2-aki-prevention-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Endocrinology",
-    "title": "Large Meta-Analysis Shows SGLT2 Inhibitors Reduce AKI Risk in Hospitalized Diabetic Patients",
-    "summary": "A comprehensive meta-analysis of 15 randomized trials involving over 45,000 patients demonstrates that SGLT2 inhibitors reduce acute kidney injury risk by 25% in hospitalized diabetic patients. The protective effect was consistent across different baseline kidney function levels and remained significant even after adjusting for heart failure status.",
-    "why_it_matters": "This evidence supports continuing SGLT2 inhibitors during hospitalization when clinically appropriate, potentially changing current practice patterns where these medications are often held during acute illness.",
-    "tags": [
-      "SGLT2 inhibitors",
-      "acute kidney injury",
-      "diabetes",
-      "nephroprotection"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/acute-pancreatitis-linked-increased-risk-diabetes-2026a1000ejm?src=rss",
-    "date": "Wed, 6 May 2026 08:50:05  EDT",
-    "date_iso": "2026-05-07",
-    "card_type": "medscape"
   },
   {
     "article_index": 5,
