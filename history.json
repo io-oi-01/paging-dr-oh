@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Clostridioides difficile Infection",
     "Alcohol Withdrawal Syndrome",
     "Infective Endocarditis",
     "Myxedema Coma",
@@ -89,7 +88,8 @@
     "Rhabdomyolysis",
     "Lower GI Bleeding",
     "Hyperkalemia",
-    "Cellulitis and Skin Soft Tissue Infections"
+    "Cellulitis and Skin Soft Tissue Infections",
+    "Syncope"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -196,7 +196,8 @@
     "proact-2018",
     "restart-2019",
     "castle-af-2018",
-    "reduce-it-2019"
+    "reduce-it-2019",
+    "ideal-2010"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -515,9 +516,11 @@
     "ms-acc-heart-failure-guidelines-2026",
     "ms-cdc-legionella-outbreak-alert-2026",
     "ms-diabetes-sglt2-aki-prevention-2026",
-    "housing-insecurity-geriatric-mortality-2026"
+    "housing-insecurity-geriatric-mortality-2026",
+    "orforglipron-foundayo-oral-glp1-2026",
+    "maternal-benzodiazepines-psychiatric-risk-2026"
   ],
-  "last_run": "2026-05-08",
+  "last_run": "2026-05-09",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -586,13 +589,10 @@
     "Acne",
     "Drug Reaction with Eosinophilia and Systemic Symptoms",
     "Venous Leg Ulcer",
-    "Cutaneous T-cell Lymphoma"
+    "Cutaneous T-cell Lymphoma",
+    "Lichen Amyloidosis"
   ],
   "litfl_cases_shown": [
-    "clinical-hemolysis-and-renal-failure-in-a-toddler",
-    "ecg-108",
-    "cxr-066",
-    "ct-091",
     "clinical-author/sandnsurf",
     "ecg-055",
     "cxr-002",
@@ -788,6 +788,10 @@
     "ecg-020",
     "cxr-027",
     "ct-080",
-    "clinical-corrosive-ingestion"
+    "clinical-corrosive-ingestion",
+    "ecg-049",
+    "cxr-089",
+    "ct-063",
+    "clinical-ice-011-tall-story"
   ]
 }

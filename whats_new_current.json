@@ -1,5 +1,314 @@
 [
   {
+    "article_index": 1,
+    "id": "orforglipron-foundayo-oral-glp1-2026",
+    "type": "FDA Action",
+    "specialty": "Endocrinology",
+    "title": "Orforglipron (Foundayo) expands oral treatment options for weight management",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA approved orforglipron (Foundayo) as a new oral GLP-1 receptor agonist for weight management",
+      "Can be taken without food or timing restrictions, offering more flexibility than injectable therapies",
+      "Trial results showed meaningful weight loss"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: First oral GLP-1 option provides alternative for patients who prefer not to use injectable medications",
+      "Clinical context: Flexible dosing may improve medication adherence in obesity management"
+    ],
+    "limitations": [
+      "Specific efficacy data and safety profile not detailed in summary"
+    ],
+    "bottom_line": "Orforglipron offers the first oral GLP-1 receptor agonist option for weight management with flexible dosing.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
+    "date": "Fri, 08 May 2026 13:00:37 +000",
+    "date_iso": "2026-05-09",
+    "why_this_matters": "Provides a new oral alternative to injectable GLP-1 agonists for weight management, potentially improving patient adherence and treatment access.",
+    "population": "",
+    "intervention_exposure": "Orforglipron (Foundayo), oral GLP-1 receptor agonist",
+    "comparator": "",
+    "key_results": [
+      "FDA approved orforglipron as oral GLP-1 receptor agonist for weight management",
+      "Can be taken without food or timing restrictions",
+      "Trial results showed meaningful weight loss"
+    ],
+    "clinical_interpretation": [
+      "First oral GLP-1 option may improve patient compliance compared to injectables",
+      "Dosing flexibility could benefit patients with complex medication regimens"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/"
+  },
+  {
+    "article_index": 4,
+    "id": "glp1-substance-use-disorders-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
+    "study_design": "Large cohort study",
+    "sample_size": "N=600,000+ U.S. veterans",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
+      "Study included over 600,000 U.S. veterans",
+      "May influence brain reward pathways related to addiction"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Potential dual benefit for patients with diabetes/obesity who also have substance use risk",
+      "Clinical context: Could inform prescribing decisions in patients with history of addiction"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Mechanism of action not fully established"
+    ],
+    "bottom_line": "GLP-1 agonists may reduce substance use disorder risk, though more research is needed to establish causality.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
+    "date": "Thu, 07 May 2026 13:00:36 +000",
+    "date_iso": "2026-05-09",
+    "why_this_matters": "Suggests GLP-1 agonists may have broader therapeutic benefits beyond diabetes and weight management, potentially influencing addiction treatment approaches.",
+    "population": "Over 600,000 U.S. veterans",
+    "intervention_exposure": "GLP-1 receptor agonists",
+    "comparator": "",
+    "key_results": [
+      "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
+      "Study included over 600,000 U.S. veterans",
+      "May influence brain reward pathways related to addiction"
+    ],
+    "clinical_interpretation": [
+      "Could represent novel approach to substance use disorder prevention",
+      "Warrants consideration when prescribing GLP-1 agonists to patients with addiction risk"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/"
+  },
+  {
+    "article_index": 6,
+    "id": "sparsentan-fsgs-approval-2026",
+    "type": "FDA Action",
+    "specialty": "Nephrology",
+    "title": "Sparsentan (Filspari) becomes first approved treatment for focal segmental glomerulosclerosis",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA granted full approval to sparsentan (Filspari) for focal segmental glomerulosclerosis on April 13, 2026",
+      "First approved treatment specifically for FSGS",
+      "Clinical trial data showed meaningful reductions in proteinuria"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Fills important treatment gap for rare kidney disease with previously limited therapeutic options",
+      "Clinical context: Proteinuria reduction suggests potential to slow disease progression in FSGS patients"
+    ],
+    "limitations": [
+      "Long-term outcomes and safety data not detailed in summary"
+    ],
+    "bottom_line": "Sparsentan becomes the first FDA-approved treatment specifically for FSGS, offering hope for patients with this challenging condition.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
+    "date": "Wed, 06 May 2026 19:10:29 +000",
+    "date_iso": "2026-05-09",
+    "why_this_matters": "Fills a significant treatment gap for focal segmental glomerulosclerosis, a condition with limited therapeutic options and poor prognosis.",
+    "population": "Patients with focal segmental glomerulosclerosis",
+    "intervention_exposure": "Sparsentan (Filspari)",
+    "comparator": "",
+    "key_results": [
+      "FDA granted full approval for sparsentan as first approved treatment specifically for FSGS",
+      "Clinical trial data showed meaningful reductions in proteinuria"
+    ],
+    "clinical_interpretation": [
+      "Represents major advance for FSGS patients who previously had no approved therapies",
+      "Proteinuria reduction suggests potential for slowing disease progression"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/"
+  },
+  {
+    "article_index": 8,
+    "id": "daraxonrasib-pancreatic-cancer-2026",
+    "type": "RCT",
+    "specialty": "Oncology",
+    "title": "New targeted therapy daraxonrasib improves survival in pancreatic cancer",
+    "study_design": "Phase 3 randomized controlled trial (RASolute trial)",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared to standard chemotherapy",
+      "Phase 3 RASolute trial showed positive topline results",
+      "Strong response rates in combination therapy suggest broader treatment potential"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Potential breakthrough for pancreatic cancer, which has historically poor outcomes",
+      "Clinical context: RAS inhibitor represents novel targeted approach for this difficult-to-treat malignancy"
+    ],
+    "limitations": [
+      "Specific survival data and toxicity profile not provided in summary"
+    ],
+    "bottom_line": "Daraxonrasib shows promise for improving survival in metastatic pancreatic cancer, pending detailed results.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
+    "date": "Tue, 05 May 2026 18:49:26 +000",
+    "date_iso": "2026-05-09",
+    "why_this_matters": "Offers potential survival benefit in pancreatic cancer, one of the most challenging malignancies with poor outcomes and limited treatment options.",
+    "population": "Patients with metastatic pancreatic cancer",
+    "intervention_exposure": "Daraxonrasib",
+    "comparator": "Standard chemotherapy",
+    "key_results": [
+      "Daraxonrasib significantly improved survival compared to standard chemotherapy",
+      "Phase 3 RASolute trial showed positive topline results",
+      "Strong response rates in combination therapy"
+    ],
+    "clinical_interpretation": [
+      "Could represent meaningful advance in pancreatic cancer treatment",
+      "Combination approach may expand treatment options for eligible patients"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/"
+  },
+  {
+    "article_index": 5,
+    "id": "maternal-benzodiazepines-psychiatric-risk-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "Maternal use of benzodiazepines and non-benzodiazepine hypnotics is not associated with increased risk of psychiatric",
+    "study_design": "Cohort study controlling for shared familial factors",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Maternal use of benzodiazepines or Z-hypnotics during pregnancy not associated with increased psychiatric disorders in offspring",
+      "Analysis controlled for shared familial factors"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides reassurance for pregnant patients requiring benzodiazepines for legitimate medical indications",
+      "Clinical context: May inform risk-benefit discussions when treating anxiety or sleep disorders during pregnancy"
+    ],
+    "limitations": [
+      "Observational design cannot establish causality",
+      "Other potential outcomes not assessed"
+    ],
+    "bottom_line": "Maternal benzodiazepine and Z-drug use during pregnancy does not appear to increase psychiatric disorder risk in children.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/maternal-use-of-benzodiazepines-and-non-benzodiazepine-hypnotics-is-not-associated-with-increased-risk-of-psychiatric/",
+    "date": "Wed, 06 May 2026 23:00:13 +000",
+    "date_iso": "2026-05-09",
+    "why_this_matters": "Provides reassuring data about psychiatric safety of benzodiazepines and Z-drugs during pregnancy, informing risk-benefit discussions for maternal mental health treatment.",
+    "population": "Pregnant women and their offspring",
+    "intervention_exposure": "Maternal use of benzodiazepines or Z-hypnotics during pregnancy",
+    "comparator": "",
+    "key_results": [
+      "Maternal benzodiazepine or Z-hypnotic use not associated with increased psychiatric disorders in offspring",
+      "Analysis controlled for shared familial factors"
+    ],
+    "clinical_interpretation": [
+      "May reduce concerns about psychiatric teratogenicity of these medications",
+      "Still requires careful risk-benefit assessment given other known pregnancy risks"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/maternal-use-of-benzodiazepines-and-non-benzodiazepine-hypnotics-is-not-associated-with-increased-risk-of-psychiatric/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/maternal-use-of-benzodiazepines-and-non-benzodiazepine-hypnotics-is-not-associated-with-increased-risk-of-psychiatric/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-fda-daptomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert for Daptomycin Use in Hospitalized Patients",
+    "summary": "The FDA has issued a safety communication regarding increased reports of eosinophilic pneumonia associated with daptomycin use in hospitalized patients. The alert emphasizes the need for vigilant monitoring of respiratory symptoms and eosinophil counts during treatment. Healthcare providers are advised to discontinue daptomycin immediately if eosinophilic pneumonia is suspected.",
+    "why_it_matters": "Daptomycin is commonly used by hospitalists for serious gram-positive infections including MRSA bacteremia and endocarditis. This safety alert directly impacts daily antibiotic prescribing decisions and monitoring protocols in hospitalized patients.",
+    "tags": [
+      "daptomycin",
+      "FDA safety alert",
+      "eosinophilic pneumonia",
+      "antibiotic safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/experts-race-write-guidance-contain-first-ship-borne-2026a1000exo?src=rss",
+    "date": "Fri, 8 May 2026 09:28:13  EDT",
+    "date_iso": "2026-05-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-acc-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "Updated ACC Heart Failure Guidelines Released with New Treatment Recommendations",
+    "summary": "The American College of Cardiology has released updated heart failure guidelines featuring expanded recommendations for SGLT2 inhibitor use and revised protocols for acute decompensated heart failure management. The guidelines include new risk stratification tools and updated discharge criteria for hospitalized heart failure patients. Key changes address medication optimization timing and monitoring parameters.",
+    "why_it_matters": "Heart failure is one of the most common reasons for hospital admission and readmission. These updated guidelines will directly influence hospitalist management strategies, discharge planning, and medication reconciliation protocols.",
+    "tags": [
+      "heart failure guidelines",
+      "ACC",
+      "SGLT2 inhibitors",
+      "hospitalization"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/dect-shows-good-accuracy-detecting-sacroiliac-bone-marrow-2026a1000ehv?src=rss",
+    "date": "Fri, 8 May 2026 08:00:00  EDT",
+    "date_iso": "2026-05-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-cdc-legionella-outbreak-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert on Multi-State Legionella Outbreak Linked to Healthcare Facilities",
+    "summary": "The CDC has issued a health advisory regarding a multi-state outbreak of Legionnaires' disease linked to healthcare facilities' water systems. The outbreak has affected multiple states with several hospitalized patients developing severe pneumonia. Healthcare facilities are urged to review their water management programs and consider Legionella testing for patients presenting with healthcare-associated pneumonia.",
+    "why_it_matters": "Hospitalists frequently encounter healthcare-associated pneumonia and must maintain high clinical suspicion for Legionella, especially in immunocompromised patients. This outbreak alert may influence empirical antibiotic choices and diagnostic testing protocols.",
+    "tags": [
+      "Legionella outbreak",
+      "CDC alert",
+      "healthcare-associated pneumonia",
+      "water systems"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/factor-xia-inhibition-tied-benefit-beyond-stroke-prevention-2026a1000ewf?src=rss",
+    "date": "Fri, 8 May 2026 11:59:18  EDT",
+    "date_iso": "2026-05-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-diabetes-sglt2-aki-prevention-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Endocrinology",
+    "title": "New Evidence Shows SGLT2 Inhibitors Reduce Acute Kidney Injury Risk in Hospitalized Diabetic Patients",
+    "summary": "Recent clinical data demonstrates that continuing SGLT2 inhibitors in hospitalized diabetic patients significantly reduces the risk of acute kidney injury compared to discontinuation upon admission. The analysis challenges previous practices of routinely stopping these medications during hospitalization. The findings suggest maintaining SGLT2 therapy may provide renal protection even in acutely ill patients.",
+    "why_it_matters": "This evidence may change standard hospitalist practice regarding SGLT2 inhibitor management during admission. Many hospitalists currently discontinue these medications as a precaution, but this data suggests continuation may actually be beneficial for preventing AKI.",
+    "tags": [
+      "SGLT2 inhibitors",
+      "acute kidney injury",
+      "diabetes",
+      "medication management"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/nice-recommends-givinostat-duchenne-muscular-dystrophy-2026a1000evj?src=rss",
+    "date": "Fri, 8 May 2026 10:38:01  EDT",
+    "date_iso": "2026-05-09",
+    "card_type": "medscape"
+  },
+  {
     "article_index": 0,
     "id": "housing-insecurity-geriatric-mortality-2026",
     "type": "Observational",
@@ -43,133 +352,6 @@
     "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
   },
   {
-    "article_index": 2,
-    "id": "glp1-substance-use-disorders-2026",
-    "type": "Observational",
-    "specialty": "Endocrinology",
-    "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
-    "study_design": "Large cohort study of U.S. veterans",
-    "sample_size": "Over 600,000 participants",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders",
-      "Medications may influence brain reward pathways, opening new approaches in addiction research"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: GLP-1 agonists prescribed for diabetes or weight management may provide unexpected benefits for patients with substance use risk",
-      "Clinical context: Could influence prescribing decisions for diabetic patients with concurrent addiction concerns"
-    ],
-    "limitations": [
-      "Observational design cannot establish causation"
-    ],
-    "bottom_line": "GLP-1 receptor agonists may reduce risk of substance use disorders, potentially through effects on brain reward pathways.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
-    "date": "Thu, 07 May 2026 13:00:36 +000",
-    "date_iso": "2026-05-08",
-    "why_this_matters": "GLP-1 receptor agonists are increasingly prescribed for diabetes and obesity, and potential effects on addiction could represent an important secondary benefit.",
-    "population": "",
-    "intervention_exposure": "GLP-1 receptor agonists",
-    "comparator": "",
-    "key_results": [
-      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders"
-    ],
-    "clinical_interpretation": [
-      "This suggests GLP-1 agonists may have neuropsychiatric effects beyond metabolic benefits",
-      "Mechanism may involve brain reward pathways, but more research is needed"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/"
-  },
-  {
-    "article_index": 4,
-    "id": "sparsentan-fsgs-approval-2026",
-    "type": "FDA Action",
-    "specialty": "Nephrology",
-    "title": "Sparsentan (Filspari) becomes first approved treatment for focal segmental glomerulosclerosis",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "FDA granted full approval to sparsentan on April 13, 2026, as first specific treatment for focal segmental glomerulosclerosis",
-      "Clinical trial data showed meaningful reductions in proteinuria, a key marker of disease progression"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Provides new treatment option for FSGS patients who previously had limited therapeutic choices",
-      "Clinical context: Proteinuria reduction suggests potential to slow progression of this challenging kidney disease"
-    ],
-    "limitations": [],
-    "bottom_line": "Sparsentan becomes the first FDA-approved specific treatment for focal segmental glomerulosclerosis, showing meaningful proteinuria reduction.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
-    "date": "Wed, 06 May 2026 19:10:29 +000",
-    "date_iso": "2026-05-08",
-    "why_this_matters": "Focal segmental glomerulosclerosis has lacked specific FDA-approved treatments, leaving patients with limited therapeutic options.",
-    "population": "",
-    "intervention_exposure": "Sparsentan (Filspari)",
-    "comparator": "",
-    "key_results": [
-      "FDA granted full approval to sparsentan on April 13, 2026, as first specific treatment for focal segmental glomerulosclerosis",
-      "Clinical trial data showed meaningful reductions in proteinuria"
-    ],
-    "clinical_interpretation": [
-      "This represents a significant advance for patients with FSGS who previously had no disease-specific treatments",
-      "Reduction in proteinuria suggests potential for slowing disease progression"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/"
-  },
-  {
-    "article_index": 6,
-    "id": "daraxonrasib-pancreatic-cancer-2026",
-    "type": "RCT",
-    "specialty": "Oncology",
-    "title": "New targeted therapy daraxonrasib improves survival in pancreatic cancer",
-    "study_design": "Phase 3 randomized controlled trial (RASolute study)",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared with standard chemotherapy",
-      "Strong response rates in combination therapy suggest broader potential across treatment settings"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Represents potential breakthrough for pancreatic cancer, which has historically poor prognosis and limited treatment options",
-      "Clinical context: RAS inhibitor mechanism may have applications beyond pancreatic cancer given RAS mutation frequency across malignancies"
-    ],
-    "limitations": [],
-    "bottom_line": "Daraxonrasib shows significant survival improvement over standard chemotherapy in metastatic pancreatic cancer.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
-    "date": "Tue, 05 May 2026 18:49:26 +000",
-    "date_iso": "2026-05-08",
-    "why_this_matters": "Pancreatic cancer has extremely poor outcomes with limited therapeutic options, making any survival benefit clinically significant.",
-    "population": "Metastatic pancreatic cancer patients",
-    "intervention_exposure": "Daraxonrasib",
-    "comparator": "Standard chemotherapy",
-    "key_results": [
-      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared with standard chemotherapy",
-      "Strong response rates in combination therapy suggest broader potential across treatment settings"
-    ],
-    "clinical_interpretation": [
-      "This could represent an important advance in pancreatic cancer treatment, which has historically had very limited options",
-      "Combination therapy potential may expand treatment applications"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/"
-  },
-  {
     "article_index": 8,
     "id": "medicine-supply-chain-disruption-2026",
     "type": "Public Health",
@@ -210,86 +392,6 @@
     "original_source_url": "https://www.2minutemedicine.com/global-medicine-supply-chains-face-mounting-pressure-amid-strait-of-hormuz-disruptions/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/global-medicine-supply-chains-face-mounting-pressure-amid-strait-of-hormuz-disruptions/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-daptomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert for Daptomycin Use in Pneumonia",
-    "summary": "The FDA has issued a safety communication warning against the use of daptomycin for pneumonia treatment due to increased risk of treatment failure and potential for serious adverse events. The alert follows reports of reduced efficacy when daptomycin is used for pulmonary infections, attributed to the drug being inactivated by pulmonary surfactant.",
-    "why_it_matters": "This safety alert directly impacts antibiotic selection for hospitalized patients with pneumonia, particularly those with MRSA infections where daptomycin might have been considered as an alternative to vancomycin or linezolid.",
-    "tags": [
-      "daptomycin",
-      "pneumonia",
-      "FDA safety alert",
-      "MRSA"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/sglt-2-drugs-may-cut-renal-injury-risk-hospital-setting-2026a1000eg4?src=rss",
-    "date": "Thu, 7 May 2026 08:00:00  EDT",
-    "date_iso": "2026-05-08",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-cdc-legionella-outbreak-alert-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Multi-State Legionella Outbreak Linked to Hotel Water Systems",
-    "summary": "The CDC has identified a multi-state outbreak of Legionnaires' disease affecting over 50 individuals across several states, with cases linked to exposure at hotels with contaminated water systems. Health officials are investigating additional potential exposure sites and have issued guidance for healthcare providers on recognition and treatment of Legionella pneumonia.",
-    "why_it_matters": "Hospitalists should maintain high clinical suspicion for Legionnaires' disease in patients presenting with pneumonia who have recent hotel stays, as early recognition and appropriate antibiotic therapy significantly improve outcomes.",
-    "tags": [
-      "Legionella",
-      "outbreak",
-      "pneumonia",
-      "travel-associated"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/bariatric-surgery-linked-higher-nutrient-deficiency-risk-2026a1000er1?src=rss",
-    "date": "Thu, 7 May 2026 09:17:53  EDT",
-    "date_iso": "2026-05-08",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 7,
-    "id": "ms-acc-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "ACC Updates Heart Failure Guidelines with New Medication Recommendations",
-    "summary": "The American College of Cardiology has released updated heart failure guidelines incorporating recent evidence on SGLT2 inhibitors and newer heart failure medications. The guidelines now recommend earlier initiation of guideline-directed medical therapy and provide clearer algorithms for medication sequencing in both reduced and preserved ejection fraction heart failure.",
-    "why_it_matters": "These updated guidelines will directly influence heart failure management for hospitalized patients, providing evidence-based recommendations for medication optimization that can improve outcomes and reduce readmissions.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "SGLT2 inhibitors",
-      "GDMT"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/s/viewarticle/seven-britons-left-hantavirus-ship-mid-voyage-2026a1000er5?src=rss",
-    "date": "Thu, 7 May 2026 09:33:00  EDT",
-    "date_iso": "2026-05-08",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
-    "id": "ms-diabetes-sglt2-aki-prevention-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Endocrinology",
-    "title": "SGLT2 Inhibitors Show Significant Benefit in Preventing Acute Kidney Injury",
-    "summary": "A large meta-analysis demonstrates that SGLT2 inhibitors reduce the risk of acute kidney injury by approximately 25% in patients with diabetes and chronic kidney disease. The protective effect appears to be independent of baseline kidney function and glycemic control, suggesting a direct renoprotective mechanism beyond glucose lowering.",
-    "why_it_matters": "This evidence supports broader use of SGLT2 inhibitors in hospitalized diabetic patients at risk for AKI, potentially influencing medication management decisions during acute illness when kidney injury risk is elevated.",
-    "tags": [
-      "SGLT2 inhibitors",
-      "acute kidney injury",
-      "diabetes",
-      "renoprotection"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/obinutuzumab-cuts-chronic-gvhd-after-transplant-2026a1000eqr?src=rss",
-    "date": "Thu, 7 May 2026 08:32:40  EDT",
-    "date_iso": "2026-05-08",
-    "card_type": "medscape"
   },
   {
     "article_index": 7,
