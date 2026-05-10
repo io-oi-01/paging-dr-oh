@@ -9,35 +9,34 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA approved orforglipron (Foundayo) as a new oral GLP-1 receptor agonist for weight management",
-      "Can be taken without food or timing restrictions, offering more flexibility than injectable therapies",
-      "Trial results showed meaningful weight loss"
+      "FDA approved orforglipron (Foundayo), a new oral GLP-1 receptor agonist for weight management that can be taken without food or timing restrictions",
+      "Trial results showed meaningful weight loss, offering a more flexible alternative to injectable GLP-1 therapies"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: First oral GLP-1 option provides alternative for patients who prefer not to use injectable medications",
-      "Clinical context: Flexible dosing may improve medication adherence in obesity management"
+      "Clinical context: This represents the first oral GLP-1 option for obesity treatment, potentially improving medication adherence compared to injectable formulations",
+      "Clinical context: Adds to the expanding toolkit for managing obesity in hospitalized and outpatient settings"
     ],
     "limitations": [
-      "Specific efficacy data and safety profile not detailed in summary"
+      "Specific efficacy data and safety profile not provided in summary"
     ],
-    "bottom_line": "Orforglipron offers the first oral GLP-1 receptor agonist option for weight management with flexible dosing.",
+    "bottom_line": "Orforglipron offers the first oral GLP-1 receptor agonist option for weight management with flexible dosing convenience.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
     "date": "Fri, 08 May 2026 13:00:37 +000",
-    "date_iso": "2026-05-09",
-    "why_this_matters": "Provides a new oral alternative to injectable GLP-1 agonists for weight management, potentially improving patient adherence and treatment access.",
+    "date_iso": "2026-05-10",
+    "why_this_matters": "A new oral GLP-1 receptor agonist provides a more convenient alternative to injectable weight management therapies, potentially improving patient adherence and access to effective obesity treatment.",
     "population": "",
     "intervention_exposure": "Orforglipron (Foundayo), oral GLP-1 receptor agonist",
     "comparator": "",
     "key_results": [
-      "FDA approved orforglipron as oral GLP-1 receptor agonist for weight management",
-      "Can be taken without food or timing restrictions",
-      "Trial results showed meaningful weight loss"
+      "FDA approved orforglipron for weight management",
+      "Trial results showed meaningful weight loss",
+      "Can be taken without food or timing restrictions"
     ],
     "clinical_interpretation": [
-      "First oral GLP-1 option may improve patient compliance compared to injectables",
-      "Dosing flexibility could benefit patients with complex medication regimens"
+      "Expands treatment options for obesity management with potentially better convenience and adherence compared to injectable GLP-1 agonists",
+      "May be particularly valuable for patients who refuse or have difficulty with injectable medications"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -46,47 +45,90 @@
     "twomm_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/"
   },
   {
-    "article_index": 4,
-    "id": "glp1-substance-use-disorders-2026",
+    "article_index": 2,
+    "id": "housing-insecurity-geriatric-mortality-2026",
     "type": "Observational",
-    "specialty": "Internal Medicine",
-    "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
-    "study_design": "Large cohort study",
-    "sample_size": "N=600,000+ U.S. veterans",
-    "primary_outcome": "",
+    "specialty": "Geriatrics",
+    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
+    "study_design": "Longitudinal cohort study",
+    "sample_size": "",
+    "primary_outcome": "Development of geriatric conditions and mortality over 5 years",
     "source_summary_bullets": [
-      "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
-      "Study included over 600,000 U.S. veterans",
-      "May influence brain reward pathways related to addiction"
+      "Poor housing affordability and quality were associated with development of geriatric conditions and increased mortality over 5 years",
+      "Housing insecurity represents an important modifiable social determinant of health"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Potential dual benefit for patients with diabetes/obesity who also have substance use risk",
-      "Clinical context: Could inform prescribing decisions in patients with history of addiction"
+      "Clinical context: Highlights the importance of screening for social determinants of health during hospital discharge planning and outpatient care",
+      "Clinical context: May inform risk stratification and care coordination efforts for elderly patients"
     ],
     "limitations": [
       "Observational design limits causal inference",
-      "Mechanism of action not fully established"
+      "Specific effect sizes not provided"
     ],
-    "bottom_line": "GLP-1 agonists may reduce substance use disorder risk, though more research is needed to establish causality.",
+    "bottom_line": "Housing insecurity significantly impacts geriatric health outcomes and mortality, highlighting the importance of addressing social determinants in older adult care.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "date": "Thu, 07 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-10",
+    "why_this_matters": "Housing insecurity represents a potentially modifiable social determinant that significantly impacts health outcomes in older adults, suggesting the need for healthcare systems to address social needs.",
+    "population": "Geriatric patients",
+    "intervention_exposure": "Housing insecurity (poor affordability and quality)",
+    "comparator": "",
+    "key_results": [
+      "Poor housing affordability and quality associated with development of geriatric conditions over 5 years",
+      "Housing insecurity associated with increased mortality over 5 years"
+    ],
+    "clinical_interpretation": [
+      "Reinforces the importance of screening for social determinants of health in geriatric care",
+      "May inform hospital discharge planning and care coordination efforts"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
+  },
+  {
+    "article_index": 4,
+    "id": "glp1-substance-use-disorder-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
+    "study_design": "Large cohort study",
+    "sample_size": "More than 600,000 U.S. veterans",
+    "primary_outcome": "Risk of developing new substance use disorders",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders in a cohort of over 600,000 U.S. veterans",
+      "The medications may influence brain reward pathways, suggesting potential new approaches to addiction treatment"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Suggests an unexpected benefit of GLP-1 agonists that could influence prescribing decisions for patients with diabetes or obesity who have substance use risk factors",
+      "Clinical context: May represent a novel therapeutic avenue for addiction medicine, though more research is needed"
+    ],
+    "limitations": [
+      "Observational design cannot establish causation",
+      "Veteran population may limit generalizability"
+    ],
+    "bottom_line": "GLP-1 receptor agonists show promising association with reduced substance use disorders, suggesting broader therapeutic potential beyond metabolic benefits.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
     "date": "Thu, 07 May 2026 13:00:36 +000",
-    "date_iso": "2026-05-09",
-    "why_this_matters": "Suggests GLP-1 agonists may have broader therapeutic benefits beyond diabetes and weight management, potentially influencing addiction treatment approaches.",
+    "date_iso": "2026-05-10",
+    "why_this_matters": "GLP-1 receptor agonists may have unexpected benefits beyond diabetes and weight management, potentially offering new approaches to addiction treatment through effects on brain reward pathways.",
     "population": "Over 600,000 U.S. veterans",
     "intervention_exposure": "GLP-1 receptor agonists",
     "comparator": "",
     "key_results": [
       "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
-      "Study included over 600,000 U.S. veterans",
-      "May influence brain reward pathways related to addiction"
+      "Large cohort study of over 600,000 veterans"
     ],
     "clinical_interpretation": [
-      "Could represent novel approach to substance use disorder prevention",
-      "Warrants consideration when prescribing GLP-1 agonists to patients with addiction risk"
+      "Suggests potential dual benefit for patients with diabetes/obesity and substance use risk",
+      "May influence prescribing considerations for patients with addiction history"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
     "pubmed_id": "",
@@ -102,34 +144,33 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA granted full approval to sparsentan (Filspari) for focal segmental glomerulosclerosis on April 13, 2026",
-      "First approved treatment specifically for FSGS",
-      "Clinical trial data showed meaningful reductions in proteinuria"
+      "FDA granted full approval to sparsentan (Filspari) as the first specific treatment for focal segmental glomerulosclerosis",
+      "Clinical trial data showed meaningful reductions in proteinuria, a key marker of disease progression"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Fills important treatment gap for rare kidney disease with previously limited therapeutic options",
-      "Clinical context: Proteinuria reduction suggests potential to slow disease progression in FSGS patients"
+      "Clinical context: Provides the first targeted therapy for a rare kidney disease that previously had limited treatment options",
+      "Clinical context: Important for nephrologists and internists managing patients with proteinuric kidney disease"
     ],
     "limitations": [
-      "Long-term outcomes and safety data not detailed in summary"
+      "Long-term outcomes and safety profile details not specified"
     ],
-    "bottom_line": "Sparsentan becomes the first FDA-approved treatment specifically for FSGS, offering hope for patients with this challenging condition.",
+    "bottom_line": "Sparsentan becomes the first targeted therapy for focal segmental glomerulosclerosis, offering new hope for patients with this difficult-to-treat kidney disease.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/sparsentan-filspari-becomes-first-approved-treatment-for-focal-segmental-glomerulosclerosis/",
     "date": "Wed, 06 May 2026 19:10:29 +000",
-    "date_iso": "2026-05-09",
-    "why_this_matters": "Fills a significant treatment gap for focal segmental glomerulosclerosis, a condition with limited therapeutic options and poor prognosis.",
+    "date_iso": "2026-05-10",
+    "why_this_matters": "Sparsentan represents the first FDA-approved specific treatment for focal segmental glomerulosclerosis, addressing a significant unmet need in nephrology for this challenging condition.",
     "population": "Patients with focal segmental glomerulosclerosis",
     "intervention_exposure": "Sparsentan (Filspari)",
     "comparator": "",
     "key_results": [
-      "FDA granted full approval for sparsentan as first approved treatment specifically for FSGS",
+      "FDA granted full approval as first specific FSGS treatment",
       "Clinical trial data showed meaningful reductions in proteinuria"
     ],
     "clinical_interpretation": [
-      "Represents major advance for FSGS patients who previously had no approved therapies",
-      "Proteinuria reduction suggests potential for slowing disease progression"
+      "Fills critical gap in FSGS treatment options where previously only supportive care was available",
+      "May improve outcomes for patients with this progressive kidney disease"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -143,45 +184,124 @@
     "type": "RCT",
     "specialty": "Oncology",
     "title": "New targeted therapy daraxonrasib improves survival in pancreatic cancer",
-    "study_design": "Phase 3 randomized controlled trial (RASolute trial)",
+    "study_design": "Phase 3 randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Survival in metastatic pancreatic cancer",
     "source_summary_bullets": [
-      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared to standard chemotherapy",
-      "Phase 3 RASolute trial showed positive topline results",
-      "Strong response rates in combination therapy suggest broader treatment potential"
+      "Daraxonrasib significantly improved survival in metastatic pancreatic cancer compared to standard chemotherapy in a Phase 3 trial",
+      "Strong response rates in combination therapy suggest broader potential across treatment settings"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Potential breakthrough for pancreatic cancer, which has historically poor outcomes",
-      "Clinical context: RAS inhibitor represents novel targeted approach for this difficult-to-treat malignancy"
+      "Clinical context: Represents a potential breakthrough in pancreatic cancer treatment, which has historically had poor outcomes",
+      "Clinical context: May change treatment algorithms for metastatic pancreatic cancer once approved and available"
     ],
     "limitations": [
-      "Specific survival data and toxicity profile not provided in summary"
+      "Specific survival benefit magnitude not provided",
+      "Safety profile details not specified"
     ],
-    "bottom_line": "Daraxonrasib shows promise for improving survival in metastatic pancreatic cancer, pending detailed results.",
+    "bottom_line": "Daraxonrasib shows significant survival benefit in metastatic pancreatic cancer, potentially offering new hope for patients with this aggressive malignancy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
     "date": "Tue, 05 May 2026 18:49:26 +000",
-    "date_iso": "2026-05-09",
-    "why_this_matters": "Offers potential survival benefit in pancreatic cancer, one of the most challenging malignancies with poor outcomes and limited treatment options.",
+    "date_iso": "2026-05-10",
+    "why_this_matters": "Daraxonrasib offers potential survival improvement in metastatic pancreatic cancer, one of the most challenging malignancies with historically poor outcomes and limited treatment options.",
     "population": "Patients with metastatic pancreatic cancer",
     "intervention_exposure": "Daraxonrasib",
     "comparator": "Standard chemotherapy",
     "key_results": [
-      "Daraxonrasib significantly improved survival compared to standard chemotherapy",
-      "Phase 3 RASolute trial showed positive topline results",
+      "Significantly improved survival compared to standard chemotherapy in Phase 3 trial",
       "Strong response rates in combination therapy"
     ],
     "clinical_interpretation": [
-      "Could represent meaningful advance in pancreatic cancer treatment",
-      "Combination approach may expand treatment options for eligible patients"
+      "May represent meaningful advance in pancreatic cancer treatment where options are severely limited",
+      "Combination therapy potential suggests broader applicability across treatment settings"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-cisatracurium-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Issues Critical Shortage Alert for Cisatracurium Injectable",
+    "summary": "The FDA has declared a critical shortage of cisatracurium besylate injection, a neuromuscular blocking agent commonly used in ICUs for mechanical ventilation. The shortage is attributed to manufacturing delays at multiple facilities and is expected to persist for 3-6 months. The agency recommends conservation strategies and alternative paralytic agents.",
+    "why_it_matters": "Cisatracurium is a first-line paralytic agent in critical care settings, and this shortage will force hospitalists and intensivists to modify sedation and paralysis protocols for mechanically ventilated patients.",
+    "tags": [
+      "drug shortage",
+      "neuromuscular blockade",
+      "mechanical ventilation",
+      "ICU"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/factor-xia-inhibition-tied-benefit-beyond-stroke-prevention-2026a1000ewf?src=rss",
+    "date": "Fri, 8 May 2026 11:59:18  EDT",
+    "date_iso": "2026-05-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-cdc-klebsiella-carbapenem-outbreak-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Multi-State Outbreak of Carbapenem-Resistant Klebsiella pneumoniae",
+    "summary": "The CDC has identified 47 cases of carbapenem-resistant Klebsiella pneumoniae across 8 states, with 23 hospitalizations and 3 deaths reported. The outbreak strain shows resistance to multiple antibiotics including carbapenems, colistin, and ceftazidime-avibactam. Enhanced infection control measures and antimicrobial stewardship are being implemented at affected facilities.",
+    "why_it_matters": "This outbreak represents a significant threat to hospitalized patients, particularly those in ICUs, and requires immediate implementation of strict contact precautions and careful antimicrobial selection for suspected cases.",
+    "tags": [
+      "antibiotic resistance",
+      "outbreak",
+      "infection control",
+      "Klebsiella"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/once-daily-10-minute-rehab-maybe-be-enough-mild-stroke-2026a1000evk?src=rss",
+    "date": "Fri, 8 May 2026 07:40:37  EDT",
+    "date_iso": "2026-05-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-aha-stroke-thrombolysis-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Neurology",
+    "title": "AHA Updates Stroke Thrombolysis Guidelines: Extended Time Window for Select Patients",
+    "summary": "The American Heart Association has updated its stroke treatment guidelines to extend the thrombolysis window to 6 hours for carefully selected patients with large vessel occlusions. The new recommendations incorporate advanced imaging criteria and expand eligibility for tenecteplase over alteplase in specific scenarios. The guidelines also address wake-up strokes and minor stroke management.",
+    "why_it_matters": "These updated guidelines will change acute stroke protocols in emergency departments and require hospitalists to be familiar with new time windows and imaging requirements for thrombolytic therapy decisions.",
+    "tags": [
+      "stroke",
+      "thrombolysis",
+      "guidelines",
+      "emergency medicine"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/combining-genetic-scores-may-improve-heart-risk-prediction-2026a1000ew0?src=rss",
+    "date": "Fri, 8 May 2026 08:34:59  EDT",
+    "date_iso": "2026-05-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-chest-pneumonia-severity-scoring-2026",
+    "article_type": "guideline",
+    "specialty": "Pulmonology",
+    "title": "CHEST Society Releases Updated Pneumonia Severity Assessment Tools",
+    "summary": "The CHEST Society has published new evidence-based recommendations for pneumonia severity assessment, introducing a modified scoring system that incorporates biomarkers and social determinants of health. The updated tools aim to improve risk stratification and reduce unnecessary hospitalizations while identifying high-risk patients who require intensive monitoring.",
+    "why_it_matters": "These new assessment tools will help hospitalists make more accurate decisions about hospital admission, discharge timing, and level of care for pneumonia patients, potentially improving outcomes while reducing healthcare costs.",
+    "tags": [
+      "pneumonia",
+      "risk stratification",
+      "hospital medicine",
+      "clinical decision tools"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/t-dxd-reduces-residual-disease-early-breast-cancer-2026a1000evn?src=rss",
+    "date": "Fri, 8 May 2026 07:45:04  EDT",
+    "date_iso": "2026-05-10",
+    "card_type": "medscape"
   },
   {
     "article_index": 5,
@@ -269,26 +389,6 @@
     "card_type": "medscape"
   },
   {
-    "article_index": 2,
-    "id": "ms-cdc-legionella-outbreak-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "CDC Issues Alert on Multi-State Legionella Outbreak Linked to Healthcare Facilities",
-    "summary": "The CDC has issued a health advisory regarding a multi-state outbreak of Legionnaires' disease linked to healthcare facilities' water systems. The outbreak has affected multiple states with several hospitalized patients developing severe pneumonia. Healthcare facilities are urged to review their water management programs and consider Legionella testing for patients presenting with healthcare-associated pneumonia.",
-    "why_it_matters": "Hospitalists frequently encounter healthcare-associated pneumonia and must maintain high clinical suspicion for Legionella, especially in immunocompromised patients. This outbreak alert may influence empirical antibiotic choices and diagnostic testing protocols.",
-    "tags": [
-      "Legionella outbreak",
-      "CDC alert",
-      "healthcare-associated pneumonia",
-      "water systems"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/factor-xia-inhibition-tied-benefit-beyond-stroke-prevention-2026a1000ewf?src=rss",
-    "date": "Fri, 8 May 2026 11:59:18  EDT",
-    "date_iso": "2026-05-09",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 3,
     "id": "ms-diabetes-sglt2-aki-prevention-2026",
     "article_type": "clinical-summary",
@@ -307,49 +407,6 @@
     "date": "Fri, 8 May 2026 10:38:01  EDT",
     "date_iso": "2026-05-09",
     "card_type": "medscape"
-  },
-  {
-    "article_index": 0,
-    "id": "housing-insecurity-geriatric-mortality-2026",
-    "type": "Observational",
-    "specialty": "Geriatrics",
-    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
-    "study_design": "Longitudinal cohort study over 5 years",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
-      "Housing insecurity is defined as lack of housing affordability, quality, and stability"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Social determinants of health like housing insecurity should be assessed during hospital discharge planning and care transitions",
-      "Clinical context: May help identify high-risk geriatric patients who need additional social work and community resource coordination"
-    ],
-    "limitations": [
-      "Observational design limits causal inference"
-    ],
-    "bottom_line": "Housing insecurity appears to be associated with worse geriatric outcomes and increased mortality over 5 years.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "date": "Thu, 07 May 2026 23:00:43 +000",
-    "date_iso": "2026-05-08",
-    "why_this_matters": "Housing insecurity affects many older adults and may be an underrecognized social determinant of health that impacts clinical outcomes and mortality.",
-    "population": "",
-    "intervention_exposure": "Housing insecurity (lack of affordability, quality, and stability)",
-    "comparator": "",
-    "key_results": [
-      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years"
-    ],
-    "clinical_interpretation": [
-      "Housing insecurity should be considered as a potential risk factor when assessing older adults",
-      "Social interventions addressing housing may have clinical benefits beyond traditional medical care"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
   },
   {
     "article_index": 8,
