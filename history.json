@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Infective Endocarditis",
     "Myxedema Coma",
     "Status Epilepticus",
     "Aortic Dissection",
@@ -89,7 +88,8 @@
     "Hyperkalemia",
     "Cellulitis and Skin Soft Tissue Infections",
     "Syncope",
-    "Atrial Fibrillation"
+    "Atrial Fibrillation",
+    "Alcohol Withdrawal Syndrome"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -198,7 +198,8 @@
     "castle-af-2018",
     "reduce-it-2019",
     "ideal-2010",
-    "odyssey-2018"
+    "odyssey-2018",
+    "fidelity-2022"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -524,9 +525,13 @@
     "ms-fda-cisatracurium-shortage-critical-2026",
     "ms-cdc-klebsiella-carbapenem-outbreak-2026",
     "ms-aha-stroke-thrombolysis-guidelines-2026",
-    "ms-chest-pneumonia-severity-scoring-2026"
+    "ms-chest-pneumonia-severity-scoring-2026",
+    "orforglipron-oral-glp1-approval-2026",
+    "glp1-substance-use-reduction-2026",
+    "sparsentan-fsgs-first-approval-2026",
+    "housing-insecurity-geriatric-outcomes-2026"
   ],
-  "last_run": "2026-05-10",
+  "last_run": "2026-05-11",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -597,12 +602,10 @@
     "Venous Leg Ulcer",
     "Cutaneous T-cell Lymphoma",
     "Lichen Amyloidosis",
-    "Macular Lymphocytic Arteritis"
+    "Macular Lymphocytic Arteritis",
+    "Nevus Sebaceous"
   ],
   "litfl_cases_shown": [
-    "clinical-trauma-pelvic-fractures-ii",
-    "ecg-067",
-    "cxr-065",
     "ct-019",
     "clinical-author-analytics-2",
     "ecg-003",
@@ -799,6 +802,9 @@
     "ecg-113",
     "cxr-083",
     "ct-025",
-    "clinical-serotonin-toxicity"
+    "clinical-serotonin-toxicity",
+    "cxr-007",
+    "ct-010",
+    "clinical-above-the-clouds"
   ]
 }
