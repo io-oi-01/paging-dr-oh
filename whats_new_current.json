@@ -1,41 +1,133 @@
 [
   {
-    "article_index": 1,
-    "id": "orforglipron-oral-glp1-approval-2026",
-    "type": "FDA Action",
-    "specialty": "Endocrinology",
-    "title": "Orforglipron (Foundayo) expands oral treatment options for weight management",
-    "study_design": "",
+    "article_index": 0,
+    "id": "pocus-nephrolithiasis-ed-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
+    "study_design": "Observational study evaluating POCUS findings in ED patients with suspected renal colic",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA approved orforglipron (Foundayo), a new oral GLP-1 receptor agonist that can be taken without food or timing restrictions",
-      "Trial results demonstrate meaningful weight loss, providing a more flexible alternative to injectable GLP-1 therapies"
+      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic",
+      "CT remains the best imaging modality but POCUS may offer diagnostic value"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents the first oral GLP-1 option without dietary restrictions, potentially improving patient adherence and expanding treatment access for obesity and diabetes management in hospital and outpatient settings"
+      "Clinical context: POCUS could reduce radiation exposure and provide faster diagnosis in ED patients with suspected kidney stones",
+      "Clinical context: May be particularly valuable when CT is not immediately available or in patients where radiation exposure should be minimized"
     ],
     "limitations": [
-      "Specific efficacy data and comparisons to existing therapies not provided"
+      "Study design and methodology unclear from summary"
     ],
-    "bottom_line": "Orforglipron represents the first oral GLP-1 receptor agonist approved for weight management, offering a flexible alternative to injectable options.",
+    "bottom_line": "POCUS showing hydronephrosis may help identify kidney stones in ED patients, though CT remains the gold standard.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "date": "Mon, 11 May 2026 23:00:10 +000",
+    "date_iso": "2026-05-12",
+    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and improve efficiency in evaluating suspected kidney stones in the emergency department.",
+    "population": "ED patients with suspected renal colic",
+    "intervention_exposure": "Renal point-of-care ultrasound",
+    "comparator": "",
+    "key_results": [
+      "Hydronephrosis on POCUS was significantly associated with presence of nephrolithiasis",
+      "CT remains the best imaging modality but POCUS may offer diagnostic value"
+    ],
+    "clinical_interpretation": [
+      "POCUS may serve as a useful adjunct or screening tool for nephrolithiasis, potentially reducing CT utilization in select patients",
+      "The diagnostic accuracy and clinical decision-making impact remain unclear without specific performance metrics"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
+  },
+  {
+    "article_index": 2,
+    "id": "ai-prior-auth-scribes-2026",
+    "type": "Public Health",
+    "specialty": "Health Policy",
+    "title": "2MM: AI Roundup – PrescriberPoint launches autonomous agent for prior authorization, Utah begins first in nation autonomous AI prescribing pilot, and JAMA study confirms ambient AI scribes return hours to the clinician work week",
+    "study_design": "News roundup of AI healthcare developments",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "PrescriberPoint launched AI system to handle prior authorization process autonomously",
+      "Utah begins first autonomous AI prescribing pilot program",
+      "JAMA study confirms ambient AI scribes return hours to clinician work week"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: AI automation of prior authorization could significantly reduce administrative burden on hospitalists and outpatient physicians",
+      "Clinical context: Ambient AI scribes may improve physician workflow efficiency and reduce documentation time"
+    ],
+    "limitations": [
+      "No specific outcome data or validation metrics provided"
+    ],
+    "bottom_line": "AI tools are expanding into clinical workflows with potential to reduce administrative burden, though validation is needed.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/2mm-ai-roundup-prescriberpoint-launches-autonomous-agent-for-prior-authorization-utah-begins-first-in-nation-autonomous-ai-prescribing-pilot-and-jama-study-confirms-ambient-ai-scribes-ret/",
+    "date": "Mon, 11 May 2026 13:00:02 +000",
+    "date_iso": "2026-05-12",
+    "why_this_matters": "AI integration in healthcare workflows may improve efficiency and reduce administrative burden for clinicians.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "PrescriberPoint launched AI system for autonomous prior authorization",
+      "Utah begins first autonomous AI prescribing pilot program",
+      "JAMA study confirms ambient AI scribes return hours to clinician work week"
+    ],
+    "clinical_interpretation": [
+      "These developments represent early adoption of AI in clinical workflows",
+      "The safety and efficacy of autonomous prescribing systems require careful monitoring and validation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/2mm-ai-roundup-prescriberpoint-launches-autonomous-agent-for-prior-authorization-utah-begins-first-in-nation-autonomous-ai-prescribing-pilot-and-jama-study-confirms-ambient-ai-scribes-ret/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/2mm-ai-roundup-prescriberpoint-launches-autonomous-agent-for-prior-authorization-utah-begins-first-in-nation-autonomous-ai-prescribing-pilot-and-jama-study-confirms-ambient-ai-scribes-ret/"
+  },
+  {
+    "article_index": 5,
+    "id": "orforglipron-foundayo-approval-2026",
+    "type": "FDA Action",
+    "specialty": "Endocrinology",
+    "title": "Orforglipron (Foundayo) expands oral treatment options for weight management",
+    "study_design": "FDA approval announcement",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA approved orforglipron (Foundayo), a new oral GLP-1 receptor agonist for weight management",
+      "Can be taken without food or timing restrictions, offering more flexibility than injectable therapies",
+      "Trial results showed meaningful weight loss"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides oral alternative to injectable GLP-1 agonists for obesity treatment, potentially improving patient adherence",
+      "Clinical context: May be preferred by patients who are reluctant to use injectable medications for weight management"
+    ],
+    "limitations": [
+      "Specific efficacy data and safety profile not detailed"
+    ],
+    "bottom_line": "FDA-approved oral GLP-1 agonist orforglipron provides a new, flexible option for weight management.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
     "date": "Fri, 08 May 2026 13:00:37 +000",
-    "date_iso": "2026-05-11",
-    "why_this_matters": "This provides the first oral GLP-1 receptor agonist option for weight management, potentially improving adherence and access compared to injectable formulations.",
+    "date_iso": "2026-05-12",
+    "why_this_matters": "An oral GLP-1 agonist option may improve patient adherence and access for weight management compared to injectable formulations.",
     "population": "",
-    "intervention_exposure": "Orforglipron (Foundayo), an oral GLP-1 receptor agonist",
+    "intervention_exposure": "Orforglipron (Foundayo) - oral GLP-1 receptor agonist",
     "comparator": "",
     "key_results": [
-      "FDA approved orforglipron as an oral GLP-1 receptor agonist for weight management",
+      "FDA approved orforglipron for weight management",
       "Can be taken without food or timing restrictions",
-      "Trial results demonstrated meaningful weight loss"
+      "Trial results showed meaningful weight loss"
     ],
     "clinical_interpretation": [
-      "Offers a more convenient dosing option for patients who struggle with injectable GLP-1 therapies",
-      "May expand access to GLP-1-based weight management therapy"
+      "Oral administration may improve patient compliance compared to injectable GLP-1 agonists",
+      "The dosing flexibility could be advantageous for patients with complex medication regimens"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -44,48 +136,174 @@
     "twomm_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/"
   },
   {
-    "article_index": 4,
+    "article_index": 6,
+    "id": "housing-insecurity-geriatric-mortality-2026",
+    "type": "Observational",
+    "specialty": "Geriatrics",
+    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
+    "study_design": "Longitudinal observational study over 5 years",
+    "sample_size": "",
+    "primary_outcome": "Development of geriatric conditions and mortality over 5 years",
+    "source_summary_bullets": [
+      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
+      "Housing insecurity defined as lack of housing affordability, quality, and stability"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Social determinants of health including housing insecurity should be assessed as part of comprehensive geriatric care",
+      "Clinical context: May inform discharge planning and resource allocation for elderly hospitalized patients"
+    ],
+    "limitations": [
+      "Specific outcome measures and effect sizes not provided"
+    ],
+    "bottom_line": "Housing insecurity is associated with worse geriatric health outcomes and mortality, highlighting the importance of social determinants in elder care.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "date": "Thu, 07 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-12",
+    "why_this_matters": "Social determinants of health, particularly housing stability, significantly impact health outcomes in older adults and should be considered in clinical care.",
+    "population": "Geriatric patients",
+    "intervention_exposure": "Housing insecurity (poor affordability, quality, and stability)",
+    "comparator": "",
+    "key_results": [
+      "Poor housing affordability and quality associated with development of geriatric conditions over 5 years",
+      "Housing insecurity associated with increased mortality"
+    ],
+    "clinical_interpretation": [
+      "Housing insecurity should be assessed as part of comprehensive geriatric evaluation",
+      "Addressing housing stability may be an important intervention for improving health outcomes in older adults"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
+  },
+  {
+    "article_index": 8,
     "id": "glp1-substance-use-reduction-2026",
     "type": "Observational",
     "specialty": "Addiction Medicine",
     "title": "Glucagon-like peptide-1 receptor agonists show potential in reducing substance use disorders",
-    "study_design": "Large veteran cohort study",
-    "sample_size": "N=600,000+",
+    "study_design": "Large cohort study",
+    "sample_size": "more than 600,000 U.S. veterans",
     "primary_outcome": "Development of new substance use disorders",
     "source_summary_bullets": [
-      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders in a large veteran cohort study",
-      "The medications may influence brain reward pathways, suggesting potential new approaches in addiction treatment"
+      "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
+      "May influence brain reward pathways, opening new approaches in addiction research",
+      "Study included over 600,000 U.S. veterans"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding could influence prescribing decisions for diabetes and obesity patients with substance use risk factors, and may open new therapeutic avenues for addiction medicine"
+      "Clinical context: GLP-1 agonists prescribed for diabetes or obesity may have unexpected benefits in reducing substance use disorders",
+      "Clinical context: Could inform treatment decisions for patients with concurrent metabolic disorders and substance use risk"
     ],
     "limitations": [
       "Observational design limits causal inference",
-      "Veteran population may not be generalizable"
+      "Mechanism of action unclear"
     ],
-    "bottom_line": "GLP-1 receptor agonists show promise for reducing substance use disorders, though more research is needed to establish causality.",
+    "bottom_line": "GLP-1 agonists may reduce risk of substance use disorders in veterans, suggesting potential neurobiological effects on addiction pathways.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
     "date": "Thu, 07 May 2026 13:00:36 +000",
-    "date_iso": "2026-05-11",
-    "why_this_matters": "This suggests GLP-1 receptor agonists may have therapeutic benefits beyond diabetes and weight management, potentially opening new treatment avenues for substance use disorders.",
-    "population": "Veterans",
+    "date_iso": "2026-05-12",
+    "why_this_matters": "GLP-1 agonists may have unexpected benefits beyond diabetes and weight management, potentially opening new therapeutic avenues for addiction treatment.",
+    "population": "Over 600,000 U.S. veterans",
     "intervention_exposure": "GLP-1 receptor agonists",
     "comparator": "",
     "key_results": [
-      "GLP-1 receptor agonists were associated with lower risk of developing new substance use disorders",
+      "GLP-1 receptor agonists associated with lower risk of developing new substance use disorders",
       "May influence brain reward pathways"
     ],
     "clinical_interpretation": [
-      "Suggests potential neurobiological effects of GLP-1 agonists on addiction pathways",
-      "Could represent a novel approach to addiction prevention or treatment"
+      "This finding suggests GLP-1 agonists may have neuropsychiatric effects beyond metabolic benefits",
+      "Further research is needed to understand the mechanism and potential therapeutic applications"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-drug-shortage-critical-care-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Issues Critical Drug Shortage Alert for ICU Medications",
+    "summary": "The FDA has issued an urgent alert regarding nationwide shortages of several critical care medications including vasopressors and sedatives commonly used in ICUs. Healthcare facilities are advised to implement conservation strategies and identify alternative medications where clinically appropriate.",
+    "why_it_matters": "This directly impacts daily ICU management and requires hospitalists to modify treatment protocols and consider alternative therapeutic approaches for critically ill patients.",
+    "tags": [
+      "drug shortage",
+      "critical care",
+      "ICU",
+      "FDA alert"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/language-models-emergency-room-decision-support-2026a1000f7y?src=rss",
+    "date": "Tue, 12 May 2026 02:54:00  EDT",
+    "date_iso": "2026-05-12",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-respiratory-virus-surge-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Surge in Respiratory Virus Hospitalizations",
+    "summary": "The CDC is reporting a significant increase in hospitalizations due to multiple respiratory viruses including RSV, influenza, and COVID-19 variants. Hospital capacity is being strained in several regions, with particular impact on elderly and immunocompromised patients.",
+    "why_it_matters": "Hospitalists need to prepare for increased patient volumes and implement appropriate isolation precautions and treatment protocols for multiple respiratory pathogens.",
+    "tags": [
+      "respiratory viruses",
+      "hospitalizations",
+      "CDC",
+      "public health"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/sigmoidoscopy-cuts-colorectal-cancer-risk-men-2026a1000f7b?src=rss",
+    "date": "Tue, 12 May 2026 01:07:30  EDT",
+    "date_iso": "2026-05-12",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-joint-commission-sepsis-standards-2026",
+    "article_type": "guideline",
+    "specialty": "Hospital Medicine",
+    "title": "Joint Commission Updates Sepsis Core Measure Requirements",
+    "summary": "The Joint Commission has released updated sepsis core measure requirements that modify time-sensitive interventions and documentation standards. The new standards emphasize early recognition protocols and require hospitals to demonstrate compliance with revised sepsis bundles.",
+    "why_it_matters": "These changes will directly affect how hospitalists document and manage sepsis cases, potentially impacting hospital quality metrics and accreditation status.",
+    "tags": [
+      "sepsis",
+      "Joint Commission",
+      "quality measures",
+      "hospital standards"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fda-advisors-split-regimens-breast-prostate-cancers-2026a1000f3j?src=rss",
+    "date": "Mon, 11 May 2026 09:14:28  EDT",
+    "date_iso": "2026-05-12",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-aha-hypertensive-emergency-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Guidelines for Hypertensive Emergencies",
+    "summary": "The American Heart Association has published new guidelines for managing hypertensive emergencies that modify blood pressure reduction targets and timing recommendations. The guidelines emphasize individualized approaches based on end-organ damage and specific clinical presentations.",
+    "why_it_matters": "These updated recommendations will change how hospitalists approach acute hypertensive crises, particularly regarding the rate and extent of blood pressure reduction in the acute setting.",
+    "tags": [
+      "hypertensive emergency",
+      "AHA guidelines",
+      "blood pressure",
+      "acute care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/patient-reported-data-strengthen-case-dato-dxd-first-line-2026a1000f34?src=rss",
+    "date": "Mon, 11 May 2026 08:27:08  EDT",
+    "date_iso": "2026-05-12",
+    "card_type": "medscape"
   },
   {
     "article_index": 6,
@@ -172,50 +390,6 @@
     "original_source_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/new-targeted-therapy-daraxonrasib-improves-survival-in-pancreatic-cancer/"
-  },
-  {
-    "article_index": 2,
-    "id": "housing-insecurity-geriatric-outcomes-2026",
-    "type": "Observational",
-    "specialty": "Geriatrics",
-    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
-    "study_design": "Observational study with 5-year follow-up",
-    "sample_size": "",
-    "primary_outcome": "Development of geriatric conditions and mortality",
-    "source_summary_bullets": [
-      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
-      "Housing insecurity represents an important modifiable social determinant of health in older adults"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This study reinforces the importance of screening for social determinants of health during hospital and clinic encounters, as housing issues may impact patient outcomes and discharge planning"
-    ],
-    "limitations": [
-      "Observational design cannot establish causation",
-      "Confounding by socioeconomic factors possible"
-    ],
-    "bottom_line": "Housing insecurity represents an important modifiable risk factor for poor health outcomes and mortality in older adults.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "date": "Thu, 07 May 2026 23:00:43 +000",
-    "date_iso": "2026-05-11",
-    "why_this_matters": "This highlights housing as a modifiable social determinant of health that directly impacts clinical outcomes in older adults, informing both individual care and population health strategies.",
-    "population": "Older adults",
-    "intervention_exposure": "Housing insecurity (poor affordability and quality)",
-    "comparator": "",
-    "key_results": [
-      "Poor housing affordability and quality associated with development of geriatric conditions over 5 years",
-      "Housing insecurity associated with increased mortality"
-    ],
-    "clinical_interpretation": [
-      "Housing assessment should be part of comprehensive geriatric evaluation",
-      "Addressing housing insecurity may improve health outcomes in older adults"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
   },
   {
     "article_index": 1,

@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Myxedema Coma",
     "Status Epilepticus",
     "Aortic Dissection",
     "Hospital-Acquired Pneumonia",
@@ -89,7 +88,8 @@
     "Cellulitis and Skin Soft Tissue Infections",
     "Syncope",
     "Atrial Fibrillation",
-    "Alcohol Withdrawal Syndrome"
+    "Alcohol Withdrawal Syndrome",
+    "Hemophagocytic Lymphohistiocytosis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -199,7 +199,8 @@
     "reduce-it-2019",
     "ideal-2010",
     "odyssey-2018",
-    "fidelity-2022"
+    "fidelity-2022",
+    "dapt-study-2014"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -529,9 +530,16 @@
     "orforglipron-oral-glp1-approval-2026",
     "glp1-substance-use-reduction-2026",
     "sparsentan-fsgs-first-approval-2026",
-    "housing-insecurity-geriatric-outcomes-2026"
+    "housing-insecurity-geriatric-outcomes-2026",
+    "pocus-nephrolithiasis-ed-2026",
+    "ai-prior-auth-scribes-2026",
+    "orforglipron-foundayo-approval-2026",
+    "ms-fda-drug-shortage-critical-care-2026",
+    "ms-cdc-respiratory-virus-surge-2026",
+    "ms-joint-commission-sepsis-standards-2026",
+    "ms-aha-hypertensive-emergency-guidelines-2026"
   ],
-  "last_run": "2026-05-11",
+  "last_run": "2026-05-12",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -603,13 +611,10 @@
     "Cutaneous T-cell Lymphoma",
     "Lichen Amyloidosis",
     "Macular Lymphocytic Arteritis",
-    "Nevus Sebaceous"
+    "Nevus Sebaceous",
+    "Scrotal Calcinosis"
   ],
   "litfl_cases_shown": [
-    "ct-019",
-    "clinical-author-analytics-2",
-    "ecg-003",
-    "cxr-051",
     "ct-035",
     "clinical-blind-aching-and-vomiting",
     "ecg-079",
@@ -805,6 +810,10 @@
     "clinical-serotonin-toxicity",
     "cxr-007",
     "ct-010",
-    "clinical-above-the-clouds"
+    "clinical-above-the-clouds",
+    "ecg-071",
+    "cxr-063",
+    "ct-058",
+    "clinical-pulmonary-panic"
   ]
 }
