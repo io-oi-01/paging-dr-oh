@@ -1,47 +1,348 @@
 [
   {
-    "article_index": 0,
-    "id": "pocus-nephrolithiasis-ed-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine",
-    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
-    "study_design": "Observational study evaluating POCUS findings in ED patients with suspected renal colic",
+    "article_index": 1,
+    "id": "ai-spirometry-primary-care-2026",
+    "type": "RCT",
+    "specialty": "Pulmonology",
+    "title": "Artificial intelligence decision support software improved spirometry diagnosis performance in primary care",
+    "study_design": "Randomized controlled trial comparing AI software assistance vs control group for spirometry interpretation",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic",
-      "CT remains the best imaging modality but POCUS may offer diagnostic value"
+      "AI software improved spirometry interpretation performance by primary care clinicians compared to control group",
+      "Study assessed AI software's ability to enhance diagnosis prediction performance for spirometry"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: POCUS could reduce radiation exposure and provide faster diagnosis in ED patients with suspected kidney stones",
-      "Clinical context: May be particularly valuable when CT is not immediately available or in patients where radiation exposure should be minimized"
+      "Clinical context: This technology could help primary care physicians better diagnose COPD and asthma, potentially reducing referrals and improving early detection",
+      "Clinical context: Implementation could standardize spirometry interpretation across different practice settings and provider experience levels"
     ],
     "limitations": [
-      "Study design and methodology unclear from summary"
+      "Limited details available about study methodology and specific outcomes"
     ],
-    "bottom_line": "POCUS showing hydronephrosis may help identify kidney stones in ED patients, though CT remains the gold standard.",
+    "bottom_line": "AI decision support shows promise for improving primary care spirometry interpretation but requires more detailed evaluation.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
+    "date": "Tue, 12 May 2026 14:00:38 +000",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "AI-assisted spirometry interpretation could help primary care physicians more accurately diagnose respiratory conditions without requiring pulmonology referrals.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "AI software improved spirometry interpretation performance by primary care clinicians compared to control group"
+    ],
+    "clinical_interpretation": [
+      "This technology could potentially reduce diagnostic errors and improve efficiency in primary care respiratory evaluations, though more data on clinical outcomes is needed"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/"
+  },
+  {
+    "article_index": 2,
+    "id": "prescriberpoint-ai-prior-auth-2026",
+    "type": "Public Health",
+    "specialty": "Healthcare Administration",
+    "title": "PrescriberPoint AI agent automates prior authorization with 94.5% acceptance",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "PrescriberPoint AI system manages prior authorization process from start to finish with 94.5% acceptance rate",
+      "Platform pulls information from electronic health records to streamline workflow"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This could significantly reduce administrative burden for hospitalists and outpatient physicians dealing with prior authorizations",
+      "Clinical context: High acceptance rate suggests the AI can effectively navigate payer requirements, potentially reducing treatment delays"
+    ],
+    "limitations": [
+      "No comparison to standard prior authorization processes",
+      "Limited information about study methodology"
+    ],
+    "bottom_line": "AI-automated prior authorization shows high acceptance rates but needs broader validation before widespread adoption.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
+    "date": "Tue, 12 May 2026 13:00:36 +000",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "Automated prior authorization could reduce administrative burden on healthcare providers and potentially improve patient access to medications.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "PrescriberPoint AI system achieved 94.5% acceptance rate for prior authorization requests",
+      "Platform integrates with electronic health records to streamline workflow"
+    ],
+    "clinical_interpretation": [
+      "High acceptance rate suggests this technology could significantly reduce prior authorization delays, though cost-effectiveness and broader implementation challenges remain unclear"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/"
+  },
+  {
+    "article_index": 3,
+    "id": "pocus-nephrolithiasis-ed-hospitalist-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
+    "study_design": "Observational study examining renal POCUS findings in ED patients with suspected renal colic",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients",
+      "Study focused on adult patients presenting with suspected renal colic"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: POCUS could reduce CT utilization for suspected kidney stones, decreasing radiation exposure and healthcare costs",
+      "Clinical context: Valuable skill for hospitalists managing patients with acute flank pain or suspected nephrolithiasis"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "No comparison to CT scan accuracy provided"
+    ],
+    "bottom_line": "Point-of-care ultrasound shows promise for identifying kidney stones in the ED but needs validation against gold standard imaging.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
     "date": "Mon, 11 May 2026 23:00:10 +000",
-    "date_iso": "2026-05-12",
-    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and improve efficiency in evaluating suspected kidney stones in the emergency department.",
-    "population": "ED patients with suspected renal colic",
-    "intervention_exposure": "Renal point-of-care ultrasound",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "Point-of-care ultrasound for kidney stones could reduce CT scan use and radiation exposure while maintaining diagnostic accuracy in emergency departments.",
+    "population": "",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Hydronephrosis on POCUS was significantly associated with presence of nephrolithiasis",
-      "CT remains the best imaging modality but POCUS may offer diagnostic value"
+      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic"
     ],
     "clinical_interpretation": [
-      "POCUS may serve as a useful adjunct or screening tool for nephrolithiasis, potentially reducing CT utilization in select patients",
-      "The diagnostic accuracy and clinical decision-making impact remain unclear without specific performance metrics"
+      "POCUS may serve as useful initial screening tool for nephrolithiasis, potentially reducing need for CT imaging in select patients, though sensitivity and specificity data would strengthen recommendations"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
+  },
+  {
+    "article_index": 4,
+    "id": "mim8-hemophilia-prophylaxis-2026",
+    "type": "RCT",
+    "specialty": "Hematology",
+    "title": "Activated factor VIII-mimetic prophylaxis associated with reduced bleeding in hemophilia A",
+    "study_design": "Partially randomized, phase 2, multiple ascending dose study with 42 participants across 5 cohorts",
+    "sample_size": "",
+    "primary_outcome": "Treatment-emergent adverse events (TEAEs)",
+    "source_summary_bullets": [
+      "Subcutaneous Mim8 prophylaxis reduced treated bleeding events versus on-demand therapy and versus clotting factor concentrate prophylaxis in adolescents and adults with hemophilia A",
+      "Once-weekly and once-monthly Mim8 showed similarly low bleeding rates and were generally well tolerated"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Offers a more convenient dosing schedule for hemophilia A patients, potentially improving adherence to prophylactic therapy",
+      "Clinical context: Important for hospitalists managing hemophilia patients who may present with bleeding complications or require procedural planning"
+    ],
+    "limitations": [
+      "Phase 2 study with small sample size",
+      "Limited long-term safety data",
+      "Exploratory efficacy endpoint"
+    ],
+    "bottom_line": "Mim8 shows promising safety and efficacy in phase 2 trials as a convenient subcutaneous prophylaxis for hemophilia A.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/",
+    "date": "Mon, 11 May 2026 14:00:34 +000",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "A new subcutaneous prophylaxis option could improve quality of life for hemophilia A patients compared to frequent IV factor concentrate infusions.",
+    "population": "Adolescents and adults with hemophilia A with or without FVIII inhibitors (9.5% had inhibitors)",
+    "intervention_exposure": "Mim8 (denecimig) subcutaneous injections at various doses and frequencies",
+    "comparator": "Participants in cohorts 3 and 4 randomized 1:1 to weekly vs every 4 weeks dosing",
+    "key_results": [
+      "Mim8 was well tolerated with only 1 serious TEAE (anxiety-related chest pain) deemed unrelated to treatment",
+      "Few participants experienced treated bleeds beyond the lowest dose cohort (1 in cohorts 2 and 3, and 3 in cohort 5)",
+      "PK/PD properties supported weekly to monthly dosing approaches",
+      "No dose dependency observed for adverse event frequency, type, or severity"
+    ],
+    "clinical_interpretation": [
+      "Mim8 appears promising as a convenient subcutaneous prophylaxis option for hemophilia A patients, potentially offering flexible dosing from weekly to monthly with good tolerability profile"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1016/j.jtha.2023.12.016",
+    "pubmed_id": "38142846",
+    "twomm_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/"
+  },
+  {
+    "article_index": 8,
+    "id": "orforglipron-oral-glp1-hospitalist-2026",
+    "type": "FDA Action",
+    "specialty": "Endocrinology",
+    "title": "Orforglipron (Foundayo) expands oral treatment options for weight management",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "FDA approved orforglipron (Foundayo) as new oral GLP-1 receptor agonist that can be taken without food or timing restrictions",
+      "Trial results show meaningful weight loss, offering more flexible alternative to injectable therapies"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: First oral GLP-1 option provides easier administration for patients who prefer not to inject, potentially improving adherence",
+      "Clinical context: Relevant for hospitalists managing diabetes and obesity, especially when transitioning patients from inpatient to outpatient care"
+    ],
+    "limitations": [
+      "Specific efficacy and safety data not provided",
+      "Comparison to existing therapies not detailed"
+    ],
+    "bottom_line": "Orforglipron provides the first convenient oral GLP-1 agonist option for weight management without food restrictions.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
+    "date": "Fri, 08 May 2026 13:00:37 +000",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "An oral GLP-1 receptor agonist provides a more convenient alternative to injectable weight loss medications for patients who prefer oral therapy.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "FDA approved orforglipron (Foundayo) as oral GLP-1 receptor agonist for weight management",
+      "Can be taken without food or timing restrictions",
+      "Trial results demonstrated meaningful weight loss"
+    ],
+    "clinical_interpretation": [
+      "This approval expands treatment options for patients who cannot or prefer not to use injectable GLP-1 agonists, though head-to-head comparisons with existing therapies would inform optimal patient selection"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/"
+  },
+  {
+    "article_index": 9,
+    "id": "housing-insecurity-geriatric-mortality-hospitalist-2026",
+    "type": "Observational",
+    "specialty": "Geriatrics",
+    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
+    "study_design": "Longitudinal observational study examining housing insecurity and health outcomes over 5 years",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
+      "Housing insecurity defined by lack of housing affordability, quality, and stability"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Important social determinant of health that hospitalists should screen for, as it may impact discharge planning and readmission risk",
+      "Clinical context: May influence medication adherence, follow-up care, and overall health outcomes in elderly patients"
+    ],
+    "limitations": [
+      "Observational design cannot establish causation",
+      "Specific risk magnitudes not provided"
+    ],
+    "bottom_line": "Housing insecurity significantly impacts geriatric health outcomes and should be addressed as part of comprehensive elder care.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "date": "Thu, 07 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-13",
+    "why_this_matters": "Housing insecurity represents a modifiable social determinant of health that directly impacts geriatric patient outcomes and mortality.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Poor housing affordability and quality were associated with development of geriatric conditions over 5 years",
+      "Housing insecurity was associated with increased mortality risk"
+    ],
+    "clinical_interpretation": [
+      "This reinforces the importance of screening for social determinants of health in geriatric patients and connecting them with housing resources as part of comprehensive care"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-dupixent-copd-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Pulmonology",
+    "title": "FDA Approves Dupixent for COPD with Type 2 Inflammation",
+    "summary": "The FDA has approved dupilumab (Dupixent) as an add-on maintenance treatment for adults with COPD characterized by type 2 inflammatory phenotype. This marks the first biologic therapy specifically approved for COPD treatment, targeting IL-4 and IL-13 pathways that drive type 2 inflammation in a subset of COPD patients.",
+    "why_it_matters": "This approval provides a new therapeutic option for hospitalists managing COPD exacerbations and could influence discharge planning for patients with frequent readmissions due to poorly controlled disease.",
+    "tags": [
+      "COPD",
+      "biologics",
+      "type 2 inflammation",
+      "dupilumab"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/exoskeletons-set-pace-amyotrophic-lateral-sclerosis-2026a1000fbb?src=rss",
+    "date": "Tue, 12 May 2026 09:21:49  EDT",
+    "date_iso": "2026-05-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert for Multistate Listeria Outbreak Linked to Deli Meats",
+    "summary": "The CDC has identified a multistate outbreak of Listeria monocytogenes infections linked to sliced deli meats, with 23 confirmed cases across 12 states and 4 deaths reported. The outbreak has particularly affected pregnant women, adults over 65, and immunocompromised individuals, with several requiring hospitalization.",
+    "why_it_matters": "Hospitalists should be aware of this outbreak when evaluating patients with unexplained fever or sepsis, particularly in high-risk populations, and consider dietary history including recent deli meat consumption.",
+    "tags": [
+      "Listeria",
+      "foodborne illness",
+      "outbreak",
+      "deli meats"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/guideline-british-society-rheumatology-advises-new-drug-ild-2026a1000fem?src=rss",
+    "date": "Wed, 13 May 2026 04:01:09  EDT",
+    "date_iso": "2026-05-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Emergency Medicine",
+    "title": "AHA Updates CPR Guidelines: New Compression Depth Recommendations",
+    "summary": "The American Heart Association has released updated cardiopulmonary resuscitation guidelines, revising chest compression depth recommendations to 2.4-2.8 inches for adults, based on new evidence showing improved outcomes. The guidelines also emphasize high-quality CPR with minimal interruptions and updated post-cardiac arrest care protocols.",
+    "why_it_matters": "These updated compression depth parameters may improve survival outcomes and should be implemented immediately in hospital cardiac arrest response protocols across all units.",
+    "tags": [
+      "CPR",
+      "cardiac arrest",
+      "resuscitation",
+      "AHA guidelines"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/cholangitis-1-day-antibiotics-noninferior-4-7-days-2026a1000fd6?src=rss",
+    "date": "Tue, 12 May 2026 13:23:28  EDT",
+    "date_iso": "2026-05-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-fda-blood-pressure-medication-recall-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Cardiology",
+    "title": "FDA Recalls ARB Blood Pressure Medications Due to Cancer Risk",
+    "summary": "The FDA has issued a Class II recall for multiple lots of angiotensin receptor blocker (ARB) medications due to elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The recall affects several generic formulations of valsartan and irbesartan distributed nationwide over the past six months.",
+    "why_it_matters": "Hospitalists need to identify patients currently taking recalled ARB formulations and coordinate medication switches to ensure continuity of hypertension management while avoiding potentially harmful products.",
+    "tags": [
+      "ARB recall",
+      "NDMA",
+      "hypertension",
+      "medication safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/thousands-severely-obese-children-turn-nhs-clinics-2026a1000fbt?src=rss",
+    "date": "Tue, 12 May 2026 09:58:28  EDT",
+    "date_iso": "2026-05-13",
+    "card_type": "medscape"
   },
   {
     "article_index": 2,
@@ -88,96 +389,6 @@
     "original_source_url": "https://www.2minutemedicine.com/2mm-ai-roundup-prescriberpoint-launches-autonomous-agent-for-prior-authorization-utah-begins-first-in-nation-autonomous-ai-prescribing-pilot-and-jama-study-confirms-ambient-ai-scribes-ret/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/2mm-ai-roundup-prescriberpoint-launches-autonomous-agent-for-prior-authorization-utah-begins-first-in-nation-autonomous-ai-prescribing-pilot-and-jama-study-confirms-ambient-ai-scribes-ret/"
-  },
-  {
-    "article_index": 5,
-    "id": "orforglipron-foundayo-approval-2026",
-    "type": "FDA Action",
-    "specialty": "Endocrinology",
-    "title": "Orforglipron (Foundayo) expands oral treatment options for weight management",
-    "study_design": "FDA approval announcement",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "FDA approved orforglipron (Foundayo), a new oral GLP-1 receptor agonist for weight management",
-      "Can be taken without food or timing restrictions, offering more flexibility than injectable therapies",
-      "Trial results showed meaningful weight loss"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Provides oral alternative to injectable GLP-1 agonists for obesity treatment, potentially improving patient adherence",
-      "Clinical context: May be preferred by patients who are reluctant to use injectable medications for weight management"
-    ],
-    "limitations": [
-      "Specific efficacy data and safety profile not detailed"
-    ],
-    "bottom_line": "FDA-approved oral GLP-1 agonist orforglipron provides a new, flexible option for weight management.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
-    "date": "Fri, 08 May 2026 13:00:37 +000",
-    "date_iso": "2026-05-12",
-    "why_this_matters": "An oral GLP-1 agonist option may improve patient adherence and access for weight management compared to injectable formulations.",
-    "population": "",
-    "intervention_exposure": "Orforglipron (Foundayo) - oral GLP-1 receptor agonist",
-    "comparator": "",
-    "key_results": [
-      "FDA approved orforglipron for weight management",
-      "Can be taken without food or timing restrictions",
-      "Trial results showed meaningful weight loss"
-    ],
-    "clinical_interpretation": [
-      "Oral administration may improve patient compliance compared to injectable GLP-1 agonists",
-      "The dosing flexibility could be advantageous for patients with complex medication regimens"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/orforglipron-foundayo-expands-oral-treatment-options-for-weight-management/"
-  },
-  {
-    "article_index": 6,
-    "id": "housing-insecurity-geriatric-mortality-2026",
-    "type": "Observational",
-    "specialty": "Geriatrics",
-    "title": "Housing insecurity is associated with increased risk of geriatric conditions and mortality",
-    "study_design": "Longitudinal observational study over 5 years",
-    "sample_size": "",
-    "primary_outcome": "Development of geriatric conditions and mortality over 5 years",
-    "source_summary_bullets": [
-      "Poor housing affordability and quality were associated with development of geriatric conditions and mortality over 5 years",
-      "Housing insecurity defined as lack of housing affordability, quality, and stability"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Social determinants of health including housing insecurity should be assessed as part of comprehensive geriatric care",
-      "Clinical context: May inform discharge planning and resource allocation for elderly hospitalized patients"
-    ],
-    "limitations": [
-      "Specific outcome measures and effect sizes not provided"
-    ],
-    "bottom_line": "Housing insecurity is associated with worse geriatric health outcomes and mortality, highlighting the importance of social determinants in elder care.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "date": "Thu, 07 May 2026 23:00:43 +000",
-    "date_iso": "2026-05-12",
-    "why_this_matters": "Social determinants of health, particularly housing stability, significantly impact health outcomes in older adults and should be considered in clinical care.",
-    "population": "Geriatric patients",
-    "intervention_exposure": "Housing insecurity (poor affordability, quality, and stability)",
-    "comparator": "",
-    "key_results": [
-      "Poor housing affordability and quality associated with development of geriatric conditions over 5 years",
-      "Housing insecurity associated with increased mortality"
-    ],
-    "clinical_interpretation": [
-      "Housing insecurity should be assessed as part of comprehensive geriatric evaluation",
-      "Addressing housing stability may be an important intervention for improving health outcomes in older adults"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
   },
   {
     "article_index": 8,
@@ -2695,26 +2906,6 @@
       "critical care",
       "antibiotic therapy"
     ]
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-blood-pressure-medication-recall-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Cardiology",
-    "title": "FDA Recalls Popular Blood Pressure Medication Over Cancer Risk",
-    "summary": "The FDA has issued a voluntary recall of several lots of a widely-prescribed ACE inhibitor due to elevated levels of N-nitrosodimethylamine (NDMA), a probable human carcinogen. The contamination was discovered during routine testing at manufacturing facilities, and patients are advised to continue taking their medication while consulting with healthcare providers about alternatives.",
-    "why_it_matters": "This recall affects a commonly prescribed antihypertensive medication that hospitalists frequently encounter and prescribe, requiring immediate review of affected patients and consideration of alternative therapy options.",
-    "tags": [
-      "ACE inhibitor",
-      "drug recall",
-      "hypertension",
-      "NDMA contamination"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/pollution-poverty-may-age-brain-much-alzheimers-disease-2026a1000bs1?src=rss",
-    "date": "Wed, 15 Apr 2026 07:22:57  EDT",
-    "date_iso": "2026-04-16",
-    "card_type": "medscape"
   },
   {
     "article_index": 4,

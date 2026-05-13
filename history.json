@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Status Epilepticus",
     "Aortic Dissection",
     "Hospital-Acquired Pneumonia",
     "Acute Decompensated Heart Failure",
@@ -89,7 +88,8 @@
     "Syncope",
     "Atrial Fibrillation",
     "Alcohol Withdrawal Syndrome",
-    "Hemophagocytic Lymphohistiocytosis"
+    "Hemophagocytic Lymphohistiocytosis",
+    "Acute Ischemic Stroke"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -200,7 +200,8 @@
     "ideal-2010",
     "odyssey-2018",
     "fidelity-2022",
-    "dapt-study-2014"
+    "dapt-study-2014",
+    "recover-2009"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -537,9 +538,18 @@
     "ms-fda-drug-shortage-critical-care-2026",
     "ms-cdc-respiratory-virus-surge-2026",
     "ms-joint-commission-sepsis-standards-2026",
-    "ms-aha-hypertensive-emergency-guidelines-2026"
+    "ms-aha-hypertensive-emergency-guidelines-2026",
+    "ai-spirometry-primary-care-2026",
+    "prescriberpoint-ai-prior-auth-2026",
+    "pocus-nephrolithiasis-ed-hospitalist-2026",
+    "mim8-hemophilia-prophylaxis-2026",
+    "orforglipron-oral-glp1-hospitalist-2026",
+    "housing-insecurity-geriatric-mortality-hospitalist-2026",
+    "ms-fda-dupixent-copd-approval-2026",
+    "ms-cdc-listeria-outbreak-deli-meats-2026",
+    "ms-aha-cardiopulmonary-resuscitation-guidelines-2026"
   ],
-  "last_run": "2026-05-12",
+  "last_run": "2026-05-13",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -612,13 +622,10 @@
     "Lichen Amyloidosis",
     "Macular Lymphocytic Arteritis",
     "Nevus Sebaceous",
-    "Scrotal Calcinosis"
+    "Scrotal Calcinosis",
+    "Stasis Dermatitis"
   ],
   "litfl_cases_shown": [
-    "ct-035",
-    "clinical-blind-aching-and-vomiting",
-    "ecg-079",
-    "cxr-075",
     "ct-025",
     "clinical-necrotic-arachnidism",
     "ecg-095",
@@ -814,6 +821,10 @@
     "ecg-071",
     "cxr-063",
     "ct-058",
-    "clinical-pulmonary-panic"
+    "clinical-pulmonary-panic",
+    "ecg-017",
+    "cxr-002",
+    "ct-067",
+    "clinical-cannon-balls"
   ]
 }
