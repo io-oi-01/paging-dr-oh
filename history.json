@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Aortic Dissection",
     "Hospital-Acquired Pneumonia",
     "Acute Decompensated Heart Failure",
     "Asthma Exacerbation",
@@ -89,7 +88,8 @@
     "Atrial Fibrillation",
     "Alcohol Withdrawal Syndrome",
     "Hemophagocytic Lymphohistiocytosis",
-    "Acute Ischemic Stroke"
+    "Acute Ischemic Stroke",
+    "Guillain-Barre Syndrome"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -201,7 +201,8 @@
     "odyssey-2018",
     "fidelity-2022",
     "dapt-study-2014",
-    "recover-2009"
+    "recover-2009",
+    "rales-1999"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -547,9 +548,11 @@
     "housing-insecurity-geriatric-mortality-hospitalist-2026",
     "ms-fda-dupixent-copd-approval-2026",
     "ms-cdc-listeria-outbreak-deli-meats-2026",
-    "ms-aha-cardiopulmonary-resuscitation-guidelines-2026"
+    "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
+    "utah-ai-prescription-renewals-pilot-2026",
+    "ssri-pharmacogenetic-testing-depression-2026"
   ],
-  "last_run": "2026-05-13",
+  "last_run": "2026-05-14",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -623,13 +626,10 @@
     "Macular Lymphocytic Arteritis",
     "Nevus Sebaceous",
     "Scrotal Calcinosis",
-    "Stasis Dermatitis"
+    "Stasis Dermatitis",
+    "Psoriasis"
   ],
   "litfl_cases_shown": [
-    "ct-025",
-    "clinical-necrotic-arachnidism",
-    "ecg-095",
-    "cxr-034",
     "ct-083",
     "clinical-chloroquine-poisoning",
     "ecg-112",
@@ -825,6 +825,10 @@
     "ecg-017",
     "cxr-002",
     "ct-067",
-    "clinical-cannon-balls"
+    "clinical-cannon-balls",
+    "ecg-110",
+    "cxr-047",
+    "ct-079",
+    "clinical-clinical-cases/ent-equivocation"
   ]
 }

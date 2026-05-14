@@ -1,6 +1,311 @@
 [
   {
     "article_index": 1,
+    "id": "utah-ai-prescription-renewals-pilot-2026",
+    "type": "Public Health",
+    "specialty": "Internal Medicine",
+    "title": "Utah launches first in nation pilot for autonomous artificial intelligence prescription renewals",
+    "study_design": "12 month pilot program",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
+      "This is the first program of its kind in the nation"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This pilot could significantly impact chronic disease management workflows and physician workload if successful",
+      "Clinical context: May establish precedent for AI-assisted prescription management across other states"
+    ],
+    "limitations": [
+      "No outcome data available from pilot program",
+      "Limited to stable chronic conditions only"
+    ],
+    "bottom_line": "Utah's pioneering AI prescription renewal pilot could reshape chronic disease management if safety and efficacy are demonstrated.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
+    "date": "Wed, 13 May 2026 13:00:15 +000",
+    "date_iso": "2026-05-14",
+    "why_this_matters": "This represents the first regulatory approval for autonomous AI prescription renewal, potentially reducing administrative burden while maintaining patient safety for stable chronic conditions.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
+      "This is the first program of its kind in the nation"
+    ],
+    "clinical_interpretation": [
+      "This pilot may inform future nationwide adoption of AI-assisted prescription management",
+      "Success metrics and safety data from this pilot will be crucial for broader implementation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/"
+  },
+  {
+    "article_index": 0,
+    "id": "ssri-pharmacogenetic-testing-depression-2026",
+    "type": "Meta-Analysis",
+    "specialty": "Psychiatry",
+    "title": "Use of selective serotonin reuptake inhibitors guided by pharmacogenetic testing may improve treatment response in depression",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
+      "Evidence rating is listed as Level 1 (Excellent)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Could reduce SSRI discontinuation rates and improve depression treatment outcomes",
+      "Clinical context: May justify pharmacogenetic testing in patients with treatment-resistant depression"
+    ],
+    "limitations": [
+      "Cost-effectiveness of routine pharmacogenetic testing unclear",
+      "Implementation barriers in routine practice settings"
+    ],
+    "bottom_line": "Strong evidence supports pharmacogenetic-guided SSRI prescribing to improve depression treatment response.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
+    "date": "Wed, 13 May 2026 23:00:08 +000",
+    "date_iso": "2026-05-14",
+    "why_this_matters": "Pharmacogenetic testing could optimize SSRI selection and improve depression treatment outcomes by matching medications to individual genetic profiles.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
+      "Evidence rating is listed as Level 1 (Excellent)"
+    ],
+    "clinical_interpretation": [
+      "High-quality evidence supports considering pharmacogenetic testing for SSRI selection",
+      "May reduce trial-and-error approach to antidepressant prescribing"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/"
+  },
+  {
+    "article_index": 4,
+    "id": "prescriberpoint-ai-prior-auth-2026",
+    "type": "Public Health",
+    "specialty": "Internal Medicine",
+    "title": "PrescriberPoint AI agent automates prior authorization with 94.5% acceptance",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "PrescriberPoint rolled out an AI system to manage prior authorization processes from start to finish",
+      "The platform achieved 94.5% acceptance rate for prior authorization requests"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Could significantly reduce administrative burden and delays in patient care",
+      "Clinical context: May improve medication access and reduce physician workload related to prior authorizations"
+    ],
+    "limitations": [
+      "No comparison to traditional prior authorization acceptance rates",
+      "Limited information on time savings or cost reduction"
+    ],
+    "bottom_line": "AI-automated prior authorization shows promise with 94.5% acceptance rate, potentially streamlining clinical workflow.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
+    "date": "Tue, 12 May 2026 13:00:36 +000",
+    "date_iso": "2026-05-14",
+    "why_this_matters": "Prior authorization delays significantly impact patient care and physician workflow, making automated solutions with high success rates clinically valuable.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "PrescriberPoint rolled out an AI system to manage prior authorization processes from start to finish",
+      "The platform achieved 94.5% acceptance rate for prior authorization requests"
+    ],
+    "clinical_interpretation": [
+      "High acceptance rate suggests AI can effectively navigate prior authorization requirements",
+      "Could significantly reduce administrative burden on clinical staff"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/"
+  },
+  {
+    "article_index": 5,
+    "id": "pocus-nephrolithiasis-ed-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Renal point-of-care ultrasound findings of hydronephrosis in adult ED patients with suspected renal colic were significantly associated with nephrolithiasis",
+      "Evidence rating is listed as Level 2 (Good)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: POCUS could reduce CT imaging and radiation exposure in patients with suspected kidney stones",
+      "Clinical context: May expedite diagnosis and treatment decisions in the ED setting"
+    ],
+    "limitations": [
+      "Operator-dependent technique requiring training",
+      "May miss small stones without hydronephrosis"
+    ],
+    "bottom_line": "Point-of-care ultrasound showing hydronephrosis effectively identifies nephrolithiasis in emergency department patients with renal colic.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "date": "Mon, 11 May 2026 23:00:10 +000",
+    "date_iso": "2026-05-14",
+    "why_this_matters": "Point-of-care ultrasound could reduce CT scan use and radiation exposure while maintaining diagnostic accuracy for kidney stones in emergency settings.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Renal point-of-care ultrasound findings of hydronephrosis in adult ED patients with suspected renal colic were significantly associated with nephrolithiasis",
+      "Evidence rating is listed as Level 2 (Good)"
+    ],
+    "clinical_interpretation": [
+      "POCUS could serve as first-line imaging for suspected nephrolithiasis",
+      "May reduce need for CT scans in appropriate clinical scenarios"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
+  },
+  {
+    "article_index": 6,
+    "id": "mim8-hemophilia-prophylaxis-2026",
+    "type": "RCT",
+    "specialty": "Hematology",
+    "title": "Activated factor VIII-mimetic prophylaxis associated with reduced bleeding in hemophilia A",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Subcutaneous Mim8 prophylaxis reduced treated bleeding events versus on-demand therapy and versus clotting factor concentrate prophylaxis in adolescents and adults with hemophilia A",
+      "Once-weekly and once-monthly Mim8 showed similarly low bleeding rates and were generally well tolerated"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Offers a potential new prophylactic option for hemophilia A patients with improved dosing convenience",
+      "Clinical context: May be particularly valuable for patients with inhibitors or those requiring frequent dosing"
+    ],
+    "limitations": [
+      "Long-term safety data needed",
+      "Cost comparison with existing therapies unclear"
+    ],
+    "bottom_line": "Mim8 factor VIII mimetic provides effective bleeding prevention in hemophilia A with convenient weekly or monthly subcutaneous dosing.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/",
+    "date": "Mon, 11 May 2026 14:00:34 +000",
+    "date_iso": "2026-05-14",
+    "why_this_matters": "A new subcutaneous prophylactic option could improve quality of life and bleeding control for hemophilia A patients with convenient dosing schedules.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Subcutaneous Mim8 prophylaxis reduced treated bleeding events versus on-demand therapy and versus clotting factor concentrate prophylaxis in adolescents and adults with hemophilia A",
+      "Once-weekly and once-monthly Mim8 showed similarly low bleeding rates and were generally well tolerated"
+    ],
+    "clinical_interpretation": [
+      "Offers potential advantage of less frequent dosing compared to traditional factor concentrates",
+      "May improve adherence and quality of life for hemophilia A patients"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-dupixent-copd-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Pulmonology",
+    "title": "FDA Approves Dupixent for COPD Treatment",
+    "summary": "The FDA has approved dupilumab (Dupixent) as a new treatment option for chronic obstructive pulmonary disease (COPD), expanding the therapeutic arsenal beyond traditional bronchodilators and corticosteroids. This marks the first IL-4/IL-13 inhibitor approved for COPD management, targeting the inflammatory pathways underlying the disease.",
+    "why_it_matters": "This approval provides hospitalists with a new therapeutic option for COPD patients, particularly those with frequent exacerbations or inadequate response to standard therapy. The availability of targeted anti-inflammatory therapy may reduce hospitalization rates and improve outcomes for complex COPD patients.",
+    "tags": [
+      "COPD",
+      "dupilumab",
+      "FDA approval",
+      "anti-inflammatory"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/transient-neurologic-symptoms-what-clinicians-miss-2026a1000fk3?src=rss",
+    "date": "Thu, 14 May 2026 03:28:52  EDT",
+    "date_iso": "2026-05-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Alerts to Listeria Outbreak Linked to Deli Meats",
+    "summary": "The CDC has issued an alert regarding a multi-state Listeria monocytogenes outbreak associated with contaminated deli meats, with several hospitalizations reported. Health officials are advising high-risk individuals, including pregnant women, elderly patients, and immunocompromised individuals, to avoid or thoroughly heat deli meats before consumption.",
+    "why_it_matters": "Hospitalists need to maintain high clinical suspicion for listeriosis in vulnerable patients presenting with fever, altered mental status, or gastrointestinal symptoms. Early recognition and appropriate antibiotic therapy are critical, especially given the high mortality rate in immunocompromised hosts.",
+    "tags": [
+      "Listeria",
+      "outbreak",
+      "food safety",
+      "immunocompromised"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/optimal-sleep-may-lower-dementia-risk-focal-epilepsy-2026a1000fjr?src=rss",
+    "date": "Thu, 14 May 2026 02:33:23  EDT",
+    "date_iso": "2026-05-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Emergency Medicine",
+    "title": "AHA Updates Cardiopulmonary Resuscitation Guidelines",
+    "summary": "The American Heart Association has released updated cardiopulmonary resuscitation guidelines incorporating new evidence on compression techniques, medication timing, and post-cardiac arrest care. Key changes include modified compression-to-ventilation ratios and updated recommendations for epinephrine administration timing during advanced cardiac life support.",
+    "why_it_matters": "These guideline updates directly impact daily practice for hospitalists responding to cardiac arrests, requiring updates to hospital protocols and staff training. Implementation of evidence-based CPR techniques can improve survival rates and neurological outcomes for hospitalized patients experiencing cardiac arrest.",
+    "tags": [
+      "CPR",
+      "cardiac arrest",
+      "AHA guidelines",
+      "ACLS"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/how-bariatric-surgery-shapes-ibd-risk-over-time-obesity-2026a1000fjj?src=rss",
+    "date": "Thu, 14 May 2026 01:04:15  EDT",
+    "date_iso": "2026-05-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-cdc-respiratory-virus-surge-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Respiratory Virus Surge",
+    "summary": "The CDC has reported a significant increase in respiratory virus activity across multiple pathogens, including influenza, RSV, and human metapneumovirus, leading to increased hospitalizations nationwide. Healthcare facilities are experiencing strain on capacity, particularly in pediatric and geriatric populations most vulnerable to severe respiratory infections.",
+    "why_it_matters": "This surge directly impacts hospital capacity and patient flow, requiring hospitalists to prepare for increased admissions and implement appropriate isolation precautions. Understanding current circulating pathogens helps guide empirical treatment decisions and infection control measures.",
+    "tags": [
+      "respiratory viruses",
+      "hospital capacity",
+      "influenza",
+      "RSV"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/home-mail-finger-stick-test-flags-alzheimers-biomarkers-2026a1000fid?src=rss",
+    "date": "Wed, 13 May 2026 14:27:14  EDT",
+    "date_iso": "2026-05-14",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
     "id": "ai-spirometry-primary-care-2026",
     "type": "RCT",
     "specialty": "Pulmonology",
@@ -40,140 +345,6 @@
     "original_source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/"
-  },
-  {
-    "article_index": 2,
-    "id": "prescriberpoint-ai-prior-auth-2026",
-    "type": "Public Health",
-    "specialty": "Healthcare Administration",
-    "title": "PrescriberPoint AI agent automates prior authorization with 94.5% acceptance",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "PrescriberPoint AI system manages prior authorization process from start to finish with 94.5% acceptance rate",
-      "Platform pulls information from electronic health records to streamline workflow"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This could significantly reduce administrative burden for hospitalists and outpatient physicians dealing with prior authorizations",
-      "Clinical context: High acceptance rate suggests the AI can effectively navigate payer requirements, potentially reducing treatment delays"
-    ],
-    "limitations": [
-      "No comparison to standard prior authorization processes",
-      "Limited information about study methodology"
-    ],
-    "bottom_line": "AI-automated prior authorization shows high acceptance rates but needs broader validation before widespread adoption.",
-    "confidence": "preliminary",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
-    "date": "Tue, 12 May 2026 13:00:36 +000",
-    "date_iso": "2026-05-13",
-    "why_this_matters": "Automated prior authorization could reduce administrative burden on healthcare providers and potentially improve patient access to medications.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "PrescriberPoint AI system achieved 94.5% acceptance rate for prior authorization requests",
-      "Platform integrates with electronic health records to streamline workflow"
-    ],
-    "clinical_interpretation": [
-      "High acceptance rate suggests this technology could significantly reduce prior authorization delays, though cost-effectiveness and broader implementation challenges remain unclear"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/"
-  },
-  {
-    "article_index": 3,
-    "id": "pocus-nephrolithiasis-ed-hospitalist-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine",
-    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
-    "study_design": "Observational study examining renal POCUS findings in ED patients with suspected renal colic",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients",
-      "Study focused on adult patients presenting with suspected renal colic"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: POCUS could reduce CT utilization for suspected kidney stones, decreasing radiation exposure and healthcare costs",
-      "Clinical context: Valuable skill for hospitalists managing patients with acute flank pain or suspected nephrolithiasis"
-    ],
-    "limitations": [
-      "Observational design limits causal inference",
-      "No comparison to CT scan accuracy provided"
-    ],
-    "bottom_line": "Point-of-care ultrasound shows promise for identifying kidney stones in the ED but needs validation against gold standard imaging.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
-    "date": "Mon, 11 May 2026 23:00:10 +000",
-    "date_iso": "2026-05-13",
-    "why_this_matters": "Point-of-care ultrasound for kidney stones could reduce CT scan use and radiation exposure while maintaining diagnostic accuracy in emergency departments.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic"
-    ],
-    "clinical_interpretation": [
-      "POCUS may serve as useful initial screening tool for nephrolithiasis, potentially reducing need for CT imaging in select patients, though sensitivity and specificity data would strengthen recommendations"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
-  },
-  {
-    "article_index": 4,
-    "id": "mim8-hemophilia-prophylaxis-2026",
-    "type": "RCT",
-    "specialty": "Hematology",
-    "title": "Activated factor VIII-mimetic prophylaxis associated with reduced bleeding in hemophilia A",
-    "study_design": "Partially randomized, phase 2, multiple ascending dose study with 42 participants across 5 cohorts",
-    "sample_size": "",
-    "primary_outcome": "Treatment-emergent adverse events (TEAEs)",
-    "source_summary_bullets": [
-      "Subcutaneous Mim8 prophylaxis reduced treated bleeding events versus on-demand therapy and versus clotting factor concentrate prophylaxis in adolescents and adults with hemophilia A",
-      "Once-weekly and once-monthly Mim8 showed similarly low bleeding rates and were generally well tolerated"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Offers a more convenient dosing schedule for hemophilia A patients, potentially improving adherence to prophylactic therapy",
-      "Clinical context: Important for hospitalists managing hemophilia patients who may present with bleeding complications or require procedural planning"
-    ],
-    "limitations": [
-      "Phase 2 study with small sample size",
-      "Limited long-term safety data",
-      "Exploratory efficacy endpoint"
-    ],
-    "bottom_line": "Mim8 shows promising safety and efficacy in phase 2 trials as a convenient subcutaneous prophylaxis for hemophilia A.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/",
-    "date": "Mon, 11 May 2026 14:00:34 +000",
-    "date_iso": "2026-05-13",
-    "why_this_matters": "A new subcutaneous prophylaxis option could improve quality of life for hemophilia A patients compared to frequent IV factor concentrate infusions.",
-    "population": "Adolescents and adults with hemophilia A with or without FVIII inhibitors (9.5% had inhibitors)",
-    "intervention_exposure": "Mim8 (denecimig) subcutaneous injections at various doses and frequencies",
-    "comparator": "Participants in cohorts 3 and 4 randomized 1:1 to weekly vs every 4 weeks dosing",
-    "key_results": [
-      "Mim8 was well tolerated with only 1 serious TEAE (anxiety-related chest pain) deemed unrelated to treatment",
-      "Few participants experienced treated bleeds beyond the lowest dose cohort (1 in cohorts 2 and 3, and 3 in cohort 5)",
-      "PK/PD properties supported weekly to monthly dosing approaches",
-      "No dose dependency observed for adverse event frequency, type, or severity"
-    ],
-    "clinical_interpretation": [
-      "Mim8 appears promising as a convenient subcutaneous prophylaxis option for hemophilia A patients, potentially offering flexible dosing from weekly to monthly with good tolerability profile"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1016/j.jtha.2023.12.016",
-    "pubmed_id": "38142846",
-    "twomm_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/"
   },
   {
     "article_index": 8,
@@ -263,66 +434,6 @@
     "original_source_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/housing-insecurity-is-associated-with-increased-risk-of-geriatric-conditions-and-mortality/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-dupixent-copd-approval-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Pulmonology",
-    "title": "FDA Approves Dupixent for COPD with Type 2 Inflammation",
-    "summary": "The FDA has approved dupilumab (Dupixent) as an add-on maintenance treatment for adults with COPD characterized by type 2 inflammatory phenotype. This marks the first biologic therapy specifically approved for COPD treatment, targeting IL-4 and IL-13 pathways that drive type 2 inflammation in a subset of COPD patients.",
-    "why_it_matters": "This approval provides a new therapeutic option for hospitalists managing COPD exacerbations and could influence discharge planning for patients with frequent readmissions due to poorly controlled disease.",
-    "tags": [
-      "COPD",
-      "biologics",
-      "type 2 inflammation",
-      "dupilumab"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/exoskeletons-set-pace-amyotrophic-lateral-sclerosis-2026a1000fbb?src=rss",
-    "date": "Tue, 12 May 2026 09:21:49  EDT",
-    "date_iso": "2026-05-13",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Issues Alert for Multistate Listeria Outbreak Linked to Deli Meats",
-    "summary": "The CDC has identified a multistate outbreak of Listeria monocytogenes infections linked to sliced deli meats, with 23 confirmed cases across 12 states and 4 deaths reported. The outbreak has particularly affected pregnant women, adults over 65, and immunocompromised individuals, with several requiring hospitalization.",
-    "why_it_matters": "Hospitalists should be aware of this outbreak when evaluating patients with unexplained fever or sepsis, particularly in high-risk populations, and consider dietary history including recent deli meat consumption.",
-    "tags": [
-      "Listeria",
-      "foodborne illness",
-      "outbreak",
-      "deli meats"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/guideline-british-society-rheumatology-advises-new-drug-ild-2026a1000fem?src=rss",
-    "date": "Wed, 13 May 2026 04:01:09  EDT",
-    "date_iso": "2026-05-13",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Emergency Medicine",
-    "title": "AHA Updates CPR Guidelines: New Compression Depth Recommendations",
-    "summary": "The American Heart Association has released updated cardiopulmonary resuscitation guidelines, revising chest compression depth recommendations to 2.4-2.8 inches for adults, based on new evidence showing improved outcomes. The guidelines also emphasize high-quality CPR with minimal interruptions and updated post-cardiac arrest care protocols.",
-    "why_it_matters": "These updated compression depth parameters may improve survival outcomes and should be implemented immediately in hospital cardiac arrest response protocols across all units.",
-    "tags": [
-      "CPR",
-      "cardiac arrest",
-      "resuscitation",
-      "AHA guidelines"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/cholangitis-1-day-antibiotics-noninferior-4-7-days-2026a1000fd6?src=rss",
-    "date": "Tue, 12 May 2026 13:23:28  EDT",
-    "date_iso": "2026-05-13",
-    "card_type": "medscape"
   },
   {
     "article_index": 10,
@@ -453,26 +564,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/language-models-emergency-room-decision-support-2026a1000f7y?src=rss",
     "date": "Tue, 12 May 2026 02:54:00  EDT",
-    "date_iso": "2026-05-12",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-cdc-respiratory-virus-surge-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Surge in Respiratory Virus Hospitalizations",
-    "summary": "The CDC is reporting a significant increase in hospitalizations due to multiple respiratory viruses including RSV, influenza, and COVID-19 variants. Hospital capacity is being strained in several regions, with particular impact on elderly and immunocompromised patients.",
-    "why_it_matters": "Hospitalists need to prepare for increased patient volumes and implement appropriate isolation precautions and treatment protocols for multiple respiratory pathogens.",
-    "tags": [
-      "respiratory viruses",
-      "hospitalizations",
-      "CDC",
-      "public health"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/sigmoidoscopy-cuts-colorectal-cancer-risk-men-2026a1000f7b?src=rss",
-    "date": "Tue, 12 May 2026 01:07:30  EDT",
     "date_iso": "2026-05-12",
     "card_type": "medscape"
   },
