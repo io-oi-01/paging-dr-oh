@@ -1,42 +1,119 @@
 [
   {
+    "article_index": 0,
+    "id": "reboa-cardiac-arrest-outcomes-2026",
+    "type": "RCT",
+    "specialty": "Emergency Medicine",
+    "title": "Resuscitative endovascular balloon occlusion of the aorta may not improve outcomes in adults with non-traumatic out-of-hospital cardiac arrest",
+    "study_design": "Randomized controlled trial comparing REBOA plus advanced life support versus advanced life support alone",
+    "sample_size": "",
+    "primary_outcome": "Return of spontaneous circulation",
+    "source_summary_bullets": [
+      "REBOA as an adjunct to advanced life support does not improve rates of return of spontaneous circulation in adult patients with non-traumatic out-of-hospital cardiac arrest",
+      "Study received an evidence rating of Level 1 (Excellent)"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This negative trial provides important evidence against using an invasive procedure in cardiac arrest resuscitation, helping guide evidence-based emergency protocols",
+      "Clinical context: Results suggest resources may be better allocated to other proven resuscitation interventions rather than this complex endovascular approach"
+    ],
+    "limitations": [],
+    "bottom_line": "REBOA does not improve outcomes in non-traumatic out-of-hospital cardiac arrest and should not be routinely used.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/",
+    "date": "Thu, 14 May 2026 23:00:47 +000",
+    "date_iso": "2026-05-15",
+    "why_this_matters": "REBOA is an invasive procedure being considered for cardiac arrest, so knowing its efficacy in non-traumatic cases is crucial for emergency protocols.",
+    "population": "Adult patients with non-traumatic out-of-hospital cardiac arrest",
+    "intervention_exposure": "Resuscitative endovascular balloon occlusion of the aorta (REBOA) as adjunct to advanced life support",
+    "comparator": "",
+    "key_results": [
+      "REBOA did not improve rates of return of spontaneous circulation compared to standard care"
+    ],
+    "clinical_interpretation": [
+      "This high-quality RCT suggests REBOA should not be routinely used in non-traumatic cardiac arrest, potentially saving resources and avoiding unnecessary procedures"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/"
+  },
+  {
     "article_index": 1,
-    "id": "utah-ai-prescription-renewals-pilot-2026",
+    "id": "ssri-pharmacogenetic-testing-depression-2026",
+    "type": "RCT",
+    "specialty": "Psychiatry",
+    "title": "Use of selective serotonin reuptake inhibitors guided by pharmacogenetic testing may improve treatment response in depression",
+    "study_design": "Randomized controlled trial comparing genotype-guided versus standard SSRI prescribing",
+    "sample_size": "",
+    "primary_outcome": "Treatment response",
+    "source_summary_bullets": [
+      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
+      "Study achieved Level 1 (Excellent) evidence rating despite high SSRI discontinuation rates in current practice"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Pharmacogenetic testing could help reduce trial-and-error prescribing and improve patient outcomes in depression treatment",
+      "Clinical context: This approach may be particularly valuable given high discontinuation rates with current empirical SSRI prescribing"
+    ],
+    "limitations": [
+      "High SSRI discontinuation rates noted in current practice"
+    ],
+    "bottom_line": "Pharmacogenetic testing may improve SSRI treatment response in depression but practical implementation challenges remain.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
+    "date": "Wed, 13 May 2026 23:00:08 +000",
+    "date_iso": "2026-05-15",
+    "why_this_matters": "Depression treatment often involves trial-and-error with SSRIs, and pharmacogenetic testing could potentially improve first-line treatment selection.",
+    "population": "Children and adults with depression",
+    "intervention_exposure": "Genotype-guided SSRI prescribing",
+    "comparator": "",
+    "key_results": [
+      "Genotype-guided SSRI prescribing improved treatment response compared to standard prescribing"
+    ],
+    "clinical_interpretation": [
+      "While promising, the high discontinuation rates suggest practical implementation challenges remain, and cost-effectiveness needs consideration"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/"
+  },
+  {
+    "article_index": 2,
+    "id": "utah-ai-prescription-pilot-2026",
     "type": "Public Health",
-    "specialty": "Internal Medicine",
+    "specialty": "Health Policy",
     "title": "Utah launches first in nation pilot for autonomous artificial intelligence prescription renewals",
-    "study_design": "12 month pilot program",
+    "study_design": "12-month pilot program for AI-autonomous prescription renewals",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
-      "This is the first program of its kind in the nation"
+      "This represents the first-in-nation initiative for autonomous AI prescription management"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This pilot could significantly impact chronic disease management workflows and physician workload if successful",
-      "Clinical context: May establish precedent for AI-assisted prescription management across other states"
+      "Clinical context: This pilot could significantly reduce administrative burden for chronic disease management while maintaining patient safety",
+      "Clinical context: Success could lead to broader adoption of AI-assisted medication management systems nationwide"
     ],
-    "limitations": [
-      "No outcome data available from pilot program",
-      "Limited to stable chronic conditions only"
-    ],
-    "bottom_line": "Utah's pioneering AI prescription renewal pilot could reshape chronic disease management if safety and efficacy are demonstrated.",
+    "limitations": [],
+    "bottom_line": "Utah's AI prescription renewal pilot may inform future automation of routine medication management.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
     "date": "Wed, 13 May 2026 13:00:15 +000",
-    "date_iso": "2026-05-14",
-    "why_this_matters": "This represents the first regulatory approval for autonomous AI prescription renewal, potentially reducing administrative burden while maintaining patient safety for stable chronic conditions.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-05-15",
+    "why_this_matters": "AI-driven prescription renewals could reduce physician workload while maintaining patient safety for stable chronic conditions.",
+    "population": "Patients with stable chronic conditions",
+    "intervention_exposure": "AI systems for autonomous prescription renewals",
     "comparator": "",
     "key_results": [
-      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
-      "This is the first program of its kind in the nation"
+      "Utah launched first-in-nation 12-month pilot program for autonomous AI prescription management"
     ],
     "clinical_interpretation": [
-      "This pilot may inform future nationwide adoption of AI-assisted prescription management",
-      "Success metrics and safety data from this pilot will be crucial for broader implementation"
+      "This pilot represents an important step toward AI integration in routine care, but safety and efficacy data are needed before broader implementation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -45,49 +122,164 @@
     "twomm_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/"
   },
   {
-    "article_index": 0,
-    "id": "ssri-pharmacogenetic-testing-depression-2026",
-    "type": "Meta-Analysis",
-    "specialty": "Psychiatry",
-    "title": "Use of selective serotonin reuptake inhibitors guided by pharmacogenetic testing may improve treatment response in depression",
-    "study_design": "",
+    "article_index": 4,
+    "id": "ai-spirometry-primary-care-2026",
+    "type": "RCT",
+    "specialty": "Pulmonology",
+    "title": "Artificial intelligence decision support software improved spirometry diagnosis performance in primary care",
+    "study_design": "Randomized controlled trial comparing AI-assisted versus standard spirometry interpretation",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Spirometry diagnosis performance",
     "source_summary_bullets": [
-      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
-      "Evidence rating is listed as Level 1 (Excellent)"
+      "AI software improved spirometry interpretation performance by primary care clinicians compared to standard interpretation",
+      "Study achieved Level 1 (Excellent) evidence rating"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Could reduce SSRI discontinuation rates and improve depression treatment outcomes",
-      "Clinical context: May justify pharmacogenetic testing in patients with treatment-resistant depression"
+      "Clinical context: AI assistance could improve diagnostic accuracy for COPD and asthma in primary care settings where pulmonology expertise may be limited",
+      "Clinical context: This technology could enhance early detection and management of respiratory diseases in outpatient settings"
     ],
-    "limitations": [
-      "Cost-effectiveness of routine pharmacogenetic testing unclear",
-      "Implementation barriers in routine practice settings"
-    ],
-    "bottom_line": "Strong evidence supports pharmacogenetic-guided SSRI prescribing to improve depression treatment response.",
+    "limitations": [],
+    "bottom_line": "AI decision support can improve primary care spirometry interpretation accuracy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
-    "date": "Wed, 13 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-14",
-    "why_this_matters": "Pharmacogenetic testing could optimize SSRI selection and improve depression treatment outcomes by matching medications to individual genetic profiles.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
+    "source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
+    "date": "Tue, 12 May 2026 14:00:38 +000",
+    "date_iso": "2026-05-15",
+    "why_this_matters": "Spirometry interpretation can be challenging in primary care, and AI assistance could improve diagnostic accuracy for respiratory conditions.",
+    "population": "Primary care clinicians",
+    "intervention_exposure": "AI decision support software for spirometry interpretation",
+    "comparator": "Standard spirometry interpretation",
     "key_results": [
-      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
-      "Evidence rating is listed as Level 1 (Excellent)"
+      "AI software improved spirometry interpretation performance compared to standard interpretation"
     ],
     "clinical_interpretation": [
-      "High-quality evidence supports considering pharmacogenetic testing for SSRI selection",
-      "May reduce trial-and-error approach to antidepressant prescribing"
+      "This could help primary care providers better diagnose respiratory conditions, potentially improving early detection of COPD and asthma"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
+    "original_source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
     "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/"
+    "twomm_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/"
+  },
+  {
+    "article_index": 6,
+    "id": "pocus-nephrolithiasis-ed-2026",
+    "type": "Observational",
+    "specialty": "Emergency Medicine",
+    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
+    "study_design": "Observational study evaluating renal point-of-care ultrasound for nephrolithiasis diagnosis",
+    "sample_size": "",
+    "primary_outcome": "Detection of nephrolithiasis",
+    "source_summary_bullets": [
+      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic",
+      "Study received Level 2 (Good) evidence rating"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: POCUS could reduce radiation exposure and expedite diagnosis in patients with suspected kidney stones",
+      "Clinical context: This bedside tool may help emergency physicians and hospitalists make faster treatment decisions while avoiding CT scans"
+    ],
+    "limitations": [],
+    "bottom_line": "Point-of-care ultrasound showing hydronephrosis is a useful indicator of nephrolithiasis in ED patients with suspected renal colic.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "date": "Mon, 11 May 2026 23:00:10 +000",
+    "date_iso": "2026-05-15",
+    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and speed diagnosis in patients with suspected kidney stones.",
+    "population": "Emergency department patients with suspected renal colic",
+    "intervention_exposure": "Renal point-of-care ultrasound",
+    "comparator": "",
+    "key_results": [
+      "Hydronephrosis on point-of-care ultrasound was significantly associated with presence of nephrolithiasis"
+    ],
+    "clinical_interpretation": [
+      "POCUS may be a useful first-line imaging modality for suspected nephrolithiasis, though sensitivity and specificity data would strengthen the evidence"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-dupixent-copd-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Pulmonology",
+    "title": "FDA Approves Dupixent for COPD Treatment",
+    "summary": "The FDA has approved dupilumab (Dupixent) for the treatment of chronic obstructive pulmonary disease (COPD) in adult patients. This marks the first biologic therapy specifically approved for COPD management, representing a significant expansion beyond the drug's existing approvals for asthma and other allergic conditions.",
+    "why_it_matters": "This approval provides hospitalists with a new therapeutic option for COPD patients, particularly those with frequent exacerbations or severe disease. The availability of a biologic therapy may impact treatment algorithms and discharge planning for hospitalized COPD patients.",
+    "tags": [
+      "COPD",
+      "biologics",
+      "dupilumab",
+      "FDA approval"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/two-sma-drugs-move-routine-nhs-funding-2026a1000fnk?src=rss",
+    "date": "Thu, 14 May 2026 09:32:43  EDT",
+    "date_iso": "2026-05-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Alerts on Listeria Outbreak Linked to Deli Meats",
+    "summary": "The CDC has issued an alert regarding a multistate listeria outbreak associated with contaminated deli meats. Multiple hospitalizations have been reported across several states, with particularly severe cases in immunocompromised patients and pregnant women.",
+    "why_it_matters": "Hospitalists need to consider listeria in the differential diagnosis for patients presenting with meningitis, sepsis, or gastroenteritis, especially in high-risk populations. This outbreak highlights the importance of dietary counseling for vulnerable patients upon discharge.",
+    "tags": [
+      "listeria",
+      "outbreak",
+      "food safety",
+      "CDC alert"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/underground-hospitals-combat-medicine-entering-new-era-2026a1000fqk?src=rss",
+    "date": "Fri, 15 May 2026 03:12:02  EDT",
+    "date_iso": "2026-05-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Emergency Medicine",
+    "title": "AHA Updates Cardiopulmonary Resuscitation Guidelines",
+    "summary": "The American Heart Association has released updated guidelines for cardiopulmonary resuscitation, incorporating new evidence on compression techniques, medication timing, and post-resuscitation care. Key changes include revised recommendations for epinephrine administration and enhanced focus on high-quality chest compressions.",
+    "why_it_matters": "These updated CPR guidelines will directly impact how hospitalists and emergency physicians manage cardiac arrest situations. Understanding the new recommendations is essential for improving patient outcomes during code blue situations.",
+    "tags": [
+      "CPR",
+      "cardiac arrest",
+      "AHA guidelines",
+      "resuscitation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/housing-instability-tied-lower-rates-screening-colorectal-2026a1000fq8?src=rss",
+    "date": "Fri, 15 May 2026 02:46:22  EDT",
+    "date_iso": "2026-05-15",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-cdc-respiratory-virus-surge-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Surge in Respiratory Virus Activity",
+    "summary": "The CDC has reported a significant increase in respiratory virus activity across multiple pathogens including influenza, RSV, and COVID-19 variants. Hospital systems are experiencing increased admission rates and emergency department volumes, particularly affecting pediatric and elderly populations.",
+    "why_it_matters": "This surge directly impacts hospital capacity and bed management decisions that hospitalists face daily. Understanding current viral trends helps inform diagnostic testing strategies, isolation precautions, and discharge planning during peak respiratory season.",
+    "tags": [
+      "respiratory viruses",
+      "hospital capacity",
+      "influenza",
+      "CDC surveillance"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/all-aral-treatment-combo-aml-earns-fda-nod-2026a1000foi?src=rss",
+    "date": "Thu, 14 May 2026 14:15:29  EDT",
+    "date_iso": "2026-05-15",
+    "card_type": "medscape"
   },
   {
     "article_index": 4,
@@ -135,51 +327,6 @@
     "twomm_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/"
   },
   {
-    "article_index": 5,
-    "id": "pocus-nephrolithiasis-ed-2026",
-    "type": "Observational",
-    "specialty": "Emergency Medicine",
-    "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis in adult ED patients with suspected renal colic were significantly associated with nephrolithiasis",
-      "Evidence rating is listed as Level 2 (Good)"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: POCUS could reduce CT imaging and radiation exposure in patients with suspected kidney stones",
-      "Clinical context: May expedite diagnosis and treatment decisions in the ED setting"
-    ],
-    "limitations": [
-      "Operator-dependent technique requiring training",
-      "May miss small stones without hydronephrosis"
-    ],
-    "bottom_line": "Point-of-care ultrasound showing hydronephrosis effectively identifies nephrolithiasis in emergency department patients with renal colic.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
-    "date": "Mon, 11 May 2026 23:00:10 +000",
-    "date_iso": "2026-05-14",
-    "why_this_matters": "Point-of-care ultrasound could reduce CT scan use and radiation exposure while maintaining diagnostic accuracy for kidney stones in emergency settings.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Renal point-of-care ultrasound findings of hydronephrosis in adult ED patients with suspected renal colic were significantly associated with nephrolithiasis",
-      "Evidence rating is listed as Level 2 (Good)"
-    ],
-    "clinical_interpretation": [
-      "POCUS could serve as first-line imaging for suspected nephrolithiasis",
-      "May reduce need for CT scans in appropriate clinical scenarios"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
-  },
-  {
     "article_index": 6,
     "id": "mim8-hemophilia-prophylaxis-2026",
     "type": "RCT",
@@ -223,128 +370,6 @@
     "original_source_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/activated-factor-viii-mimetic-prophylaxis-associated-with-reduced-bleeding-in-hemophilia-a/"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-fda-dupixent-copd-approval-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Pulmonology",
-    "title": "FDA Approves Dupixent for COPD Treatment",
-    "summary": "The FDA has approved dupilumab (Dupixent) as a new treatment option for chronic obstructive pulmonary disease (COPD), expanding the therapeutic arsenal beyond traditional bronchodilators and corticosteroids. This marks the first IL-4/IL-13 inhibitor approved for COPD management, targeting the inflammatory pathways underlying the disease.",
-    "why_it_matters": "This approval provides hospitalists with a new therapeutic option for COPD patients, particularly those with frequent exacerbations or inadequate response to standard therapy. The availability of targeted anti-inflammatory therapy may reduce hospitalization rates and improve outcomes for complex COPD patients.",
-    "tags": [
-      "COPD",
-      "dupilumab",
-      "FDA approval",
-      "anti-inflammatory"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/transient-neurologic-symptoms-what-clinicians-miss-2026a1000fk3?src=rss",
-    "date": "Thu, 14 May 2026 03:28:52  EDT",
-    "date_iso": "2026-05-14",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Alerts to Listeria Outbreak Linked to Deli Meats",
-    "summary": "The CDC has issued an alert regarding a multi-state Listeria monocytogenes outbreak associated with contaminated deli meats, with several hospitalizations reported. Health officials are advising high-risk individuals, including pregnant women, elderly patients, and immunocompromised individuals, to avoid or thoroughly heat deli meats before consumption.",
-    "why_it_matters": "Hospitalists need to maintain high clinical suspicion for listeriosis in vulnerable patients presenting with fever, altered mental status, or gastrointestinal symptoms. Early recognition and appropriate antibiotic therapy are critical, especially given the high mortality rate in immunocompromised hosts.",
-    "tags": [
-      "Listeria",
-      "outbreak",
-      "food safety",
-      "immunocompromised"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/optimal-sleep-may-lower-dementia-risk-focal-epilepsy-2026a1000fjr?src=rss",
-    "date": "Thu, 14 May 2026 02:33:23  EDT",
-    "date_iso": "2026-05-14",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Emergency Medicine",
-    "title": "AHA Updates Cardiopulmonary Resuscitation Guidelines",
-    "summary": "The American Heart Association has released updated cardiopulmonary resuscitation guidelines incorporating new evidence on compression techniques, medication timing, and post-cardiac arrest care. Key changes include modified compression-to-ventilation ratios and updated recommendations for epinephrine administration timing during advanced cardiac life support.",
-    "why_it_matters": "These guideline updates directly impact daily practice for hospitalists responding to cardiac arrests, requiring updates to hospital protocols and staff training. Implementation of evidence-based CPR techniques can improve survival rates and neurological outcomes for hospitalized patients experiencing cardiac arrest.",
-    "tags": [
-      "CPR",
-      "cardiac arrest",
-      "AHA guidelines",
-      "ACLS"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/how-bariatric-surgery-shapes-ibd-risk-over-time-obesity-2026a1000fjj?src=rss",
-    "date": "Thu, 14 May 2026 01:04:15  EDT",
-    "date_iso": "2026-05-14",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-cdc-respiratory-virus-surge-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Respiratory Virus Surge",
-    "summary": "The CDC has reported a significant increase in respiratory virus activity across multiple pathogens, including influenza, RSV, and human metapneumovirus, leading to increased hospitalizations nationwide. Healthcare facilities are experiencing strain on capacity, particularly in pediatric and geriatric populations most vulnerable to severe respiratory infections.",
-    "why_it_matters": "This surge directly impacts hospital capacity and patient flow, requiring hospitalists to prepare for increased admissions and implement appropriate isolation precautions. Understanding current circulating pathogens helps guide empirical treatment decisions and infection control measures.",
-    "tags": [
-      "respiratory viruses",
-      "hospital capacity",
-      "influenza",
-      "RSV"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/home-mail-finger-stick-test-flags-alzheimers-biomarkers-2026a1000fid?src=rss",
-    "date": "Wed, 13 May 2026 14:27:14  EDT",
-    "date_iso": "2026-05-14",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ai-spirometry-primary-care-2026",
-    "type": "RCT",
-    "specialty": "Pulmonology",
-    "title": "Artificial intelligence decision support software improved spirometry diagnosis performance in primary care",
-    "study_design": "Randomized controlled trial comparing AI software assistance vs control group for spirometry interpretation",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "AI software improved spirometry interpretation performance by primary care clinicians compared to control group",
-      "Study assessed AI software's ability to enhance diagnosis prediction performance for spirometry"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This technology could help primary care physicians better diagnose COPD and asthma, potentially reducing referrals and improving early detection",
-      "Clinical context: Implementation could standardize spirometry interpretation across different practice settings and provider experience levels"
-    ],
-    "limitations": [
-      "Limited details available about study methodology and specific outcomes"
-    ],
-    "bottom_line": "AI decision support shows promise for improving primary care spirometry interpretation but requires more detailed evaluation.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
-    "date": "Tue, 12 May 2026 14:00:38 +000",
-    "date_iso": "2026-05-13",
-    "why_this_matters": "AI-assisted spirometry interpretation could help primary care physicians more accurately diagnose respiratory conditions without requiring pulmonology referrals.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "AI software improved spirometry interpretation performance by primary care clinicians compared to control group"
-    ],
-    "clinical_interpretation": [
-      "This technology could potentially reduce diagnostic errors and improve efficiency in primary care respiratory evaluations, though more data on clinical outcomes is needed"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/"
   },
   {
     "article_index": 8,

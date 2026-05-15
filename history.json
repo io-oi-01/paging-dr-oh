@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Hospital-Acquired Pneumonia",
     "Acute Decompensated Heart Failure",
     "Asthma Exacerbation",
     "Cellulitis and Skin Soft Tissue Infections",
@@ -89,7 +88,8 @@
     "Alcohol Withdrawal Syndrome",
     "Hemophagocytic Lymphohistiocytosis",
     "Acute Ischemic Stroke",
-    "Guillain-Barre Syndrome"
+    "Guillain-Barre Syndrome",
+    "Acute Gout"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -202,7 +202,8 @@
     "fidelity-2022",
     "dapt-study-2014",
     "recover-2009",
-    "rales-1999"
+    "rales-1999",
+    "advance-2008"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -550,9 +551,11 @@
     "ms-cdc-listeria-outbreak-deli-meats-2026",
     "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
     "utah-ai-prescription-renewals-pilot-2026",
-    "ssri-pharmacogenetic-testing-depression-2026"
+    "ssri-pharmacogenetic-testing-depression-2026",
+    "reboa-cardiac-arrest-outcomes-2026",
+    "utah-ai-prescription-pilot-2026"
   ],
-  "last_run": "2026-05-14",
+  "last_run": "2026-05-15",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -627,13 +630,10 @@
     "Nevus Sebaceous",
     "Scrotal Calcinosis",
     "Stasis Dermatitis",
-    "Psoriasis"
+    "Psoriasis",
+    "Pustular Psoriasis"
   ],
   "litfl_cases_shown": [
-    "ct-083",
-    "clinical-chloroquine-poisoning",
-    "ecg-112",
-    "cxr-018",
     "ct-078",
     "clinical-out-of-sight",
     "ecg-119",
@@ -829,6 +829,10 @@
     "ecg-110",
     "cxr-047",
     "ct-079",
-    "clinical-clinical-cases/ent-equivocation"
+    "clinical-clinical-cases/ent-equivocation",
+    "ecg-022",
+    "cxr-003",
+    "ct-046",
+    "clinical-nasal-foreign-body"
   ]
 }
