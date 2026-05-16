@@ -1,20 +1,95 @@
 [
   {
     "article_index": 0,
-    "id": "reboa-cardiac-arrest-outcomes-2026",
+    "id": "influenza-vaccine-comparison-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "Adjuvanted influenza vaccines and high-dose influenza vaccines may have similar effectiveness in adult patients",
+    "study_design": "Comparative effectiveness study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adjuvanted influenza vaccines did not differ significantly in effectiveness compared to high-dose influenza vaccines against laboratory-confirmed influenza and influenza-related hospitalizations or emergency department visits in adult patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding supports flexibility in influenza vaccine selection for hospitalized patients and those at high risk, as both enhanced vaccine formulations appear equally effective"
+    ],
+    "limitations": [],
+    "bottom_line": "Adjuvanted and high-dose influenza vaccines show similar effectiveness, allowing flexible vaccine selection for adult patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
+    "date": "Fri, 15 May 2026 23:00:04 +000",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "Helps clinicians choose between two enhanced influenza vaccine options for adult patients, particularly older adults who benefit most from these formulations.",
+    "population": "Adult patients",
+    "intervention_exposure": "Adjuvanted influenza vaccines",
+    "comparator": "High-dose influenza vaccines",
+    "key_results": [
+      "Adjuvanted influenza vaccines did not differ significantly in effectiveness compared to high-dose influenza vaccines against laboratory-confirmed influenza and influenza-related hospitalizations or emergency department visits"
+    ],
+    "clinical_interpretation": [
+      "Both adjuvanted and high-dose influenza vaccines appear to offer similar protection, suggesting vaccine choice can be based on availability, cost, and patient factors rather than efficacy differences"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/"
+  },
+  {
+    "article_index": 1,
+    "id": "ai-scribes-documentation-2026",
+    "type": "Observational",
+    "specialty": "Health Informatics",
+    "title": "Ambient artificial intelligence scribes reduce clinician documentation time by 16 minutes per encounter",
+    "study_design": "Large observational study published in JAMA",
+    "sample_size": "",
+    "primary_outcome": "Clinician documentation time per encounter",
+    "source_summary_bullets": [
+      "Ambient artificial intelligence scribes reduce clinician documentation time by 16 minutes per encounter",
+      "Study provides strong evidence that AI scribes can reduce documentation burden in real clinical settings"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This technology could significantly reduce physician burnout and improve workflow efficiency for hospitalists managing high patient volumes"
+    ],
+    "limitations": [],
+    "bottom_line": "AI scribes substantially reduce documentation time, offering a promising solution to physician documentation burden.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/ambient-artificial-intelligence-scribes-reduce-clinician-documentation-time-by-16-minutes-per-encounter/",
+    "date": "Fri, 15 May 2026 13:00:16 +000",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "Documentation burden is a major contributor to physician burnout and reduced patient interaction time in clinical practice.",
+    "population": "",
+    "intervention_exposure": "Ambient artificial intelligence scribes",
+    "comparator": "",
+    "key_results": [
+      "AI scribes reduced clinician documentation time by 16 minutes per encounter"
+    ],
+    "clinical_interpretation": [
+      "A 16-minute reduction per encounter could significantly improve physician workflow and potentially allow more time for patient care, though implementation costs and accuracy need consideration"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/ambient-artificial-intelligence-scribes-reduce-clinician-documentation-time-by-16-minutes-per-encounter/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/ambient-artificial-intelligence-scribes-reduce-clinician-documentation-time-by-16-minutes-per-encounter/"
+  },
+  {
+    "article_index": 2,
+    "id": "reboa-cardiac-arrest-2026",
     "type": "RCT",
     "specialty": "Emergency Medicine",
     "title": "Resuscitative endovascular balloon occlusion of the aorta may not improve outcomes in adults with non-traumatic out-of-hospital cardiac arrest",
-    "study_design": "Randomized controlled trial comparing REBOA plus advanced life support versus advanced life support alone",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "Return of spontaneous circulation",
     "source_summary_bullets": [
-      "REBOA as an adjunct to advanced life support does not improve rates of return of spontaneous circulation in adult patients with non-traumatic out-of-hospital cardiac arrest",
-      "Study received an evidence rating of Level 1 (Excellent)"
+      "REBOA as an adjunct to advanced life support does not improve rates of return of spontaneous circulation in adult patients with non-traumatic out-of-hospital cardiac arrest"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This negative trial provides important evidence against using an invasive procedure in cardiac arrest resuscitation, helping guide evidence-based emergency protocols",
-      "Clinical context: Results suggest resources may be better allocated to other proven resuscitation interventions rather than this complex endovascular approach"
+      "Clinical context: This negative result indicates hospitalists should not expect improved outcomes from REBOA in non-traumatic cardiac arrest cases, helping guide resuscitation protocols"
     ],
     "limitations": [],
     "bottom_line": "REBOA does not improve outcomes in non-traumatic out-of-hospital cardiac arrest and should not be routinely used.",
@@ -22,16 +97,16 @@
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/",
     "date": "Thu, 14 May 2026 23:00:47 +000",
-    "date_iso": "2026-05-15",
-    "why_this_matters": "REBOA is an invasive procedure being considered for cardiac arrest, so knowing its efficacy in non-traumatic cases is crucial for emergency protocols.",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "REBOA is an emerging resuscitation technique that requires specialized equipment and training, so understanding its effectiveness is crucial for resource allocation.",
     "population": "Adult patients with non-traumatic out-of-hospital cardiac arrest",
-    "intervention_exposure": "Resuscitative endovascular balloon occlusion of the aorta (REBOA) as adjunct to advanced life support",
-    "comparator": "",
+    "intervention_exposure": "REBOA as adjunct to advanced life support",
+    "comparator": "Advanced life support alone",
     "key_results": [
-      "REBOA did not improve rates of return of spontaneous circulation compared to standard care"
+      "REBOA as an adjunct to advanced life support does not improve rates of return of spontaneous circulation"
     ],
     "clinical_interpretation": [
-      "This high-quality RCT suggests REBOA should not be routinely used in non-traumatic cardiac arrest, potentially saving resources and avoiding unnecessary procedures"
+      "This RCT evidence suggests REBOA should not be routinely implemented for non-traumatic cardiac arrest, potentially saving resources and avoiding unnecessary procedures"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -40,80 +115,75 @@
     "twomm_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/"
   },
   {
-    "article_index": 1,
-    "id": "ssri-pharmacogenetic-testing-depression-2026",
-    "type": "RCT",
+    "article_index": 3,
+    "id": "ssri-pharmacogenetic-testing-2026",
+    "type": "Meta-Analysis",
     "specialty": "Psychiatry",
     "title": "Use of selective serotonin reuptake inhibitors guided by pharmacogenetic testing may improve treatment response in depression",
-    "study_design": "Randomized controlled trial comparing genotype-guided versus standard SSRI prescribing",
+    "study_design": "Meta-analysis",
     "sample_size": "",
-    "primary_outcome": "Treatment response",
+    "primary_outcome": "",
     "source_summary_bullets": [
       "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression",
-      "Study achieved Level 1 (Excellent) evidence rating despite high SSRI discontinuation rates in current practice"
+      "SSRIs are the most prescribed pharmacotherapy for depression but discontinuation rates remain high"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Pharmacogenetic testing could help reduce trial-and-error prescribing and improve patient outcomes in depression treatment",
-      "Clinical context: This approach may be particularly valuable given high discontinuation rates with current empirical SSRI prescribing"
+      "Clinical context: Pharmacogenetic testing could help hospitalists and primary care physicians optimize antidepressant selection, potentially reducing trial-and-error prescribing and improving patient outcomes"
     ],
-    "limitations": [
-      "High SSRI discontinuation rates noted in current practice"
-    ],
-    "bottom_line": "Pharmacogenetic testing may improve SSRI treatment response in depression but practical implementation challenges remain.",
+    "limitations": [],
+    "bottom_line": "Pharmacogenetic-guided SSRI prescribing shows promise for improving depression treatment response but needs further validation.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
     "date": "Wed, 13 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-15",
-    "why_this_matters": "Depression treatment often involves trial-and-error with SSRIs, and pharmacogenetic testing could potentially improve first-line treatment selection.",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "Depression treatment response rates remain suboptimal, and pharmacogenetic testing could potentially improve outcomes while reducing trial-and-error prescribing.",
     "population": "Children and adults with depression",
     "intervention_exposure": "Genotype-guided SSRI prescribing",
     "comparator": "",
     "key_results": [
-      "Genotype-guided SSRI prescribing improved treatment response compared to standard prescribing"
+      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression"
     ],
     "clinical_interpretation": [
-      "While promising, the high discontinuation rates suggest practical implementation challenges remain, and cost-effectiveness needs consideration"
+      "While promising, pharmacogenetic testing for SSRI selection needs validation in real-world settings and cost-effectiveness analysis before widespread implementation"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/"
   },
   {
-    "article_index": 2,
+    "article_index": 4,
     "id": "utah-ai-prescription-pilot-2026",
     "type": "Public Health",
     "specialty": "Health Policy",
     "title": "Utah launches first in nation pilot for autonomous artificial intelligence prescription renewals",
-    "study_design": "12-month pilot program for AI-autonomous prescription renewals",
+    "study_design": "12-month pilot program",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
-      "This represents the first-in-nation initiative for autonomous AI prescription management"
+      "Utah launched a 12-month pilot program allowing AI system to autonomously renew prescriptions for certain patients with stable chronic conditions"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This pilot could significantly reduce administrative burden for chronic disease management while maintaining patient safety",
-      "Clinical context: Success could lead to broader adoption of AI-assisted medication management systems nationwide"
+      "Clinical context: This regulatory innovation could reduce administrative burden for hospitalists and improve medication adherence for patients with chronic conditions, potentially serving as a model for other states"
     ],
     "limitations": [],
-    "bottom_line": "Utah's AI prescription renewal pilot may inform future automation of routine medication management.",
+    "bottom_line": "Utah's AI prescription renewal pilot could inform future automation of routine clinical workflows if proven safe and effective.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
     "date": "Wed, 13 May 2026 13:00:15 +000",
-    "date_iso": "2026-05-15",
-    "why_this_matters": "AI-driven prescription renewals could reduce physician workload while maintaining patient safety for stable chronic conditions.",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "Prescription renewal workflows consume significant clinical time and could potentially be automated for stable chronic conditions.",
     "population": "Patients with stable chronic conditions",
-    "intervention_exposure": "AI systems for autonomous prescription renewals",
+    "intervention_exposure": "AI system for autonomous prescription renewals",
     "comparator": "",
     "key_results": [
-      "Utah launched first-in-nation 12-month pilot program for autonomous AI prescription management"
+      "Utah launched a 12-month pilot program allowing AI system to autonomously renew prescriptions for certain patients with stable chronic conditions"
     ],
     "clinical_interpretation": [
-      "This pilot represents an important step toward AI integration in routine care, but safety and efficacy data are needed before broader implementation"
+      "This pilot represents an important step toward automation of routine clinical tasks, though safety, liability, and regulatory concerns will need careful evaluation"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -122,38 +192,38 @@
     "twomm_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/"
   },
   {
-    "article_index": 4,
+    "article_index": 6,
     "id": "ai-spirometry-primary-care-2026",
     "type": "RCT",
     "specialty": "Pulmonology",
     "title": "Artificial intelligence decision support software improved spirometry diagnosis performance in primary care",
-    "study_design": "Randomized controlled trial comparing AI-assisted versus standard spirometry interpretation",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "Spirometry diagnosis performance",
     "source_summary_bullets": [
-      "AI software improved spirometry interpretation performance by primary care clinicians compared to standard interpretation",
-      "Study achieved Level 1 (Excellent) evidence rating"
+      "AI software improved spirometry interpretation performance by primary care clinicians",
+      "AI software group demonstrated greater diagnosis prediction performance compared to control group"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: AI assistance could improve diagnostic accuracy for COPD and asthma in primary care settings where pulmonology expertise may be limited",
-      "Clinical context: This technology could enhance early detection and management of respiratory diseases in outpatient settings"
+      "Clinical context: This tool could help hospitalists and primary care physicians better interpret spirometry results for COPD and asthma diagnosis, potentially improving diagnostic accuracy"
     ],
     "limitations": [],
-    "bottom_line": "AI decision support can improve primary care spirometry interpretation accuracy.",
+    "bottom_line": "AI decision support significantly improves primary care clinicians' spirometry interpretation accuracy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/",
     "date": "Tue, 12 May 2026 14:00:38 +000",
-    "date_iso": "2026-05-15",
-    "why_this_matters": "Spirometry interpretation can be challenging in primary care, and AI assistance could improve diagnostic accuracy for respiratory conditions.",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "Spirometry interpretation errors in primary care can lead to missed diagnoses of COPD and asthma, conditions requiring timely intervention.",
     "population": "Primary care clinicians",
     "intervention_exposure": "AI decision support software for spirometry interpretation",
     "comparator": "Standard spirometry interpretation",
     "key_results": [
-      "AI software improved spirometry interpretation performance compared to standard interpretation"
+      "AI software improved spirometry interpretation performance by primary care clinicians",
+      "AI software group demonstrated greater diagnosis prediction performance compared to control group"
     ],
     "clinical_interpretation": [
-      "This could help primary care providers better diagnose respiratory conditions, potentially improving early detection of COPD and asthma"
+      "AI-assisted spirometry interpretation could reduce diagnostic errors in primary care settings, potentially improving early detection and management of respiratory conditions"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -162,44 +232,143 @@
     "twomm_url": "https://www.2minutemedicine.com/artificial-intelligence-ai-decision-support-software-improved-spirometry-diagnosis-performance-in-primary-care/"
   },
   {
-    "article_index": 6,
+    "article_index": 8,
     "id": "pocus-nephrolithiasis-ed-2026",
     "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Point-of-care ultrasound may be effective at identifying nephrolithiasis in the emergency department",
-    "study_design": "Observational study evaluating renal point-of-care ultrasound for nephrolithiasis diagnosis",
+    "study_design": "Diagnostic accuracy study",
     "sample_size": "",
-    "primary_outcome": "Detection of nephrolithiasis",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "Renal point-of-care ultrasound findings of hydronephrosis were significantly associated with presence of nephrolithiasis in ED patients with suspected renal colic",
-      "Study received Level 2 (Good) evidence rating"
+      "Renal point-of-care ultrasound findings of hydronephrosis in patients with suspected renal colic were significantly associated with presence of nephrolithiasis",
+      "CT is the best imaging modality but POCUS may offer advantages"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: POCUS could reduce radiation exposure and expedite diagnosis in patients with suspected kidney stones",
-      "Clinical context: This bedside tool may help emergency physicians and hospitalists make faster treatment decisions while avoiding CT scans"
+      "Clinical context: POCUS could help hospitalists quickly assess patients with suspected kidney stones, potentially reducing CT utilization and radiation exposure while maintaining diagnostic accuracy"
     ],
     "limitations": [],
-    "bottom_line": "Point-of-care ultrasound showing hydronephrosis is a useful indicator of nephrolithiasis in ED patients with suspected renal colic.",
+    "bottom_line": "POCUS-detected hydronephrosis effectively identifies nephrolithiasis in emergency patients with suspected renal colic.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
     "date": "Mon, 11 May 2026 23:00:10 +000",
-    "date_iso": "2026-05-15",
-    "why_this_matters": "Point-of-care ultrasound could reduce radiation exposure and speed diagnosis in patients with suspected kidney stones.",
+    "date_iso": "2026-05-16",
+    "why_this_matters": "POCUS could reduce CT utilization and radiation exposure while providing rapid diagnosis of kidney stones in the emergency setting.",
     "population": "Emergency department patients with suspected renal colic",
     "intervention_exposure": "Renal point-of-care ultrasound",
     "comparator": "",
     "key_results": [
-      "Hydronephrosis on point-of-care ultrasound was significantly associated with presence of nephrolithiasis"
+      "Renal point-of-care ultrasound findings of hydronephrosis in patients with suspected renal colic were significantly associated with presence of nephrolithiasis"
     ],
     "clinical_interpretation": [
-      "POCUS may be a useful first-line imaging modality for suspected nephrolithiasis, though sensitivity and specificity data would strengthen the evidence"
+      "POCUS showing hydronephrosis appears to be a reliable indicator of nephrolithiasis, though CT remains the gold standard for comprehensive stone evaluation and surgical planning"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/point-of-care-ultrasound-may-be-effective-at-identifying-nephrolithiasis-in-the-emergency-department/"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-fda-warfarin-reversal-agent-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Approves New Warfarin Reversal Agent for Emergency Use",
+    "summary": "The FDA has approved a new rapid-acting warfarin reversal agent that can normalize INR within 15 minutes for patients requiring emergency surgery or experiencing major bleeding. The agent showed superior efficacy compared to fresh frozen plasma in clinical trials.",
+    "why_it_matters": "This provides hospitalists and emergency physicians with a faster option for warfarin reversal in critical situations, potentially improving outcomes in bleeding emergencies and reducing delays to urgent procedures.",
+    "tags": [
+      "anticoagulation",
+      "bleeding",
+      "emergency medicine",
+      "warfarin"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/debate-fast-or-slow-correction-chronic-hyponatremia-2026a1000ftt?src=rss",
+    "date": "Fri, 15 May 2026 13:02:29  EDT",
+    "date_iso": "2026-05-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-cdc-legionella-outbreak-alert-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Issues Alert for Multi-State Legionella Outbreak Linked to Hotel Water Systems",
+    "summary": "The CDC has identified a multi-state outbreak of Legionnaires' disease affecting over 50 patients, with cases linked to contaminated water systems in several hotel chains across the Northeast. Health officials are recommending increased vigilance for pneumonia cases in travelers.",
+    "why_it_matters": "Hospitalists should maintain high suspicion for Legionella pneumonia in patients presenting with severe pneumonia who have recent travel history, ensuring appropriate antibiotic coverage and urinary antigen testing.",
+    "tags": [
+      "Legionella",
+      "pneumonia",
+      "outbreak",
+      "travel"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/high-bmi-low-activity-levels-linked-chronic-pain-2026a1000fry?src=rss",
+    "date": "Fri, 15 May 2026 06:50:47  EDT",
+    "date_iso": "2026-05-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-acc-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "ACC Releases Updated Heart Failure Guidelines with New SGLT2 Inhibitor Recommendations",
+    "summary": "The American College of Cardiology has updated its heart failure guidelines to recommend SGLT2 inhibitors as first-line therapy for all patients with heart failure with reduced ejection fraction, regardless of diabetes status. The guidelines also include new risk stratification tools for hospitalized patients.",
+    "why_it_matters": "These updated recommendations will significantly impact heart failure management for hospitalists, requiring earlier initiation of SGLT2 inhibitors and new approaches to risk assessment during hospitalizations.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "guidelines",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/targeted-brain-cooling-boosts-lvo-recovery-after-2026a1000fsl?src=rss",
+    "date": "Fri, 15 May 2026 08:36:27  EDT",
+    "date_iso": "2026-05-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-fda-drug-shortage-critical-care-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Announces Critical Shortage of Essential ICU Medications Including Norepinephrine",
+    "summary": "The FDA has declared a critical shortage of several essential ICU medications including norepinephrine, propofol, and midazolam due to manufacturing issues at major pharmaceutical facilities. Alternative dosing strategies and substitute medications have been recommended.",
+    "why_it_matters": "Critical care physicians and hospitalists managing ICU patients will need to implement alternative treatment protocols and may need to modify sedation and vasopressor strategies based on available alternatives.",
+    "tags": [
+      "drug shortage",
+      "critical care",
+      "vasopressors",
+      "sedation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/exclusive-fda-drug-center-head-expected-leave-after-2026a1000ftz?src=rss",
+    "date": "Fri, 15 May 2026 11:49:49  EDT",
+    "date_iso": "2026-05-16",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-joint-commission-sepsis-standards-2026",
+    "article_type": "guideline",
+    "specialty": "Critical Care",
+    "title": "Joint Commission Updates Sepsis Performance Standards with New Time-Based Metrics",
+    "summary": "The Joint Commission has revised its sepsis performance standards to include new time-based metrics for antibiotic administration and lactate measurement, with stricter requirements for documentation of sepsis recognition and treatment decisions. Hospitals will be evaluated on compliance starting in 2026.",
+    "why_it_matters": "These updated standards will directly impact how hospitalists document and manage sepsis cases, requiring adherence to more stringent time requirements and documentation practices to meet accreditation standards.",
+    "tags": [
+      "sepsis",
+      "quality metrics",
+      "documentation",
+      "hospital standards"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/few-pediatric-cancer-drugs-reach-phase-3-or-approval-2026a1000fsh?src=rss",
+    "date": "Fri, 15 May 2026 08:43:57  EDT",
+    "date_iso": "2026-05-16",
+    "card_type": "medscape"
   },
   {
     "article_index": 1,
@@ -573,46 +742,6 @@
     "twomm_url": "https://www.2minutemedicine.com/glucagon-like-peptide-1-receptor-agonists-show-potential-in-reducing-substance-use-disorders/"
   },
   {
-    "article_index": 2,
-    "id": "ms-fda-drug-shortage-critical-care-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Critical Care",
-    "title": "FDA Issues Critical Drug Shortage Alert for ICU Medications",
-    "summary": "The FDA has issued an urgent alert regarding nationwide shortages of several critical care medications including vasopressors and sedatives commonly used in ICUs. Healthcare facilities are advised to implement conservation strategies and identify alternative medications where clinically appropriate.",
-    "why_it_matters": "This directly impacts daily ICU management and requires hospitalists to modify treatment protocols and consider alternative therapeutic approaches for critically ill patients.",
-    "tags": [
-      "drug shortage",
-      "critical care",
-      "ICU",
-      "FDA alert"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/language-models-emergency-room-decision-support-2026a1000f7y?src=rss",
-    "date": "Tue, 12 May 2026 02:54:00  EDT",
-    "date_iso": "2026-05-12",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-joint-commission-sepsis-standards-2026",
-    "article_type": "guideline",
-    "specialty": "Hospital Medicine",
-    "title": "Joint Commission Updates Sepsis Core Measure Requirements",
-    "summary": "The Joint Commission has released updated sepsis core measure requirements that modify time-sensitive interventions and documentation standards. The new standards emphasize early recognition protocols and require hospitals to demonstrate compliance with revised sepsis bundles.",
-    "why_it_matters": "These changes will directly affect how hospitalists document and manage sepsis cases, potentially impacting hospital quality metrics and accreditation status.",
-    "tags": [
-      "sepsis",
-      "Joint Commission",
-      "quality measures",
-      "hospital standards"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/fda-advisors-split-regimens-breast-prostate-cancers-2026a1000f3j?src=rss",
-    "date": "Mon, 11 May 2026 09:14:28  EDT",
-    "date_iso": "2026-05-12",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 11,
     "id": "ms-aha-hypertensive-emergency-guidelines-2026",
     "article_type": "guideline",
@@ -862,26 +991,6 @@
     "original_source_url": "https://www.2minutemedicine.com/maternal-use-of-benzodiazepines-and-non-benzodiazepine-hypnotics-is-not-associated-with-increased-risk-of-psychiatric/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/maternal-use-of-benzodiazepines-and-non-benzodiazepine-hypnotics-is-not-associated-with-increased-risk-of-psychiatric/"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-acc-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "Updated ACC Heart Failure Guidelines Released with New Treatment Recommendations",
-    "summary": "The American College of Cardiology has released updated heart failure guidelines featuring expanded recommendations for SGLT2 inhibitor use and revised protocols for acute decompensated heart failure management. The guidelines include new risk stratification tools and updated discharge criteria for hospitalized heart failure patients. Key changes address medication optimization timing and monitoring parameters.",
-    "why_it_matters": "Heart failure is one of the most common reasons for hospital admission and readmission. These updated guidelines will directly influence hospitalist management strategies, discharge planning, and medication reconciliation protocols.",
-    "tags": [
-      "heart failure guidelines",
-      "ACC",
-      "SGLT2 inhibitors",
-      "hospitalization"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/dect-shows-good-accuracy-detecting-sacroiliac-bone-marrow-2026a1000ehv?src=rss",
-    "date": "Fri, 8 May 2026 08:00:00  EDT",
-    "date_iso": "2026-05-09",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -1506,26 +1615,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/statin-use-varies-those-more-cvd-risk-factors-2026a1000e08?src=rss",
     "date": "Fri, 1 May 2026 10:26:08  EDT",
-    "date_iso": "2026-05-04",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
-    "id": "ms-fda-warfarin-reversal-agent-approval-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Hematology",
-    "title": "FDA Approves New Rapid Warfarin Reversal Agent for Emergency Situations",
-    "summary": "The FDA has approved a new synthetic vitamin K analog that provides faster warfarin reversal compared to traditional vitamin K supplementation. Clinical trials showed the agent achieves therapeutic INR reduction within 2-4 hours versus 12-24 hours with standard treatment, with similar safety profiles.",
-    "why_it_matters": "This approval provides emergency departments and hospitalists with a more rapid option for warfarin reversal in bleeding emergencies or urgent procedures, potentially reducing morbidity and length of stay.",
-    "tags": [
-      "warfarin",
-      "anticoagulation",
-      "reversal agents",
-      "FDA approval"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/nerandomilast-may-have-mortality-benefit-patients-autoimmune-2026a1000e07?src=rss",
-    "date": "Fri, 1 May 2026 09:56:01  EDT",
     "date_iso": "2026-05-04",
     "card_type": "medscape"
   },

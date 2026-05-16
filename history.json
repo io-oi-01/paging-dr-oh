@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Acute Decompensated Heart Failure",
     "Asthma Exacerbation",
     "Cellulitis and Skin Soft Tissue Infections",
     "Acute Respiratory Failure",
@@ -89,7 +88,8 @@
     "Hemophagocytic Lymphohistiocytosis",
     "Acute Ischemic Stroke",
     "Guillain-Barre Syndrome",
-    "Acute Gout"
+    "Acute Gout",
+    "Acute Coronary Syndromes"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -203,7 +203,8 @@
     "dapt-study-2014",
     "recover-2009",
     "rales-1999",
-    "advance-2008"
+    "advance-2008",
+    "crash2-2010"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -553,9 +554,13 @@
     "utah-ai-prescription-renewals-pilot-2026",
     "ssri-pharmacogenetic-testing-depression-2026",
     "reboa-cardiac-arrest-outcomes-2026",
-    "utah-ai-prescription-pilot-2026"
+    "utah-ai-prescription-pilot-2026",
+    "influenza-vaccine-comparison-2026",
+    "ai-scribes-documentation-2026",
+    "reboa-cardiac-arrest-2026",
+    "ssri-pharmacogenetic-testing-2026"
   ],
-  "last_run": "2026-05-15",
+  "last_run": "2026-05-16",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -631,12 +636,10 @@
     "Scrotal Calcinosis",
     "Stasis Dermatitis",
     "Psoriasis",
-    "Pustular Psoriasis"
+    "Pustular Psoriasis",
+    "Tinea Corporis"
   ],
   "litfl_cases_shown": [
-    "ct-078",
-    "clinical-out-of-sight",
-    "ecg-119",
     "cxr-048",
     "ct-011",
     "clinical-hyperammoniacal-encephalopathy",
@@ -833,6 +836,9 @@
     "ecg-022",
     "cxr-003",
     "ct-046",
-    "clinical-nasal-foreign-body"
+    "clinical-nasal-foreign-body",
+    "cxr-068",
+    "ct-034",
+    "clinical-entrapped"
   ]
 }
