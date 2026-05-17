@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Asthma Exacerbation",
     "Cellulitis and Skin Soft Tissue Infections",
     "Acute Respiratory Failure",
     "Acute Cholecystitis",
@@ -89,7 +88,8 @@
     "Acute Ischemic Stroke",
     "Guillain-Barre Syndrome",
     "Acute Gout",
-    "Acute Coronary Syndromes"
+    "Acute Coronary Syndromes",
+    "Acute Pancreatitis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -204,7 +204,8 @@
     "recover-2009",
     "rales-1999",
     "advance-2008",
-    "crash2-2010"
+    "crash2-2010",
+    "dapagliflozin-ckd-ext"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -558,9 +559,15 @@
     "influenza-vaccine-comparison-2026",
     "ai-scribes-documentation-2026",
     "reboa-cardiac-arrest-2026",
-    "ssri-pharmacogenetic-testing-2026"
+    "ssri-pharmacogenetic-testing-2026",
+    "adjuvanted-vs-high-dose-flu-vaccine-2026",
+    "ai-scribes-documentation-time-2026",
+    "reboa-cardiac-arrest-nontraumatic-2026",
+    "utah-ai-prescription-pilot-autonomous-2026",
+    "ai-spirometry-primary-care-diagnosis-2026",
+    "pocus-nephrolithiasis-ed-identification-2026"
   ],
-  "last_run": "2026-05-16",
+  "last_run": "2026-05-17",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -637,13 +644,10 @@
     "Stasis Dermatitis",
     "Psoriasis",
     "Pustular Psoriasis",
-    "Tinea Corporis"
+    "Tinea Corporis",
+    "Urticaria: Dermatographism"
   ],
   "litfl_cases_shown": [
-    "cxr-048",
-    "ct-011",
-    "clinical-hyperammoniacal-encephalopathy",
-    "ecg-015",
     "cxr-023",
     "ct-054",
     "clinical-humongous-hiv-extravaganza",
@@ -839,6 +843,10 @@
     "clinical-nasal-foreign-body",
     "cxr-068",
     "ct-034",
-    "clinical-entrapped"
+    "clinical-entrapped",
+    "ecg-114",
+    "cxr-009",
+    "ct-074",
+    "clinical-vt-or-not-vt"
   ]
 }
