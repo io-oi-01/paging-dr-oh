@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Cellulitis and Skin Soft Tissue Infections",
     "Acute Respiratory Failure",
     "Acute Cholecystitis",
     "Delirium",
@@ -89,7 +88,8 @@
     "Guillain-Barre Syndrome",
     "Acute Gout",
     "Acute Coronary Syndromes",
-    "Acute Pancreatitis"
+    "Acute Pancreatitis",
+    "Small Bowel Obstruction"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -205,7 +205,8 @@
     "rales-1999",
     "advance-2008",
     "crash2-2010",
-    "dapagliflozin-ckd-ext"
+    "dapagliflozin-ckd-ext",
+    "syntax-2009"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -565,9 +566,16 @@
     "reboa-cardiac-arrest-nontraumatic-2026",
     "utah-ai-prescription-pilot-autonomous-2026",
     "ai-spirometry-primary-care-diagnosis-2026",
-    "pocus-nephrolithiasis-ed-identification-2026"
+    "pocus-nephrolithiasis-ed-identification-2026",
+    "adjuvanted-vs-high-dose-flu-vaccine-effectiveness-2026",
+    "ai-scribes-documentation-time-reduction-2026",
+    "reboa-cardiac-arrest-nontraumatic-outcomes-2026",
+    "ssri-pharmacogenetic-testing-depression-response-2026",
+    "utah-ai-prescription-renewal-pilot-2026",
+    "ai-spirometry-primary-care-diagnosis-improvement-2026",
+    "prescriberpoint-ai-prior-authorization-automation-2026"
   ],
-  "last_run": "2026-05-17",
+  "last_run": "2026-05-18",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -645,13 +653,10 @@
     "Psoriasis",
     "Pustular Psoriasis",
     "Tinea Corporis",
-    "Urticaria: Dermatographism"
+    "Urticaria: Dermatographism",
+    "Melasma"
   ],
   "litfl_cases_shown": [
-    "cxr-023",
-    "ct-054",
-    "clinical-humongous-hiv-extravaganza",
-    "ecg-051",
     "cxr-069",
     "ct-067",
     "clinical-clinical-cases/pulmonary-puzzler",
@@ -847,6 +852,10 @@
     "ecg-114",
     "cxr-009",
     "ct-074",
-    "clinical-vt-or-not-vt"
+    "clinical-vt-or-not-vt",
+    "ecg-095",
+    "cxr-023",
+    "ct-003",
+    "clinical-recombinant-factor-viia-to-the-rescue"
   ]
 }
