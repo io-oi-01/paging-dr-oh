@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Acute Respiratory Failure",
     "Acute Cholecystitis",
     "Delirium",
     "Lower GI Bleeding",
@@ -89,7 +88,8 @@
     "Acute Gout",
     "Acute Coronary Syndromes",
     "Acute Pancreatitis",
-    "Small Bowel Obstruction"
+    "Small Bowel Obstruction",
+    "Hyponatremia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -206,7 +206,8 @@
     "advance-2008",
     "crash2-2010",
     "dapagliflozin-ckd-ext",
-    "syntax-2009"
+    "syntax-2009",
+    "clots1-2009"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -573,9 +574,17 @@
     "ssri-pharmacogenetic-testing-depression-response-2026",
     "utah-ai-prescription-renewal-pilot-2026",
     "ai-spirometry-primary-care-diagnosis-improvement-2026",
-    "prescriberpoint-ai-prior-authorization-automation-2026"
+    "prescriberpoint-ai-prior-authorization-automation-2026",
+    "glp1-longevity-medicine-2026",
+    "adjuvanted-high-dose-flu-vaccine-2026",
+    "ai-scribes-documentation-reduction-2026",
+    "reboa-cardiac-arrest-ohca-2026",
+    "ms-fda-ozempic-shortage-critical-2026",
+    "ms-cdc-mpox-outbreak-chicago-2026",
+    "ms-aha-heart-failure-guidelines-2026",
+    "ms-fda-vancomycin-safety-alert-2026"
   ],
-  "last_run": "2026-05-18",
+  "last_run": "2026-05-19",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -654,13 +663,10 @@
     "Pustular Psoriasis",
     "Tinea Corporis",
     "Urticaria: Dermatographism",
-    "Melasma"
+    "Melasma",
+    "Discoid Lupus Erythematosus"
   ],
   "litfl_cases_shown": [
-    "cxr-069",
-    "ct-067",
-    "clinical-clinical-cases/pulmonary-puzzler",
-    "ecg-084",
     "cxr-045",
     "ct-051",
     "clinical-ballistically-potent-vertigo",
@@ -856,6 +862,10 @@
     "ecg-095",
     "cxr-023",
     "ct-003",
-    "clinical-recombinant-factor-viia-to-the-rescue"
+    "clinical-recombinant-factor-viia-to-the-rescue",
+    "ecg-065",
+    "cxr-062",
+    "ct-038",
+    "clinical-how-green-is-my-urine"
   ]
 }

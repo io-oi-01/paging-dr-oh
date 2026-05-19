@@ -1,40 +1,81 @@
 [
   {
-    "article_index": 0,
-    "id": "adjuvanted-vs-high-dose-flu-vaccine-effectiveness-2026",
-    "type": "Observational",
+    "article_index": 2,
+    "id": "glp1-longevity-medicine-2026",
+    "type": "Review",
+    "specialty": "Endocrinology",
+    "title": "GLP-1 receptor agonists move from weight loss into the longevity conversation",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists are expanding from diabetes and obesity treatment into broader clinical applications for longevity and chronic disease prevention",
+      "The drugs are being investigated for cardiovascular risk reduction, inflammation pathways, and overall healthspan extension"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This trend reflects the growing evidence base for GLP-1 agonists beyond glycemic control, potentially influencing prescribing decisions for patients with multiple comorbidities",
+      "Clinical context: Hospitalists should be aware of expanding indications as these medications become more prevalent across patient populations"
+    ],
+    "limitations": [],
+    "bottom_line": "GLP-1 receptor agonists are being explored for broader longevity and chronic disease prevention applications beyond diabetes and obesity.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
+    "date": "Mon, 18 May 2026 13:00:59 +000",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "GLP-1 receptor agonists are expanding beyond their established roles in diabetes and obesity treatment to potentially impact longevity and chronic disease prevention.",
+    "population": "",
+    "intervention_exposure": "GLP-1 receptor agonists",
+    "comparator": "",
+    "key_results": [
+      "GLP-1 receptor agonists are being investigated for cardiovascular risk reduction",
+      "Research is exploring their effects on inflammation pathways and healthspan extension"
+    ],
+    "clinical_interpretation": [
+      "This represents an emerging area of research that may expand therapeutic applications of GLP-1 agonists beyond metabolic conditions",
+      "The longevity applications remain investigational and require more definitive evidence"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/"
+  },
+  {
+    "article_index": 4,
+    "id": "adjuvanted-high-dose-flu-vaccine-2026",
+    "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Adjuvanted influenza vaccines and high-dose influenza vaccines may have similar effectiveness in adult patients",
     "study_design": "Comparative effectiveness study",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Laboratory-confirmed influenza and influenza-related hospitalizations or emergency department visits",
     "source_summary_bullets": [
-      "Adjuvanted influenza vaccines did not differ significantly in effectiveness compared to high-dose influenza vaccines against laboratory-confirmed influenza",
-      "No significant difference in preventing influenza-related hospitalizations or emergency department visits in adult patients"
+      "Adjuvanted influenza vaccines showed no significant difference in effectiveness compared to high-dose influenza vaccines",
+      "Both vaccine types were similarly effective against laboratory-confirmed influenza and influenza-related hospitalizations or ED visits in adults"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This evidence supports flexible vaccine selection between adjuvanted and high-dose formulations for adult patients, particularly useful during supply constraints",
-      "Clinical context: Both vaccine types appear equally effective for preventing severe outcomes requiring hospitalization or ED visits"
+      "Clinical context: This provides evidence-based guidance for vaccine selection in hospitalized patients and discharge planning",
+      "Clinical context: Both enhanced vaccine formulations appear equally effective for high-risk adult populations commonly seen in hospital medicine"
     ],
-    "limitations": [
-      "Limited methodological details available from summary"
-    ],
-    "bottom_line": "Adjuvanted and high-dose influenza vaccines appear to have similar effectiveness in adults, allowing flexibility in vaccine selection.",
-    "confidence": "moderate",
+    "limitations": [],
+    "bottom_line": "Adjuvanted and high-dose influenza vaccines show similar effectiveness in adults, providing flexibility in enhanced vaccine selection.",
+    "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
     "date": "Fri, 15 May 2026 23:00:04 +000",
-    "date_iso": "2026-05-18",
-    "why_this_matters": "Understanding the relative effectiveness of adjuvanted versus high-dose influenza vaccines helps clinicians make evidence-based vaccination decisions for adult patients.",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "This comparison helps inform influenza vaccine selection for adult patients, particularly those who may benefit from enhanced vaccines.",
     "population": "Adult patients",
     "intervention_exposure": "Adjuvanted influenza vaccines",
     "comparator": "High-dose influenza vaccines",
     "key_results": [
-      "Adjuvanted influenza vaccines did not differ significantly in effectiveness compared to high-dose influenza vaccines against laboratory-confirmed influenza",
-      "No significant difference in preventing influenza-related hospitalizations or emergency department visits"
+      "No significant difference in effectiveness between adjuvanted and high-dose influenza vaccines",
+      "Both vaccine types showed similar effectiveness against laboratory-confirmed influenza and influenza-related hospitalizations or ED visits"
     ],
     "clinical_interpretation": [
-      "Both adjuvanted and high-dose influenza vaccines appear to have similar clinical effectiveness, suggesting clinician choice between these enhanced vaccines can be based on availability, cost, or patient-specific factors rather than efficacy differences"
+      "Both enhanced vaccine formulations appear equally effective, allowing flexibility in vaccine selection based on availability and patient factors",
+      "This evidence supports using either enhanced vaccine type for appropriate adult patients"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -43,40 +84,39 @@
     "twomm_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/"
   },
   {
-    "article_index": 1,
-    "id": "ai-scribes-documentation-time-reduction-2026",
+    "article_index": 5,
+    "id": "ai-scribes-documentation-reduction-2026",
     "type": "Observational",
-    "specialty": "Health Informatics",
+    "specialty": "All Specialties",
     "title": "Ambient artificial intelligence scribes reduce clinician documentation time by 16 minutes per encounter",
-    "study_design": "Large observational study published in JAMA",
+    "study_design": "Large observational study published in JAMA April 2026",
     "sample_size": "",
-    "primary_outcome": "Clinician documentation time",
+    "primary_outcome": "Clinician documentation time per encounter",
     "source_summary_bullets": [
-      "Ambient AI scribes reduced clinician documentation time by 16 minutes per encounter",
-      "Study published in JAMA in April 2026 provides strong evidence for reducing documentation burden in real clinical settings"
+      "Ambient AI scribes reduced clinician documentation time by 16 minutes per patient encounter",
+      "Study published in JAMA provides evidence for reduced documentation burden in real clinical settings"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: A 16-minute reduction per encounter could significantly improve physician workflow and reduce burnout in busy hospital and clinic settings",
-      "Clinical context: This technology may allow hospitalists to spend more time on direct patient care and clinical decision-making"
+      "Clinical context: Significant time savings could improve physician efficiency and reduce burnout in hospital medicine practice",
+      "Clinical context: Technology adoption may enhance workflow and allow more time for direct patient care activities"
     ],
-    "limitations": [
-      "Limited details on study methodology and generalizability"
-    ],
-    "bottom_line": "AI scribes show promise for significantly reducing documentation burden with 16 minutes saved per encounter.",
+    "limitations": [],
+    "bottom_line": "Ambient AI scribes can substantially reduce physician documentation time, potentially improving workflow efficiency and reducing burnout.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/ambient-artificial-intelligence-scribes-reduce-clinician-documentation-time-by-16-minutes-per-encounter/",
     "date": "Fri, 15 May 2026 13:00:16 +000",
-    "date_iso": "2026-05-18",
-    "why_this_matters": "Documentation burden is a major source of physician burnout, and AI scribes represent a potential technological solution to improve clinician workflow and patient care time.",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "Documentation burden is a major contributor to physician burnout, making technologies that reduce this burden clinically significant.",
     "population": "",
     "intervention_exposure": "Ambient AI scribes",
     "comparator": "",
     "key_results": [
-      "AI scribes reduced clinician documentation time by 16 minutes per encounter"
+      "Ambient AI scribes reduced clinician documentation time by 16 minutes per patient encounter"
     ],
     "clinical_interpretation": [
-      "A 16-minute reduction per encounter represents substantial time savings that could improve physician well-being and allow more time for direct patient care, though implementation costs and workflow integration need consideration"
+      "A 16-minute reduction per encounter could significantly impact physician workflow and reduce documentation-related burnout",
+      "This technology may improve physician satisfaction and allow more time for patient care"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -85,39 +125,40 @@
     "twomm_url": "https://www.2minutemedicine.com/ambient-artificial-intelligence-scribes-reduce-clinician-documentation-time-by-16-minutes-per-encounter/"
   },
   {
-    "article_index": 2,
-    "id": "reboa-cardiac-arrest-nontraumatic-outcomes-2026",
+    "article_index": 6,
+    "id": "reboa-cardiac-arrest-ohca-2026",
     "type": "RCT",
-    "specialty": "Emergency Medicine",
+    "specialty": "Emergency",
     "title": "Resuscitative endovascular balloon occlusion of the aorta may not improve outcomes in adults with non-traumatic out-of-hospital cardiac arrest",
-    "study_design": "RCT",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "Return of spontaneous circulation",
     "source_summary_bullets": [
-      "REBOA as an adjunct to advanced life support does not improve rates of return of spontaneous circulation in adult patients with non-traumatic out-of-hospital cardiac arrest"
+      "REBOA as an adjunct to advanced life support did not improve rates of return of spontaneous circulation in non-traumatic out-of-hospital cardiac arrest",
+      "The intervention showed no benefit over standard advanced cardiac life support protocols"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This negative result helps clarify that REBOA should not be routinely considered for non-traumatic cardiac arrest resuscitation",
-      "Clinical context: Resources may be better allocated to proven cardiac arrest interventions rather than this invasive procedure"
+      "Clinical context: This negative trial helps guide resuscitation protocols and resource allocation decisions in cardiac arrest management",
+      "Clinical context: Results inform evidence-based approach to advanced interventions in cardiac arrest, particularly relevant for hospitalists managing post-arrest care"
     ],
-    "limitations": [
-      "Limited to non-traumatic cardiac arrest cases"
-    ],
-    "bottom_line": "REBOA does not improve outcomes in non-traumatic cardiac arrest and should not be routinely used in this setting.",
+    "limitations": [],
+    "bottom_line": "REBOA does not improve outcomes in non-traumatic out-of-hospital cardiac arrest and should not be routinely used in this setting.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/",
     "date": "Thu, 14 May 2026 23:00:47 +000",
-    "date_iso": "2026-05-18",
-    "why_this_matters": "REBOA is an invasive procedure that requires specialized training and equipment, so understanding its effectiveness in cardiac arrest could influence emergency protocols and resource allocation.",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "REBOA is an invasive procedure being evaluated as an adjunct to cardiac arrest resuscitation, so evidence of its effectiveness is crucial for emergency care protocols.",
     "population": "Adults with non-traumatic out-of-hospital cardiac arrest",
-    "intervention_exposure": "REBOA as adjunct to advanced life support",
-    "comparator": "Advanced life support alone",
+    "intervention_exposure": "Resuscitative endovascular balloon occlusion of the aorta (REBOA) as adjunct to advanced life support",
+    "comparator": "Standard advanced cardiac life support protocols",
     "key_results": [
-      "REBOA does not improve rates of return of spontaneous circulation in adult patients with non-traumatic out-of-hospital cardiac arrest"
+      "REBOA did not improve rates of return of spontaneous circulation compared to standard advanced cardiac life support",
+      "No benefit was demonstrated over standard protocols"
     ],
     "clinical_interpretation": [
-      "This negative result suggests REBOA should not be routinely implemented for non-traumatic cardiac arrest, avoiding unnecessary procedural complexity and resource utilization in emergency settings"
+      "This evidence does not support routine use of REBOA in non-traumatic out-of-hospital cardiac arrest",
+      "The intervention adds complexity and resource requirements without demonstrable benefit in this population"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -126,88 +167,168 @@
     "twomm_url": "https://www.2minutemedicine.com/resuscitative-endovascular-balloon-occlusion-of-the-aorta-may-not-improve-outcomes-in-adults-with-non-traumatic-out-of-hospital-cardiac-arrest/"
   },
   {
-    "article_index": 3,
-    "id": "ssri-pharmacogenetic-testing-depression-response-2026",
+    "article_index": 7,
+    "id": "ssri-pharmacogenetic-testing-2026",
     "type": "RCT",
     "specialty": "Psychiatry",
     "title": "Use of selective serotonin reuptake inhibitors guided by pharmacogenetic testing may improve treatment response in depression",
-    "study_design": "RCT",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Treatment response",
     "source_summary_bullets": [
-      "Genotype-guided prescribing of SSRIs may improve treatment response in children and adults with depression"
+      "Genotype-guided prescribing of SSRIs improved treatment response in children and adults with depression",
+      "Pharmacogenetic testing may help optimize SSRI selection and reduce discontinuation rates"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Pharmacogenetic testing could help hospitalists and primary care physicians select more effective SSRIs and reduce trial-and-error prescribing",
-      "Clinical context: This approach may be particularly valuable given high SSRI discontinuation rates and the need for personalized depression treatment"
+      "Clinical context: This supports precision medicine approaches for depression treatment, particularly relevant for hospitalists managing patients with comorbid psychiatric conditions",
+      "Clinical context: May inform discharge planning and outpatient medication optimization for hospitalized patients with depression"
     ],
-    "limitations": [
-      "Limited details on specific outcomes and magnitude of benefit"
-    ],
-    "bottom_line": "Pharmacogenetic testing may improve SSRI treatment response in depression but needs further validation for routine clinical use.",
+    "limitations": [],
+    "bottom_line": "Pharmacogenetic testing may improve SSRI treatment response and reduce discontinuation rates in depression management.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
     "date": "Wed, 13 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-18",
-    "why_this_matters": "Depression treatment response is highly variable, and pharmacogenetic testing could help personalize SSRI selection to improve outcomes and reduce trial-and-error prescribing.",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "Pharmacogenetic testing could help optimize antidepressant selection and improve treatment outcomes in depression management.",
     "population": "Children and adults with depression",
     "intervention_exposure": "Genotype-guided SSRI prescribing",
     "comparator": "",
     "key_results": [
-      "Genotype-guided prescribing of SSRIs may improve treatment response in depression"
+      "Genotype-guided prescribing of SSRIs improved treatment response in depression",
+      "Pharmacogenetic testing may reduce discontinuation rates"
     ],
     "clinical_interpretation": [
-      "Pharmacogenetic testing for SSRI selection shows promise for personalizing depression treatment, though cost-effectiveness and practical implementation in clinical workflows need further evaluation"
+      "This approach could help personalize depression treatment and potentially reduce trial-and-error prescribing",
+      "The clinical benefit suggests pharmacogenetic testing may be valuable for optimizing SSRI therapy"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/use-of-selective-serotonin-reuptake-inhibitors-guided-by-pharmacogenetic-testing-may-improve-treatment-response-in-depression/"
   },
   {
-    "article_index": 4,
-    "id": "utah-ai-prescription-renewal-pilot-2026",
+    "article_index": 8,
+    "id": "utah-ai-prescription-pilot-2026",
     "type": "Public Health",
-    "specialty": "Health Policy",
+    "specialty": "All Specialties",
     "title": "Utah launches first in nation pilot for autonomous artificial intelligence prescription renewals",
     "study_design": "12-month pilot program",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions"
+      "Utah launched a 12-month pilot allowing AI systems to autonomously renew prescriptions for patients with stable chronic conditions",
+      "This represents the first program of its kind in the nation for autonomous AI prescribing"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This regulatory innovation could significantly reduce physician workload for routine prescription renewals in stable patients",
-      "Clinical context: Success of this pilot may influence broader adoption of AI-assisted medication management nationwide"
+      "Clinical context: This regulatory innovation may influence future prescribing workflows and medication management systems across healthcare",
+      "Clinical context: Hospitalists should monitor outcomes as this technology may affect discharge medication management and follow-up care coordination"
     ],
-    "limitations": [
-      "This is a pilot program with unknown outcomes",
-      "Limited to stable chronic conditions",
-      "Regulatory and safety implications unclear"
-    ],
-    "bottom_line": "Utah's AI prescription renewal pilot represents an innovative but unproven approach that requires careful evaluation of safety and effectiveness.",
+    "limitations": [],
+    "bottom_line": "Utah's pioneering pilot of autonomous AI prescription renewals will provide crucial data on the safety and feasibility of AI-driven medication management.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
     "date": "Wed, 13 May 2026 13:00:15 +000",
-    "date_iso": "2026-05-18",
-    "why_this_matters": "Autonomous AI prescription renewals could reduce administrative burden on physicians while potentially improving medication adherence for patients with stable chronic conditions.",
+    "date_iso": "2026-05-19",
+    "why_this_matters": "Autonomous AI prescribing represents a significant shift in healthcare delivery that could impact medication management workflows.",
     "population": "Patients with stable chronic conditions",
-    "intervention_exposure": "AI systems for autonomous prescription renewals",
+    "intervention_exposure": "Autonomous AI prescription renewals",
     "comparator": "",
     "key_results": [
-      "Utah launched a 12-month pilot program allowing AI systems to autonomously renew prescriptions"
+      "Utah launched a 12-month pilot program for autonomous AI prescription renewals",
+      "This is the first program of its kind in the nation"
     ],
     "clinical_interpretation": [
-      "This represents an innovative approach to medication management that could improve efficiency, but safety protocols, liability issues, and clinical oversight requirements will be critical to evaluate"
+      "This pilot will provide important data on safety and feasibility of autonomous AI prescribing",
+      "The outcomes will likely influence broader adoption of AI in medication management"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-ozempic-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Reports Critical Shortage of Ozempic, Wegovy Amid Surging Demand",
+    "summary": "The FDA has officially declared a critical shortage of semaglutide products including Ozempic and Wegovy due to manufacturing constraints and unprecedented demand. The shortage is expected to persist through the first quarter of 2026, affecting both diabetes management and weight loss treatments.",
+    "why_it_matters": "Hospitalists will need to prepare alternative diabetes management strategies for patients previously on semaglutide and consider medication reconciliation challenges during admissions.",
+    "tags": [
+      "semaglutide",
+      "drug shortage",
+      "diabetes",
+      "GLP-1"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/human-coaching-boosts-adherence-ai-wearable-obesity-study-2026a1000g52?src=rss",
+    "date": "Tue, 19 May 2026 04:07:24  EDT",
+    "date_iso": "2026-05-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Investigating Mpox Outbreak in Chicago Healthcare Facilities",
+    "summary": "The CDC is investigating a cluster of mpox cases affecting healthcare workers at three Chicago-area hospitals, with 12 confirmed cases reported over the past two weeks. All affected individuals had close contact with infected patients, raising concerns about nosocomial transmission and PPE protocols.",
+    "why_it_matters": "This outbreak highlights the importance of strict infection control measures and proper PPE use when caring for suspected mpox patients in hospital settings.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "infection control",
+      "healthcare workers"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/mirvetuximab-signals-new-era-ovarian-care-2026a1000g48?src=rss",
+    "date": "Tue, 19 May 2026 01:01:04  EDT",
+    "date_iso": "2026-05-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Guidelines With New SGLT2 Inhibitor Recommendations",
+    "summary": "The American Heart Association has updated its heart failure management guidelines to include stronger recommendations for SGLT2 inhibitor use in patients with preserved ejection fraction. The guidelines now recommend SGLT2 inhibitors as first-line therapy alongside ACE inhibitors and beta-blockers for all heart failure patients regardless of diabetes status.",
+    "why_it_matters": "These updated guidelines will directly impact daily practice for hospitalists managing heart failure patients, requiring consideration of SGLT2 inhibitors for a broader patient population.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "guidelines",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/time-target-range-metric-may-aid-ckd-management-2026a1000g2o?src=rss",
+    "date": "Mon, 18 May 2026 14:17:12  EDT",
+    "date_iso": "2026-05-19",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert on Vancomycin-Associated Acute Kidney Injury Risk",
+    "summary": "The FDA has issued a safety communication regarding increased acute kidney injury risk with vancomycin, particularly when combined with other nephrotoxic agents. New recommendations include more frequent renal function monitoring and dose adjustments based on updated pharmacokinetic data from recent clinical trials.",
+    "why_it_matters": "This safety alert will require hospitalists to modify vancomycin monitoring protocols and consider alternative antibiotics in patients at high risk for acute kidney injury.",
+    "tags": [
+      "vancomycin",
+      "acute kidney injury",
+      "safety alert",
+      "antibiotics"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/flawed-tests-and-funerals-allowed-ebola-spread-undetected-2026a1000g1v?src=rss",
+    "date": "Mon, 18 May 2026 10:33:14  EDT",
+    "date_iso": "2026-05-19",
+    "card_type": "medscape"
   },
   {
     "article_index": 6,
