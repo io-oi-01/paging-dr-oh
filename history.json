@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Delirium",
     "Lower GI Bleeding",
     "Community-Acquired Pneumonia",
     "Takotsubo Cardiomyopathy",
@@ -89,7 +88,8 @@
     "Acute Pancreatitis",
     "Small Bowel Obstruction",
     "Hyponatremia",
-    "Delirium"
+    "Delirium",
+    "Myxedema Coma"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -208,7 +208,8 @@
     "dapagliflozin-ckd-ext",
     "syntax-2009",
     "clots1-2009",
-    "ecass3-2008"
+    "ecass3-2008",
+    "rose-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -587,9 +588,14 @@
     "multimodal-dementia-prediction-2026",
     "metformin-longevity-intervention-2026",
     "intradialytic-exercise-adequacy-2026",
-    "ssti-treatment-outcomes-2026"
+    "ssti-treatment-outcomes-2026",
+    "physical-frailty-epilepsy-risk-2026",
+    "multimodal-dementia-prediction-biomarkers-2026",
+    "intradialytic-exercise-dialysis-adequacy-2026",
+    "ssti-treatment-outcomes-hospitalized-2026",
+    "adjuvanted-high-dose-flu-vaccine-comparison-2026"
   ],
-  "last_run": "2026-05-20",
+  "last_run": "2026-05-21",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -670,13 +676,10 @@
     "Urticaria: Dermatographism",
     "Melasma",
     "Discoid Lupus Erythematosus",
-    "Pityriasis Rosea"
+    "Pityriasis Rosea",
+    "Majocchi granuloma"
   ],
   "litfl_cases_shown": [
-    "cxr-027",
-    "ct-052",
-    "clinical-does-roc-rock-does-sux-suck",
-    "ecg-063",
     "cxr-005",
     "ct-013",
     "clinical-a-really-tricky-abg",
@@ -872,6 +875,10 @@
     "ecg-084",
     "cxr-060",
     "ct-035",
-    "clinical-clinical-cases/tropical-travel-trouble"
+    "clinical-clinical-cases/tropical-travel-trouble",
+    "ecg-007",
+    "cxr-054",
+    "ct-090",
+    "clinical-troubling-tachycardia"
   ]
 }

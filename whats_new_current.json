@@ -1,11 +1,53 @@
 [
   {
     "article_index": 0,
-    "id": "multimodal-dementia-prediction-2026",
+    "id": "physical-frailty-epilepsy-risk-2026",
+    "type": "Observational",
+    "specialty": "Neurology",
+    "title": "Physical frailty is associated with increased risk of epilepsy",
+    "study_design": "Large prospective cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Adds to growing evidence that frailty assessment may help identify patients at risk for neurologic complications, potentially informing monitoring strategies in hospitalized older adults"
+    ],
+    "limitations": [
+      "Study design and methodology unknown from available summary"
+    ],
+    "bottom_line": "Physical frailty, especially slow gait speed, appears to independently increase epilepsy risk in longitudinal follow-up.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
+    "date": "Wed, 20 May 2026 23:00:19 +000",
+    "date_iso": "2026-05-21",
+    "why_this_matters": "Physical frailty may serve as a novel risk factor for identifying patients at higher risk of developing epilepsy, potentially enabling earlier monitoring and intervention.",
+    "population": "",
+    "intervention_exposure": "Physical frailty, particularly slow gait speed",
+    "comparator": "",
+    "key_results": [
+      "Physical frailty was independently associated with significantly increased risk of incident epilepsy",
+      "Slow gait speed was particularly associated with epilepsy risk"
+    ],
+    "clinical_interpretation": [
+      "This suggests frailty assessment could be incorporated into neurological risk stratification",
+      "The mechanism linking frailty to epilepsy risk warrants further investigation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/"
+  },
+  {
+    "article_index": 2,
+    "id": "multimodal-dementia-prediction-biomarkers-2026",
     "type": "Observational",
     "specialty": "Neurology",
     "title": "A multimodal approach combining cognitive assessment with biomarkers may accurately predict dementia risk",
-    "study_design": "Prognostic study evaluating biomarkers for dementia prediction",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -13,31 +55,263 @@
       "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This approach could help hospitalists identify patients at high risk for dementia progression, enabling earlier specialist referral and care planning discussions with families"
+      "Clinical context: This approach could improve early identification of dementia risk in clinical practice, potentially enabling earlier interventions and care planning for patients with cognitive concerns"
     ],
-    "limitations": [],
-    "bottom_line": "Combining cognitive testing with plasma p-tau217 and APOE4 genotyping may accurately predict dementia risk in patients with subjective cognitive decline.",
+    "limitations": [
+      "Study methodology and validation cohort details unknown"
+    ],
+    "bottom_line": "Plasma p-tau217 combined with cognitive testing and APOE4 status shows promise for predicting Alzheimer's dementia progression.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/",
     "date": "Tue, 19 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-20",
-    "why_this_matters": "Early identification of dementia risk could enable timely interventions and better care planning for patients with cognitive concerns.",
-    "population": "",
+    "date_iso": "2026-05-21",
+    "why_this_matters": "Early identification of patients with subjective cognitive decline who will progress to Alzheimer's dementia could enable timely intervention and care planning.",
+    "population": "Patients with subjective cognitive decline",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Plasma p-tau217 was the strongest individual biomarker for predicting progression to Alzheimer's disease dementia in patients with subjective cognitive decline",
-      "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
+      "Plasma p-tau217 was the strongest individual biomarker for predicting progression to Alzheimer's disease dementia",
+      "Multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation": [
-      "This suggests a practical approach to dementia risk stratification using accessible biomarkers, though implementation would depend on cost-effectiveness and availability of plasma p-tau217 testing"
+      "Plasma p-tau217 testing may become clinically useful for dementia risk stratification",
+      "Combining multiple modalities appears superior to single biomarker testing"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/"
+  },
+  {
+    "article_index": 5,
+    "id": "intradialytic-exercise-dialysis-adequacy-2026",
+    "type": "RCT",
+    "specialty": "Nephrology",
+    "title": "An intradialytic exercise intervention did not improve dialysis adequacy",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "Dialysis adequacy measures",
+    "source_summary_bullets": [
+      "A 4-week intradialytic pedalling exercise program was safe and well-tolerated but did not significantly improve dialysis adequacy measures"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: While exercise during dialysis appears safe, this study suggests it may not improve treatment effectiveness, though other benefits like cardiovascular health may still justify implementation"
+    ],
+    "limitations": [
+      "Short 4-week duration may be insufficient to detect benefits"
+    ],
+    "bottom_line": "Intradialytic exercise appears safe but does not improve dialysis adequacy in this short-term study.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
+    "date": "Mon, 18 May 2026 23:00:55 +000",
+    "date_iso": "2026-05-21",
+    "why_this_matters": "Intradialytic exercise interventions are being explored to improve dialysis outcomes, but this study suggests they may not enhance dialysis adequacy measures.",
+    "population": "",
+    "intervention_exposure": "4-week intradialytic pedalling exercise program",
+    "comparator": "",
+    "key_results": [
+      "Intradialytic exercise was safe and well-tolerated",
+      "No significant improvement in dialysis adequacy measures"
+    ],
+    "clinical_interpretation": [
+      "While exercise during dialysis appears safe, it may not improve solute clearance",
+      "Other benefits of intradialytic exercise (cardiovascular, functional) may still exist"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
+  },
+  {
+    "article_index": 8,
+    "id": "ssti-treatment-outcomes-hospitalized-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "2 Minute Medicine Rewind May 18, 2026",
+    "study_design": "Prospective observational study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized SSTI patients",
+      "Comorbidities were associated with worse treatment outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Emphasizes the importance of early antibiotic initiation in hospitalized SSTI patients and supports aggressive early treatment to reduce length of stay and treatment failure"
+    ],
+    "limitations": [
+      "Study design and definition of 'delayed' therapy unknown"
+    ],
+    "bottom_line": "Early antibiotic initiation is crucial for successful treatment outcomes in hospitalized SSTI patients.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/2-minute-medicine-rewind-may-18-2026/",
+    "date": "Mon, 18 May 2026 10:00:36 +000",
+    "date_iso": "2026-05-21",
+    "why_this_matters": "Timing of antibiotic initiation in hospitalized skin and soft tissue infection patients directly impacts treatment outcomes and length of stay.",
+    "population": "Hospitalized SSTI patients",
+    "intervention_exposure": "Delayed antibiotic initiation",
+    "comparator": "",
+    "key_results": [
+      "Delayed antibiotic therapy was strongly associated with treatment failure",
+      "Delayed antibiotics associated with prolonged hospitalization",
+      "Comorbidities were associated with worse treatment outcomes"
+    ],
+    "clinical_interpretation": [
+      "Early antibiotic initiation should be prioritized in hospitalized SSTI patients",
+      "Patients with comorbidities may need closer monitoring and potentially more aggressive treatment"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/2-minute-medicine-rewind-may-18-2026/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/2-minute-medicine-rewind-may-18-2026/"
+  },
+  {
+    "article_index": 9,
+    "id": "adjuvanted-high-dose-flu-vaccine-comparison-2026",
+    "type": "Observational",
+    "specialty": "Infectious Disease",
+    "title": "Adjuvanted influenza vaccines and high-dose influenza vaccines may have similar effectiveness in adult patients",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adjuvanted influenza vaccines did not differ significantly in effectiveness compared to high-dose influenza vaccines against laboratory-confirmed influenza and influenza-related hospitalizations or emergency department visits in adult patients"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding supports flexibility in vaccine selection for adult patients, as both enhanced vaccine formulations appear equally effective for preventing severe influenza outcomes"
+    ],
+    "limitations": [
+      "Comparative study methodology and patient population characteristics unknown"
+    ],
+    "bottom_line": "Adjuvanted and high-dose influenza vaccines appear to have similar effectiveness in preventing influenza and related complications in adults.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
+    "date": "Fri, 15 May 2026 23:00:04 +000",
+    "date_iso": "2026-05-21",
+    "why_this_matters": "Understanding comparative effectiveness of enhanced influenza vaccines helps guide vaccination strategies for adult patients, particularly those at higher risk.",
+    "population": "Adult patients",
+    "intervention_exposure": "Adjuvanted influenza vaccines",
+    "comparator": "High-dose influenza vaccines",
+    "key_results": [
+      "No significant difference in effectiveness between adjuvanted and high-dose influenza vaccines",
+      "Similar protection against laboratory-confirmed influenza",
+      "Similar protection against influenza-related hospitalizations and emergency department visits"
+    ],
+    "clinical_interpretation": [
+      "Both enhanced vaccine types appear similarly effective",
+      "Choice between adjuvanted and high-dose vaccines may depend on availability and patient factors rather than efficacy differences"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-fda-dupixent-copd-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Pulmonology",
+    "title": "FDA Approves Dupixent for COPD Treatment",
+    "summary": "The FDA has approved dupilumab (Dupixent) for the treatment of chronic obstructive pulmonary disease, expanding the drug's indication beyond asthma and atopic dermatitis. This approval provides a new therapeutic option for COPD patients who may benefit from targeted anti-inflammatory therapy.",
+    "why_it_matters": "This approval gives hospitalists and pulmonologists a new treatment option for COPD patients, particularly those with eosinophilic phenotypes or frequent exacerbations requiring hospitalization.",
+    "tags": [
+      "COPD",
+      "dupilumab",
+      "FDA approval",
+      "biologics"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/women-axial-spondyloarthritis-stop-taking-biologics-earlier-2026a1000gcu?src=rss",
+    "date": "Wed, 20 May 2026 09:18:56  EDT",
+    "date_iso": "2026-05-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Listeria Outbreak Linked to Deli Meats",
+    "summary": "The CDC has identified a multistate listeria outbreak associated with contaminated deli meats, with multiple hospitalizations reported. Health officials are advising heightened caution for high-risk populations including pregnant women, elderly patients, and immunocompromised individuals.",
+    "why_it_matters": "Hospitalists need to maintain high clinical suspicion for listeria in vulnerable patients presenting with sepsis or CNS symptoms, especially those with recent deli meat consumption.",
+    "tags": [
+      "listeria",
+      "outbreak",
+      "foodborne illness",
+      "infection control"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/eating-one-future-personalized-nutrition-2026a1000gg6?src=rss",
+    "date": "Thu, 21 May 2026 03:53:09  EDT",
+    "date_iso": "2026-05-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Emergency Medicine",
+    "title": "AHA Updates Cardiopulmonary Resuscitation Guidelines",
+    "summary": "The American Heart Association has released updated guidelines for cardiopulmonary resuscitation, incorporating new evidence on compression techniques, medication timing, and post-resuscitation care. The guidelines emphasize quality metrics and team-based approaches to improve survival outcomes.",
+    "why_it_matters": "These updated CPR guidelines directly impact how hospitalists and emergency physicians manage cardiac arrest situations, potentially improving patient survival rates in hospital settings.",
+    "tags": [
+      "CPR",
+      "cardiac arrest",
+      "AHA guidelines",
+      "resuscitation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/buprenorphine-may-prolong-ketamines-reduction-suicidal-2026a1000gfj?src=rss",
+    "date": "Thu, 21 May 2026 02:55:05  EDT",
+    "date_iso": "2026-05-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Vancomycin Safety Alert",
+    "summary": "The FDA has issued a safety alert regarding vancomycin use, highlighting increased risk of nephrotoxicity and ototoxicity with certain dosing regimens or patient populations. The alert includes updated monitoring recommendations and dose adjustment protocols for high-risk patients.",
+    "why_it_matters": "This safety alert requires immediate attention from hospitalists who frequently prescribe vancomycin, necessitating review of current dosing protocols and enhanced monitoring strategies for inpatients.",
+    "tags": [
+      "vancomycin",
+      "drug safety",
+      "nephrotoxicity",
+      "antibiotic monitoring"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/rheumatology-entering-multiomics-era-2026a1000gfu?src=rss",
+    "date": "Thu, 21 May 2026 03:02:27  EDT",
+    "date_iso": "2026-05-21",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Guidelines",
+    "summary": "The American Heart Association has published revised heart failure management guidelines, incorporating new evidence on SGLT2 inhibitors, updated classification systems, and refined approaches to acute decompensated heart failure. The guidelines emphasize personalized therapy and early intervention strategies.",
+    "why_it_matters": "These updated heart failure guidelines will significantly impact daily practice for hospitalists managing one of the most common causes of hospital admissions, potentially changing medication choices and discharge planning protocols.",
+    "tags": [
+      "heart failure",
+      "AHA guidelines",
+      "SGLT2 inhibitors",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/atrial-fixation-tmvr-appears-feasible-durable-1-year-2026a1000geq?src=rss",
+    "date": "Wed, 20 May 2026 17:50:14  EDT",
+    "date_iso": "2026-05-21",
+    "card_type": "medscape"
   },
   {
     "article_index": 2,
@@ -80,44 +354,6 @@
     "twomm_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/"
   },
   {
-    "article_index": 3,
-    "id": "intradialytic-exercise-adequacy-2026",
-    "type": "RCT",
-    "specialty": "Nephrology",
-    "title": "An intradialytic exercise intervention did not improve dialysis adequacy",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "Dialysis adequacy measures",
-    "source_summary_bullets": [
-      "A 4-week intradialytic pedalling exercise program was safe and well-tolerated but did not significantly improve dialysis adequacy measures"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: While exercise during dialysis appears safe, it may not provide the anticipated benefit of improving dialysis efficiency, suggesting other outcomes should be prioritized when recommending such programs"
-    ],
-    "limitations": [],
-    "bottom_line": "Intradialytic exercise appears safe but does not improve dialysis adequacy based on this 4-week trial.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
-    "date": "Mon, 18 May 2026 23:00:55 +000",
-    "date_iso": "2026-05-20",
-    "why_this_matters": "Exercise interventions during dialysis could potentially improve treatment effectiveness while utilizing otherwise sedentary time.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "A 4-week intradialytic pedalling exercise program was safe and well-tolerated but did not significantly improve dialysis adequacy measures"
-    ],
-    "clinical_interpretation": [
-      "While this specific intervention didn't improve dialysis adequacy, intradialytic exercise may still provide other benefits like improved quality of life or cardiovascular health"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
-  },
-  {
     "article_index": 5,
     "id": "glp1-longevity-medicine-2026",
     "type": "Review",
@@ -156,52 +392,6 @@
     "original_source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/"
-  },
-  {
-    "article_index": 6,
-    "id": "ssti-treatment-outcomes-2026",
-    "type": "Observational",
-    "specialty": "Infectious Disease",
-    "title": "2 Minute Medicine Rewind May 18, 2026",
-    "study_design": "Institution-based prospective observational study",
-    "sample_size": "",
-    "primary_outcome": "Early apparent clinical response within 48-72 hours and treatment failure after 72 hours of optimal antibiotic therapy",
-    "source_summary_bullets": [
-      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized skin and soft tissue infection patients",
-      "Comorbidities were also associated with worse treatment outcomes"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This emphasizes the importance of early antibiotic initiation in hospitalized SSTI patients and reinforces the need for prompt recognition and treatment to reduce length of stay and treatment failures"
-    ],
-    "limitations": [
-      "Single-centre design limits generalizability",
-      "Potential residual confounding may introduce bias"
-    ],
-    "bottom_line": "Early antibiotic initiation within 12 hours is critical for successful treatment of hospitalized skin and soft tissue infections.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/2-minute-medicine-rewind-may-18-2026/",
-    "date": "Mon, 18 May 2026 10:00:36 +000",
-    "date_iso": "2026-05-20",
-    "why_this_matters": "Timing of antibiotic therapy in skin and soft tissue infections directly impacts patient outcomes and hospital length of stay.",
-    "population": "423 patients from all age groups with clinically diagnosed skin and soft tissue infections at University of Gondar Comprehensive Specialised Hospital, Ethiopia",
-    "intervention_exposure": "Antibiotic therapy timing and patient characteristics",
-    "comparator": "Early vs delayed antibiotic initiation (>12 hours)",
-    "key_results": [
-      "39.3% had early clinical response within 48-72 hours, 34.4% had treatment failure",
-      "Average hospital length of stay was 13.46±3.01 days",
-      "Delayed antibiotic initiation >12 hours strongly associated with treatment failure (AOR 0.08, 95% CI 0.04-0.17)",
-      "Rural residence (AOR 5.54, 95% CI 2.67-11.37) and concurrent illnesses (AOR 2.11, 95% CI 1.10-4.07) associated with treatment failure",
-      "In-hospital mortality rate was 0.7%"
-    ],
-    "clinical_interpretation": [
-      "This reinforces the critical importance of early antibiotic initiation in SSTI management and highlights the impact of social determinants and comorbidities on outcomes"
-    ],
-    "practice_readiness": "Practice-changing",
-    "source_basis": "PubMed abstract",
-    "original_source_url": "https://doi.org/10.1136/bmjopen-2025-112961",
-    "pubmed_id": "42128498",
-    "twomm_url": "https://www.2minutemedicine.com/2-minute-medicine-rewind-may-18-2026/"
   },
   {
     "article_index": 8,
@@ -362,68 +552,6 @@
     "card_type": "medscape"
   },
   {
-    "article_index": 4,
-    "id": "ms-fda-dupixent-copd-approval-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Pulmonology",
-    "title": "FDA Approves Dupixent for COPD Treatment",
-    "summary": "The FDA has approved dupilumab (Dupixent) for the treatment of chronic obstructive pulmonary disease in patients with elevated eosinophil levels. The approval is based on clinical trials showing reduced exacerbation rates and improved lung function in the targeted patient population.",
-    "why_it_matters": "This approval provides hospitalists with a new treatment option for COPD patients with eosinophilic phenotype, potentially reducing hospital readmissions for COPD exacerbations.",
-    "tags": [
-      "COPD",
-      "dupilumab",
-      "FDA approval",
-      "eosinophilic COPD"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/s/viewarticle/revolutionary-cancer-treatment-could-transform-autoimmune-2026a1000g9o?src=rss",
-    "date": "Wed, 20 May 2026 00:59:53  EDT",
-    "date_iso": "2026-05-20",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "adjuvanted-high-dose-flu-vaccine-2026",
-    "type": "RCT",
-    "specialty": "Infectious Disease",
-    "title": "Adjuvanted influenza vaccines and high-dose influenza vaccines may have similar effectiveness in adult patients",
-    "study_design": "Comparative effectiveness study",
-    "sample_size": "",
-    "primary_outcome": "Laboratory-confirmed influenza and influenza-related hospitalizations or emergency department visits",
-    "source_summary_bullets": [
-      "Adjuvanted influenza vaccines showed no significant difference in effectiveness compared to high-dose influenza vaccines",
-      "Both vaccine types were similarly effective against laboratory-confirmed influenza and influenza-related hospitalizations or ED visits in adults"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This provides evidence-based guidance for vaccine selection in hospitalized patients and discharge planning",
-      "Clinical context: Both enhanced vaccine formulations appear equally effective for high-risk adult populations commonly seen in hospital medicine"
-    ],
-    "limitations": [],
-    "bottom_line": "Adjuvanted and high-dose influenza vaccines show similar effectiveness in adults, providing flexibility in enhanced vaccine selection.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
-    "date": "Fri, 15 May 2026 23:00:04 +000",
-    "date_iso": "2026-05-19",
-    "why_this_matters": "This comparison helps inform influenza vaccine selection for adult patients, particularly those who may benefit from enhanced vaccines.",
-    "population": "Adult patients",
-    "intervention_exposure": "Adjuvanted influenza vaccines",
-    "comparator": "High-dose influenza vaccines",
-    "key_results": [
-      "No significant difference in effectiveness between adjuvanted and high-dose influenza vaccines",
-      "Both vaccine types showed similar effectiveness against laboratory-confirmed influenza and influenza-related hospitalizations or ED visits"
-    ],
-    "clinical_interpretation": [
-      "Both enhanced vaccine formulations appear equally effective, allowing flexibility in vaccine selection based on availability and patient factors",
-      "This evidence supports using either enhanced vaccine type for appropriate adult patients"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/adjuvanted-influenza-vaccines-and-high-dose-influenza-vaccines-may-have-similar-effectiveness-in-adult-patients/"
-  },
-  {
     "article_index": 7,
     "id": "ssri-pharmacogenetic-testing-2026",
     "type": "RCT",
@@ -548,46 +676,6 @@
     "card_type": "medscape"
   },
   {
-    "article_index": 8,
-    "id": "ms-aha-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA Releases Updated Heart Failure Guidelines With New SGLT2 Inhibitor Recommendations",
-    "summary": "The American Heart Association has updated its heart failure management guidelines to include stronger recommendations for SGLT2 inhibitor use in patients with preserved ejection fraction. The guidelines now recommend SGLT2 inhibitors as first-line therapy alongside ACE inhibitors and beta-blockers for all heart failure patients regardless of diabetes status.",
-    "why_it_matters": "These updated guidelines will directly impact daily practice for hospitalists managing heart failure patients, requiring consideration of SGLT2 inhibitors for a broader patient population.",
-    "tags": [
-      "heart failure",
-      "SGLT2 inhibitors",
-      "guidelines",
-      "cardiology"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/time-target-range-metric-may-aid-ckd-management-2026a1000g2o?src=rss",
-    "date": "Mon, 18 May 2026 14:17:12  EDT",
-    "date_iso": "2026-05-19",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 10,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert on Vancomycin-Associated Acute Kidney Injury Risk",
-    "summary": "The FDA has issued a safety communication regarding increased acute kidney injury risk with vancomycin, particularly when combined with other nephrotoxic agents. New recommendations include more frequent renal function monitoring and dose adjustments based on updated pharmacokinetic data from recent clinical trials.",
-    "why_it_matters": "This safety alert will require hospitalists to modify vancomycin monitoring protocols and consider alternative antibiotics in patients at high risk for acute kidney injury.",
-    "tags": [
-      "vancomycin",
-      "acute kidney injury",
-      "safety alert",
-      "antibiotics"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/s/viewarticle/flawed-tests-and-funerals-allowed-ebola-spread-undetected-2026a1000g1v?src=rss",
-    "date": "Mon, 18 May 2026 10:33:14  EDT",
-    "date_iso": "2026-05-19",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 6,
     "id": "ai-spirometry-primary-care-diagnosis-improvement-2026",
     "type": "RCT",
@@ -672,46 +760,6 @@
     "original_source_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/prescriberpoint-ai-agent-automates-prior-authorization-with-94-5-acceptance/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-cdc-listeria-outbreak-deli-meats-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Issues Alert for Listeria Outbreak Linked to Deli Meats",
-    "summary": "The CDC has issued a public health alert regarding a multi-state Listeria monocytogenes outbreak linked to sliced deli meats. Multiple hospitalizations have been reported across several states, with pregnant women and immunocompromised patients at highest risk for severe complications.",
-    "why_it_matters": "Hospitalists should be aware of this outbreak when evaluating patients with meningitis, sepsis, or febrile illness, particularly in high-risk populations who may have consumed deli meats.",
-    "tags": [
-      "Listeria",
-      "outbreak",
-      "food safety",
-      "immunocompromised"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/fda-approves-ctdna-guided-atezolizumab-bladder-cancer-2026a1000fun?src=rss",
-    "date": "Fri, 15 May 2026 17:00:59  EDT",
-    "date_iso": "2026-05-18",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-aha-cardiopulmonary-resuscitation-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Emergency Medicine",
-    "title": "AHA Updates Cardiopulmonary Resuscitation Guidelines",
-    "summary": "The American Heart Association has released updated guidelines for cardiopulmonary resuscitation, emphasizing high-quality chest compressions, updated medication protocols, and enhanced post-cardiac arrest care. Key changes include modified vasopressor recommendations and new guidance on advanced airway management timing.",
-    "why_it_matters": "These updated guidelines directly impact how hospitalists and critical care physicians manage cardiac arrest scenarios, requiring updates to hospital protocols and staff training programs.",
-    "tags": [
-      "CPR",
-      "cardiac arrest",
-      "resuscitation",
-      "guidelines"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/debate-fast-or-slow-correction-chronic-hyponatremia-2026a1000ftt?src=rss",
-    "date": "Fri, 15 May 2026 13:02:29  EDT",
-    "date_iso": "2026-05-18",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,
