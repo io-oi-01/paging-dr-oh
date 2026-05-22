@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Lower GI Bleeding",
     "Community-Acquired Pneumonia",
     "Takotsubo Cardiomyopathy",
     "Hypertensive Emergency",
@@ -89,7 +88,8 @@
     "Small Bowel Obstruction",
     "Hyponatremia",
     "Delirium",
-    "Myxedema Coma"
+    "Myxedema Coma",
+    "Acute Decompensated Heart Failure"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -209,7 +209,8 @@
     "syntax-2009",
     "clots1-2009",
     "ecass3-2008",
-    "rose-2019"
+    "rose-2019",
+    "tomahawk-2021"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -593,9 +594,10 @@
     "multimodal-dementia-prediction-biomarkers-2026",
     "intradialytic-exercise-dialysis-adequacy-2026",
     "ssti-treatment-outcomes-hospitalized-2026",
-    "adjuvanted-high-dose-flu-vaccine-comparison-2026"
+    "adjuvanted-high-dose-flu-vaccine-comparison-2026",
+    "ssri-osteoarthritis-arthroplasty-2026"
   ],
-  "last_run": "2026-05-21",
+  "last_run": "2026-05-22",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -677,13 +679,10 @@
     "Melasma",
     "Discoid Lupus Erythematosus",
     "Pityriasis Rosea",
-    "Majocchi granuloma"
+    "Majocchi granuloma",
+    "Tinea Versicolor"
   ],
   "litfl_cases_shown": [
-    "cxr-005",
-    "ct-013",
-    "clinical-a-really-tricky-abg",
-    "ecg-133",
     "cxr-087",
     "ct-023",
     "clinical-frothing-mad",
@@ -879,6 +878,10 @@
     "ecg-007",
     "cxr-054",
     "ct-090",
-    "clinical-troubling-tachycardia"
+    "clinical-troubling-tachycardia",
+    "ecg-137",
+    "cxr-011",
+    "ct-084",
+    "clinical-an-unusual-wrist-injury"
   ]
 }

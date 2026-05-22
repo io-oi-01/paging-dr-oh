@@ -1,53 +1,93 @@
 [
   {
     "article_index": 0,
+    "id": "ssri-osteoarthritis-arthroplasty-2026",
+    "type": "Observational",
+    "specialty": "Rheumatology/Psychiatry",
+    "title": "Selective serotonin reuptake inhibitors may reduce risk of total joint arthroplasty in osteoarthritis",
+    "study_design": "Comparative effectiveness study of SSRI vs centrally acting analgesics in osteoarthritis patients",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients",
+      "Management of comorbid depression may play an important role in OA symptom progression and surgical outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: When treating depression in osteoarthritis patients, SSRIs may provide dual benefits by addressing mood symptoms while potentially reducing need for joint replacement surgery",
+      "Clinical context: This suggests considering depression screening and treatment as part of comprehensive osteoarthritis management"
+    ],
+    "limitations": [],
+    "bottom_line": "SSRIs may reduce joint replacement risk in OA patients, but more rigorous study is needed before changing practice.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/",
+    "date": "Thu, 21 May 2026 23:00:40 +000",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "This suggests that treating depression in osteoarthritis patients with SSRIs may have dual benefits, potentially delaying need for joint replacement surgery.",
+    "population": "",
+    "intervention_exposure": "SSRI initiation",
+    "comparator": "centrally acting analgesics",
+    "key_results": [
+      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients"
+    ],
+    "clinical_interpretation": [
+      "This observational finding suggests potential disease-modifying effects of SSRIs in OA, possibly through pain perception mechanisms or inflammatory pathways",
+      "Confounding by indication and selection bias are likely concerns in this type of analysis"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/"
+  },
+  {
+    "article_index": 1,
     "id": "physical-frailty-epilepsy-risk-2026",
     "type": "Observational",
-    "specialty": "Neurology",
+    "specialty": "Neurology/Geriatrics",
     "title": "Physical frailty is associated with increased risk of epilepsy",
     "study_design": "Large prospective cohort study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
+      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy",
+      "This association was found in a large longitudinal cohort study"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Adds to growing evidence that frailty assessment may help identify patients at risk for neurologic complications, potentially informing monitoring strategies in hospitalized older adults"
+      "Clinical context: Frailty assessment including gait speed may help identify patients at higher risk for developing epilepsy",
+      "Clinical context: This connection suggests shared pathophysiologic mechanisms between frailty and seizure susceptibility that warrant further investigation"
     ],
-    "limitations": [
-      "Study design and methodology unknown from available summary"
-    ],
-    "bottom_line": "Physical frailty, especially slow gait speed, appears to independently increase epilepsy risk in longitudinal follow-up.",
+    "limitations": [],
+    "bottom_line": "Frail patients with slow gait may warrant increased vigilance for seizure development.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "date": "Wed, 20 May 2026 23:00:19 +000",
-    "date_iso": "2026-05-21",
-    "why_this_matters": "Physical frailty may serve as a novel risk factor for identifying patients at higher risk of developing epilepsy, potentially enabling earlier monitoring and intervention.",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "Physical frailty assessment could help identify patients at higher risk for developing epilepsy, particularly in older adults.",
     "population": "",
-    "intervention_exposure": "Physical frailty, particularly slow gait speed",
+    "intervention_exposure": "physical frailty (particularly slow gait speed)",
     "comparator": "",
     "key_results": [
-      "Physical frailty was independently associated with significantly increased risk of incident epilepsy",
-      "Slow gait speed was particularly associated with epilepsy risk"
+      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy"
     ],
     "clinical_interpretation": [
-      "This suggests frailty assessment could be incorporated into neurological risk stratification",
-      "The mechanism linking frailty to epilepsy risk warrants further investigation"
+      "This association may reflect shared pathophysiology involving neurodegeneration, vascular disease, or metabolic dysfunction",
+      "Gait speed is an easily assessable marker that could identify high-risk patients for closer neurological monitoring"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/"
   },
   {
-    "article_index": 2,
-    "id": "multimodal-dementia-prediction-biomarkers-2026",
+    "article_index": 3,
+    "id": "multimodal-dementia-prediction-2026",
     "type": "Observational",
     "specialty": "Neurology",
     "title": "A multimodal approach combining cognitive assessment with biomarkers may accurately predict dementia risk",
-    "study_design": "",
+    "study_design": "Biomarker and cognitive assessment validation study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -55,28 +95,27 @@
       "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This approach could improve early identification of dementia risk in clinical practice, potentially enabling earlier interventions and care planning for patients with cognitive concerns"
+      "Clinical context: This multimodal approach could help clinicians better stratify dementia risk and inform patient counseling and care planning",
+      "Clinical context: Plasma-based biomarkers may make dementia risk assessment more accessible than CSF or PET imaging"
     ],
-    "limitations": [
-      "Study methodology and validation cohort details unknown"
-    ],
-    "bottom_line": "Plasma p-tau217 combined with cognitive testing and APOE4 status shows promise for predicting Alzheimer's dementia progression.",
+    "limitations": [],
+    "bottom_line": "Combining plasma p-tau217 with cognitive testing and APOE4 status may accurately predict dementia risk in at-risk patients.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/",
     "date": "Tue, 19 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-21",
-    "why_this_matters": "Early identification of patients with subjective cognitive decline who will progress to Alzheimer's dementia could enable timely intervention and care planning.",
-    "population": "Patients with subjective cognitive decline",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "This multimodal approach could improve early identification of patients likely to progress to Alzheimer's dementia, enabling earlier intervention.",
+    "population": "patients with subjective cognitive decline",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
       "Plasma p-tau217 was the strongest individual biomarker for predicting progression to Alzheimer's disease dementia",
-      "Multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
+      "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation": [
-      "Plasma p-tau217 testing may become clinically useful for dementia risk stratification",
-      "Combining multiple modalities appears superior to single biomarker testing"
+      "Plasma p-tau217 testing may become a valuable clinical tool for risk stratification in memory clinics",
+      "The multimodal approach likely provides better discrimination than any single test alone"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -86,45 +125,208 @@
   },
   {
     "article_index": 5,
-    "id": "intradialytic-exercise-dialysis-adequacy-2026",
+    "id": "metformin-longevity-intervention-2026",
+    "type": "Review",
+    "specialty": "Endocrinology/Geriatrics",
+    "title": "Metformin remains a leading candidate for pharmacologic longevity intervention",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Metformin continues to occupy a unique position in longevity medicine due to its long track record and well-understood safety profile",
+      "Originally introduced for type 2 diabetes, it has since been studied for broader longevity applications"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Metformin's established safety profile makes it an attractive option for patients interested in longevity interventions beyond diabetes management",
+      "Clinical context: This reinforces metformin as first-line therapy for diabetes while potentially providing additional healthspan benefits"
+    ],
+    "limitations": [],
+    "bottom_line": "Metformin remains an interesting candidate for longevity applications, but evidence is still preliminary.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/",
+    "date": "Tue, 19 May 2026 13:00:14 +000",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "As longevity medicine gains interest, understanding which existing medications might have broader anti-aging effects could inform clinical practice.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Metformin continues to occupy a unique position in longevity medicine due to its long track record and well-understood safety profile"
+    ],
+    "clinical_interpretation": [
+      "Metformin's potential longevity benefits remain largely theoretical and based on observational data",
+      "Its established safety profile makes it an attractive candidate for further longevity research"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/"
+  },
+  {
+    "article_index": 6,
+    "id": "intradialytic-exercise-adequacy-2026",
     "type": "RCT",
     "specialty": "Nephrology",
     "title": "An intradialytic exercise intervention did not improve dialysis adequacy",
     "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "Dialysis adequacy measures",
+    "primary_outcome": "",
     "source_summary_bullets": [
-      "A 4-week intradialytic pedalling exercise program was safe and well-tolerated but did not significantly improve dialysis adequacy measures"
+      "A 4-week intradialytic pedaling exercise program was safe and well-tolerated",
+      "The exercise intervention did not significantly improve dialysis adequacy measures"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: While exercise during dialysis appears safe, this study suggests it may not improve treatment effectiveness, though other benefits like cardiovascular health may still justify implementation"
+      "Clinical context: While exercise during dialysis appears safe, it doesn't improve the effectiveness of dialysis treatment itself",
+      "Clinical context: Exercise benefits in dialysis patients may be related to other outcomes like quality of life or cardiovascular health rather than dialysis adequacy"
     ],
-    "limitations": [
-      "Short 4-week duration may be insufficient to detect benefits"
-    ],
-    "bottom_line": "Intradialytic exercise appears safe but does not improve dialysis adequacy in this short-term study.",
+    "limitations": [],
+    "bottom_line": "Intradialytic exercise appears safe but does not improve dialysis adequacy measures.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
     "date": "Mon, 18 May 2026 23:00:55 +000",
-    "date_iso": "2026-05-21",
-    "why_this_matters": "Intradialytic exercise interventions are being explored to improve dialysis outcomes, but this study suggests they may not enhance dialysis adequacy measures.",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "Exercise interventions during dialysis are appealing for improving patient outcomes, but this study suggests they may not improve dialysis effectiveness.",
     "population": "",
-    "intervention_exposure": "4-week intradialytic pedalling exercise program",
+    "intervention_exposure": "4-week intradialytic pedaling exercise program",
     "comparator": "",
     "key_results": [
-      "Intradialytic exercise was safe and well-tolerated",
-      "No significant improvement in dialysis adequacy measures"
+      "A 4-week intradialytic pedaling exercise program was safe and well-tolerated",
+      "The exercise intervention did not significantly improve dialysis adequacy measures"
     ],
     "clinical_interpretation": [
-      "While exercise during dialysis appears safe, it may not improve solute clearance",
-      "Other benefits of intradialytic exercise (cardiovascular, functional) may still exist"
+      "While safe, intradialytic exercise may not improve solute clearance as hoped",
+      "Other benefits like cardiovascular fitness or quality of life may still justify such programs"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
+  },
+  {
+    "article_index": 8,
+    "id": "glp1-longevity-medicine-2026",
+    "type": "Review",
+    "specialty": "Endocrinology",
+    "title": "GLP-1 receptor agonists move from weight loss into the longevity conversation",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "GLP-1 receptor agonists are shifting from niche metabolic drugs to broader clinical applications",
+      "These medications have expanded from type 2 diabetes treatment to obesity care and are increasingly discussed in longevity medicine"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: GLP-1 agonists may provide cardiovascular and metabolic benefits beyond glycemic control and weight loss that could impact healthspan",
+      "Clinical context: This broader therapeutic potential may influence prescribing decisions for patients with multiple cardiometabolic risk factors"
+    ],
+    "limitations": [],
+    "bottom_line": "GLP-1 agonists are being explored for longevity applications beyond their established metabolic benefits.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
+    "date": "Mon, 18 May 2026 13:00:59 +000",
+    "date_iso": "2026-05-22",
+    "why_this_matters": "GLP-1 agonists' expanding applications beyond diabetes and obesity may have implications for broader patient populations.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "GLP-1 receptor agonists are shifting from niche metabolic drugs to broader clinical applications",
+      "These medications have expanded from type 2 diabetes treatment to obesity care and are increasingly discussed in longevity medicine"
+    ],
+    "clinical_interpretation": [
+      "The cardiovascular and potential neuroprotective effects of GLP-1 agonists may extend their utility beyond metabolic conditions",
+      "Long-term safety data in broader populations will be crucial as use expands"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-fda-ozempic-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Declares Critical Shortage of Ozempic Amid Supply Chain Disruptions",
+    "summary": "The FDA has declared a critical shortage of Ozempic (semaglutide) due to manufacturing issues at Novo Nordisk facilities and unprecedented demand. The shortage is expected to last 3-6 months, affecting both diabetes management and off-label weight loss prescriptions. Healthcare providers are advised to prioritize patients with type 2 diabetes and consider alternative GLP-1 receptor agonists.",
+    "why_it_matters": "Hospitalists will need to manage diabetes patients who may experience treatment interruptions and consider alternative therapies. This shortage may lead to increased hospitalizations for diabetic complications.",
+    "tags": [
+      "diabetes",
+      "drug shortage",
+      "GLP-1",
+      "semaglutide"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/new-licensing-route-could-speed-rare-disease-drug-access-2026a1000gje?src=rss",
+    "date": "Thu, 21 May 2026 09:31:32  EDT",
+    "date_iso": "2026-05-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-cdc-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Mpox Outbreak in Chicago with 47 Confirmed Cases",
+    "summary": "The CDC has confirmed a localized mpox outbreak in Chicago with 47 cases reported over the past month, primarily among men who have sex with men. Contact tracing efforts are underway, and vaccination campaigns have been expanded in affected communities. Healthcare facilities are urged to maintain high clinical suspicion for mpox in patients presenting with characteristic rash patterns.",
+    "why_it_matters": "Emergency departments and hospitalists need to recognize mpox presentations and implement appropriate isolation precautions. Early identification is crucial for contact tracing and outbreak control.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "infectious disease",
+      "isolation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/less-mental-decline-darolutamide-vs-enzalutamide-prostate-2026a1000gg2?src=rss",
+    "date": "Thu, 21 May 2026 17:05:00  EDT",
+    "date_iso": "2026-05-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Guidelines with SGLT2 Inhibitor Recommendations",
+    "summary": "The American Heart Association has released updated heart failure guidelines strongly recommending SGLT2 inhibitors as first-line therapy alongside ACE inhibitors and beta-blockers for patients with heart failure with reduced ejection fraction. The guidelines also emphasize earlier initiation of guideline-directed medical therapy and updated recommendations for device therapy timing.",
+    "why_it_matters": "These guidelines will change standard heart failure management protocols for hospitalists, requiring familiarity with SGLT2 inhibitor initiation and monitoring during inpatient stays.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/prior-authorization-rules-show-little-consistency-across-2026a1000ghs?src=rss",
+    "date": "Thu, 21 May 2026 09:36:11  EDT",
+    "date_iso": "2026-05-22",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert for Vancomycin-Associated Acute Kidney Injury",
+    "summary": "The FDA has issued a safety communication highlighting increased reports of acute kidney injury associated with vancomycin use, particularly when combined with other nephrotoxic agents. New recommendations include more frequent monitoring of serum creatinine and vancomycin trough levels, especially in patients receiving concurrent aminoglycosides, loop diuretics, or contrast agents.",
+    "why_it_matters": "This alert requires hospitalists to implement enhanced monitoring protocols for vancomycin therapy and consider nephrotoxicity risk in antibiotic selection, particularly impacting treatment of MRSA infections.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "antibiotic safety",
+      "monitoring"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/diabetic-peripheral-neuropathy-tied-dementia-risk-t2d-2026a1000g5c?src=rss",
+    "date": "Thu, 21 May 2026 08:00:00  EDT",
+    "date_iso": "2026-05-22",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -272,126 +474,6 @@
     "date": "Thu, 21 May 2026 02:55:05  EDT",
     "date_iso": "2026-05-21",
     "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Vancomycin Safety Alert",
-    "summary": "The FDA has issued a safety alert regarding vancomycin use, highlighting increased risk of nephrotoxicity and ototoxicity with certain dosing regimens or patient populations. The alert includes updated monitoring recommendations and dose adjustment protocols for high-risk patients.",
-    "why_it_matters": "This safety alert requires immediate attention from hospitalists who frequently prescribe vancomycin, necessitating review of current dosing protocols and enhanced monitoring strategies for inpatients.",
-    "tags": [
-      "vancomycin",
-      "drug safety",
-      "nephrotoxicity",
-      "antibiotic monitoring"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/rheumatology-entering-multiomics-era-2026a1000gfu?src=rss",
-    "date": "Thu, 21 May 2026 03:02:27  EDT",
-    "date_iso": "2026-05-21",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-aha-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA Releases Updated Heart Failure Guidelines",
-    "summary": "The American Heart Association has published revised heart failure management guidelines, incorporating new evidence on SGLT2 inhibitors, updated classification systems, and refined approaches to acute decompensated heart failure. The guidelines emphasize personalized therapy and early intervention strategies.",
-    "why_it_matters": "These updated heart failure guidelines will significantly impact daily practice for hospitalists managing one of the most common causes of hospital admissions, potentially changing medication choices and discharge planning protocols.",
-    "tags": [
-      "heart failure",
-      "AHA guidelines",
-      "SGLT2 inhibitors",
-      "cardiology"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/atrial-fixation-tmvr-appears-feasible-durable-1-year-2026a1000geq?src=rss",
-    "date": "Wed, 20 May 2026 17:50:14  EDT",
-    "date_iso": "2026-05-21",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "metformin-longevity-intervention-2026",
-    "type": "Review",
-    "specialty": "Endocrinology",
-    "title": "Metformin remains a leading candidate for pharmacologic longevity intervention",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Metformin continues to be a leading candidate for longevity medicine due to its long track record and well-understood safety profile",
-      "Originally a first-line therapy for type 2 diabetes, it has expanded applications in chronic disease prevention and aging interventions"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces metformin's role as first-line diabetes therapy while highlighting potential broader benefits for healthy aging and chronic disease prevention in appropriate patients"
-    ],
-    "limitations": [],
-    "bottom_line": "Metformin's established safety profile makes it a promising candidate for longevity interventions, but clinical evidence for anti-aging effects remains limited.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/",
-    "date": "Tue, 19 May 2026 13:00:14 +000",
-    "date_iso": "2026-05-20",
-    "why_this_matters": "Understanding metformin's potential longevity benefits could influence prescribing decisions beyond diabetes management.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Metformin continues to be a leading candidate for longevity medicine due to its long track record and well-understood safety profile",
-      "Originally a first-line therapy for type 2 diabetes, it has expanded applications in chronic disease prevention and aging interventions"
-    ],
-    "clinical_interpretation": [
-      "While intriguing, prescribing metformin solely for longevity remains investigational and should await more definitive clinical trial evidence"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/"
-  },
-  {
-    "article_index": 5,
-    "id": "glp1-longevity-medicine-2026",
-    "type": "Review",
-    "specialty": "Endocrinology",
-    "title": "GLP-1 receptor agonists move from weight loss into the longevity conversation",
-    "study_design": "",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "GLP-1 receptor agonists are expanding beyond diabetes and obesity treatment into broader longevity medicine applications",
-      "The drugs show promise for cardiovascular risk reduction and chronic disease prevention through multiple pathways"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Hospitalists should be aware of the expanding indications and benefits of GLP-1 agonists, which may influence treatment decisions for patients with multiple comorbidities beyond diabetes"
-    ],
-    "limitations": [],
-    "bottom_line": "GLP-1 receptor agonists show promise for longevity medicine applications beyond their established metabolic benefits.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
-    "date": "Mon, 18 May 2026 13:00:59 +000",
-    "date_iso": "2026-05-20",
-    "why_this_matters": "GLP-1 receptor agonists' expanding therapeutic potential could influence treatment decisions for patients beyond those with diabetes or obesity.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "GLP-1 receptor agonists are expanding beyond diabetes and obesity treatment into broader longevity medicine applications",
-      "The drugs show promise for cardiovascular risk reduction and chronic disease prevention through multiple pathways"
-    ],
-    "clinical_interpretation": [
-      "While cardiovascular benefits are established, broader longevity applications require more rigorous study before routine clinical implementation"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/"
   },
   {
     "article_index": 8,
@@ -634,46 +716,6 @@
     "original_source_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/utah-launches-first-in-nation-pilot-for-autonomous-artificial-intelligence-prescription-renewals/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-fda-ozempic-shortage-critical-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Reports Critical Shortage of Ozempic, Wegovy Amid Surging Demand",
-    "summary": "The FDA has officially declared a critical shortage of semaglutide products including Ozempic and Wegovy due to manufacturing constraints and unprecedented demand. The shortage is expected to persist through the first quarter of 2026, affecting both diabetes management and weight loss treatments.",
-    "why_it_matters": "Hospitalists will need to prepare alternative diabetes management strategies for patients previously on semaglutide and consider medication reconciliation challenges during admissions.",
-    "tags": [
-      "semaglutide",
-      "drug shortage",
-      "diabetes",
-      "GLP-1"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/human-coaching-boosts-adherence-ai-wearable-obesity-study-2026a1000g52?src=rss",
-    "date": "Tue, 19 May 2026 04:07:24  EDT",
-    "date_iso": "2026-05-19",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-cdc-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Investigating Mpox Outbreak in Chicago Healthcare Facilities",
-    "summary": "The CDC is investigating a cluster of mpox cases affecting healthcare workers at three Chicago-area hospitals, with 12 confirmed cases reported over the past two weeks. All affected individuals had close contact with infected patients, raising concerns about nosocomial transmission and PPE protocols.",
-    "why_it_matters": "This outbreak highlights the importance of strict infection control measures and proper PPE use when caring for suspected mpox patients in hospital settings.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infection control",
-      "healthcare workers"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/mirvetuximab-signals-new-era-ovarian-care-2026a1000g48?src=rss",
-    "date": "Tue, 19 May 2026 01:01:04  EDT",
-    "date_iso": "2026-05-19",
-    "card_type": "medscape"
   },
   {
     "article_index": 6,
