@@ -1,38 +1,79 @@
 [
   {
     "article_index": 0,
-    "id": "ssri-osteoarthritis-arthroplasty-2026",
+    "id": "delayed-antibiotics-ssti-outcomes-2026",
     "type": "Observational",
-    "specialty": "Rheumatology/Psychiatry",
-    "title": "Selective serotonin reuptake inhibitors may reduce risk of total joint arthroplasty in osteoarthritis",
-    "study_design": "Comparative effectiveness study of SSRI vs centrally acting analgesics in osteoarthritis patients",
+    "specialty": "Infectious Disease",
+    "title": "Delayed initiation of antibiotic therapy is associated with worse outcomes in skin and soft tissue infections",
+    "study_design": "Observational study of hospitalized SSTI patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients",
+      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized SSTI patients",
+      "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This reinforces the importance of early antibiotic initiation in hospitalized patients with SSTI to prevent treatment failure and reduce length of stay",
+      "Clinical context: Highlights need for attention to social determinants of health when managing SSTI patients"
+    ],
+    "limitations": [],
+    "bottom_line": "Early antibiotic initiation appears crucial for optimal outcomes in hospitalized patients with skin and soft tissue infections.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/",
+    "date": "Fri, 22 May 2026 23:00:38 +000",
+    "date_iso": "2026-05-23",
+    "why_this_matters": "Timing of antibiotic initiation in hospitalized patients with skin and soft tissue infections directly impacts treatment success and length of stay.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized SSTI patients",
+      "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
+    ],
+    "clinical_interpretation": [
+      "This supports early antibiotic initiation for hospitalized SSTI patients and highlights the need to consider social determinants of health in treatment planning"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/"
+  },
+  {
+    "article_index": 2,
+    "id": "ssri-osteoarthritis-surgery-2026",
+    "type": "Observational",
+    "specialty": "Internal Medicine",
+    "title": "Selective serotonin reuptake inhibitors may reduce risk of total joint arthroplasty in osteoarthritis",
+    "study_design": "Comparative effectiveness study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Initiation of centrally acting analgesics in osteoarthritis patients was associated with higher long-term risk of total joint arthroplasty compared with SSRI initiation",
       "Management of comorbid depression may play an important role in OA symptom progression and surgical outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: When treating depression in osteoarthritis patients, SSRIs may provide dual benefits by addressing mood symptoms while potentially reducing need for joint replacement surgery",
-      "Clinical context: This suggests considering depression screening and treatment as part of comprehensive osteoarthritis management"
+      "Clinical context: SSRIs may offer dual benefit in OA patients with depression by addressing mood symptoms while potentially reducing joint replacement risk",
+      "Clinical context: Suggests that depression treatment should be considered as part of comprehensive OA management"
     ],
     "limitations": [],
-    "bottom_line": "SSRIs may reduce joint replacement risk in OA patients, but more rigorous study is needed before changing practice.",
+    "bottom_line": "SSRIs may be preferable to centrally acting analgesics for managing depression in osteoarthritis patients.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/",
     "date": "Thu, 21 May 2026 23:00:40 +000",
-    "date_iso": "2026-05-22",
-    "why_this_matters": "This suggests that treating depression in osteoarthritis patients with SSRIs may have dual benefits, potentially delaying need for joint replacement surgery.",
+    "date_iso": "2026-05-23",
+    "why_this_matters": "Depression management strategies in osteoarthritis patients may influence disease progression and need for joint replacement surgery.",
     "population": "",
-    "intervention_exposure": "SSRI initiation",
-    "comparator": "centrally acting analgesics",
+    "intervention_exposure": "",
+    "comparator": "",
     "key_results": [
-      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients"
+      "Initiation of centrally acting analgesics in osteoarthritis patients was associated with higher long-term risk of total joint arthroplasty compared with SSRI initiation",
+      "Management of comorbid depression may play an important role in OA symptom progression and surgical outcomes"
     ],
     "clinical_interpretation": [
-      "This observational finding suggests potential disease-modifying effects of SSRIs in OA, possibly through pain perception mechanisms or inflammatory pathways",
-      "Confounding by indication and selection bias are likely concerns in this type of analysis"
+      "This suggests that addressing depression with SSRIs rather than centrally acting analgesics might have benefits beyond mood improvement in OA patients, though confounding factors likely influence this association"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -41,53 +82,51 @@
     "twomm_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/"
   },
   {
-    "article_index": 1,
-    "id": "physical-frailty-epilepsy-risk-2026",
+    "article_index": 3,
+    "id": "frailty-epilepsy-risk-2026",
     "type": "Observational",
-    "specialty": "Neurology/Geriatrics",
+    "specialty": "Neurology",
     "title": "Physical frailty is associated with increased risk of epilepsy",
     "study_design": "Large prospective cohort study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy",
-      "This association was found in a large longitudinal cohort study"
+      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Frailty assessment including gait speed may help identify patients at higher risk for developing epilepsy",
-      "Clinical context: This connection suggests shared pathophysiologic mechanisms between frailty and seizure susceptibility that warrant further investigation"
+      "Clinical context: Frailty assessment, including gait speed measurement, may help identify patients at higher risk for developing epilepsy",
+      "Clinical context: Adds epilepsy to the growing list of adverse outcomes associated with frailty in older adults"
     ],
     "limitations": [],
-    "bottom_line": "Frail patients with slow gait may warrant increased vigilance for seizure development.",
+    "bottom_line": "Physical frailty, especially slow gait speed, may serve as a marker for increased epilepsy risk.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "date": "Wed, 20 May 2026 23:00:19 +000",
-    "date_iso": "2026-05-22",
-    "why_this_matters": "Physical frailty assessment could help identify patients at higher risk for developing epilepsy, particularly in older adults.",
+    "date_iso": "2026-05-23",
+    "why_this_matters": "Physical frailty assessment could help identify patients at higher risk for developing epilepsy, enabling closer monitoring.",
     "population": "",
-    "intervention_exposure": "physical frailty (particularly slow gait speed)",
+    "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy"
+      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
     ],
     "clinical_interpretation": [
-      "This association may reflect shared pathophysiology involving neurodegeneration, vascular disease, or metabolic dysfunction",
-      "Gait speed is an easily assessable marker that could identify high-risk patients for closer neurological monitoring"
+      "This association may reflect shared pathophysiology or vulnerability, suggesting that frailty screening could inform neurologic risk stratification in older adults"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/"
   },
   {
-    "article_index": 3,
-    "id": "multimodal-dementia-prediction-2026",
+    "article_index": 5,
+    "id": "multimodal-dementia-prediction-biomarkers-2026",
     "type": "Observational",
     "specialty": "Neurology",
     "title": "A multimodal approach combining cognitive assessment with biomarkers may accurately predict dementia risk",
-    "study_design": "Biomarker and cognitive assessment validation study",
+    "study_design": "Prognostic biomarker study",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -95,33 +134,157 @@
       "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This multimodal approach could help clinicians better stratify dementia risk and inform patient counseling and care planning",
-      "Clinical context: Plasma-based biomarkers may make dementia risk assessment more accessible than CSF or PET imaging"
+      "Clinical context: Plasma p-tau217 offers a less invasive alternative to CSF or PET imaging for dementia risk stratification",
+      "Clinical context: Multimodal prediction models may improve early identification of patients likely to progress to dementia"
     ],
     "limitations": [],
-    "bottom_line": "Combining plasma p-tau217 with cognitive testing and APOE4 status may accurately predict dementia risk in at-risk patients.",
+    "bottom_line": "Combining plasma p-tau217 with cognitive testing and APOE4 genotyping may accurately predict dementia risk in patients with cognitive concerns.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/",
     "date": "Tue, 19 May 2026 23:00:08 +000",
-    "date_iso": "2026-05-22",
-    "why_this_matters": "This multimodal approach could improve early identification of patients likely to progress to Alzheimer's dementia, enabling earlier intervention.",
-    "population": "patients with subjective cognitive decline",
+    "date_iso": "2026-05-23",
+    "why_this_matters": "Better risk stratification for dementia could improve early intervention strategies and patient counseling in those with cognitive concerns.",
+    "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "Plasma p-tau217 was the strongest individual biomarker for predicting progression to Alzheimer's disease dementia",
+      "Plasma p-tau217 was the strongest individual biomarker for predicting progression to Alzheimer's disease dementia in patients with subjective cognitive decline",
       "A multimodal model combining cognitive assessment, plasma p-tau217, and APOE4 genotype provided excellent prognostic accuracy"
     ],
     "clinical_interpretation": [
-      "Plasma p-tau217 testing may become a valuable clinical tool for risk stratification in memory clinics",
-      "The multimodal approach likely provides better discrimination than any single test alone"
+      "This multimodal approach could potentially guide clinical decision-making and patient discussions about dementia risk, though accessibility and cost-effectiveness of testing remain considerations"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-multimodal-approach-combining-cognitive-assessment-with-biomarkers-may-accurately-predict-dementia-risk/"
+  },
+  {
+    "article_index": 8,
+    "id": "intradialytic-exercise-adequacy-2026",
+    "type": "RCT",
+    "specialty": "Nephrology",
+    "title": "An intradialytic exercise intervention did not improve dialysis adequacy",
+    "study_design": "Prospective, randomized controlled trial including 72 hemodialysis patients aged 18-80 years undergoing treatment three times per week for at least 1 year",
+    "sample_size": "",
+    "primary_outcome": "Functional capacity, quality of life, fatigue, and depression assessed using validated scales",
+    "source_summary_bullets": [
+      "A 4-week intradialytic pedalling exercise program was safe and well-tolerated but did not significantly improve dialysis adequacy measures"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: While intradialytic exercise appears safe, it may not provide the anticipated benefits for dialysis efficiency",
+      "Clinical context: Longer duration or different exercise modalities might be needed to see measurable improvements in dialysis adequacy"
+    ],
+    "limitations": [
+      "Small sample size with 59 patients completing the study",
+      "Short 8-week intervention period may not capture long-term effects"
+    ],
+    "bottom_line": "Intradialytic exercise improves depression and some physical performance measures in hemodialysis patients without improving functional capacity or fatigue.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
+    "date": "Mon, 18 May 2026 23:00:55 +000",
+    "date_iso": "2026-05-23",
+    "why_this_matters": "Intradialytic exercise programs could address the significant functional decline and poor quality of life experienced by hemodialysis patients.",
+    "population": "72 hemodialysis patients (aged 18-80 years) undergoing treatment three times per week for at least 1 year",
+    "intervention_exposure": "Supervised combined aerobic and resistance exercises during dialysis sessions, three times weekly for 8 weeks",
+    "comparator": "Routine hemodialysis care",
+    "key_results": [
+      "Exercise group showed significant improvements in physical performance (p=0.046), quality of life subdomains (p<0.05), and depression (p<0.001)",
+      "Control group demonstrated declines in several quality of life subdomains (p<0.05), with significant worsening in fatigue (p=0.011) and depression (p=0.011)",
+      "No significant change was observed in functional capacity (p=0.627) or fatigue (p=0.537) in the exercise group"
+    ],
+    "clinical_interpretation": [
+      "Intradialytic exercise appears beneficial for psychological outcomes and some aspects of physical performance, though it may not improve overall functional capacity or fatigue levels",
+      "The intervention prevented the decline seen in control patients, suggesting a protective effect"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.1002/1744-9987.70153",
+    "pubmed_id": "42128622",
+    "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-ozempic-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Declares Critical Shortage of Ozempic Amid Supply Chain Disruptions",
+    "summary": "The FDA has officially declared a critical shortage of semaglutide (Ozempic) due to manufacturing delays at Novo Nordisk facilities and overwhelming demand. The shortage is expected to persist through Q2 2026, affecting both diabetes and weight management patients. Healthcare providers are advised to prioritize allocation for patients with type 2 diabetes and consider alternative GLP-1 receptor agonists where appropriate.",
+    "why_it_matters": "Hospitalists will need to manage medication reconciliation for admitted patients on semaglutide and may need to initiate alternative diabetes medications during inpatient stays.",
+    "tags": [
+      "diabetes",
+      "medication-shortage",
+      "GLP-1",
+      "formulary"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/spains-reliance-foreign-doctors-it-sustainable-2026a1000gqp?src=rss",
+    "date": "Fri, 22 May 2026 08:57:32  EDT",
+    "date_iso": "2026-05-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Investigates Mpox Outbreak Cluster in Chicago Healthcare Facilities",
+    "summary": "The CDC is investigating a cluster of 12 mpox cases linked to two Chicago-area hospitals, with potential nosocomial transmission among healthcare workers and patients. Enhanced infection control measures including isolation protocols and contact tracing are being implemented. The outbreak strain appears similar to the 2022 clade, with most cases showing typical presentations but some atypical manifestations in immunocompromised patients.",
+    "why_it_matters": "Healthcare facilities need to review mpox isolation protocols and ensure staff are trained on recognition and management, particularly for atypical presentations in hospitalized patients.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "infection-control",
+      "nosocomial"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-oks-new-option-pulmonary-fibrosis-2026a1000gte?src=rss",
+    "date": "Fri, 22 May 2026 13:23:38  EDT",
+    "date_iso": "2026-05-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Management Guidelines with SGLT2i Recommendations",
+    "summary": "The American Heart Association has published updated heart failure guidelines with significant changes to SGLT2 inhibitor recommendations, now suggesting earlier initiation in HFrEF patients regardless of diabetes status. The guidelines also include new recommendations for guideline-directed medical therapy optimization timelines and updated classifications for heart failure with mildly reduced ejection fraction. Remote monitoring and telemedicine integration are emphasized for post-discharge care coordination.",
+    "why_it_matters": "These updated guidelines will directly impact inpatient heart failure management protocols and discharge planning, requiring hospitalists to consider earlier SGLT2i initiation and structured follow-up care.",
+    "tags": [
+      "heart-failure",
+      "guidelines",
+      "SGLT2i",
+      "discharge-planning"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ema-backs-first-drug-severe-overgrowth-disorders-2026a1000gsu?src=rss",
+    "date": "Fri, 22 May 2026 10:46:00  EDT",
+    "date_iso": "2026-05-23",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert for Vancomycin Dosing in Critically Ill Patients",
+    "summary": "The FDA has issued a safety communication regarding increased reports of vancomycin-associated acute kidney injury in critically ill patients, particularly those receiving concurrent nephrotoxic agents. New dosing recommendations emphasize AUC-guided dosing over trough-based monitoring and include specific guidance for patients with augmented renal clearance. Healthcare providers are advised to implement enhanced monitoring protocols and consider alternative agents when appropriate.",
+    "why_it_matters": "This alert requires immediate changes to vancomycin monitoring protocols in hospitalized patients and may necessitate pharmacy consultation for AUC-guided dosing implementation in critical care settings.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "dosing",
+      "patient-safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/obesity-related-asthma-inflammation-driving-severity-2026a1000gre?src=rss",
+    "date": "Fri, 22 May 2026 09:19:09  EDT",
+    "date_iso": "2026-05-23",
+    "card_type": "medscape"
   },
   {
     "article_index": 5,
@@ -165,48 +328,6 @@
     "twomm_url": "https://www.2minutemedicine.com/metformin-remains-a-leading-candidate-for-pharmacologic-longevity-intervention/"
   },
   {
-    "article_index": 6,
-    "id": "intradialytic-exercise-adequacy-2026",
-    "type": "RCT",
-    "specialty": "Nephrology",
-    "title": "An intradialytic exercise intervention did not improve dialysis adequacy",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "A 4-week intradialytic pedaling exercise program was safe and well-tolerated",
-      "The exercise intervention did not significantly improve dialysis adequacy measures"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: While exercise during dialysis appears safe, it doesn't improve the effectiveness of dialysis treatment itself",
-      "Clinical context: Exercise benefits in dialysis patients may be related to other outcomes like quality of life or cardiovascular health rather than dialysis adequacy"
-    ],
-    "limitations": [],
-    "bottom_line": "Intradialytic exercise appears safe but does not improve dialysis adequacy measures.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
-    "date": "Mon, 18 May 2026 23:00:55 +000",
-    "date_iso": "2026-05-22",
-    "why_this_matters": "Exercise interventions during dialysis are appealing for improving patient outcomes, but this study suggests they may not improve dialysis effectiveness.",
-    "population": "",
-    "intervention_exposure": "4-week intradialytic pedaling exercise program",
-    "comparator": "",
-    "key_results": [
-      "A 4-week intradialytic pedaling exercise program was safe and well-tolerated",
-      "The exercise intervention did not significantly improve dialysis adequacy measures"
-    ],
-    "clinical_interpretation": [
-      "While safe, intradialytic exercise may not improve solute clearance as hoped",
-      "Other benefits like cardiovascular fitness or quality of life may still justify such programs"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
-  },
-  {
     "article_index": 8,
     "id": "glp1-longevity-medicine-2026",
     "type": "Review",
@@ -247,86 +368,6 @@
     "original_source_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/glp-1-receptor-agonists-move-from-weight-loss-into-the-longevity-conversation/"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-fda-ozempic-shortage-critical-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Declares Critical Shortage of Ozempic Amid Supply Chain Disruptions",
-    "summary": "The FDA has declared a critical shortage of Ozempic (semaglutide) due to manufacturing issues at Novo Nordisk facilities and unprecedented demand. The shortage is expected to last 3-6 months, affecting both diabetes management and off-label weight loss prescriptions. Healthcare providers are advised to prioritize patients with type 2 diabetes and consider alternative GLP-1 receptor agonists.",
-    "why_it_matters": "Hospitalists will need to manage diabetes patients who may experience treatment interruptions and consider alternative therapies. This shortage may lead to increased hospitalizations for diabetic complications.",
-    "tags": [
-      "diabetes",
-      "drug shortage",
-      "GLP-1",
-      "semaglutide"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/new-licensing-route-could-speed-rare-disease-drug-access-2026a1000gje?src=rss",
-    "date": "Thu, 21 May 2026 09:31:32  EDT",
-    "date_iso": "2026-05-22",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 7,
-    "id": "ms-cdc-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Mpox Outbreak in Chicago with 47 Confirmed Cases",
-    "summary": "The CDC has confirmed a localized mpox outbreak in Chicago with 47 cases reported over the past month, primarily among men who have sex with men. Contact tracing efforts are underway, and vaccination campaigns have been expanded in affected communities. Healthcare facilities are urged to maintain high clinical suspicion for mpox in patients presenting with characteristic rash patterns.",
-    "why_it_matters": "Emergency departments and hospitalists need to recognize mpox presentations and implement appropriate isolation precautions. Early identification is crucial for contact tracing and outbreak control.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infectious disease",
-      "isolation"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/less-mental-decline-darolutamide-vs-enzalutamide-prostate-2026a1000gg2?src=rss",
-    "date": "Thu, 21 May 2026 17:05:00  EDT",
-    "date_iso": "2026-05-22",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
-    "id": "ms-aha-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA Releases Updated Heart Failure Guidelines with SGLT2 Inhibitor Recommendations",
-    "summary": "The American Heart Association has released updated heart failure guidelines strongly recommending SGLT2 inhibitors as first-line therapy alongside ACE inhibitors and beta-blockers for patients with heart failure with reduced ejection fraction. The guidelines also emphasize earlier initiation of guideline-directed medical therapy and updated recommendations for device therapy timing.",
-    "why_it_matters": "These guidelines will change standard heart failure management protocols for hospitalists, requiring familiarity with SGLT2 inhibitor initiation and monitoring during inpatient stays.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "SGLT2 inhibitors",
-      "cardiology"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/prior-authorization-rules-show-little-consistency-across-2026a1000ghs?src=rss",
-    "date": "Thu, 21 May 2026 09:36:11  EDT",
-    "date_iso": "2026-05-22",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 11,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert for Vancomycin-Associated Acute Kidney Injury",
-    "summary": "The FDA has issued a safety communication highlighting increased reports of acute kidney injury associated with vancomycin use, particularly when combined with other nephrotoxic agents. New recommendations include more frequent monitoring of serum creatinine and vancomycin trough levels, especially in patients receiving concurrent aminoglycosides, loop diuretics, or contrast agents.",
-    "why_it_matters": "This alert requires hospitalists to implement enhanced monitoring protocols for vancomycin therapy and consider nephrotoxicity risk in antibiotic selection, particularly impacting treatment of MRSA infections.",
-    "tags": [
-      "vancomycin",
-      "nephrotoxicity",
-      "antibiotic safety",
-      "monitoring"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/diabetic-peripheral-neuropathy-tied-dementia-risk-t2d-2026a1000g5c?src=rss",
-    "date": "Thu, 21 May 2026 08:00:00  EDT",
-    "date_iso": "2026-05-22",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,
