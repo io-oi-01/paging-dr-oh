@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Hypertensive Emergency",
     "Malignant Spinal Cord Compression",
     "Antiphospholipid Syndrome",
     "Pericarditis and Pericardial Effusion",
@@ -89,7 +88,8 @@
     "Myxedema Coma",
     "Acute Decompensated Heart Failure",
     "Diabetic Ketoacidosis",
-    "Acute Cholecystitis"
+    "Acute Cholecystitis",
+    "Iron Deficiency Anemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -212,7 +212,8 @@
     "rose-2019",
     "tomahawk-2021",
     "peptic-2020",
-    "fame-2009"
+    "fame-2009",
+    "caravaggio-2020"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -605,9 +606,15 @@
     "ssri-osteoarthritis-arthroplasty-risk-2026",
     "frailty-epilepsy-risk-longitudinal-2026",
     "multimodal-dementia-prediction-ptau217-2026",
-    "intradialytic-exercise-adequacy-rct-2026"
+    "intradialytic-exercise-adequacy-rct-2026",
+    "delayed-antibiotics-ssti-outcomes-hospitalized-2026",
+    "ssri-osteoarthritis-surgery-risk-2026",
+    "frailty-epilepsy-risk-longitudinal-study-2026",
+    "multimodal-dementia-prediction-ptau217-biomarker-2026",
+    "metformin-longevity-pharmacologic-intervention-2026",
+    "intradialytic-exercise-adequacy-rct-study-2026"
   ],
-  "last_run": "2026-05-24",
+  "last_run": "2026-05-25",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -692,13 +699,10 @@
     "Majocchi granuloma",
     "Tinea Versicolor",
     "Confluent and Reticulated Papillomatosis",
-    "Trichoepithelioma"
+    "Trichoepithelioma",
+    "Acute Cutaneous Lupus Erythematosus"
   ],
   "litfl_cases_shown": [
-    "cxr-067",
-    "ct-050",
-    "clinical-strychnine-poisoning",
-    "ecg-022",
     "cxr-084",
     "ct-069",
     "clinical-clinical-cases/ecg-exigency",
@@ -894,6 +898,10 @@
     "ecg-044",
     "cxr-064",
     "ct-016",
-    "clinical-clinical-cases/ophthalmology-befuddler"
+    "clinical-clinical-cases/ophthalmology-befuddler",
+    "ecg-130",
+    "cxr-059",
+    "ct-007",
+    "clinical-horrible-spots-and-pain"
   ]
 }
