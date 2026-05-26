@@ -1,11 +1,55 @@
 [
   {
-    "article_index": 0,
-    "id": "delayed-antibiotics-ssti-outcomes-hospitalized-2026",
+    "article_index": 1,
+    "id": "tirzepatide-metformin-refractory-t2dm-2026",
+    "type": "RCT",
+    "specialty": "Endocrinology",
+    "title": "Tirzepatide improves blood sugar control in metformin-refractory type 2 diabetes",
+    "study_design": "Randomized controlled trial comparing tirzepatide to intensified conventional care",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care in adults with early type 2 diabetes inadequately controlled on metformin",
+      "A significantly higher proportion of patients achieved glycemic targets with tirzepatide"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This provides strong evidence for tirzepatide as an effective second-line agent for hospitalists managing diabetic patients with inadequate metformin control",
+      "Clinical context: The substantial improvements in multiple metabolic parameters support tirzepatide's role in comprehensive diabetes management for both inpatient and outpatient settings"
+    ],
+    "limitations": [
+      "Study methodology and duration not specified",
+      "Safety profile not detailed in available summary"
+    ],
+    "bottom_line": "Tirzepatide shows superior efficacy compared to conventional therapy intensification in metformin-inadequate type 2 diabetes.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
+    "date": "Mon, 25 May 2026 21:00:25 +000",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Provides evidence for tirzepatide as an effective option for patients with type 2 diabetes not adequately controlled on metformin alone.",
+    "population": "Adults with early type 2 diabetes inadequately controlled on metformin",
+    "intervention_exposure": "Tirzepatide",
+    "comparator": "Intensified conventional care",
+    "key_results": [
+      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI compared to intensified conventional care",
+      "A significantly higher proportion of patients achieved glycemic targets with tirzepatide"
+    ],
+    "clinical_interpretation": [
+      "Tirzepatide appears to be an effective second-line therapy for patients with metformin-refractory diabetes, offering benefits beyond glycemic control including weight reduction"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/"
+  },
+  {
+    "article_index": 4,
+    "id": "delayed-antibiotics-ssti-outcomes-2026",
     "type": "Observational",
     "specialty": "Infectious Disease",
     "title": "Delayed initiation of antibiotic therapy is associated with worse outcomes in skin and soft tissue infections",
-    "study_design": "Retrospective cohort study of hospitalized SSTI patients",
+    "study_design": "Observational study of hospitalized SSTI patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -13,29 +57,30 @@
       "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of early antibiotic initiation in hospitalized patients with SSTI to reduce treatment failure and length of stay",
-      "Clinical context: Highlights need for systematic approaches to ensure prompt antibiotic delivery, particularly in vulnerable populations"
+      "Clinical context: This reinforces the importance of prompt antibiotic initiation for hospitalized SSTI patients to reduce treatment failure and length of stay",
+      "Clinical context: Hospitalists should consider comorbidity burden and social determinants when managing SSTI patients and planning discharge"
     ],
     "limitations": [
-      "Observational study design limits causal inference"
+      "Specific definition of 'delayed' not provided",
+      "Potential confounding factors not detailed"
     ],
-    "bottom_line": "Early antibiotic initiation appears critical for optimal outcomes in hospitalized skin and soft tissue infection patients.",
+    "bottom_line": "Early antibiotic initiation is critical for optimal outcomes in hospitalized skin and soft tissue infections.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/",
     "date": "Fri, 22 May 2026 23:00:38 +000",
-    "date_iso": "2026-05-25",
-    "why_this_matters": "Timing of antibiotic initiation in hospitalized SSTI patients may significantly impact treatment success and length of stay, with important implications for emergency department and inpatient management protocols.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Emphasizes the importance of early antibiotic initiation in hospitalized patients with skin and soft tissue infections to improve outcomes.",
+    "population": "Hospitalized patients with skin and soft tissue infections",
+    "intervention_exposure": "Delayed antibiotic initiation",
     "comparator": "",
     "key_results": [
-      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized SSTI patients",
+      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization",
       "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
     ],
     "clinical_interpretation": [
-      "Early antibiotic initiation should be prioritized in hospitalized SSTI patients to optimize outcomes",
-      "Socioeconomic factors may contribute to healthcare disparities in SSTI management and should be considered in quality improvement efforts"
+      "Early antibiotic therapy should be prioritized in hospitalized SSTI patients",
+      "Social determinants of health and comorbidities need consideration in SSTI management"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -44,43 +89,126 @@
     "twomm_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/"
   },
   {
-    "article_index": 2,
-    "id": "ssri-osteoarthritis-surgery-risk-2026",
+    "article_index": 0,
+    "id": "glucocorticoids-checkpoint-inhibitors-survival-2026",
     "type": "Observational",
-    "specialty": "Internal Medicine",
-    "title": "Selective serotonin reuptake inhibitors may reduce risk of total joint arthroplasty in osteoarthritis",
-    "study_design": "Longitudinal cohort study comparing SSRI vs centrally acting analgesics in osteoarthritis patients",
+    "specialty": "Oncology",
+    "title": "Immunosuppression with systemic glucocorticoids close to initiation of immune checkpoint inhibitor is associated with worse survival outcomes",
+    "study_design": "Observational study examining glucocorticoid exposure around ICI initiation",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Overall survival",
     "source_summary_bullets": [
-      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients",
-      "Management of comorbid depression may play an important role in osteoarthritis symptom progression and surgical outcomes"
+      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Suggests that treating depression with SSRIs in osteoarthritis patients may provide dual benefit for mood and joint symptoms",
-      "Clinical context: May influence prescribing decisions when managing pain and depression in osteoarthritis patients"
+      "Clinical context: Hospitalists managing cancer patients should carefully consider timing of systemic steroids when immune checkpoint inhibitors are planned or ongoing",
+      "Clinical context: This has implications for managing inflammatory conditions, pain, or nausea in cancer patients receiving immunotherapy"
     ],
     "limitations": [
-      "Observational design cannot establish causality",
-      "Potential confounding by indication"
+      "Timing definition of 'close to initiation' not specified",
+      "Potential indication bias for glucocorticoid use"
     ],
-    "bottom_line": "SSRIs may offer unexpected benefits in osteoarthritis management beyond treating comorbid depression.",
+    "bottom_line": "Systemic glucocorticoids near immune checkpoint inhibitor initiation may compromise survival outcomes.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "date": "Mon, 25 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Suggests that systemic glucocorticoids may interfere with immune checkpoint inhibitor efficacy in cancer patients.",
+    "population": "",
+    "intervention_exposure": "Systemic glucocorticoids near immune checkpoint inhibitor initiation",
+    "comparator": "",
+    "key_results": [
+      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    ],
+    "clinical_interpretation": [
+      "Glucocorticoids may impair the immune response needed for checkpoint inhibitor effectiveness",
+      "Careful consideration needed when prescribing steroids in cancer patients starting immunotherapy"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/"
+  },
+  {
+    "article_index": 3,
+    "id": "amoxicillin-clavulanate-chronic-lbp-2026",
+    "type": "RCT",
+    "specialty": "Pain Medicine",
+    "title": "Treatment of chronic low back pain and disc herniation with amoxicillin-clavulanate (Augmentin) may not be effective for pain control",
+    "study_design": "Randomized controlled trial comparing amoxicillin-clavulanate to placebo",
+    "sample_size": "",
+    "primary_outcome": "Pain reduction",
+    "source_summary_bullets": [
+      "In adult patients with chronic low back pain and disc herniation on MRI, treatment with amoxicillin-clavulanate did not significantly reduce pain compared to placebo"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This evidence contradicts theories about bacterial involvement in chronic disc-related back pain and does not support antibiotic use for this indication",
+      "Clinical context: Hospitalists should avoid prescribing antibiotics for chronic low back pain, reducing unnecessary antibiotic exposure and resistance risk"
+    ],
+    "limitations": [],
+    "bottom_line": "Amoxicillin-clavulanate is not effective for chronic low back pain associated with disc herniation.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/treatment-of-chronic-low-back-pain-and-disc-herniation-with-amoxicillin-clavulanate-augmentin-may-not-be-effective-for-pain-control/",
+    "date": "Sun, 24 May 2026 15:00:43 +000",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Challenges the hypothesis that antibiotics might be effective for chronic low back pain related to disc herniation.",
+    "population": "Adult patients with chronic low back pain and disc herniation on MRI",
+    "intervention_exposure": "Amoxicillin-clavulanate",
+    "comparator": "Placebo",
+    "key_results": [
+      "Treatment with amoxicillin-clavulanate did not significantly reduce pain compared to placebo"
+    ],
+    "clinical_interpretation": [
+      "Antibiotics should not be considered as a treatment option for chronic low back pain with disc herniation",
+      "Reinforces focus on evidence-based treatments for chronic low back pain"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/treatment-of-chronic-low-back-pain-and-disc-herniation-with-amoxicillin-clavulanate-augmentin-may-not-be-effective-for-pain-control/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/treatment-of-chronic-low-back-pain-and-disc-herniation-with-amoxicillin-clavulanate-augmentin-may-not-be-effective-for-pain-control/"
+  },
+  {
+    "article_index": 6,
+    "id": "ssri-osteoarthritis-arthroplasty-2026",
+    "type": "Observational",
+    "specialty": "Rheumatology",
+    "title": "Selective serotonin reuptake inhibitors may reduce risk of total joint arthroplasty in osteoarthritis",
+    "study_design": "Observational study comparing SSRI initiation to centrally acting analgesics in osteoarthritis patients",
+    "sample_size": "",
+    "primary_outcome": "Total joint arthroplasty",
+    "source_summary_bullets": [
+      "Initiation of centrally acting analgesics in patients with osteoarthritis was associated with a higher long-term risk of total joint arthroplasty compared with SSRI initiation",
+      "Management of comorbid depression may play an important role in OA symptom progression and surgical outcomes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This suggests that treating comorbid depression in osteoarthritis patients with SSRIs may have protective effects beyond mood improvement",
+      "Clinical context: Hospitalists managing osteoarthritis patients with depression should consider SSRIs as potentially beneficial for both conditions"
+    ],
+    "limitations": [
+      "Potential selection bias in treatment assignment",
+      "Confounding by depression severity not addressed"
+    ],
+    "bottom_line": "SSRIs may reduce the need for joint replacement surgery in osteoarthritis patients compared to centrally acting analgesics.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/",
     "date": "Thu, 21 May 2026 23:00:40 +000",
-    "date_iso": "2026-05-25",
-    "why_this_matters": "This finding suggests a potential dual benefit of treating depression in osteoarthritis patients, possibly reducing both psychiatric symptoms and joint disease progression requiring surgery.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Suggests that treating depression with SSRIs in osteoarthritis patients may have joint-protective effects beyond mood improvement.",
+    "population": "Patients with osteoarthritis",
+    "intervention_exposure": "SSRI initiation",
+    "comparator": "Centrally acting analgesics",
     "key_results": [
-      "SSRI initiation was associated with lower long-term risk of total joint arthroplasty compared to centrally acting analgesics in osteoarthritis patients",
-      "Management of comorbid depression may play an important role in osteoarthritis symptom progression and surgical outcomes"
+      "Initiation of centrally acting analgesics was associated with higher long-term risk of total joint arthroplasty compared with SSRI initiation",
+      "Management of comorbid depression may play an important role in OA symptom progression and surgical outcomes"
     ],
     "clinical_interpretation": [
-      "SSRIs may have anti-inflammatory or pain-modulating effects beyond their antidepressant properties",
-      "Comprehensive management of depression in osteoarthritis patients may improve musculoskeletal outcomes"
+      "SSRIs may offer benefits beyond depression treatment in osteoarthritis patients",
+      "Depression management should be integrated into osteoarthritis care"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -89,46 +217,127 @@
     "twomm_url": "https://www.2minutemedicine.com/selective-serotonin-reuptake-inhibitors-may-reduce-risk-of-total-joint-arthroplasty-in-osteoarthritis/"
   },
   {
-    "article_index": 3,
-    "id": "frailty-epilepsy-risk-longitudinal-study-2026",
+    "article_index": 7,
+    "id": "frailty-epilepsy-risk-2026",
     "type": "Observational",
     "specialty": "Neurology",
     "title": "Physical frailty is associated with increased risk of epilepsy",
     "study_design": "Large prospective longitudinal cohort study",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Incident epilepsy",
     "source_summary_bullets": [
-      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
+      "Physical frailty, particularly slow gait speed, was independently associated with a significantly increased risk of incident epilepsy in a large longitudinal cohort"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Gait speed assessment could help identify patients at higher risk for developing epilepsy",
-      "Clinical context: May warrant closer neurologic monitoring in frail elderly patients, particularly those with declining mobility"
+      "Clinical context: Hospitalists should consider increased seizure risk when evaluating frail elderly patients with neurological symptoms",
+      "Clinical context: This finding suggests that frailty assessment tools may help identify patients at risk for developing epilepsy"
     ],
     "limitations": [
-      "Observational design limits causal inference"
+      "Causality cannot be established from observational data",
+      "Mechanism of association unclear"
     ],
-    "bottom_line": "Physical frailty markers, especially slow gait speed, may help identify patients at increased risk for developing epilepsy.",
+    "bottom_line": "Physical frailty, especially slow gait speed, is associated with increased risk of developing epilepsy.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "date": "Wed, 20 May 2026 23:00:19 +000",
-    "date_iso": "2026-05-25",
-    "why_this_matters": "Physical frailty assessment could serve as a novel risk stratification tool for epilepsy development, particularly in elderly patients where both conditions are prevalent.",
-    "population": "",
-    "intervention_exposure": "",
+    "date_iso": "2026-05-26",
+    "why_this_matters": "Identifies physical frailty as a potentially modifiable risk factor for developing epilepsy in older adults.",
+    "population": "Large longitudinal cohort",
+    "intervention_exposure": "Physical frailty, particularly slow gait speed",
     "comparator": "",
     "key_results": [
-      "Physical frailty, particularly slow gait speed, was independently associated with significantly increased risk of incident epilepsy in a large longitudinal cohort"
+      "Physical frailty, particularly slow gait speed, was independently associated with a significantly increased risk of incident epilepsy"
     ],
     "clinical_interpretation": [
-      "Gait speed assessment may help identify patients at higher risk for developing epilepsy",
-      "The relationship between frailty and epilepsy risk may reflect shared pathophysiologic mechanisms including neurodegeneration"
+      "Frailty assessment may help identify patients at higher risk for epilepsy",
+      "Interventions to improve physical function might potentially reduce epilepsy risk"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-cdc-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports New Mpox Outbreak in Chicago Area",
+    "summary": "The CDC has identified a new cluster of mpox cases in the Chicago metropolitan area, with 12 confirmed cases reported over the past two weeks. The outbreak appears to be linked to a community event, and contact tracing is ongoing to identify potential additional exposures.",
+    "why_it_matters": "Hospitalists need to maintain awareness of mpox presentation and isolation protocols, especially when evaluating patients with vesicular rashes or fever from affected areas.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "infectious disease",
+      "isolation"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/mr-metformin-and-sglt2i-now-first-line-type-2-diabetes-2026a1000h4s?src=rss",
+    "date": "Tue, 26 May 2026 05:27:40  EDT",
+    "date_iso": "2026-05-26",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Management Guidelines",
+    "summary": "The American Heart Association has published updated guidelines for heart failure management, emphasizing earlier initiation of SGLT2 inhibitors and revised recommendations for device therapy timing. The guidelines also include new risk stratification tools for hospitalized heart failure patients.",
+    "why_it_matters": "These guideline updates directly impact daily hospital practice for heart failure admissions and discharge planning, potentially changing medication protocols and device referral patterns.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/texas-firearm-injuries-ed-admits-costs-nearly-double-2026a1000h3y?src=rss",
+    "date": "Tue, 26 May 2026 05:27:01  EDT",
+    "date_iso": "2026-05-26",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert on Vancomycin Dosing in Renal Impairment",
+    "summary": "The FDA has issued a safety communication regarding vancomycin dosing in patients with renal impairment, following reports of increased nephrotoxicity with current dosing protocols. The alert recommends enhanced monitoring and provides updated dosing recommendations for patients with creatinine clearance below 50 mL/min.",
+    "why_it_matters": "This safety alert requires immediate attention from hospitalists who frequently prescribe vancomycin, potentially necessitating changes to dosing protocols and monitoring practices for renally impaired patients.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "dosing",
+      "safety alert"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ai-assisted-mri-could-muscle-fat-signal-cv-risk-2026a1000h43?src=rss",
+    "date": "Tue, 26 May 2026 03:39:39  EDT",
+    "date_iso": "2026-05-26",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-ozempic-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Declares Critical Shortage of Ozempic, Provides Alternative Recommendations",
+    "summary": "The FDA has officially declared a critical shortage of Ozempic (semaglutide) due to manufacturing issues, expected to last 3-6 months. The agency has provided guidance on alternative GLP-1 receptor agonists and temporary importation allowances for equivalent products.",
+    "why_it_matters": "Hospitalists will need to manage diabetic patients currently on Ozempic and coordinate transitions to alternative therapies, potentially affecting glycemic control during hospitalizations.",
+    "tags": [
+      "Ozempic",
+      "drug shortage",
+      "diabetes",
+      "GLP-1 agonists"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/endocrine-disruptors-could-exposure-affect-generations-2026a1000h23?src=rss",
+    "date": "Mon, 25 May 2026 08:38:35  EDT",
+    "date_iso": "2026-05-26",
+    "card_type": "medscape"
   },
   {
     "article_index": 5,
@@ -261,86 +470,6 @@
     "original_source_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/an-intradialytic-exercise-intervention-did-not-improve-dialysis-adequacy/"
-  },
-  {
-    "article_index": 0,
-    "id": "ms-fda-ozempic-shortage-critical-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Reports Critical Shortage of Ozempic Amid Soaring Demand",
-    "summary": "The FDA has declared a critical shortage of semaglutide (Ozempic) due to unprecedented demand that has outpaced manufacturing capacity. The shortage is affecting both diabetes and weight management patients, with some pharmacies reporting wait times of 2-3 months for new prescriptions.",
-    "why_it_matters": "Hospitalists need to prepare alternative diabetes management strategies and may see patients with poorly controlled diabetes due to medication unavailability. This shortage may also complicate discharge planning for diabetic patients.",
-    "tags": [
-      "diabetes",
-      "medication shortage",
-      "semaglutide",
-      "GLP-1"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/stigma-negatively-affects-postbariatric-outcomes-2026a1000gqr?src=rss",
-    "date": "Fri, 22 May 2026 09:14:35  EDT",
-    "date_iso": "2026-05-25",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-cdc-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Investigating Mpox Outbreak in Chicago Area",
-    "summary": "The CDC is investigating a cluster of mpox cases in the Chicago metropolitan area, with 15 confirmed cases reported in the past two weeks. Most cases are among men who have sex with men, similar to the 2022 outbreak pattern, though some cases have occurred in other populations.",
-    "why_it_matters": "Hospitalists should maintain awareness of mpox symptoms and isolation protocols, especially in urban areas. Early recognition and appropriate isolation are crucial to prevent nosocomial transmission.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infectious disease",
-      "isolation"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/reduced-jak-inhibitor-dosing-may-not-compromise-ra-outcomes-2026a1000gyv?src=rss",
-    "date": "Mon, 25 May 2026 03:17:09  EDT",
-    "date_iso": "2026-05-25",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-aha-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA Releases Updated Heart Failure Management Guidelines",
-    "summary": "The American Heart Association has released updated guidelines for heart failure management, emphasizing earlier initiation of SGLT2 inhibitors and updated recommendations for device therapy timing. The guidelines also include new recommendations for managing heart failure in patients with preserved ejection fraction.",
-    "why_it_matters": "These updated guidelines will directly impact how hospitalists manage acute heart failure exacerbations and discharge planning. The emphasis on earlier SGLT2 inhibitor use may change standard treatment protocols.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "SGLT2 inhibitors",
-      "cardiology"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/tofacitinib-may-have-beneficial-effect-growth-patients-jia-2026a1000gyn?src=rss",
-    "date": "Mon, 25 May 2026 03:16:57  EDT",
-    "date_iso": "2026-05-25",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert for Vancomycin Dosing in Kidney Disease",
-    "summary": "The FDA has issued a safety communication regarding increased rates of acute kidney injury associated with vancomycin use in patients with pre-existing renal impairment. The alert recommends enhanced monitoring protocols and revised dosing strategies for high-risk patients.",
-    "why_it_matters": "Vancomycin is frequently used by hospitalists for serious infections. This safety alert requires immediate attention to dosing protocols and monitoring strategies, especially in elderly patients and those with baseline kidney dysfunction.",
-    "tags": [
-      "vancomycin",
-      "kidney injury",
-      "antibiotic safety",
-      "nephrotoxicity"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/telephone-weight-loss-coaching-pays-breast-cancer-2026a1000gyt?src=rss",
-    "date": "Mon, 25 May 2026 03:12:57  EDT",
-    "date_iso": "2026-05-25",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,

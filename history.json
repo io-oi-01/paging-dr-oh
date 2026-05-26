@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Malignant Spinal Cord Compression",
     "Antiphospholipid Syndrome",
     "Pericarditis and Pericardial Effusion",
     "Cardiac Tamponade",
@@ -89,7 +88,8 @@
     "Acute Decompensated Heart Failure",
     "Diabetic Ketoacidosis",
     "Acute Cholecystitis",
-    "Iron Deficiency Anemia"
+    "Iron Deficiency Anemia",
+    "Upper GI Bleeding"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -213,7 +213,8 @@
     "tomahawk-2021",
     "peptic-2020",
     "fame-2009",
-    "caravaggio-2020"
+    "caravaggio-2020",
+    "topcat-2014"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -612,9 +613,12 @@
     "frailty-epilepsy-risk-longitudinal-study-2026",
     "multimodal-dementia-prediction-ptau217-biomarker-2026",
     "metformin-longevity-pharmacologic-intervention-2026",
-    "intradialytic-exercise-adequacy-rct-study-2026"
+    "intradialytic-exercise-adequacy-rct-study-2026",
+    "tirzepatide-metformin-refractory-t2dm-2026",
+    "glucocorticoids-checkpoint-inhibitors-survival-2026",
+    "amoxicillin-clavulanate-chronic-lbp-2026"
   ],
-  "last_run": "2026-05-25",
+  "last_run": "2026-05-26",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -700,13 +704,10 @@
     "Tinea Versicolor",
     "Confluent and Reticulated Papillomatosis",
     "Trichoepithelioma",
-    "Acute Cutaneous Lupus Erythematosus"
+    "Acute Cutaneous Lupus Erythematosus",
+    "Lichen Sclerosus"
   ],
   "litfl_cases_shown": [
-    "cxr-084",
-    "ct-069",
-    "clinical-clinical-cases/ecg-exigency",
-    "ecg-069",
     "cxr-041",
     "ct-081",
     "clinical-verdant-waste",
@@ -902,6 +903,10 @@
     "ecg-130",
     "cxr-059",
     "ct-007",
-    "clinical-horrible-spots-and-pain"
+    "clinical-horrible-spots-and-pain",
+    "ecg-091",
+    "cxr-072",
+    "ct-030",
+    "clinical-own-the-oxylog"
   ]
 }
