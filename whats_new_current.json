@@ -1,86 +1,256 @@
 [
   {
-    "article_index": 1,
-    "id": "tirzepatide-metformin-refractory-t2dm-2026",
+    "article_index": 0,
+    "id": "intra-arterial-alteplase-thrombectomy-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
+    "study_design": "Randomized controlled trial comparing intra-arterial alteplase after mechanical thrombectomy versus thrombectomy alone",
+    "sample_size": "",
+    "primary_outcome": "Three-month functional recovery",
+    "source_summary_bullets": [
+      "Adding intra-arterial alteplase immediately after mechanical thrombectomy increased near-complete functional recovery at three months in large vessel stroke patients",
+      "Symptomatic brain bleeding rates were similar between groups, but three-month mortality was significantly different"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This represents a potential practice-changing approach for acute large vessel occlusion stroke treatment in the hospital setting",
+      "Clinical context: Hospitalists may see more aggressive post-thrombectomy protocols being implemented by stroke teams"
+    ],
+    "limitations": [
+      "Study design and methodology details not available",
+      "Mortality difference direction not specified"
+    ],
+    "bottom_line": "Intra-arterial alteplase after thrombectomy may improve functional outcomes in large vessel stroke, but mortality implications require clarification.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
+    "date": "Wed, 27 May 2026 01:30:26 +000",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "May provide a strategy to improve functional recovery after successful thrombectomy in large vessel stroke patients.",
+    "population": "Large vessel stroke patients",
+    "intervention_exposure": "Intra-arterial alteplase immediately after mechanical thrombectomy",
+    "comparator": "Mechanical thrombectomy alone",
+    "key_results": [
+      "Increased near-complete functional recovery at three months",
+      "Similar symptomatic brain bleeding rates between groups",
+      "Significantly different three-month mortality"
+    ],
+    "clinical_interpretation": [
+      "This suggests potential benefit of adjunctive intra-arterial thrombolysis, but mortality findings need clarification before implementation"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/"
+  },
+  {
+    "article_index": 2,
+    "id": "thrombectomy-medium-vessel-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
+    "study_design": "Randomized controlled trial comparing thrombectomy plus medical management versus medical management alone",
+    "sample_size": "",
+    "primary_outcome": "Functional independence",
+    "source_summary_bullets": [
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Expands the indication for thrombectomy beyond large vessel occlusions, potentially affecting stroke protocols and patient selection in hospitals",
+      "Clinical context: May lead to more aggressive interventional approaches for a broader range of stroke patients"
+    ],
+    "limitations": [
+      "Specific outcome measures and effect sizes not provided"
+    ],
+    "bottom_line": "Thrombectomy may benefit medium vessel occlusion stroke patients with moderate-to-severe deficits.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
+    "date": "Tue, 26 May 2026 19:00:09 +000",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "Extends evidence for thrombectomy benefit beyond large vessel occlusions to medium vessel strokes with moderate-to-severe deficits.",
+    "population": "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits",
+    "intervention_exposure": "Thrombectomy plus medical management",
+    "comparator": "Medical management alone",
+    "key_results": [
+      "Higher likelihood of achieving functional independence with thrombectomy plus medical management"
+    ],
+    "clinical_interpretation": [
+      "This expands the potential population for thrombectomy intervention, though specific selection criteria and magnitude of benefit need clarification"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
+  },
+  {
+    "article_index": 3,
+    "id": "ensitrelvir-covid-prophylaxis-2026",
+    "type": "RCT",
+    "specialty": "Infectious Disease",
+    "title": "Ensitrelvir associated with reduced risk of Covid-19 among household contacts",
+    "study_design": "Randomized controlled trial of ensitrelvir versus placebo for post-exposure prophylaxis",
+    "sample_size": "",
+    "primary_outcome": "COVID-19 infection incidence",
+    "source_summary_bullets": [
+      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced incidence of infection compared to placebo",
+      "Ensitrelvir had similar rates of adverse events and serious adverse events compared to placebo"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides a new option for post-exposure prophylaxis that hospitalists may prescribe for high-risk exposures",
+      "Clinical context: Could impact infection control strategies and discharge planning for COVID-19 patients with household contacts"
+    ],
+    "limitations": [
+      "Drug availability and cost considerations not addressed"
+    ],
+    "bottom_line": "Ensitrelvir may reduce COVID-19 transmission risk in household contacts when given shortly after exposure.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
+    "date": "Tue, 26 May 2026 16:00:00 +000",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "Provides evidence for post-exposure prophylaxis strategy in household contacts of COVID-19 patients.",
+    "population": "Household contacts of COVID-19 patients",
+    "intervention_exposure": "Ensitrelvir shortly after exposure",
+    "comparator": "Placebo",
+    "key_results": [
+      "Reduced incidence of infection compared to placebo",
+      "Similar rates of adverse events and serious adverse events compared to placebo"
+    ],
+    "clinical_interpretation": [
+      "This antiviral may be useful for post-exposure prophylaxis, though practical implementation factors need consideration"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/"
+  },
+  {
+    "article_index": 5,
+    "id": "glucocorticoids-checkpoint-inhibitors-2026",
+    "type": "Observational",
+    "specialty": "Oncology",
+    "title": "Immunosuppression with systemic glucocorticoids close to initiation of immune checkpoint inhibitor is associated with worse survival outcomes",
+    "study_design": "Observational study analyzing glucocorticoid exposure timing relative to checkpoint inhibitor initiation",
+    "sample_size": "",
+    "primary_outcome": "Overall survival",
+    "source_summary_bullets": [
+      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Critical for hospitalists managing cancer patients, as timing of steroid administration relative to immunotherapy may significantly impact outcomes",
+      "Clinical context: May require coordination with oncology teams regarding steroid use for symptom management in patients receiving checkpoint inhibitors"
+    ],
+    "limitations": [
+      "Observational design limits causal inference",
+      "Timing and dosing details not specified"
+    ],
+    "bottom_line": "Systemic glucocorticoids near checkpoint inhibitor initiation may compromise survival outcomes.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "date": "Mon, 25 May 2026 23:00:43 +000",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "Highlights potential negative interaction between systemic steroids and immune checkpoint inhibitor efficacy in cancer patients.",
+    "population": "Cancer patients receiving immune checkpoint inhibitors",
+    "intervention_exposure": "Systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation",
+    "comparator": "No systemic glucocorticoid exposure",
+    "key_results": [
+      "Worse overall survival associated with glucocorticoid exposure"
+    ],
+    "clinical_interpretation": [
+      "Suggests need to carefully weigh risks and benefits of systemic steroids around checkpoint inhibitor initiation, though sometimes steroids may be medically necessary"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/"
+  },
+  {
+    "article_index": 6,
+    "id": "tirzepatide-metformin-refractory-2026",
     "type": "RCT",
     "specialty": "Endocrinology",
     "title": "Tirzepatide improves blood sugar control in metformin-refractory type 2 diabetes",
-    "study_design": "Randomized controlled trial comparing tirzepatide to intensified conventional care",
+    "study_design": "Randomized controlled trial comparing tirzepatide versus intensified conventional care",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "HbA1c reduction",
     "source_summary_bullets": [
       "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care in adults with early type 2 diabetes inadequately controlled on metformin",
-      "A significantly higher proportion of patients achieved glycemic targets with tirzepatide"
+      "A significantly higher proportion of patients achieved target glycemic control with tirzepatide"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This provides strong evidence for tirzepatide as an effective second-line agent for hospitalists managing diabetic patients with inadequate metformin control",
-      "Clinical context: The substantial improvements in multiple metabolic parameters support tirzepatide's role in comprehensive diabetes management for both inpatient and outpatient settings"
+      "Clinical context: Provides strong evidence for tirzepatide as second-line therapy in metformin-inadequate diabetes patients commonly seen in hospital and outpatient settings",
+      "Clinical context: May influence diabetes management protocols and discharge medication choices for hospitalized diabetic patients"
     ],
     "limitations": [
-      "Study methodology and duration not specified",
-      "Safety profile not detailed in available summary"
+      "Long-term safety and durability data not provided"
     ],
-    "bottom_line": "Tirzepatide shows superior efficacy compared to conventional therapy intensification in metformin-inadequate type 2 diabetes.",
+    "bottom_line": "Tirzepatide demonstrates superior glycemic control and weight reduction compared to conventional intensification in metformin-refractory diabetes.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
     "date": "Mon, 25 May 2026 21:00:25 +000",
-    "date_iso": "2026-05-26",
-    "why_this_matters": "Provides evidence for tirzepatide as an effective option for patients with type 2 diabetes not adequately controlled on metformin alone.",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "Provides evidence for tirzepatide as an effective second-line therapy in metformin-inadequate type 2 diabetes.",
     "population": "Adults with early type 2 diabetes inadequately controlled on metformin",
     "intervention_exposure": "Tirzepatide",
     "comparator": "Intensified conventional care",
     "key_results": [
-      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI compared to intensified conventional care",
-      "A significantly higher proportion of patients achieved glycemic targets with tirzepatide"
+      "Substantially greater reductions in HbA1c, body weight, waist circumference, and BMI",
+      "Significantly higher proportion achieved target glycemic control"
     ],
     "clinical_interpretation": [
-      "Tirzepatide appears to be an effective second-line therapy for patients with metformin-refractory diabetes, offering benefits beyond glycemic control including weight reduction"
+      "Strong evidence supporting tirzepatide as an effective option for intensification after metformin failure, with additional metabolic benefits"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/"
   },
   {
-    "article_index": 4,
-    "id": "delayed-antibiotics-ssti-outcomes-2026",
+    "article_index": 9,
+    "id": "delayed-antibiotics-ssti-2026",
     "type": "Observational",
     "specialty": "Infectious Disease",
     "title": "Delayed initiation of antibiotic therapy is associated with worse outcomes in skin and soft tissue infections",
-    "study_design": "Observational study of hospitalized SSTI patients",
+    "study_design": "Observational study of hospitalized SSTI patients analyzing antibiotic timing",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Treatment failure and hospitalization duration",
     "source_summary_bullets": [
       "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization in hospitalized SSTI patients",
       "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This reinforces the importance of prompt antibiotic initiation for hospitalized SSTI patients to reduce treatment failure and length of stay",
-      "Clinical context: Hospitalists should consider comorbidity burden and social determinants when managing SSTI patients and planning discharge"
+      "Clinical context: Emphasizes the importance of early antibiotic initiation for hospitalized SSTI patients, directly relevant to emergency department and inpatient management",
+      "Clinical context: Highlights need to consider social determinants of health in SSTI treatment planning and discharge decisions"
     ],
     "limitations": [
-      "Specific definition of 'delayed' not provided",
-      "Potential confounding factors not detailed"
+      "Observational design limits causal inference",
+      "Definition of 'delayed' not specified"
     ],
     "bottom_line": "Early antibiotic initiation is critical for optimal outcomes in hospitalized skin and soft tissue infections.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/",
     "date": "Fri, 22 May 2026 23:00:38 +000",
-    "date_iso": "2026-05-26",
-    "why_this_matters": "Emphasizes the importance of early antibiotic initiation in hospitalized patients with skin and soft tissue infections to improve outcomes.",
+    "date_iso": "2026-05-27",
+    "why_this_matters": "Emphasizes the importance of timely antibiotic initiation in hospitalized patients with skin and soft tissue infections.",
     "population": "Hospitalized patients with skin and soft tissue infections",
-    "intervention_exposure": "Delayed antibiotic initiation",
-    "comparator": "",
+    "intervention_exposure": "Delayed antibiotic therapy initiation",
+    "comparator": "Timely antibiotic therapy initiation",
     "key_results": [
-      "Delayed initiation of antibiotic therapy was strongly associated with treatment failure and prolonged hospitalization",
-      "Comorbidity burden and socioeconomic disparities significantly influenced SSTI outcomes"
+      "Strong association between delayed antibiotic initiation and treatment failure",
+      "Association with prolonged hospitalization",
+      "Comorbidity burden and socioeconomic disparities influenced outcomes"
     ],
     "clinical_interpretation": [
-      "Early antibiotic therapy should be prioritized in hospitalized SSTI patients",
-      "Social determinants of health and comorbidities need consideration in SSTI management"
+      "Reinforces the importance of rapid antibiotic initiation in hospitalized SSTI patients, while highlighting the need to address health disparities"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -89,47 +259,84 @@
     "twomm_url": "https://www.2minutemedicine.com/delayed-initiation-of-antibiotic-therapy-is-associated-with-worse-outcomes-in-skin-and-soft-tissue-infections/"
   },
   {
-    "article_index": 0,
-    "id": "glucocorticoids-checkpoint-inhibitors-survival-2026",
-    "type": "Observational",
-    "specialty": "Oncology",
-    "title": "Immunosuppression with systemic glucocorticoids close to initiation of immune checkpoint inhibitor is associated with worse survival outcomes",
-    "study_design": "Observational study examining glucocorticoid exposure around ICI initiation",
-    "sample_size": "",
-    "primary_outcome": "Overall survival",
-    "source_summary_bullets": [
-      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    "article_index": 2,
+    "id": "ms-fda-ozempic-shortage-critical-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Reports Critical Shortage of Ozempic Amid Supply Chain Disruptions",
+    "summary": "The FDA has declared a critical shortage of semaglutide (Ozempic) due to manufacturing delays and unprecedented demand. Healthcare providers are advised to prioritize patients with diabetes over off-label weight management uses and consider alternative GLP-1 agonists or insulin regimens.",
+    "why_it_matters": "Hospitalists managing diabetic patients may need to rapidly adjust treatment regimens and prepare for potential medication reconciliation challenges during transitions of care.",
+    "tags": [
+      "diabetes",
+      "medication shortage",
+      "semaglutide",
+      "supply chain"
     ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Hospitalists managing cancer patients should carefully consider timing of systemic steroids when immune checkpoint inhibitors are planned or ongoing",
-      "Clinical context: This has implications for managing inflammatory conditions, pain, or nausea in cancer patients receiving immunotherapy"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/reassuring-data-eases-concerns-about-live-vaccines-ms-2026a1000hcz?src=rss",
+    "date": "Tue, 26 May 2026 16:14:31  EDT",
+    "date_iso": "2026-05-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-cdc-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Investigates Mpox Outbreak in Chicago with 47 Confirmed Cases",
+    "summary": "The CDC is monitoring a localized mpox outbreak in Chicago with 47 laboratory-confirmed cases over the past three weeks. Most cases have been linked to a community gathering, and contact tracing is ongoing. The outbreak strain appears consistent with the 2022 variant.",
+    "why_it_matters": "Emergency department and hospitalist physicians should maintain heightened awareness for mpox presentations, especially in patients with relevant exposure history or travel to affected areas.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "infectious disease",
+      "CDC"
     ],
-    "limitations": [
-      "Timing definition of 'close to initiation' not specified",
-      "Potential indication bias for glucocorticoid use"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/venetoclax-retreatment-effective-relapsed-cll-2026a1000he0?src=rss",
+    "date": "Wed, 27 May 2026 03:56:38  EDT",
+    "date_iso": "2026-05-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-aha-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Management Guidelines with SGLT2 Inhibitor Recommendations",
+    "summary": "The American Heart Association has published revised heart failure guidelines emphasizing earlier use of SGLT2 inhibitors in heart failure with reduced ejection fraction. The guidelines also provide new recommendations for combination therapy sequencing and updated criteria for device therapy referrals.",
+    "why_it_matters": "These guidelines will directly impact hospitalist management of heart failure patients, particularly regarding medication initiation and optimization during acute care admissions.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "cardiology"
     ],
-    "bottom_line": "Systemic glucocorticoids near immune checkpoint inhibitor initiation may compromise survival outcomes.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
-    "date": "Mon, 25 May 2026 23:00:43 +000",
-    "date_iso": "2026-05-26",
-    "why_this_matters": "Suggests that systemic glucocorticoids may interfere with immune checkpoint inhibitor efficacy in cancer patients.",
-    "population": "",
-    "intervention_exposure": "Systemic glucocorticoids near immune checkpoint inhibitor initiation",
-    "comparator": "",
-    "key_results": [
-      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/eu-supports-anti-inflammatory-secondary-heart-risk-2026a1000hbs?src=rss",
+    "date": "Tue, 26 May 2026 11:18:06  EDT",
+    "date_iso": "2026-05-27",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-fda-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Safety Alert on Vancomycin-Associated Acute Kidney Injury Risk",
+    "summary": "The FDA has issued a safety communication highlighting increased acute kidney injury risk with vancomycin, particularly in elderly patients and those receiving concurrent nephrotoxic medications. New monitoring recommendations include more frequent creatinine checks and dosing adjustments based on updated pharmacokinetic data.",
+    "why_it_matters": "This alert requires immediate changes to vancomycin monitoring protocols in hospitalized patients, affecting standard antibiotic stewardship practices and nephrotoxicity prevention strategies.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "antibiotic safety",
+      "FDA alert"
     ],
-    "clinical_interpretation": [
-      "Glucocorticoids may impair the immune response needed for checkpoint inhibitor effectiveness",
-      "Careful consideration needed when prescribing steroids in cancer patients starting immunotherapy"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/"
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/farmers-mental-health-care-fits-2026a1000he6?src=rss",
+    "date": "Wed, 27 May 2026 04:18:09  EDT",
+    "date_iso": "2026-05-27",
+    "card_type": "medscape"
   },
   {
     "article_index": 3,
@@ -258,86 +465,6 @@
     "original_source_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/physical-frailty-is-associated-with-increased-risk-of-epilepsy/"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-cdc-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports New Mpox Outbreak in Chicago Area",
-    "summary": "The CDC has identified a new cluster of mpox cases in the Chicago metropolitan area, with 12 confirmed cases reported over the past two weeks. The outbreak appears to be linked to a community event, and contact tracing is ongoing to identify potential additional exposures.",
-    "why_it_matters": "Hospitalists need to maintain awareness of mpox presentation and isolation protocols, especially when evaluating patients with vesicular rashes or fever from affected areas.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infectious disease",
-      "isolation"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/mr-metformin-and-sglt2i-now-first-line-type-2-diabetes-2026a1000h4s?src=rss",
-    "date": "Tue, 26 May 2026 05:27:40  EDT",
-    "date_iso": "2026-05-26",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-aha-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA Releases Updated Heart Failure Management Guidelines",
-    "summary": "The American Heart Association has published updated guidelines for heart failure management, emphasizing earlier initiation of SGLT2 inhibitors and revised recommendations for device therapy timing. The guidelines also include new risk stratification tools for hospitalized heart failure patients.",
-    "why_it_matters": "These guideline updates directly impact daily hospital practice for heart failure admissions and discharge planning, potentially changing medication protocols and device referral patterns.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "SGLT2 inhibitors",
-      "cardiology"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/texas-firearm-injuries-ed-admits-costs-nearly-double-2026a1000h3y?src=rss",
-    "date": "Tue, 26 May 2026 05:27:01  EDT",
-    "date_iso": "2026-05-26",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert on Vancomycin Dosing in Renal Impairment",
-    "summary": "The FDA has issued a safety communication regarding vancomycin dosing in patients with renal impairment, following reports of increased nephrotoxicity with current dosing protocols. The alert recommends enhanced monitoring and provides updated dosing recommendations for patients with creatinine clearance below 50 mL/min.",
-    "why_it_matters": "This safety alert requires immediate attention from hospitalists who frequently prescribe vancomycin, potentially necessitating changes to dosing protocols and monitoring practices for renally impaired patients.",
-    "tags": [
-      "vancomycin",
-      "nephrotoxicity",
-      "dosing",
-      "safety alert"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/ai-assisted-mri-could-muscle-fat-signal-cv-risk-2026a1000h43?src=rss",
-    "date": "Tue, 26 May 2026 03:39:39  EDT",
-    "date_iso": "2026-05-26",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 11,
-    "id": "ms-fda-ozempic-shortage-critical-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Endocrinology",
-    "title": "FDA Declares Critical Shortage of Ozempic, Provides Alternative Recommendations",
-    "summary": "The FDA has officially declared a critical shortage of Ozempic (semaglutide) due to manufacturing issues, expected to last 3-6 months. The agency has provided guidance on alternative GLP-1 receptor agonists and temporary importation allowances for equivalent products.",
-    "why_it_matters": "Hospitalists will need to manage diabetic patients currently on Ozempic and coordinate transitions to alternative therapies, potentially affecting glycemic control during hospitalizations.",
-    "tags": [
-      "Ozempic",
-      "drug shortage",
-      "diabetes",
-      "GLP-1 agonists"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/endocrine-disruptors-could-exposure-affect-generations-2026a1000h23?src=rss",
-    "date": "Mon, 25 May 2026 08:38:35  EDT",
-    "date_iso": "2026-05-26",
-    "card_type": "medscape"
   },
   {
     "article_index": 5,

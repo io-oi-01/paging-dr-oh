@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Antiphospholipid Syndrome",
     "Pericarditis and Pericardial Effusion",
     "Cardiac Tamponade",
     "Osteomyelitis",
@@ -89,7 +88,8 @@
     "Diabetic Ketoacidosis",
     "Acute Cholecystitis",
     "Iron Deficiency Anemia",
-    "Upper GI Bleeding"
+    "Upper GI Bleeding",
+    "Sepsis and Septic Shock"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -214,7 +214,8 @@
     "peptic-2020",
     "fame-2009",
     "caravaggio-2020",
-    "topcat-2014"
+    "topcat-2014",
+    "christopher-2003"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -616,9 +617,15 @@
     "intradialytic-exercise-adequacy-rct-study-2026",
     "tirzepatide-metformin-refractory-t2dm-2026",
     "glucocorticoids-checkpoint-inhibitors-survival-2026",
-    "amoxicillin-clavulanate-chronic-lbp-2026"
+    "amoxicillin-clavulanate-chronic-lbp-2026",
+    "intra-arterial-alteplase-thrombectomy-2026",
+    "thrombectomy-medium-vessel-stroke-2026",
+    "ensitrelvir-covid-prophylaxis-2026",
+    "glucocorticoids-checkpoint-inhibitors-2026",
+    "tirzepatide-metformin-refractory-2026",
+    "delayed-antibiotics-ssti-2026"
   ],
-  "last_run": "2026-05-26",
+  "last_run": "2026-05-27",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -705,13 +712,10 @@
     "Confluent and Reticulated Papillomatosis",
     "Trichoepithelioma",
     "Acute Cutaneous Lupus Erythematosus",
-    "Lichen Sclerosus"
+    "Lichen Sclerosus",
+    "Nummular Dermatitis"
   ],
   "litfl_cases_shown": [
-    "cxr-041",
-    "ct-081",
-    "clinical-verdant-waste",
-    "ecg-048",
     "cxr-042",
     "ct-060",
     "clinical-snakebite-envenoming-challenge",
@@ -907,6 +911,10 @@
     "ecg-091",
     "cxr-072",
     "ct-030",
-    "clinical-own-the-oxylog"
+    "clinical-own-the-oxylog",
+    "ecg-127",
+    "cxr-077",
+    "ct-060",
+    "clinical-exercise-associated-hyponatremia"
   ]
 }
