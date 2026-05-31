@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "ARDS",
     "Sepsis and Septic Shock",
     "Acute Kidney Injury",
     "Pneumothorax",
@@ -89,7 +88,8 @@
     "Sepsis and Septic Shock",
     "ARDS",
     "COPD Exacerbation",
-    "Hypercalcemia"
+    "Hypercalcemia",
+    "Hepatorenal Syndrome"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -218,7 +218,8 @@
     "christopher-2003",
     "crash3-2019",
     "aristotle-2011",
-    "dcct-1993"
+    "dcct-1993",
+    "promise-2015"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -642,9 +643,10 @@
     "ms-fda-oral-minoxidil-hypertension-2026",
     "ms-dapa-hf-diabetes-outcomes-2026",
     "ms-hospital-readmission-penalties-2026",
-    "ms-anticoagulation-icu-bleeding-2026"
+    "ms-anticoagulation-icu-bleeding-2026",
+    "syncope-risk-stratification-2026"
   ],
-  "last_run": "2026-05-30",
+  "last_run": "2026-05-31",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -735,13 +737,10 @@
     "Nummular Dermatitis",
     "Nails: Onychomycosis",
     "Pityriasis Rubra Pilaris",
-    "Erythroderma"
+    "Erythroderma",
+    "Squamous Cell Carcinoma"
   ],
   "litfl_cases_shown": [
-    "cxr-024",
-    "ct-044",
-    "clinical-roman-breastplate",
-    "ecg-001",
     "cxr-085",
     "ct-071",
     "clinical-rapid-descent",
@@ -937,6 +936,10 @@
     "ecg-026",
     "cxr-048",
     "ct-086",
-    "clinical-verapamil-overdose"
+    "clinical-verapamil-overdose",
+    "ecg-076",
+    "cxr-043",
+    "ct-051",
+    "clinical-trauma-spinal-injury"
   ]
 }
