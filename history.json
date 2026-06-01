@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Sepsis and Septic Shock",
     "Acute Kidney Injury",
     "Pneumothorax",
     "Atrial Fibrillation",
@@ -89,7 +88,8 @@
     "ARDS",
     "COPD Exacerbation",
     "Hypercalcemia",
-    "Hepatorenal Syndrome"
+    "Hepatorenal Syndrome",
+    "Heparin-Induced Thrombocytopenia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -219,7 +219,8 @@
     "crash3-2019",
     "aristotle-2011",
     "dcct-1993",
-    "promise-2015"
+    "promise-2015",
+    "inbuild-2019"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -644,9 +645,16 @@
     "ms-dapa-hf-diabetes-outcomes-2026",
     "ms-hospital-readmission-penalties-2026",
     "ms-anticoagulation-icu-bleeding-2026",
-    "syncope-risk-stratification-2026"
+    "syncope-risk-stratification-2026",
+    "syncope-risk-scores-validation-2026",
+    "procalcitonin-neonatal-sepsis-2026",
+    "intra-arterial-alteplase-post-thrombectomy-2026",
+    "thrombectomy-medium-vessel-stroke-rct-2026",
+    "ensitrelvir-covid-prophylaxis-rct-2026",
+    "telitacicept-iga-nephropathy-rct-2026",
+    "tirzepatide-metformin-refractory-diabetes-rct-2026"
   ],
-  "last_run": "2026-05-31",
+  "last_run": "2026-06-01",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -738,13 +746,10 @@
     "Nails: Onychomycosis",
     "Pityriasis Rubra Pilaris",
     "Erythroderma",
-    "Squamous Cell Carcinoma"
+    "Squamous Cell Carcinoma",
+    "Nevi: Depigmentosus"
   ],
   "litfl_cases_shown": [
-    "cxr-085",
-    "ct-071",
-    "clinical-rapid-descent",
-    "ecg-031",
     "cxr-053",
     "ct-034",
     "clinical-valproate-still-big-trouble",
@@ -940,6 +945,10 @@
     "ecg-076",
     "cxr-043",
     "ct-051",
-    "clinical-trauma-spinal-injury"
+    "clinical-trauma-spinal-injury",
+    "ecg-045",
+    "cxr-056",
+    "ct-012",
+    "clinical-trauma-chest-injuries-ii"
   ]
 }
