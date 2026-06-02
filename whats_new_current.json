@@ -1,41 +1,401 @@
 [
   {
     "article_index": 0,
-    "id": "syncope-risk-scores-validation-2026",
-    "type": "Review",
+    "id": "syncope-risk-stratification-validation-2026",
+    "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
     "study_design": "Validation study of risk stratification scores",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult patients presenting to the emergency department who are at low risk for short-term adverse outcomes"
+      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
+      "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Validated risk stratification tools for syncope can help hospitalists safely discharge low-risk patients and focus resources on those requiring admission or further workup"
+      "Clinical context: These validated tools can help hospitalists and ED physicians safely discharge low-risk syncope patients and focus resources on higher-risk cases",
+      "Clinical context: Standardized risk stratification may reduce unnecessary admissions and testing in syncope workups"
     ],
-    "limitations": [],
-    "bottom_line": "CSRS and FAINT scores may help identify low-risk syncope patients in the emergency department.",
+    "limitations": [
+      "Study methodology and validation parameters not specified"
+    ],
+    "bottom_line": "CSRS and FAINT scores may help identify low-risk syncope patients suitable for ED discharge, though broader validation is needed.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Risk stratification tools for syncope could help emergency physicians safely identify low-risk patients for early discharge, reducing unnecessary admissions and testing.",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Validated risk stratification tools could help emergency physicians safely discharge low-risk syncope patients and reduce unnecessary admissions.",
     "population": "",
     "intervention_exposure": "",
     "comparator": "",
     "key_results": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult patients presenting to the emergency department who are at low risk for short-term adverse outcomes"
+      "Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
+      "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "This review suggests validated risk scores may help standardize syncope evaluation, though specific performance metrics and validation populations would be important to know before implementation"
+      "These risk scores may provide standardized approaches to syncope risk stratification, though validation in diverse populations would strengthen clinical confidence"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
+  },
+  {
+    "article_index": 3,
+    "id": "intra-arterial-alteplase-post-thrombectomy-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adding intra-arterial thrombolytic agent immediately following mechanical clot extraction increased near-complete functional recovery at three months",
+      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This represents a potential advancement in acute stroke care that may change post-thrombectomy protocols",
+      "Clinical context: The mortality signal requires careful consideration when weighing benefits versus risks in individual patients"
+    ],
+    "limitations": [
+      "Increased mortality risk needs careful evaluation against functional benefits"
+    ],
+    "bottom_line": "Intra-arterial alteplase after thrombectomy improves functional recovery but increases mortality, requiring careful risk-benefit consideration.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
+    "date": "Wed, 27 May 2026 01:30:26 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Adding intra-arterial thrombolytics after mechanical thrombectomy could improve stroke outcomes but may increase mortality risk.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Intra-arterial alteplase after mechanical thrombectomy increased near-complete functional recovery at three months",
+      "Symptomatic brain bleeding rates did not differ meaningfully between groups",
+      "Three-month mortality was significantly higher in the combination therapy group"
+    ],
+    "clinical_interpretation": [
+      "The mortality increase raises important safety concerns that may outweigh functional benefits, requiring careful patient selection and risk-benefit analysis"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/"
+  },
+  {
+    "article_index": 5,
+    "id": "thrombectomy-medium-vessel-occlusion-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This expands the evidence base for thrombectomy beyond large vessel occlusions, potentially changing stroke treatment algorithms",
+      "Clinical context: May influence hospital stroke protocols and transfer decisions for patients with medium vessel occlusions"
+    ],
+    "limitations": [
+      "Patient selection criteria and safety profile in medium vessel occlusion not fully detailed"
+    ],
+    "bottom_line": "Thrombectomy appears beneficial for medium vessel occlusion strokes with moderate-to-severe deficits compared to medical management alone.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
+    "date": "Tue, 26 May 2026 19:00:09 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Thrombectomy for medium vessel occlusion strokes could expand treatment options for patients currently managed with medical therapy alone.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than medical management alone"
+    ],
+    "clinical_interpretation": [
+      "This extends thrombectomy benefits to medium vessel occlusions, potentially changing stroke treatment algorithms for this patient subset"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
+  },
+  {
+    "article_index": 6,
+    "id": "ensitrelvir-covid-prophylaxis-household-contacts-2026",
+    "type": "RCT",
+    "specialty": "Infectious Disease",
+    "title": "Ensitrelvir associated with reduced risk of Covid-19 among household contacts",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced incidence of infection compared to placebo",
+      "Those who received ensitrelvir had similar rates of adverse events and serious adverse events"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This provides a new post-exposure prophylaxis option for high-risk household contacts of COVID-19 patients",
+      "Clinical context: May be particularly valuable for immunocompromised patients or those at high risk for severe COVID-19"
+    ],
+    "limitations": [
+      "Real-world effectiveness and optimal timing of administration need further study"
+    ],
+    "bottom_line": "Ensitrelvir reduces COVID-19 infection risk in household contacts when given shortly after exposure with similar safety to placebo.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
+    "date": "Tue, 26 May 2026 16:00:00 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Post-exposure prophylaxis for COVID-19 household contacts could reduce transmission in high-risk situations.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Household contacts who received ensitrelvir shortly after COVID-19 exposure had reduced incidence of infection compared to placebo",
+      "Similar rates of adverse events and serious adverse events between groups"
+    ],
+    "clinical_interpretation": [
+      "Ensitrelvir appears effective for post-exposure prophylaxis with acceptable safety, though clinical availability and cost-effectiveness considerations apply"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/"
+  },
+  {
+    "article_index": 7,
+    "id": "telitacicept-iga-nephropathy-proteinuria-2026",
+    "type": "RCT",
+    "specialty": "Nephrology",
+    "title": "Telitacicept may reduce proteinuria in patients with high-risk IgA nephropathy",
+    "study_design": "Interim analysis from randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adults with biopsy-proven IgA nephropathy and persistent proteinuria who received telitacicept had improved proteinuria compared to placebo",
+      "Telitacicept was associated with more overall adverse events but fewer serious adverse events"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Represents a potential new therapeutic option for IgA nephropathy, which has limited treatment options beyond ACE inhibitors and immunosuppression",
+      "Clinical context: Proteinuria reduction is an important surrogate endpoint that correlates with long-term kidney outcomes"
+    ],
+    "limitations": [
+      "Long-term kidney function outcomes and optimal patient selection criteria need clarification"
+    ],
+    "bottom_line": "Telitacicept reduces proteinuria in high-risk IgA nephropathy patients but has a mixed adverse event profile requiring further evaluation.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
+    "date": "Tue, 26 May 2026 12:00:42 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "A targeted therapy for high-risk IgA nephropathy could address an important cause of progressive kidney disease.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Adults with biopsy-proven IgA nephropathy and persistent proteinuria had improved proteinuria with telitacicept compared to placebo",
+      "More overall adverse events but fewer serious adverse events with telitacicept"
+    ],
+    "clinical_interpretation": [
+      "Proteinuria reduction suggests potential kidney protective effects, though the mixed safety profile and need for long-term outcome data warrant cautious optimism"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/"
+  },
+  {
+    "article_index": 8,
+    "id": "glucocorticoids-checkpoint-inhibitors-survival-outcomes-2026",
+    "type": "Observational",
+    "specialty": "Oncology",
+    "title": "Immunosuppression with systemic glucocorticoids close to initiation of immune checkpoint inhibitor is associated with worse survival outcomes",
+    "study_design": "Observational study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Exposure to systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This finding has important implications for managing cancer patients who require steroids for various conditions while on immunotherapy",
+      "Clinical context: Hospitalists should coordinate with oncologists when glucocorticoids are being considered in patients receiving checkpoint inhibitors"
+    ],
+    "limitations": [
+      "Observational design limits causal inference about glucocorticoid effects"
+    ],
+    "bottom_line": "Systemic glucocorticoids near checkpoint inhibitor initiation appear associated with worse survival, suggesting careful steroid timing considerations.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "date": "Mon, 25 May 2026 23:00:43 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Glucocorticoid timing around checkpoint inhibitor therapy could significantly impact cancer treatment outcomes.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Systemic glucocorticoid exposure close to immune checkpoint inhibitor initiation was associated with worse overall survival"
+    ],
+    "clinical_interpretation": [
+      "This suggests glucocorticoids may impair checkpoint inhibitor efficacy, supporting efforts to minimize systemic steroids around treatment initiation when clinically appropriate"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/"
+  },
+  {
+    "article_index": 9,
+    "id": "tirzepatide-metformin-refractory-diabetes-outcomes-2026",
+    "type": "RCT",
+    "specialty": "Endocrinology",
+    "title": "Tirzepatide improves blood sugar control in metformin-refractory type 2 diabetes",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care in adults with early type 2 diabetes inadequately controlled on metformin",
+      "A significantly higher proportion achieved target glucose control"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This supports tirzepatide as an effective second-line agent for type 2 diabetes patients failing metformin monotherapy",
+      "Clinical context: The dual benefits on glycemic control and weight loss make this particularly valuable for overweight diabetic patients"
+    ],
+    "limitations": [
+      "Long-term safety and cardiovascular outcomes data would strengthen clinical confidence"
+    ],
+    "bottom_line": "Tirzepatide provides superior glycemic control and weight reduction compared to conventional care intensification in metformin-inadequate type 2 diabetes.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
+    "date": "Mon, 25 May 2026 21:00:25 +000",
+    "date_iso": "2026-06-02",
+    "why_this_matters": "Effective second-line diabetes therapy options are crucial for patients with inadequate metformin response.",
+    "population": "",
+    "intervention_exposure": "",
+    "comparator": "",
+    "key_results": [
+      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care",
+      "Significantly higher proportion achieved target glucose control"
+    ],
+    "clinical_interpretation": [
+      "The dual glucose and weight benefits make tirzepatide an attractive option for metformin-inadequate type 2 diabetes, particularly in patients where weight loss is beneficial"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "New Heart Failure Guidelines Released",
+    "summary": "Updated heart failure guidelines have been released with significant changes to management recommendations for hospitalized patients. The guidelines emphasize earlier initiation of guideline-directed medical therapy and updated discharge protocols.",
+    "why_it_matters": "These guideline changes will directly impact how hospitalists manage acute heart failure exacerbations and optimize discharge planning for better outcomes.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "hospital management",
+      "discharge planning"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/no-shit-fecal-transplant-curbs-booze-cravings-2026a1000ia7?src=rss",
+    "date": "Tue, 2 Jun 2026 05:17:48  EDT",
+    "date_iso": "2026-06-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-vancomycin-safety-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Vancomycin Safety Alert",
+    "summary": "The FDA has issued a safety alert regarding vancomycin dosing and monitoring protocols following reports of increased nephrotoxicity. New recommendations include modified dosing strategies and enhanced monitoring requirements for hospitalized patients.",
+    "why_it_matters": "This safety alert requires immediate changes to vancomycin prescribing practices in hospitalized patients, affecting daily antibiotic stewardship decisions.",
+    "tags": [
+      "vancomycin",
+      "FDA alert",
+      "nephrotoxicity",
+      "antibiotic safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/sacroiliitis-worsening-commonly-found-patients-psoriatic-2026a1000i6f?src=rss",
+    "date": "Tue, 2 Jun 2026 05:07:20  EDT",
+    "date_iso": "2026-06-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Mpox Outbreak Reported in Chicago",
+    "summary": "A cluster of mpox cases has been identified in Chicago, prompting public health alerts and updated isolation protocols for healthcare facilities. The outbreak includes both hospitalized and outpatient cases with enhanced contact tracing underway.",
+    "why_it_matters": "Hospitalists need to be aware of mpox presentation and isolation requirements, especially in urban medical centers that may see suspected cases.",
+    "tags": [
+      "mpox",
+      "outbreak",
+      "isolation protocols",
+      "infectious disease"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fda-approves-cefepime-zidebactam-complicated-utis-2026a1000i8a?src=rss",
+    "date": "Mon, 1 Jun 2026 15:55:17  EDT",
+    "date_iso": "2026-06-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-ozempic-shortage-critical-2026",
+    "article_type": "news",
+    "specialty": "Endocrinology",
+    "title": "Critical Ozempic Shortage Affects Hospital Patients",
+    "summary": "A critical shortage of semaglutide (Ozempic) is affecting hospitals nationwide, requiring alternative diabetes management strategies for admitted patients. Healthcare systems are implementing protocols for medication substitution and glycemic control alternatives.",
+    "why_it_matters": "This shortage directly impacts diabetes management in hospitalized patients, requiring hospitalists to modify treatment plans and understand alternative therapies.",
+    "tags": [
+      "semaglutide",
+      "drug shortage",
+      "diabetes management",
+      "hospital protocols"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/psychotropics-linked-increased-bmi-cvd-risk-2026a1000i8n?src=rss",
+    "date": "Mon, 1 Jun 2026 23:35:22  EDT",
+    "date_iso": "2026-06-02",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-anticoagulation-icu-bleeding-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Critical Care",
+    "title": "New Evidence on ICU Anticoagulation and Bleeding Risk",
+    "summary": "Recent clinical data reveals updated bleeding risk factors for anticoagulated ICU patients, with new risk stratification tools and management protocols. The evidence suggests modified dosing strategies for critically ill patients may reduce bleeding complications.",
+    "why_it_matters": "This evidence provides critical care and hospitalist physicians with updated tools for safer anticoagulation management in high-risk patients.",
+    "tags": [
+      "anticoagulation",
+      "bleeding risk",
+      "ICU management",
+      "critical care"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/1-40-patients-obesity-get-clots-despite-enoxaparin-2026a1000i9j?src=rss",
+    "date": "Tue, 2 Jun 2026 03:22:29  EDT",
+    "date_iso": "2026-06-02",
+    "card_type": "medscape"
   },
   {
     "article_index": 1,
@@ -77,302 +437,6 @@
   },
   {
     "article_index": 3,
-    "id": "intra-arterial-alteplase-post-thrombectomy-2026",
-    "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Adding intra-arterial thrombolytic agent after mechanical clot extraction increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates were similar between groups, but three-month mortality was significantly higher"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential practice change for acute stroke management that hospitalists should be aware of when caring for post-thrombectomy patients"
-    ],
-    "limitations": [],
-    "bottom_line": "Intra-arterial alteplase after thrombectomy improves functional recovery but may increase mortality in large vessel stroke.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
-    "date": "Wed, 27 May 2026 01:30:26 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Large vessel strokes often have devastating outcomes, so any intervention that improves functional recovery while managing bleeding risk could significantly impact patient outcomes.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Adding intra-arterial thrombolytic agent after mechanical clot extraction increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates were similar between groups, but three-month mortality was significantly higher"
-    ],
-    "clinical_interpretation": [
-      "The improved functional recovery is promising but the increased mortality is concerning and requires careful consideration of patient selection and risk-benefit analysis"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/"
-  },
-  {
-    "article_index": 5,
-    "id": "thrombectomy-medium-vessel-stroke-rct-2026",
-    "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This extends thrombectomy indications beyond large vessel occlusions, potentially changing acute stroke triage and treatment protocols for hospitalists"
-    ],
-    "limitations": [],
-    "bottom_line": "Thrombectomy may improve functional outcomes in acute ischemic stroke with medium vessel occlusion.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
-    "date": "Tue, 26 May 2026 19:00:09 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Medium vessel occlusions represent a treatment gap in stroke care, as evidence for thrombectomy has been strongest in large vessel occlusions.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
-    ],
-    "clinical_interpretation": [
-      "This extends the evidence base for thrombectomy to medium vessel occlusions, potentially expanding treatment options for stroke patients previously managed with medical therapy alone"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
-  },
-  {
-    "article_index": 6,
-    "id": "ensitrelvir-covid-prophylaxis-rct-2026",
-    "type": "RCT",
-    "specialty": "Infectious Disease",
-    "title": "Ensitrelvir associated with reduced risk of Covid-19 among household contacts",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced infection incidence compared to placebo",
-      "Similar rates of adverse events and serious adverse events between groups"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Post-exposure prophylaxis options remain limited for COVID-19, and this represents a potential new tool for preventing transmission in high-risk household settings"
-    ],
-    "limitations": [],
-    "bottom_line": "Ensitrelvir may reduce COVID-19 infection risk in household contacts when given as post-exposure prophylaxis.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
-    "date": "Tue, 26 May 2026 16:00:00 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Post-exposure prophylaxis options for COVID-19 household contacts could reduce transmission and disease burden, particularly in high-risk households.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced infection incidence compared to placebo",
-      "Similar rates of adverse events and serious adverse events between groups"
-    ],
-    "clinical_interpretation": [
-      "This adds to the limited options for COVID-19 post-exposure prophylaxis, though cost-effectiveness and availability would factor into practical implementation"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/"
-  },
-  {
-    "article_index": 7,
-    "id": "telitacicept-iga-nephropathy-rct-2026",
-    "type": "RCT",
-    "specialty": "Nephrology",
-    "title": "Telitacicept may reduce proteinuria in patients with high-risk IgA nephropathy",
-    "study_design": "Randomized controlled trial interim analysis",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Adults with biopsy-proven IgA nephropathy and persistent proteinuria who received telitacicept had improved proteinuria compared to placebo",
-      "More overall adverse events but fewer serious adverse events compared to placebo"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: IgA nephropathy treatment options are limited, and this represents a potential new therapeutic approach for hospitalists managing patients with progressive kidney disease"
-    ],
-    "limitations": [],
-    "bottom_line": "Telitacicept may reduce proteinuria in high-risk IgA nephropathy but with increased adverse events.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
-    "date": "Tue, 26 May 2026 12:00:42 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "IgA nephropathy is a leading cause of chronic kidney disease, and reducing proteinuria could slow progression to end-stage renal disease.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Adults with biopsy-proven IgA nephropathy and persistent proteinuria who received telitacicept had improved proteinuria compared to placebo",
-      "More overall adverse events but fewer serious adverse events compared to placebo"
-    ],
-    "clinical_interpretation": [
-      "The proteinuria reduction is encouraging for kidney protection, though the increased overall adverse events require careful monitoring and patient selection"
-    ],
-    "practice_readiness": "Preliminary",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/"
-  },
-  {
-    "article_index": 8,
-    "id": "glucocorticoids-checkpoint-inhibitors-survival-2026",
-    "type": "Observational",
-    "specialty": "Oncology",
-    "title": "Immunosuppression with systemic glucocorticoids close to initiation of immune checkpoint inhibitor is associated with worse survival outcomes",
-    "study_design": "Observational study",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This has important implications for hospitalists managing cancer patients, as glucocorticoids are commonly used for various indications and timing relative to cancer therapy may affect outcomes"
-    ],
-    "limitations": [],
-    "bottom_line": "Glucocorticoid use near immune checkpoint inhibitor initiation may compromise survival outcomes.",
-    "confidence": "moderate",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
-    "date": "Mon, 25 May 2026 23:00:43 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Optimizing the timing and use of glucocorticoids around cancer immunotherapy is crucial for balancing symptom management with treatment efficacy.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Systemic glucocorticoid immunosuppression close to immune checkpoint inhibitor initiation was associated with worse overall survival"
-    ],
-    "clinical_interpretation": [
-      "This reinforces the importance of careful timing when using steroids in cancer patients receiving immunotherapy, suggesting steroids may blunt the immune response needed for checkpoint inhibitor efficacy"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/immunosuppression-with-systemic-glucocorticoids-close-to-initiation-of-immune-checkpoint-inhibitor-is-associated-with-worse-survival-outcomes/"
-  },
-  {
-    "article_index": 9,
-    "id": "tirzepatide-metformin-refractory-diabetes-rct-2026",
-    "type": "RCT",
-    "specialty": "Endocrinology",
-    "title": "Tirzepatide improves blood sugar control in metformin-refractory type 2 diabetes",
-    "study_design": "Randomized controlled trial",
-    "sample_size": "",
-    "primary_outcome": "",
-    "source_summary_bullets": [
-      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care in adults with early type 2 diabetes inadequately controlled on metformin",
-      "Significantly higher proportion achieved glycemic targets"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: This supports tirzepatide as an effective second-line therapy for diabetes management, relevant for both inpatient glucose control and discharge planning"
-    ],
-    "limitations": [],
-    "bottom_line": "Tirzepatide provides superior glycemic control and weight reduction compared to conventional care intensification in metformin-refractory type 2 diabetes.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
-    "date": "Mon, 25 May 2026 21:00:25 +000",
-    "date_iso": "2026-06-01",
-    "why_this_matters": "Many patients with type 2 diabetes inadequately controlled on metformin need additional therapy, and tirzepatide represents a newer option with dual incretin activity.",
-    "population": "",
-    "intervention_exposure": "",
-    "comparator": "",
-    "key_results": [
-      "Tirzepatide produced substantially greater reductions in HbA1c, body weight, waist circumference, and BMI than intensified conventional care in adults with early type 2 diabetes inadequately controlled on metformin",
-      "Significantly higher proportion achieved glycemic targets"
-    ],
-    "clinical_interpretation": [
-      "The dual benefits on glycemic control and weight reduction make tirzepatide an attractive option for metformin-refractory diabetes, though cost and access considerations apply"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/tirzepatide-improves-blood-sugar-control-in-metformin-refractory-type-2-diabetes/"
-  },
-  {
-    "article_index": 0,
-    "id": "ms-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Safety Alert on Vancomycin Dosing",
-    "summary": "The FDA has issued a safety alert regarding proper vancomycin dosing protocols following reports of increased nephrotoxicity and ototoxicity. The alert emphasizes the importance of therapeutic drug monitoring and dose adjustments based on renal function.",
-    "why_it_matters": "Vancomycin is commonly used in hospital settings for serious infections, and proper dosing is critical to prevent adverse effects while maintaining efficacy.",
-    "tags": [
-      "vancomycin",
-      "safety alert",
-      "nephrotoxicity",
-      "TDM"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/clinicians-raise-concerns-over-federal-shift-away-universal-2026a1000i5b?src=rss",
-    "date": "Mon, 1 Jun 2026 07:00:36  EDT",
-    "date_iso": "2026-06-01",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "Mpox Outbreak Reported in Chicago Healthcare Facilities",
-    "summary": "Health officials have confirmed a cluster of mpox cases linked to healthcare facilities in the Chicago area. The outbreak has prompted enhanced infection control measures and contact tracing efforts.",
-    "why_it_matters": "Healthcare workers and hospitalized patients may be at risk, requiring immediate implementation of isolation precautions and vaccination strategies.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infection control",
-      "healthcare"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/race-car-drivers-death-highlights-risks-pneumonia-and-sepsis-2026a1000i3n?src=rss",
-    "date": "Mon, 1 Jun 2026 03:33:19  EDT",
-    "date_iso": "2026-06-01",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-ozempic-shortage-critical-2026",
-    "article_type": "news",
-    "specialty": "Endocrinology",
-    "title": "Critical Shortage of Ozempic Affects Diabetes Management",
-    "summary": "A critical shortage of semaglutide (Ozempic) has been reported nationwide, affecting diabetes management for hospitalized patients. Healthcare systems are developing protocols for alternative GLP-1 agonists and insulin regimens.",
-    "why_it_matters": "Hospitalists need to be prepared to adjust diabetes management plans and consider alternative medications when patients' usual semaglutide therapy is unavailable.",
-    "tags": [
-      "semaglutide",
-      "drug shortage",
-      "diabetes",
-      "GLP-1"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/bundibugyo-ebola-update-are-new-defenses-horizon-2026a1000i57?src=rss",
-    "date": "Mon, 1 Jun 2026 06:56:32  EDT",
-    "date_iso": "2026-06-01",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
     "id": "ms-fda-oral-minoxidil-hypertension-2026",
     "article_type": "fda-regulatory",
     "specialty": "Cardiology",
@@ -389,46 +453,6 @@
     "source_url": "https://www.medscape.com/s/viewarticle/vaccine-skeptical-california-county-potential-playbook-2026a1000i56?src=rss",
     "date": "Mon, 1 Jun 2026 06:38:10  EDT",
     "date_iso": "2026-06-01",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-anticoagulation-icu-bleeding-2026",
-    "article_type": "clinical-summary",
-    "specialty": "Critical Care",
-    "title": "New Protocol Reduces ICU Bleeding Risk with Anticoagulation",
-    "summary": "A multicenter study has validated a new anticoagulation protocol that reduces major bleeding events in ICU patients by 35% while maintaining thrombosis prevention efficacy. The protocol incorporates real-time coagulation monitoring and weight-based dosing adjustments.",
-    "why_it_matters": "ICU patients often require anticoagulation, and this protocol could significantly improve safety outcomes while reducing the need for blood product transfusions.",
-    "tags": [
-      "anticoagulation",
-      "ICU",
-      "bleeding risk",
-      "protocol"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/metabolic-changes-prompt-alcohol-cravings-aud-obesity-2026a1000i4e?src=rss",
-    "date": "Mon, 1 Jun 2026 05:48:28  EDT",
-    "date_iso": "2026-06-01",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 2,
-    "id": "ms-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "New Heart Failure Guidelines Released",
-    "summary": "Updated heart failure management guidelines have been released with revised recommendations for diagnostic workup, treatment algorithms, and monitoring strategies. The guidelines emphasize early use of guideline-directed medical therapy and updated criteria for device consideration.",
-    "why_it_matters": "Heart failure is one of the most common reasons for hospital admission, making these updated guidelines directly relevant to hospitalist practice and discharge planning.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "cardiology",
-      "hospitalist"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/reassuring-data-two-high-efficacy-ms-meds-pregnancy-2026a1000i10?src=rss",
-    "date": "Fri, 29 May 2026 13:27:11  EDT",
-    "date_iso": "2026-05-31",
     "card_type": "medscape"
   },
   {
@@ -528,26 +552,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/fda-approves-novel-targeted-therapy-rare-blood-cancer-2026a1000hre?src=rss",
     "date": "Thu, 28 May 2026 03:14:25  EDT",
-    "date_iso": "2026-05-28",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-fda-vancomycin-safety-alert-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Issues Vancomycin Safety Alert",
-    "summary": "The FDA has issued a safety alert regarding increased reports of severe nephrotoxicity with vancomycin, particularly when used in combination with other nephrotoxic agents. The alert emphasizes the importance of therapeutic drug monitoring and dose adjustments.",
-    "why_it_matters": "This safety alert requires immediate attention from hospitalists who frequently prescribe vancomycin, necessitating enhanced monitoring protocols and careful consideration of alternative antibiotics in high-risk patients.",
-    "tags": [
-      "vancomycin",
-      "nephrotoxicity",
-      "antibiotic safety",
-      "FDA alert"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/chronic-pain-how-wean-opioids-arthritis-patients-2026a1000hfq?src=rss",
-    "date": "Wed, 27 May 2026 13:09:50  EDT",
     "date_iso": "2026-05-28",
     "card_type": "medscape"
   },
