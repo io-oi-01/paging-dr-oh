@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Pneumothorax",
     "Atrial Fibrillation",
     "Heparin-Induced Thrombocytopenia",
     "Hemophagocytic Lymphohistiocytosis",
@@ -89,7 +88,8 @@
     "Hypercalcemia",
     "Hepatorenal Syndrome",
     "Heparin-Induced Thrombocytopenia",
-    "Tumor Lysis Syndrome"
+    "Tumor Lysis Syndrome",
+    "Malignant Spinal Cord Compression"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -221,7 +221,8 @@
     "dcct-1993",
     "promise-2015",
     "inbuild-2019",
-    "sustain6-2016"
+    "sustain6-2016",
+    "figaro-dkd-2021"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -659,9 +660,13 @@
     "thrombectomy-medium-vessel-occlusion-stroke-2026",
     "ensitrelvir-covid-prophylaxis-household-contacts-2026",
     "glucocorticoids-checkpoint-inhibitors-survival-outcomes-2026",
-    "tirzepatide-metformin-refractory-diabetes-outcomes-2026"
+    "tirzepatide-metformin-refractory-diabetes-outcomes-2026",
+    "procalcitonin-neonatal-sepsis-antibiotic-2026",
+    "intra-arterial-alteplase-thrombectomy-outcomes-2026",
+    "thrombectomy-medium-vessel-stroke-outcomes-2026",
+    "ensitrelvir-covid-prophylaxis-contacts-2026"
   ],
-  "last_run": "2026-06-02",
+  "last_run": "2026-06-03",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -755,13 +760,10 @@
     "Erythroderma",
     "Squamous Cell Carcinoma",
     "Nevi: Depigmentosus",
-    "Acute Febrile Neutrophilic Dermatosis"
+    "Acute Febrile Neutrophilic Dermatosis",
+    "Palmoplantar Keratoderma"
   ],
   "litfl_cases_shown": [
-    "cxr-035",
-    "ct-065",
-    "clinical-broken-open",
-    "ecg-092",
     "cxr-081",
     "ct-092",
     "clinical-alprazoslammed",
@@ -957,6 +959,10 @@
     "ecg-124",
     "cxr-017",
     "ct-055",
-    "clinical-from-the-hip"
+    "clinical-from-the-hip",
+    "ecg-063",
+    "cxr-042",
+    "ct-009",
+    "clinical-clinical-cases/ruling-the-resus-room"
   ]
 }
