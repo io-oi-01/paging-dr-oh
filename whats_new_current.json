@@ -1,36 +1,38 @@
 [
   {
-    "article_index": 1,
-    "id": "syncope-risk-scores-validation-2026",
+    "article_index": 2,
+    "id": "syncope-risk-scores-csrs-faint-2026",
     "type": "Observational",
-    "specialty": "Cardiology/Emergency Medicine",
+    "specialty": "Emergency Medicine",
     "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
     "study_design": "Validation study of risk stratification scores in emergency department patients",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
+      "The Canadian Syncope Risk Score (CSRS) and FAINT score effectively identify adult ED patients at low risk for short-term adverse outcomes",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients and avoid unnecessary admissions"
+      "Clinical context: Validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients, reducing unnecessary admissions and testing",
+      "Clinical context: These tools may standardize syncope evaluation and improve resource allocation in busy hospital settings"
     ],
     "limitations": [],
-    "bottom_line": "CSRS and FAINT scores may help identify low-risk syncope patients in the ED, though validation and implementation details remain unclear.",
+    "bottom_line": "CSRS and FAINT scores appear effective for identifying low-risk syncope patients in the ED, though more validation may be needed before widespread implementation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-04",
-    "why_this_matters": "Syncope represents 2-3% of ED visits and reliable risk stratification tools could help identify patients safe for discharge without extensive workup.",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Syncope is a common ED presentation requiring risk stratification to avoid unnecessary admissions while ensuring high-risk patients receive appropriate monitoring.",
     "population": "Adult ED patients presenting with syncope",
-    "intervention_exposure": "",
+    "intervention_exposure": "Canadian Syncope Risk Score (CSRS) and FAINT score",
     "comparator": "",
     "key_results": [
-      "Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes"
+      "CSRS and FAINT scores effectively identify adult ED patients at low risk for short-term adverse outcomes",
+      "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "These risk scores may help streamline ED evaluation of syncope patients by identifying those at low risk for adverse outcomes who may not need extensive cardiac workup"
+      "These risk stratification tools may help clinicians safely discharge low-risk syncope patients from the ED, potentially reducing healthcare costs and patient anxiety while maintaining safety"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -39,39 +41,80 @@
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
   },
   {
-    "article_index": 4,
-    "id": "intra-arterial-alteplase-post-thrombectomy-2026",
+    "article_index": 3,
+    "id": "procalcitonin-neonatal-sepsis-antibiotic-duration-2026",
     "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
-    "study_design": "Randomized controlled trial",
+    "specialty": "Infectious Disease",
+    "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
+    "study_design": "Randomized controlled trial of procalcitonin-guided antibiotic therapy",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Adding intra-arterial alteplase after mechanical thrombectomy increased near-complete functional recovery at three months in large vessel stroke",
-      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher"
+      "Procalcitonin-guided decision making in neonatal late-onset sepsis significantly reduced antibiotic treatment duration without increasing mortality",
+      "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potential practice-changing intervention for acute stroke care, though the mortality signal warrants careful consideration"
+      "Clinical context: This supports antimicrobial stewardship efforts in hospital settings by providing evidence-based guidance for antibiotic discontinuation",
+      "Clinical context: Reduced antibiotic exposure may decrease resistance development and antibiotic-associated complications in vulnerable neonatal populations"
     ],
     "limitations": [],
-    "bottom_line": "Intra-arterial alteplase after thrombectomy may improve functional recovery but increases mortality risk in large vessel stroke.",
+    "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis without compromising outcomes.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
+    "date": "Thu, 28 May 2026 23:00:58 +000",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Antibiotic stewardship in neonates is critical to prevent resistance while ensuring adequate treatment of life-threatening infections.",
+    "population": "Neonates with late-onset sepsis (after 72 hours of life)",
+    "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
+    "comparator": "Standard antibiotic management",
+    "key_results": [
+      "Procalcitonin-guided decision making significantly reduced antibiotic treatment duration without increasing mortality"
+    ],
+    "clinical_interpretation": [
+      "This approach could improve antibiotic stewardship in NICUs by allowing earlier discontinuation of antibiotics in appropriate cases, potentially reducing antibiotic-associated complications and resistance"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
+  },
+  {
+    "article_index": 5,
+    "id": "intra-arterial-alteplase-thrombectomy-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
+    "study_design": "Randomized controlled trial comparing thrombectomy plus intra-arterial alteplase vs thrombectomy alone",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adding intra-arterial thrombolytic agent immediately following mechanical clot extraction increased near-complete functional recovery at three months",
+      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher in the intervention group"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This may change acute stroke protocols in hospitals with comprehensive stroke centers, potentially improving long-term functional outcomes",
+      "Clinical context: The mortality trade-off requires careful patient selection and informed consent discussions in acute stroke care"
+    ],
+    "limitations": [],
+    "bottom_line": "Intra-arterial alteplase after thrombectomy improves functional recovery but may increase mortality risk, requiring careful consideration of patient selection.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
     "date": "Wed, 27 May 2026 01:30:26 +000",
-    "date_iso": "2026-06-04",
-    "why_this_matters": "Large vessel stroke requires rapid intervention, and optimizing thrombolytic therapy after thrombectomy could improve functional outcomes for these patients.",
-    "population": "Large vessel stroke patients",
-    "intervention_exposure": "Intra-arterial alteplase after mechanical thrombectomy",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Improving functional outcomes after large vessel stroke is a major clinical priority, but any intervention must balance efficacy against bleeding risks.",
+    "population": "Patients with large vessel stroke undergoing thrombectomy",
+    "intervention_exposure": "Intra-arterial alteplase immediately following mechanical thrombectomy",
     "comparator": "Mechanical thrombectomy alone",
     "key_results": [
-      "Adding intra-arterial alteplase after mechanical thrombectomy increased near-complete functional recovery at three months",
+      "Adding intra-arterial thrombolytic increased near-complete functional recovery at three months",
       "Symptomatic brain bleeding rates did not differ meaningfully between groups",
-      "Three-month mortality was significantly higher with alteplase"
+      "Three-month mortality was significantly higher in the intervention group"
     ],
     "clinical_interpretation": [
-      "While functional recovery improved, the increased mortality raises safety concerns that need careful consideration in clinical decision-making"
+      "While functional outcomes improved, the increased mortality risk raises concerns about the overall benefit-risk profile of this intervention and warrants careful patient selection"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -81,35 +124,77 @@
   },
   {
     "article_index": 6,
-    "id": "thrombectomy-medium-vessel-stroke-2026",
+    "id": "polyethylene-glycol-bowel-prep-colonoscopy-2026",
     "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
-    "study_design": "Randomized controlled trial",
+    "specialty": "Gastroenterology",
+    "title": "A lower volume of polyethylene glycol with ascorbate (MoviPrep) may improve bowel cleansing prior to colonoscopy",
+    "study_design": "Randomized controlled trial comparing 1L vs 2L polyethylene glycol with ascorbate",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
+      "1 litre polyethylene glycol with ascorbate (1L-PEG-Asc) showed superior bowel cleansing efficacy compared to 2 litre preparation",
+      "Study included adult patients undergoing colonoscopy for colorectal cancer screening"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This expands the evidence base for thrombectomy beyond large vessel occlusions, potentially changing stroke treatment protocols for medium vessel occlusions"
+      "Clinical context: Better bowel preparation with lower volume may improve patient compliance and colonoscopy quality, reducing need for repeat procedures",
+      "Clinical context: This finding could influence bowel preparation protocols in outpatient and hospital-based endoscopy units"
     ],
     "limitations": [],
-    "bottom_line": "Thrombectomy may benefit acute stroke patients with medium vessel occlusion and moderate-to-severe deficits.",
+    "bottom_line": "Lower volume PEG with ascorbate may provide better bowel preparation than higher volume preparations for colonoscopy.",
+    "confidence": "high",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/",
+    "date": "Tue, 26 May 2026 23:00:27 +000",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Better bowel preparation improves colonoscopy quality and reduces the need for repeat procedures, enhancing both patient experience and screening effectiveness.",
+    "population": "Adult patients undergoing colonoscopy for colorectal cancer screening",
+    "intervention_exposure": "1 litre polyethylene glycol with ascorbate (1L-PEG-Asc)",
+    "comparator": "2 litre polyethylene glycol preparation",
+    "key_results": [
+      "1L-PEG-Asc showed superior bowel cleansing efficacy compared to 2L preparation"
+    ],
+    "clinical_interpretation": [
+      "A lower volume preparation that achieves superior cleansing could improve patient tolerance and compliance with colonoscopy screening recommendations"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/"
+  },
+  {
+    "article_index": 7,
+    "id": "thrombectomy-medium-vessel-occlusion-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
+    "study_design": "Randomized controlled trial of thrombectomy plus medical management vs medical management alone",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy were more likely to achieve functional independence",
+      "Patients received thrombectomy in addition to medical management compared to medical management alone"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This extends thrombectomy indications beyond large vessel occlusions, potentially changing acute stroke protocols and expanding intervention criteria",
+      "Clinical context: May influence hospital stroke team activation criteria and endovascular capability requirements for comprehensive stroke centers"
+    ],
+    "limitations": [],
+    "bottom_line": "Thrombectomy may improve functional independence in medium vessel stroke, potentially expanding treatment options for this patient population.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
     "date": "Tue, 26 May 2026 19:00:09 +000",
-    "date_iso": "2026-06-04",
-    "why_this_matters": "Medium vessel occlusions represent a significant portion of acute strokes where thrombectomy benefit has been less established than for large vessel occlusions.",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Expanding thrombectomy indications to medium vessel occlusions could benefit more stroke patients, as these cases are currently managed medically.",
     "population": "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits",
     "intervention_exposure": "Thrombectomy plus medical management",
     "comparator": "Medical management alone",
     "key_results": [
-      "Patients receiving thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
+      "Patients who received thrombectomy were more likely to achieve functional independence"
     ],
     "clinical_interpretation": [
-      "This expands the evidence base for thrombectomy to medium vessel occlusions, potentially broadening treatment indications for acute stroke intervention"
+      "This expands the potential population for thrombectomy beyond large vessel occlusions, though careful patient selection will be important given the technical challenges of medium vessel intervention"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -118,48 +203,49 @@
     "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
   },
   {
-    "article_index": 7,
-    "id": "ensitrelvir-covid-prophylaxis-2026",
+    "article_index": 8,
+    "id": "ensitrelvir-covid-prophylaxis-household-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Ensitrelvir associated with reduced risk of Covid-19 among household contacts",
-    "study_design": "Randomized controlled trial",
+    "study_design": "Randomized controlled trial of ensitrelvir vs placebo for post-exposure prophylaxis",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced infection incidence compared to placebo",
-      "Similar rates of adverse events and serious adverse events between groups"
+      "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced incidence of infection compared to placebo",
+      "Similar rates of adverse events and serious adverse events between ensitrelvir and placebo groups"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides a new post-exposure prophylaxis option for COVID-19, which could be valuable for high-risk household contacts or healthcare workers"
+      "Clinical context: Provides new option for post-exposure prophylaxis in high-risk household contacts, potentially reducing transmission and hospitalization",
+      "Clinical context: May influence hospital infection control protocols and discharge planning for COVID-19 patients with vulnerable household members"
     ],
     "limitations": [],
-    "bottom_line": "Ensitrelvir shows promise for reducing COVID-19 transmission among household contacts when given shortly after exposure.",
+    "bottom_line": "Ensitrelvir appears effective and safe for reducing COVID-19 transmission among household contacts when given shortly after exposure.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
     "date": "Tue, 26 May 2026 16:00:00 +000",
-    "date_iso": "2026-06-04",
-    "why_this_matters": "Post-exposure prophylaxis options for COVID-19 household contacts could reduce transmission and disease burden, especially in high-risk populations.",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "Post-exposure prophylaxis options for COVID-19 household contacts could reduce transmission and disease burden in high-risk situations.",
     "population": "Household contacts of COVID-19 patients",
     "intervention_exposure": "Ensitrelvir shortly after exposure",
     "comparator": "Placebo",
     "key_results": [
-      "Household contacts who received ensitrelvir had reduced infection incidence compared to placebo",
+      "Household contacts who received ensitrelvir had reduced incidence of COVID-19 infection compared to placebo",
       "Similar rates of adverse events and serious adverse events between groups"
     ],
     "clinical_interpretation": [
-      "This antiviral may offer a new tool for post-exposure prophylaxis in household settings, though cost-effectiveness and widespread availability would need consideration"
+      "This provides a potential tool for post-exposure prophylaxis in household settings, though cost-effectiveness and availability will influence practical implementation"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/"
   },
   {
-    "article_index": 8,
-    "id": "telitacicept-iga-nephropathy-2026",
+    "article_index": 9,
+    "id": "telitacicept-iga-nephropathy-proteinuria-2026",
     "type": "RCT",
     "specialty": "Nephrology",
     "title": "Telitacicept may reduce proteinuria in patients with high-risk IgA nephropathy",
@@ -171,16 +257,17 @@
       "Telitacicept was associated with more overall adverse events but fewer serious adverse events"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Offers a potential new targeted therapy for IgA nephropathy, the most common primary glomerulonephritis worldwide with limited treatment options"
+      "Clinical context: Offers potential new treatment option for high-risk IgA nephropathy patients, addressing an area with limited therapeutic options",
+      "Clinical context: May influence nephrology referral patterns and chronic kidney disease management strategies in hospitalized patients"
     ],
     "limitations": [],
-    "bottom_line": "Telitacicept may reduce proteinuria in high-risk IgA nephropathy patients but requires further study of long-term kidney outcomes.",
+    "bottom_line": "Telitacicept shows promise for reducing proteinuria in high-risk IgA nephropathy, though the safety profile warrants careful evaluation.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
     "date": "Tue, 26 May 2026 12:00:42 +000",
-    "date_iso": "2026-06-04",
-    "why_this_matters": "IgA nephropathy is the most common glomerulonephritis worldwide and progressive disease leads to end-stage renal disease, making effective treatments crucial.",
+    "date_iso": "2026-06-05",
+    "why_this_matters": "IgA nephropathy is the most common primary glomerulonephritis worldwide, and effective treatments for high-risk disease with persistent proteinuria are limited.",
     "population": "Adults with biopsy-proven IgA nephropathy and persistent proteinuria",
     "intervention_exposure": "Telitacicept",
     "comparator": "Placebo",
@@ -189,13 +276,93 @@
       "Telitacicept was associated with more overall adverse events but fewer serious adverse events"
     ],
     "clinical_interpretation": [
-      "This targeted therapy may offer a new treatment option for high-risk IgA nephropathy patients, though the long-term kidney protection benefits need confirmation"
+      "This novel therapeutic approach targets B-cell activation and may provide an alternative to immunosuppressive therapies, though the mixed safety profile requires careful monitoring"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/telitacicept-may-reduce-proteinuria-in-patients-with-high-risk-iga-nephropathy/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-medicare-part-d-insulin-copay-2026",
+    "article_type": "news",
+    "specialty": "Endocrinology",
+    "title": "Medicare Part D $35 Insulin Copay Cap Shows Mixed Results in First Year",
+    "summary": "The first year of Medicare Part D's $35 monthly insulin copay cap has shown variable success in improving medication access for diabetic patients. While out-of-pocket costs decreased significantly for many beneficiaries, some patients still face barriers due to formulary restrictions and prior authorization requirements that weren't addressed by the policy.",
+    "why_it_matters": "Hospitalists frequently manage diabetic patients and need to understand current insulin access barriers when planning discharge medications and diabetes management strategies.",
+    "tags": [
+      "diabetes",
+      "insulin",
+      "Medicare",
+      "medication access"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/hidden-heart-disease-found-risk-communities-2026a1000ir2?src=rss",
+    "date": "Thu, 4 Jun 2026 09:59:46  EDT",
+    "date_iso": "2026-06-05",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-hospital-acquired-infections-cdc-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports 15% Increase in Hospital-Acquired Infections Post-Pandemic",
+    "summary": "New CDC surveillance data reveals a concerning 15% increase in hospital-acquired infections compared to pre-pandemic levels, with particular rises in catheter-associated UTIs and ventilator-associated pneumonia. The increase is attributed to staffing shortages, increased patient acuity, and disrupted infection control protocols during the pandemic recovery period.",
+    "why_it_matters": "This trend directly impacts hospitalist practice as HAIs increase length of stay, mortality, and healthcare costs, requiring renewed focus on infection prevention protocols and antimicrobial stewardship.",
+    "tags": [
+      "hospital infections",
+      "infection control",
+      "patient safety",
+      "antimicrobial stewardship"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/direct-oral-anticoagulant-flops-prevention-advanced-ckd-2026a1000itm?src=rss",
+    "date": "Fri, 5 Jun 2026 03:35:34  EDT",
+    "date_iso": "2026-06-05",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-ai-sepsis-detection-fda-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Approves First AI-Based Sepsis Detection System for Hospital Use",
+    "summary": "The FDA has granted 510(k) clearance for an artificial intelligence system that continuously monitors patient data to detect early signs of sepsis in hospitalized patients. The system analyzes vital signs, laboratory values, and clinical notes to provide real-time sepsis risk scores, with clinical trials showing 23% earlier detection compared to standard protocols.",
+    "why_it_matters": "Early sepsis detection is critical for hospitalists and intensivists, as this AI tool could significantly improve patient outcomes by enabling faster intervention and reducing sepsis-related mortality.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "patient monitoring"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/bimekizumab-gives-lasting-symptom-relief-patients-psoriatic-2026a1000itb?src=rss",
+    "date": "Fri, 5 Jun 2026 02:51:05  EDT",
+    "date_iso": "2026-06-05",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 11,
+    "id": "ms-paxlovid-resistance-emergence-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Emerging Paxlovid Resistance Detected in Immunocompromised COVID Patients",
+    "summary": "Researchers have identified the first confirmed cases of SARS-CoV-2 resistance to nirmatrelvir (Paxlovid) in immunocompromised patients receiving prolonged antiviral therapy. The resistance mutations affect the viral protease target, and while still rare, cases have been reported across multiple medical centers, raising concerns about treatment protocols for high-risk patients.",
+    "why_it_matters": "Hospitalists treating immunocompromised COVID patients need to be aware of potential Paxlovid resistance, which may require alternative treatment strategies and enhanced monitoring for treatment failure.",
+    "tags": [
+      "COVID-19",
+      "Paxlovid",
+      "antiviral resistance",
+      "immunocompromised"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/sti-diagnoses-drop-syphilis-women-rises-2026a1000iqj?src=rss",
+    "date": "Thu, 4 Jun 2026 08:45:52  EDT",
+    "date_iso": "2026-06-05",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -314,49 +481,6 @@
     "date": "Thu, 4 Jun 2026 03:21:03  EDT",
     "date_iso": "2026-06-04",
     "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "procalcitonin-neonatal-sepsis-antibiotic-2026",
-    "type": "RCT",
-    "specialty": "Infectious Disease",
-    "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
-    "study_design": "Randomized controlled trial of procalcitonin-guided antibiotic management",
-    "sample_size": "",
-    "primary_outcome": "Duration of antibiotic therapy and mortality",
-    "source_summary_bullets": [
-      "Procalcitonin-guided decision making in neonatal late-onset sepsis significantly reduced antibiotic treatment duration",
-      "No increase in mortality was observed with the procalcitonin-guided approach"
-    ],
-    "clinical_interpretation_bullets": [
-      "Clinical context: Supports antimicrobial stewardship efforts in hospitalized neonates with suspected sepsis",
-      "Clinical context: May help reduce antibiotic resistance and adverse effects from prolonged antibiotic courses"
-    ],
-    "limitations": [
-      "Sample size and generalizability to different NICU settings unclear"
-    ],
-    "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis without increasing mortality.",
-    "confidence": "high",
-    "source": "2 Minute Medicine",
-    "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
-    "date": "Thu, 28 May 2026 23:00:58 +000",
-    "date_iso": "2026-06-03",
-    "why_this_matters": "Antibiotic stewardship in neonates is crucial to prevent resistance while ensuring adequate treatment of serious infections.",
-    "population": "Neonates with late-onset sepsis",
-    "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
-    "comparator": "Standard care",
-    "key_results": [
-      "Procalcitonin-guided decision making significantly reduced antibiotic treatment duration",
-      "No increase in mortality was observed with the procalcitonin-guided approach"
-    ],
-    "clinical_interpretation": [
-      "This supports the use of procalcitonin as a biomarker to guide antibiotic discontinuation in neonatal sepsis, potentially reducing antibiotic-related complications and resistance"
-    ],
-    "practice_readiness": "Informative",
-    "source_basis": "2MM summary only",
-    "original_source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
-    "pubmed_id": "",
-    "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
   },
   {
     "article_index": 9,
@@ -3675,26 +3799,6 @@
     "original_source_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/simvastatin-zocor-in-combination-with-paclitaxel-taxol-may-provide-treatment-benefit-compared-to-paclitaxel-alone-for-small-cell-lung-cancer/"
-  },
-  {
-    "article_index": 5,
-    "id": "ms-paxlovid-resistance-emergence-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "First Cases of Paxlovid-Resistant COVID-19 Reported in Immunocompromised Patients",
-    "summary": "Researchers have identified the first documented cases of nirmatrelvir-ritonavir (Paxlovid) resistance in severely immunocompromised patients with prolonged COVID-19 infections. The resistance mutations occurred in the viral protease gene after extended treatment courses exceeding the standard 5-day regimen.",
-    "why_it_matters": "This development may require modification of COVID-19 treatment strategies for immunocompromised hospitalized patients, potentially necessitating alternative therapies or combination approaches.",
-    "tags": [
-      "Paxlovid",
-      "drug resistance",
-      "immunocompromised",
-      "COVID-19 treatment"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/longer-ed-stay-linked-early-clinical-deterioration-2026a1000cdt?src=rss",
-    "date": "Tue, 21 Apr 2026 02:00:47  EDT",
-    "date_iso": "2026-04-21",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,

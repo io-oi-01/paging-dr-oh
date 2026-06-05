@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Heparin-Induced Thrombocytopenia",
     "Hemophagocytic Lymphohistiocytosis",
     "Diabetic Ketoacidosis",
     "Iron Deficiency Anemia",
@@ -89,7 +88,8 @@
     "Heparin-Induced Thrombocytopenia",
     "Tumor Lysis Syndrome",
     "Malignant Spinal Cord Compression",
-    "Pericarditis and Pericardial Effusion"
+    "Pericarditis and Pericardial Effusion",
+    "Cardiac Tamponade"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -223,7 +223,8 @@
     "inbuild-2019",
     "sustain6-2016",
     "figaro-dkd-2021",
-    "step1-2021"
+    "step1-2021",
+    "nice-sugar-2009"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -665,9 +666,15 @@
     "procalcitonin-neonatal-sepsis-antibiotic-2026",
     "intra-arterial-alteplase-thrombectomy-outcomes-2026",
     "thrombectomy-medium-vessel-stroke-outcomes-2026",
-    "ensitrelvir-covid-prophylaxis-contacts-2026"
+    "ensitrelvir-covid-prophylaxis-contacts-2026",
+    "syncope-risk-scores-csrs-faint-2026",
+    "procalcitonin-neonatal-sepsis-antibiotic-duration-2026",
+    "polyethylene-glycol-bowel-prep-colonoscopy-2026",
+    "ms-medicare-part-d-insulin-copay-2026",
+    "ms-hospital-acquired-infections-cdc-2026",
+    "ms-ai-sepsis-detection-fda-2026"
   ],
-  "last_run": "2026-06-04",
+  "last_run": "2026-06-05",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -763,13 +770,10 @@
     "Nevi: Depigmentosus",
     "Acute Febrile Neutrophilic Dermatosis",
     "Palmoplantar Keratoderma",
-    "Pigmented Purpuric Dermatosis"
+    "Pigmented Purpuric Dermatosis",
+    "Nails: Psoriatic"
   ],
   "litfl_cases_shown": [
-    "cxr-056",
-    "ct-016",
-    "clinical-total-tb-extravaganza",
-    "ecg-093",
     "cxr-031",
     "ct-042",
     "clinical-flashing-and-floating",
@@ -965,6 +969,10 @@
     "ecg-040",
     "cxr-030",
     "ct-004",
-    "clinical-stiff-in-the-mouth"
+    "clinical-stiff-in-the-mouth",
+    "ecg-062",
+    "cxr-071",
+    "ct-076",
+    "clinical-ammon-anyone"
   ]
 }
