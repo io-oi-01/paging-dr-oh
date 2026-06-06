@@ -1,52 +1,52 @@
 [
   {
-    "article_index": 2,
-    "id": "syncope-risk-scores-csrs-faint-2026",
-    "type": "Observational",
+    "article_index": 3,
+    "id": "syncope-risk-scores-csrs-faint-validation-2026",
+    "type": "Review",
     "specialty": "Emergency Medicine",
     "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
-    "study_design": "Validation study of risk stratification scores in emergency department patients",
+    "study_design": "Validation study of risk stratification scores",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score effectively identify adult ED patients at low risk for short-term adverse outcomes",
+      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients, reducing unnecessary admissions and testing",
-      "Clinical context: These tools may standardize syncope evaluation and improve resource allocation in busy hospital settings"
+      "Clinical context: Validated risk scores can help hospitalists safely discharge low-risk syncope patients and avoid unnecessary admissions",
+      "Clinical context: These tools may reduce healthcare costs and ED overcrowding while maintaining patient safety"
     ],
     "limitations": [],
-    "bottom_line": "CSRS and FAINT scores appear effective for identifying low-risk syncope patients in the ED, though more validation may be needed before widespread implementation.",
+    "bottom_line": "Two validated risk scores may help emergency physicians identify low-risk syncope patients suitable for discharge.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Syncope is a common ED presentation requiring risk stratification to avoid unnecessary admissions while ensuring high-risk patients receive appropriate monitoring.",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Risk stratification tools for syncope can help emergency physicians safely discharge low-risk patients while identifying those requiring admission and workup.",
     "population": "Adult ED patients presenting with syncope",
     "intervention_exposure": "Canadian Syncope Risk Score (CSRS) and FAINT score",
     "comparator": "",
     "key_results": [
-      "CSRS and FAINT scores effectively identify adult ED patients at low risk for short-term adverse outcomes",
+      "CSRS and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "These risk stratification tools may help clinicians safely discharge low-risk syncope patients from the ED, potentially reducing healthcare costs and patient anxiety while maintaining safety"
+      "These validated risk scores may help standardize syncope evaluation and support clinical decision-making regarding discharge versus admission"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
   },
   {
-    "article_index": 3,
+    "article_index": 4,
     "id": "procalcitonin-neonatal-sepsis-antibiotic-duration-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
-    "study_design": "Randomized controlled trial of procalcitonin-guided antibiotic therapy",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -54,25 +54,25 @@
       "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports antimicrobial stewardship efforts in hospital settings by providing evidence-based guidance for antibiotic discontinuation",
-      "Clinical context: Reduced antibiotic exposure may decrease resistance development and antibiotic-associated complications in vulnerable neonatal populations"
+      "Clinical context: Procalcitonin guidance can support antibiotic stewardship efforts in hospitalized neonates",
+      "Clinical context: This approach may reduce antibiotic-related adverse effects and resistance development"
     ],
     "limitations": [],
-    "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis without compromising outcomes.",
+    "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis without increasing mortality.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "date": "Thu, 28 May 2026 23:00:58 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Antibiotic stewardship in neonates is critical to prevent resistance while ensuring adequate treatment of life-threatening infections.",
-    "population": "Neonates with late-onset sepsis (after 72 hours of life)",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Procalcitonin guidance could reduce antibiotic overuse in neonatal sepsis while maintaining safety, addressing antimicrobial stewardship concerns in the NICU.",
+    "population": "Neonates with late-onset sepsis (occurring after 72 hours of life)",
     "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
-    "comparator": "Standard antibiotic management",
+    "comparator": "",
     "key_results": [
       "Procalcitonin-guided decision making significantly reduced antibiotic treatment duration without increasing mortality"
     ],
     "clinical_interpretation": [
-      "This approach could improve antibiotic stewardship in NICUs by allowing earlier discontinuation of antibiotics in appropriate cases, potentially reducing antibiotic-associated complications and resistance"
+      "This biomarker-guided approach may safely optimize antibiotic duration in vulnerable neonates, though implementation requires established protocols and lab capabilities"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -82,79 +82,120 @@
   },
   {
     "article_index": 5,
-    "id": "intra-arterial-alteplase-thrombectomy-stroke-2026",
+    "id": "gaba-modulator-depression-h3-10353-2026",
     "type": "RCT",
-    "specialty": "Neurology",
-    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
-    "study_design": "Randomized controlled trial comparing thrombectomy plus intra-arterial alteplase vs thrombectomy alone",
+    "specialty": "Psychiatry",
+    "title": "A novel therapy targeting γ-aminobutyric acid is safe and may be effective in major depressive disorder",
+    "study_design": "Phase 1 clinical trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Adding intra-arterial thrombolytic agent immediately following mechanical clot extraction increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher in the intervention group"
+      "H3-10353, a novel GABA positive allosteric modulator, is safe and well-tolerated in healthy patients and those with major depressive disorder",
+      "The drug demonstrated some therapeutic benefits in this phase 1 trial"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This may change acute stroke protocols in hospitals with comprehensive stroke centers, potentially improving long-term functional outcomes",
-      "Clinical context: The mortality trade-off requires careful patient selection and informed consent discussions in acute stroke care"
+      "Clinical context: Novel mechanism offers potential alternative for treatment-resistant depression patients",
+      "Clinical context: Early-phase data suggests a new pathway for antidepressant development beyond traditional monoamine targets"
     ],
     "limitations": [],
-    "bottom_line": "Intra-arterial alteplase after thrombectomy improves functional recovery but may increase mortality risk, requiring careful consideration of patient selection.",
+    "bottom_line": "A novel GABA-targeting drug shows early safety signals and potential efficacy in depression, but remains in early development.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/",
+    "date": "Wed, 27 May 2026 23:00:40 +000",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Novel GABA-targeting therapies represent a potential new mechanism for treating major depression, which affects millions and often responds inadequately to current treatments.",
+    "population": "Healthy patients and those with major depressive disorder",
+    "intervention_exposure": "H3-10353 (GABA positive allosteric modulator)",
+    "comparator": "",
+    "key_results": [
+      "H3-10353 is safe and well-tolerated",
+      "The drug demonstrated some therapeutic benefits in this phase 1 trial"
+    ],
+    "clinical_interpretation": [
+      "This is very early-phase research; while promising for safety, efficacy data is preliminary and clinical application is years away"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/"
+  },
+  {
+    "article_index": 6,
+    "id": "intra-arterial-alteplase-post-thrombectomy-stroke-2026",
+    "type": "RCT",
+    "specialty": "Neurology",
+    "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
+    "study_design": "Randomized controlled trial",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Adding intra-arterial thrombolytic agent immediately after mechanical clot extraction increased near-complete functional recovery at three months",
+      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This technique may improve stroke outcomes but requires careful patient selection given increased mortality risk",
+      "Clinical context: Hospital stroke teams should consider this approach for appropriate candidates with large vessel occlusions"
+    ],
+    "limitations": [],
+    "bottom_line": "Adding intra-arterial alteplase after thrombectomy improves functional recovery but increases mortality risk in large vessel stroke.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
     "date": "Wed, 27 May 2026 01:30:26 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Improving functional outcomes after large vessel stroke is a major clinical priority, but any intervention must balance efficacy against bleeding risks.",
-    "population": "Patients with large vessel stroke undergoing thrombectomy",
-    "intervention_exposure": "Intra-arterial alteplase immediately following mechanical thrombectomy",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Adding intra-arterial thrombolytics after mechanical thrombectomy could improve stroke outcomes, though the mortality trade-off requires careful consideration.",
+    "population": "Patients with large vessel stroke",
+    "intervention_exposure": "Intra-arterial alteplase immediately after mechanical thrombectomy",
     "comparator": "Mechanical thrombectomy alone",
     "key_results": [
-      "Adding intra-arterial thrombolytic increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates did not differ meaningfully between groups",
-      "Three-month mortality was significantly higher in the intervention group"
+      "Increased near-complete functional recovery at three months",
+      "No meaningful difference in symptomatic brain bleeding rates",
+      "Three-month mortality was significantly higher"
     ],
     "clinical_interpretation": [
-      "While functional outcomes improved, the increased mortality risk raises concerns about the overall benefit-risk profile of this intervention and warrants careful patient selection"
+      "The improved functional outcomes must be weighed against increased mortality risk; this approach requires careful patient selection and multidisciplinary discussion"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/"
   },
   {
-    "article_index": 6,
-    "id": "polyethylene-glycol-bowel-prep-colonoscopy-2026",
+    "article_index": 7,
+    "id": "polyethylene-glycol-bowel-prep-moviprep-2026",
     "type": "RCT",
     "specialty": "Gastroenterology",
     "title": "A lower volume of polyethylene glycol with ascorbate (MoviPrep) may improve bowel cleansing prior to colonoscopy",
-    "study_design": "Randomized controlled trial comparing 1L vs 2L polyethylene glycol with ascorbate",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "1 litre polyethylene glycol with ascorbate (1L-PEG-Asc) showed superior bowel cleansing efficacy compared to 2 litre preparation",
-      "Study included adult patients undergoing colonoscopy for colorectal cancer screening"
+      "1 litre polyethylene glycol with ascorbate showed superior bowel cleansing efficacy compared to 2 litre preparation",
+      "Study involved adult patients undergoing colonoscopy for colorectal cancer screening"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Better bowel preparation with lower volume may improve patient compliance and colonoscopy quality, reducing need for repeat procedures",
-      "Clinical context: This finding could influence bowel preparation protocols in outpatient and hospital-based endoscopy units"
+      "Clinical context: Lower volume preparations may improve patient compliance and comfort while maintaining or improving prep quality",
+      "Clinical context: Better bowel preparation leads to improved polyp detection rates and reduced need for repeat procedures"
     ],
     "limitations": [],
-    "bottom_line": "Lower volume PEG with ascorbate may provide better bowel preparation than higher volume preparations for colonoscopy.",
+    "bottom_line": "A lower volume bowel preparation may provide superior cleansing compared to standard higher volume preparations.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/",
     "date": "Tue, 26 May 2026 23:00:27 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Better bowel preparation improves colonoscopy quality and reduces the need for repeat procedures, enhancing both patient experience and screening effectiveness.",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Better bowel preparation could improve colonoscopy quality and detection rates while potentially improving patient tolerability through lower volume requirements.",
     "population": "Adult patients undergoing colonoscopy for colorectal cancer screening",
-    "intervention_exposure": "1 litre polyethylene glycol with ascorbate (1L-PEG-Asc)",
-    "comparator": "2 litre polyethylene glycol preparation",
+    "intervention_exposure": "1 litre polyethylene glycol with ascorbate (MoviPrep)",
+    "comparator": "2 litre preparation",
     "key_results": [
-      "1L-PEG-Asc showed superior bowel cleansing efficacy compared to 2L preparation"
+      "1 litre preparation showed superior bowel cleansing efficacy compared to 2 litre preparation"
     ],
     "clinical_interpretation": [
-      "A lower volume preparation that achieves superior cleansing could improve patient tolerance and compliance with colonoscopy screening recommendations"
+      "Lower volume preparations that maintain or improve efficacy could enhance patient compliance and satisfaction with colorectal cancer screening"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -163,85 +204,166 @@
     "twomm_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/"
   },
   {
-    "article_index": 7,
+    "article_index": 8,
     "id": "thrombectomy-medium-vessel-occlusion-stroke-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
-    "study_design": "Randomized controlled trial of thrombectomy plus medical management vs medical management alone",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy were more likely to achieve functional independence",
-      "Patients received thrombectomy in addition to medical management compared to medical management alone"
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence",
+      "Results showed improved outcomes compared to medical management alone"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This extends thrombectomy indications beyond large vessel occlusions, potentially changing acute stroke protocols and expanding intervention criteria",
-      "Clinical context: May influence hospital stroke team activation criteria and endovascular capability requirements for comprehensive stroke centers"
+      "Clinical context: Expands thrombectomy indications beyond large vessel occlusions to include medium vessels",
+      "Clinical context: May change stroke treatment protocols and require updated institutional guidelines for intervention criteria"
     ],
     "limitations": [],
-    "bottom_line": "Thrombectomy may improve functional independence in medium vessel stroke, potentially expanding treatment options for this patient population.",
+    "bottom_line": "Thrombectomy plus medical management improves functional independence in medium vessel stroke compared to medical therapy alone.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
     "date": "Tue, 26 May 2026 19:00:09 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Expanding thrombectomy indications to medium vessel occlusions could benefit more stroke patients, as these cases are currently managed medically.",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Expanding thrombectomy to medium vessel occlusions could benefit more stroke patients, as these represent a significant portion of acute ischemic strokes currently managed with medical therapy alone.",
     "population": "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits",
     "intervention_exposure": "Thrombectomy plus medical management",
     "comparator": "Medical management alone",
     "key_results": [
-      "Patients who received thrombectomy were more likely to achieve functional independence"
+      "Patients who received thrombectomy plus medical management were more likely to achieve functional independence",
+      "Improved outcomes compared to medical management alone"
     ],
     "clinical_interpretation": [
-      "This expands the potential population for thrombectomy beyond large vessel occlusions, though careful patient selection will be important given the technical challenges of medium vessel intervention"
+      "This expands the evidence base for thrombectomy beyond large vessel occlusions, though implementation requires technical expertise and appropriate patient selection"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
   },
   {
-    "article_index": 8,
-    "id": "ensitrelvir-covid-prophylaxis-household-2026",
+    "article_index": 9,
+    "id": "ensitrelvir-covid-prophylaxis-household-contacts-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Ensitrelvir associated with reduced risk of Covid-19 among household contacts",
-    "study_design": "Randomized controlled trial of ensitrelvir vs placebo for post-exposure prophylaxis",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
       "Household contacts of COVID-19 patients who received ensitrelvir shortly after exposure had reduced incidence of infection compared to placebo",
-      "Similar rates of adverse events and serious adverse events between ensitrelvir and placebo groups"
+      "Adverse events and serious adverse events were similar between ensitrelvir and placebo groups"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides new option for post-exposure prophylaxis in high-risk household contacts, potentially reducing transmission and hospitalization",
-      "Clinical context: May influence hospital infection control protocols and discharge planning for COVID-19 patients with vulnerable household members"
+      "Clinical context: Provides post-exposure prophylaxis option for high-risk household contacts of COVID-19 patients",
+      "Clinical context: May be particularly valuable for immunocompromised individuals or those at high risk for severe COVID-19"
     ],
     "limitations": [],
-    "bottom_line": "Ensitrelvir appears effective and safe for reducing COVID-19 transmission among household contacts when given shortly after exposure.",
+    "bottom_line": "Ensitrelvir reduces COVID-19 infection risk among household contacts with similar safety profile to placebo.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
     "date": "Tue, 26 May 2026 16:00:00 +000",
-    "date_iso": "2026-06-05",
-    "why_this_matters": "Post-exposure prophylaxis options for COVID-19 household contacts could reduce transmission and disease burden in high-risk situations.",
+    "date_iso": "2026-06-06",
+    "why_this_matters": "Post-exposure prophylaxis for COVID-19 household contacts could reduce transmission and infection burden, particularly important for high-risk individuals.",
     "population": "Household contacts of COVID-19 patients",
     "intervention_exposure": "Ensitrelvir shortly after exposure",
     "comparator": "Placebo",
     "key_results": [
-      "Household contacts who received ensitrelvir had reduced incidence of COVID-19 infection compared to placebo",
-      "Similar rates of adverse events and serious adverse events between groups"
+      "Reduced incidence of COVID-19 infection compared to placebo",
+      "Adverse events and serious adverse events were similar between ensitrelvir and placebo groups"
     ],
     "clinical_interpretation": [
-      "This provides a potential tool for post-exposure prophylaxis in household settings, though cost-effectiveness and availability will influence practical implementation"
+      "This antiviral shows promise for post-exposure prophylaxis with acceptable safety profile, though cost-effectiveness and real-world implementation considerations remain"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/ensitrelvir-associated-with-reduced-risk-of-covid-19-among-household-contacts/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-ozempic-shortage-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Critical Shortage Alert for Ozempic (Semaglutide)",
+    "summary": "The FDA has declared a critical shortage of Ozempic (semaglutide) injection due to manufacturing delays and unprecedented demand. The shortage is expected to last through Q2 2026, affecting both diabetes management and weight loss prescriptions. Healthcare providers are advised to prioritize patients with type 2 diabetes over off-label weight loss use.",
+    "why_it_matters": "Hospitalists will need alternative diabetes management strategies for admitted patients previously on semaglutide and should anticipate potential diabetic complications from treatment interruptions.",
+    "tags": [
+      "semaglutide",
+      "diabetes",
+      "drug shortage",
+      "GLP-1"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/do-corticosteroids-really-raise-gestational-diabetes-risk-2026a1000ix1?src=rss",
+    "date": "Fri, 5 Jun 2026 17:03:43  EDT",
+    "date_iso": "2026-06-06",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 4,
+    "id": "ms-vancomycin-nephrotoxicity-warning-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Strengthens Warning on Vancomycin Nephrotoxicity Risk",
+    "summary": "The FDA has updated vancomycin labeling to include stronger warnings about acute kidney injury, particularly when combined with other nephrotoxic agents. New recommendations emphasize more frequent renal function monitoring and dose adjustments based on updated pharmacokinetic data. The warning follows reports of increased nephrotoxicity in critically ill patients.",
+    "why_it_matters": "This directly impacts inpatient antibiotic prescribing practices, requiring more vigilant monitoring protocols and potentially influencing empiric therapy choices for serious infections.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "antibiotic safety",
+      "AKI"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/who-launches-518-million-plan-curb-africa-ebola-outbreak-2026a1000iwa?src=rss",
+    "date": "Fri, 5 Jun 2026 08:31:58  EDT",
+    "date_iso": "2026-06-06",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 7,
+    "id": "ms-mpox-outbreak-chicago-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "Mpox Outbreak Spreads in Chicago Healthcare Facilities",
+    "summary": "Chicago health officials report 23 confirmed mpox cases linked to three healthcare facilities, including hospital staff and patients. The outbreak appears related to inadequate isolation precautions and personal protective equipment protocols. CDC has deployed response teams to investigate transmission patterns and implement enhanced infection control measures.",
+    "why_it_matters": "Hospitalists must review and strengthen mpox isolation protocols, ensure proper PPE training, and maintain high suspicion for healthcare-associated transmission in institutional settings.",
+    "tags": [
+      "mpox",
+      "nosocomial infection",
+      "infection control",
+      "outbreak"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/us-domestic-treatment-centers-ready-ebola-even-kenya-plans-2026a1000iva?src=rss",
+    "date": "Fri, 5 Jun 2026 06:13:38  EDT",
+    "date_iso": "2026-06-06",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 9,
+    "id": "ms-heart-failure-guidelines-aha-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA/ACC Release Updated Heart Failure Management Guidelines",
+    "summary": "The American Heart Association and American College of Cardiology have released updated heart failure guidelines emphasizing earlier use of guideline-directed medical therapy and new recommendations for SGLT2 inhibitors in all heart failure patients regardless of diabetes status. The guidelines also include updated criteria for advanced therapies and palliative care integration.",
+    "why_it_matters": "These guidelines will change standard inpatient heart failure management protocols and discharge medication regimens, requiring updates to order sets and clinical pathways.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "GDMT"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/fuzuloparib-add-improves-metastatic-prostate-cancer-rpfs-2026a1000ite?src=rss",
+    "date": "Fri, 5 Jun 2026 05:13:07  EDT",
+    "date_iso": "2026-06-06",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -439,26 +561,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/fda-neurology-roundup-may-2026-2026a1000io0?src=rss",
     "date": "Thu, 4 Jun 2026 04:18:57  EDT",
-    "date_iso": "2026-06-04",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 6,
-    "id": "ms-mpox-outbreak-chicago-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "Mpox Outbreak Spreads in Chicago with New Transmission Patterns",
-    "summary": "Chicago public health officials report a growing mpox outbreak with 47 confirmed cases over the past month, showing transmission patterns different from the 2022 outbreak. The current outbreak includes more cases among heterosexual individuals and household contacts, prompting expanded testing and vaccination recommendations.",
-    "why_it_matters": "Hospitalists and emergency physicians need updated awareness of mpox presentation and transmission patterns for proper isolation precautions and case identification in acute care settings.",
-    "tags": [
-      "mpox",
-      "outbreak",
-      "infection control",
-      "public health"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/s/viewarticle/medline-draws-another-us-fda-warning-two-months-over-quality-2026a1000ilg?src=rss",
-    "date": "Wed, 3 Jun 2026 09:39:08  EDT",
     "date_iso": "2026-06-04",
     "card_type": "medscape"
   },
