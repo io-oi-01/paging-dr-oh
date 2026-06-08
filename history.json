@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Iron Deficiency Anemia",
     "Cirrhosis and Hepatic Encephalopathy",
     "Hyponatremia",
     "Acute Gout",
@@ -89,7 +88,8 @@
     "Pericarditis and Pericardial Effusion",
     "Cardiac Tamponade",
     "Clostridioides difficile Infection",
-    "Acute Kidney Injury"
+    "Acute Kidney Injury",
+    "Hyperkalemia"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -226,7 +226,8 @@
     "step1-2021",
     "nice-sugar-2009",
     "eolia-2018",
-    "triss-2014"
+    "triss-2014",
+    "fourier-2017"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -684,9 +685,15 @@
     "syncope-risk-stratification-csrs-faint-2026",
     "ms-cdc-hospital-infection-control-2026",
     "ms-ai-sepsis-detection-clearance-2026",
-    "ms-vancomycin-dosing-safety-2026"
+    "ms-vancomycin-dosing-safety-2026",
+    "guselkumab-psoriatic-arthritis-label-2026",
+    "procalcitonin-neonatal-sepsis-duration-2026",
+    "gaba-modulator-depression-phase1-2026",
+    "ms-ai-sepsis-detection-approval-2026",
+    "ms-vancomycin-dosing-update-2026",
+    "ms-hospital-infection-control-cdc-2026"
   ],
-  "last_run": "2026-06-07",
+  "last_run": "2026-06-08",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -785,13 +792,10 @@
     "Pigmented Purpuric Dermatosis",
     "Nails: Psoriatic",
     "Urticaria",
-    "Folliculitis"
+    "Folliculitis",
+    "Keratosis Follicularis"
   ],
   "litfl_cases_shown": [
-    "cxr-060",
-    "ct-022",
-    "clinical-pneumonia-gone-bad",
-    "ecg-006",
     "cxr-015",
     "ct-088",
     "clinical-dealing-with-d-dimer-debacles",
@@ -987,6 +991,10 @@
     "ecg-074",
     "cxr-069",
     "ct-068",
-    "clinical-fever-in-a-spinal-patient"
+    "clinical-fever-in-a-spinal-patient",
+    "ecg-107",
+    "cxr-065",
+    "ct-001",
+    "clinical-a-mortal-battle-with-four-hour-medicine-ii"
   ]
 }

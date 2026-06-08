@@ -1,52 +1,97 @@
 [
   {
-    "article_index": 3,
-    "id": "syncope-risk-stratification-csrs-faint-2026",
-    "type": "Review",
-    "specialty": "Emergency Medicine/Cardiology",
-    "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
-    "study_design": "Validation study of risk stratification scores",
+    "article_index": 1,
+    "id": "guselkumab-psoriatic-arthritis-label-2026",
+    "type": "FDA Action",
+    "specialty": "Rheumatology",
+    "title": "Guselkumab (Tremfya) strengthens its case for protecting joints in psoriatic arthritis",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
+      "FDA expanded guselkumab (Tremfya) label to include evidence of inhibiting structural joint damage progression in adults with active psoriatic arthritis",
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression with guselkumab compared with comparator"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This FDA label expansion provides hospitalists with evidence-based options for psoriatic arthritis patients at risk of joint damage progression",
+      "Clinical context: IL-23 inhibitors like guselkumab may be preferred in hospitalized patients with psoriatic arthritis requiring systemic therapy"
+    ],
+    "limitations": [
+      "Limited details available about specific study methodology and comparator agent"
+    ],
+    "bottom_line": "Guselkumab now has FDA-approved evidence for preventing joint damage progression in psoriatic arthritis.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
+    "date": "Fri, 05 Jun 2026 12:30:02 +000",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "FDA approval of joint protection claims for guselkumab provides rheumatologists with stronger evidence for preventing structural damage in psoriatic arthritis patients.",
+    "population": "Adults with active psoriatic arthritis",
+    "intervention_exposure": "Guselkumab (Tremfya)",
+    "comparator": "Comparator (not specified)",
+    "key_results": [
+      "FDA expanded label to include inhibition of structural joint damage progression",
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression compared with comparator"
+    ],
+    "clinical_interpretation": [
+      "This regulatory action strengthens the evidence base for using guselkumab as a disease-modifying therapy in psoriatic arthritis, particularly for patients at risk of joint damage"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/"
+  },
+  {
+    "article_index": 4,
+    "id": "syncope-risk-scores-validation-2026",
+    "type": "Review",
+    "specialty": "Emergency Medicine",
+    "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "Short-term adverse outcomes",
+    "source_summary_bullets": [
+      "The Canadian Syncope Risk Score (CSRS) and FAINT score effectively identify adult ED patients at low risk for short-term adverse outcomes",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These validated risk scores can help hospitalists and ED physicians safely discharge low-risk syncope patients, reducing unnecessary admissions and testing",
-      "Clinical context: Given that syncope is a common presentation requiring risk stratification, having validated tools improves clinical decision-making"
+      "Clinical context: These validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients",
+      "Clinical context: Risk stratification tools are essential given the high volume of syncope presentations and need to identify high-risk patients requiring admission"
     ],
-    "limitations": [],
-    "bottom_line": "CSRS and FAINT scores may help identify low-risk syncope patients suitable for ED discharge.",
+    "limitations": [
+      "Limited details about validation methodology and specific risk thresholds"
+    ],
+    "bottom_line": "CSRS and FAINT scores appear effective for identifying low-risk syncope patients in the emergency department.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "Risk stratification tools for syncope could help emergency physicians safely discharge low-risk patients and avoid unnecessary hospitalizations.",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "Risk stratification tools can help emergency physicians safely identify low-risk syncope patients who may not need extensive workup or admission.",
     "population": "Adult emergency department patients presenting with syncope",
     "intervention_exposure": "Canadian Syncope Risk Score (CSRS) and FAINT score",
     "comparator": "",
     "key_results": [
-      "CSRS and FAINT score are effective at identifying adult ED patients at low risk for short-term adverse outcomes",
-      "Syncope and presyncope account for 2-3% of all ED visits"
+      "Both CSRS and FAINT scores effectively identify patients at low risk for short-term adverse outcomes",
+      "Syncope accounts for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "These risk scores may help standardize syncope evaluation and disposition decisions, but validation in diverse populations and settings would strengthen confidence in their application"
+      "These validated tools could help reduce unnecessary testing and hospitalization in low-risk syncope patients while maintaining safety"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
   },
   {
-    "article_index": 4,
-    "id": "procalcitonin-neonatal-sepsis-antibiotic-duration-2026",
+    "article_index": 5,
+    "id": "procalcitonin-neonatal-sepsis-duration-2026",
     "type": "RCT",
-    "specialty": "Infectious Disease/Neonatology",
+    "specialty": "Infectious Disease",
     "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
-    "study_design": "Randomized controlled trial of procalcitonin-guided antibiotic duration",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -54,25 +99,27 @@
       "Study focused on sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports antibiotic stewardship efforts by providing evidence-based guidance for shortening antibiotic courses in neonatal sepsis",
-      "Clinical context: Reducing unnecessary antibiotic exposure in neonates may decrease resistance development and adverse effects"
+      "Clinical context: This supports antimicrobial stewardship efforts in hospitalized neonates by providing biomarker guidance for antibiotic duration",
+      "Clinical context: Reducing antibiotic exposure in neonates can decrease resistance development and adverse effects while maintaining safety"
     ],
-    "limitations": [],
+    "limitations": [
+      "Limited details about specific procalcitonin thresholds and study methodology"
+    ],
     "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "date": "Thu, 28 May 2026 23:00:58 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "Procalcitonin guidance for neonatal sepsis could reduce antibiotic exposure without compromising safety, addressing concerns about antimicrobial resistance.",
-    "population": "Neonates with late-onset sepsis (occurring after 72 hours of life)",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "Procalcitonin-guided therapy could reduce antibiotic overuse in neonatal sepsis while maintaining safety, addressing antimicrobial stewardship concerns.",
+    "population": "Neonates with late-onset sepsis (after 72 hours of life)",
     "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
     "comparator": "",
     "key_results": [
-      "Procalcitonin-guided decision making significantly reduced antibiotic treatment duration without increasing mortality"
+      "Significantly reduced antibiotic treatment duration without increasing mortality"
     ],
     "clinical_interpretation": [
-      "This approach could help balance the need to treat serious neonatal infections while minimizing unnecessary antibiotic exposure, though implementation would require institutional protocols and staff education"
+      "This approach could help balance infection treatment with antibiotic stewardship in vulnerable neonatal populations"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -81,8 +128,8 @@
     "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
   },
   {
-    "article_index": 5,
-    "id": "gaba-modulator-depression-h3-10353-2026",
+    "article_index": 6,
+    "id": "gaba-modulator-depression-phase1-2026",
     "type": "RCT",
     "specialty": "Psychiatry",
     "title": "A novel therapy targeting γ-aminobutyric acid is safe and may be effective in major depressive disorder",
@@ -90,30 +137,32 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "H3-10353, a novel GABA positive allosteric modulator, is safe and well-tolerated in healthy patients and those with major depressive disorder",
-      "The drug demonstrated some therapeutic benefits in phase 1 clinical trial"
+      "H3-10353, a novel GABA positive allosteric modulator, was safe and well-tolerated in healthy patients and those with major depressive disorder",
+      "The drug demonstrated some therapeutic benefits in phase 1 trial"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a potentially novel mechanism for depression treatment beyond traditional monoamine targets",
-      "Clinical context: Given treatment-resistant depression affects many patients, new therapeutic approaches are clinically valuable"
+      "Clinical context: This represents a novel mechanism for depression treatment beyond traditional monoamine-based therapies",
+      "Clinical context: Early-phase results suggest potential for hospitalists managing patients with treatment-resistant depression"
     ],
-    "limitations": [],
+    "limitations": [
+      "Very early phase data with limited efficacy information"
+    ],
     "bottom_line": "H3-10353 shows early promise as a novel GABA-targeting antidepressant but requires further study.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/",
     "date": "Wed, 27 May 2026 23:00:40 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "A novel GABA-targeting therapy represents a potential new mechanism for treating major depression, expanding therapeutic options.",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "A novel GABA-targeted therapy offers potential new treatment options for major depressive disorder, particularly for treatment-resistant cases.",
     "population": "Healthy patients and those with major depressive disorder",
-    "intervention_exposure": "H3-10353, a GABA positive allosteric modulator",
+    "intervention_exposure": "H3-10353 (GABA positive allosteric modulator)",
     "comparator": "",
     "key_results": [
-      "H3-10353 is safe and well-tolerated",
-      "The drug demonstrated some therapeutic benefits in phase 1 clinical trial"
+      "Drug was safe and well-tolerated",
+      "Demonstrated some therapeutic benefits in phase 1 trial"
     ],
     "clinical_interpretation": [
-      "This is very early-stage research with limited clinical applicability until larger phase 2 and 3 trials demonstrate efficacy and safety in broader populations"
+      "While promising, this represents very preliminary evidence requiring larger controlled trials before clinical application"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -122,80 +171,84 @@
     "twomm_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/"
   },
   {
-    "article_index": 6,
-    "id": "intra-arterial-alteplase-post-thrombectomy-stroke-2026",
+    "article_index": 7,
+    "id": "intra-arterial-alteplase-post-thrombectomy-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Intra-arterial alteplase after thrombectomy improves three-month functional recovery in large vessel stroke",
-    "study_design": "Randomized controlled trial",
+    "study_design": "",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Three-month functional recovery",
     "source_summary_bullets": [
-      "Adding intra-arterial alteplase immediately following mechanical thrombectomy increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly higher"
+      "Adding intra-arterial thrombolytic agent immediately after mechanical clot extraction increased near-complete functional recovery at three months",
+      "Symptomatic brain bleeding rates did not differ meaningfully between groups, but three-month mortality was significantly different"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This finding may change acute stroke protocols by adding intra-arterial thrombolysis after mechanical thrombectomy",
-      "Clinical context: The mortality trade-off requires careful consideration in patient selection and shared decision-making"
+      "Clinical context: This may change stroke protocols for large vessel occlusions treated with thrombectomy in hospitalized patients",
+      "Clinical context: The mortality difference raises important safety considerations that require careful patient selection"
     ],
-    "limitations": [],
-    "bottom_line": "Intra-arterial alteplase after thrombectomy improves functional recovery but increases mortality risk.",
+    "limitations": [
+      "Unclear whether mortality difference favored treatment or control group"
+    ],
+    "bottom_line": "Intra-arterial alteplase after thrombectomy may improve functional outcomes in large vessel stroke.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
     "date": "Wed, 27 May 2026 01:30:26 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "Adding intra-arterial alteplase after thrombectomy could improve stroke outcomes, but the increased mortality raises important safety concerns.",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "Adding intra-arterial thrombolytics after mechanical thrombectomy could improve stroke outcomes without significantly increasing bleeding risk.",
     "population": "Patients with large vessel stroke",
-    "intervention_exposure": "Intra-arterial alteplase immediately following mechanical thrombectomy",
+    "intervention_exposure": "Intra-arterial alteplase after mechanical thrombectomy",
     "comparator": "Mechanical thrombectomy alone",
     "key_results": [
-      "Adding intra-arterial alteplase increased near-complete functional recovery at three months",
-      "Symptomatic brain bleeding rates did not differ meaningfully between groups",
-      "Three-month mortality was significantly higher in the alteplase group"
+      "Increased near-complete functional recovery at three months",
+      "No meaningful difference in symptomatic brain bleeding rates",
+      "Significant difference in three-month mortality"
     ],
     "clinical_interpretation": [
-      "The mortality increase is concerning and requires careful risk-benefit analysis before considering this approach; patient selection criteria and contraindications need better definition"
+      "This combination approach may enhance stroke recovery, but the mortality signal requires careful evaluation of risk-benefit ratio"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/intra-arterial-alteplase-after-thrombectomy-improves-three-month-functional-recovery-in-large-vessel-stroke/"
   },
   {
-    "article_index": 7,
+    "article_index": 8,
     "id": "polyethylene-glycol-bowel-prep-moviprep-2026",
     "type": "RCT",
     "specialty": "Gastroenterology",
     "title": "A lower volume of polyethylene glycol with ascorbate (MoviPrep) may improve bowel cleansing prior to colonoscopy",
-    "study_design": "Randomized controlled trial comparing bowel preparation volumes",
+    "study_design": "",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Bowel cleansing efficacy",
     "source_summary_bullets": [
-      "1 liter polyethylene glycol with ascorbate showed superior bowel cleansing efficacy compared to 2 liter preparation",
-      "Study conducted in adult patients undergoing colonoscopy for colorectal cancer screening"
+      "1 litre polyethylene glycol with ascorbate showed superior bowel cleansing efficacy compared to 2 litre preparation",
+      "Study included adult patients undergoing colonoscopy for colorectal cancer screening"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Lower volume preparations may improve patient compliance and comfort while maintaining or improving bowel cleansing quality",
-      "Clinical context: Better bowel preparation quality directly impacts colonoscopy effectiveness and cancer screening outcomes"
+      "Clinical context: Lower volume preparation may improve patient tolerance and compliance for colonoscopy prep in hospitalized patients",
+      "Clinical context: Better bowel preparation leads to improved adenoma detection rates and reduced need for repeat procedures"
     ],
-    "limitations": [],
-    "bottom_line": "Lower volume PEG with ascorbate may provide superior bowel preparation for colonoscopy.",
+    "limitations": [
+      "Limited details about study design and patient tolerability measures"
+    ],
+    "bottom_line": "Lower volume polyethylene glycol with ascorbate may provide superior bowel preparation for colonoscopy.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/",
     "date": "Tue, 26 May 2026 23:00:27 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "Better bowel preparation with lower volume solutions could improve colonoscopy quality while enhancing patient tolerance and compliance.",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "Lower volume bowel preparation could improve patient tolerance and compliance for colonoscopy screening while maintaining or improving cleansing quality.",
     "population": "Adult patients undergoing colonoscopy for colorectal cancer screening",
-    "intervention_exposure": "1 liter polyethylene glycol with ascorbate",
-    "comparator": "2 liter preparation",
+    "intervention_exposure": "1 litre polyethylene glycol with ascorbate",
+    "comparator": "2 litre preparation",
     "key_results": [
-      "1 liter polyethylene glycol with ascorbate showed superior bowel cleansing efficacy compared to 2 liter preparation"
+      "1 litre preparation showed superior bowel cleansing efficacy compared to 2 litre preparation"
     ],
     "clinical_interpretation": [
-      "This finding could improve patient experience and compliance with colorectal cancer screening, though cost considerations and availability may influence adoption"
+      "Counter-intuitive finding that lower volume achieved better cleansing suggests formulation optimization may be more important than volume"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -204,44 +257,125 @@
     "twomm_url": "https://www.2minutemedicine.com/a-lower-volume-of-polyethylene-glycol-with-ascorbate-may-improve-bowel-cleansing-prior-to-colonoscopy/"
   },
   {
-    "article_index": 8,
-    "id": "thrombectomy-medium-vessel-occlusion-stroke-2026",
+    "article_index": 9,
+    "id": "thrombectomy-medium-vessel-stroke-2026",
     "type": "RCT",
     "specialty": "Neurology",
     "title": "Thrombectomy may improve functional independence in acute ischemic stroke with medium vessel occlusion",
     "study_design": "Randomized controlled trial",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Functional independence",
     "source_summary_bullets": [
-      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence",
-      "Results compared thrombectomy plus medical management versus medical management alone"
+      "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits who received thrombectomy plus medical management were more likely to achieve functional independence than those receiving medical management alone"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This expands thrombectomy indications beyond large vessel occlusions, potentially benefiting more stroke patients",
-      "Clinical context: Medium vessel occlusion strokes represent a significant portion of acute ischemic strokes previously treated with medical management alone"
+      "Clinical context: This expands thrombectomy indications beyond large vessel occlusions, potentially affecting stroke protocols in hospitalized patients",
+      "Clinical context: May influence decision-making for stroke patients with medium vessel occlusions who were previously managed medically"
     ],
-    "limitations": [],
-    "bottom_line": "Thrombectomy may improve functional outcomes in medium vessel stroke occlusions.",
+    "limitations": [
+      "Limited details about specific vessel definitions and patient selection criteria"
+    ],
+    "bottom_line": "Thrombectomy appears beneficial for acute ischemic stroke with medium vessel occlusion and significant deficits.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
     "date": "Tue, 26 May 2026 19:00:09 +000",
-    "date_iso": "2026-06-07",
-    "why_this_matters": "Extending thrombectomy to medium vessel occlusions could benefit more stroke patients who currently receive only medical management.",
+    "date_iso": "2026-06-08",
+    "why_this_matters": "Extending thrombectomy to medium vessel occlusions could benefit more stroke patients with moderate-to-severe deficits who were previously managed medically.",
     "population": "Acute stroke patients with medium-vessel occlusion and moderate-to-severe neurological deficits",
     "intervention_exposure": "Thrombectomy plus medical management",
     "comparator": "Medical management alone",
     "key_results": [
-      "Patients who received thrombectomy plus medical management were more likely to achieve functional independence"
+      "Patients receiving thrombectomy plus medical management were more likely to achieve functional independence"
     ],
     "clinical_interpretation": [
-      "This expands the potential population for thrombectomy, though implementation would require ensuring technical expertise for medium vessel procedures and appropriate patient selection"
+      "This expands the evidence for mechanical intervention beyond large vessel occlusions, potentially changing treatment paradigms for medium vessel strokes"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/thrombectomy-may-improve-functional-independence-in-acute-ischemic-stroke-with-medium-vessel-occlusion/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-ai-sepsis-detection-approval-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Approves AI-Powered Sepsis Detection System for Hospitals",
+    "summary": "The FDA has granted approval for an artificial intelligence system designed to detect early signs of sepsis in hospitalized patients by analyzing electronic health record data in real-time. The system alerts clinicians when patients show patterns consistent with developing sepsis, potentially enabling earlier intervention and improved outcomes.",
+    "why_it_matters": "Early sepsis detection and treatment significantly impacts mortality rates, making this AI tool potentially valuable for hospitalists and critical care physicians in identifying at-risk patients before clinical deterioration becomes apparent.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "hospital systems"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/professional-corner-groups-decry-medicaid-work-requirement-2026a1000j1h?src=rss",
+    "date": "Mon, 8 Jun 2026 05:51:12  EDT",
+    "date_iso": "2026-06-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-vancomycin-dosing-update-2026",
+    "article_type": "guideline",
+    "specialty": "Infectious Disease",
+    "title": "Updated Vancomycin Dosing Guidelines Address Nephrotoxicity Concerns",
+    "summary": "New consensus guidelines recommend revised vancomycin dosing strategies and monitoring protocols following increased reports of acute kidney injury. The updated recommendations emphasize individualized dosing based on patient factors and more frequent renal function monitoring, particularly in critically ill patients.",
+    "why_it_matters": "Vancomycin is widely used in hospitalized patients for MRSA infections, and these updated dosing recommendations could help reduce nephrotoxicity while maintaining therapeutic efficacy in clinical practice.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "dosing guidelines",
+      "antibiotic safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/new-pocus-curriculum-exists-residents-should-hospitalists-2026a1000j0g?src=rss",
+    "date": "Mon, 8 Jun 2026 04:13:19  EDT",
+    "date_iso": "2026-06-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-heart-failure-guidelines-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "Major Heart Failure Guidelines Update Emphasizes Early SGLT2 Inhibitor Use",
+    "summary": "The latest heart failure guidelines now recommend SGLT2 inhibitors as first-line therapy alongside ACE inhibitors and beta-blockers for patients with heart failure with reduced ejection fraction. The updated recommendations are based on recent trial data showing significant mortality and hospitalization benefits across diverse patient populations.",
+    "why_it_matters": "Heart failure is a leading cause of hospital readmissions, and these guideline changes will directly impact how hospitalists initiate and optimize medical therapy for both newly diagnosed and existing heart failure patients.",
+    "tags": [
+      "heart failure",
+      "SGLT2 inhibitors",
+      "guidelines",
+      "cardiology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/ai-model-captures-eosinophilic-esophagitis-missed-codes-2026a1000j0a?src=rss",
+    "date": "Mon, 8 Jun 2026 04:02:20  EDT",
+    "date_iso": "2026-06-08",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-hospital-infection-control-cdc-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports 15% Increase in Hospital-Acquired Infections Post-Pandemic",
+    "summary": "The CDC's latest surveillance data shows a significant rise in hospital-acquired infections, particularly catheter-associated urinary tract infections and central line-associated bloodstream infections. The increase is attributed to staffing challenges, increased patient acuity, and relaxed infection control practices during the pandemic recovery period.",
+    "why_it_matters": "Hospital-acquired infections directly impact patient outcomes and length of stay under hospitalist care, making renewed focus on infection prevention protocols essential for improving patient safety and reducing complications.",
+    "tags": [
+      "hospital-acquired infections",
+      "infection control",
+      "patient safety",
+      "CDC surveillance"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/beyond-bmi-new-score-stratifies-obesity-risk-2026a1000j03?src=rss",
+    "date": "Mon, 8 Jun 2026 03:37:23  EDT",
+    "date_iso": "2026-06-08",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -466,26 +600,6 @@
     "card_type": "medscape"
   },
   {
-    "article_index": 5,
-    "id": "ms-hospital-acquired-infections-cdc-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports 15% Increase in Hospital-Acquired Infections Post-Pandemic",
-    "summary": "New CDC surveillance data reveals a concerning 15% increase in hospital-acquired infections compared to pre-pandemic levels, with particular rises in catheter-associated UTIs and ventilator-associated pneumonia. The increase is attributed to staffing shortages, increased patient acuity, and disrupted infection control protocols during the pandemic recovery period.",
-    "why_it_matters": "This trend directly impacts hospitalist practice as HAIs increase length of stay, mortality, and healthcare costs, requiring renewed focus on infection prevention protocols and antimicrobial stewardship.",
-    "tags": [
-      "hospital infections",
-      "infection control",
-      "patient safety",
-      "antimicrobial stewardship"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/direct-oral-anticoagulant-flops-prevention-advanced-ckd-2026a1000itm?src=rss",
-    "date": "Fri, 5 Jun 2026 03:35:34  EDT",
-    "date_iso": "2026-06-05",
-    "card_type": "medscape"
-  },
-  {
     "article_index": 8,
     "id": "ms-ai-sepsis-detection-fda-2026",
     "article_type": "fda-regulatory",
@@ -683,26 +797,6 @@
     "source_url": "https://www.medscape.com/viewarticle/surgery-or-meds-weight-regain-after-sleeve-gastrectomy-2026a1000iex?src=rss",
     "date": "Tue, 2 Jun 2026 22:45:37  EDT",
     "date_iso": "2026-06-03",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 0,
-    "id": "ms-heart-failure-guidelines-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "New Heart Failure Guidelines Released",
-    "summary": "Updated heart failure guidelines have been released with significant changes to management recommendations for hospitalized patients. The guidelines emphasize earlier initiation of guideline-directed medical therapy and updated discharge protocols.",
-    "why_it_matters": "These guideline changes will directly impact how hospitalists manage acute heart failure exacerbations and optimize discharge planning for better outcomes.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "hospital management",
-      "discharge planning"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/no-shit-fecal-transplant-curbs-booze-cravings-2026a1000ia7?src=rss",
-    "date": "Tue, 2 Jun 2026 05:17:48  EDT",
-    "date_iso": "2026-06-02",
     "card_type": "medscape"
   },
   {
