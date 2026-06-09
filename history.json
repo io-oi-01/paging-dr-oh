@@ -1,6 +1,5 @@
 {
   "diseases_shown": [
-    "Cirrhosis and Hepatic Encephalopathy",
     "Hyponatremia",
     "Acute Gout",
     "Syncope",
@@ -89,7 +88,8 @@
     "Cardiac Tamponade",
     "Clostridioides difficile Infection",
     "Acute Kidney Injury",
-    "Hyperkalemia"
+    "Hyperkalemia",
+    "Rhabdomyolysis"
   ],
   "landmark_studies_shown": [
     "triton-2007",
@@ -227,7 +227,8 @@
     "nice-sugar-2009",
     "eolia-2018",
     "triss-2014",
-    "fourier-2017"
+    "fourier-2017",
+    "prevent-vte-2023"
   ],
   "whats_new_ids": [
     "iberdomide-myeloma-fda-2026",
@@ -691,9 +692,15 @@
     "gaba-modulator-depression-phase1-2026",
     "ms-ai-sepsis-detection-approval-2026",
     "ms-vancomycin-dosing-update-2026",
-    "ms-hospital-infection-control-cdc-2026"
+    "ms-hospital-infection-control-cdc-2026",
+    "statin-breast-cancer-mortality-2026",
+    "venetoclax-cll-approval-2026",
+    "guselkumab-psoriatic-arthritis-2026",
+    "ms-fda-cgrp-migraine-safety-2026",
+    "ms-pneumonia-guidelines-idsa-2026",
+    "ms-aki-prediction-ai-study-2026"
   ],
-  "last_run": "2026-06-08",
+  "last_run": "2026-06-09",
   "jdd_conditions_shown": [
     "Hidradenitis Suppurativa",
     "Majocchi granuloma",
@@ -793,13 +800,10 @@
     "Nails: Psoriatic",
     "Urticaria",
     "Folliculitis",
-    "Keratosis Follicularis"
+    "Keratosis Follicularis",
+    "Leukocytoclastic Vasculitis"
   ],
   "litfl_cases_shown": [
-    "cxr-015",
-    "ct-088",
-    "clinical-dealing-with-d-dimer-debacles",
-    "ecg-096",
     "cxr-050",
     "ct-075",
     "clinical-lithium-vomiting-and-diarrhoea",
@@ -995,6 +999,10 @@
     "ecg-107",
     "cxr-065",
     "ct-001",
-    "clinical-a-mortal-battle-with-four-hour-medicine-ii"
+    "clinical-a-mortal-battle-with-four-hour-medicine-ii",
+    "ecg-039",
+    "cxr-086",
+    "ct-042",
+    "clinical-another-widow-maker"
   ]
 }

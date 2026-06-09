@@ -1,7 +1,96 @@
 [
   {
+    "article_index": 0,
+    "id": "statin-breast-cancer-mortality-2026",
+    "type": "Observational",
+    "specialty": "Oncology",
+    "title": "Statin use after but not before breast cancer diagnosis is associated with improved mortality in hormone receptor-positive early breast cancer",
+    "study_design": "Observational cohort study",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Prediagnostic statin use was not associated with higher survival among patients with early breast cancer",
+      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive intrinsic subtypes"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This suggests hospitalists should consider continuing or initiating statins for cardiovascular indications in breast cancer patients, as there may be additional oncologic benefits",
+      "Clinical context: The timing of statin initiation appears important - benefits seen only when started after cancer diagnosis"
+    ],
+    "limitations": [
+      "Observational study design limits causal inference",
+      "Specific statistical measures and effect sizes not provided"
+    ],
+    "bottom_line": "Post-diagnosis statin use may improve survival in hormone receptor-positive early breast cancer, but more research is needed before changing practice.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/",
+    "date": "Mon, 08 Jun 2026 23:00:20 +000",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "This suggests timing of statin initiation may influence outcomes in breast cancer patients, potentially informing post-diagnosis treatment decisions.",
+    "population": "Patients with early breast cancer",
+    "intervention_exposure": "Statin use before and after breast cancer diagnosis",
+    "comparator": "",
+    "key_results": [
+      "Prediagnostic statin use was not associated with higher survival among patients with early breast cancer",
+      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive intrinsic subtypes"
+    ],
+    "clinical_interpretation": [
+      "The differential effect based on timing suggests biological mechanisms may vary throughout cancer progression",
+      "This may support considering statin initiation as part of post-diagnosis care for hormone receptor-positive breast cancer"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/"
+  },
+  {
     "article_index": 1,
-    "id": "guselkumab-psoriatic-arthritis-label-2026",
+    "id": "venetoclax-cll-approval-2026",
+    "type": "FDA Action",
+    "specialty": "Oncology",
+    "title": "Venetoclax (Venclyxto) expands treatment options as chronic lymphocytic leukemia care moves further from chemotherapy",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "The European Commission has authorized expanded venetoclax (Venclyxto) combinations for previously untreated chronic lymphocytic leukemia",
+      "The approval reinforces the continued movement toward fixed-duration, chemotherapy-free regimens in chronic lymphocytic leukemia care"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Expands first-line treatment options for CLL patients, moving away from traditional chemotherapy approaches",
+      "Clinical context: Important for hospitalists managing CLL patients as this represents a shift toward targeted, time-limited therapies"
+    ],
+    "limitations": [
+      "Regulatory approval summary provides limited clinical trial details"
+    ],
+    "bottom_line": "Venetoclax combinations now offer additional chemotherapy-free options for first-line chronic lymphocytic leukemia treatment.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/",
+    "date": "Mon, 08 Jun 2026 11:30:04 +000",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "This regulatory approval expands chemotherapy-free treatment options for chronic lymphocytic leukemia patients.",
+    "population": "Previously untreated chronic lymphocytic leukemia patients",
+    "intervention_exposure": "Venetoclax (Venclyxto) combinations",
+    "comparator": "",
+    "key_results": [
+      "European Commission authorized expanded venetoclax combinations for previously untreated chronic lymphocytic leukemia",
+      "Approval reinforces movement toward fixed-duration, chemotherapy-free regimens"
+    ],
+    "clinical_interpretation": [
+      "This expands first-line treatment options with potentially better tolerability profiles",
+      "Fixed-duration regimens may improve quality of life compared to indefinite therapy"
+    ],
+    "practice_readiness": "Practice-changing",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/"
+  },
+  {
+    "article_index": 3,
+    "id": "guselkumab-psoriatic-arthritis-2026",
     "type": "FDA Action",
     "specialty": "Rheumatology",
     "title": "Guselkumab (Tremfya) strengthens its case for protecting joints in psoriatic arthritis",
@@ -9,75 +98,78 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "FDA expanded guselkumab (Tremfya) label to include evidence of inhibiting structural joint damage progression in adults with active psoriatic arthritis",
-      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression with guselkumab compared with comparator"
+      "The FDA has expanded the label for guselkumab (Tremfya) to include evidence that it can inhibit progression of structural joint damage in adults with active psoriatic arthritis",
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression with guselkumab compared with standard treatment"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This FDA label expansion provides hospitalists with evidence-based options for psoriatic arthritis patients at risk of joint damage progression",
-      "Clinical context: IL-23 inhibitors like guselkumab may be preferred in hospitalized patients with psoriatic arthritis requiring systemic therapy"
+      "Clinical context: This label expansion provides evidence for joint protection, which is a key treatment goal in psoriatic arthritis management",
+      "Clinical context: Important for hospitalists consulting rheumatology or managing psoriatic arthritis patients - IL-23 inhibition may offer superior joint preservation"
     ],
     "limitations": [
-      "Limited details available about specific study methodology and comparator agent"
+      "Specific radiographic progression measures and clinical response rates not detailed"
     ],
-    "bottom_line": "Guselkumab now has FDA-approved evidence for preventing joint damage progression in psoriatic arthritis.",
-    "confidence": "moderate",
+    "bottom_line": "Guselkumab now has FDA-recognized evidence for preventing joint damage progression in psoriatic arthritis.",
+    "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
     "date": "Fri, 05 Jun 2026 12:30:02 +000",
-    "date_iso": "2026-06-08",
-    "why_this_matters": "FDA approval of joint protection claims for guselkumab provides rheumatologists with stronger evidence for preventing structural damage in psoriatic arthritis patients.",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "This label expansion provides evidence that guselkumab can prevent joint damage progression in psoriatic arthritis, not just treat symptoms.",
     "population": "Adults with active psoriatic arthritis",
     "intervention_exposure": "Guselkumab (Tremfya)",
-    "comparator": "Comparator (not specified)",
+    "comparator": "Standard treatment",
     "key_results": [
-      "FDA expanded label to include inhibition of structural joint damage progression",
-      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression compared with comparator"
+      "FDA expanded guselkumab label to include evidence of inhibiting structural joint damage progression",
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression compared with standard treatment"
     ],
     "clinical_interpretation": [
-      "This regulatory action strengthens the evidence base for using guselkumab as a disease-modifying therapy in psoriatic arthritis, particularly for patients at risk of joint damage"
+      "Joint protection evidence strengthens the case for earlier biologic intervention",
+      "This may influence treatment sequencing decisions in psoriatic arthritis management"
     ],
-    "practice_readiness": "Practice-changing",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/"
   },
   {
-    "article_index": 4,
-    "id": "syncope-risk-scores-validation-2026",
+    "article_index": 6,
+    "id": "syncope-risk-scores-csrs-faint-validation-2026",
     "type": "Review",
     "specialty": "Emergency Medicine",
     "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
-    "study_design": "",
+    "study_design": "Risk score validation study",
     "sample_size": "",
     "primary_outcome": "Short-term adverse outcomes",
     "source_summary_bullets": [
-      "The Canadian Syncope Risk Score (CSRS) and FAINT score effectively identify adult ED patients at low risk for short-term adverse outcomes",
+      "The Canadian Syncope Risk Score (CSRS) and FAINT score are effective at identifying which adult patients presenting to the emergency department are at low risk for short-term adverse outcomes",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients",
-      "Clinical context: Risk stratification tools are essential given the high volume of syncope presentations and need to identify high-risk patients requiring admission"
+      "Clinical context: These validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients and avoid unnecessary admissions",
+      "Clinical context: Important for resource utilization and patient flow - reliable risk stratification tools for a common presenting complaint"
     ],
     "limitations": [
-      "Limited details about validation methodology and specific risk thresholds"
+      "Review format limits assessment of individual study quality",
+      "Performance characteristics of scores not quantified"
     ],
-    "bottom_line": "CSRS and FAINT scores appear effective for identifying low-risk syncope patients in the emergency department.",
+    "bottom_line": "Two validated risk scores may help emergency physicians safely identify low-risk syncope patients for early discharge.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-08",
-    "why_this_matters": "Risk stratification tools can help emergency physicians safely identify low-risk syncope patients who may not need extensive workup or admission.",
-    "population": "Adult emergency department patients presenting with syncope",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "Risk stratification tools could help clinicians safely discharge low-risk syncope patients and reduce unnecessary testing and admissions.",
+    "population": "Adult patients presenting to emergency department with syncope",
     "intervention_exposure": "Canadian Syncope Risk Score (CSRS) and FAINT score",
     "comparator": "",
     "key_results": [
-      "Both CSRS and FAINT scores effectively identify patients at low risk for short-term adverse outcomes",
-      "Syncope accounts for 2-3% of all ED visits"
+      "CSRS and FAINT scores are effective at identifying low-risk adult syncope patients",
+      "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "These validated tools could help reduce unnecessary testing and hospitalization in low-risk syncope patients while maintaining safety"
+      "Validated risk scores could standardize syncope evaluation and improve resource utilization",
+      "Low-risk identification tools may reduce healthcare costs while maintaining safety"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -86,40 +178,42 @@
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
   },
   {
-    "article_index": 5,
+    "article_index": 7,
     "id": "procalcitonin-neonatal-sepsis-duration-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
-    "study_design": "",
+    "study_design": "Randomized controlled trial",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Procalcitonin-guided decision making in neonatal late-onset sepsis significantly reduced antibiotic treatment duration without increasing mortality",
-      "Study focused on sepsis occurring after 72 hours of life"
+      "Incorporating procalcitonin-guided decision making in the management of neonatal late-onset sepsis significantly reduced the duration of antibiotic treatment without increasing mortality",
+      "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports antimicrobial stewardship efforts in hospitalized neonates by providing biomarker guidance for antibiotic duration",
-      "Clinical context: Reducing antibiotic exposure in neonates can decrease resistance development and adverse effects while maintaining safety"
+      "Clinical context: This supports antibiotic stewardship efforts in neonatal ICUs and may reduce complications from prolonged antibiotic exposure",
+      "Clinical context: Important for hospitalists involved in NICU care - provides evidence-based approach to antibiotic duration decisions"
     ],
     "limitations": [
-      "Limited details about specific procalcitonin thresholds and study methodology"
+      "Specific antibiotic duration reduction and safety margins not quantified"
     ],
-    "bottom_line": "Procalcitonin guidance may safely reduce antibiotic duration in neonatal late-onset sepsis.",
+    "bottom_line": "Procalcitonin-guided antibiotic management appears to safely reduce treatment duration in neonatal late-onset sepsis.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "date": "Thu, 28 May 2026 23:00:58 +000",
-    "date_iso": "2026-06-08",
-    "why_this_matters": "Procalcitonin-guided therapy could reduce antibiotic overuse in neonatal sepsis while maintaining safety, addressing antimicrobial stewardship concerns.",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "Procalcitonin guidance could reduce antibiotic exposure in neonates while maintaining safety, addressing antimicrobial stewardship concerns.",
     "population": "Neonates with late-onset sepsis (after 72 hours of life)",
-    "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
+    "intervention_exposure": "Procalcitonin-guided decision making",
     "comparator": "",
     "key_results": [
-      "Significantly reduced antibiotic treatment duration without increasing mortality"
+      "Procalcitonin guidance significantly reduced duration of antibiotic treatment without increasing mortality",
+      "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation": [
-      "This approach could help balance infection treatment with antibiotic stewardship in vulnerable neonatal populations"
+      "This supports incorporating biomarker guidance in neonatal antibiotic stewardship",
+      "Shorter antibiotic courses may reduce resistance development and adverse effects in vulnerable neonates"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -128,8 +222,8 @@
     "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
   },
   {
-    "article_index": 6,
-    "id": "gaba-modulator-depression-phase1-2026",
+    "article_index": 8,
+    "id": "gaba-modulator-depression-h3-10353-2026",
     "type": "RCT",
     "specialty": "Psychiatry",
     "title": "A novel therapy targeting γ-aminobutyric acid is safe and may be effective in major depressive disorder",
@@ -137,38 +231,120 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "H3-10353, a novel GABA positive allosteric modulator, was safe and well-tolerated in healthy patients and those with major depressive disorder",
-      "The drug demonstrated some therapeutic benefits in phase 1 trial"
+      "H3-10353, a novel γ-aminobutyric acid (GABA) positive allosteric modulator, is safe and well-tolerated in healthy patients and those with major depressive disorder",
+      "The drug demonstrated some therapeutic benefits in a phase 1 clinical trial"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This represents a novel mechanism for depression treatment beyond traditional monoamine-based therapies",
-      "Clinical context: Early-phase results suggest potential for hospitalists managing patients with treatment-resistant depression"
+      "Clinical context: Represents a potentially novel mechanism for depression treatment beyond traditional monoamine-based therapies",
+      "Clinical context: Early-stage data but important for hospitalists managing depression as it may offer future treatment options for refractory cases"
     ],
     "limitations": [
-      "Very early phase data with limited efficacy information"
+      "Phase 1 trial provides limited efficacy data",
+      "Specific therapeutic benefit measures not detailed"
     ],
-    "bottom_line": "H3-10353 shows early promise as a novel GABA-targeting antidepressant but requires further study.",
+    "bottom_line": "A novel GABA-targeting antidepressant shows early safety and potential efficacy signals but requires further study.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/",
     "date": "Wed, 27 May 2026 23:00:40 +000",
-    "date_iso": "2026-06-08",
-    "why_this_matters": "A novel GABA-targeted therapy offers potential new treatment options for major depressive disorder, particularly for treatment-resistant cases.",
+    "date_iso": "2026-06-09",
+    "why_this_matters": "A novel GABA-targeting approach for depression could offer alternative treatment mechanisms beyond current antidepressants.",
     "population": "Healthy patients and those with major depressive disorder",
     "intervention_exposure": "H3-10353 (GABA positive allosteric modulator)",
     "comparator": "",
     "key_results": [
-      "Drug was safe and well-tolerated",
-      "Demonstrated some therapeutic benefits in phase 1 trial"
+      "H3-10353 is safe and well-tolerated in healthy patients and those with major depressive disorder",
+      "Drug demonstrated some therapeutic benefits in phase 1 trial"
     ],
     "clinical_interpretation": [
-      "While promising, this represents very preliminary evidence requiring larger controlled trials before clinical application"
+      "GABA modulation represents a novel mechanistic approach to depression treatment",
+      "Early-phase results require confirmation in larger efficacy trials before clinical application"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-novel-therapy-targeting-%ce%b3-aminobutyric-acid-is-safe-and-may-be-effective-in-major-depressive-disorder/"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-fda-cgrp-migraine-safety-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Neurology",
+    "title": "FDA Issues Safety Communication on CGRP Inhibitors and Cardiovascular Risk",
+    "summary": "The FDA has issued a safety communication regarding potential cardiovascular risks associated with CGRP inhibitors used for migraine prevention. The alert follows post-marketing surveillance data showing increased reports of major adverse cardiovascular events in patients with pre-existing cardiovascular disease.",
+    "why_it_matters": "Hospitalists frequently encounter patients on CGRP inhibitors and need to be aware of potential cardiovascular complications, especially when managing acute cardiovascular events or perioperative care.",
+    "tags": [
+      "CGRP inhibitors",
+      "cardiovascular safety",
+      "FDA alert",
+      "migraine"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/about-1-6-couples-report-sleeping-separate-rooms-least-one-2026a1000j6w?src=rss",
+    "date": "Tue, 9 Jun 2026 04:18:56  EDT",
+    "date_iso": "2026-06-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 5,
+    "id": "ms-pneumonia-guidelines-idsa-2026",
+    "article_type": "guideline",
+    "specialty": "Infectious Disease",
+    "title": "Updated IDSA Guidelines for Community-Acquired Pneumonia Management",
+    "summary": "The Infectious Diseases Society of America has released updated guidelines for community-acquired pneumonia, featuring revised antibiotic recommendations and new severity assessment tools. Key changes include modified duration of therapy recommendations and updated guidance on when to use combination therapy.",
+    "why_it_matters": "Community-acquired pneumonia is one of the most common reasons for hospitalization, making these updated guidelines directly relevant to daily practice for hospitalists managing respiratory infections.",
+    "tags": [
+      "pneumonia",
+      "IDSA guidelines",
+      "antibiotics",
+      "infectious disease"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/dual-incretin-agonist-survodutide-benefits-liver-phase-3-2026a1000j5d?src=rss",
+    "date": "Mon, 8 Jun 2026 17:00:00  EDT",
+    "date_iso": "2026-06-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 8,
+    "id": "ms-cdc-respiratory-virus-surge-2026",
+    "article_type": "news",
+    "specialty": "Infectious Disease",
+    "title": "CDC Reports Surge in Respiratory Viruses Across Multiple Regions",
+    "summary": "The CDC is reporting significant increases in influenza, RSV, and COVID-19 hospitalizations across multiple U.S. regions, with particular strain on pediatric and adult intensive care units. The surge is attributed to waning immunity and increased social mixing during the holiday season.",
+    "why_it_matters": "This surge directly impacts hospital capacity and bed management decisions that hospitalists face daily, while also informing isolation precautions and treatment protocols for respiratory illnesses.",
+    "tags": [
+      "respiratory viruses",
+      "CDC alert",
+      "hospital capacity",
+      "influenza"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/mhra-begins-review-avacopan-autoimmune-vasculitis-2026a1000j4m?src=rss",
+    "date": "Mon, 8 Jun 2026 13:47:43  EDT",
+    "date_iso": "2026-06-09",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 10,
+    "id": "ms-aki-prediction-ai-study-2026",
+    "article_type": "clinical-summary",
+    "specialty": "Nephrology",
+    "title": "AI Model Predicts Acute Kidney Injury 48 Hours Before Clinical Recognition",
+    "summary": "A large multicenter study demonstrates that an AI-based early warning system can predict acute kidney injury up to 48 hours before traditional clinical recognition. The system showed high sensitivity and specificity across diverse patient populations and has been integrated into several major electronic health record systems.",
+    "why_it_matters": "Early detection of acute kidney injury could allow hospitalists to implement preventive measures and adjust medications before irreversible damage occurs, potentially improving patient outcomes and reducing length of stay.",
+    "tags": [
+      "acute kidney injury",
+      "artificial intelligence",
+      "early detection",
+      "nephrology"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/getting-syphilis-test-may-signal-higher-stroke-risk-2026a1000j31?src=rss",
+    "date": "Mon, 8 Jun 2026 08:07:03  EDT",
+    "date_iso": "2026-06-09",
+    "card_type": "medscape"
   },
   {
     "article_index": 7,
@@ -1488,26 +1664,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/low-natriuretic-peptide-levels-obesity-hf-risk-persists-2026a1000fqq?src=rss",
     "date": "Tue, 19 May 2026 08:00:00  EDT",
-    "date_iso": "2026-05-20",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-cdc-respiratory-virus-surge-2026",
-    "article_type": "news",
-    "specialty": "Infectious Disease",
-    "title": "CDC Reports Surge in Respiratory Virus Activity",
-    "summary": "The CDC has documented a significant increase in respiratory virus activity across multiple pathogens including influenza, RSV, and COVID-19. Hospital admissions have risen 25% over the past two weeks, with particular increases in pediatric and elderly populations.",
-    "why_it_matters": "Hospitalists should prepare for increased patient volumes and ensure appropriate isolation protocols and treatment pathways are in place for respiratory illnesses.",
-    "tags": [
-      "respiratory viruses",
-      "CDC alert",
-      "hospital admissions",
-      "infectious disease"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/primary-care-making-more-mental-health-diagnoses-kids-2026a1000g9x?src=rss",
-    "date": "Wed, 20 May 2026 02:14:21  EDT",
     "date_iso": "2026-05-20",
     "card_type": "medscape"
   },
