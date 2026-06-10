@@ -1,11 +1,56 @@
 [
   {
-    "article_index": 0,
+    "article_index": 1,
+    "id": "seladelpar-pbc-treatment-2026",
+    "type": "FDA Action",
+    "specialty": "Hepatology",
+    "title": "Seladelpar (Livdelzi) raises the bar for primary biliary cholangitis treatment",
+    "study_design": "",
+    "sample_size": "",
+    "primary_outcome": "",
+    "source_summary_bullets": [
+      "Gilead reported positive phase 3 IDEAL data for seladelpar (Livdelzi) in patients with primary biliary cholangitis who had persistent alkaline phosphatase elevation",
+      "The findings support a broader treatment goal in primary biliary cholangitis, moving beyond partial biochemical improvement"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: This represents a potential new treatment option for PBC patients with inadequate response to current therapies",
+      "Clinical context: May change treatment goals and expectations for PBC management in hospitalized patients"
+    ],
+    "limitations": [
+      "Limited details available from regulatory announcement",
+      "Specific efficacy and safety data not provided"
+    ],
+    "bottom_line": "Seladelpar shows promise as a new treatment option for primary biliary cholangitis patients with persistent disease activity.",
+    "confidence": "preliminary",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/seladelpar-livdelzi-raises-the-bar-for-primary-biliary-cholangitis-treatment/",
+    "date": "Tue, 09 Jun 2026 17:33:30 +000",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "Primary biliary cholangitis patients with persistent alkaline phosphatase elevation despite standard therapy may have a new treatment option with seladelpar (Livdelzi).",
+    "population": "Patients with primary biliary cholangitis who had persistent alkaline phosphatase elevation",
+    "intervention_exposure": "Seladelpar (Livdelzi)",
+    "comparator": "",
+    "key_results": [
+      "Positive phase 3 IDEAL data for seladelpar in patients with persistent alkaline phosphatase elevation",
+      "Findings support broader treatment goals beyond partial biochemical improvement"
+    ],
+    "clinical_interpretation": [
+      "This represents a potential advance for PBC patients with inadequate response to ursodeoxycholic acid",
+      "The emphasis on broader treatment goals suggests seladelpar may achieve more complete biochemical response"
+    ],
+    "practice_readiness": "Preliminary",
+    "source_basis": "2MM summary only",
+    "original_source_url": "https://www.2minutemedicine.com/seladelpar-livdelzi-raises-the-bar-for-primary-biliary-cholangitis-treatment/",
+    "pubmed_id": "",
+    "twomm_url": "https://www.2minutemedicine.com/seladelpar-livdelzi-raises-the-bar-for-primary-biliary-cholangitis-treatment/"
+  },
+  {
+    "article_index": 2,
     "id": "statin-breast-cancer-mortality-2026",
     "type": "Observational",
     "specialty": "Oncology",
     "title": "Statin use after but not before breast cancer diagnosis is associated with improved mortality in hormone receptor-positive early breast cancer",
-    "study_design": "Observational cohort study",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
@@ -13,42 +58,42 @@
       "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive intrinsic subtypes"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This suggests hospitalists should consider continuing or initiating statins for cardiovascular indications in breast cancer patients, as there may be additional oncologic benefits",
-      "Clinical context: The timing of statin initiation appears important - benefits seen only when started after cancer diagnosis"
+      "Clinical context: May influence statin prescribing decisions in hospitalized breast cancer patients, particularly those with hormone receptor-positive tumors",
+      "Clinical context: Supports continuation or initiation of statins for cardiovascular indications in appropriate breast cancer patients"
     ],
     "limitations": [
-      "Observational study design limits causal inference",
-      "Specific statistical measures and effect sizes not provided"
+      "Observational design limits causal inference",
+      "Results may be specific to hormone receptor-positive subtypes"
     ],
-    "bottom_line": "Post-diagnosis statin use may improve survival in hormone receptor-positive early breast cancer, but more research is needed before changing practice.",
+    "bottom_line": "Statin initiation after breast cancer diagnosis may improve survival in hormone receptor-positive early breast cancer.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/",
     "date": "Mon, 08 Jun 2026 23:00:20 +000",
-    "date_iso": "2026-06-09",
-    "why_this_matters": "This suggests timing of statin initiation may influence outcomes in breast cancer patients, potentially informing post-diagnosis treatment decisions.",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "The timing of statin use relative to breast cancer diagnosis may influence survival outcomes, with potential implications for medication management in cancer survivors.",
     "population": "Patients with early breast cancer",
-    "intervention_exposure": "Statin use before and after breast cancer diagnosis",
+    "intervention_exposure": "Statin use before or after breast cancer diagnosis",
     "comparator": "",
     "key_results": [
-      "Prediagnostic statin use was not associated with higher survival among patients with early breast cancer",
-      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive intrinsic subtypes"
+      "Prediagnostic statin use was not associated with higher survival",
+      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality in hormone receptor-positive subtypes"
     ],
     "clinical_interpretation": [
-      "The differential effect based on timing suggests biological mechanisms may vary throughout cancer progression",
-      "This may support considering statin initiation as part of post-diagnosis care for hormone receptor-positive breast cancer"
+      "Starting statins after breast cancer diagnosis may provide survival benefit in hormone receptor-positive disease",
+      "The mechanism for this differential timing effect warrants further investigation"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/"
   },
   {
-    "article_index": 1,
+    "article_index": 3,
     "id": "venetoclax-cll-approval-2026",
     "type": "FDA Action",
-    "specialty": "Oncology",
+    "specialty": "Hematology/Oncology",
     "title": "Venetoclax (Venclyxto) expands treatment options as chronic lymphocytic leukemia care moves further from chemotherapy",
     "study_design": "",
     "sample_size": "",
@@ -58,29 +103,30 @@
       "The approval reinforces the continued movement toward fixed-duration, chemotherapy-free regimens in chronic lymphocytic leukemia care"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Expands first-line treatment options for CLL patients, moving away from traditional chemotherapy approaches",
-      "Clinical context: Important for hospitalists managing CLL patients as this represents a shift toward targeted, time-limited therapies"
+      "Clinical context: Expands first-line treatment options for CLL patients, potentially reducing chemotherapy-related toxicities and hospitalizations",
+      "Clinical context: Fixed-duration regimens may improve patient quality of life and reduce long-term treatment burden"
     ],
     "limitations": [
-      "Regulatory approval summary provides limited clinical trial details"
+      "Specific efficacy data not provided",
+      "Regulatory approval announcement with limited clinical details"
     ],
-    "bottom_line": "Venetoclax combinations now offer additional chemotherapy-free options for first-line chronic lymphocytic leukemia treatment.",
+    "bottom_line": "Venetoclax combination therapy expands chemotherapy-free treatment options for newly diagnosed chronic lymphocytic leukemia.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/",
     "date": "Mon, 08 Jun 2026 11:30:04 +000",
-    "date_iso": "2026-06-09",
-    "why_this_matters": "This regulatory approval expands chemotherapy-free treatment options for chronic lymphocytic leukemia patients.",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "Chronic lymphocytic leukemia treatment continues to evolve toward chemotherapy-free regimens with the expansion of venetoclax combinations.",
     "population": "Previously untreated chronic lymphocytic leukemia patients",
     "intervention_exposure": "Venetoclax (Venclyxto) combinations",
     "comparator": "",
     "key_results": [
-      "European Commission authorized expanded venetoclax combinations for previously untreated chronic lymphocytic leukemia",
+      "European Commission authorized expanded venetoclax combinations for previously untreated CLL",
       "Approval reinforces movement toward fixed-duration, chemotherapy-free regimens"
     ],
     "clinical_interpretation": [
-      "This expands first-line treatment options with potentially better tolerability profiles",
-      "Fixed-duration regimens may improve quality of life compared to indefinite therapy"
+      "This expansion provides more chemotherapy-free options for newly diagnosed CLL patients",
+      "Fixed-duration regimens may improve quality of life compared to indefinite treatment"
     ],
     "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
@@ -89,7 +135,7 @@
     "twomm_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/"
   },
   {
-    "article_index": 3,
+    "article_index": 5,
     "id": "guselkumab-psoriatic-arthritis-2026",
     "type": "FDA Action",
     "specialty": "Rheumatology",
@@ -99,46 +145,47 @@
     "primary_outcome": "",
     "source_summary_bullets": [
       "The FDA has expanded the label for guselkumab (Tremfya) to include evidence that it can inhibit progression of structural joint damage in adults with active psoriatic arthritis",
-      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression with guselkumab compared with standard treatment"
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression with guselkumab"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This label expansion provides evidence for joint protection, which is a key treatment goal in psoriatic arthritis management",
-      "Clinical context: Important for hospitalists consulting rheumatology or managing psoriatic arthritis patients - IL-23 inhibition may offer superior joint preservation"
+      "Clinical context: Provides evidence for joint protection in psoriatic arthritis, which may influence treatment decisions for hospitalized patients with severe disease",
+      "Clinical context: IL-23 inhibition represents an important therapeutic option for patients with inadequate response to other biologics"
     ],
     "limitations": [
-      "Specific radiographic progression measures and clinical response rates not detailed"
+      "Limited details on specific radiographic outcomes",
+      "Comparison group not specified in available information"
     ],
-    "bottom_line": "Guselkumab now has FDA-recognized evidence for preventing joint damage progression in psoriatic arthritis.",
+    "bottom_line": "Guselkumab demonstrates ability to prevent structural joint damage progression in active psoriatic arthritis.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
     "date": "Fri, 05 Jun 2026 12:30:02 +000",
-    "date_iso": "2026-06-09",
-    "why_this_matters": "This label expansion provides evidence that guselkumab can prevent joint damage progression in psoriatic arthritis, not just treat symptoms.",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "Guselkumab now has evidence for protecting joint structure in psoriatic arthritis, addressing both symptoms and long-term joint damage prevention.",
     "population": "Adults with active psoriatic arthritis",
     "intervention_exposure": "Guselkumab (Tremfya)",
-    "comparator": "Standard treatment",
+    "comparator": "",
     "key_results": [
-      "FDA expanded guselkumab label to include evidence of inhibiting structural joint damage progression",
-      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression compared with standard treatment"
+      "FDA expanded label to include evidence of inhibiting structural joint damage progression",
+      "Phase 3b APEX data showed stronger clinical responses and less radiographic progression"
     ],
     "clinical_interpretation": [
-      "Joint protection evidence strengthens the case for earlier biologic intervention",
-      "This may influence treatment sequencing decisions in psoriatic arthritis management"
+      "Guselkumab appears to provide both symptomatic relief and structural joint protection",
+      "This dual benefit supports its use as a disease-modifying therapy in psoriatic arthritis"
     ],
-    "practice_readiness": "Informative",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/a-new-tremfya-claim-reflects-a-bigger-shift-in-psoriatic-arthritis-treatment/"
   },
   {
-    "article_index": 6,
-    "id": "syncope-risk-scores-csrs-faint-validation-2026",
-    "type": "Review",
+    "article_index": 8,
+    "id": "syncope-risk-scores-validation-2026",
+    "type": "Observational",
     "specialty": "Emergency Medicine",
     "title": "Two scores for risk stratification of adults presenting with syncope may be effective at identifying those with low risk",
-    "study_design": "Risk score validation study",
+    "study_design": "",
     "sample_size": "",
     "primary_outcome": "Short-term adverse outcomes",
     "source_summary_bullets": [
@@ -146,30 +193,30 @@
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: These validated risk scores can help hospitalists and emergency physicians safely discharge low-risk syncope patients and avoid unnecessary admissions",
-      "Clinical context: Important for resource utilization and patient flow - reliable risk stratification tools for a common presenting complaint"
+      "Clinical context: These validated risk scores can help hospitalists determine which syncope patients require admission versus safe discharge",
+      "Clinical context: May reduce unnecessary hospitalizations and testing in low-risk syncope patients"
     ],
     "limitations": [
-      "Review format limits assessment of individual study quality",
-      "Performance characteristics of scores not quantified"
+      "Specific performance characteristics not provided",
+      "External validation across different populations may vary"
     ],
-    "bottom_line": "Two validated risk scores may help emergency physicians safely identify low-risk syncope patients for early discharge.",
+    "bottom_line": "CSRS and FAINT scores can effectively identify low-risk syncope patients in the emergency department.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/",
     "date": "Fri, 29 May 2026 23:00:54 +000",
-    "date_iso": "2026-06-09",
-    "why_this_matters": "Risk stratification tools could help clinicians safely discharge low-risk syncope patients and reduce unnecessary testing and admissions.",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "Risk stratification tools for syncope can help emergency physicians identify low-risk patients who may not require extensive workup or admission.",
     "population": "Adult patients presenting to emergency department with syncope",
     "intervention_exposure": "Canadian Syncope Risk Score (CSRS) and FAINT score",
     "comparator": "",
     "key_results": [
-      "CSRS and FAINT scores are effective at identifying low-risk adult syncope patients",
+      "CSRS and FAINT scores are effective at identifying low-risk patients",
       "Syncope and presyncope account for 2-3% of all ED visits"
     ],
     "clinical_interpretation": [
-      "Validated risk scores could standardize syncope evaluation and improve resource utilization",
-      "Low-risk identification tools may reduce healthcare costs while maintaining safety"
+      "These validated tools can help streamline syncope evaluation in the emergency department",
+      "Low-risk patients identified by these scores may be appropriate for outpatient management"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -178,48 +225,129 @@
     "twomm_url": "https://www.2minutemedicine.com/two-scores-for-risk-stratification-of-adults-presenting-with-syncope-may-be-effective-at-identifying-those-with-low-risk/"
   },
   {
-    "article_index": 7,
-    "id": "procalcitonin-neonatal-sepsis-duration-2026",
+    "article_index": 9,
+    "id": "procalcitonin-neonatal-sepsis-2026",
     "type": "RCT",
     "specialty": "Infectious Disease",
     "title": "Use of procalcitonin in neonatal late-onset sepsis may reduce the duration of antibiotic therapy without increase in mortality",
-    "study_design": "Randomized controlled trial",
+    "study_design": "",
     "sample_size": "",
-    "primary_outcome": "",
+    "primary_outcome": "Duration of antibiotic treatment and mortality",
     "source_summary_bullets": [
       "Incorporating procalcitonin-guided decision making in the management of neonatal late-onset sepsis significantly reduced the duration of antibiotic treatment without increasing mortality",
       "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports antibiotic stewardship efforts in neonatal ICUs and may reduce complications from prolonged antibiotic exposure",
-      "Clinical context: Important for hospitalists involved in NICU care - provides evidence-based approach to antibiotic duration decisions"
+      "Clinical context: Procalcitonin guidance can help hospitalists optimize antibiotic duration in neonatal sepsis, reducing antimicrobial resistance and adverse effects",
+      "Clinical context: May be particularly useful in NICU settings where antibiotic stewardship is critical"
     ],
     "limitations": [
-      "Specific antibiotic duration reduction and safety margins not quantified"
+      "Specific duration reduction not quantified",
+      "Safety in different neonatal populations may vary"
     ],
-    "bottom_line": "Procalcitonin-guided antibiotic management appears to safely reduce treatment duration in neonatal late-onset sepsis.",
+    "bottom_line": "Procalcitonin-guided antibiotic management safely reduces treatment duration in neonatal late-onset sepsis.",
     "confidence": "high",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "date": "Thu, 28 May 2026 23:00:58 +000",
-    "date_iso": "2026-06-09",
-    "why_this_matters": "Procalcitonin guidance could reduce antibiotic exposure in neonates while maintaining safety, addressing antimicrobial stewardship concerns.",
+    "date_iso": "2026-06-10",
+    "why_this_matters": "Procalcitonin-guided antibiotic decisions in neonatal sepsis may help reduce unnecessary antibiotic exposure while maintaining safety.",
     "population": "Neonates with late-onset sepsis (after 72 hours of life)",
-    "intervention_exposure": "Procalcitonin-guided decision making",
+    "intervention_exposure": "Procalcitonin-guided antibiotic decision making",
     "comparator": "",
     "key_results": [
-      "Procalcitonin guidance significantly reduced duration of antibiotic treatment without increasing mortality",
-      "Late-onset neonatal sepsis is defined as sepsis occurring after 72 hours of life"
+      "Significantly reduced duration of antibiotic treatment without increasing mortality",
+      "Late-onset sepsis defined as occurring after 72 hours of life"
     ],
     "clinical_interpretation": [
-      "This supports incorporating biomarker guidance in neonatal antibiotic stewardship",
-      "Shorter antibiotic courses may reduce resistance development and adverse effects in vulnerable neonates"
+      "Procalcitonin guidance may help optimize antibiotic stewardship in neonatal intensive care",
+      "Reducing antibiotic exposure could decrease resistance development and adverse effects"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-fda-ozempic-shortage-alert-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Endocrinology",
+    "title": "FDA Issues Alert on Ozempic Shortage Affecting Diabetes Management",
+    "summary": "The FDA has issued an alert regarding ongoing shortages of Ozempic (semaglutide) that may impact diabetes management for hospitalized patients. The shortage is attributed to manufacturing delays and increased demand, with some formulations expected to remain in short supply through early 2026.",
+    "why_it_matters": "Hospitalists need to prepare alternative diabetes management strategies and may need to transition patients to other GLP-1 agonists or insulin regimens during acute care stays.",
+    "tags": [
+      "diabetes",
+      "drug shortage",
+      "semaglutide",
+      "formulary"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/tool-predicts-risk-difficult-treat-depression-before-2026a1000j7m?src=rss",
+    "date": "Tue, 9 Jun 2026 08:19:26  EDT",
+    "date_iso": "2026-06-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-vancomycin-nephrotoxicity-warning-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Updates Vancomycin Safety Warning for Nephrotoxicity Risk",
+    "summary": "The FDA has strengthened safety warnings for vancomycin regarding increased nephrotoxicity risk, particularly in patients receiving concurrent nephrotoxic agents or those with existing kidney dysfunction. New dosing recommendations emphasize more frequent monitoring of renal function and drug levels.",
+    "why_it_matters": "This directly impacts antibiotic prescribing in hospitalized patients, requiring more vigilant monitoring protocols and potential dosing adjustments to prevent acute kidney injury.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "antibiotic safety",
+      "drug monitoring"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/new-option-headache-2026a1000jds?src=rss",
+    "date": "Wed, 10 Jun 2026 04:17:15  EDT",
+    "date_iso": "2026-06-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-heart-failure-guidelines-aha-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Management Guidelines",
+    "summary": "The American Heart Association has released updated guidelines for heart failure management, emphasizing earlier initiation of SGLT2 inhibitors and updated protocols for acute decompensated heart failure in hospitalized patients. The guidelines also include new recommendations for monitoring and medication optimization during hospital stays.",
+    "why_it_matters": "These updated guidelines will directly influence inpatient heart failure management protocols and discharge planning, potentially improving outcomes for one of the most common admission diagnoses.",
+    "tags": [
+      "heart failure",
+      "guidelines",
+      "SGLT2 inhibitors",
+      "inpatient management"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/s/viewarticle/europe-faces-growing-synthetic-opioids-risks-drug-market-2026a1000ja0?src=rss",
+    "date": "Tue, 9 Jun 2026 08:55:55  EDT",
+    "date_iso": "2026-06-10",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-ai-sepsis-detection-fda-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Approves AI-Based Sepsis Detection System for Hospital Use",
+    "summary": "The FDA has approved an artificial intelligence-based sepsis detection system that analyzes electronic health record data to identify early signs of sepsis in hospitalized patients. The system demonstrates improved detection rates compared to traditional screening methods and provides real-time alerts to clinical teams.",
+    "why_it_matters": "This technology could significantly improve early sepsis recognition and intervention in hospitalized patients, potentially reducing mortality and length of stay for one of the leading causes of hospital deaths.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "patient safety"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/cgrp-monoclonal-antibodies-migraine-linked-fracture-risk-2026a1000j92?src=rss",
+    "date": "Tue, 9 Jun 2026 08:17:18  EDT",
+    "date_iso": "2026-06-10",
+    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -696,26 +824,6 @@
   },
   {
     "article_index": 9,
-    "id": "ms-heart-failure-guidelines-aha-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "AHA/ACC Release Updated Heart Failure Management Guidelines",
-    "summary": "The American Heart Association and American College of Cardiology have released updated heart failure guidelines emphasizing earlier use of guideline-directed medical therapy and new recommendations for SGLT2 inhibitors in all heart failure patients regardless of diabetes status. The guidelines also include updated criteria for advanced therapies and palliative care integration.",
-    "why_it_matters": "These guidelines will change standard inpatient heart failure management protocols and discharge medication regimens, requiring updates to order sets and clinical pathways.",
-    "tags": [
-      "heart failure",
-      "guidelines",
-      "SGLT2 inhibitors",
-      "GDMT"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/fuzuloparib-add-improves-metastatic-prostate-cancer-rpfs-2026a1000ite?src=rss",
-    "date": "Fri, 5 Jun 2026 05:13:07  EDT",
-    "date_iso": "2026-06-06",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 9,
     "id": "telitacicept-iga-nephropathy-proteinuria-2026",
     "type": "RCT",
     "specialty": "Nephrology",
@@ -772,26 +880,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/hidden-heart-disease-found-risk-communities-2026a1000ir2?src=rss",
     "date": "Thu, 4 Jun 2026 09:59:46  EDT",
-    "date_iso": "2026-06-05",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-ai-sepsis-detection-fda-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Critical Care",
-    "title": "FDA Approves First AI-Based Sepsis Detection System for Hospital Use",
-    "summary": "The FDA has granted 510(k) clearance for an artificial intelligence system that continuously monitors patient data to detect early signs of sepsis in hospitalized patients. The system analyzes vital signs, laboratory values, and clinical notes to provide real-time sepsis risk scores, with clinical trials showing 23% earlier detection compared to standard protocols.",
-    "why_it_matters": "Early sepsis detection is critical for hospitalists and intensivists, as this AI tool could significantly improve patient outcomes by enabling faster intervention and reducing sepsis-related mortality.",
-    "tags": [
-      "sepsis",
-      "artificial intelligence",
-      "early detection",
-      "patient monitoring"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/bimekizumab-gives-lasting-symptom-relief-patients-psoriatic-2026a1000itb?src=rss",
-    "date": "Fri, 5 Jun 2026 02:51:05  EDT",
     "date_iso": "2026-06-05",
     "card_type": "medscape"
   },
