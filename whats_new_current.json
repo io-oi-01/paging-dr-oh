@@ -1,42 +1,89 @@
 [
   {
-    "article_index": 3,
-    "id": "cryoprobe-bronchoscopy-biopsy-diagnostic-yield-2026",
-    "type": "RCT",
+    "article_index": 0,
+    "id": "food-coloring-diabetes-incidence-2026",
+    "type": "Observational",
+    "specialty": "Endocrinology",
+    "title": "Food coloring additives are associated with higher incidence of type 2 diabetes",
+    "study_design": "Prospective cohort study from the French NutriNet-Santé cohort (2009-2023) using repeated 24-hour dietary records and multivariable Cox proportional hazards models",
+    "sample_size": "",
+    "primary_outcome": "Incident type 2 diabetes cases",
+    "source_summary_bullets": [
+      "Several widely consumed natural and synthetic food coloring additives were associated with higher type 2 diabetes incidence",
+      "Study builds on evidence linking ultraprocessed foods to increased diabetes risk independent of energy intake and adiposity"
+    ],
+    "clinical_interpretation_bullets": [
+      "Clinical context: Provides additional dietary counseling point for diabetes prevention discussions with patients",
+      "Clinical context: May inform food choice recommendations for pre-diabetic patients beyond traditional carbohydrate and calorie restriction"
+    ],
+    "limitations": [
+      "Observational study cannot establish causation",
+      "Residual confounding possible despite multivariable adjustment",
+      "Food additive exposure assessment based on databases and may have measurement error"
+    ],
+    "bottom_line": "Multiple food coloring additives were associated with increased type 2 diabetes risk in this large French cohort, but causation remains unproven.",
+    "confidence": "moderate",
+    "source": "2 Minute Medicine",
+    "source_url": "https://www.2minutemedicine.com/food-coloring-additives-are-associated-with-higher-incidence-of-type-2-diabetes/",
+    "date": "Fri, 12 Jun 2026 23:00:50 +000",
+    "date_iso": "2026-06-13",
+    "why_this_matters": "This large cohort study suggests that commonly consumed food coloring additives may independently contribute to type 2 diabetes risk, potentially informing dietary counseling for diabetes prevention.",
+    "population": "108,723 participants (79.2% female, mean age 42.5 years)",
+    "intervention_exposure": "Cumulative exposure to various food coloring additives assessed through dietary records and food composition databases",
+    "comparator": "Non-exposed or lower exposed participants based on sex-specific tertiles or medians",
+    "key_results": [
+      "1,131 incident type 2 diabetes cases over median 8.05 years follow-up",
+      "Total food coloring additives: HR 1.38 (95% CI 1.17-1.63, P=0.0002) for higher vs non/lower consumers",
+      "Caramel colorings: HR 1.43 (95% CI 1.21-1.67, P=0.0002) for total caramel",
+      "Natural colorings also associated with increased risk: β-carotene HR 1.44 (1.23-1.68), curcumin HR 1.49 (1.29-1.73), anthocyanins HR 1.40 (1.17-1.68)"
+    ],
+    "clinical_interpretation": [
+      "This study adds to growing evidence that ultraprocessed foods may contribute to diabetes risk through mechanisms beyond caloric content",
+      "The association with both synthetic and natural food colorings is surprising and requires mechanistic validation",
+      "Clinical significance uncertain given observational design and potential for unmeasured confounding"
+    ],
+    "practice_readiness": "Informative",
+    "source_basis": "PubMed abstract",
+    "original_source_url": "https://doi.org/10.2337/dc25-2727",
+    "pubmed_id": "42157365",
+    "twomm_url": "https://www.2minutemedicine.com/food-coloring-additives-are-associated-with-higher-incidence-of-type-2-diabetes/"
+  },
+  {
+    "article_index": 4,
+    "id": "cryoprobe-bronchoscopy-biopsy-2026",
+    "type": "Observational",
     "specialty": "Pulmonology",
     "title": "Cryoprobe improves diagnostic yield compared with forceps in bronchoscopic lung biopsy",
     "study_design": "Comparative study of transbronchial biopsy techniques",
     "sample_size": "",
-    "primary_outcome": "Diagnostic yield",
+    "primary_outcome": "Diagnostic yield of bronchoscopic biopsy",
     "source_summary_bullets": [
-      "Transbronchial biopsy with cryoprobe demonstrated significantly higher diagnostic yield compared to conventional forceps biopsy in patients undergoing evaluative bronchoscopy",
-      "Cryobiopsy produced larger and higher-quality tissue samples with less crush artifact without increasing complications"
+      "Transbronchial biopsy with cryoprobe demonstrated significantly higher diagnostic yield compared to conventional forceps biopsy",
+      "Cryobiopsy produced larger, higher-quality tissue samples with less crush artifact without increasing complications"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: This supports using cryoprobe over forceps for transbronchial biopsies when evaluating pulmonary lesions, potentially reducing need for repeat procedures",
-      "Clinical context: Higher diagnostic yield could lead to faster diagnosis and treatment decisions for patients with suspected lung pathology"
+      "Clinical context: May reduce need for repeat procedures or more invasive surgical biopsies in patients with pulmonary lesions",
+      "Clinical context: Important for hospitalists managing patients with suspected lung pathology requiring tissue diagnosis"
     ],
-    "limitations": [
-      "Study design and statistical details not available from summary"
-    ],
-    "bottom_line": "Cryoprobe biopsy appears superior to forceps for bronchoscopic lung biopsies, providing better diagnostic yield without increased complications.",
-    "confidence": "high",
+    "limitations": [],
+    "bottom_line": "Cryoprobe appears to offer superior diagnostic yield compared to forceps in transbronchial lung biopsy without increased complications.",
+    "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/cryoprobe-improves-diagnostic-yield-compared-with-forceps-in-bronchoscopic-lung-biopsy/",
     "date": "Wed, 10 Jun 2026 13:00:06 +000",
-    "date_iso": "2026-06-12",
-    "why_this_matters": "Improved diagnostic yield from bronchoscopic biopsies could reduce the need for repeat procedures and help clinicians reach definitive diagnoses faster in patients with suspected lung disease.",
-    "population": "Patients undergoing evaluative bronchoscopy",
+    "date_iso": "2026-06-13",
+    "why_this_matters": "Improved diagnostic yield in bronchoscopic lung biopsies could reduce need for repeat procedures and expedite diagnosis of lung diseases.",
+    "population": "",
     "intervention_exposure": "Transbronchial biopsy with cryoprobe",
     "comparator": "Conventional forceps biopsy",
     "key_results": [
-      "Cryoprobe demonstrated significantly higher diagnostic yield compared to conventional forceps biopsy",
-      "Cryobiopsy produced larger and higher-quality tissue samples with less crush artifact",
-      "No increase in complications with cryoprobe technique"
+      "Cryoprobe demonstrated significantly higher diagnostic yield compared to conventional forceps",
+      "Cryobiopsy produced larger, higher-quality tissue samples with less crush artifact",
+      "No increase in complications observed"
     ],
     "clinical_interpretation": [
-      "Cryoprobe appears to be a superior technique for transbronchial biopsy with better tissue quality and diagnostic yield without added safety concerns",
-      "This could potentially reduce the need for repeat procedures or more invasive diagnostic approaches"
+      "Cryoprobe technology may improve bronchoscopic diagnostic capabilities without added safety concerns",
+      "Could potentially reduce need for more invasive procedures when initial biopsies are non-diagnostic"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -45,8 +92,8 @@
     "twomm_url": "https://www.2minutemedicine.com/cryoprobe-improves-diagnostic-yield-compared-with-forceps-in-bronchoscopic-lung-biopsy/"
   },
   {
-    "article_index": 5,
-    "id": "seladelpar-pbc-treatment-approval-2026",
+    "article_index": 6,
+    "id": "seladelpar-pbc-approval-2026",
     "type": "FDA Action",
     "specialty": "Hepatology",
     "title": "Seladelpar (Livdelzi) raises the bar for primary biliary cholangitis treatment",
@@ -54,33 +101,31 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "Gilead reported positive phase 3 IDEAL data for seladelpar (Livdelzi) in patients with primary biliary cholangitis who had persistent alkaline phosphatase elevation",
-      "Findings support broader treatment goals in primary biliary cholangitis, moving beyond partial biochemical improvement"
+      "Gilead reported positive phase 3 IDEAL data for seladelpar in patients with primary biliary cholangitis and persistent alkaline phosphatase elevation",
+      "Findings support broader treatment goals moving beyond partial biochemical improvement toward more comprehensive response"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Provides new treatment option for PBC patients with inadequate response to first-line therapy",
-      "Clinical context: May represent advancement in achieving more complete biochemical response in PBC management"
+      "Clinical context: Provides new treatment option for PBC patients with inadequate response to standard therapy",
+      "Clinical context: May change treatment paradigm for this rare but serious cholestatic liver disease"
     ],
-    "limitations": [
-      "Specific efficacy and safety data not provided in summary"
-    ],
-    "bottom_line": "Seladelpar offers a new treatment option for primary biliary cholangitis patients with persistent disease activity despite standard therapy.",
+    "limitations": [],
+    "bottom_line": "Seladelpar shows promise as an additional treatment option for primary biliary cholangitis patients with inadequate response to current therapy.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/seladelpar-livdelzi-raises-the-bar-for-primary-biliary-cholangitis-treatment/",
     "date": "Tue, 09 Jun 2026 17:33:30 +000",
-    "date_iso": "2026-06-12",
-    "why_this_matters": "Primary biliary cholangitis patients with incomplete response to standard therapy need additional treatment options to prevent disease progression.",
-    "population": "Patients with primary biliary cholangitis who had persistent alkaline phosphatase elevation",
+    "date_iso": "2026-06-13",
+    "why_this_matters": "A new treatment option for primary biliary cholangitis patients with inadequate response to standard therapy could improve long-term outcomes.",
+    "population": "",
     "intervention_exposure": "Seladelpar (Livdelzi)",
     "comparator": "",
     "key_results": [
-      "Positive phase 3 IDEAL data for seladelpar in primary biliary cholangitis patients",
+      "Positive phase 3 IDEAL data for seladelpar in patients with primary biliary cholangitis and persistent alkaline phosphatase elevation",
       "Findings support broader treatment goals beyond partial biochemical improvement"
     ],
     "clinical_interpretation": [
-      "This represents an additional therapeutic option for PBC patients with inadequate response to standard treatments",
-      "The focus on broader treatment goals suggests potential for more comprehensive disease management"
+      "Represents potential advancement in PBC treatment for patients with suboptimal response to current therapies",
+      "May shift treatment paradigm toward more comprehensive biochemical response goals"
     ],
     "practice_readiness": "Preliminary",
     "source_basis": "2MM summary only",
@@ -89,8 +134,8 @@
     "twomm_url": "https://www.2minutemedicine.com/seladelpar-livdelzi-raises-the-bar-for-primary-biliary-cholangitis-treatment/"
   },
   {
-    "article_index": 6,
-    "id": "statin-breast-cancer-mortality-outcomes-2026",
+    "article_index": 7,
+    "id": "statin-breast-cancer-mortality-2026",
     "type": "Observational",
     "specialty": "Oncology",
     "title": "Statin use after but not before breast cancer diagnosis is associated with improved mortality in hormone receptor-positive early breast cancer",
@@ -99,33 +144,30 @@
     "primary_outcome": "All-cause and breast cancer-specific mortality",
     "source_summary_bullets": [
       "Prediagnostic statin use was not associated with higher survival among patients with early breast cancer",
-      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive intrinsic subtypes"
+      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality among early breast cancer patients with hormone receptor-positive tumors"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Supports continuing or initiating statin therapy after breast cancer diagnosis when clinically indicated for cardiovascular risk",
-      "Clinical context: May influence discussions about statin therapy in breast cancer survivors, particularly those with hormone receptor-positive disease"
+      "Clinical context: May influence cardiovascular risk management decisions in breast cancer survivors, particularly those with hormone receptor-positive disease",
+      "Clinical context: Supports continuing or initiating statin therapy in appropriate breast cancer patients for potential dual cardiovascular and oncologic benefits"
     ],
-    "limitations": [
-      "Observational study design limits causal inference",
-      "Specific magnitude of benefit not quantified in summary"
-    ],
-    "bottom_line": "Statin use after breast cancer diagnosis, but not before, is associated with improved survival in hormone receptor-positive early breast cancer.",
+    "limitations": [],
+    "bottom_line": "Statin use after breast cancer diagnosis may improve survival in hormone receptor-positive early breast cancer, while prediagnostic use shows no benefit.",
     "confidence": "moderate",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/",
     "date": "Mon, 08 Jun 2026 23:00:20 +000",
-    "date_iso": "2026-06-12",
-    "why_this_matters": "Understanding the timing of statin use relative to breast cancer diagnosis could inform treatment decisions and potentially improve outcomes in hormone receptor-positive breast cancer.",
+    "date_iso": "2026-06-13",
+    "why_this_matters": "Understanding the timing-dependent effects of statin use in breast cancer patients could inform medication management decisions during cancer treatment.",
     "population": "Patients with early breast cancer",
-    "intervention_exposure": "Statin use before and after breast cancer diagnosis",
+    "intervention_exposure": "Statin use before or after breast cancer diagnosis",
     "comparator": "No statin use",
     "key_results": [
-      "Prediagnostic statin use was not associated with improved survival",
-      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality in hormone receptor-positive subtypes"
+      "Prediagnostic statin use was not associated with higher survival",
+      "Postdiagnostic statin use was associated with lower all-cause and breast cancer-specific mortality in hormone receptor-positive early breast cancer"
     ],
     "clinical_interpretation": [
-      "The timing of statin initiation appears crucial, with benefit only seen when started after cancer diagnosis",
-      "The benefit appears specific to hormone receptor-positive disease, suggesting a biologically plausible mechanism"
+      "Suggests potential survival benefit from continuing or initiating statins after breast cancer diagnosis, particularly in hormone receptor-positive disease",
+      "Timing of statin use appears critical, with benefits only seen when started after diagnosis"
     ],
     "practice_readiness": "Informative",
     "source_basis": "2MM summary only",
@@ -134,8 +176,8 @@
     "twomm_url": "https://www.2minutemedicine.com/statin-use-after-but-not-before-breast-cancer-diagnosis-is-associated-with-improved-mortality-in-hormone-receptor-positive-early-breast-cancer/"
   },
   {
-    "article_index": 7,
-    "id": "venetoclax-cll-approval-expanded-2026",
+    "article_index": 8,
+    "id": "venetoclax-cll-expanded-approval-2026",
     "type": "FDA Action",
     "specialty": "Hematology/Oncology",
     "title": "Venetoclax (Venclyxto) expands treatment options as chronic lymphocytic leukemia care moves further from chemotherapy",
@@ -143,39 +185,117 @@
     "sample_size": "",
     "primary_outcome": "",
     "source_summary_bullets": [
-      "European Commission has authorized expanded venetoclax (Venclyxto) combinations for previously untreated chronic lymphocytic leukemia",
+      "European Commission authorized expanded venetoclax combinations for previously untreated chronic lymphocytic leukemia",
       "Approval reinforces continued movement toward fixed-duration, chemotherapy-free regimens in chronic lymphocytic leukemia care"
     ],
     "clinical_interpretation_bullets": [
-      "Clinical context: Expands first-line treatment options for CLL patients, potentially avoiding chemotherapy-related toxicities",
-      "Clinical context: Fixed-duration therapy offers potential for treatment-free intervals compared to continuous therapy approaches"
+      "Clinical context: Provides additional first-line treatment option that avoids chemotherapy-related toxicities in CLL patients",
+      "Clinical context: Important for hospitalists managing CLL patients as treatment landscape shifts toward targeted therapies with different side effect profiles"
     ],
-    "limitations": [
-      "Specific efficacy and safety data from authorization not provided"
-    ],
-    "bottom_line": "Expanded venetoclax combinations provide additional chemotherapy-free treatment options for previously untreated chronic lymphocytic leukemia patients.",
+    "limitations": [],
+    "bottom_line": "Expanded venetoclax combinations offer additional chemotherapy-free treatment options for previously untreated chronic lymphocytic leukemia.",
     "confidence": "preliminary",
     "source": "2 Minute Medicine",
     "source_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/",
     "date": "Mon, 08 Jun 2026 11:30:04 +000",
-    "date_iso": "2026-06-12",
-    "why_this_matters": "Expanding chemotherapy-free treatment options for chronic lymphocytic leukemia could improve patient quality of life while maintaining or improving efficacy.",
+    "date_iso": "2026-06-13",
+    "why_this_matters": "Expanded venetoclax combinations provide more chemotherapy-free treatment options for chronic lymphocytic leukemia patients.",
     "population": "Previously untreated chronic lymphocytic leukemia patients",
-    "intervention_exposure": "Expanded venetoclax (Venclyxto) combinations",
+    "intervention_exposure": "Venetoclax combination regimens",
     "comparator": "",
     "key_results": [
-      "European Commission authorized expanded venetoclax combinations for previously untreated CLL",
-      "Approval supports fixed-duration, chemotherapy-free regimens"
+      "European Commission authorized expanded venetoclax combinations for previously untreated chronic lymphocytic leukemia",
+      "Reinforces movement toward fixed-duration, chemotherapy-free regimens"
     ],
     "clinical_interpretation": [
-      "This regulatory action reflects the ongoing shift toward targeted therapies in CLL treatment",
-      "Fixed-duration regimens may offer patients treatment breaks while maintaining disease control"
+      "Represents continued evolution away from chemotherapy-based regimens in CLL treatment",
+      "Fixed-duration approach may offer improved quality of life compared to continuous therapy"
     ],
-    "practice_readiness": "Preliminary",
+    "practice_readiness": "Practice-changing",
     "source_basis": "2MM summary only",
     "original_source_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/venetoclax-venclyxto-expands-treatment-options-as-chronic-lymphocytic-leukemia-care-moves-further-from-chemotherapy/"
+  },
+  {
+    "article_index": 0,
+    "id": "ms-ai-sepsis-detection-fda-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Critical Care",
+    "title": "FDA Clears AI-Based Sepsis Detection System for Hospital Use",
+    "summary": "The FDA has granted clearance for an artificial intelligence-based sepsis detection system designed to alert clinicians to early signs of sepsis in hospitalized patients. The system analyzes electronic health record data including vital signs, laboratory values, and clinical notes to identify patients at risk for developing sepsis.",
+    "why_it_matters": "This FDA-cleared AI tool could help hospitalists and critical care physicians detect sepsis earlier, potentially improving patient outcomes and reducing mortality in one of the most time-sensitive conditions in hospital medicine.",
+    "tags": [
+      "sepsis",
+      "artificial intelligence",
+      "early detection",
+      "FDA approval"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/getting-medical-residency-harder-than-ever-heres-why-2026a1000jw0?src=rss",
+    "date": "Fri, 12 Jun 2026 13:08:35  EDT",
+    "date_iso": "2026-06-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 1,
+    "id": "ms-vancomycin-nephrotoxicity-warning-2026",
+    "article_type": "fda-regulatory",
+    "specialty": "Infectious Disease",
+    "title": "FDA Issues Enhanced Warning on Vancomycin Nephrotoxicity Risk",
+    "summary": "The FDA has updated safety warnings for vancomycin, emphasizing increased nephrotoxicity risk with prolonged use and higher serum concentrations. The updated labeling includes revised dosing recommendations and enhanced monitoring requirements for renal function.",
+    "why_it_matters": "This safety update directly impacts daily prescribing decisions for hospitalists treating serious gram-positive infections, requiring more vigilant monitoring and potential dosing adjustments to prevent acute kidney injury.",
+    "tags": [
+      "vancomycin",
+      "nephrotoxicity",
+      "drug safety",
+      "antibiotic dosing"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/neet-youth-show-higher-tobacco-and-cannabis-use-than-peers-2026a1000jlg?src=rss",
+    "date": "Fri, 12 Jun 2026 08:00:00  EDT",
+    "date_iso": "2026-06-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 2,
+    "id": "ms-heart-failure-guidelines-aha-2026",
+    "article_type": "guideline",
+    "specialty": "Cardiology",
+    "title": "AHA Releases Updated Heart Failure Management Guidelines",
+    "summary": "The American Heart Association has published revised guidelines for heart failure management, incorporating new evidence on SGLT2 inhibitors, updated recommendations for device therapy timing, and revised approaches to diuretic management in acute decompensated heart failure.",
+    "why_it_matters": "These updated guidelines provide hospitalists with current evidence-based recommendations for managing both acute and chronic heart failure patients, one of the most common reasons for hospital admission and readmission.",
+    "tags": [
+      "heart failure",
+      "AHA guidelines",
+      "SGLT2 inhibitors",
+      "diuretic management"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/over-counter-continuous-glucose-monitor-okayed-kids-2026a1000jxm?src=rss",
+    "date": "Fri, 12 Jun 2026 22:37:47  EDT",
+    "date_iso": "2026-06-13",
+    "card_type": "medscape"
+  },
+  {
+    "article_index": 3,
+    "id": "ms-pneumonia-guidelines-idsa-2026",
+    "article_type": "guideline",
+    "specialty": "Infectious Disease",
+    "title": "IDSA Updates Community-Acquired Pneumonia Treatment Guidelines",
+    "summary": "The Infectious Diseases Society of America has released updated guidelines for community-acquired pneumonia management, featuring revised antibiotic selection criteria, updated severity assessment tools, and new recommendations for transitioning from intravenous to oral therapy.",
+    "why_it_matters": "These guidelines directly impact one of the most common infectious conditions hospitalists manage, providing updated evidence-based approaches to antibiotic selection, duration of therapy, and discharge planning.",
+    "tags": [
+      "pneumonia",
+      "IDSA guidelines",
+      "antibiotic therapy",
+      "severity assessment"
+    ],
+    "source": "Medscape",
+    "source_url": "https://www.medscape.com/viewarticle/belzutifan-plus-pembro-approved-adjuvant-rcc-2026a1000jxb?src=rss",
+    "date": "Fri, 12 Jun 2026 16:35:47  EDT",
+    "date_iso": "2026-06-13",
+    "card_type": "medscape"
   },
   {
     "article_index": 9,
@@ -258,46 +378,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/multiple-sclerosis-stem-cell-transplant-sometimes-looks-cure-2026a1000jrr?src=rss",
     "date": "Fri, 12 Jun 2026 03:27:44  EDT",
-    "date_iso": "2026-06-12",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-heart-failure-guidelines-aha-2026",
-    "article_type": "guideline",
-    "specialty": "Cardiology",
-    "title": "Updated AHA Guidelines for Heart Failure Management Released",
-    "summary": "The American Heart Association has released updated guidelines for heart failure management, incorporating new evidence on SGLT2 inhibitors for heart failure with preserved ejection fraction and updated recommendations for device therapy timing. The guidelines also include new risk stratification tools and updated medication dosing protocols.",
-    "why_it_matters": "Heart failure is one of the most common reasons for hospital admission, making these updated guidelines essential for hospitalists managing acute decompensated heart failure and optimizing discharge medications.",
-    "tags": [
-      "heart failure",
-      "AHA guidelines",
-      "SGLT2 inhibitors",
-      "clinical guidelines"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/ai-guided-prep-improves-bariatric-surgery-consults-2026a1000jr5?src=rss",
-    "date": "Fri, 12 Jun 2026 02:43:37  EDT",
-    "date_iso": "2026-06-12",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 4,
-    "id": "ms-pneumonia-guidelines-idsa-2026",
-    "article_type": "guideline",
-    "specialty": "Infectious Disease",
-    "title": "IDSA Releases Updated Community-Acquired Pneumonia Guidelines",
-    "summary": "The Infectious Diseases Society of America has published updated guidelines for community-acquired pneumonia, featuring revised antibiotic selection criteria based on local resistance patterns and new recommendations for procalcitonin-guided therapy duration. The guidelines also address management of pneumonia in immunocompromised patients and post-COVID complications.",
-    "why_it_matters": "Pneumonia remains a leading cause of hospitalization and mortality, making these updated treatment recommendations crucial for hospitalists and emergency physicians managing both typical and atypical presentations.",
-    "tags": [
-      "pneumonia",
-      "IDSA guidelines",
-      "antibiotic therapy",
-      "procalcitonin"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/prepregnancy-insulin-resistance-affects-fertility-and-2026a1000jsm?src=rss",
-    "date": "Fri, 12 Jun 2026 05:17:10  EDT",
     "date_iso": "2026-06-12",
     "card_type": "medscape"
   },
@@ -410,46 +490,6 @@
     "original_source_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/",
     "pubmed_id": "",
     "twomm_url": "https://www.2minutemedicine.com/use-of-procalcitonin-in-neonatal-late-onset-sepsis-may-reduce-the-duration-of-antibiotic-therapy-without-increase-in-mortality/"
-  },
-  {
-    "article_index": 1,
-    "id": "ms-vancomycin-nephrotoxicity-warning-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Infectious Disease",
-    "title": "FDA Updates Vancomycin Safety Warning for Nephrotoxicity Risk",
-    "summary": "The FDA has strengthened safety warnings for vancomycin regarding increased nephrotoxicity risk, particularly in patients receiving concurrent nephrotoxic agents or those with existing kidney dysfunction. New dosing recommendations emphasize more frequent monitoring of renal function and drug levels.",
-    "why_it_matters": "This directly impacts antibiotic prescribing in hospitalized patients, requiring more vigilant monitoring protocols and potential dosing adjustments to prevent acute kidney injury.",
-    "tags": [
-      "vancomycin",
-      "nephrotoxicity",
-      "antibiotic safety",
-      "drug monitoring"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/new-option-headache-2026a1000jds?src=rss",
-    "date": "Wed, 10 Jun 2026 04:17:15  EDT",
-    "date_iso": "2026-06-10",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 3,
-    "id": "ms-ai-sepsis-detection-fda-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Critical Care",
-    "title": "FDA Approves AI-Based Sepsis Detection System for Hospital Use",
-    "summary": "The FDA has approved an artificial intelligence-based sepsis detection system that analyzes electronic health record data to identify early signs of sepsis in hospitalized patients. The system demonstrates improved detection rates compared to traditional screening methods and provides real-time alerts to clinical teams.",
-    "why_it_matters": "This technology could significantly improve early sepsis recognition and intervention in hospitalized patients, potentially reducing mortality and length of stay for one of the leading causes of hospital deaths.",
-    "tags": [
-      "sepsis",
-      "artificial intelligence",
-      "early detection",
-      "patient safety"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/cgrp-monoclonal-antibodies-migraine-linked-fracture-risk-2026a1000j92?src=rss",
-    "date": "Tue, 9 Jun 2026 08:17:18  EDT",
-    "date_iso": "2026-06-10",
-    "card_type": "medscape"
   },
   {
     "article_index": 8,
@@ -821,26 +861,6 @@
     "source": "Medscape",
     "source_url": "https://www.medscape.com/viewarticle/petrelintide-tolerability-could-improve-glp-1-challenges-2026a1000iy7?src=rss",
     "date": "Sat, 6 Jun 2026 12:21:52  EDT",
-    "date_iso": "2026-06-07",
-    "card_type": "medscape"
-  },
-  {
-    "article_index": 8,
-    "id": "ms-ai-sepsis-detection-clearance-2026",
-    "article_type": "fda-regulatory",
-    "specialty": "Critical Care",
-    "title": "FDA Clears AI-Based Sepsis Detection System for Hospital Use",
-    "summary": "The FDA has granted 510(k) clearance for an artificial intelligence platform that analyzes electronic health record data to identify patients at risk for sepsis development. The system provides real-time alerts to clinicians when patient parameters suggest early sepsis, potentially enabling earlier intervention and improved outcomes.",
-    "why_it_matters": "This technology could transform sepsis recognition in hospitalized patients, requiring hospitalists to integrate AI-generated alerts into their clinical decision-making and workflow processes.",
-    "tags": [
-      "sepsis",
-      "artificial intelligence",
-      "early detection",
-      "clinical decision support"
-    ],
-    "source": "Medscape",
-    "source_url": "https://www.medscape.com/viewarticle/do-corticosteroids-really-raise-gestational-diabetes-risk-2026a1000ix1?src=rss",
-    "date": "Fri, 5 Jun 2026 17:03:43  EDT",
     "date_iso": "2026-06-07",
     "card_type": "medscape"
   },
